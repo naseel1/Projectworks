@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_naac_category_form">
+            <field name="name">naac.category.form</field>
+            <field name="model">naac.category</field>
+            <field name="arch" type="xml">
+                <form string="Category" class="o_naac_category_form_view">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box" attrs="{'invisible': [('active', '=', False)]}">
+                            <field name="is_published" widget="website_redirect_button"/>
+                        </div>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+
+                        <div class="oe_title">
+                            <label for="name" string="Category Name (URL)"/>
+                            <h1><field class="o_text_overflow" name="name"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="active" invisible="1"/>
+                                <field name="title"/>
+                            </group>
+                            <group>
+                                <field name="sequence"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Subcategory line" name="naac_subcategory_line">
+                                <field name="line_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="sequence"/>
+                                        <field name="is_published" invisible="1"/>
+                                    </tree>
+                                    <form>
+                                        <div class="oe_button_box" name="button_box" attrs="{'invisible': [('active', '=', False)]}">
+                                            <field name="is_published" widget="website_redirect_button"/>
+                                        </div>
+                                        <group>
+                                            <field name="name"/>
+                                            <field name="title"/>
+                                            <field name="sequence"/>
+                                            <field name="active" invisible="1"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" colspan="4" nolabel="1"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_naac_category_tree">
+            <field name="name">naac.category.tree</field>
+            <field name="model">naac.category</field>
+            <field name="arch" type="xml">
+                <tree string="Category">
+                    <field name="name"/>
+                    <field name="sequence"/>
+                    <field name="active" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_naac_category_search" model="ir.ui.view">
+            <field name="name">naac.category.search</field>
+            <field name="model">naac.category</field>
+            <field name="arch" type="xml">
+                <search string="Category">
+                    <field name="name" filter_domain="[('name','ilike',self)]"/>
+                    <separator/>
+                    <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_naac_attachment_category_view">
+           <field name="name">Category</field>
+           <field name="type">ir.actions.act_window</field>
+           <field name="res_model">naac.category</field>
+           <field name="view_mode">tree,form</field>
+           <field name="search_view_id" ref="view_naac_category_search"/>
+           <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create an Category For Naac Attachment
+              </p>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_naac_attachment_handler_form">
+            <field name="name">naac.attachment.handler.form</field>
+            <field name="model">naac.attachment.handler</field>
+            <field name="arch" type="xml">
+                <form string="Naac Attachment Page" class="o_naac_attachment_handler_form_view">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box" attrs="{'invisible': [('active', '=', False)]}">
+                            <field name="is_published" widget="website_redirect_button"/>
+                        </div>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+                        <div class="oe_title">
+                            <label for="name" string="Attachment Name (URL)"/>
+                            <h1><field class="o_text_overflow" name="name"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="active" invisible="1"/>
+                                <field name="title"/>
+                                <field name="category_id" required="1"/>
+                                 <field name="doc_attachment_ids" widget="many2many_binary" class="oe_inline"/>
+                            </group>
+                            <group>
+                                <field name="subcategory_id" required="1" domain="[('category_id', '=', category_id)]"/>
+                                <field name="sequence"/>
+                                <field name="website_id" groups="base.user_admin"/>
+                            </group>
+                        </group>
+                        <notebook>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" colspan="4" nolabel="1"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_naac_attachment_handler_tree">
+            <field name="name">naac.attachment.handler.tree</field>
+            <field name="model">naac.attachment.handler</field>
+            <field name="arch" type="xml">
+                <tree string="Naac Attachment">
+                    <field name="name"/>
+                    <field name="sequence"/>
+                    <field name="active" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_naac_attachment_handler_search" model="ir.ui.view">
+            <field name="name">naac.attachment.handler.search</field>
+            <field name="model">naac.attachment.handler</field>
+            <field name="arch" type="xml">
+                <search string="Naac Attachment">
+                    <field name="name" filter_domain="[('name','ilike',self)]"/>
+                    <separator/>
+                    <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_naac_attachment_handler_view">
+           <field name="name">Naac Attachment Handler</field>
+           <field name="type">ir.actions.act_window</field>
+           <field name="res_model">naac.attachment.handler</field>
+           <field name="view_mode">tree,form</field>
+           <field name="search_view_id" ref="view_naac_attachment_handler_search"/>
+           <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create an Naac Attachments
+              </p>
+            </field>
+        </record>
+    </data>
+</odoo>

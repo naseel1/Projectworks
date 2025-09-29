@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="main_menu_website_naac_iqac_menu" parent="website.menu_website_configuration" name="Naac/IQAC"
+                  sequence="85" groups="em_naac_attachment.group_naac_iqac_user"/>
+
+        <menuitem id="menu_website_naac_attachment_handler_menu" parent="main_menu_website_naac_iqac_menu" sequence="10"
+                  name="Naac Attachments" groups="em_naac_attachment.group_naac_iqac_user"
+                  action="action_naac_attachment_handler_view"/>
+
+        <menuitem id="menu_website_iqac_attachment_handler_menu" parent="main_menu_website_naac_iqac_menu" sequence="20"
+                  name="IQAC Attachments" groups="em_naac_attachment.group_naac_iqac_user"
+                  action="action_iqac_attachment_handler_view"/>
+
+<!--        NAAC-->
+        <menuitem id="main_menu_website_naac_conf_menu" parent="website.menu_website_global_configuration"
+                  name="Naac" sequence="85" groups="em_naac_attachment.group_naac_iqac_user"/>
+
+        <menuitem id="menu_website_naac_category" parent="main_menu_website_naac_conf_menu"
+                  name="Category" groups="em_naac_attachment.group_naac_iqac_user"
+                  action="action_naac_attachment_category_view" sequence="1"/>
+
+        <menuitem id="menu_website_naac_subcategory" parent="main_menu_website_naac_conf_menu"
+                  name="Subcategory" groups="em_naac_attachment.group_naac_iqac_user"
+                  action="action_naac_attachment_subcategory_view" sequence="2"/>
+
+<!--        IQAC-->
+        <menuitem id="main_menu_website_iqac_conf_menu" parent="website.menu_website_global_configuration"
+                  name="IQAC" sequence="90" groups="em_naac_attachment.group_naac_iqac_user"/>
+
+        <menuitem id="menu_website_iqac_category" parent="main_menu_website_iqac_conf_menu"
+                  name="Category" groups="em_naac_attachment.group_naac_iqac_user"
+                  action="action_iqac_attachment_category_view" sequence="1"/>
+
+
+
+    </data>
+</odoo>

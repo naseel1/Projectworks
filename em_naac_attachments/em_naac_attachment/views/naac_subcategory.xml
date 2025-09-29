@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_naac_subcategory_form">
+            <field name="name">naac.subcategory.form</field>
+            <field name="model">naac.subcategory</field>
+            <field name="arch" type="xml">
+                <form string="Subcategory" class="o_naac_subcategory_form_view">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box" attrs="{'invisible': [('active', '=', False)]}">
+                            <field name="is_published" widget="website_redirect_button"/>
+                        </div>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+
+                        <div class="oe_title">
+                            <label for="name" string="Subcategory"/>
+                            <h1><field class="o_text_overflow" name="name"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="active" invisible="1"/>
+                                <field name="category_id" required="1" invisible="0"/>
+                                <field name="title"/>
+                            </group>
+                            <group>
+                                <field name="sequence"/>
+                                <field name="website_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" colspan="4" nolabel="1"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_naac_subcategory_tree">
+            <field name="name">naac.subcategory.tree</field>
+            <field name="model">naac.subcategory</field>
+            <field name="arch" type="xml">
+                <tree string="Subcategory">
+                    <field name="name"/>
+                    <field name="sequence"/>
+                    <field name="website_id"/>
+                    <field name="active" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_naac_subcategory_search" model="ir.ui.view">
+            <field name="name">naac.subcategory.search</field>
+            <field name="model">naac.subcategory</field>
+            <field name="arch" type="xml">
+                <search string="Subcategory">
+                    <field name="name" filter_domain="[('name','ilike',self)]"/>
+                    <separator/>
+                    <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_naac_attachment_subcategory_view">
+           <field name="name">Subcategory</field>
+           <field name="type">ir.actions.act_window</field>
+           <field name="res_model">naac.subcategory</field>
+           <field name="view_mode">tree,form</field>
+           <field name="search_view_id" ref="view_naac_subcategory_search"/>
+           <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create an Subcategory
+              </p>
+            </field>
+        </record>
+    </data>
+</odoo>

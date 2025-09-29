@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+,,,,,,,,
+access_embase_portal_integration_public,Embase.Portal.Integration,model_embase_api_config,,1,0,0,0
+access_embase_portal_integration_user,Embase.Portal.Integration,model_embase_api_config,group_embase_portal_integration_admin,1,1,1,1
+
