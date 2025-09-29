@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_provider_hdfc_tree" model="ir.ui.view">
+        <field name="name">payment.provider.hdfc.tree</field>
+        <field name="model">payment.provider_hdfc</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="hdfc_merchant_id" required="1"/>
+                <field name="api_key" required="1"/>
+                <field name="hdfc_client_id" required="1"/>
+                <field name="response_key" required="1"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="payment_provider_hdfc_form" model="ir.ui.view">
+        <field name="name">payment.provider.hdfc.form</field>
+        <field name="model">payment.provider_hdfc</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_do_confirm" string="Confirm" type="object" class="oe_highlight"
+                            data-hotkey="w" title="Confirm" states="draft"/>
+                    <button name="action_do_draft" string="Set to Draft" type="object" class="oe_highlight"
+                            data-hotkey="d" title="Set to Draft" states="confirm"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="hdfc_merchant_id" required="1"/>
+                        <field name="api_key" required="1"/>
+                        <field name="hdfc_client_id" required="1"/>
+                        <field name="response_key" required="1"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_payment_provider_hdfc">
+        <field name="name">Payment Provider</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">payment.provider_hdfc</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Tokens
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_payment_provider_hdfc"
+              name="Payment Provider HDFC"
+              action="action_payment_provider_hdfc"
+              parent="website.menu_website_global_configuration"
+              groups="hdfc_payment_gateway.group_hdfc_payment_provider_admin"
+              sequence="20"/>
+
+</odoo>

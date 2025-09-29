@@ -1,0 +1,50 @@
+<odoo>
+    <record id="view_price_plan_config_form" model="ir.ui.view">
+        <field name="name">price.plan.config.form</field>
+        <field name="model">price.plan</field>
+        <field name="arch" type="xml">
+            <form string="Onboarding Price Plan">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="plan_type"/>
+                        <field name="price"/>
+                        <field name="plan_points"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for  Career Manage -->
+    <record id="view_price_plan_config_tree" model="ir.ui.view">
+        <field name="name">price.plan.config.tree</field>
+        <field name="model">price.plan</field>
+        <field name="arch" type="xml">
+            <tree string="Onboarding Price Plan">
+                <field name="name"/>
+                <field name="plan_type"/>
+                <field name="price"/>
+                <field name="plan_points"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for  Career Manage -->
+    <record id="action_price_plan" model="ir.actions.act_window">
+        <field name="name">Onboarding Price Plan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">price.plan</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_price_plan_config_tree"/>
+    </record>
+    <menuitem id="menu_price_plan_root" name="Onboarding Price plan" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_price_plan"
+              name="Manage Onboarding Price Plan"
+              parent="menu_price_plan_root"
+              action="action_price_plan"
+              sequence="10"
+              groups="price_plan.group_price_plan_manage_admin"/>
+
+</odoo>

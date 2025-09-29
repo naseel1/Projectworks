@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="payment_receipt_template" name="Payment Receipt">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <div class="payment-receipt" style="background-color:#F9FAFC;">
+                    <!-- Header Section -->
+                    <div class="header">
+                        <div class="logo">
+                            <img src="/hdfc_payment_gateway/static/img/embase_logos.png" alt="Company Logo"
+                                 width="150"/>
+                        </div>
+                    </div>
+
+                    <h2 class="title" style="text-align: center;">INVOICE</h2>
+                    <div style="background-color:#fff; border-radius:12px;border: 2px solid #D7DAE0;padding:15px;">
+                        <!-- Payment Information -->
+                        <div class="invoice-info" style="position:relative;">
+                            <div class="left" style="line-height: 1.6;">
+                                Billed to:
+                                <br/>
+                                <strong>
+                                    <span t-esc="doc.first_name"/>
+                                </strong>
+                                <br/>
+                                <span t-esc="doc.customer_email" style="color:#5E6470;"/>
+                                <br/>
+                                <span t-esc="doc.customer_phone" style="color:#5E6470;"/>
+                            </div>
+                            <div class="right" style="line-height: 1.6;position:absolute;top:10px;left:40%;">
+                                <strong>Invoice number:</strong>
+                                <span t-esc="doc.id"/>
+                                <br/>
+                                <strong>Transaction ID:</strong>
+                                <span t-esc="doc.order_id"/>
+                                <br/>
+                                <strong>Invoice Date:</strong>
+                                <span t-esc="doc.payment_date.strftime('%d-%m-%Y')"/>
+                                <br/>
+                            </div>
+                            <div style="position:absolute;top:10px;left:80%;text-align:center">
+                                <span style="font-size: 14px;line-height: 14px;color:#5E6470;padding-bottom:16px;">
+                                    Invoice of (INR)
+                                </span>
+                                <br/>
+                                <strong>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="15px" height="15px"
+                                         viewBox="-96 0 512 512">
+                                        <path d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"/>
+                                    </svg>
+                                    <span t-esc="doc.amount" style="font-size: 24px;"/>
+                                </strong>
+                            </div>
+                        </div>
+
+                        <!-- Signature and Stamp -->
+                        <div class="signature-section">
+                            <div class="signature">
+                            </div>
+                        </div>
+
+                        <p class="thank-you" style="line-height: 1.6;padding-top:60px;">Thank you for choosing our SSR
+                            Portal Services!
+                        </p>
+                        <p style="line-height: 1.6;">If you have any questions about this invoice, contact us at:
+                            <br/>
+                            billing@embase.in +91 98765
+                            43210
+                        </p>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

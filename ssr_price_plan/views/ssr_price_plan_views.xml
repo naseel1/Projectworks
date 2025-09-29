@@ -1,0 +1,52 @@
+<odoo>
+    <record id="view_ssr_price_plan_config_form" model="ir.ui.view">
+        <field name="name">ssr.price.plan.config.form</field>
+        <field name="model">ssr.plan</field>
+        <field name="arch" type="xml">
+            <form string="SSR Price Plan">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="plan_type"/>
+                        <field name="price"/>
+                        <field name="total_price"/>
+                        <field name="plan_points"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for  Career Manage -->
+    <record id="view_ssr_price_plan_config_tree" model="ir.ui.view">
+        <field name="name">ssr.price.plan.config.tree</field>
+        <field name="model">ssr.plan</field>
+        <field name="arch" type="xml">
+            <tree string="SSR Price Plan">
+                <field name="name"/>
+                <field name="plan_type"/>
+                <field name="price"/>
+                <field name="total_price"/>
+                <field name="plan_points"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for  Career Manage -->
+    <record id="action_ssr_price_plan" model="ir.actions.act_window">
+        <field name="name">Ssr Price Plan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ssr.plan</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_ssr_price_plan_config_tree"/>
+    </record>
+    <menuitem id="menu_ssr_price_plan_root" name="SSR Price plan" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_ssr_price_plan"
+              name="Manage Ssr Price Plan"
+              parent="menu_ssr_price_plan_root"
+              action="action_ssr_price_plan"
+              sequence="10"
+              groups="ssr_price_plan.group_ssr_price_plan_manage_admin"/>
+
+</odoo>

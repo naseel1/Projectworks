@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_hdfc_payment_provider_admin" model="res.groups">
+        <field name="name">HDFC Payment Provider Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_payment_success_admin" model="res.groups">
+        <field name="name">Payment Records Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>

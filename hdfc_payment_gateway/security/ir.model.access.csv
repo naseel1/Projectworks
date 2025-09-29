@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_hdfc_payment_provider_public,Hdfc.Payment.Provider,model_payment_provider_hdfc,,1,0,0,0
+access_hdfc_payment_provider_admin,Hdfc.Payment.Provider,model_payment_provider_hdfc,group_payment_success_admin,1,1,1,1
+access_payment_ssr_user,Payment.Ssr,model_payment_ssr,,1,0,0,0
+access_payment_ssr_admin,Payment.Ssr,model_payment_ssr,group_payment_success_admin,1,1,1,1
+access_payment_onboarding_user,Payment.Onboarding,model_payment_onboarding,,1,0,0,0
+access_payment_onboarding_admin,Payment.Onboarding,model_payment_onboarding,group_payment_success_admin,1,1,1,1

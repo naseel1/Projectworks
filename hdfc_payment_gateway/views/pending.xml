@@ -1,0 +1,115 @@
+<odoo>
+    <template id="payment_pending_template" name="Payment Failed">
+        <t t-call="website.layout">
+            <section class="pt48 pb48">
+                <div class="container">
+                    <div class="payment_card">
+                        <div class="details-item">
+                            <h3 class="pending">Payment pending</h3>
+                            <p class="payment_description">""Your payment is currently being processed. This may take
+                                some time. Please check back later.""
+                            </p>
+                            <div id="ref">
+                                <p id="ref-text">Ref Number</p>
+                                <p id="ref-text-content">
+                                    <t t-esc="order_id"/>
+                                </p>
+                            </div>
+                            <div id="ref">
+                                <p id="ref-text">Payment Status</p>
+                                <p id="ref-text-content">
+                                    <t t-esc="payment_status"/>
+                                </p>
+                            </div>
+                            <p class="payment_description mt8">
+                                If your payment remains pending for a long time, please contact our support team.
+                            </p>
+                            <a href="/contactus" class="retry_payment mt32">Contact Support</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <style>
+                .details-item {
+                width: 60%;
+                flex: 0 0 auto;
+                }
+                .payment_description{
+                color: #4B5157;
+                text-align: left;
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding-top: 15px;
+                margin: 0;
+                }
+                .payment_card{
+                border-radius: 80px;
+                background: #FFF;
+                display:flex;
+                flex-wrap:wrap;
+                gap: 0;
+                padding: 50px 0 80px;
+                }
+                .steps{
+                color: #4B5157;
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 35px;
+                }
+                #ref{
+                display: flex;
+                padding-top: 28px;
+                }
+                #ref-text{
+                color: #707070;
+                font-family: 'Open Sans';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29.977px;
+                margin: 0;
+                min-width: 200px;
+                }
+                #ref-text-content{
+                color: #121212;
+                text-align: center;
+                font-family: 'Open Sans';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 29.977px;
+                margin: 0;
+                text-transform: uppercase;
+                }
+                .pending {
+                color: #2674c9;
+                font-size: 26px;
+                font-weight: 600;
+                background: #317dce3b;
+                padding: 7px 28px;
+                border-radius: 30px;
+                width: fit-content;
+                font-family: Urbanist;
+                }
+                .retry_payment {
+                color: white;
+                background: #D9534F;
+                padding: 8px 16px;
+                border-radius: 100px;
+                text-decoration: none;
+                transition: background 0.3s;
+                display: flex;
+                width: fit-content;
+                }
+                .retry_payment:hover {
+                background: #C9302C;
+                }
+            </style>
+        </t>
+    </template>
+</odoo>

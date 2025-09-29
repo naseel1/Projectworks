@@ -1,0 +1,29 @@
+<odoo>
+    <record id="view_onboarding_payment_record_tree" model="ir.ui.view">
+        <field name="name">onboarding.payment.record.tree</field>
+        <field name="model">onboarding.payment.record</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order_id"/>
+                <field name="customer_id"/>
+                <field name="billed_to"/>
+                <field name="user_count"/>
+                <field name="total_amount"/>
+                <field name="payment_status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_onboarding_payment_record" model="ir.actions.act_window">
+        <field name="name">Onboarding Payments</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">onboarding.payment.record</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <menuitem id="menu_onboarding_payment_record"
+              name="Onboarding Payments"
+              parent="website.menu_website_global_configuration"
+              action="action_onboarding_payment_record"
+              sequence="22"/>
+</odoo>

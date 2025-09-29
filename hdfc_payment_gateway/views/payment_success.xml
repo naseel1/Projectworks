@@ -1,0 +1,213 @@
+<odoo>
+    <template id="payment_success_template" name="Payment Success">
+        <t t-call="website.layout">
+            <section class="pt48 pb48">
+                <div class="container">
+                    <div class="payment_card">
+                        <div class="gif-item">
+                            <img src="/hdfc_payment_gateway/static/img/payment.gif"/>
+                        </div>
+                        <div class="details-item">
+                            <h3 class="successful">Payment Successfull</h3>
+                            <p class="payment_description">"Thank you for your payment. Your
+                                subscription
+                                has been activated."
+                            </p>
+                            <div id="ref">
+                                <p id="ref-text">Ref Number</p>
+                                <p id="ref-text-content">
+                                    <t t-esc="order_id"/>
+                                </p>
+                            </div>
+                            <div id="ref">
+                                <p id="ref-text">Payment Status</p>
+                                <p id="ref-text-content">
+                                    <t t-esc="payment_status"/>
+                                </p>
+                            </div>
+                            <div id="ref">
+                                <p id="ref-text">Payment Method</p>
+                                <p id="ref-text-content">
+                                    <t t-esc="payment_method_type"/>
+                                </p>
+                            </div>
+                            <div id="ref">
+                                <p id="ref-text">Amount</p>
+                                <p id="ref-text-content">₹
+                                    <t t-esc="amount"/>
+                                </p>
+                            </div>
+                            <p class="payment_description mt8">
+                                Your login credentials have been sent to the registered email address. Please check your
+                                inbox (and spam folder, if necessary).
+                            </p>
+                            <a t-att-href="'/payment/receipt/' + order_id" class="download_invoice login mt32">
+                                Download Invoice
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"
+                                     fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M12.9121 2.74835C13.111 2.74835 13.3018 2.82737 13.4424 2.96802C13.5831 3.10867 13.6621 3.29944 13.6621 3.49835V15.1884L16.8821 11.9684C16.9508 11.8947 17.0336 11.8356 17.1256 11.7946C17.2176 11.7536 17.3169 11.7315 17.4176 11.7298C17.5183 11.728 17.6183 11.7465 17.7117 11.7842C17.8051 11.8219 17.8899 11.8781 17.9611 11.9493C18.0324 12.0205 18.0885 12.1054 18.1262 12.1988C18.164 12.2921 18.1825 12.3922 18.1807 12.4929C18.1789 12.5936 18.1569 12.6929 18.1159 12.7849C18.0749 12.8769 18.0158 12.9597 17.9421 13.0284L13.4421 17.5284C13.3015 17.6688 13.1109 17.7477 12.9121 17.7477C12.7134 17.7477 12.5227 17.6688 12.3821 17.5284L7.88211 13.0284C7.80842 12.9597 7.74932 12.8769 7.70833 12.7849C7.66734 12.6929 7.64529 12.5936 7.64352 12.4929C7.64174 12.3922 7.66027 12.2921 7.69799 12.1988C7.73571 12.1054 7.79185 12.0205 7.86307 11.9493C7.93429 11.8781 8.01912 11.8219 8.11251 11.7842C8.2059 11.7465 8.30593 11.728 8.40663 11.7298C8.50733 11.7315 8.60665 11.7536 8.69865 11.7946C8.79065 11.8356 8.87345 11.8947 8.94211 11.9684L12.1621 15.1884V3.49835C12.1621 3.29944 12.2411 3.10867 12.3818 2.96802C12.5224 2.82737 12.7132 2.74835 12.9121 2.74835ZM3.91211 16.2484C4.11102 16.2484 4.30179 16.3274 4.44244 16.468C4.58309 16.6087 4.66211 16.7994 4.66211 16.9984V19.2484C4.66211 19.6462 4.82014 20.0277 5.10145 20.309C5.38275 20.5903 5.76428 20.7484 6.16211 20.7484H19.6621C20.0599 20.7484 20.4415 20.5903 20.7228 20.309C21.0041 20.0277 21.1621 19.6462 21.1621 19.2484V16.9984C21.1621 16.7994 21.2411 16.6087 21.3818 16.468C21.5224 16.3274 21.7132 16.2484 21.9121 16.2484C22.111 16.2484 22.3018 16.3274 22.4424 16.468C22.5831 16.6087 22.6621 16.7994 22.6621 16.9984V19.2484C22.6621 20.044 22.346 20.8071 21.7834 21.3697C21.2208 21.9323 20.4578 22.2484 19.6621 22.2484H6.16211C5.36646 22.2484 4.6034 21.9323 4.04079 21.3697C3.47818 20.8071 3.16211 20.044 3.16211 19.2484V16.9984C3.16211 16.7994 3.24113 16.6087 3.38178 16.468C3.52243 16.3274 3.7132 16.2484 3.91211 16.2484Z"
+                                          fill="#2584CC"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <style>
+                .download_invoice {
+                color: var(--primary);
+                font-size: 0.8125rem;
+                font-weight: 400;
+                background: transparent;
+                padding: 8px 16px;
+                border-radius: 100px;
+                border: none;
+                text-decoration: none;
+                margin-right: 10px;
+                font-family: 'Open Sans';
+                transition: background 200ms ease-in-out, color 200ms ease-in-out;
+                position: relative;
+                overflow: hidden;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                width:fit-content;
+                padding:8px 20px;
+                gap:5px;
+                z-index:1;
+                }
+                .download_invoice svg path{
+                transition:all 0.2s ease-in-out;
+                }
+                .download_invoice:hover svg path{
+                fill:white;
+                }
+
+                .download_invoice:hover {
+                color: white;
+                background: transparent;
+                }
+
+                .download_invoice:hover::after {
+                transform: scale(1);
+                transform-origin: left;
+                }
+
+                .download_invoice::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                border-radius: 50px;
+                background: white;
+                z-index: -1;
+                transition: transform .4s cubic-bezier(0.475,0.425,0,0.995);
+                border: 2px solid var(--primary);
+                transform: scaleX(1);
+                transform-origin: left;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                }
+
+                .download_invoice:hover::before {
+                transform: scale(1);
+                transform-origin: right;
+                }
+                .download_invoice::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                border-radius: 50px;
+                background: #2584cc;
+                z-index: -1;
+                transition: transform .4s cubic-bezier(0.475,0.425,0,0.995);
+                border: 1px solid transparent;
+                transform: scaleX(0);
+                transform-origin: right;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                }
+
+                .steps{
+                color: #4B5157;
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 35px;
+                }
+                #ref{
+                display: flex;
+                padding-top: 28px;
+                }
+                #ref-text{
+                color: #707070;
+                font-family: 'Open Sans';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29.977px;
+                margin: 0;
+                min-width: 200px;
+                }
+                #ref-text-content{
+                color: #121212;
+                text-align: center;
+                font-family: 'Open Sans';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 29.977px;
+                margin: 0;
+                text-transform: uppercase;
+                }
+                .successful{
+                color: #2C943B;
+                text-align: justify;
+                font-family: Urbanist;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                border-radius: 30px;
+                background: rgba(116, 252, 132, 0.20);
+                width: fit-content;
+                padding: 7px 28px;
+                }
+                .payment_card{
+                border-radius: 80px;
+                background: #FFF;
+                display:flex;
+                flex-wrap:wrap;
+                gap: 0;
+                padding: 50px 0 80px;
+                }
+                .gif-item{
+                width:400px;
+                }
+                .gif-item img{
+                width:100%;
+                border-radius: 80px;
+                }
+                .details-item {
+                width: 60%;
+                flex: 0 0 auto;
+                }
+                .payment_description{
+                color: #4B5157;
+                text-align: left;
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding-top: 15px;
+                margin: 0;
+                }
+
+            </style>
+        </t>
+    </template>
+</odoo>
