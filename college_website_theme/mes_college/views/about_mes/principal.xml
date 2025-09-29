@@ -1,0 +1,102 @@
+<odoo>
+    <data>
+        <record id="principal_mes" model="ir.ui.view">
+            <field name="name">Principal</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.principal_mes</field>
+            <field name="arch" type="xml">
+                <t name="principal" t-name="mes_college.principal_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title">Principal</h2>
+                                </div>
+
+                                <section class="section3" style="">
+                                    <div class=" prince_container pt32" style="height:950px;">
+                                        <div class="row">
+                                            <div class="col-md-3  my-auto padding-0 o_colored_level prince_block">
+                                                <div class="image-wrapper">
+                                                    <img src="/mes_college/static/img/Rajesh.jpeg" class="prince-img"
+                                                         loading="lazy"
+                                                         style=""/>
+                                                    <h2 class="faculty_name" style="text-align:center;">
+                                                        Dr. C Rajesh
+                                                    </h2>
+                                                    <div class="designation" style="padding-bottom: 10px">M.Sc., Ph.D.</div>
+                                                    <a href="/faculty_profile" class="readmore" id="principal_read">View
+                                                        Profile
+                                                        <span class="fa fa-long-arrow-right text-o-color-3"
+                                                              contenteditable="false"
+                                                              data-bs-original-title="" title=""
+                                                              aria-describedby="tooltip544395">
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 align-left padding-0 o_colored_level principal_block">
+                                                <div class="text_1">As we stand on the threshold of our institution's
+                                                    56th
+                                                    year, I feel honoured and privileged to reflect on the incredible
+                                                    journey of this institution, since its establishment in 1967. The
+                                                    enduring legacy of five decades serves as a testimony to our
+                                                    unwavering
+                                                    commitment and significant contributions to education. Nestled in
+                                                    the
+                                                    heart of ethereal land of natural beauty, our college has not only
+                                                    weathered the winds of time but has also thrived, becoming a beacon
+                                                    of
+                                                    academic and holistic excellence.
+                                                    The journey from our inception to the present day mirrors a
+                                                    continuous
+                                                    pursuit of excellence in curricular, co-curricular, and
+                                                    extracurricular
+                                                    realms. The evolution of the college, from an undergraduate
+                                                    institution
+                                                    to encompassing research departments, defines our academic feats.
+                                                    The
+                                                    dedication and commitment of our esteemed faculty infuse vitality
+                                                    and
+                                                    creativity into academic pursuits, concurrently aligning with our
+                                                    vision
+                                                    of continual progress and ambitious goals.
+                                                    The success of our college is not merely quantifiable in years;
+                                                    rather,
+                                                    it is encapsulated in the myriad stories of triumph, growth, and
+                                                    learning that echo within our classrooms and resonate across our
+                                                    campus.
+                                                    The unwavering support of the management has been instrumental in
+                                                    fostering the conductive environment of growth and success of this
+                                                    institution. I extend my heartfelt gratitude to every member of our
+                                                    college community—students, faculty, staff, and alumni—for their
+                                                    staunch
+                                                    support and dedication. As we embark on the journey ahead, let us
+                                                    continue to embrace innovation, uphold academic rigor, and foster a
+                                                    culture of inclusivity. Together, let us build on the legacy of the
+                                                    past
+                                                    and chart a course for an even brighter future.
+                                                    <br/>
+                                                    <span>Thank you for being an integral part of our
+                                                        remarkable journey.
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="principal_mes_page" model="website.page">
+            <field name="url">/principal</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="principal_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

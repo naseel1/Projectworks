@@ -1,0 +1,247 @@
+<odoo>
+    <data>
+        <record id="anti_sexual_harassment_cell" model="ir.ui.view">
+            <field name="name">Anti Sexual Harassment Cell</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.anti_sexual_harassment_cell</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.anti_sexual_harassment_cell_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <section class="s_tabs pb o_colored_level tabs_back tabs_back" data-vcss="001"
+                                         data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " id="tab_rows">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+                                            <div class="clubs">Statutory Cells
+                                            </div>
+                                            <div class="side-bar" id="sidebar" style="top: 5px;margin-bottom: 0;">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/anti_ragging_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Anti Ragging Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/anti_sexual_harassment_cell"
+                                                           data-original-title="" title="" class="nav-link active">
+                                                            Anti Sexual Harassment Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/students_grievance_redressal_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Students Grievance and Redressal Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/sc_st_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            SC/ST Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/minority_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Minority Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/obc_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            OBC Cell
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                <section id="departments_page">
+                                                    <h2 class="page_head" id="department_subhead"
+                                                        style="padding-left:0;">
+                                                        Anti Sexual Harassment Cell
+                                                    </h2>
+                                                    <div class="content_text" style="text-align:justify;padding: 0;">
+                                                        As per the guidelines of UGC and the Supreme Court an
+                                                        Anti-Sexual Harassment Committee has been established by the
+                                                        college to provide a healthy atmosphere to the students of the
+                                                        college.
+                                                        <br/>
+                                                        <br/>
+                                                        Anti Sexual Harassment Committee deals with issues relating to
+                                                        sexual harassment. The committee is formed to prevent sexual
+                                                        assault, rape and other related crimes on girl students.
+                                                        <br/>
+                                                        <br/>
+                                                        Goal : Prevention of sexual harassment to ensure safe
+                                                        environment for girl students for the studies.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong>Objectives:</strong>
+                                                        <ul>
+                                                            <li>
+                                                                To develop guidelines and norms for policies against
+                                                                sexual harassment
+                                                                To develop principles and procedures to combat sexual
+                                                                harassment
+                                                            </li>
+                                                            <li>
+                                                                To work out details for the implementation these
+                                                                policies.
+                                                            </li>
+                                                            <li>
+                                                                To prepare a detailed plan of actions, both short and
+                                                                long term
+                                                            </li>
+                                                            <li>To organize gender sensitization awareness programme.
+                                                            </li>
+                                                            <li>To deal with cases of discrimination and sexual
+                                                                harassment in a time bound manner, aiming at ensuring
+                                                                support services to the victimized
+                                                            </li>
+                                                        </ul>
+                                                        <strong>What is Sexual Harassment?</strong>
+                                                        <br/>
+                                                        <br/>
+                                                        For this purpose, sexual harassment includes unwelcome sexually
+                                                        determined behavior (whether directly or by implication) such
+                                                        as:
+                                                        <ul style="list-style-type:lower-alpha;line-height: 2.5rem;">
+                                                            <li>
+                                                                Verbal or Physical threats.
+                                                            </li>
+                                                            <li>Insulting, Abusive, Embarrassing or Patronizing behavior
+                                                                or Comments.
+                                                            </li>
+                                                            <li>Offensive gestures, Language, Rumors, Gossip or Jokes.
+                                                            </li>
+                                                            <li>Humiliating, Intimidating, Demeaning and/or Persistent
+                                                                criticism, Open hostility.
+                                                            </li>
+                                                            <li>Suggestive comments or Body language.</li>
+                                                            <li>
+                                                                Isolation or Exclusion from normal work or study place.
+                                                            </li>
+                                                            <li>
+                                                                Publishing, Circulating or Displaying pornographic,
+                                                                Racist, Sexually suggestive or Otherwise offensive
+                                                                pictures or Other materials.
+                                                            </li>
+                                                            <li>Unwanted physical contact, Ranging from an invasion of
+                                                                space to a serious assault (The above list is not
+                                                                intended to be exhaustive).
+                                                            </li>
+                                                            <br/>
+                                                            <br/>
+                                                            <strong>The following is also sexual harassment and is
+                                                                covered by the committee
+                                                            </strong>
+                                                            <li>
+                                                                Eve-teasing
+                                                            </li>
+                                                            <li>
+                                                                Unsavory remarks
+                                                            </li>
+                                                            <li>
+                                                                Jokes causing or likely to cause awkwardness or
+                                                                embarrassment
+                                                            </li>
+                                                            <li>
+                                                                Innuendos and taunts
+                                                            </li>
+                                                            <li>
+                                                                Gender based insults or sexist remarks
+                                                                Unwelcome sexual overtone in any manner such as over
+                                                                telephone (obnoxious telephone calls) and the like
+                                                            </li>
+                                                            <li>
+                                                                Touching or brushing against any part of the body and
+                                                                the like
+                                                            </li>
+                                                            <li>
+                                                                Displaying pornographic or other offensive or derogatory
+                                                                pictures, cartoons, pamphlets or sayings
+                                                            </li>
+                                                            <li>
+                                                                Forcible physical touch or molestation
+                                                            </li>
+                                                            <li>
+                                                                Physical confinement against one’s will and any other
+                                                                act likely to violate one’s privacy
+                                                            </li>
+                                                        </ul>
+                                                        <strong>Anti Sexual Harassment Cell</strong>
+                                                        <br/>
+                                                        <br/>assures all the
+                                                        complaints of the
+                                                        students, teaching and non-teaching staffs are treated with
+                                                        dignity and respect and the complaints should be maintained
+                                                        confidential.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong>False Reporting</strong>
+                                                        <br/>
+                                                        <br/>Intentionally making a false report or
+                                                        providing false information is grounds for indiscipline.
+                                                        <br/>
+                                                        <br/>
+                                                        <div class=" col-md-3">
+                                                            <div class="faculties">
+                                                                <div class="faculty_img">
+                                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                                         class="w-100 h-100"/>
+                                                                </div>
+                                                                <div
+                                                                        class="faculty_name">
+                                                                    Fathimath Thasleena K
+                                                                </div>
+                                                                <div class="designation">Nodal officer, Assistant
+                                                                    Professor,
+                                                                </div>
+                                                                <span style="font-size:12px;">Department
+                                                                    of Commerce
+                                                                    <br/>
+                                                                    Contact:9846242495
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <section class="naac_link aqar" style="width: fit-content;">
+                                                            <a href="#"
+                                                               class="readmore" target="_blank" id="naac_link">Register
+                                                                a
+                                                                complaint
+                                                                <span class="fa fa-long-arrow-right text-o-color-3"
+                                                                      data-bs-original-title=""
+                                                                      title="" aria-describedby="tooltip544395"></span>
+                                                            </a>
+                                                        </section>
+
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="anti_sexual_harassment_cell_page" model="website.page">
+            <field name="url">/anti_sexual_harassment_cell</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="anti_sexual_harassment_cell"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

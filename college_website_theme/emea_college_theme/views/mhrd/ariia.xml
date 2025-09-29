@@ -1,0 +1,99 @@
+<odoo>
+    <data>
+        <record id="ariia" model="ir.ui.view">
+            <field name="name">ARIIA</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.ariia</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.ariia">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                                <div class="clubs">ARIIA</div>
+                            </div>
+                            <div class="row" style="    margin-right: 0px;">
+                                <div class="col-md-9">
+                                    <h1 class="department_subhead" style="padding-left:35px;">ARIIA</h1>
+                                    <p class="page_text " style="padding-left:35px;text-align:justify;">Atal Ranking of
+                                        Institutions on Innovation Achievements (ARIIA) is an initiative of Ministry of
+                                        Education (MoE), Govt. of India to systematically rank all major higher
+                                        educational institutions and universities in India on indicators related to
+                                        “Innovation and Entrepreneurship Development” amongst students and faculties. It
+                                        is an initiative of the Ministry of Education, Government of India to
+                                        systematically rank all the major higher educational institutions and
+                                        universities in India on indicators related to “Innovation and Entrepreneurship
+                                        Development” amongst students and faculties. More than quantity, ARIIA focuses
+                                        on quality of innovations and tries to measure the real impact created by these
+                                        innovations nationally and internationally. Rank Categorisation: Two broad
+                                        categories: publicly funded institutions and private or self-financed
+                                        institutions. The publicly funded institutions have been further categorized
+                                        into: Institute of National Importance, Central Universities &amp; Central
+                                        Funded Technical Institutes. State University &amp; Deemed Universities
+                                        (Government &amp; Government Aided) Government and Government / Aided
+                                        College/Institutes The private or self-financed institutions have been
+                                        categorized further into: private or self-financed universities private or
+                                        self-financed college/institutes A 6th sub- category for higher educational
+                                        institutions for women has been introduced in 2020 to encourage women and
+                                        bringing gender parity in the areas of innovation and entrepreneurship.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image" loading="lazy" style=""/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <h1 class="department_subhead" style="padding-left:35px;">Reports</h1>
+                                <section style="background-image: none;" class="section_center">
+                                    <div class="row">
+                                        <div class="col o_colored_level" style="margin-top: 30px;">
+                                            <div class="main_table_box_2">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-label="Sl No">Sl No</th>
+                                                            <th data-label="Name of the Student">Caption</th>
+                                                            <th data-label="Date">Date</th>
+                                                            <th data-label="File">File</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-label="Sl No">1</td>
+                                                            <td data-label="Name of the Student">ARI-C-8191 Report
+                                                                2021
+                                                            </td>
+                                                            <td data-label="Name of the Programme">20-January-2021</td>
+                                                            <td data-label="Name of the Programme">View</td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="ariia_page" model="website.page">
+            <field name="url">/ariia</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="ariia"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

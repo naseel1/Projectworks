@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_pdf_uploader_admin" model="res.groups">
+        <field name="name">PDF Uploader</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>

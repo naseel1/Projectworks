@@ -1,0 +1,276 @@
+<odoo>
+    <data>
+        <record id="academic_monitoring_cell" model="ir.ui.view">
+            <field name="name">academic_monitoring_cell</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.academic_monitoring_cell</field>
+            <field name="arch" type="xml">
+                <t name="About" t-name="mes_college.academic_monitoring_cell_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title" style="text-align:left;padding-left: 30px;">Academic Monitoring Cell
+                                    </h2>
+                                    <div class=" row pt32 pb32" >
+                                        <section class="col-md-9">
+                                            <div>
+                                                <div class="content_text pb32">
+                                                    The Academic Monitoring Committee comprising of HODs of all major
+                                                    teaching departments, co-ordinator of Quality Assurance Cell
+                                                    oversees the academic activities in the college.
+
+                                                </div>
+                                            </div>
+                                            <div class="row" style="row-gap:2rem;justify-content:center;">
+                                                <div class=" col-md-3 management">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Dr. C. Rajesh
+
+                                                        </div>
+                                                        <div class="designation">
+                                                            Principal-Chairman
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class=" col-md-3 management">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Dr. Girish KP
+                                                        </div>
+                                                        <div class="designation">
+                                                            Coordinator(Mathematics)
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class=" col-md-3 management">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Dr. Sivadasan TP
+
+
+                                                        </div>
+                                                        <div class="designation">
+                                                            Joint Coordinator(History)
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </section>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/programmes" class="readmore" id="naac_link">Programmes
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/vision_mission"
+                                                   class="readmore" id="naac_link" target="_blank">Academic Calander
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Evaluation Policy
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                    <h2 class="main-head" style="text-align: left;padding-left: 30px;">
+                                        Members
+                                    </h2>
+                                    <div class="row pb32" style="row-gap:2rem;justify-content:center;">
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. Jaleel T K
+
+
+                                                </div>
+                                                <div class="designation">
+                                                    (Vice Principal)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Sajna A
+
+                                                </div>
+                                                <div class="designation">
+                                                    (HOD,English)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr.Azhar A
+                                                </div>
+                                                <div class="designation">
+                                                    Assistant Professor(IQAC Coordinator)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. Mohammed Mustafa TN
+
+                                                </div>
+                                                <div class="designation">
+                                                    HOD (Chemistry)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Ramadas M
+
+                                                </div>
+                                                <div class="designation">
+                                                    HOD (Economics)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. Resmi KR
+
+                                                </div>
+                                                <div class="designation">
+                                                    HOD (Physics)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. Sereena K
+                                                </div>
+                                                <div class="designation">
+                                                    HOD (Botany)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. Mohammed Rafi
+
+                                                </div>
+                                                <div class="designation">
+                                                    HOD (Commerce)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Preetha Rajagopalan
+                                                </div>
+                                                <div class="designation">
+                                                    HOD (Computer Application)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Muhsina K
+                                                </div>
+                                                <div class="designation">
+                                                    Coordinator (Internal Examination Cell)
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="academic_monitoring_cell_page" model="website.page">
+            <field name="url">/academic_monitoring_cell</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="academic_monitoring_cell"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

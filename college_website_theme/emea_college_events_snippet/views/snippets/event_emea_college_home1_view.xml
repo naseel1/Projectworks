@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="new_record_cover_emea">
+        <t t-call-assets="website.assets_frontend"/>
+        <t t-set="_cp" t-value="_cp or json.loads(_record.cover_properties)"/>
+        <t t-set="_name" t-value="_name or _record._name"/>
+        <t t-set="_id" t-value="_id or _record.id"/>
+        <t t-set="_bg" t-value="_bg or _record._get_background(height=_resize_height, width=_resize_width)"/>
+        <t t-set="default_cover_name">Cover</t>
+        <div t-att-data-name="display_opt_name or default_cover_name"
+             t-att-style="_cp.get('background_color_style')"
+             t-att-data-use_size="use_size"
+             t-att-data-use_filters="use_filters"
+             t-att-data-use_text_align="use_text_align"
+             t-att-data-res-model="request.env.user.has_group('website.group_website_publisher') and _name"
+             t-att-data-res-id="request.env.user.has_group('website.group_website_publisher') and _id"
+             t-attf-class="o_record_cover_container  #{_cp.get('background_color_class')} #{use_size and _cp.get('resize_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+            <a t-att-href="data['call_to_action_url']">
+                <section class="news-card o_colored_level" style="background-image: none;">
+                    <div class="news-card-image" t-field="record.event_image" t-options="{'widget': 'image',}"/>
+                    <div class="news_block">
+                        <h1 class="news_title" t-field="record.name"/>
+                        <div class="news_description" t-field="record.event_description"/>
+                    </div>
+                </section>
+            </a>
+            <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
+            <style>
+
+            </style>
+        </div>
+    </template>
+    <template id="dynamic_filter_template_blog_post_emea" name="Emea Highlight blogs">
+        <div t-foreach="records" t-as="data" class=" w-100 s_blog_posts_post">
+            <t t-set="record" t-value="data['_record']"/>
+            <t t-if="record.is_highlight">
+                <div class="s_blog_posts_post_cover_emea">
+                    <t t-call="emea_college_events_snippet.new_record_cover_emea">
+                        <t t-set="_record" t-value="record"/>
+                        <t t-set="use_filters" t-value="True"/>
+                        <t t-set="additionnal_classes" t-value="' '"/>
+                    </t>
+                </div>
+            </t>
+        </div>
+    </template>
+</odoo>

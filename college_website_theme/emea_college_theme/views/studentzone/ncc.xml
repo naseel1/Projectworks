@@ -1,0 +1,116 @@
+<odoo>
+    <data>
+        <record id="ncc" model="ir.ui.view">
+            <field name="name">NCC</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.ncc</field>
+            <field name="arch" type="xml">
+                <t name="NCC" t-name="emea_college_theme.ncc_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">NCC (National Cadet Corps)</h2>
+                                <h3 class="in_charge">In-Charge
+                                </h3>
+                                <section class="former_card"  >
+                                    <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                         class="card-image"/>
+                                    <div class="card-content">
+                                        <div class="name">Name Of Professor</div>
+                                        <div class="designation">Designation Of Professor
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="page_text pt32">
+                                    <h3 class="sub_head" style="">Objectives</h3>
+                                    <div class="page_text " style="text-align: left;">
+
+                                        The National Cadet Corps is Youth Wing of Armed Forces with its Headquarters at
+                                        New
+                                        Delhi, Delhi, India. It is open to school and college students on voluntary
+                                        basis.
+                                        National Cadet Corps is a Tri-Services Organization, comprising the Army, Navy
+                                        and
+                                        Air Wing, engaged in grooming the youth of the country into disciplined and
+                                        patriotic citizens. The National Cadet Corps in India is a voluntary
+                                        organization
+                                        which recruits cadets from high schools, higher secondary, colleges and
+                                        universities
+                                        all over India. The Cadets are given basic military training in small arms and
+                                        parades. The officers and cadets have no liability for active military service
+                                        once
+                                        they complete their course.NCC is the largest uniformed youth organization. Its
+                                        motto is 'Unity and Discipline'.
+                                        <br/>
+
+                                        <span style="font-weight:600;">NCC Motto</span>The discussion for motto of NCC
+                                        was
+                                        started in 11th central
+                                        advisory
+                                        meeting (CAD) held on 11 August 1978. At that time there were many mottos in
+                                        mind
+                                        like "Duty and Discipline"; "Duty, Unity and Discipline"; "Duty and Unity";
+                                        "Unity
+                                        and Discipline". later, at the 12thCAD meeting on 12 Oct 1980 they selected and
+                                        declared "Unity and Discipline" as motto for the NCC.[4] In living up to its
+                                        motto,
+                                        the NCC strives to be and is one of the greatest cohesive forces of the nation,
+                                        bringing together the youth hailing from different parts of the country and
+                                        moulding
+                                        them into united, secular and disciplined citizens of the nation.
+                                        <br/>
+
+                                        EMEA College NCC Unit has been established in 2013 with an intake capacity of
+                                        total
+                                        54 cadets enrolling 18 cadets every year. The enrolment for the year 2018-19 was
+                                        done on 30th July 2018. More than 120 students turned out, and 18 students were
+                                        enlisted following physical test and an interview. Crowning ceremony was held
+                                        and 13
+                                        cadets were given ranks and subsequent duties
+                                        <br/>
+
+
+                                    </div>
+                                </div>
+                                <section class="pb32" style="text-align:center;">
+                                    <h2 class=" page_head pt32">NCC REPORTS</h2>
+                                    <a href="#" target="_blank" title="Download"
+                                       data-target="tooltip" class="readmore" id="readmore">
+                                        NCC Report 2014-23
+                                    </a>
+                                </section>
+                                <h2 class="page_head pt32">NCC Activities</h2>
+                                <div class="achievement">
+                                    <section class="achievement-card">
+                                        <div class="achievement-card-image">
+                                            <img src="/emea_college_theme/static/img/achivement.jpg" alt=""/>
+                                        </div>
+                                        <div class="achievement-card-box">
+                                            <h1 class="achievement-card-name">Activity Head</h1>
+                                            <p class="achievement-card-p">
+                                                The college has proudly secured top rankings in a recent national
+                                                academic
+                                                assessment, highlighting its commitment to excellence.
+                                            </p>
+                                            <a href="#"
+                                               class="readmore pos_relative">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="ncc_page" model="website.page">
+            <field name="url">/ncc</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="ncc"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

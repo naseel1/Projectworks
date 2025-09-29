@@ -1,0 +1,61 @@
+<odoo>
+    <data>
+        <record id="aishe" model="ir.ui.view">
+            <field name="name">AISHE</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.aishe</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.aishe_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="  pb32 col-md-12">
+
+                                        <h2 class="main-head">
+                                            AISHE
+                                        </h2>
+                                        <div class="row">
+                                            <section class="naac_link">
+                                                <a href="mes_college/static/img/AISHE-CERTIFICATE-2021-2022-Certifcate-C-8127.pdf"
+                                                   class="readmore" target="_blank"
+                                                   id="naac_link">AISHE Certificate 2021-2022
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="mes_college/static/img/AISHE-CERTIFICATE-2020-2021-C-8127-2022.pdf"
+                                                   class="readmore" id="naac_link" target="_blank">AISHE Certificate
+                                                    2020-2021
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="mes_college/static/img/AISHE-C-8127-2020.pdf"
+                                                   class="readmore" target="_blank" id="naac_link">AISHE Certificate
+                                                    2019-2020
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+
+
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="aishe_page" model="website.page">
+            <field name="url">/aishe</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="aishe"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

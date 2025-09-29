@@ -1,0 +1,51 @@
+<odoo>
+    <!-- Form View for Image Gallery -->
+    <record id="view_news_paper_gallery_config_form" model="ir.ui.view">
+        <field name="name">news.paper.gallery.config.form</field>
+        <field name="model">news.paper</field>
+        <field name="arch" type="xml">
+            <form string="News Paper Gallery">
+                <sheet>
+                    <group>
+                        <field name="paper" widget="News Paper" required="1" class="oe_avatar"/>
+                        <field name="date" required="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Image Gallery -->
+    <record id="view_news_paper_gallery_config_tree" model="ir.ui.view">
+        <field name="name">news.paper.gallery.config.tree</field>
+        <field name="model">news.paper</field>
+        <field name="arch" type="xml">
+            <tree string="News Paper Gallery">
+                <field name="row_number" string="No."/>
+                <field name="paper" widget="News Paper" required="1" class="oe_avatar"/>
+                <field name="date" required="1"/> <!-- Updated to use date instead of sequence -->
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Image Gallery -->
+    <record id="action_news_paper_gallery" model="ir.actions.act_window">
+        <field name="name">News Paper Gallery</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">news.paper</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_news_paper_gallery_config_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Images Found
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Items for Image Gallery -->
+    <menuitem id="menu_news_paper_gallery_root" name="News Paper Gallery" parent="website.menu_website_configuration"
+              sequence="16"/>
+    <menuitem id="menu_news_paper_galleries" name="Manage News Paper Images" parent="menu_news_paper_gallery_root"
+              action="action_news_paper_gallery" sequence="16"
+              groups="news-paper-gallery.group_news_paper_admin"/>
+</odoo>

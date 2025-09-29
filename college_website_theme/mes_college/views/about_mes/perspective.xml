@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+        <record id="perspective_plan_mes" model="ir.ui.view">
+            <field name="name">Perspective Plan</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.perspective_plan_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.perspective_plan_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-6">
+                                        <div>
+                                            <h2 class="main-head" style="text-align: left;padding-left: 30px;">
+                                                Perspective Plan
+                                            </h2>
+                                            <section class="d-flex o_colored_level margin_30 ssr"
+                                                     style="background-image: none;">
+                                                <div class="col-md-6 programme_link">
+                                                    Perspective Plan 2020-2021
+                                                </div>
+                                                <a href="#"
+                                                   target="_blank" class="readmore" id="view">View
+                                                </a>
+                                            </section>
+                                            <section class="d-flex o_colored_level margin_30 ssr"
+                                                     style="background-image: none;">
+                                                <div class="col-md-8 programme_link">
+                                                    Perspective Plan
+                                                </div>
+                                                <a href="#"
+                                                   target="_blank" class="readmore" id="view">View
+                                                </a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="perspective_plan_mes_page" model="website.page">
+            <field name="url">/perspective_plan</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="perspective_plan_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

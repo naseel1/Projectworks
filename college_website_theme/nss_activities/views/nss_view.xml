@@ -1,0 +1,72 @@
+<odoo>
+    <!-- nss Form View -->
+    <record id="view_nss_manage_config_form" model="ir.ui.view">
+        <field name="name">nss.manage.config.form</field>
+        <field name="model">nss.manage</field>
+        <field name="arch" type="xml">
+            <form string="Nss">
+                <sheet>
+                    <group>
+                        <field name="incharge_name"/>
+                        <field name="incharge_image"/>
+                        <field name="designation"/>
+
+                    </group>
+
+                    <notebook>
+                        <page string="Reports">
+                            <field name="report_ids">
+                                <tree editable="bottom">
+                                    <field name="report_title"/>
+                                    <field name="report_file" filename="report_filename"/>
+                                    <field name="report_filename" readonly="1"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Activities">
+                            <field name="activity_ids" mode="tree,form">
+                                <tree>
+                                    <field name="activity_title"/>
+                                </tree>
+                                <form string="Activity Details">
+                                    <group>
+                                        <field name="activity_title"/>
+                                        <field name="activity_description"/>
+                                    </group>
+                                    <group string="Activity Images">
+                                        <field name="image_ids">
+                                            <tree editable="bottom">
+                                                <field name="image"/>
+                                            </tree>
+                                        </field>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- nss Menu Action (links to single record) -->
+    <record id="nss_manage_action" model="ir.actions.act_window">
+        <field name="name">Nss</field>
+        <field name="res_model">nss.manage</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_nss_manage_config_form"/>
+        <field name="res_id" ref="nss_single_record"/>
+        <field name="context">{'create': False}</field>
+    </record>
+
+    <menuitem id="menu_nss_activity_root" name="NSS" parent="website.menu_website_configuration"
+              sequence="17"/>
+    <!-- nss Menu -->
+    <menuitem id="menu_nss_manage"
+              name="NSS Manage"
+              parent="menu_nss_activity_root"
+              action="nss_manage_action"
+              sequence="25"
+              groups="nss_activities.group_nss_activities_admin"/>
+</odoo>

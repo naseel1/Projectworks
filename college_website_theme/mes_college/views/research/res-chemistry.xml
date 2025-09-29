@@ -1,0 +1,263 @@
+<odoo>
+    <data>
+        <record id="res-chemistry" model="ir.ui.view">
+            <field name="name">Research Centre - Chemistry</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.res-chemistry</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.res-chemistry_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Research Centre - Chemistry
+                                                </h2>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    <strong style="font-size: 20px;line-height: 40px;">Preface
+                                                    </strong>
+                                                    <br/>
+                                                    India enjoys a reputation across the globe of being the Nation,
+                                                    which produces World Class Engineers &amp; Scientists. Research
+                                                    centre
+                                                    in the Department of Chemistry under the University of Calicut got
+                                                    recognition in 2017, fosters a culture of Research &amp; Development
+                                                    amongst its students and faculties. We believe Research and
+                                                    Innovation strengthen the fabric of Innovative thinking and
+                                                    contributes to the progress of scientific society and mankind as a
+                                                    whole. The Research centre supports and coordinates scientific
+                                                    research by its teams and laboratories both in chemistry and at the
+                                                    interface between chemistry and other disciplines.
+                                                    <br/>
+                                                    <br/>
+                                                    The role of the
+                                                    centre is to help in order to improve knowledge in every field of
+                                                    chemistry, from theory to synthesis, from fundamental questions to
+                                                    process development, and from atoms to materials. Progress in
+                                                    chemistry provides a better understanding of our environment,
+                                                    enabling us to act upon it, while it directly affects our daily
+                                                    lives through the presence of strong chemical industry
+                                                    (pharmaceuticals, agrochemicals, nanomaterials, polymers,
+                                                    electronics etc).
+
+
+                                                </div>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    <strong style="font-size: 20px;line-height: 40px;">Mission
+                                                    </strong>
+                                                    <br/>
+                                                    Synthesizing new compounds/materials, understanding the rules that
+                                                    govern chemical reactions, and predicting the relationships between
+                                                    structures and the physical and chemical properties of molecular and
+                                                    supramolecular systems are the fundamental missions of the centre.
+                                                    These missions are organized into different research areas:
+                                                    <ul>
+                                                        <li>
+                                                            Synthetic Organic Chemistry
+                                                        </li>
+                                                        <li>
+                                                            Green Chemistry
+                                                        </li>
+                                                        <li>
+                                                            Medicinal Chemistry
+                                                        </li>
+                                                        <li>
+                                                            Nano Chemistry
+                                                        </li>
+                                                        <li>
+                                                            Natural Products
+                                                        </li>
+                                                        <li>
+                                                            Coordination Chemistry
+                                                        </li>
+                                                        <li>
+                                                            Polymer Chemistry
+                                                        </li>
+                                                        <li>
+                                                            Chemistry for sustainable development
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    <strong style="font-size: 20px;line-height: 40px;">Strategic
+                                                        Priorities
+                                                    </strong>
+                                                    <br/>
+
+                                                    To meet the challenges associated with the future of our planet, our
+                                                    fast-changing society must alter its global behaviour and find
+                                                    environmentally sustainable alternatives/solutions. In this context,
+                                                    our research centre propose innovative research areas in interaction
+                                                    with other disciplines in an effort to satisfy society’s needs like
+
+                                                    <ul>
+                                                        <li>
+                                                            Energy management: Developing renewable resources,
+                                                            alternative
+                                                            fuels, and materials for energy production and storage.
+                                                        </li>
+                                                        <li>
+                                                            Health improvement: Designing of new organic molecules
+                                                            having
+                                                            medicinal importance and helping to develop new diagnostic
+                                                            and
+                                                            therapeutic agents.
+                                                        </li>
+                                                        <li>
+                                                            Environmental preservation: Inventing processes with low
+                                                            environmental impact, setting new standards in pollutant
+                                                            monitoring,
+                                                            proposing innovative clean-up processes for polluted
+                                                            environments.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    <strong style="font-size: 20px;line-height: 40px;">Research Progress
+                                                    </strong>
+                                                    <br/>
+                                                    Dr. Mohammed Musthafa. T.N, Assistant Professor, Department of
+                                                    Chemistry &amp; Dr.Sreenivasan. K.P, Assistant Professor, Department
+                                                    of
+                                                    Chemistry has been recognized as Research Guides under the
+                                                    University of Calicut in the year 2017. Mr. C. Abdul Khader has been
+                                                    registered for Ph.D. programme in Chemistry under the Co-supervision
+                                                    of Dr. Mohammed Musthafa. TN on 01-01-2018. Ms. Snigdha. K has been
+                                                    registered for Ph.D. programme in Chemistry under the Supervision of
+                                                    Dr. Mohammed Musthafa. TN on 10-12-2018. Ms. Julia. A.P, Assistant
+                                                    Professor, Department of Chemistry is presently working under the
+                                                    Co-Supervision of Dr. Sreenivasan .K.P. All the students have got
+                                                    fruitful results and are going to publish their results in various
+                                                    reputed international journals soon. Ms. Nusrath. P, Ms. Sajna.P,
+                                                    Ms. Fausia. K.H, Assistant Professors, Department of Chemistry are
+                                                    making the use of instrumental and chemical facilities of research
+                                                    centre continuously for the completion of their Ph.D. programmes at
+                                                    various centers under the University of Calicut. Also, our bachelors
+                                                    and masters students are using the facilities for the successful
+                                                    completion of student research projects, Minor research projects
+                                                    from various funding agencies like UGC, KSCSTE etc. Faculties and
+                                                    students from other departments and institutions are also availing
+                                                    the facilities of the research centre.
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/res-chemistry" class="readmore" id="naac_link">
+                                                    Chemistry
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/res-history"
+                                                   class="readmore" id="naac_link" target="_blank">
+                                                    History
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Economics
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Facilities
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Guides
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+                                            <h2 class="main-head">Research Guides</h2>
+                                            <div class=" col-md-8" style="margin:auto;">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div
+                                                            class="faculty_name">
+                                                        Name Of Guide
+                                                    </div>
+                                                    <div class="designation">Designation</div>
+                                                    <a href="#"
+                                                       class="view_profile">View Profile
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Research Scholars
+                                    </h2>
+                                    <div class=" pb32">
+                                        <table class="milestone scholar" cellspacing="0" cellpadding="7">
+                                            <thead>
+                                                <tr>
+                                                    <th style="min-width:80px;">SI No</th>
+                                                    <th>
+                                                        Name of the Ph.D Scholar
+                                                    </th>
+                                                    <th>
+                                                        Name of Supervisor
+                                                    </th>
+                                                    <th>
+                                                        Mode of Ph.D (Full time/Parttime)
+                                                    </th>
+                                                    <th>
+                                                        Registration Number
+                                                    </th>
+                                                    <th>
+                                                        Date of Registration
+                                                    </th>
+                                                    <th style="min-width:350px;">
+                                                        Research Topic
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr valign="top">
+                                                    <td style="height: 24px;" width="80">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;" width="350">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="res-chemistry_page" model="website.page">
+            <field name="url">/res-chemistry</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="res-chemistry"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

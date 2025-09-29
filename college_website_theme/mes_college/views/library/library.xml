@@ -1,0 +1,466 @@
+<odoo>
+    <data>
+        <record id="library" model="ir.ui.view">
+            <field name="name">library</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.library</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.library_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Library
+                                                </h2>
+                                                <div class="content_text" style="text-align:left;padding: 0;">
+                                                    The library of M.E.S Kalladi College started functioning in the very
+                                                    first year of establishment in
+                                                    1967, in the early years it housed in a room in the main block, in
+                                                    1990 the
+                                                    library own an individual building. Now the library has total plinth
+                                                    area of
+                                                    5700 square feet with centralized air condition. The library have a
+                                                    collection of 40528 books,40 subject journals, 12 Magzines and 6
+                                                    newspapers.
+                                                    <br/>
+                                                    <br/>
+
+                                                    The college has more than 2500 students with 115 faculty members.
+                                                    The
+                                                    library fully automated with RFID Technology, All members of the
+                                                    college
+                                                    library provided a RFID Tagged ID cards. It is the very first
+                                                    academic
+                                                    library in the district and third in the state with these
+                                                    facilities.
+                                                    <br/>
+                                                    <br/>
+
+                                                    Through Institutional membership more than 6000+ e-journals and
+                                                    31,35,000+
+                                                    e-books can be accessed under the project entitled “National Library
+                                                    and
+                                                    Information Services Infrastructure for scholarly Content (N-LIST)”
+                                                    of
+                                                    INFLIBNET Centre, Ahemdabad.
+                                                    <br/>
+                                                    <br/>
+
+                                                    E-learning area is equipped with 25 systems to access the
+                                                    e-resources.
+                                                    Knowledge resource centre has Wi-Fi connectivity which enables the
+                                                    users to
+                                                    use their own laptops within the library.
+                                                    <br/>
+                                                    <br/>
+                                                    <strong>LIBRARY HOUR</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    Working Days 8.30 AM to 5.30 PM
+                                                    <br/>
+                                                    Saturday: 9.00 AM to 3.00 PM
+                                                    <br/>
+                                                    <br/>
+                                                    <strong>Mission and Vision</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    Libraries are engaged in learning and discovery as essential
+                                                    participants in the educational community. We develop, organize,
+                                                    provide access to and preserve materials to meet the needs of
+                                                    present and future generations of students and scholars.
+                                                    <br/>
+                                                    <br/>
+                                                    The library will be the hub and academic town square of the college
+                                                    by being an essential component of the academic and creative life of
+                                                    the institution. We will excel in: collecting, preserving, and
+                                                    providing access to the best scholarly and educational resources;
+                                                    providing high quality, innovative services; and creating a
+                                                    welcoming and comfortable physical environment. We will foster an
+                                                    atmosphere that encourages diversity, excellence, and continued
+                                                    growth in finding ways to surpass our own high standards.
+                                                    <br/>
+                                                    <br/>
+                                                    <strong>Facilities and services</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    <ul>
+                                                        <li>
+                                                            <strong>KOHA ILM Software:</strong>
+                                                            Latest version 18.11
+                                                        </li>
+                                                        <li>
+                                                            <strong>RFID Enabled Library:</strong>
+                                                            Circulation, entry and exit of users, and stock verification
+                                                            through RFID technology.
+                                                        </li>
+                                                        <li>
+                                                            <strong>E-Learning Facility:</strong>
+                                                            25 systems with Wi-Fi access.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Web OPAC:</strong>
+                                                            Online searching facility for students and teachers.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Digital Library and Institutional Repository:
+                                                            </strong>
+                                                            DSpace Digital Library software.
+                                                        </li>
+                                                        <li>
+                                                            <strong>E-Books:</strong>
+                                                            40,00,000
+                                                        </li>
+                                                        <li>
+                                                            <strong>E-Journals:</strong>
+                                                            6000+ (INFLIBNET-NLIST)
+                                                        </li>
+                                                        <li>
+                                                            <strong>Email Reminder:</strong>
+                                                            Circulation due and renewal reminders.
+                                                        </li>
+                                                        <li>
+                                                            <strong>New Arrival Display</strong>
+                                                        </li>
+                                                        <li>
+                                                            <strong>Photocopying, Printing, and Scanning Facility
+                                                            </strong>
+                                                        </li>
+                                                        <li>
+                                                            <strong>Locker Facility</strong>
+                                                        </li>
+                                                        <li>
+                                                            <strong>CCTV Surveillance</strong>
+                                                        </li>
+                                                        <li>
+                                                            <strong>Career Corner:</strong>
+                                                            Exclusive collection of career-oriented books and journals.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Reading Corner:</strong>
+                                                            Exclusive literature collection in different languages such
+                                                            as English, Malayalam, Hindi, and Arabic.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Faculty Area:</strong>
+                                                            Special area for teachers.
+                                                        </li>
+                                                        <li>
+                                                            <strong>General Reference Area:</strong>
+                                                            Laptop charging facilities and broadband connection.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Software and Specific Area for Differently-abled
+                                                                Students
+                                                            </strong>
+                                                        </li>
+                                                        <li>
+                                                            <strong>Plagiarism Checking Service:</strong>
+                                                            URKUND software for students, teachers, and research
+                                                            scholars.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Selective Dissemination of Information (SDI)
+                                                                Service:
+                                                            </strong>
+                                                            Teachers and research scholars can register their topic of
+                                                            interest in the library; they will get personalized email
+                                                            alerts about new developments in their area.
+                                                        </li>
+                                                    </ul>
+                                                    <br/>
+                                                    <br/>
+                                                    <strong>Activities</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    <strong>Collection</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    The major aim of an academic library is to facilitate the needs of
+                                                    the student community and to develop knowledge and skills for their
+                                                    future and make them able to be part of creative and innovative
+                                                    society. For the career and academic growth of students; library
+                                                    have a special collection in which the carrier oriented books and
+                                                    journals are provided.
+                                                    <br/>
+                                                    <br/>
+                                                    The library has a Webster’s Dictionary (35 Volume) exclusively for
+                                                    Blind students with Braille, it is a rare document and preserved in
+                                                    the library.
+                                                    <br/>
+                                                    <br/>
+                                                    It also have a rare collection of Malayalam books published by
+                                                    Kerala basha Institute, in which the prominent books in different
+                                                    subjects such as science technology and social science in different
+                                                    languages are translated to Malayalam and make them available to a
+                                                    large community who doesn’t familiar with the foreign languages.
+                                                    <br/>
+                                                    <br/>
+                                                    The major reports published by both state and central government
+                                                    related to educational aspects are available in the Institutional
+                                                    repository of the college library.
+                                                    <br/>
+                                                    <br/>
+                                                    The Palm leaf engravings of Rig-Veda also available in the library.
+                                                    <br/>
+                                                    <table class="milestone scholar pt32 pb32" cellspacing="0"
+                                                           cellpadding="7" style="width:100%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    Library resources
+                                                                </th>
+                                                                <th>Number</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr style="height: 24px;">
+                                                                <td style="height: 24px; width: 225.133px;">Books
+                                                                </td>
+                                                                <td style="height: 24px; width: 122.75px;">
+                                                                    40528
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Subject journals</td>
+                                                                <td>40</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Magazines</td>
+                                                                <td>12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>CD ROMs</td>
+                                                                <td>187</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rare Books</td>
+                                                                <td>540</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Special collection(Carrier Corner)</td>
+                                                                <td>1252</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Project Reports.</td>
+                                                                <td>9</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Palm leaf engravings</td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <strong>E Resources and Institutional Repository</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    Electronic resources (or e-resources) are materials in digital
+                                                    format accessible electronically. e-resources are electronic
+                                                    journals (e-journal), electronic books (e-book) online databases in
+                                                    varied digital formats are maintained in the library.
+                                                    <br/>
+                                                    <br/>
+                                                    Using D Space an open source institutional repository library aid
+                                                    the management and dissemination of the increasingly copious amount
+                                                    of scholarly electronic resources produced by academics.
+                                                    <br/>
+                                                    <br/>
+                                                    N-List E-Books:<a href="http://nlist.inflibnet.ac.in/">
+                                                    http://nlist.inflibnet.ac.in/
+                                                </a>40.00,000+
+                                                    <br/>
+                                                    <table class="milestone scholar pt32 pb32"
+                                                           style="width:100%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    E-Resorces
+                                                                </th>
+                                                                <th>Number</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr style="height: 24px;">
+                                                                <td>N-List E-Journals:
+                                                                    <a href="http://nlist.inflibnet.ac.in/">
+                                                                        http://nlist.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td style="height: 24px; width: 122.75px;">
+                                                                    6000+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Shodganga:
+                                                                    <a href="http://shodhganga.inflibnet.ac.in/">
+                                                                        http://shodhganga.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td>223971 thesis</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ShodaSindhu:
+                                                                    <a href=" https://www.inflibnet.ac.in/ess/">
+                                                                        https://www.inflibnet.ac.in/ess/
+                                                                    </a>
+                                                                </td>
+                                                                <td>10000+ journals 31350000+ e books</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Shod Gangotri:
+                                                                    <a href="https://shodhgangotri.inflibnet.ac.in/">
+                                                                        https://shodhgangotri.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td>6450 synopsis</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ePG Pathshala:
+                                                                    <a href="https://epgp.inflibnet.ac.in/">
+                                                                        https://epgp.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td>70 subjects</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DOAJ:
+                                                                    <a href="https://doaj.org/">https://doaj.org/</a>
+                                                                </td>
+                                                                <td>12980</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>J-Gate:
+                                                                    <a href="https://jgateplus.com/home/">
+                                                                        https://jgateplus.com/home/
+                                                                    </a>
+                                                                </td>
+                                                                <td>50,164</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>International journal of Biological Sciences:
+                                                                    <a href="http://www.ijbs.com/">
+                                                                        http://www.ijbs.com/
+                                                                    </a>
+                                                                </td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>J-Store:
+                                                                    <a href="https://www.jstor.org/">
+                                                                        https://www.jstor.org/
+                                                                    </a>
+                                                                </td>
+                                                                <td>20,00,000+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>OAIster:
+                                                                    <a href="https://www.oclc.org/en/oaister.html">
+                                                                        https://www.oclc.org/en/oaister.html
+                                                                    </a>
+                                                                </td>
+                                                                <td>70,00000+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PubChem:
+                                                                    <a href="https://pubchem.ncbi.nlm.nih.gov/">
+                                                                        https://pubchem.ncbi.nlm.nih.gov/
+                                                                    </a>
+                                                                </td>
+                                                                <td>123535</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>RePEc:
+                                                                    <a href="http://repec.org/">http://repec.org/</a>
+                                                                </td>
+                                                                <td>3000+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Spriger LinK:
+                                                                    <a href="https://link.springer.com/">
+                                                                        https://link.springer.com/
+                                                                    </a>
+                                                                </td>
+                                                                <td>324</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>NISCAIR Journals:
+                                                                    <a href="https://www.niscair.res.in/sciencecommunication/researchjournals/rejour/rejour1-del.htm/">
+                                                                        https://www.niscair.res.in/sciencecommunication/researchjournals/rejour/rejour1-del.htm
+                                                                    </a>
+                                                                </td>
+                                                                <td>16</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DRDO Journals:
+                                                                    <a href="https://www.drdo.gov.in/drdo/English/index.jsp?pg=journals.jsp">
+                                                                        https://www.drdo.gov.in/drdo/English/index.jsp?pg=journals.jsp
+                                                                    </a>
+                                                                </td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <strong>Library Committee</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    A Library Advisory Committee has been constituted with Six senior
+                                                    faculty members representing different disciplines, Librarian as the
+                                                    Coordinator and Principle as the Chairman
+                                                </div>
+                                                <iframe loading="lazy" style="border: 0;"
+                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6444341260226!2d76.43661282039488!3d10.99018811098465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d5a16aaaaaab%3A0xf0df686ddb8b1045!2sM.E.S+Kalladi+College!5e0!3m2!1sen!2sin!4v1477896577791"
+                                                        width="100%" height="300px" frameborder="0"
+                                                        allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-3">
+                                            <div style="padding:40px 0;text-align: center;font-size: 20px;">
+                                                <strong>College Librarian</strong>
+                                            </div>
+                                            <div class="faculties pt32" style="height:auto;">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100" style="object-fit:contain;"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    FAIZUNNIZA Y
+                                                </div>
+                                                <div class="designation">College Librarian
+                                                </div>
+                                                <span style="font-size:12px;">MLIS, B.Ed, UGC NET
+                                                </span>
+                                                <br/>
+                                                <span style="font-size:12px;">faizun.sameer@gmail.com 8078869557
+                                                </span>
+                                            </div>
+                                            <div style="padding-top:20px;">
+                                                <strong>Library Assistant:
+                                                </strong>
+                                                T.Usman
+                                                <br/>
+                                                <strong>Library Assistant:</strong>
+                                                T.P.
+                                                Abdul
+                                                Kareem
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="library_page" model="website.page">
+            <field name="url">/library</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="library"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

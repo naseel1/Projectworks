@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+,,,,,,,,
+access_news_announcement_public,News.Announcement,model_news_announcement,,1,1,1,1
+access_news_announcement_user,News.Announcement,model_news_announcement,group_news_announcement_admin,1,1,1,1
+
+

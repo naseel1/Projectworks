@@ -1,0 +1,177 @@
+<odoo>
+    <data>
+        <record id="res-history" model="ir.ui.view">
+            <field name="name">Research Centre - History</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.res-history</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.res-history_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Research Centre - History
+                                                </h2>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    <strong style="font-size: 20px;line-height: 40px;">Preface
+                                                    </strong>
+                                                    <br/>
+                                                    The Department of history is an illumined faculty of MES Kalladi
+                                                    College with the reputed tradition of its own. This department has a
+                                                    major role in uplifting the social and educational status of the
+                                                    people of Mannarkkad. The history of the department goes to the very
+                                                    inception of the college in 1967. The first principal of this
+                                                    college, Dr.Ibrahim Kunju was a historian. The Degree course in
+                                                    history was started in 1971/72 &amp; Post Graduation in 1983/84. The
+                                                    department has a flair of achieving 100% results both in UG &amp;
+                                                    PG,
+                                                    which was actually cherished with rare exceptions. Presently it is
+                                                    one of the best departments under the University of Calicut with a
+                                                    lot of research activities and projects. This department profile
+                                                    intends to explain a brief history of the department, staff and
+                                                    students detail, courses offered with subjects of study, successive
+                                                    heads of the department, a briefing of the retired teachers,
+                                                    academic excellence, notable events, extension activities and the
+                                                    like. The profile also gives the picture of various assessment
+                                                    methods, result analysis, tutorial system, library details and other
+                                                    community services.
+                                                    <br/>
+                                                    <br/>
+                                                    The Department of History was started with the aim of fostering the
+                                                    tradition and culture of our country and inculcating a spirit of
+                                                    patriotism and nationalism among the youth. History was a major
+                                                    discipline of Pre Degree from the very beginning of this college in
+                                                    1967. In 1971 this department was upgraded and started degree
+                                                    courses in history. Later in 1984 Post Graduate Course (MA History)
+                                                    was started by the department with 15 students.
+                                                    <br/>
+                                                    <br/>
+                                                    The department of history got recognition as a research center in
+                                                    05-09-2016. The department is specializing in tribal studies since
+                                                    it is adjacent to Attappadi tribal settlements. It fosters research
+                                                    aptitude of the students of locality and makes awareness among the
+                                                    public about these cultural traits.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/res-chemistry" class="readmore" id="naac_link">
+                                                    Chemistry
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/res-history"
+                                                   class="readmore" id="naac_link" target="_blank">
+                                                    History
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Economics
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Facilities
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Guides
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+                                            <h2 class="main-head">Research Guides</h2>
+                                            <div class=" col-md-8" style="margin:auto;">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div
+                                                            class="faculty_name">
+                                                        Name Of Guide
+                                                    </div>
+                                                    <div class="designation">Designation</div>
+                                                    <a href="#"
+                                                       class="view_profile">View Profile
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Research Scholars
+                                    </h2>
+                                    <div class=" pb32">
+                                        <table class="milestone scholar" cellspacing="0" cellpadding="7">
+                                            <thead>
+                                                <tr>
+                                                    <th style="min-width:80px;">SI No</th>
+                                                    <th>
+                                                        Name of the Ph.D Scholar
+                                                    </th>
+                                                    <th>
+                                                        Name of Supervisor
+                                                    </th>
+                                                    <th>
+                                                        Mode of Ph.D (Full time/Parttime)
+                                                    </th>
+                                                    <th>
+                                                        Registration Number
+                                                    </th>
+                                                    <th>
+                                                        Date of Registration
+                                                    </th>
+                                                    <th style="min-width:350px;">
+                                                        Research Topic
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr valign="top">
+                                                    <td style="height: 24px;" width="80">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;" width="350">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="res-history_page" model="website.page">
+            <field name="url">/res-history</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="res-history"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

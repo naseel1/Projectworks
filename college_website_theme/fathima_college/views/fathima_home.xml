@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="fathima_website" name="Fathima Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure  o_editable">
+                <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+                    <div class="s_carousel s_carousel_default carousel slide home_carousel pointer-event"
+                         data-bs-interval="10000" id="myCarousel1717674477053" style="background-image: none;">
+
+                        <ol class="carousel-indicators o_we_no_overlay" id="home_indicators">
+                            <li data-bs-slide-to="0" data-bs-target="#myCarousel1717674477053" class="active"
+                                aria-current="true"/>
+                            <li data-bs-slide-to="1" data-bs-target="#myCarousel1717674477053"/>
+                            <li data-bs-slide-to="2" data-bs-target="#myCarousel1717674477053"/>
+                        </ol>
+
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item o_colored_level oe_img_bg o_bg_img_center active"
+                                 style="background-image: url(&quot;/fathima_college/static/img/sec1.jpg&quot;);"
+                                 data-name="Slide">
+                                <div class="container">
+                                    <div class="image_light"/>
+                                    <div class="carousel-content col-lg-6 o_colored_level o_animate o_animate_preview o_anim_fade_in"
+                                         style="animation-duration: 2s;">
+
+                                        <div id="content_back">
+                                        </div>
+                                        <div class="carousel_texts">
+
+                                            <div class="carousel_paragraph">The College marches forward with enriched
+                                                vigour
+                                                and vitality
+                                                by up holding the motto
+                                            </div>
+                                            <h2>"Lighted to Lighten"
+                                            </h2>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item oe_img_bg o_bg_img_center o_colored_level"
+                                 style="background-image: url(&quot;/fathima_college/static/img/sec1.jpg&quot;);"
+                                 data-name="Slide">
+                                <div class="container">
+                                    <div class="image_light"/>
+                                    <div class="carousel-content col-lg-6 o_colored_level o_animate o_animate_preview o_anim_fade_in"
+                                         style="animation-duration: 2s;">
+                                        <div id="content_back">
+                                        </div>
+                                        <div class="carousel_texts">
+
+                                            <div class="carousel_paragraph">The College marches forward with enriched
+                                                vigour
+                                                and vitality by up holding the motto
+                                            </div>
+                                            <h2>"Lighted to Lighten"</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item oe_img_bg o_bg_img_center o_colored_level"
+                                 style="background-image: url(&quot;/fathima_college/static/img/sec1.jpg&quot;);"
+                                 data-name="Slide">
+                                <div class="container">
+                                    <div class="image_light"/>
+                                    <div class="carousel-content col-lg-6 o_colored_level o_animate o_animate_preview o_anim_fade_in"
+                                         style="animation-duration: 2s;">
+                                        <div id="content_back">
+                                        </div>
+                                        <div class="carousel_texts">
+
+                                            <div class="carousel_paragraph">The College marches forward with enriched
+                                                vigour
+                                                and vitality by up holding the motto
+                                            </div>
+                                            <h2>"Lighted to Lighten"</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="announcement" data-oe-model="ir.ui.view" data-oe-id="828" data-oe-field="arch"
+                     data-oe-xpath="/data/xpath/div/div[1]">
+                    <div class="container d-flex">
+                        <span class="announce_head">Announcement
+                        </span>
+                        <scetion class="announcement_content">
+                            <marquee id="announce" onmouseover="this.stop();" onmouseout="this.start();"
+                                     direction="left">
+                                <ul class="d-flex  m-0 text-white" data-original-title="" title=""
+                                    aria-describedby="tooltip39087" style="gap: 110px;">
+                                    <section style="background-image: none;" class="o_colored_level">
+                                        <a href="#" data-original-title="" title="" class="flash_text"
+                                           data-bs-original-title="" aria-describedby="popover675594">The college
+                                            website is
+                                            under construction
+                                        </a>
+                                    </section>
+                                </ul>
+                            </marquee>
+                        </scetion>
+                    </div>
+                </div>
+                <section class="pt48 pb32">
+                    <div class="container">
+                        <div class="s_header">
+                            About Our College
+                            <div class="s_line">
+                                <div class="s_dot"/>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="col-md-6">
+                                <div class="about_image">
+                                    <div class="about_image_back"/>
+                                    <img src="/fathima_college/static/img/about1.jpg" class="about_image1"
+                                         data-parallax-item="" data-parallax-speed="1"/>
+                                    <div class="video_block">
+                                        <video class="videoplayer" id="video1">
+                                            <source src="/fathima_college/static/video/video.mp4" type="video/mp4"/>
+                                        </video>
+                                        <!-- Play/Stop button -->
+                                        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>
+                                        <label for="modal-btn" class="play-button" id="play">
+                                            <img src="/fathima_college/static/img/play.svg" id="playButtonImage"
+                                                 loading="lazy"/>
+                                        </label>
+                                        <div class="modals">
+                                            <div class="modals-wrap">
+                                                <video class="videoplayer" id="modalVideo" controls=""
+                                                       style="left: 0;top: 0;">
+                                                    <source src="/fathima_college/static/video/video.mp4"
+                                                            type="video/mp4"/>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="/fathima_college/static/img/pattern.svg" class="pattern"/>
+                                    <img src="/fathima_college/static/img/Clip.svg" class="clip"/>
+
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="about_text">
+                                    <img src="/fathima_college/static/img/lap.svg" class="lap"/>
+                                    <h3>We Have Experienced Professionals &amp; We
+                                        Do Our Best To Achieve Your Goal. Your
+                                        Happiness Is Our First Priority.
+                                    </h3>
+                                    <div class="about_paragraph">
+                                        Fathima Arts and Science College was established in the year 2013, affiliated to
+                                        the University of Calicut is situated in the naturalistic rural area of
+                                        Moothedam, Nilambur which is on the foothills of Western Ghats near to Mukurthy
+                                        National Park in Nilgiris.
+                                    </div>
+                                    <div class="about_paragraph">The founder manager/patron of the
+                                        college is His excellency most Rev.Dr.Joseph Mar Thomas (Bishop of Bathery).The
+                                        contribution of the first Principal Dr.R.Raveendran Pillai.
+                                    </div>
+                                    <div class="about_box">
+                                        <div class="boxes">
+                                            <h4 class="box1" style="color: #F56767;">
+                                                930+
+                                            </h4>
+                                            <span>Happy Students</span>
+                                        </div>
+                                        <div class="boxes" style="color:#B66DD9;">
+                                            <h4 class="box1">
+                                                50+
+                                            </h4>
+                                            <span>Teachers</span>
+                                        </div>
+                                        <div class="boxes" style="color:#B66DD9;">
+                                            <h4 class="box1" style="color:#816FF2;">
+                                                15+
+                                            </h4>
+                                            <span>Courses</span>
+                                        </div>
+                                    </div>
+                                    <div class="top_contact" id="read">
+                                        <a href="/about_us" id="readmore">Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt48  o_colored_level" id="four_card">
+                    <div class="row">
+                        <div class="four-card">
+                            <div class="four-card-item">
+                                <a href="#">
+                                    <img src="/fathima_college/static/img/prospectus.jpg" class="main_img"/>
+                                    <div class="four-card-item-content">
+                                        <img src="/fathima_college/static/img/down.svg"/>
+                                        <div class="card_text">Prospectus
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="four-card">
+                            <div class="four-card-item">
+                                <a href="#">
+                                    <img src="/fathima_college/static/img/brochure.jpg" class="main_img"/>
+                                    <div class="four-card-item-content">
+                                        <img src="/fathima_college/static/img/down.svg"/>
+                                        <div class="card_text">Download Brochure
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="four-card">
+                            <div class="four-card-item">
+                                <a href="#">
+                                    <img src="/fathima_college/static/img/360.jpg" class="main_img"/>
+                                    <div class="four-card-item-content">
+                                        <img src="/fathima_college/static/img/360-rotate.svg"/>
+                                        <div class="card_text">360° view
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="four-card">
+                            <div class="four-card-item">
+                                <a href="#">
+                                    <img src="/fathima_college/static/img/admission.jpg" class="main_img"/>
+                                    <div class="four-card-item-content">
+                                        <img src="/fathima_college/static/img/adms_icon.svg"/>
+                                        <div class="card_text">Prospectus
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt48">
+                    <div class="container ">
+                        <div class="s_header">
+                            Patrons
+                            <div class="s_line">
+                                <div class="s_dot"/>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between pt32">
+                            <div class="patrons-part">
+                                <div class="patrons">
+                                    <div class="patron-card">
+                                        <div class="patron-image"/>
+                                        <img src="/fathima_college/static/img/person1.jpg" loading="lazy"/>
+                                    </div>
+                                    <div class="patron-messages">
+                                        <h2 class="patron_head">
+                                            Chief Patron
+                                        </h2>
+                                        <div class="patron-message">
+                                            Lorem ipsum dolor sit amet consectetur. Sed ut velit ut nec aenean. Augue
+                                            integer odio et pharetra venenatis amet tempor. Ipsum pharetra aliquet
+                                            tellus pellentesque eros dui. Placerat viverra donec adipiscing elementum .
+                                        </div>
+                                        <div class="s_header" id="s_header">
+                                            <div class="s_line" id="s_line">
+                                                <div class="s_dot" id="s_dot"/>
+                                            </div>
+                                            <h1 class="lato-black patrons_name">Moran Mor Baselios Cardinal Cleemis
+                                                Catholicose
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patrons-part">
+                                <div class="patrons">
+                                    <div class="patron-card">
+                                        <div class="patron-image"/>
+                                        <img src="/fathima_college/static/img/person2.jpg" loading="lazy"/>
+                                    </div>
+                                    <div class="patron-messages">
+                                        <h2 class="patron_head">
+                                            Manager &amp; Patron
+                                        </h2>
+                                        <div class="patron-message">
+                                            Lorem ipsum dolor sit amet consectetur. Sed ut velit ut nec aenean. Augue
+                                            integer odio et pharetra venenatis amet tempor. Ipsum pharetra aliquet
+                                            tellus pellentesque eros dui. Placerat viverra donec adipiscing elementum .
+                                        </div>
+                                        <div class="s_header" id="s_header">
+                                            <div class="s_line" id="s_line2">
+                                                <div class="s_dot" id="s_dot"/>
+                                            </div>
+                                            <h1 class="lato-black patrons_name">Dr. Joseph Mar Thomas
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt48 o_colored_level" style="background-image: none;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="upcoming_events">
+
+
+                                <div class="s_header">
+                                    Upcoming Events
+                                    <div class="s_line">
+                                        <div class="s_dot"/>
+                                    </div>
+                                </div>
+                                <section data-snippet="s_blog_posts"
+                                         class="s_blog_posts s_dynamic_snippet_blog_posts s_dynamic mt32 o_colored_level s_blog_post_upcoming_event o_dynamic_empty"
+                                         data-name="Blog Posts" style="background-image: none;"
+                                         data-filter-by-blog-id="2" data-number-of-records="16" data-filter-id="1"
+                                         data-template-key="fathima_college_news_event.dynamic_filter_template_blog_post_upcoming_event"
+                                         data-force-minimum-max-limit-to16="1">
+                                    <div class="o_not_editable container">
+                                        <div class="css_non_editable_mode_hidden">
+                                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                                Your Dynamic Snippet will be displayed here... This message is displayed
+                                                because you did not provided both a filter and a template to use.
+                                                <br/>
+                                            </div>
+                                        </div>
+                                        <div class="dynamic_snippet_template"/>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="co-ordinator">
+                                <img src="/fathima_college/static/img/college_icon.jpg" id="college_icon"/>
+                                <div class="co-ordinator-block">
+                                    <li class="card">
+                                        <div class="co-ordinator-img">
+                                            <img src="/fathima_college/static/img/person3.svg" alt=""
+                                                 class="img w-100 h-100 o_we_custom_image" data-original-id="282"
+                                                 data-original-src="/fathima_college/static/img/person3.jpg"
+                                                 data-mimetype="image/png" data-resize-width="286" loading="lazy"
+                                                 style=""/>
+                                        </div>
+                                        <h2 class="co-ordinator-name">Rev.Fr Varghese
+                                            kaniyaparambi
+                                        </h2>
+                                        <span class="designations">Burser &amp; Ceo</span>
+                                    </li>
+                                    <li class="card">
+                                        <div class="co-ordinator-img">
+                                            <img src="/fathima_college/static/img/person4.svg" alt=""
+                                                 class="img  w-100 h-100 o_we_custom_image" data-original-id="282"
+                                                 data-original-src="/fathima_college/static/img/person4.jpg"
+                                                 data-mimetype="image/png" data-resize-width="286" loading="lazy"
+                                                 style=""/>
+                                        </div>
+                                        <h2 class="co-ordinator-name">Dr.Ka Andrew</h2>
+                                        <span class="designations">Managing director &amp; IQAC
+                                            coordinator
+                                        </span>
+                                    </li>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class=" pt48">
+                    <div class="container">
+                        <div class="row principal_box">
+                            <div class="col-md-3 pb0" style="padding:0">
+                                <img src="/fathima_college/static/img/principal.jpeg" alt="" class="prince_image"
+                                     data-original-id="553"
+                                     data-original-src="/web/image/553-1f3c5c7a/WhatsApp%20Image%202024-06-20%20at%2010.36.22%20AM.jpeg"
+                                     data-mimetype="image/jpeg" data-resize-width="853" data-quality="100" style=""/>
+                            </div>
+                            <div class="col-md-9" style="padding:0">
+                                <div class="principal_message">
+                                    <h1 style="padding-bottom:5px;">Principal's Message</h1>
+                                    <div style="                                     font-size: 20px;                                     font-weight: 600;                                     padding-bottom: 10px;                                     color: var(--primary);                                 ">
+                                        Prof.(Dr) Geetha Janet Vitus
+                                    </div>
+                                    <p>
+                                        Greetings from Fathima college!
+                                        It is an immense pleasure to thank you for showing interest to peek into our
+                                        official website. Let us pave the way to the academic session 2024-2025 with
+                                        great passion and sustenance to achieve remarkable educational excellence. This
+                                        higher education system has proven its significance in this urban area and
+                                        motivated number of students to aspire higher. The college is delighted to serve
+                                        the humanity by nurturing the talented young minds with holistic education. The
+                                        institution’s strength lies in the hands of our dedicated management and highly
+                                        qualified teachers.The dedication and commitment of our faculty induces
+                                        creativity and vivacity which promotes to our motto “ Lighted to Lighten”.
+                                    </p>
+                                    <a id="principal_btn" href="/principal_message">Read more</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt48  o_colored_level" style="background-image: none;">
+                    <div class="container">
+                        <div class="s_header">
+                            News and Events
+                            <div class="s_line">
+                                <div class="s_dot"/>
+                            </div>
+                        </div>
+                    </div>
+                    <section data-snippet="s_blog_posts"
+                             class="s_blog_posts s_dynamic_snippet_blog_posts s_dynamic pt32  o_colored_level s_blog_post_fathima o_dynamic_empty"
+                             data-name="Blog Posts" style="background-image: none;min-height:200px;"
+                             data-filter-by-blog-id="2" data-number-of-records="3" data-filter-id="1"
+                             data-template-key="fathima_college_news_event.dynamic_filter_template_blog_post_fathima"
+                             data-force-minimum-max-limit-to16="1">
+                        <div class="o_not_editable container">
+                            <div class="css_non_editable_mode_hidden">
+                                <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                    Your Dynamic Snippet will be displayed here... This message is displayed because you
+                                    did not provided both a filter and a template to use.
+                                    <br/>
+                                </div>
+                            </div>
+                            <div class="dynamic_snippet_template"/>
+                        </div>
+                    </section>
+                    <div class="container">
+                        <div class="top_contact" id="more">
+                            <a href="/blog" id="readmore">More Events
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="galley_img pt48 pb48 o_colored_level" style="background-image: none;">
+                    <div class="container">
+                        <div class="s_header">
+                            Gallery
+                            <div class="s_line">
+                                <div class="s_dot"/>
+                            </div>
+                        </div>
+
+                        <div class="gallery pt48">
+                            <div class="gallery__item gallery__item--hor">
+                                <img src="/fathima_college/static/img/img6.jpeg" alt=""
+                                     class="img img-fluid o_we_custom_image" data-original-id="267"
+                                     data-original-src="/web/image/267-a0b63fa9/Component%205%20%281%29.png"
+                                     data-mimetype="image/png" data-resize-width="709" loading="lazy" style=""/>
+                            </div>
+                            <div class="gallery__item gallery__item--1">
+                                <img src="/fathima_college/static/img/img9.jpeg" alt=""
+                                     class="img img-fluid o_we_custom_image" data-original-id="268"
+                                     data-original-src="/web/image/268-8ab2b78d/Rectangle%2053.png"
+                                     data-mimetype="image/png" data-resize-width="339" loading="lazy" style=""/>
+                            </div>
+                            <div class="gallery__item gallery__item--vert">
+                                <img src="/fathima_college/static/img/img13.jpeg" alt=""
+                                     class="img img-fluid o_we_custom_image" data-original-id="270"
+                                     data-original-src="/web/image/270-bf4eb472/Rectangle%2052.png"
+                                     data-mimetype="image/png" data-resize-width="709" loading="lazy" style=""
+                                     data-bs-original-title="" title="" aria-describedby="tooltip524436"/>
+                            </div>
+                            <div class="gallery__item gallery__item--2">
+                                <img src="/fathima_college/static/img/img7.jpeg" alt=""
+                                     class="img img-fluid o_we_custom_image" data-original-id="273"
+                                     data-original-src="/web/image/273-46626632/Rectangle%2054.png"
+                                     data-mimetype="image/png" data-resize-width="339" loading="lazy" style=""
+                                     data-bs-original-title="" title="" aria-describedby="tooltip435888"/>
+                            </div>
+                            <div class="gallery__item gallery__item--lg">
+                                <img src="/fathima_college/static/img/img12.jpeg" alt=""
+                                     class="img img-fluid o_we_custom_image" data-original-id="271"
+                                     data-original-src="/web/image/271-219d68ed/Rectangle%2055.png"
+                                     data-mimetype="image/png" data-resize-width="709" loading="lazy" style=""/>
+                            </div>
+                            <div class="gallery__item gallery__item--3">
+                                <img src="/fathima_college/static/img/img11.jpeg" alt=""
+                                     class="img img-fluid o_we_custom_image" data-original-id="318"
+                                     data-original-src="/web/image/318-34eddafc/gallery1.jpg" data-mimetype="image/jpeg"
+                                     data-resize-width="688" data-bs-original-title="" title=""
+                                     aria-describedby="tooltip826592" loading="lazy" style=""/>
+                                <div class="see_more">
+                                    <a href="/gallery" class="gallery_more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top_contact" id="more">
+                            <a href="/gallery" id="readmore" data-bs-original-title="" title="">More Gallery
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!--<section class="s_carousel_wrapper pt48 pb48" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">-->
+                <!--    <div class="container ">-->
+                <!--        <div class="s_header">-->
+                <!--            Alumni and Placement-->
+                <!--            <div class="s_line">-->
+                <!--                <div class="s_dot"/>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--           <div class="s_carousel s_carousel_default carousel placement slide pt48 pb48 " data-bs-interval="10000" id="myCarousel1717674477054" style="background-image: none;">-->
+
+                <!--            <ol class="carousel-indicators alumni o_we_no_overlay" id="home_indicators">-->
+                <!--                <li data-bs-slide-to="0" data-bs-target="#myCarousel1717674477054" class="active" aria-current="true"/>-->
+                <!--                <li data-bs-slide-to="1" data-bs-target="#myCarousel1717674477054"/>-->
+                <!--                <li data-bs-slide-to="2" data-bs-target="#myCarousel1717674477054"/>-->
+                <!--            </ol>-->
+                <!--            <div class="carousel-inner">-->
+                <!--                <div class="carousel-item active" data-name="Slide" style="">-->
+                <!--                    <ul class="carousel_alumni">-->
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni3.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="282" data-original-src="/fathima_college/static/img/alumni3.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Blanche Pearson</h2>-->
+                <!--                            <span>Sales Manager</span>-->
+                <!--                        </li>-->
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni2.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="281" data-original-src="/fathima_college/static/img/alumni2.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Joenas Brauers</h2>-->
+                <!--                            <span>Web Developer</span>-->
+                <!--                        </li>-->
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni4.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="280" data-original-src="/fathima_college/static/img/alumni4.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Lariach French</h2>-->
+                <!--                            <span>Online Teacher</span>-->
+                <!--                        </li>-->
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni1.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="279" data-original-src="/fathima_college/static/img/alumni1.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>James Khosravi</h2>-->
+                <!--                            <span>Freelancer</span>-->
+                <!--                        </li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--                <div class="carousel-item" data-name="Slide" style="">-->
+                <!--                    <ul class="carousel_alumni">-->
+
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni2.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="281" data-original-src="/fathima_college/static/img/alumni2.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Joenas Brauers</h2>-->
+                <!--                            <span>Web Developer</span>-->
+                <!--                        </li>-->
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni4.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="280" data-original-src="/fathima_college/static/img/alumni4.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Lariach French</h2>-->
+                <!--                            <span>Online Teacher</span>-->
+                <!--                        </li>-->
+
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni1.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="279" data-original-src="/fathima_college/static/img/alumni1.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>James Khosravi</h2>-->
+                <!--                            <span>Freelancer</span>-->
+                <!--                        </li>-->
+                <!--                         <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni3.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="282" data-original-src="/fathima_college/static/img/alumni3.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Blanche Pearson</h2>-->
+                <!--                            <span>Sales Manager</span>-->
+                <!--                        </li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--                <div class="carousel-item" data-name="Slide" style="">-->
+                <!--                    <ul class="carousel_alumni">-->
+
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni4.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="280" data-original-src="/fathima_college/static/img/alumni4.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Lariach French</h2>-->
+                <!--                            <span>Online Teacher</span>-->
+                <!--                        </li>-->
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni1.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="279" data-original-src="/fathima_college/static/img/alumni1.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>James Khosravi</h2>-->
+                <!--                            <span>Freelancer</span>-->
+                <!--                        </li>-->
+                <!--                        <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni2.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="281" data-original-src="/fathima_college/static/img/alumni2.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Joenas Brauers</h2>-->
+                <!--                            <span>Web Developer</span>-->
+                <!--                        </li>-->
+                <!--                         <li class="card">-->
+                <!--                            <div class="img">-->
+                <!--                                <img src="/fathima_college/static/img/alumni3.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="282" data-original-src="/fathima_college/static/img/alumni3.jpg" data-mimetype="image/png" data-resize-width="286" loading="lazy" style=""/>-->
+                <!--                            </div>-->
+                <!--                            <h2>Blanche Pearson</h2>-->
+                <!--                            <span>Sales Manager</span>-->
+                <!--                        </li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+
+                <!--    </div>-->
+                <!--</section>-->
+
+
+            </div>
+        </xpath>
+    </template>
+</odoo>

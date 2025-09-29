@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+        <record id="brief_history_mes" model="ir.ui.view">
+            <field name="name">Brief History</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.brief_history_mes</field>
+            <field name="arch" type="xml">
+                <t name="Brief History" t-name="mes_college.brief_history_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title">Brief History</h2>
+                                    <div class=" pt32 pb32" style="padding:15px;">
+                                        <section class="col-md-12" style="margin:auto;">
+                                            <div>
+                                                <div class="content_text">
+                                                    MES Kalladi College, Mannarkkad is the proud symbol of the Muslim
+                                                    Educational Society, Calicut to the cause of higher education in
+                                                    Kerala, especially to the educationally backward areas of Malabar.
+                                                    This is the first college started by the MES and it is also the
+                                                    felicitous outcome of the noble endeavor of the late Kalladi Cheriya
+                                                    Kunhammed Sahib and the local public. College is located in a vast
+                                                    area, a major part of which was donated by the late Janab Valayadi
+                                                    Kunhayammu Haji.
+                                                    The college is situated 2 km away from Mannarkkad town on the side
+                                                    of Palakkad – Calicut National Highway and bordered by the perennial
+                                                    river “Kunthipuzha” and fortressed by panoramic hills of Silent
+                                                    Valley and Attappadi.
+                                                    The college started functioning as a junior college in 1967 and was
+                                                    upgraded in 1971 with the introduction of degree courses in History,
+                                                    Economics, Mathematics, Botany and Commerce. Further it was upgraded
+                                                    as a Post Graduate college in 1978 with the introduction of M.Com.
+                                                    The college was accredited by NAAC at B++ grade in 2004 and at A
+                                                    grade in 2013.
+                                                    The FIST funding form Department of Science and Technology, Govt. of
+                                                    India received in 2015.The departments of History and Chemistry have
+                                                    been upgraded as Research Centres in 2016 and 2017 respectively, and
+                                                    are equipped with Modern Laboratories, Research Halls and Research
+                                                    Cubicles. The college was accredited at A+ grade in the third cycle
+                                                    by NAAC in 2019.
+                                                    The Five Year Integrated PG programme in Forensic Science started in
+                                                    2020 and B Voc programmes introduced in 2021.
+
+
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="brief_history_mes_page" model="website.page">
+            <field name="url">/brief_history</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="brief_history_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

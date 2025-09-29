@@ -1,0 +1,63 @@
+<odoo>
+    <!-- Form View for Aqar Attachment -->
+    <record id="view_pdf_uploader_config_form" model="ir.ui.view">
+        <field name="name">pdf.uploader.config.form</field>
+        <field name="model">pdf.uploader</field>
+        <field name="arch" type="xml">
+            <form string="PDF Uploader">
+                <sheet>
+                    <group>
+                        <field name="name" string="Name"/>
+                        <field name="file_data" string="Upload File" widget="binary" filename="file_name"/>
+                        <field name="url" string="File URL" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for AQAR Attachment -->
+
+    <record id="view_pdf_uploader_config_tree" model="ir.ui.view">
+        <field name="name">pdf.uploader.config.tree</field>
+        <field name="model">pdf.uploader</field>
+        <field name="arch" type="xml">
+            <tree string="PDF Uploader">
+                <field name="name" string="File Name" required="1"/>
+                <field name="url" string="File URL" readonly="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for AQAR Attachment -->
+    <record id="action_pdf_uploader" model="ir.actions.act_window">
+        <field name="name">PDF Uploader</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pdf.uploader</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_pdf_uploader_config_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Data Found
+            </p>
+        </field>
+    </record>
+    <record id="attachment_rule_public" model="ir.rule">
+        <field name="name">Public Access to Attachments</field>
+        <field name="model_id" ref="base.model_ir_attachment"/>
+        <field name="groups" eval="[(4, ref('base.group_public'))]"/>
+        <field name="domain_force">[('public', '=', True)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+
+
+    <!-- Menu Items for AQAR Attachment -->
+    <menuitem id="menu_pdf_uploader_root" name="PDF Uploader" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_pdf_uploads" name="Add PDF Documents" parent="menu_pdf_uploader_root"
+              action="action_pdf_uploader" sequence="20"
+              groups="pdf_uploader.group_pdf_uploader_admin"/>
+</odoo>

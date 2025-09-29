@@ -1,0 +1,100 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_landing_page_internal,Landing.Page Internal,model_landing_page,,1,1,1,1
+access_landing_page_user_awards,Landing.Page,model_landing_page,landing_page.group_landing_page_admin,1,1,1,1
+access_landing_page_user_placement,Placement.Section,model_placement_section,landing_page.group_landing_page_admin,1,1,1,1
+access_landing_page_user_gallery,Gallery.Section,model_gallery_section,landing_page.group_landing_page_admin,1,1,1,1
+access_landing_page_user_student_voice,Student.Voice,model_student_voice,landing_page.group_landing_page_admin,1,1,1,1
+access_landing_page_user_news_letter,News.Letter,model_news_letter,landing_page.group_landing_page_admin,1,1,1,1
+
+access_landing_page_user_career,Career.Manage,model_career_manage,landing_page.group_landing_page_admin,1,1,1,1
+access_landing_page_user_notes,Notes.Manage,model_notes_update,landing_page.group_landing_page_admin,1,1,1,1
+
+access_landing_page_admin,Landing Page Admin,model_landing_page,landing_page.group_landing_page_admin,1,1,1,1
+access_gallery_section_admin,Gallery Section Admin,model_gallery_section,landing_page.group_landing_page_admin,1,1,1,1
+access_career_manage_admin,Career Manage Admin,model_career_manage,landing_page.group_landing_page_admin,1,1,1,1
+access_placement_section_admin,Placement Section Admin,model_placement_section,landing_page.group_landing_page_admin,1,1,1,1
+access_student_voice_admin,Student Voice Admin,model_student_voice,landing_page.group_landing_page_admin,1,1,1,1
+access_news_letter_admin,News Letter Admin,model_news_letter,landing_page.group_landing_page_admin,1,1,1,1
+
+access_notes_update_admin,Notes Update Admin,model_notes_update,landing_page.group_landing_page_admin,1,1,1,1
+
+access_landing_page_public_view,Landing Page (Public),model_landing_page,base.group_public,1,0,0,0
+access_gallery_section_public,Gallery Section,model_gallery_section,base.group_public,1,0,0,0
+access_career_manage_public,Career Manage,model_career_manage,base.group_public,1,0,0,0
+access_placement_section_public,Placement Section,model_placement_section,base.group_public,1,0,0,0
+access_student_voice_public,Student Voice,model_student_voice,base.group_public,1,0,0,0
+access_news_letter_public,News Letter,model_news_letter,base.group_public,1,0,0,0
+
+access_notes_update_public,Notes Update Public,model_notes_update,base.group_public,1,0,0,0
+
+access_landing_page_user_notes_file,Notes.PDF.File.Manage,model_notes_pdf_file,landing_page.group_landing_page_admin,1,1,1,1
+access_notes_pdf_file_admin,Notes PDF File Admin,model_notes_pdf_file,landing_page.group_landing_page_admin,1,1,1,1
+access_notes_pdf_file_public,Notes PDF File Public,model_notes_pdf_file,base.group_public,1,0,0,0
+
+access_landing_page_user_academic_calendar,Academic.Calendar,model_academic_calendar,landing_page.group_landing_page_admin,1,1,1,1
+access_academic_calendar_public,Academic Calendar Public,model_academic_calendar,base.group_public,1,0,0,0
+access_academic_calendar_admin,Academic Calendar Admin,model_academic_calendar,landing_page.group_landing_page_admin,1,1,1,1
+
+access_landing_page_user_clubs_manage,Clubs.Manage,model_clubs_manage,landing_page.group_landing_page_admin,1,1,1,1
+access_clubs_manage_public,Clubs Manage Public,model_clubs_manage,base.group_public,1,0,0,0
+access_clubs_manage_admin,Clubs Manage Admin,model_clubs_manage,landing_page.group_landing_page_admin,1,1,1,1
+
+access_landing_page_user_clubs_report,Clubs.Report,model_clubs_report,landing_page.group_landing_page_admin,1,1,1,1
+access_clubs_report_public,Clubs Report Public,model_clubs_report,base.group_public,1,0,0,0
+
+access_clubs_manage_user_club_activity,Clubs.Activity,model_club_activity,landing_page.group_landing_page_admin,1,1,1,1
+access_club_activity_public,Clubs Activity Public,model_club_activity,base.group_public,1,0,0,0
+
+access_clubs_manage_user_club_activity_image,Clubs.Activity.Image,model_club_activity_image,landing_page.group_landing_page_admin,1,1,1,1
+access_club_activity_image_public,Clubs Activity Image Public,model_club_activity_image,base.group_public,1,0,0,0
+
+
+access_landing_page_user_cells_manage,Cells.Manage,model_cells_manage,landing_page.group_landing_page_admin,1,1,1,1
+access_cells_manage_public,Cells Manage Public,model_cells_manage,base.group_public,1,0,0,0
+access_cells_manage_admin,Cells Manage Admin,model_cells_manage,landing_page.group_landing_page_admin,1,1,1,1
+access_landing_page_user_cells_report,Cells.Report,model_cells_report,landing_page.group_landing_page_admin,1,1,1,1
+access_cells_report_public,Cells Report Public,model_cells_report,base.group_public,1,0,0,0
+
+access_association_manage_admin,Association Manage Admin,model_association_manage,landing_page.group_landing_page_admin,1,1,1,1
+access_association_manage_public,Association Manage Public,model_association_manage,base.group_public,1,0,0,0
+
+access_association_report_admin,Association Report Admin,model_association_report,landing_page.group_landing_page_admin,1,1,1,1
+access_association_report_public,Association Report Public,model_association_report,base.group_public,1,0,0,0
+
+access_association_activity_admin,Association Activity Admin,model_association_activity,landing_page.group_landing_page_admin,1,1,1,1
+access_association_activity_public,Association Activity Public,model_association_activity,base.group_public,1,0,0,0
+
+access_association_activity_image_admin,Association Activity Admin,model_association_activity_image,landing_page.group_landing_page_admin,1,1,1,1
+access_association_activity_image_public,Association Activity Public,model_association_activity_image,base.group_public,1,0,0,0
+
+access_pta_manage_admin,Pta Manage Admin,model_pta_manage,landing_page.group_landing_page_admin,1,1,1,1
+access_pta_report_admin,Pta Report Admin,model_pta_report,landing_page.group_landing_page_admin,1,1,1,1
+access_pta_manage_public,Pta Manage Public,model_pta_manage,base.group_public,1,0,0,0
+access_pta_report_public,Pta Report Public,model_pta_report,base.group_public,1,0,0,0
+
+access_website_department_admin,Website Department - Admin,model_website_department,landing_page.group_allowed_department_admin,1,1,1,1
+access_website_department_user,Website Department - User,model_website_department,landing_page.group_allowed_department_user,1,1,0,0
+
+access_website_department_image_admin,Website Department Image - Admin,model_website_department_image,landing_page.group_allowed_department_admin,1,1,1,1
+access_website_department_image_user,Website Department Image - User,model_website_department_image,landing_page.group_allowed_department_user,1,1,1,1
+
+access_website_department_programme_admin,Website Department Programme - Admin,model_website_department_programme,landing_page.group_allowed_department_admin,1,1,1,1
+access_website_department_programme_user,Website Department Programme - User,model_website_department_programme,landing_page.group_allowed_department_user,1,1,1,1
+
+access_website_department_programme_syllabus_admin,Website Department Programme Syllabus - Admin,model_website_department_programme_syllabus,landing_page.group_allowed_department_admin,1,1,1,1
+access_website_department_programme_syllabus_user,Website Department Programme Syllabus - User,model_website_department_programme_syllabus,landing_page.group_allowed_department_user,1,1,1,1
+access_website_department_programme_syllabus_public,Website Department Programme Syllabus - Public,model_website_department_programme_syllabus,base.group_public,1,0,0,0
+access_department_club_line_admin,Department Club Line - Admin,model_department_club_line,landing_page.group_allowed_department_admin,1,1,1,1
+access_department_club_line_user,Department Club Line - User,model_department_club_line,landing_page.group_allowed_department_user,1,1,1,1
+
+access_facilities_manage_admin,Facilities Manage Admin,model_facilities_manage,base.group_user,1,1,1,1
+access_facilities_manage_public,Facilities Manage Public,model_facilities_manage,base.group_public,1,0,0,0
+access_facilities_manage_portal,Facilities Manage Portal,model_facilities_manage,base.group_portal,1,0,0,0
+
+access_facilities_sub_admin,Facilities Sub Admin,model_facilities_sub,base.group_user,1,1,1,1
+access_facilities_sub_public,Facilities Sub Public,model_facilities_sub,base.group_public,1,0,0,0
+access_facilities_sub_portal,Facilities Sub Portal,model_facilities_sub,base.group_portal,1,0,0,0
+
+access_facilities_sub_image_admin,Facilities Sub Image Admin,model_facilities_sub_image,base.group_user,1,1,1,1
+access_facilities_sub_image_public,Facilities Sub Image Public,model_facilities_sub_image,base.group_public,1,0,0,0
+access_facilities_sub_image_portal,Facilities Sub Image Portal,model_facilities_sub_image,base.group_portal,1,0,0,0

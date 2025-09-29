@@ -1,0 +1,167 @@
+<odoo>
+    <data>
+        <record id="clubs" model="ir.ui.view">
+            <field name="name">Clubs</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.clubs</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="mes_college.clubs_menu">
+                    <t t-call="website.layout">
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                            var currentUrl = window.location.pathname; // Get the current URL path
+                            var navLinks = document.querySelectorAll(".allclubs .tabs-list1 .nav-link");
+
+                            // Remove active class from all nav-items
+                            var navItems = document.querySelectorAll(".allclubs .tabs-list1 .nav-item");
+                            navItems.forEach(function(navItem) {
+                            navItem.classList.remove("active");
+                            });
+
+                            // Add active class to the appropriate nav-item
+                            navLinks.forEach(function(navLink) {
+                            var href = navLink.getAttribute("href"); // Get the href attribute
+                            if (currentUrl === href) { // Check if URL path matches href
+                            navLink.parentElement.classList.add("active");
+                            }
+                            });
+                            });
+                        </script>
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section"
+                                             data-original-title="" title="" aria-describedby="tooltip336631">
+
+                                            <div class="clubs">
+                                                Clubs
+                                            </div>
+                                            <div class="side-bar allclubs" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;padding:10px;">
+                                                    <t t-foreach="data" t-as="club">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="club.get('club_name')">
+                                                                <a t-att-href="'/clubs/' + str(club['club_id'])"
+                                                                   style="text-align: left;" data-original-title=""
+                                                                   title="" class="nav-link">
+
+                                                                    <t t-esc="club['club_name']"/>
+                                                                </a>
+                                                            </t>
+                                                        </li>
+
+                                                    </t>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                <t t-if="detail">
+                                                    <section id="departments_page">
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                <h2 class="page_head" id="department_subhead"
+                                                                    style="    padding-left: 0; ">
+                                                                    <t t-if="detail.get('club_name')">
+                                                                        <t t-esc="detail['club_name']"/>
+                                                                    </t>
+                                                                </h2>
+                                                                <div>
+                                                                    <t t-if="detail.get('description')">
+                                                                        <t t-raw="detail['description']"/>
+                                                                    </t>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mx-auto">
+                                                                <h2 class="page_head pb16 pt16"
+                                                                    style="text-align:center;font-size:19px;">In-Charge
+                                                                </h2>
+                                                                <div class="faculties" style="height: auto;">
+
+                                                                    <div class="faculty_name">
+                                                                        <t t-if="detail.get('coordinator')">
+                                                                            <t t-esc="detail['coordinator']['name']"/>
+                                                                        </t>
+                                                                    </div>
+                                                                    <div class="designation">
+                                                                        <t t-if="detail.get('coordinator')">
+                                                                            <t t-esc="detail['coordinator']['designation']"/>
+                                                                        </t>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class="page_head" id="department_subhead"
+                                                                style="    padding-left: 15px; ">
+                                                                Activities
+                                                            </h2>
+                                                            <div class="row" style="row-gap:2rem;">
+                                                                <t t-foreach="detail.get('events', [])" t-as="events">
+                                                                    <section
+                                                                            class="news-card o_colored_level depart_news"
+                                                                            style="background-image: none;"
+                                                                            id="news_cards">
+                                                                        <div class="news-card-image">
+                                                                            <t t-if="events.get('poster_link')">
+                                                                                <img t-att-src="str(events['poster_link'])"
+                                                                                     alt="" loading="lazy"
+                                                                                     id="news-card-image" style=""/>
+                                                                            </t>
+                                                                        </div>
+                                                                        <div class="news-card-box">
+                                                                            <t t-if="events.get('program_name')">
+                                                                                <h1 class="news-card-name">
+                                                                                    <t t-esc="events['program_name']"/>
+                                                                                </h1>
+                                                                            </t>
+                                                                            <t t-if="events.get('description')">
+                                                                                <p class="news-card-p">
+                                                                                    <t t-esc="events['description']"/>
+                                                                                </p>
+                                                                            </t>
+                                                                            <t t-if="events.get('program_details_id')">
+                                                                                <a t-att-href="'/' + str(events['program_details_id']) + '/programme_detail'"
+                                                                                   class="read_more">Read More
+                                                                                    <span class="fa fa-long-arrow-right"
+                                                                                          data-bs-original-title=""
+                                                                                          title=""
+                                                                                          aria-describedby="tooltip544395"/>
+                                                                                </a>
+                                                                            </t>
+                                                                        </div>
+                                                                    </section>
+                                                                </t>
+                                                            </div>
+
+                                                        </div>
+                                                    </section>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="clubs_page" model="website.page">
+            <field name="url">/clubs</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="clubs"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

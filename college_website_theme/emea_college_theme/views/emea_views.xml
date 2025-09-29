@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="emea_layout" inherit_id="website.layout"
+              name="EMEA Layout">
+        <!-- Add an element after the top menu  -->
+        <xpath expr="//div[@id='wrapwrap']/main" position="before">
+            <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8"/>
+                    <meta name="viewport"
+                          content="width=device-width, initial-scale=1.0"/>
+                    <title>EMEA COLLEGE</title>
+                </head>
+            </html>
+
+        </xpath>
+    </template>
+</odoo>

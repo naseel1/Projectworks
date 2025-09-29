@@ -1,0 +1,87 @@
+<odoo>
+    <record id="view_clubs_manage_kanban" model="ir.ui.view">
+        <field name="name">clubs.manage.kanban</field>
+        <field name="model">clubs.manage</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <field name="club_id"/>
+                <field name="club_name"/>
+                <field name="club_description"/>
+                <field name="report_ids"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click o_kanban_card">
+                            <strong>
+                                <field name="club_name"/>
+                            </strong>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_clubs_manage_config_form" model="ir.ui.view">
+        <field name="name">clubs.manage.config.form</field>
+        <field name="model">clubs.manage</field>
+        <field name="arch" type="xml">
+            <form string="Clubs">
+                <sheet>
+                    <group>
+                        <field name="club_id"/>
+                        <field name="club_name"/>
+                        <field name="club_image"/>
+                        <field name="club_description"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Reports">
+                            <field name="report_ids">
+                                <tree editable="bottom">
+                                    <field name="report_title"/>
+                                    <field name="report_file" filename="report_filename"/>
+                                    <field name="report_filename" readonly="1"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Activities">
+                            <field name="activity_ids" mode="tree,form">
+                                <tree>
+                                    <field name="activity_title"/>
+                                </tree>
+                                <form string="Activity Details">
+                                    <group>
+                                        <field name="activity_title"/>
+                                        <field name="activity_description"/>
+                                    </group>
+                                    <group string="Activity Images">
+                                        <field name="image_ids">
+                                            <tree editable="bottom">
+                                                <field name="image"/>
+                                            </tree>
+                                        </field>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_clubs_manage" model="ir.actions.act_window">
+        <field name="name">Clubs</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">clubs.manage</field>
+        <field name="view_mode">kanban,form</field>
+        <field name="view_id" ref="view_clubs_manage_kanban"/>
+    </record>
+    <menuitem id="menu_clubs_manage"
+              name="Clubs"
+              parent="menu_landing_page_root"
+              action="action_clubs_manage"
+              sequence="25"
+              groups="landing_page.group_clubs_manage_admin"/>
+</odoo>

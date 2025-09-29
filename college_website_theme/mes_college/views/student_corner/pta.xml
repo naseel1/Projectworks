@@ -1,0 +1,127 @@
+<odoo>
+    <data>
+        <record id="pta" model="ir.ui.view">
+            <field name="name">pta</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.pta</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.pta_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">PTA</h2>
+                                                <div class="text_content">
+                                                    An active PTA has been functioning in the college since 1976. It
+                                                    regularly provides financial aid to economically backward students.
+                                                    It
+                                                    also sponsors some funds to the college for its infra structural
+                                                    development where there is no Govt. aid or it is insufficient. It
+                                                    motivates students who excel in academic field by giving cash
+                                                    awards. It
+                                                    gives proper guidance to the college authorities in maintaining
+                                                    discipline inside the campus.
+                                                    <br/>
+                                                    <br/>
+                                                    The parents of each student who is admitted in the college shall
+                                                    join the Association by paying a membership fee. All the teachers
+                                                    will
+                                                    be the members of the association.
+                                                    <br/>
+                                                    <br/>
+                                                    Principal is the President of PTA, one of the Teaching Staff Member
+                                                    is
+                                                    the Secretary, and one of the Executive Member from Parents is the
+                                                    Vice
+                                                    President. The Present Vice President is Sayyid Fasal Pookoyya
+                                                    Thangal.
+                                                    <br/>
+                                                    <br/>Parent Teachers Association is always active in the overall
+                                                    development of the college. Last year also they contributed
+                                                    generously
+                                                    for various activities of the institution. . It monitors the
+                                                    discipline
+                                                    in the institution. We collect parents feedback regularly and
+                                                    incorporate their suggestions in the decision making process.
+                                                    Endowment
+                                                    scholarships were given to students who have special achievement in
+                                                    arts
+                                                    and sports.
+                                                    <br/>
+                                                    <ul>
+                                                        <li>Participation of students in the A zone festival.
+                                                        </li>
+                                                        <li>Special cash award to University Examination rank holders
+                                                            <ul>
+                                                                <li>
+                                                                    I Rank Rs 1000 each
+                                                                </li>
+                                                                <li>II Rank Rs 750 each</li>
+                                                                <li>III Rank Rs 600 each</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Cash award to top scorers in University P.G. final
+                                                            examination.
+                                                        </li>
+                                                        <li>Cash award to top scorers in University Degree final
+                                                            Examination.
+                                                        </li>
+                                                        <li>Cash award to top scorers of University II year Degree
+                                                            Examination.
+                                                        </li>
+                                                        <li>Cash award to top scorers of Ist year University Degree
+                                                            Examination.
+                                                        </li>
+                                                        <li>PTA award to University rank holders.
+                                                        </li>
+                                                        <li>Financial assistance to purchase sports equipments.
+                                                        </li>
+                                                        <li>Financial support to various activities of NSS and NCC.
+                                                        </li>
+                                                        <li>Financial support for the participation of students in
+                                                            sports/arts competitions outside the campus.
+                                                        </li>
+                                                        Vidyanidhi Scholarship: This merit scholarship is launched by
+                                                        PTA in
+                                                        2023
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <strong style="font-size:13px;text-align:center;">Coordinator</strong>
+                                            <div class="col-md-7 mt16 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        A M Shihab
+                                                    </div>
+                                                    <div class="designation">Assistant Professor</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="pta_page" model="website.page">
+            <field name="url">/pta</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="pta"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

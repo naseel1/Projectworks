@@ -1,0 +1,63 @@
+<odoo>
+    <template id="mss_website_footer" name="MSS Footer" inherit_id="website.footer_custom">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="" class="" t-ignore="true" t-if="not no_footer" style="background:#FFFFFF;">
+                <div class="mince">
+                    <footer class="footer_mss">
+                        <div class="row " style="margin-right:0px">
+                            <div class="col-md-4">
+                                <img src="/mss_college/static/img/Frame 157.png" alt=""
+                                     style="margin: 20px 20px 20px 50px;"/>
+                                <br/>
+                                <img src="/mss_college/static/img/Frame.png" alt=""
+                                     style="    width: 40px;margin: 10px 10px 10px 50px;"/>
+                                <img src="/mss_college/static/img/email.png" alt=""
+                                     style="    width: 40px; margin: 10px;"/>
+                                <img src="/mss_college/static/img/instagram.png" alt=""
+                                     style="    width: 40px; margin: 10px;"/>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h1 class="quik_link">Quick Links</h1>
+                                <ul class="quik_links">
+                                    <li>LMS</li>
+                                    <li>ERP</li>
+                                    <li>Photo Gallery</li>
+                                    <li>Examinations</li>
+                                    <li>Application Form</li>
+                                    <li>Facilities</li>
+                                </ul>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer_location">
+                                    <img id="footer_img" src="/mss_college/static/img/pin-outline 1.png" alt=""/>
+                                    <p class="quik_links">P.O. Tharuvana, Mananthavady,
+                                        <br/>
+                                        Wayanad - 670654.
+                                    </p>
+                                </div>
+                                <div class="footer_location">
+                                    <img id="footer_img1" src="/mss_college/static/img/Frame (3).png" alt=""/>
+                                    <ul class="footer_numbers">
+                                        <li>04935 230240 (Office)</li>
+                                        <li>8547733240 (Office Mobile)</li>
+                                        <li>+91 94476 82387 (Principal)</li>
+                                    </ul>
+                                </div>
+                                <div class="footer_location">
+                                    <img id="footer_img2" src="/mss_college/static/img/pin-outline 1.png" alt=""/>
+                                    <p class="quik_links">msscollegewyd@gmail.com</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </footer>
+                </div>
+            </div>
+
+        </xpath>
+    </template>
+</odoo>
+

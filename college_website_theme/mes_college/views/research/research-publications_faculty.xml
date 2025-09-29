@@ -1,0 +1,232 @@
+<odoo>
+    <data>
+        <record id="research-publications_faculty" model="ir.ui.view">
+            <field name="name">Research Publications Faculty</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.research-publications_faculty</field>
+            <field name="arch" type="xml">
+                <t name="research" t-name="mes_college.research-publications_faculty_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <h2 class="main-head" style=" padding-top:20px;">
+                                        Research Publications
+                                    </h2>
+                                    <section class="s_tabs pt48 pb48 o_colored_level" data-vcss="001"
+                                             data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                                        <div class="container">
+                                            <div class="s_tabs_main">
+                                                <div class="s_tabs_nav mb-3">
+                                                    <ul class="nav nav-pills justify-content-center" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link o_default_snippet_text active"
+                                                               data-bs-toggle="tab"
+                                                               href="/research-publications_faculty" role="tab"
+                                                               aria-controls="research-publications_faculty"
+                                                               aria-selected="true">Faculty
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link o_default_snippet_text"
+                                                               href="/research-publications#nav_tabs_content_1705926765102_58"
+                                                               aria-selected="false">Students
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link o_default_snippet_text"
+                                                               href="/research-publications#nav_tabs_content_1705926765102_59"
+                                                               aria-selected="false">Department Journals
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="s_tabs_content tab-content">
+                                                    <div class="tab-pane fade active show" role="tabpanel"
+                                                         style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;padding: 10px;"
+                                                         aria-labelledby="research-publications_faculty">
+                                                        <div class="oe_structure oe_empty">
+                                                            <section class="s_text_block"
+                                                                     style="background-image: none;">
+                                                                <section class="s_tabs  o_colored_level"
+                                                                         data-vcss="001"
+                                                                         data-snippet="s_tabs" data-name="Tabs"
+                                                                         style="background-image: none;">
+                                                                    <div class="container">
+                                                                        <div class="s_tabs_main">
+                                                                            <div class="s_tabs_nav mb-3">
+                                                                                <ul class="nav nav-pills justify-content-center"
+                                                                                    role="tablist">
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link o_default_snippet_text active"
+                                                                                           id="nav_tabs_link_1705926765102_51"
+                                                                                           data-bs-toggle="tab"
+                                                                                           href="#nav_tabs_content_1705926765102_51"
+                                                                                           role="tab"
+                                                                                           aria-controls="nav_tabs_content_1705926765102_51"
+                                                                                           aria-selected="false">
+                                                                                            Journals
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link o_default_snippet_text"
+                                                                                           id="nav_tabs_link_1705926765102_52"
+                                                                                           data-bs-toggle="tab"
+                                                                                           href="#nav_tabs_content_1705926765102_52"
+                                                                                           role="tab"
+                                                                                           aria-controls="nav_tabs_content_1705926765102_52"
+                                                                                           aria-selected="false">
+                                                                                            Conference Proceedings
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="s_tabs_content tab-content">
+                                                                                <div class="tab-pane fade active show"
+                                                                                     id="nav_tabs_content_1705926765102_51"
+                                                                                     role="tabpanel"
+                                                                                     aria-labelledby="nav_tabs_link_1705926765102_51">
+                                                                                    <div class="oe_structure oe_empty">
+                                                                                        <section class="s_text_block"
+                                                                                                 style="background-image: none;">
+                                                                                            <div class="container s_allow_columns">
+                                                                                                <div class="content_text">
+                                                                                                    <table class="milestone"
+                                                                                                           style="width:100%;">
+                                                                                                        <tr>
+                                                                                                            <th>Author
+                                                                                                            </th>
+                                                                                                            <th>Title
+                                                                                                            </th>
+                                                                                                            <th>
+                                                                                                                Description
+                                                                                                            </th>
+                                                                                                            <th>Link
+                                                                                                            </th>
+                                                                                                        </tr>
+                                                                                                        <tbody>
+                                                                                                            <t t-foreach="data"
+                                                                                                               t-as="research_publication">
+                                                                                                                <tr class="publication mb16">
+                                                                                                                    <td>
+                                                                                                                        <t t-esc="research_publication['author']"/>
+                                                                                                                    </td>
+                                                                                                                    <td>
+                                                                                                                        <t t-esc="research_publication['title']"/>
+                                                                                                                    </td>
+
+                                                                                                                    <td style="font-size:16px;">
+                                                                                                                        <t t-esc="research_publication['description']"/>
+                                                                                                                    </td>
+                                                                                                                    <td style="font-size:16px;min-width:200px;">
+                                                                                                                        <a t-att-href="str(research_publication['link'])"
+                                                                                                                           class="programmes_link"
+                                                                                                                           id="click"
+                                                                                                                           target="_blank">
+                                                                                                                            Click
+                                                                                                                            Here
+                                                                                                                            <span class="fa fa-long-arrow-right "
+                                                                                                                                  style="color:#0073a9;"
+                                                                                                                                  data-bs-original-title=""
+                                                                                                                                  title=""
+                                                                                                                                  aria-describedby="tooltip544395"></span>
+                                                                                                                        </a>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </t>
+                                                                                                        </tbody>
+                                                                                                    </table>
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </section>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="tab-pane fade"
+                                                                                     id="nav_tabs_content_1705926765102_52"
+                                                                                     role="tabpanel"
+                                                                                     style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;padding: 10px;"
+                                                                                     aria-labelledby="nav_tabs_link_1705926765102_52">
+                                                                                    <div class="oe_structure oe_empty">
+                                                                                        <section class="s_text_block"
+                                                                                                 style="background-image: none;">
+                                                                                            <div class="container s_allow_columns">
+                                                                                                <div class="content_text">
+                                                                                                    <table class="milestone"
+                                                                                                           style="width:100%;">
+                                                                                                        <tr>
+                                                                                                            <th>Author
+                                                                                                            </th>
+                                                                                                            <th>Title
+                                                                                                            </th>
+                                                                                                            <th>
+                                                                                                                Description
+                                                                                                            </th>
+                                                                                                            <th>Link
+                                                                                                            </th>
+                                                                                                        </tr>
+                                                                                                        <tbody>
+                                                                                                            <t t-foreach="data2"
+                                                                                                               t-as="research_publication1">
+                                                                                                                <tr class="publication mb16">
+                                                                                                                    <td>
+                                                                                                                        <t t-esc="research_publication1['author']"/>
+                                                                                                                    </td>
+                                                                                                                    <td>
+                                                                                                                        <t t-esc="research_publication1['title']"/>
+                                                                                                                    </td>
+
+                                                                                                                    <td style="font-size:16px;">
+                                                                                                                        <t t-esc="research_publication1['description']"/>
+                                                                                                                    </td>
+                                                                                                                    <td style="font-size:16px;min-width:200px;">
+                                                                                                                        <a t-att-href="str(research_publication1['link'])"
+                                                                                                                           class="programmes_link"
+                                                                                                                           id="click"
+                                                                                                                           target="_blank">
+                                                                                                                            Click
+                                                                                                                            Here
+                                                                                                                            <span class="fa fa-long-arrow-right "
+                                                                                                                                  style="color:#0073a9;"
+                                                                                                                                  data-bs-original-title=""
+                                                                                                                                  title=""
+                                                                                                                                  aria-describedby="tooltip544395"></span>
+                                                                                                                        </a>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </t>
+                                                                                                        </tbody>
+                                                                                                    </table>
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </section>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="research-publications_faculty_page" model="website.page">
+            <field name="url">/research-publications_faculty</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="research-publications_faculty"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

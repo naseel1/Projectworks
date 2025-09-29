@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+,,,,,,,,
+access_aqar_attachment_public,Aqar.Attachment,model_aqar_attachment,,1,1,1,1
+access_aqar_attachment_user,Aqar.Attachment,model_aqar_attachment,group_aqar_attachment_admin,1,1,1,1
+
+

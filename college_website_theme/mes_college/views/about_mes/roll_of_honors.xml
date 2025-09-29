@@ -1,0 +1,570 @@
+<odoo>
+    <data>
+        <record id="roll_of_honors" model="ir.ui.view">
+            <field name="name">roll_of_honors</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.roll_of_honors</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.roll_of_honors_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <h2 class="main-head">Roll Of Honors</h2>
+                                <div class=" pt32 pb32">
+                                    <table class="milestone" cellspacing="0" cellpadding="7">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Class</th>
+                                                <th>Year</th>
+                                                <th>Rank</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Radha.K.K</td>
+                                                <td style="height: 24px;" width="375">B.A (History)</td>
+                                                <td>1974</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr style="height: 72px;" valign="top">
+                                                <td style="height: 72px;" width="94">Jayachndran.M</td>
+                                                <td style="height: 72px;" width="375">B.Com</td>
+                                                <td>1977</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Ramachandran.M</td>
+                                                <td style="height: 24px;" width="375">B.Sc(Chemistry)</td>
+                                                <td>1980</td>
+                                                <td>||</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Rajagopalan Nair</td>
+                                                <td style="height: 24px;" width="375">M.Com</td>
+                                                <td>1980</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr style="height: 48px;" valign="top">
+                                                <td style="height: 48px;" width="94">Ramchandharan.A</td>
+                                                <td style="height: 48px;" width="375">M.Com
+                                                </td>
+                                                <td>1982</td>
+                                                <td>||</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Safiya.k</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1984</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mohammed Rasheed.E</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1984</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jacob.J</td>
+                                                <td>M.Com</td>
+                                                <td>1985</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Manoharan.R</td>
+                                                <td>B.Com</td>
+                                                <td>1988</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abdul Farooque.C.H</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1989</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Yahcoob.P.K</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1989</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rihanath.K</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1990</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Khiroja.P</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1990</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mohammed.P</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1990</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Satheesan.N</td>
+                                                <td>M.Com</td>
+                                                <td>1990</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Premakumar.</td>
+                                                <td>M.Com</td>
+                                                <td>1990</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Manjulakshmi.A.S</td>
+                                                <td>M.Com</td>
+                                                <td>1990</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ummer.M</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1991</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abdurahiman.K.K</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1991</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hamza.M.T</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1991</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shahul Hameed</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1992</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rahmathulla</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1992</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aboobackar.C</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1993</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Haridas</td>
+                                                <td>M.A.(His)</td>
+                                                <td>1993</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Santhosh Boas</td>
+                                                <td>B.Com</td>
+                                                <td>1993</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jayasree.M.V</td>
+                                                <td>B.Sc(Bot)</td>
+                                                <td>1994</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ayisha.T</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1994</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Musthaffa.T</td>
+                                                <td>M.Com</td>
+                                                <td>1994</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maimoona.S</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1995</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>T.P.Mohammed Mustafa</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1995</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kishore Kayarat</td>
+                                                <td>Pre-Degree</td>
+                                                <td>1955</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hari Govinan.P</td>
+                                                <td>Pre-Degree</td>
+                                                <td>1996</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Noushad.A</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1997</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abdul Rsheed. T</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1998</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sunitha.P</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>1998</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bindu Sharmila</td>
+                                                <td>M.Sc(Chem)B.</td>
+                                                <td>1999</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Akbar Vangasseri</td>
+                                                <td>M.Com</td>
+                                                <td>1999</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sumitha.T.K</td>
+                                                <td>M.A.(His)</td>
+                                                <td>1999</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vinitha.K</td>
+                                                <td>B.Sc(Bot)</td>
+                                                <td>1999</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fathimath. V</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lakshmanan N.P</td>
+                                                <td>M.Com</td>
+                                                <td>2000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bassheer. A</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2001</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sujathan.P.K</td>
+                                                <td>M.A.(Eco)</td>
+                                                <td>2001</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sreeja.K</td>
+                                                <td>M.Com</td>
+                                                <td>2001</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Deepa.C</td>
+                                                <td>B.B.S</td>
+                                                <td>2002</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rajesh.P.N</td>
+                                                <td>B.A.(Eco)</td>
+                                                <td>2002</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rajith.P</td>
+                                                <td>M.Com</td>
+                                                <td>2002</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pradeep Kumar.P</td>
+                                                <td>B.B.A</td>
+                                                <td>2003</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jamsheela.K</td>
+                                                <td>M.A History</td>
+                                                <td>2004</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Suraj.K</td>
+                                                <td>BBA</td>
+                                                <td>2005</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mohsina.K</td>
+                                                <td>B.Sc(Physics)</td>
+                                                <td>2005</td>
+                                                <td>Ill</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pradeep Kumar.P</td>
+                                                <td>M.Com</td>
+                                                <td>2005</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abdulhakeem.K.P</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2006</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zeenath.K</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2006</td>
+                                                <td>Ill</td>
+                                            </tr>
+                                            <tr>
+                                                <td>P.S.Sreena</td>
+                                                <td>B.A.History</td>
+                                                <td>2006</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abdul Rasheed.P.K</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2007</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SaiJyothi.S</td>
+                                                <td>M.Sc(Physics)</td>
+                                                <td>2008</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mohsina.K</td>
+                                                <td>M.Sc(Physics)</td>
+                                                <td>2008</td>
+                                                <td>Ill</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bharathy.K.K</td>
+                                                <td>M.A(Economics)</td>
+                                                <td>2009</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Neethu.K</td>
+                                                <td>B.A.History</td>
+                                                <td>2010</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Suhaima.A.T</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2010</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Najmunnissa.K.V</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2010</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shiabudeen T.P.</td>
+                                                <td>M.A.History</td>
+                                                <td>2010</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anjusha .K</td>
+                                                <td>M.Com</td>
+                                                <td>2014</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fasmina</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2016</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Muhammed Unais Muhsin</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2016</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anjali. K.M.</td>
+                                                <td>BBA</td>
+                                                <td>2016</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sabna Sasi. K.</td>
+                                                <td>BA (Mass Com.)</td>
+                                                <td>2018</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sadeeda. A.P.</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2019</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashidha Raihana. K.A.</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2019</td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Nihala. P.A</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2020</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nahila. K</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2020</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fahis. S.J</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2020</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sreelakshmi. A</td>
+                                                <td>B.Sc (Physics)</td>
+                                                <td>2020</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nafiya. C.T</td>
+                                                <td>M.A. Isl. History</td>
+                                                <td>2020</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fathimath Safoora</td>
+                                                <td>M.A. Isl. History</td>
+                                                <td>2020</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anshida. P</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2021</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ansiba. C</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2021</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sahala Thasneem. K</td>
+                                                <td></td>
+                                                <td>2022</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Muhammed Shuhaib M</td>
+                                                <td></td>
+                                                <td>2022</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Risna E</td>
+                                                <td>B.A(Ara&amp;lsl.His)</td>
+                                                <td>2022</td>
+                                                <td>Ill</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aishwarya Sunil</td>
+                                                <td>MSc Forensic Science</td>
+                                                <td>2022</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sandra Raj I P</td>
+                                                <td>MSc Forensic Science</td>
+                                                <td>2022</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Athira K S</td>
+                                                <td>MSc Forensic Science</td>
+                                                <td>2022</td>
+                                                <td>III</td>
+                                            </tr>
+                                            <tr>
+                                                <td>P Sreelakshmi</td>
+                                                <td>BA Journalism and Mass communication</td>
+                                                <td>2023</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dinsha K</td>
+                                                <td>MSc Forensic Science</td>
+                                                <td>2023</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aleesha J</td>
+                                                <td>MSc Forensic Science</td>
+                                                <td>2023</td>
+                                                <td>II</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sneha P</td>
+                                                <td>MSc Forensic Science</td>
+                                                <td>2023</td>
+                                                <td>III</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="roll_of_honors_page" model="website.page">
+            <field name="url">/roll_of_honors</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="roll_of_honors"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,82 @@
+<odoo>
+    <data>
+        <record id="res-facilities" model="ir.ui.view">
+            <field name="name">Research Facilities</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.res-facilities</field>
+            <field name="arch" type="xml">
+                <t name="facilities" t-name="mes_college.res-facilities_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <script>
+                                $(document).ready(function() {
+                                // Select all sections with the class "facility"
+                                var sections = $(".facility");
+
+                                // Loop through each section and apply the "row" or "row-reverse" flex-direction based
+                                on index
+                                sections.each(function(index) {
+                                if (index % 2 === 0) {
+                                // If the index is even, set flex-direction to "row"
+                                $(this).css("flex-direction", "row");
+                                } else {
+                                // If the index is odd, set flex-direction to "row-reverse"
+                                $(this).css("flex-direction", "row-reverse");
+                                }
+                                });
+                                });
+                            </script>
+                            <section class="bg_color pt48">
+                                <div class="container" id="container_width">
+
+                                    <section id="departments_page">
+                                        <h2 class="page_head" id="department_subhead">Research Facilities
+                                        </h2>
+                                        <div class="content_text" style="text-align:justify;padding: 0;">
+
+                                            PH.D. PROGRAMMES (FULL-TIME &amp; PART-TIME)
+                                            Research Programmes leading to Ph.D. degree are offered in the
+                                            following departments
+                                        </div>
+                                        <div class="col-md-12 pt16">
+                                            <t t-foreach="facility_data" t-as="facilities">
+                                                <section class="row mx-auto facility">
+                                                    <div class="col-md-5">
+                                                        <t t-if="facilities.get('image')">
+                                                            <img t-att-src=" str(facilities['image'])"
+                                                                 alt=""
+                                                                 loading="lazy" id="facility_image"
+                                                                 style=""/>
+                                                        </t>
+                                                    </div>
+                                                    <div class="col-md-7 facilities_text">
+                                                        <h1 class="facility_name">
+                                                            <t t-if="facilities.get('name')">
+                                                                <t t-esc="facilities['name']"/>
+                                                            </t>
+                                                        </h1>
+                                                        <p class="facility_p">
+                                                            <t t-if="facilities.get('description')">
+                                                                <t t-esc="facilities['description']"/>
+                                                            </t>
+                                                        </p>
+                                                    </div>
+                                                </section>
+                                            </t>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="res-facilities_page" model="website.page">
+            <field name="url">/res-facilities</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="res-facilities"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,83 @@
+<odoo>
+    <data>
+        <record id="vision_mission_mes" model="ir.ui.view">
+            <field name="name">Vision and Mission</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.vision_mission_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.vision_mission_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class="col-md-8 pt32 pb32">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">Vision</h2>
+                                                <div class="content_text" style="text-align:left">
+                                                    All inclusiveness, integrity, promotion of equity, social justice
+                                                    and
+                                                    scientific temper.
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">Mission</h2>
+                                                <div class="content_text" style="text-align:left">
+                                                    To set and nurture a path for catering to the educational needs
+                                                    leading
+                                                    to
+                                                    empowerment of underprivileged sections to face the challenges of
+                                                    time
+                                                    and
+                                                    change. Inculcating social commitment for the cause of value based
+                                                    higher
+                                                    education, nation building and universal brotherhood.
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">Core Values</h2>
+                                                <div class="content_text">
+                                                    <ul>
+                                                        <li>
+                                                            SECULARISM
+
+                                                        </li>
+                                                        <li>
+                                                            EQUITY
+                                                        </li>
+                                                        <li>
+                                                            SOCIAL COMMITMENT
+                                                        </li>
+                                                        <li>
+                                                            PROFESSIONAL ETHICS
+
+                                                        </li>
+                                                        <li>
+                                                            ENVIRONMENTAL CONSCIOUSNESS
+
+                                                        </li>
+                                                        <li>
+                                                            SCIENTIFIC TEMPER
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="vision_mission_mes_page" model="website.page">
+            <field name="url">/vision_mission</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="vision_mission_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

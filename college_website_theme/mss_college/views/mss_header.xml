@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="template_mss" inherit_id="website.layout" name="Header MSS">
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+            <div class="topbar">
+                <div class="col-md-8">
+                    <div class="row">
+                        <a href="/academic-calendar" class="pl-3 pr-3 p-2 top_text" id="top_text">Academic Calendar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row" id="top_row">
+                        <a href="#" class="pl-3 pr-3 p-2 float-right" id="icon">
+                            <img src="/mss_college/static/img/icon4.png" class="w-100 h-100"/>
+                        </a>
+                        <a href="#" class="pl-3 pr-3 p-2 float-right" id="icon">
+                            <img src="/mss_college/static/img/icon3.png" class="w-100 h-100"/>
+                        </a>
+                        <a href="#" class="pl-3 pr-3 p-2 float-right" id="icon">
+                            <img src="/mss_college/static/img/icon2.png" class="w-100 h-100"/>
+                        </a>
+                        <a href="#" class="pl-3 pr-3 p-2 float-right" id="icon">
+                            <img src="/mss_college/static/img/icon1.png" class="w-100 h-100"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <header id="top" data-anchor="true" data-name="Header" class="">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="/" style="width:auto;">
+                        <img class="logo" src="/mss_college/static/img/logo.svg"/>
+                    </a>
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-valuef="nav-item dropdown"/>
+                                    <t t-set="link_class" t-valuef="dropdown-toggle nav-link"/>
+                                </t>
+                            </t>
+                              <a href="/contact_me" role="button" class="admission" style=" width: 110px; font-size:12px;background-color:#52AB98;">
+                        Admission
+                    </a>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </xpath>
+    </template>
+</odoo>
+

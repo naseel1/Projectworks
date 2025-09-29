@@ -1,0 +1,132 @@
+<odoo>
+    <data>
+        <record id="management" model="ir.ui.view">
+            <field name="name">Management</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.management</field>
+            <field name="arch" type="xml">
+                <t name="Management" t-name="emea_college_theme.management_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page pt32 pb32">
+                                <h2 class="page_head">MANAGEMENT</h2>
+                                <div class="row" id="former_principals">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management1.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Jb. Sayyid Sadiq Ali Shihab Thangal Panakkad</div>
+                                            <div class="designation">Rector</div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management2.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Mr. P.K. Kunhalikutty MLA</div>
+                                            <div class="designation">Rector
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management3.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Mr. P.K. Abdu Rabb</div>
+                                            <div class="designation">Chairman</div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management4.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Jb. Sayyid Basheer Ali Shihab Thangal</div>
+                                            <div class="designation">President</div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management5.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Mr. P.K.Basheer MLA
+                                            </div>
+                                            <div class="designation">General Secretary</div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management6.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Jb. K. Mohammed Unni Haji
+
+                                            </div>
+                                            <div class="designation">Secretary</div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management7.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Jb. Nalakath Soopy
+
+                                            </div>
+                                            <div class="designation">Sr. Vice President
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management8.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Jb. K.P.A. Majeed MLA
+                                            </div>
+                                            <div class="designation">Vice President</div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management9.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Mr. P.K. Moosa alias Bappu
+
+                                            </div>
+                                            <div class="designation">Manager &amp; Treasurer
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management10.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Prof. K.M Aboobacker
+
+                                            </div>
+                                            <div class="designation">Joint Secretary</div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/management11.jpeg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Mr. Varikkodan Hashim
+                                            </div>
+                                            <div class="designation">Joint Secretary</div>
+                                        </div>
+                                    </section>
+
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="management_page" model="website.page">
+            <field name="url">/management</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="management"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

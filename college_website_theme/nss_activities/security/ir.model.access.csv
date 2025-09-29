@@ -1,0 +1,13 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+access_nss_manage_public,nss.manage public access,model_nss_manage,base.group_public,1,0,0,0
+access_nss_manage_user,nss.manage user access,model_nss_manage,nss_activities.group_nss_activities_admin,1,1,1,1
+
+access_nss_activity_user,Nss.Activity,model_nss_activity,nss_activities.group_nss_activities_admin,1,1,1,1
+access_nss_activity_public,Nss Activity Public,model_nss_activity,base.group_public,1,0,0,0
+
+access_nss_activity_image_user,Nss.Activity.Image,model_nss_activity_image,nss_activities.group_nss_activities_admin,1,1,1,1
+access_nss_activity_image_public,Nss Activity Image Public,model_nss_activity_image,base.group_public,1,0,0,0
+
+access_nss_report_user,Nss.Report,model_nss_report,nss_activities.group_nss_activities_admin,1,1,1,1
+access_nss_report_public,Nss Report Public,model_nss_report,base.group_public,1,0,0,0

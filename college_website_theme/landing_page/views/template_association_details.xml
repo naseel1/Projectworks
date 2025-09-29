@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="template_association_details" name="Association Details">
+        <t t-call="website.layout">
+            <div class="container py-5">
+                <h1>
+                    <t t-esc="association.association_name"/>
+                </h1>
+            </div>
+        </t>
+    </template>
+</odoo>

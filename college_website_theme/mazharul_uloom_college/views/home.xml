@@ -1,0 +1,1243 @@
+<odoo>
+     <template id="mazharul_uloom_website_1" name="Mazharul Uloom Homepage-1" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'"/>
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="banner section1 o_colored_level" data-snippet="emea_college_home"
+                             data-name=" Emea College Homepage" style="background-image: none;">
+                        <img src="/web/image/4551-fe98136f/00A%5B1%5D-min.png"
+                             style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+                             loading="lazy" data-original-src="/web/image/4551-fe98136f/00A%5B1%5D-min.png"
+                             data-mimetype="image/png" data-resize-width="512"/>
+                        <mediaelementwrapper id="mejs_4796955352947423">
+                            <video loop="loop" autoplay="true" playsinline="" muted="" id="mejs_4796955352947423_html5"
+                                   preload="auto" src="/mazharul_uloom_college/static/img/homepage vid.mp4"
+                                   poster="/web/image/4551-fe98136f/00A%5B1%5D-min.png"
+                                   style="width: 100%; height: 100%; object-fit: cover; object-position:  bottom;"
+                                   __idm_id__="72541185">
+
+                                <source type="video/webm" src="/mazharul_uloom_college/static/img/homepage vid.mp4">
+                                </source>
+                            </video>
+                        </mediaelementwrapper>
+                        <div class="vedio-section-container vedio-section">
+                            <h1 class="vedio-section-heading">Invest In Your Future Confidently</h1>
+                            <p class="vedio-section-para">Established &amp; Managed by The Ambur Muslim Educational
+                                Society 
+                                <br/>Accredited by NAAC with Grade A CGPA 3.23 in Cycle 3<br/>Affiliated to
+                                Thiruvalluvar
+                                University, Vellore<br/>AMBUR - 635 802, Tirupattur District, Tamil Nadu, INDIA
+                            </p>
+                        </div>
+                        <div class="marquee-container">
+                            <span class="marquee-heading">NOTIFICATION</span>
+                            <div class="marquee">
+                                <div class="marquee__inner">
+                                    <span class="marquee__item">
+                                        NOTICE INVITING EXPRESSION OF INTEREST - New Academic Block under PM - USHA
+                                        Scheme
+                                        <span class="marquee__separator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                 viewBox="0 0 14 14"
+                                                 fill="none">
+                                                <path d="M2.02928 1.40238C1.95347 1.38036 1.87311 1.37926 1.79672 1.3992C1.72033 1.41914 1.65077 1.45938 1.59539 1.51565C1.54002 1.57192 1.5009 1.64212 1.48219 1.71882C1.46348 1.79552 1.46587 1.87585 1.48911 1.9513L2.90778 6.56255H7.87544C7.99148 6.56255 8.10276 6.60864 8.1848 6.69069C8.26685 6.77273 8.31294 6.88401 8.31294 7.00005C8.31294 7.11608 8.26685 7.22736 8.1848 7.30941C8.10276 7.39145 7.99148 7.43755 7.87544 7.43755H2.90778L1.48911 12.0488C1.46601 12.1242 1.46372 12.2045 1.4825 12.2811C1.50127 12.3577 1.5404 12.4278 1.59575 12.484C1.6511 12.5402 1.72061 12.5803 1.79693 12.6003C1.87325 12.6202 1.95353 12.6191 2.02928 12.5971C5.88801 11.475 9.52682 9.70223 12.7889 7.3553C12.8452 7.31478 12.8911 7.26143 12.9228 7.19966C12.9545 7.13789 12.971 7.06947 12.971 7.00005C12.971 6.93063 12.9545 6.86221 12.9228 6.80043C12.8911 6.73866 12.8452 6.68531 12.7889 6.6448C9.52687 4.29764 5.88806 2.52469 2.02928 1.40238Z"
+                                                      fill="#FFC82C"/>
+                                            </svg>
+                                        </span>
+                                        Ph.D Rank List of commerce
+                                        <span class="marquee__separator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                 viewBox="0 0 14 14"
+                                                 fill="none">
+                                                <path d="M2.02928 1.40238C1.95347 1.38036 1.87311 1.37926 1.79672 1.3992C1.72033 1.41914 1.65077 1.45938 1.59539 1.51565C1.54002 1.57192 1.5009 1.64212 1.48219 1.71882C1.46348 1.79552 1.46587 1.87585 1.48911 1.9513L2.90778 6.56255H7.87544C7.99148 6.56255 8.10276 6.60864 8.1848 6.69069C8.26685 6.77273 8.31294 6.88401 8.31294 7.00005C8.31294 7.11608 8.26685 7.22736 8.1848 7.30941C8.10276 7.39145 7.99148 7.43755 7.87544 7.43755H2.90778L1.48911 12.0488C1.46601 12.1242 1.46372 12.2045 1.4825 12.2811C1.50127 12.3577 1.5404 12.4278 1.59575 12.484C1.6511 12.5402 1.72061 12.5803 1.79693 12.6003C1.87325 12.6202 1.95353 12.6191 2.02928 12.5971C5.88801 11.475 9.52682 9.70223 12.7889 7.3553C12.8452 7.31478 12.8911 7.26143 12.9228 7.19966C12.9545 7.13789 12.971 7.06947 12.971 7.00005C12.971 6.93063 12.9545 6.86221 12.9228 6.80043C12.8911 6.73866 12.8452 6.68531 12.7889 6.6448C9.52687 4.29764 5.88806 2.52469 2.02928 1.40238Z"
+                                                      fill="#FFC82C"/>
+                                            </svg>
+                                        </span>
+                                        TENDER NOTICE/Purchase/2024-25/PD Account
+                                    </span>
+                                    <span class="marquee__item">
+                                        NOTICE INVITING EXPRESSION OF INTEREST - New Academic Block under PM - USHA
+                                        Scheme
+                                        <span class="marquee__separator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                 viewBox="0 0 14 14"
+                                                 fill="none">
+                                                <path d="M2.02928 1.40238C1.95347 1.38036 1.87311 1.37926 1.79672 1.3992C1.72033 1.41914 1.65077 1.45938 1.59539 1.51565C1.54002 1.57192 1.5009 1.64212 1.48219 1.71882C1.46348 1.79552 1.46587 1.87585 1.48911 1.9513L2.90778 6.56255H7.87544C7.99148 6.56255 8.10276 6.60864 8.1848 6.69069C8.26685 6.77273 8.31294 6.88401 8.31294 7.00005C8.31294 7.11608 8.26685 7.22736 8.1848 7.30941C8.10276 7.39145 7.99148 7.43755 7.87544 7.43755H2.90778L1.48911 12.0488C1.46601 12.1242 1.46372 12.2045 1.4825 12.2811C1.50127 12.3577 1.5404 12.4278 1.59575 12.484C1.6511 12.5402 1.72061 12.5803 1.79693 12.6003C1.87325 12.6202 1.95353 12.6191 2.02928 12.5971C5.88801 11.475 9.52682 9.70223 12.7889 7.3553C12.8452 7.31478 12.8911 7.26143 12.9228 7.19966C12.9545 7.13789 12.971 7.06947 12.971 7.00005C12.971 6.93063 12.9545 6.86221 12.9228 6.80043C12.8911 6.73866 12.8452 6.68531 12.7889 6.6448C9.52687 4.29764 5.88806 2.52469 2.02928 1.40238Z"
+                                                      fill="#FFC82C"/>
+                                            </svg>
+                                        </span>
+                                        Ph.D Rank List of commerce
+                                        <span class="marquee__separator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                 viewBox="0 0 14 14"
+                                                 fill="none">
+                                                <path d="M2.02928 1.40238C1.95347 1.38036 1.87311 1.37926 1.79672 1.3992C1.72033 1.41914 1.65077 1.45938 1.59539 1.51565C1.54002 1.57192 1.5009 1.64212 1.48219 1.71882C1.46348 1.79552 1.46587 1.87585 1.48911 1.9513L2.90778 6.56255H7.87544C7.99148 6.56255 8.10276 6.60864 8.1848 6.69069C8.26685 6.77273 8.31294 6.88401 8.31294 7.00005C8.31294 7.11608 8.26685 7.22736 8.1848 7.30941C8.10276 7.39145 7.99148 7.43755 7.87544 7.43755H2.90778L1.48911 12.0488C1.46601 12.1242 1.46372 12.2045 1.4825 12.2811C1.50127 12.3577 1.5404 12.4278 1.59575 12.484C1.6511 12.5402 1.72061 12.5803 1.79693 12.6003C1.87325 12.6202 1.95353 12.6191 2.02928 12.5971C5.88801 11.475 9.52682 9.70223 12.7889 7.3553C12.8452 7.31478 12.8911 7.26143 12.9228 7.19966C12.9545 7.13789 12.971 7.06947 12.971 7.00005C12.971 6.93063 12.9545 6.86221 12.9228 6.80043C12.8911 6.73866 12.8452 6.68531 12.7889 6.6448C9.52687 4.29764 5.88806 2.52469 2.02928 1.40238Z"
+                                                      fill="#FFC82C"/>
+                                            </svg>
+                                        </span>
+                                        TENDER NOTICE/Purchase/2024-25/PD Account
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+                    <section class="pt40 pb40 about-section">
+                        <div class="about-container">
+
+                            <div class="about-heading">
+                                <h2>Mazharul Uloom College</h2>
+                                <div class="about-dash"/>
+                            </div>
+                            <span class="about-subheading">(Autonomous)</span>
+                            <div class="about-content">
+                                <div class="about-text">
+                                    <p>The Mazharul Uloom College was founded by the Ambur Muslim Educational Society
+                                        (AMES)
+                                        in 1969 with the united efforts of a dedicated team under the initiative,
+                                        support,
+                                        and guidance of the great leather industrialist and philanthropist Late Janab
+                                        Anakkar Abdul Shukoor Sahib. The College started with a few students and has now
+                                        grown over the years like a snowball with increasing number of students and
+                                        teaching
+                                        and non-teaching staff members catering to the ever-increasing students
+                                        population.
+                                    </p>
+                                    <p>It is situated on its own grounds of 21.5 acres along with the newly founded AMES
+                                        College of Education from the academic year 2003-2004. The College, true to the
+                                        vision of its founders, caters to learners at large transcending the limits of
+                                        caste, colour and creed with five UG courses in the Shift I and five UG and two
+                                        PG
+                                        Courses in the Shift II.
+                                    </p>
+                                    <a href="#" class="about-readmore">Read More
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"
+                                             viewBox="0 0 21 20"
+                                             fill="none">
+                                            <path d="M1.47779 0.404044C1.34782 0.366288 1.21006 0.364402 1.07911 0.398587C0.948166 0.432771 0.828907 0.501752 0.733981 0.598215C0.639055 0.694679 0.572 0.815031 0.539924 0.946512C0.507848 1.07799 0.511947 1.2157 0.551786 1.34504L2.98379 9.25004H11.4998C11.6987 9.25004 11.8895 9.32906 12.0301 9.46971C12.1708 9.61037 12.2498 9.80113 12.2498 10C12.2498 10.199 12.1708 10.3897 12.0301 10.5304C11.8895 10.671 11.6987 10.75 11.4998 10.75H2.98379L0.551786 18.655C0.512182 18.7843 0.508264 18.9219 0.540445 19.0532C0.572626 19.1846 0.63971 19.3047 0.734598 19.4011C0.829486 19.4974 0.948648 19.5663 1.07947 19.6004C1.2103 19.6346 1.34793 19.6327 1.47779 19.595C8.09275 17.6714 14.3307 14.6324 19.9228 10.609C20.0194 10.5396 20.0981 10.4481 20.1524 10.3422C20.2067 10.2363 20.235 10.119 20.235 10C20.235 9.88104 20.2067 9.76375 20.1524 9.65785C20.0981 9.55196 20.0194 9.4605 19.9228 9.39104C14.3308 5.36734 8.09283 2.328 1.47779 0.404044Z"
+                                                  fill="#FFC82C"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="about-info">
+                                    <img src="/mazharul_uloom_college/static/img/about-img.png" class="about-img"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_tabs pt48 pb48 o_colored_level leader-section" data-vcss="001"
+                             data-snippet="s_tabs"
+                             data-name="Tabs" style="background-image: none;">
+                        <div class="leader-container">
+                            <div class="pb40 about-heading">
+                                <div class="about-dash"/>
+                                <h2>Message From Our Leaders</h2>
+
+                            </div>
+
+                            <div class="s_tabs_main">
+                                <div class="s_tabs_nav mb-3">
+                                    <ul class="nav nav-pills tab-nav" role="tablist">
+                                        <hr/>
+                                        <li class="nav-item">
+                                            <a class="nav-link active o_default_snippet_text btn-color"
+                                               id="nav_tabs_link_1741667752100_57" data-bs-toggle="tab"
+                                               href="#nav_tabs_content_1741667752100_57" role="tab"
+                                               aria-controls="nav_tabs_content_1741667752100_57" aria-selected="true">
+                                                PRESIDENT
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link o_default_snippet_text btn-color"
+                                               id="nav_tabs_link_1741667752100_58" data-bs-toggle="tab"
+                                               href="#nav_tabs_content_1741667752100_58" role="tab"
+                                               aria-controls="nav_tabs_content_1741667752100_58" aria-selected="false">
+                                                GENERAL
+                                                SECRETARY
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link o_default_snippet_text btn-color"
+                                               id="nav_tabs_link_1741667752101_59" data-bs-toggle="tab"
+                                               href="#nav_tabs_content_1741667752101_59" role="tab"
+                                               aria-controls="nav_tabs_content_1741667752101_59" aria-selected="false">
+                                                SECRETARY
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link o_default_snippet_text btn-color"
+                                               id="nav_tabs_link_1741667752101_60" data-bs-toggle="tab"
+                                               href="#nav_tabs_content_1741667752101_60" role="tab"
+                                               aria-controls="nav_tabs_content_1741667752101_60" aria-selected="false">
+                                                PRINCIPAL
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="s_tabs_content tab-content">
+                                    <div class="tab-pane fade show active" id="nav_tabs_content_1741667752100_57"
+                                         role="tabpanel" aria-labelledby="nav_tabs_link_1741667752100_57">
+                                        <div class="oe_structure oe_empty">
+                                            <section class="s_text_block" style="background-image: none;">
+                                                <div class=" s_allow_columns">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img class="leaders-img"
+                                                                 src="/mazharul_uloom_college/static/img/PRESIDENT.png"/>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <h3 class="leader-name">Dr . Fasal Ali C.M, President</h3>
+                                                            <p class="o_default_snippet_text">At Mazharul Uloom College,
+                                                                we are
+                                                                committed to fostering a learning environment that
+                                                                nurtures
+                                                                academic excellence, character development, and holistic
+                                                                growth.
+                                                                Since our inception in 1969, our institution has stood
+                                                                as a
+                                                                beacon of quality education, empowering students to
+                                                                achieve
+                                                                their aspirations and contribute meaningfully to
+                                                                society. The
+                                                                college has been functioning with a noble vision and
+                                                                mission
+                                                                clearly reflecting its social responsibility and
+                                                                commitment to
+                                                                nation building. The institution provides effective and
+                                                                efficient support and facilities to academic mission and
+                                                                maintain a supportive environment for all students and
+                                                                staff.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav_tabs_content_1741667752100_58" role="tabpanel"
+                                         aria-labelledby="nav_tabs_link_1741667752100_58">
+                                        <div class="oe_structure oe_empty">
+                                            <section class="s_text_block" style="background-image: none;">
+                                                <div class=" s_allow_columns">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img class="leaders-img"
+                                                                 src="/mazharul_uloom_college/static/img/General Secretary.png"/>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <h3 class="leader-name">Prof . Umakumari P.M, General
+                                                                Secretary
+                                                            </h3>
+                                                            <p class="o_default_snippet_text">Mazharul Uloom College,
+                                                                where our
+                                                                mission is to educate, inspire, and empower individuals
+                                                                to
+                                                                become leaders of change. As the General Secretary, I am
+                                                                honored
+                                                                to lead a community where each member is committed to
+                                                                academic
+                                                                excellence and social responsibility. Our curriculum,
+                                                                infused
+                                                                with cutting-edge research and comprehensive training
+                                                                methods,
+                                                                prepares our students not just for professional success
+                                                                but for
+                                                                global citizenship. Join us as we continue to push the
+                                                                boundaries of knowledge and innovation."
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav_tabs_content_1741667752101_59" role="tabpanel"
+                                         aria-labelledby="nav_tabs_link_1741667752101_59">
+                                        <div class="oe_structure oe_empty">
+                                            <section class="s_text_block" style="background-image: none;">
+                                                <div class=" s_allow_columns">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img class="leaders-img"
+                                                                 src="mazharul_uloom_college/static/img/Secretary.png"/>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <h3 class="leader-name">Prof . Annamkutty . N, Secretary
+                                                            </h3>
+                                                            <p class="o_default_snippet_text">Mazharul Uloom College,
+                                                                where our
+                                                                mission is to educate, inspire, and empower individuals
+                                                                to
+                                                                become leaders of change. As the General Secretary, I am
+                                                                honored
+                                                                to lead a community where each member is committed to
+                                                                academic
+                                                                excellence and social responsibility. Our curriculum,
+                                                                infused
+                                                                with cutting-edge research and comprehensive training
+                                                                methods,
+                                                                prepares our students not just for professional success
+                                                                but for
+                                                                global citizenship. Join us as we continue to push the
+                                                                boundaries of knowledge and innovation."
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav_tabs_content_1741667752101_60" role="tabpanel"
+                                         aria-labelledby="nav_tabs_link_1741667752101_60">
+                                        <div class="oe_structure oe_empty">
+                                            <section class="s_text_block" style="background-image: none;">
+                                                <div class=" s_allow_columns">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img class="leaders-img"
+                                                                 src="/mazharul_uloom_college/static/img/Principal.png"/>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <h3 class="leader-name">Prof . Sagar Siva . N, Principal
+                                                            </h3>
+                                                            <p class="o_default_snippet_text">Mazharul Uloom College,
+                                                                where our
+                                                                mission is to educate, inspire, and empower individuals
+                                                                to
+                                                                become leaders of change. As the General Secretary, I am
+                                                                honored
+                                                                to lead a community where each member is committed to
+                                                                academic
+                                                                excellence and social responsibility. Our curriculum,
+                                                                infused
+                                                                with cutting-edge research and comprehensive training
+                                                                methods,
+                                                                prepares our students not just for professional success
+                                                                but for
+                                                                global citizenship. Join us as we continue to push the
+                                                                boundaries of knowledge and innovation."
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="counter pb40 pt40">
+                        <div class="stats-container">
+                            <div class="stat-box">
+                                <h2>2500 +</h2>
+                                <p>Students</p>
+                            </div>
+                            <div class="stat-box">
+                                <h2>300 +</h2>
+                                <p>Staff</p>
+                            </div>
+                            <div class="stat-box">
+                                <h2>2000 +</h2>
+                                <p>Library Books</p>
+                            </div>
+                            <div class="stat-box">
+                                <h2>30 +</h2>
+                                <p>Courses</p>
+                            </div>
+                            <div class="stat-box">
+                                <h2>3000 +</h2>
+                                <p>Alumni</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt40 program-section">
+                        <div class="program-container">
+                            <div class="program-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                     fill="none"
+                                     class="program-svg">
+                                    <rect width="60" height="60" rx="30" fill="#FFC82C"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.25 21.75H37.5C37.6989 21.75 37.8897 21.829 38.0304 21.9697C38.171 22.1103 38.25 22.3011 38.25 22.5V33.75C38.25 33.9489 38.171 34.1397 38.0304 34.2803C37.8897 34.421 37.6989 34.5 37.5 34.5C37.3011 34.5 37.1104 34.421 36.9697 34.2803C36.829 34.1397 36.75 33.9489 36.75 33.75V24.31L23.03 38.03C22.8879 38.1625 22.6998 38.2346 22.5055 38.2312C22.3112 38.2277 22.1258 38.149 21.9884 38.0116C21.851 37.8742 21.7723 37.6888 21.7689 37.4945C21.7654 37.3002 21.8375 37.1122 21.97 36.97L35.69 23.25H26.25C26.0511 23.25 25.8604 23.171 25.7197 23.0303C25.579 22.8897 25.5 22.6989 25.5 22.5C25.5 22.3011 25.579 22.1103 25.7197 21.9697C25.8604 21.829 26.0511 21.75 26.25 21.75Z"
+                                          fill="black"/>
+                                </svg>
+                                <img src="/mazharul_uloom_college/static/img/program1.png" alt="Program Image"/>
+
+                                <div class="program-card-content">
+
+                                    <h2>Program Heading</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem
+                                        iste,
+                                        voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis
+                                        atque
+                                        nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+                                    </p>
+                                    <a href="#" class="program-button">
+                                        Find out more
+                                        <span class="material-symbols-outlined">
+                                            arrow_right_alt
+                                        </span>
+
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="program-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                     fill="none"
+                                     class="program-svg">
+                                    <rect width="60" height="60" rx="30" fill="#FFC82C"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.25 21.75H37.5C37.6989 21.75 37.8897 21.829 38.0304 21.9697C38.171 22.1103 38.25 22.3011 38.25 22.5V33.75C38.25 33.9489 38.171 34.1397 38.0304 34.2803C37.8897 34.421 37.6989 34.5 37.5 34.5C37.3011 34.5 37.1104 34.421 36.9697 34.2803C36.829 34.1397 36.75 33.9489 36.75 33.75V24.31L23.03 38.03C22.8879 38.1625 22.6998 38.2346 22.5055 38.2312C22.3112 38.2277 22.1258 38.149 21.9884 38.0116C21.851 37.8742 21.7723 37.6888 21.7689 37.4945C21.7654 37.3002 21.8375 37.1122 21.97 36.97L35.69 23.25H26.25C26.0511 23.25 25.8604 23.171 25.7197 23.0303C25.579 22.8897 25.5 22.6989 25.5 22.5C25.5 22.3011 25.579 22.1103 25.7197 21.9697C25.8604 21.829 26.0511 21.75 26.25 21.75Z"
+                                          fill="black"/>
+                                </svg>
+                                <img src="/mazharul_uloom_college/static/img/program2.png" alt="Program Image"/>
+                                <div class="program-card-content">
+
+                                    <h2>Program Heading</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem
+                                        iste,
+                                        voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis
+                                        atque
+                                        nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+                                    </p>
+                                    <a href="#" class="program-button">
+                                        Find out more
+                                        <span class="material-symbols-outlined">
+                                            arrow_right_alt
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="program-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                     fill="none"
+                                     class="program-svg">
+                                    <rect width="60" height="60" rx="30" fill="#FFC82C"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.25 21.75H37.5C37.6989 21.75 37.8897 21.829 38.0304 21.9697C38.171 22.1103 38.25 22.3011 38.25 22.5V33.75C38.25 33.9489 38.171 34.1397 38.0304 34.2803C37.8897 34.421 37.6989 34.5 37.5 34.5C37.3011 34.5 37.1104 34.421 36.9697 34.2803C36.829 34.1397 36.75 33.9489 36.75 33.75V24.31L23.03 38.03C22.8879 38.1625 22.6998 38.2346 22.5055 38.2312C22.3112 38.2277 22.1258 38.149 21.9884 38.0116C21.851 37.8742 21.7723 37.6888 21.7689 37.4945C21.7654 37.3002 21.8375 37.1122 21.97 36.97L35.69 23.25H26.25C26.0511 23.25 25.8604 23.171 25.7197 23.0303C25.579 22.8897 25.5 22.6989 25.5 22.5C25.5 22.3011 25.579 22.1103 25.7197 21.9697C25.8604 21.829 26.0511 21.75 26.25 21.75Z"
+                                          fill="black"/>
+                                </svg>
+                                <img src="/mazharul_uloom_college/static/img/program3.png" alt="Program Image"/>
+                                <div class="program-card-content">
+                                    <h2>Program Heading</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem
+                                        iste,
+                                        voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis
+                                        atque
+                                        nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+                                    </p>
+                                    <a href="#" class="program-button">
+                                        Find out more
+                                        <span class="material-symbols-outlined">
+                                            arrow_right_alt
+                                        </span>
+
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <style>
+                        .tab-nav {
+                        display: flex;
+                        justify-content: right;
+                        margin-right: 180px;
+                        }
+
+                        .btn-color {
+                        color: #000 !important;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 500;
+                        }
+                        .tab-nav .nav-link.active, .nav-pills .show &gt; .nav-link {
+                        color: #FFF !important;
+                        background-color: #3E7B4A !important;
+                        display: inline-flex;
+                        padding: 13px 27px;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 500;
+                        }
+
+                        .tab-nav .nav-link {
+                        margin: 0px 20px;
+                        }
+
+                        .leaders-img {
+                        width: 590px;
+                        max-height: 409px;
+                        position: absolute;
+                        height: auto;
+                        top: -65px;
+                        }
+
+                        .leader-name {
+                        color: #112215;
+                        font-family: Inter;
+                        font-size: 24px;
+                        font-weight: 500;
+                        }
+                        .o_default_snippet_text{
+                        color: #383838;
+                        text-align: justify;
+                        font-family: Urbanist;
+                        font-size: 16px;
+                        font-weight: 400;
+                        }
+
+                        .leader-container {
+                        max-width: 1490px;
+                        margin: auto;
+                        }
+
+                        .leader-section {
+                        background-color: #F4F9F4;
+                        }
+
+                        .counter {
+                        font-family: Arial, sans-serif;
+                        background-color: #F4F9F4;
+                        display: flex;
+                        justify-content: center;
+
+                        }
+                        .stats-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 70px;
+                        max-width: 100%;
+                        }
+                        .stat-box {
+                        flex: 1;
+                        min-width: 255px;
+                        max-width: 300px;
+                        text-align: center;
+                        padding: 20px;
+                        position: relative;
+                        }
+                        .stat-box h2 {
+                        color: #000;
+                        text-align: center;
+                        font-family: Inter;
+                        font-size: 44px;
+                        font-style: normal;
+                        font-weight: 800;
+                        }
+                        .stat-box p {
+                        color: #383838;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 500;
+                        }
+                        /* First box: Border top and right */
+                        .stat-box:nth-child(1)::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 235px;
+                        height: 180px;
+                        border-top: 2px solid #2d5f2d;
+                        border-right: 2px solid #2d5f2d;
+                        }
+                        /* Third box: Border top, left, and right */
+                        .stat-box:nth-child(3)::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 180px;
+                        border-top: 2px solid #2d5f2d;
+                        border-left: 2px solid #2d5f2d;
+                        border-right: 2px solid #2d5f2d;
+                        }
+                        /* Fifth box: Border top and left */
+                        .stat-box:nth-child(5)::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 235px;
+                        height: 180px;
+                        border-top: 2px solid #2d5f2d;
+                        border-left: 2px solid #2d5f2d;
+                        }
+                        /* Second and Fourth box: Bottom highlight */
+                        .stat-box:nth-child(2)::after,
+                        .stat-box:nth-child(4)::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 180px;
+                        height: 2px;
+                        background-color: #d4c38d;
+                        transform: translateX(-50%);
+                        }
+                        @media (max-width: 768px) {
+                        .stats-container {
+                        flex-direction: column;
+                        align-items: center;
+                        }
+                        .stat-box {
+                        min-width: 250px;
+                        }
+                        }
+
+                        .program-section{
+                        background-color: #F4F9F4;
+                        }
+                        .program-container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        width: 90%;
+                        max-width: 1490px;
+                        padding-right: var(--gutter-x, 15px);
+                        padding-left: var(--gutter-x, 15px);
+                        margin-right: auto;
+                        margin-left: auto;
+                        gap: 50px;
+
+                        }
+                        .program-card {
+                        width: 398px;
+                        height: 356px;
+                        flex-shrink: 0;
+                        overflow: hidden;
+                        cursor: pointer;
+                        transition: all 0.2sease-in-out;
+
+                        position: relative;
+                        color: #f0f0f0;
+                        background: linear-gradient(180deg, rgba(102, 102, 102, 0.11) 50.58%, #000 94.64%);
+                        }
+
+                        .program-card:hover {
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px
+                        -18px
+                        inset;
+                        }
+
+
+                        .program-card img {
+                        position: absolute;
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0.9;
+                        transition: opacity 0.2s ease-out;
+                        }
+
+                        .program-card h2 {
+                        position: absolute;
+                        inset: auto auto 30px 30px;
+                        margin: 0;
+                        transition: inset 0.3s 0.3s ease-out;
+                        font-family: "Roboto Condensed", sans-serif;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        }
+
+                        .program-card-content p,
+                        .program-card-content a {
+                        position: absolute;
+                        opacity: 0;
+                        max-width: 80%;
+                        transition: opacity 0.3s ease-out;
+                        }
+
+                        .program-card-content p {
+                        inset: auto auto 80px 30px;
+                        }
+
+                        .program-button {
+                        position: absolute;
+                        inset: auto auto 40px 30px;
+                        color: inherit;
+                        text-decoration: none;
+                        opacity: 0;
+                        transition: opacity 0.3s ease-out;
+                        }
+
+                        .program-card:hover h2 {
+                        inset: auto auto 220px 30px;
+                        transition: inset 0.3s ease-out;
+                        }
+
+                        .program-card:hover .program-card-content p,
+                        .program-card:hover .program-button {
+                        opacity: 1;
+                        transition: opacity 0.5s 0.1s ease-in;
+
+                        }
+
+                        .program-card:hover img {
+                        transition: opacity 0.3s ease-in;
+                        opacity: 1;
+                        }
+
+                        .material-symbols-outlined {
+                        vertical-align: middle;
+                        }
+
+                        .program-svg {
+                        position: absolute;
+                        z-index: 100;
+                        top: 15px;
+                        right: 15px;
+                        }
+                        .program-card:hover .program-svg {
+                        transform: rotate(45deg);
+                        }
+
+                        /* Cascading Style Sheets */
+
+                        *{
+                        margin: 0;
+                        padding: 0;
+                        }
+
+
+                        .row>* {
+
+                        padding-right: 0;
+                        padding-left: 0;
+                        }
+
+                        @font-face {
+                        font-family: myFirstFont;
+                        src: url(../Poppins/Poppins-Regular.ttf);
+                        }
+                        @font-face {
+                        font-family: bold;
+                        src: url(../Poppins/Poppins-Bold.ttf);
+                        }
+
+                        @font-face {
+                        font-family: secound;
+                        src: url(../Poppins/Poppins-Bold.ttf);
+                        }
+
+                        .hero-btn:hover {
+                        color: #fff;
+                        text-decoration: none;
+                        }
+
+                        .hero-btn {
+                        color: #fff;
+                        }
+                        .o_mega_menu{
+                        width: 50%;
+                        padding: 30px;
+                        background: white;
+                        }
+                        .o_mega_menu .nav-link{
+                        color:black !important;
+                        width:100%;
+                        padding-right: 1rem !important;
+                        padding-left: 1rem !important;
+                        }
+                        .dropdown-item.active{
+                        background:#0d4097 !important;
+                        }
+                        .homepage header#top{
+                        background:transparent;
+                        position: absolute;
+                        }
+                        .header {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        }
+                        header nav.navbar {
+                        padding: 0;
+                        }
+                        .navbar .navbar-collapse {
+                        min-width: 0;
+                        justify-content: end;
+                        }
+                        #header-container {
+                        max-width: 100%;
+                        padding: 0 54px 0 30px;
+                        }
+                        #logo-img{
+                        height:80px;
+                        }
+                        .header_subhead{
+                        margin: 0;
+                        width: 475px;
+                        font-size: 12px;
+                        color: white;
+                        text-align: center;
+                        margin: auto;
+                        }
+
+                        header#top{
+                        background: #0d4097;
+                        position: relative;
+                        }
+                        .nav-item .embase_link.show span::after {
+                        width: 100%;
+                        }
+                        .home-page {
+                        min-height: 100vh;
+                        width: 100%;
+                        background-image:
+                        linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('/mazharul_uloom_college/static/img/banner.jpeg');
+                        background-position: center;
+                        background-size: cover;
+                        position: relative;
+                        }
+
+                        .college-name {
+                        font-size: 30px;
+                        font-weight: 600;
+                        color: #fff;
+                        }
+
+                        .college-logo{
+                        display: flex;
+                        }
+                        .content-align {
+                        margin: 0;
+                        }
+                        .navbar-light .dropdown-menu .dropdown-item:active{
+                        background: #0d4097 !important;
+                        }
+                        .nav-links{
+                        flex: 1;
+                        text-align: right;
+
+                        }
+
+                        .college-name {
+                        font-size: 30px;
+                        font-weight: 600;
+                        color: #fff !important;
+                        text-decoration: none;
+                        }
+                        .header {
+                        background: transparent;
+                        position: absolute;
+                        width: 100%;
+                        }
+
+                        .section1 {
+                        height: 100vh;
+                        }
+
+                        .vedio-section{
+                        position: absolute;
+                        top: 50%;
+                        padding: 0px 102px;
+                        }
+
+                        .vedio-section-heading {
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 48px;
+                        font-weight: 600;
+                        line-height: 60px; /* 125% */
+                        }
+
+                        .vedio-section-para {
+                        color: #FFF;
+                        font-family: Urbanist;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 26px; /* 162.5% */
+                        }
+
+                        .marquee-container {
+                        display: flex;
+                        align-items: center;
+                        background: rgba(0, 0, 0, 0.47);
+                        color: #fff;
+                        top: -100px;
+                        height: 60px;
+                        position: relative;
+                        padding: 8px 102px;
+                        font-size: 14px;
+                        font-family: Arial, sans-serif;
+                        }
+
+                        .marquee-heading {
+                        font-weight: bold;
+                        margin-right: 15px;
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 26px; /* 144.444% */
+                        }
+
+                        .marquee {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        flex: 1;
+                        position: relative;
+                        }
+
+                        .marquee__inner {
+                        display: flex;
+                        will-change: transform;
+                        animation: marquee 15s linear infinite;
+                        }
+
+                        .marquee__item {
+                        display: inline-block;
+                        padding-right: 50px;
+                        color: #FFF;
+                        font-family: "Open Sans";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px; /* 171.429% */
+                        }
+
+                        .marquee__separator {
+                        margin: 0 10px;
+                        color: yellow; /* Adjust separator color */
+                        }
+
+                        @keyframes marquee {
+                        from {
+                        transform: translateX(100%);
+                        }
+                        to {
+                        transform: translateX(-100%);
+                        }
+                        }
+
+                        .about-section {
+                        background-color: #F4F9F4;
+                        }
+
+                        .about-container {
+                        max-width: 1490px;
+                        margin: auto;
+                        }
+
+                        .about-heading {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        }
+
+                        .about-subheading {
+                        color: #112215;
+                        font-family: Inter;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 46px;
+                        }
+
+                        .about-heading h2{
+                        color: #112215;
+                        font-family: Inter;
+                        font-size: 38px;
+                        font-weight: 600;
+                        line-height: 46px; /* 121.053% */
+                        }
+
+                        .about-heading span {
+                        font-weight: normal;
+                        font-size: 20px;
+                        color: #666;
+                        }
+
+                        .about-dash {
+                        flex-grow: 1;
+                        height: 2px;
+                        background: repeating-linear-gradient(to right, #3E7B4A, #3E7B4A 10px, transparent 10px,
+                        transparent
+                        20px);
+                        margin-left: 20px;
+                        }
+
+                        .about-content {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        flex-wrap: wrap;
+                        }
+
+                        .about-text-home {
+                        width: 60%;
+                        color: #333;
+                        width: 50%;
+                        font-size: 16px;
+                        line-height: 1.6;
+                        }
+
+
+                        .about-img {
+                        width: auto;
+                        height: auto;
+                        max-height: 451px;
+                        }
+
+                        .about-text {
+                        color: #383838;
+                        text-align: justify;
+                        font-family: Urbanist;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px; /* 162.5% */
+                        }
+
+                        .about-readmore {
+                        display: inline-block;
+                        margin-top: 10px;
+                        color: #112215;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        }
+
+                        .about-info {
+                        width: 50%;
+                        text-align: right;
+                        }
+
+                        .about-badge {
+                        background: #ffcc33;
+                        padding: 15px;
+                        text-align: center;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        }
+
+                        .about-years {
+                        writing-mode: vertical-rl;
+                        transform: rotate(180deg);
+                        font-size: 18px;
+                        }
+
+
+                        .about-logo img {
+                        width: 70px;
+                        margin-top: 10px;
+                        }
+
+                        @media (max-width: 992px) {
+                        .about-content {
+                        flex-direction: column;
+                        align-items: center;
+                        }
+                        .about-text, .about-info {
+                        width: 100%;
+                        text-align: center;
+                        }
+                        .about-dash {
+                        display: none;
+                        }
+                        }
+
+                        @media (max-width: 600px) {
+                        .about-section {
+                        padding: 30px;
+                        }
+                        .about-heading {
+                        font-size: 20px;
+                        flex-direction: column;
+                        text-align: center;
+                        }
+                        .about-heading span {
+                        font-size: 16px;
+                        }
+                        .about-badge {
+                        font-size: 14px;
+                        padding: 10px;
+                        }
+                        .about-years {
+                        font-size: 16px;
+                        }
+                        }
+                        .tab-nav {
+                        display: flex;
+                        justify-content: right;
+                        }
+
+                        .btn-color {
+                        color: #000 !important;
+                        }
+                        .tab-nav .nav-link.active, .nav-pills .show &gt; .nav-link {
+                        color: #FFF !important;
+                        background-color: #3E7B4A !important;
+                        display: inline-flex;
+                        padding: 13px 27px;
+                        justify-content: center;
+                        align-items: center;
+                        }
+
+                        .tab-nav .nav-link {
+                        margin: 0px 20px;
+                        }
+
+                        .leaders-img {
+                        width: 590px;
+                        max-height: 409px;
+                        position: absolute;
+                        height: auto;
+                        top: -65px;
+                        }
+
+                        .footer-logo {
+                        width: 69.433px;
+                        height: 86.451px;
+                        }
+
+                        .main-footer{
+                        position: relative;
+                        background: #fff;
+                        }
+
+                        .footer-content{
+                        position: relative;
+                        padding: 85px 0px 80px 0px;
+                        }
+                        .footer-content .logo-widget{
+                        position: relative;
+                        margin-top: -5px;
+                        }
+                        .footer-content .logo-widget .footer-social li{
+                        position: relative;
+                        display: inline-block;
+                        margin-right: 9px;
+                        }
+                        .footer-content .logo-widget .footer-social li:last-child{
+                        margin-right: 0px;
+                        }
+                        .footer-content .logo-widget .footer-social li a{
+                        position: relative;
+                        display: inline-block;
+                        width: 42px;
+                        height: 42px;
+                        line-height: 42px;
+                        background: #2e3138;
+                        color: #9ea0a9;
+                        text-align: center;
+                        border-radius: 50%;
+                        }
+                        .footer-content .logo-widget .footer-social li a:hover{
+                        color: #ffffff;
+                        background: #ff5e14;
+                        }
+                        .footer-content .logo-widget .logo-box{
+                        margin-bottom: 25px;
+                        }
+                        .footer-content .logo-widget .text p{
+                        color: #9ea0a9;
+                        margin-bottom: 32px;
+                        }
+                        .footer-content .footer-title{
+                        position: relative;
+                        font-size: 24px;
+                        line-height: 35px;
+                        font-family: 'Playfair Display', serif;
+                        color: #ffffff;
+                        font-weight: 700;
+                        margin-bottom: 27px;
+                        }
+                        .footer-content .service-widget .list li{
+                        display: block;
+                        margin-bottom: 12px;
+                        }
+                        .footer-content .service-widget .list li a{
+                        position: relative;
+                        display: inline-block;
+                        color: #9ea0a9;
+                        }
+                        .footer-content .service-widget .list li a:hover{
+                        color: #ff5e14;
+                        }
+                        .footer-content .contact-widget p{
+                        color: #9ea0a9;
+                        margin-bottom: 15px;
+                        }
+                        .footer-content .contact-widget{
+                        margin-left: 90px;
+                        }
+                        .footer-content .contact-widget .footer-title{
+                        margin-bottom: 29px;
+                        }
+
+                        /** footer-bottom **/
+
+                        .footer-bottom{
+                        position: relative;
+                        background: #13151a;
+                        padding: 25px 0px 22px 0px;
+                        }
+                        .footer-bottom .copyright,
+                        .footer-bottom .copyright a,
+                        .footer-bottom .footer-nav li a{
+                        position: relative;
+                        color: #9ea0a9;
+                        }
+                        .footer-bottom .copyright a:hover,
+                        .footer-bottom .footer-nav li a:hover{
+                        color: #ff5e14;
+                        }
+                        .footer-bottom .footer-nav{
+                        position: relative;
+                        text-align: right;
+                        }
+                        .footer-bottom .footer-nav li{
+                        position: relative;
+                        display: inline-block;
+                        margin-left: 29px;
+                        }
+                        .footer-bottom .footer-nav li:first-child{
+                        margin-left: 0px;
+                        }
+                        .footer-bottom .footer-nav li:before{
+                        position: absolute;
+                        content: '';
+                        background: #9ea0a9;
+                        width: 1px;
+                        height: 14px;
+                        top: 7px;
+                        left: -18px;
+                        }
+                        .footer-bottom .footer-nav li:first-child:before{
+                        display: none;
+                        }
+                        .footer-logo {
+                        max-width: 80px;
+                        }
+
+                        .footer-college-name {
+                        color: #112215;
+                        font-family: Inter;
+                        font-size: 35px;
+                        font-weight: 600;
+                        }
+                    </style>
+
+
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

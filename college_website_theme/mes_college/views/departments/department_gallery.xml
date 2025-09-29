@@ -1,0 +1,153 @@
+<odoo>
+    <data>
+        <record id="department_gallery" model="ir.ui.view">
+            <field name="name">Department Gallery</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.department_gallery</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="mes_college.department_gallery_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <t t-if="data">
+                                            <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section"
+                                                 data-original-title="" title="" aria-describedby="tooltip336631">
+                                                <t t-if="data">
+                                                    <div class="clubs">
+                                                        <t t-esc="data['name']"/>
+                                                    </div>
+                                                    <div class="side-bar" id="sidebar">
+                                                        <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                            style="padding-inline-start: 0;">
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a t-att-href="'/department/' + str(data['dep_id'])"
+                                                                       data-original-title="" title=""
+                                                                       class="nav-link ">
+                                                                        Home
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a t-att-href="'/department/' + str(data['dep_id']) + '/faculty'"
+                                                                       data-original-title="" title=""
+                                                                       class="nav-link ">
+                                                                        Faculties
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a t-att-href="'/department/' + str(data['dep_id']) + '/programme?dep_id=' + str(data['dep_id'])"
+                                                                       data-original-title="" title="" class="nav-link">
+                                                                        Programmes
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a href="/chemistry_reports" data-original-title=""
+                                                                       title=""
+                                                                       class="nav-link">
+                                                                        Reports
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a t-att-href="'/department/' + str(data['dep_id']) + '/activities'"
+                                                                       data-original-title="" title="" class="nav-link">
+                                                                        Activities
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a t-att-href="'/department/' + str(data['dep_id']) + '/facilities?dep_id=' + str(data['dep_id'])"
+                                                                       data-original-title="" title=""
+                                                                       class="nav-link ">
+                                                                        Facilities
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a href="'/department/' + str(data['dep_id']) + '/exam_results'"
+                                                                       title="" class="nav-link">
+                                                                        Exam Results
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+                                                            <li id="sidebar-li" class="nav-item">
+                                                                <t t-if="data">
+                                                                    <a t-att-href="'/department/' + str(data['dep_id']) + '/dep_gallery'"
+                                                                       data-original-title="" title=""
+                                                                       class="nav-link active">
+                                                                        Gallery
+                                                                    </a>
+                                                                </t>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </t>
+                                            </div>
+                                        </t>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                <section id="departments_page">
+                                                    <h2 class="page_head" id="department_subhead">Gallery
+                                                    </h2>
+                                                    <section class="s_image_gallery">
+                                                        <div class="row" style="margin:0; row-gap:1rem;">
+                                                            <t t-foreach="depart_data" t-as="data">
+                                                                <div class="col-12 col-md-4 " id="dep_gallery">
+                                                                    <div class="dep_gallery">
+                                                                        <img t-att-src="data['url']"
+                                                                             alt="department Gallery"
+                                                                             class="w-100 h-100"
+                                                                             data-mimetype="image/jpeg"
+                                                                             style="object-fit:cover;object-position:center;cursor: pointer;"/>
+                                                                        <div class="gallery_texts">
+                                                                            <h2 id="gallery_title">
+                                                                                <t t-esc="data['title']"/>
+                                                                            </h2>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </t>
+                                                        </div>
+                                                    </section>
+
+                                                </section>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="department_gallery_page" model="website.page">
+            <field name="url">/dep_gallery</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="department_gallery"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

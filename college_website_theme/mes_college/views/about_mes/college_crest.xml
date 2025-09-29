@@ -1,0 +1,61 @@
+<odoo>
+    <data>
+        <record id="college_crest_mes" model="ir.ui.view">
+            <field name="name">College Crest</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.college_crest_mes</field>
+            <field name="arch" type="xml">
+                <t name="college_prayer" t-name="mes_college.college_crest_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color" style="height:680px;">
+                                <div class=" pt32 pb32">
+                                    <div>
+                                        <h2 class="main-head" style="text-align: center;">
+                                            College Crest
+                                        </h2>
+                                        <img src="/mes_college/static/img/mes-kalladi-college.png" alt=""
+                                             class="w-100 h-100 img img-fluid o_we_custom_image me-auto float-start"
+                                             data-original-id="174"
+                                             data-original-src="/mes_college/static/img/mes-kalladi-college.png"
+                                             data-mimetype="image/png" data-resize-width="300" data-bs-original-title=""
+
+                                             style="transform: scaleX(0.88) scaleY(0.89); width: 25% !important;"
+                                             loading="lazy"/>
+                                        <div class="content_text col-md-12"
+                                             style="text-align:justify;padding-right:20px;">
+                                            <p style="text-align: justify;">
+                                                <br/>
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                <br/>
+                                            </p>
+                                            <p style="text-align: justify;">The Emblem of the college, a toothed wheel
+                                                with embellishments from the Quran and a writing hand in the centre,
+                                                represents the&amp;nbsp; vision of the institution to uplift the society
+                                                to the
+                                                realm of the modern education by exploring the depths of knowledge. The
+                                                toothed wheel indicates the progress through technological advancement
+                                                by holding fast to the values of human life with a belief in the exalted
+                                                divinity. The Quranic inscription on the wheel sheds light to the fact
+                                                that “it is God who taught by the pen. He taught the humanity that it
+                                                knew not”. The writing hand in the center of the wheel propounds the
+                                                importance of learning.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_crest_mes_page" model="website.page">
+            <field name="url">/college_crest</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="college_crest_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+        <record id="graduate_attribute_mes" model="ir.ui.view">
+            <field name="name">Graduate Attributes</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.graduate_attribute_mes</field>
+            <field name="arch" type="xml">
+                <t name="graduate-attribute" t-name="mes_college.graduate_attribute_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title">Graduate Attributes</h2>
+                                    <div class=" pt32 pb32" style="padding:15px;">
+                                        <section class="col-md-12" style="margin:auto;">
+                                            <div>
+                                                <div class="content_text">
+                                                    The graduate attributes of MES Kalladi College are focused on
+                                                    ‘Holistic Development’ or ‘whole person growth.’ The holistic
+                                                    development of the student is attained through academic excellence,
+                                                    professional competence, personal, interpersonal and societal
+                                                    skills. Every Graduate of College is desired to possess the
+                                                    following attributes:
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="graduate_attribute_mes_page" model="website.page">
+            <field name="url">/graduate_attribute</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="graduate_attribute_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

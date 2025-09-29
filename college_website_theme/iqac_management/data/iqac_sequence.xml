@@ -1,0 +1,8 @@
+<odoo>
+    <record id="seq_iqac_item_id" model="ir.sequence">
+        <field name="name">IQAC ID</field>
+        <field name="code">iqac.item.seq</field>
+        <field name="prefix">iQAC</field>
+        <field name="padding">1</field>
+    </record>
+</odoo>

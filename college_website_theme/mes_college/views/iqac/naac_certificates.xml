@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+        <record id="naac_certificates_mes" model="ir.ui.view">
+            <field name="name">NAAC Certificates</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.naac_certificates_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.naac_certificates_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="  pb32 col-md-12">
+
+                                        <h2 class="main-head">
+                                            NAAC Certificates
+                                        </h2>
+                                        <div class="row">
+                                           <section class="academic_calendar">
+                                                <a href="mes_college/static/img/NAAC-Certificate-1.jpg" class="readmore"
+                                                   id="naac_link">A+ Grade - III Cycle
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="mes_college/static/img/NAAC-A-Grade-II-Cycle-Certificate_page-0001-scaled.jpg"
+                                                   class="readmore" id="naac_link">A Grade - II Cycle
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="mes_college/static/img/NAAC-B-Grade-I-Cycle-Certificate_page-0001-scaled.jpg"
+                                                   class="readmore" id="naac_link">B++ Grade - I Cycle
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="mes_college/static/img/NAAC-Certificate-2-scaled.jpg"
+                                                   class="readmore" id="naac_link">Quality Certificate - III Cycle
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="naac_certificates_mes_page" model="website.page">
+            <field name="url">/naac_certificates</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="naac_certificates_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

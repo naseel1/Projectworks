@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="new_record_cover_news_mu_college">
+        <t t-call-assets="website.assets_frontend"/>
+        <t t-set="_cp" t-value="_cp or json.loads(_record.cover_properties)"/>
+        <t t-set="_name" t-value="_name or _record._name"/>
+        <t t-set="_id" t-value="_id or _record.id"/>
+        <t t-set="_bg" t-value="_bg or _record._get_background(height=_resize_height, width=_resize_width)"/>
+        <t t-set="default_cover_name">Cover</t>
+        <div t-att-data-name="display_opt_name or default_cover_name"
+             t-att-style="_cp.get('background_color_style')"
+             t-att-data-use_size="use_size"
+             t-att-data-use_filters="use_filters"
+             t-att-data-use_text_align="use_text_align"
+             t-att-data-res-model="request.env.user.has_group('website.group_website_publisher') and _name"
+             t-att-data-res-id="request.env.user.has_group('website.group_website_publisher') and _id"
+             t-attf-class="o_record_cover_container  #{_cp.get('background_color_class')} #{use_size and _cp.get('resize_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+            <section class="news" style="background-image: none;">
+                <h1 class="news-title" t-field="record.name"/>
+                <div class="news-p" t-field="record.event_description"/>
+                <div class="bottom_notify">
+                    <div class="news_date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M6.75 2.75C6.94891 2.75 7.13968 2.82902 7.28033 2.96967C7.42098 3.11032 7.5 3.30109 7.5 3.5V5H16.5V3.5C16.5 3.30109 16.579 3.11032 16.7197 2.96967C16.8603 2.82902 17.0511 2.75 17.25 2.75C17.4489 2.75 17.6397 2.82902 17.7803 2.96967C17.921 3.11032 18 3.30109 18 3.5V5H18.75C19.5456 5 20.3087 5.31607 20.8713 5.87868C21.4339 6.44129 21.75 7.20435 21.75 8V19.25C21.75 20.0456 21.4339 20.8087 20.8713 21.3713C20.3087 21.9339 19.5456 22.25 18.75 22.25H5.25C4.45435 22.25 3.69129 21.9339 3.12868 21.3713C2.56607 20.8087 2.25 20.0456 2.25 19.25V8C2.25 7.20435 2.56607 6.44129 3.12868 5.87868C3.69129 5.31607 4.45435 5 5.25 5H6V3.5C6 3.30109 6.07902 3.11032 6.21967 2.96967C6.36032 2.82902 6.55109 2.75 6.75 2.75ZM20.25 11.75C20.25 11.3522 20.092 10.9706 19.8107 10.6893C19.5294 10.408 19.1478 10.25 18.75 10.25H5.25C4.85218 10.25 4.47064 10.408 4.18934 10.6893C3.90804 10.9706 3.75 11.3522 3.75 11.75V19.25C3.75 19.6478 3.90804 20.0294 4.18934 20.3107C4.47064 20.592 4.85218 20.75 5.25 20.75H18.75C19.1478 20.75 19.5294 20.592 19.8107 20.3107C20.092 20.0294 20.25 19.6478 20.25 19.25V11.75Z"
+                                  fill="#141F7E"/>
+                        </svg>
+                        <t t-set="formatted_date" t-value="record.post_date.strftime('%d %b %Y')"/>
+                        <span t-esc="formatted_date"/>
+                    </div>
+                </div>
+
+            </section>
+            <style>
+                .s_blog_post_mu_college_news .carousel-item.active{
+                display:flex;
+                }
+                .s_blog_post_mu_college_news.s_dynamic .carousel-control-prev, .s_dynamic .carousel-control-next {
+                position: absolute;
+                width: 0rem;
+                height: 0;
+                top: 50%;
+                transform: translate(-50%, 50%);
+                opacity: 0.8;
+                }
+                .s_blog_post_mu_college_news.s_dynamic .carousel-control-prev:hover,
+                .s_blog_post_mu_college_news.s_dynamic .carousel-control-next:hover{
+                opacity:1;
+                }
+
+
+                .s_blog_post_mu_college_news.s_dynamic .carousel-control-prev > span.fa,
+                .s_blog_post_mu_college_news.s_dynamic
+                .carousel-control-next > span.fa {
+                color: #FFC82C;
+                background: radial-gradient(#141F7E 50%, transparent 50%);
+                }
+                .s_blog_post_mu_college_news .carousel-inner .carousel-item{
+                min-height: 0 !important;
+                }
+                .s_blog_post_mu_college_news .container{
+                padding: 0;
+                width: 100%;
+                max-width: 100%;
+                }
+                .s_blog_post_mu_college_news .col-4 {
+                width: auto;
+                flex: 1 1 425px;
+                }
+                .s_blog_post_mu_college_news .carousel-item .row{
+                gap: 18px;
+                justify-content: space-between;
+                }
+                .news{
+                border-radius: 20px;
+                border-left: 4px solid #FFC82C;
+                background: #FFF;
+                padding:18px 20px;
+                height: 260px;
+                }
+                .news-title{
+                color: #000 !important;
+                font-family: Inter !important;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px; /* 127.273% */
+                margin:0;
+                }
+                .news-p p{
+                color: #383838;
+                text-align: justify;
+                font-family: Urbanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; /* 162.5% */
+                margin:0;
+                padding-top: 10px;
+                }
+                .news_date{
+                color: #000;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                display: flex;
+                padding-top: 10px;
+                gap: 5px;
+
+                }
+                .news_date span{
+                color: #000 !important;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                }
+                .bottom_notify{
+                height:28px;
+                width:100%;
+                display:flex;
+                justify-content:space-between;
+                padding-top: 12px;
+                }
+                .news .container{
+                padding:0;
+                }
+                .s_blog_post_mu_college_news .col-3 {
+                width: 100%;
+                }
+            </style>
+            <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
+            <style>
+
+            </style>
+        </div>
+    </template>
+    <template id="dynamic_filter_template_blog_post_mu_college_news" name="News MU College">
+        <div t-foreach="records" t-as="data" class=" w-100 s_blog_posts_post news_mu_college">
+            <t t-set="record" t-value="data['_record']"/>
+            <div class="s_blog_posts_post_cover_news_mu_college">
+                <t t-call="mu_college_events_snippet.new_record_cover_mu_college">
+                    <t t-set="_record" t-value="record"/>
+                    <t t-set="use_filters" t-value="True"/>
+                    <t t-set="additionnal_classes" t-value="' '"/>
+                </t>
+            </div>
+        </div>
+    </template>
+</odoo>

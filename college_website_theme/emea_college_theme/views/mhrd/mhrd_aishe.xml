@@ -1,0 +1,313 @@
+<odoo>
+    <data>
+        <record id="mhrd_aishe" model="ir.ui.view">
+            <field name="name">AISHE</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.mhrd_aishe</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.mhrd_aishe">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                                <div class="clubs">AISHE</div>
+                            </div>
+                            <div class="row" style="    margin-right: 0px;">
+                                <div class="col-md-9">
+                                    <h1 class="department_subhead" style="padding-left:35px;">RUSA</h1>
+                                    <p class="page_text " style="padding-left:35px;text-align:justify;">Rashtriya
+                                        Uchchattar Shiksha Abhiyan (RUSA) ("National Higher Education Mission") is a
+                                        holistic scheme of development for higher education in India initiated in 2013
+                                        by the Ministry of Human Resource Development, Government of India. The
+                                        centrally sponsored scheme aims at providing strategic funding to higher
+                                        educational institutions throughout the country. Funding is provided by the
+                                        central ministry through the state governments and union territories (UT), which
+                                        in coordination with the central Project Appraisal Board will monitor the
+                                        academic, administrative and financial advancements taken under the scheme.A
+                                        total of 316 state public universities and 13,024 colleges will be covered under
+                                        it.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image" loading="lazy" style=""/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <h1 class="department_subhead" style="padding-left:35px;">RUSA Board of Governance</h1>
+                                <section style="background-image: none;" class="section_center">
+                                    <div class="row">
+                                        <div class="col o_colored_level" style="margin-top: 30px;">
+                                            <div class="main_table_box_2">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-label="Sl No">Sl No</th>
+                                                            <th data-label="Name of the Student">Name &amp;amp;
+                                                                Designation
+                                                            </th>
+                                                            <th data-label="Name of the Programme">Position</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-label="Sl No">1</td>
+                                                            <td data-label="Name of the Student">Mr. P.K. Moosa alias
+                                                                Bappu
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Manager,EMEA College
+                                                                Kondotti
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">2</td>
+                                                            <td data-label="Name of the Student">Mr. MOHAMMED NAJEEB
+                                                                P.M.
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Associate
+                                                                    Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">HoD
+                                                                Economics,Member
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">3</td>
+                                                            <td data-label="Name of the Student">Dr. T. KRISHANAKUMAR
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Associate
+                                                                    Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">HoD Biochemistry,
+                                                                Member
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">4</td>
+                                                            <td data-label="Name of the Student">Mrs. KAMALAM EDATHIL
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Associate
+                                                                    Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">HoD Commerce,
+                                                                Member
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">5</td>
+                                                            <td data-label="Name of the Student">Dr. IBRAHIM CHOLAKKAL
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Member</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">6</td>
+                                                            <td data-label="Name of the Student">Mr. P.M. ABDURAZAQUE
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Associate
+                                                                    Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Co-Ordinator RUSA,
+                                                                Member
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">7</td>
+                                                            <td data-label="Name of the Student">Dr. RIYAD A.M
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">HoD Computer
+                                                                Science,Member
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">8</td>
+                                                            <td data-label="Name of the Student">Mr. ASKARALI A.
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Associate
+                                                                    Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">HoD
+                                                                Malayalam,Member
+                                                            </td>
+
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <h1 class="department_subhead" style="padding-left:35px;">RUSA Project Monitoring
+                                    Committee
+                                </h1>
+                                <section style="background-image: none;" class="section_center">
+                                    <div class="row">
+                                        <div class="col o_colored_level" style="margin-top: 30px;">
+                                            <div class="main_table_box_2">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-label="Sl No">Sl No</th>
+                                                            <th data-label="Name of the Student">Name &amp;
+                                                                Designation
+                                                            </th>
+                                                            <th data-label="Name of the Programme">Position</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-label="Sl No">1</td>
+                                                            <td data-label="Name of the Student">Dr. Abdulla M.P
+                                                                M.A,B.Ed,M.Phil,Ph.D.
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Member, Technical
+                                                                Support Group, RUSA
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">2</td>
+                                                            <td data-label="Name of the Student">Mr. ASKARALI A.
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Associate
+                                                                    Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Construction</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">3</td>
+                                                            <td data-label="Name of the Student">Dr. T. KRISHANAKUMAR
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Associate
+                                                                    Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Purchase</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">4</td>
+                                                            <td data-label="Name of the Student">Dr. RIYAD A.M
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Renovation</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">5</td>
+                                                            <td data-label="Name of the Student">Mr. ABDURAHIM.M
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Office
+                                                                    Clerk Senior (On Contract)
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Superintendent</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">6</td>
+                                                            <td data-label="Name of the Student">Mr. MOHAMMED ALI K.M
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Auditor (On
+                                                                    Contract)
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Clerk</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Sl No">7</td>
+                                                            <td data-label="Name of the Student">Mr. MOHAMMED FUHAD. K
+                                                                <br/>
+                                                                <span style="font-size:14px;font-weight:400">Professor
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Name of the Programme">Chairperson, College
+                                                                Union
+                                                            </td>
+
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <h1 class="department_subhead" style="padding-left:35px;">RUSA Projects</h1>
+                                <section style="background-image: none;" class="section_center">
+                                    <div class="row">
+                                        <div class="col o_colored_level" style="margin-top: 30px;">
+                                            <div class="main_table_box_2">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-label="Sl No">Sl No</th>
+                                                            <th data-label="Name of the Student">Project name</th>
+                                                            <th data-label="Name of the Programme">Status</th>
+                                                            <th data-label="Name of the Programme">Date</th>
+                                                            <th data-label="Name of the Programme">Project PDF File</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-label="Sl No">1</td>
+                                                            <td data-label="Name of the Student">RUSA Project 2020</td>
+                                                            <td data-label="Name of the Programme">On Going</td>
+                                                            <td data-label="Name of the Programme">25-July-2020</td>
+                                                            <td data-label="Name of the Programme">View</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="mhrd_aishe_page" model="website.page">
+            <field name="url">/mhrd_aishe</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="mhrd_aishe"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

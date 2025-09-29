@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+        <record id="departments_mes" model="ir.ui.view">
+            <field name="name">departments</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.departments_mes</field>
+            <field name="arch" type="xml">
+                <t name="About" t-name="mes_college.departments_mes_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt48 pb48 bg_color">
+
+                                <div class="container">
+                                    <h2 class="page_head">
+                                        Departments
+                                    </h2>
+                                    <div class="all_departments">
+
+
+                                        <t t-foreach="departments" t-as="dep">
+                                            <t t-if="dep['dep_id']">
+                                                <a t-att-href="'/department/' + str(dep['dep_id'])" class="department">
+
+                                                    <t t-if="dep['name']">
+                                                        <t t-raw="dep['name']"/>
+                                                        <div class="unde_line"/>
+                                                    </t>
+
+
+                                                </a>
+                                            </t>
+
+                                        </t>
+
+                                    </div>
+                                    <div class="all_departments pt32" id="allied_dep">
+                                        <h2 class="page_head ">
+                                            Allide Departments
+                                        </h2>
+                                        <t t-foreach="allied_departments" t-as="allied">
+
+                                            <t t-if="allied['dep_id']">
+                                                <a t-att-href="'/department/' + str(allied['dep_id'])"
+                                                   class="department">
+
+                                                    <t t-if="allied['name']">
+                                                        <t t-raw="allied['name']"/>
+                                                        <div class="unde_line"/>
+
+                                                    </t>
+                                                </a>
+                                            </t>
+
+                                        </t>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="departments_mes_page" model="website.page">
+            <field name="url">/department</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="departments_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

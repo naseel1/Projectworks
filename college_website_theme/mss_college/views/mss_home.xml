@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="mss_website" name="MSS Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section style="background-image: none;" class="o_colored_level">
+                    <div class="row" style="margin-right:0px">
+                        <div class="col-md-12 o_colored_level">
+                            <img src="/mss_college/static/img/banner.jpg" alt="" width="100%" loading="lazy"
+                                 data-mimetype="image/png" data-original-id="13"
+                                 data-original-src="/mss_college/static/img/banner.jpg" style="height: 100vh;"
+                                 data-bs-original-title="" title="" aria-describedby="tooltip610015"/>
+                        </div>
+                    </div>
+                </section>
+                <style>
+                    .depat {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    }
+
+                    .depat::before {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    z-index: 0;
+                    content: "";
+                    transition: height 0.5s; /* Transition only the height property */
+                    opacity: 0;
+                    visibility: hidden; /* changed from visible */
+                    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.0200455182) 100%);
+                    }
+
+                    .depat:hover::before {
+                    height: 100%;
+                    opacity: 1;
+                    visibility: visible; /* This line is redundant because visibility: hidden; is already set */
+                    }
+                    #program_img {
+                    width: 100%;
+                    }
+                    .program_name {width: 100%;}
+                </style>
+                <section class="pb88">
+                    <div id="about_curve">
+                    </div>
+                    <div class="row" style="margin-right:0px">
+                        <div class="col-md-6">
+                            <div class="about_section">
+                                <h3 class="about_heading">About Us</h3>
+                                <hr id="heading_line"/>
+                                <p class="about_para">The MSS College of Arts and Science is an institution
+                                    for higher learning in Wayanad that started functioning
+                                    in 2022. Currently, the college is undergoing construction
+                                    and is operating from a temporary building.
+                                </p>
+                                <p class="about_para">The college offers five undergraduate programs,
+                                    namely BA English, BA Economics, B Com, BBA, and BSc
+                                    (Psychology). It is affiliated with Kannur University.
+                                    The college is situated on 6 acres of land at Vellamunda
+                                    Panchayat in North Wayanad. While the permanent campus is
+                                    under construction, students can enjoy the scenic beauty
+                                    of Wayanad, along with its salubrious climate and serene
+                                    ambiance, providing them with an ideal atmosphere to pursue their studies.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about_section">
+                                <section
+                                        class="s_image_gallery o_slideshow pt24 o_colored_level s_image_gallery_show_indicators"
+                                        data-vcss="001" data-columns="3"
+                                        style="height: 500px; overflow: hidden; background-image: none;"
+                                        data-snippet="s_image_gallery" data-name="Image Gallery">
+                                    <div class="o_container_small">
+                                        <div id="slideshow_1713776010596" class="carousel slide" data-bs-ride="carousel"
+                                             data-bs-interval="0" style="margin: 0 12px;">
+                                            <div class="carousel-inner" style="padding: 0;">
+                                                <div class="carousel-item active" style="">
+                                                    <img class="img img-fluid d-block slider_image"
+                                                         src="/mss_college/static/img/scroll1.jpg" data-name="Image"
+                                                         data-index="0" loading="lazy" data-mimetype="image/jpeg"
+                                                         style=""/>
+                                                </div>
+                                                <div class="carousel-item" style="">
+                                                    <img class="img img-fluid d-block slider_image"
+                                                         src="/mss_college/static/img/scroll2.jpg" data-name="Image"
+                                                         data-index="1" loading="lazy" data-mimetype="image/jpeg"
+                                                         style=""/>
+                                                </div>
+                                                <div class="carousel-item" style="">
+                                                    <img class="img img-fluid d-block slider_image"
+                                                         src="/mss_college/static/img/scroll3.jpg" data-name="Image"
+                                                         data-index="2" loading="lazy" data-mimetype="image/jpeg"
+                                                         style=""/>
+                                                </div>
+                                                <div class="carousel-item slider_image" style="">
+                                                    <img class="img img-fluid d-block slider_image"
+                                                         src="/mss_college/static/img/scroll4.jpg" data-name="Image"
+                                                         data-index="3" loading="lazy" data-mimetype="image/jpeg"
+                                                         style=""/>
+                                                </div>
+                                                <div class="carousel-item" style="">
+                                                    <img class="img img-fluid d-block slider_image"
+                                                         src="/mss_college/static/img/scroll5.jpg" data-name="Image"
+                                                         data-index="4" loading="lazy" data-original-id="35"
+                                                         data-original-src="/mss_college/static/img/scroll5.jpg"
+                                                         data-mimetype="image/jpeg" style=""/>
+                                                </div>
+                                            </div>
+                                            <ul class="carousel-indicators" id="indicators">
+
+                                                <li data-bs-target="#slideshow_1713776010596" data-bs-slide-to="0"
+                                                    style="background-image: url(/mss_college/static/img/scroll1.jpg)"
+                                                    class="active"/>
+                                                <li data-bs-target="#slideshow_1713776010596" data-bs-slide-to="1"
+                                                    style="background-image: url(/mss_college/static/img/scroll2.jpg)"
+                                                    aria-current="true"/>
+                                                <li data-bs-target="#slideshow_1713776010596" data-bs-slide-to="2"
+                                                    style="background-image: url(/mss_college/static/img/scroll3.jpg)"
+                                                    aria-current="true"/>
+                                                <li data-bs-target="#slideshow_1713776010596" data-bs-slide-to="3"
+                                                    style="background-image: url(/mss_college/static/img/scroll4.jpg)"
+                                                    class="d-none" aria-current="true"/>
+                                                <li data-bs-target="#slideshow_1713776010596" data-bs-slide-to="4"
+                                                    style="background-image: url(/mss_college/static/img/scroll5.jpg)"
+                                                    class="d-none" aria-current="true"/>
+
+                                            </ul>
+                                            <a class="carousel-control-prev o_we_no_overlay " id="left_arrow"
+                                               href="#slideshow_1713776010596" data-bs-slide="prev"
+                                               aria-label="Previous" title="Previous">
+                                            </a>
+                                            <a class="carousel-control-next o_we_no_overlay " id="right_arrow"
+                                               href="#slideshow_1713776010596" data-bs-slide="next" aria-label="Next"
+                                               title="Next">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="principal">
+                    <div id="principal_curve">
+                    </div>
+                    <div class="row" style="margin-right:0px">
+                        <div class="col-md-6 principal_start">
+                            <div class="principle_box">
+                                <div class="principle_img">
+                                    <img class="image_rounded" src="mss_college/static/img/Rectangle 8.png" alt=""
+                                         loading="lazy" style=""/>
+                                </div>
+                                <h1 class="priciple_header">Dr Joseph K Job</h1>
+                                <h3 class="principle_small">Principal</h3>
+                                <p style="text-align: justify;">Integrating students into qualitative
+                                    processes of the college is indeed
+                                    crucial for their holistic development
+                                    and to prepare them to make a positive
+                                    impact on society. Creating an innovation
+                                    ecosystem within the college can play a
+                                    pivotal role...
+                                </p>
+                                <button class="header_button">Read More</button>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 principal_end">
+                            <div class="principle_box">
+                                <div class="principle_img">
+                                    <img class="image_rounded" src="mss_college/static/img/Rectangle 8.png" alt=""
+                                         loading="lazy" style=""/>
+                                </div>
+                                <h1 class="priciple_header">Dr Joseph K Job</h1>
+                                <h3 class="principle_small">Principal</h3>
+                                <p style="text-align: justify;">Integrating students into qualitative
+                                    processes of the college is indeed
+                                    crucial for their holistic development
+                                    and to prepare them to make a positive
+                                    impact on society. Creating an innovation
+                                    ecosystem within the college can play a
+                                    pivotal role...
+                                </p>
+                                <button class="header_button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="gallery_section">
+                    <div id="gallery_curve">
+                    </div>
+                    <div class="row" style="margin-right:0px">
+                        <div class="col-md-12">
+
+                            <div class="container">
+                                <h3 class="about_heading">Gallery</h3>
+                                <hr id="heading_line"/>
+                                <div class="gallery">
+                                    <div class="gallery__item gallery__item--hor">
+                                        <img src="https://source.unsplash.com/random/500x500" alt="" loading="lazy"
+                                             style=""/>
+                                    </div>
+                                    <div class="gallery__item gallery__item--1">
+                                        <img src="https://source.unsplash.com/collection/190727/300x300" alt=""
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="gallery__item gallery__item--vert">
+                                        <img src="https://source.unsplash.com/user/erondu/600x600" alt="" loading="lazy"
+                                             style=""/>
+                                    </div>
+                                    <div class="gallery__item gallery__item--2">
+                                        <img src="https://source.unsplash.com/user/timmarshall/300x300" alt=""
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="gallery__item gallery__item--lg">
+                                        <img src="https://source.unsplash.com/user/randomlies/300x300" alt=""
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="gallery__item gallery__item--3">
+                                        <img src="https://source.unsplash.com/user/joannecaselynsuarez/300x300" alt=""
+                                             loading="lazy" style=""/>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="news_and_events o_colored_level" style="background-image: none;">
+                    <div id="news_curve">
+                    </div>
+                    <div class="row" style="margin-right:0px">
+                        <div class="col-md-12 o_colored_level" style="">
+                            <h3 class="news_heading">Events &amp;amp; News</h3>
+                            <hr id="news_line"/>
+                            <section data-snippet="s_dynamic_snippet_carousel"
+                                     class="s_dynamic_snippet_carousel s_dynamic pb48 o_colored_level s_blog_post_mss_events pt0 o_dynamic_empty"
+                                     data-name="Dynamic Carousel" style="background-image: none;"
+                                     data-number-of-elements="3" data-number-of-records="16" data-filter-id="5"
+                                     data-template-key="mss_college_events_snippet.dynamic_filter_template_blog_post_mss_events"
+                                     data-carousel-interval="15000">
+                                <div class="container o_not_editable">
+                                    <div class="css_non_editable_mode_hidden">
+                                        <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                            Your Dynamic Snippet will be displayed here... This message is displayed
+                                            because you did not provided both a filter and a template to use.
+                                            <br/>
+                                        </div>
+                                    </div>
+                                    <div class="dynamic_snippet_template"/>
+                                </div>
+                            </section>
+
+
+                        </div>
+                    </div>
+
+                </section>
+                <section>
+                    <div id="department_curve">
+                    </div>
+                    <h3 class="program_heading">Department &amp;amp; Programs</h3>
+                    <hr id="program_line"/>
+                    <div class="departments">
+                        <div class="depat">
+                            <div>
+                                <img src="/mss_college/static/img/program.jpeg" alt="" id="program_img" loading="lazy"
+                                     style=""/>
+                            </div>
+                            <div class="program_name">name</div>
+                        </div>
+                        <div class="depat">
+                            <div>
+                                <img src="/mss_college/static/img/program.jpeg" alt="" id="program_img" loading="lazy"
+                                     style=""/>
+                            </div>
+                            <div class="program_name">name</div>
+                        </div>
+                        <div class="depat">
+                            <div>
+                                <img src="/mss_college/static/img/program.jpeg" alt="" id="program_img" loading="lazy"
+                                     style=""/>
+                            </div>
+                            <div class="program_name">name</div>
+                        </div>
+                        <div class="depat">
+                            <div>
+                                <img src="/mss_college/static/img/program.jpeg" alt="" id="program_img" loading="lazy"
+                                     style=""/>
+                            </div>
+                            <div class="program_name">name</div>
+                        </div>
+                        <div class="depat">
+                            <div>
+                                <img src="/mss_college/static/img/program.jpeg" alt="" id="program_img" loading="lazy"
+                                     style=""/>
+                            </div>
+                            <div class="program_name">name</div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <style>
+                .news_read:hover&gt;img {
+                background: #e0e0e09c;
+                }.news_read img{
+                transition:all 0.4s ease-in-out;
+                border-radius:5px;
+                }
+
+            </style>
+        </xpath>
+    </template>
+</odoo>

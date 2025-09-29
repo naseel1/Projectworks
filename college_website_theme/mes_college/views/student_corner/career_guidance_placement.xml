@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+        <record id="career_guidance_placement" model="ir.ui.view">
+            <field name="name">Career Guidance and Placement</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.career_guidance_placement</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.career_guidance_placement_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align:left">Career Guidance and
+                                                Placement
+                                            </h2>
+                                            <div class="text_content">
+                                                The bureau helps to equip students to survive in the highly competitive
+                                                world of today. It conducts coaching programs targeted at the various
+                                                competitive examinations and invites experts to deliver talks that
+                                                enhance student’s awareness of career possibilities
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="career_guidance_placement_page" model="website.page">
+            <field name="url">/career_guidance_placement</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="career_guidance_placement"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,988 @@
+<odoo>
+    <template id="template_department_detail" name="Department Detail Page">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section style="background-image: none;" class="programme-banner o_colored_level">
+
+
+                    <!--<img t-if="department.image_ids" t-att-src="'/web/image?model=website.department.image&amp;id=%s&amp;field=image' % department.image_ids[0].id" alt="" class="img img-fluid department_img" data-original-id="647" data-original-src="/web/image/647-9ec60611/Frame%206%20%282%29.png" data-mimetype="image/png" data-resize-width="1515"/>-->
+
+                    <div id="department-section">
+                        <div class="container">
+                            <div class="department_head">
+
+                                <t t-if="department">
+                                    <h2 class="department_title">Department of
+                                        <t t-esc="department.dep_name"/>
+                                    </h2>
+                                </t>
+                                <div class="deplinks_items">
+                                    <a href="/programmes" class="link_item">Programmes
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                             viewBox="0 0 15 15" fill="none">
+                                            <path d="M5.15625 2.8125L9.84375 7.5L5.15625 12.1875" stroke="white"
+                                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <t t-if="department">
+                                        <a t-att-href="'/departments/' + str(department.dep_id)" class="link_item"
+                                           style="color:#FFC82C !important;">Department of
+                                            <t t-esc="department.dep_name"/>
+
+                                        </a>
+                                    </t>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+                <section class="s_tabs pt32 pb48 programmes o_colored_level  o_colored_level" data-vcss="001"
+                         data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                    <div class="container">
+                        <div class="s_tabs_main row s_col_no_resize s_col_no_bgcolor ">
+
+
+                            <div class="s_tabs_content  tab-content card-body s_tabs_slide_down col-md-9">
+                                <div class="tab-pane fade active show" id="nav_tabs_content_1751369560324_107"
+                                     role="tabpanel" aria-labelledby="nav_tabs_link_1751369560324_107">
+                                    <div class="oe_structure oe_empty" data-editor-message-default="true"
+                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                        <section class=" ">
+                                            <div class="container">
+                                                <div class="title_deprtment">
+                                                    <h2 class="dep_title" style="width:100%;">
+                                                        About The Department
+                                                    </h2>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1071" class="depsvg"
+                                                         height="2" viewbox="0 0 1071 2" fill="none"
+                                                         style="     width: auto; ">
+                                                        <path d="M1 1L1070 1.00009" stroke="#3E7B4A"
+                                                              stroke-linecap="round"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                         viewbox="0 0 13 13" fill="none">
+                                                        <circle cx="6.32715" cy="6.00684" r="6.00684" fill="#FFC82C"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="row pt32 row-section">
+                                                    <div class="">
+
+                                                        <t t-if="department">
+                                                            <div class="dep_description ">
+                                                                <t t-esc="department.dep_description"/>
+                                                            </div>
+                                                        </t>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav_tabs_content_1751369560324_108" role="tabpanel"
+                                     aria-labelledby="nav_tabs_link_1751369560324_108">
+                                    <div class="oe_structure oe_empty" data-editor-message-default="true"
+                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                        <section class="  programmes o_colored_level" style="background-image: none;">
+                                            <div class="container">
+                                                <h2 class="main_title">
+                                                    Programmes
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1071" height="2"
+                                                         viewbox="0 0 1071 2" fill="none" style="     width: 100%; ">
+                                                        <path d="M1 1L1070 1.00009" stroke="#3E7B4A"
+                                                              stroke-linecap="round"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                         viewbox="0 0 13 13" fill="none">
+                                                        <circle cx="6.32715" cy="6.00684" r="6.00684" fill="#FFC82C"/>
+                                                    </svg>
+                                                </h2>
+                                            </div>
+                                            <section class="s_tabs pt48 pb48 o_colored_level" data-vcss="001"
+                                                     data-snippet="s_tabs" data-name="Tabs"
+                                                     style="background-image: none;">
+                                                <div class="container">
+                                                    <div class="s_tabs_main row s_col_no_resize s_col_no_bgcolor">
+                                                        <div class="s_tabs_nav mb-3 col-md-3">
+
+                                                            <t t-if="department">
+                                                                <ul class="nav nav-pills flex-column programme_tab_item"
+                                                                    role="tablist">
+
+                                                                    <t t-set="programme_types" t-value="[]"/>
+                                                                    <t t-foreach="department.programme_ids" t-as="prog">
+                                                                        <t t-if="prog.programme_type not in programme_types">
+                                                                            <t t-set="programme_types"
+                                                                               t-value="programme_types + [prog.programme_type]"/>
+                                                                        </t>
+                                                                    </t>
+                                                                    <t t-set="first" t-value="True"/>
+                                                                    <t t-foreach="programme_types" t-as="ptype">
+                                                                        <li class="nav-item">
+                                                                            <a t-att-href="'#content_' + ptype"
+                                                                               t-att-id="'tab_' + ptype"
+                                                                               t-att-class="'nav-link side-link programme-link' + (' active' if first else '')"
+                                                                               data-bs-toggle="tab" role="tab"
+                                                                               t-att-aria-controls="'content_' + ptype"
+                                                                               aria-selected="true">
+                                                                                <t t-esc="dict(department.programme_ids[0]._fields['programme_type'].selection).get(ptype)"/>
+                                                                            </a>
+                                                                        </li>
+                                                                        <t t-set="first" t-value="False"/>
+                                                                    </t>
+                                                                </ul>
+                                                            </t>
+                                                        </div>
+                                                        <div class="s_tabs_content programme_tab_content tab-content col-md-8">
+                                                            <div class="tab-content programme_tab_content">
+
+                                                                <t t-if="department">
+                                                                    <t t-set="first" t-value="True"/>
+                                                                    <t t-foreach="programme_types" t-as="ptype">
+                                                                        <div t-att-id="'content_' + ptype"
+                                                                             t-att-class="'tab-pane fade programme-pane' + (' show active' if first else '')"
+                                                                             role="tabpanel"
+                                                                             t-att-aria-labelledby="'tab_' + ptype">
+
+                                                                            <!-- Loop over Programmes of this type -->
+
+
+                                                                            <div class="oe_structure oe_empty"
+                                                                                 data-editor-message-default="true"
+                                                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                                <section class="s_tabs" data-vcss="001"
+                                                                                         data-snippet="s_tabs"
+                                                                                         data-name="Tabs"
+                                                                                         style="background-image: none;">
+                                                                                    <div class="container">
+                                                                                        <div class="s_tabs_main">
+                                                                                            <div class="s_tabs_nav">
+                                                                                                <ul class="nav nav-pills tabs-lists flex-column programme_tab_item"
+                                                                                                    role="tablist">
+
+                                                                                                    <t t-foreach="department.programme_ids.filtered(lambda p: p.programme_type == ptype)"
+                                                                                                       t-as="programme">
+                                                                                                        <t t-if="programme.programme_type">
+                                                                                                            <li id="sidebar-li"
+                                                                                                                class="nav-item"
+                                                                                                                style="font-weight: 500; font-size: 1rem;">
+                                                                                                                <a t-att-href="'#tabe_' + str(programme.programme_id)"
+                                                                                                                   t-att-id="'tabes_' + str(programme.programme_id)"
+                                                                                                                   data-bs-toggle="tab"
+                                                                                                                   role="tab"
+                                                                                                                   t-att-aria-controls="'tab_' + str(programme.programme_id)"
+                                                                                                                   t-att-class="'nav-link side-link programme-link' + (' active' '')"
+                                                                                                                   aria-selected="true"
+                                                                                                                   style="pointer-events:none;">
+                                                                                                                    <t t-esc="dict(programme._fields['programme_category'].selection).get(programme.programme_category) or 'Research'"/>
+                                                                                                                </a>
+
+                                                                                                            </li>
+                                                                                                        </t>
+                                                                                                    </t>
+                                                                                                </ul>
+
+                                                                                            </div>
+                                                                                            <div class="s_tabs_content tab-content">
+                                                                                                <div class="tab-pane fade active show"
+                                                                                                     id="nav_tabs_content_1742293061292_195"
+                                                                                                     role="tabpanel"
+                                                                                                     aria-labelledby="nav_tabs_link_1742293061292_195">
+                                                                                                    <div class="oe_structure oe_empty"
+                                                                                                         data-editor-message-default="true"
+                                                                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                                                        <section
+                                                                                                                class="s_text_block"
+                                                                                                                style="background-image: none;"
+                                                                                                                data-name="Text">
+                                                                                                            <t t-foreach="department.programme_ids.filtered(lambda p: p.programme_type == ptype)"
+                                                                                                               t-as="programme">
+                                                                                                                <t t-if="programme.programme_type">
+                                                                                                                    <section
+                                                                                                                            class="container s_allow_columns o_colored_level"
+                                                                                                                            id="section-white"
+                                                                                                                            style="background-image: none;">
+                                                                                                                        <h2 class="sub_title">
+                                                                                                                            <t t-esc="programme.programme_name"/>
+                                                                                                                        </h2>
+                                                                                                                        <div class="programme_description">
+                                                                                                                            <t t-esc="programme.programme_description"/>
+                                                                                                                        </div>
+                                                                                                                        <section
+                                                                                                                                class="syllabus-block">
+                                                                                                                            <div class="row">
+                                                                                                                                <t t-if="programme.syllabus_ids">
+
+                                                                                                                                    <t t-foreach="programme.syllabus_ids"
+                                                                                                                                       t-as="syllabus">
+
+                                                                                                                                        <a t-att-href="'/web/content?model=website.department.programme.syllabus&amp;id=%s&amp;field=syllabus_pdf&amp;filename_field=syllabus_filename' % syllabus.id"
+                                                                                                                                           class="syllabus_link">
+                                                                                                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                                                                                 width="24"
+                                                                                                                                                 height="24"
+                                                                                                                                                 viewBox="0 0 24 24"
+                                                                                                                                                 fill="none">
+                                                                                                                                                <path d="M3.47876 2.4038C3.3488 2.36604 3.21104 2.36416 3.08009 2.39834C2.94914 2.43253 2.82988 2.50151 2.73496 2.59797C2.64003 2.69443 2.57298 2.81479 2.5409 2.94627C2.50882 3.07775 2.51292 3.21546 2.55276 3.3448L4.98476 11.2498H13.5008C13.6997 11.2498 13.8904 11.3288 14.0311 11.4695C14.1717 11.6101 14.2508 11.8009 14.2508 11.9998C14.2508 12.1987 14.1717 12.3895 14.0311 12.5301C13.8904 12.6708 13.6997 12.7498 13.5008 12.7498H4.98476L2.55276 20.6548C2.51316 20.7841 2.50924 20.9217 2.54142 21.053C2.5736 21.1843 2.64069 21.3045 2.73557 21.4008C2.83046 21.4971 2.94962 21.566 3.08045 21.6002C3.21128 21.6343 3.3489 21.6325 3.47876 21.5948C10.0937 19.6711 16.3317 16.6321 21.9238 12.6088C22.0204 12.5393 22.0991 12.4479 22.1534 12.342C22.2077 12.2361 22.236 12.1188 22.236 11.9998C22.236 11.8808 22.2077 11.7635 22.1534 11.6576C22.0991 11.5517 22.0204 11.4603 21.9238 11.3908C16.3318 7.3671 10.0938 4.32776 3.47876 2.4038Z"
+                                                                                                                                                      fill="#3E7B4A"/>
+                                                                                                                                            </svg>
+                                                                                                                                            <div class="syllabus_link_name">
+                                                                                                                                                <t t-esc="syllabus.name"/>
+                                                                                                                                            </div>
+                                                                                                                                        </a>
+                                                                                                                                    </t>
+
+                                                                                                                                </t>
+                                                                                                                            </div>
+
+
+                                                                                                                        </section>
+                                                                                                                    </section>
+                                                                                                                </t>
+                                                                                                            </t>
+                                                                                                        </section>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </t>
+                                                                </t>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav_tabs_content_1751369560324_109" role="tabpanel"
+                                     aria-labelledby="nav_tabs_link_1751369560324_109">
+                                    <div class="oe_structure oe_empty" data-editor-message-default="true"
+                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                        <section class="  programmes o_colored_level" style="background-image: none;">
+                                            <div class="container">
+                                                <div class="title_deprtment">
+                                                    <h2 class="dep_title" style="min-width: 300px;">
+                                                        Faculty Profile
+                                                    </h2>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1071" class="depsvg"
+                                                         height="2" viewBox="0 0 1071 2" fill="none"
+                                                         style="     width: auto; ">
+                                                        <path d="M1 1L1070 1.00009" stroke="#3E7B4A"
+                                                              stroke-linecap="round"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                         viewBox="0 0 13 13" fill="none">
+                                                        <circle cx="6.32715" cy="6.00684" r="6.00684" fill="#FFC82C"/>
+                                                    </svg>
+                                                </div>
+                                                <section style="background-image: none;" class="o_colored_level">
+
+                                                    <t t-if="department.dep_name">
+                                                        <div class="faculty_dep mb24">
+                                                            <t t-esc="department.dep_name"/>
+                                                        </div>
+
+                                                    </t>
+
+
+                                                    <div class="row row-faculty">
+
+                                                        <t t-if="data">
+                                                            <t t-foreach="data.get('faculties', [])" t-as="faculty">
+                                                                <section class="college-card o_colored_level"
+                                                                         style="background-image: none;">
+                                                                    <div class="college-card-left">
+                                                                        <t t-if="faculty.get('image')">
+                                                                            <img t-att-src=" str(faculty['image'])"
+                                                                                 alt="" class="img w-100 h-100"
+                                                                                 loading="lazy" style=""/>
+                                                                        </t>
+                                                                    </div>
+                                                                    <div class="college-card-content">
+                                                                        <t t-if="faculty.get('name')">
+                                                                            <h3>
+                                                                                <t t-esc="faculty['name']"/>
+                                                                            </h3>
+                                                                        </t>
+                                                                        <t t-if="faculty.get('designation')">
+                                                                            <div>
+                                                                                <t t-esc="faculty['designation']"/>
+                                                                            </div>
+                                                                        </t>
+                                                                        <t t-if="faculty.get('faculty_id')">
+                                                                            <a t-att-href="'/faculty_details/' + str(faculty['faculty_id'])"
+                                                                               class="view_profile">View Profile
+                                                                            </a>
+                                                                        </t>
+                                                                    </div>
+                                                                    <div class="college-card-separator"/>
+                                                                </section>
+                                                            </t>
+
+
+                                                        </t>
+                                                    </div>
+
+
+                                                </section>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="  s_tabs_nav col-md-2 third-column original" id="section-white">
+                                <t t-if="not from_json">
+                                    <t t-if="department">
+                                        <h2 class="right_menu_title">
+                                            Department of
+                                            <t t-esc="department.dep_name"/>
+                                        </h2>
+                                    </t>
+                                </t>
+                                <ul class="nav  tabs-lists nav nav-pills    right_menu_links" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link right_menu_link active" id="nav_tabs_link_1751369560324_107"
+                                           data-bs-toggle="tab" href="#nav_tabs_content_1751369560324_107" role="tab"
+                                           aria-controls="nav_tabs_content_1751369560324_107" aria-selected="true">
+                                            About the Department
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link right_menu_link " id="nav_tabs_link_1751369560324_108"
+                                           data-bs-toggle="tab" href="#nav_tabs_content_1751369560324_108" role="tab"
+                                           aria-controls="nav_tabs_content_1751369560324_108" aria-selected="false">
+                                            Programmes Offered
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link right_menu_link" id="nav_tabs_link_1751369560324_109"
+                                           data-bs-toggle="tab" href="#nav_tabs_content_1751369560324_109" role="tab"
+                                           aria-controls="nav_tabs_content_1751369560324_109" aria-selected="false">
+                                            Faculty Profile
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <style>
+                    .programme-banner{
+                    height:300px;
+                    }
+                    .department-banner{
+                    width:100%;
+                    height:300px;
+                    }
+                    #department-section{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    }
+                    .programme-banner .department_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    }
+                    .department_title{
+                    color: #FFF;
+                    font-family: 'Urbanist';
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 60px;
+                    margin:0;
+                    }
+                    .department_head{
+                    display: flex;
+                    align-items: flex-start;
+                    height: 300px;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    }
+                    .deplinks_items{
+                    margin-top: 30px;
+                    display: flex;
+                    gap: 10px;
+                    margin-bottom: 22px;
+                    }
+                    .link_item{
+                    color: #FFF !important;
+                    font-family:'Roboto';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-decoration: none !important;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    }
+                    .title_deprtment{
+                    display: flex;
+                    align-items: center;
+                    }
+                    .dep_title{
+                    color: #112215;
+                    font-family: 'Roboto';
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 46px;
+                    width: 415px;
+                    margin: 0;
+                    }
+                    .programmes{
+                    background: #F4F9F4;
+                    }
+                    .dep_description{
+                    color: #383838;
+                    text-align: justify;
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    }
+                    .right_menu_title{
+                    color: #000;
+                    text-align: left;
+                    font-family: 'Roboto';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    margin: 0;
+                    padding: 10px 20px;
+                    }
+                    .right_menu_links{
+                    border-top: 1px solid #FFC82C;
+
+                    padding-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+
+                    }
+                    .right_menu_link.nav-link{
+                    color: #000;
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-decoration:none !important;
+                    padding: 10px 20px;
+                    width: 100%;
+                    display: block;
+                    transition:all 0.3s ease-in-out;
+                    border: none;
+                    border-radius: 0;
+                    }
+                    .right_menu_link.nav-link.active{
+                    color: #000;
+                    border: none;
+                    border-left: 5px solid #3E7B4A;
+                    background: #FFF;
+                    border-radius: 0;
+
+                    }
+                    .right_menu_link.nav-link:hover{
+                    background: #E5F3E8;
+                    color:#000;
+                    }
+                    #section-white{
+                    background: #FFF;
+                    }
+                    .third-column{
+                    width: auto;
+                    flex: 1 1 auto;
+                    height: fit-content;
+                    padding-bottom:30px;
+                    }
+                    .row-section{
+                    justify-content: space-between;
+                    gap:20px;
+                    }
+                    @media(max-width:1024px){
+                    .department_img{
+                    object-fit: cover;
+                    height: 300px;
+                    width: 100%;
+                    }
+                    }
+                    @media(max-width:600px){
+                    .s_tabs_main .col-md-3 {
+                    width: 100%;
+                    }
+                    .programmes .nav-pills .side-link {
+                    line-height: 40px;
+
+                    }
+                    .s_tabs_contents{
+                    width:100%;
+                    }
+                    .third-column {
+                    flex: 0 1 100%;
+                    width: 100%;
+                    }
+
+                    .department_title {
+                    font-size: 28px;
+                    line-height: 20px;
+                    }
+                    .dep_title{
+                    font-size: 24px;
+                    width: 100%;
+                    }
+                    .depsvg{
+                    width: 300px !Important;
+                    }
+                    .title_deprtment {
+                    flex-wrap: wrap;
+                    }
+                    }
+                    @media(max-width:320px){
+                    .department_title {
+                    font-size: 20px;
+                    line-height: 10px;
+                    }
+                    .depsvg {
+                    width: 260px ! Important;
+                    }
+                    .link_item {
+                    font-size: 14px;
+                    }
+                    }
+                    .nav-tabs {
+                    border-bottom: 1px solid transparent;
+                    }
+
+                    .programmes .s_tabs_main{
+                    gap: 20px;
+                    justify-content: space-between;
+                    }
+                    .programmes .s_tabs_main .s_tabs_nav .nav-pills{
+                    gap: 10px;
+                    justify-content: space-between;
+                    }
+                    .programmes .nav-pills .side-link {
+
+                    border: 0;
+                    border-radius: 0;
+                    color: #000;
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 40px;
+                    background: #E5F3E8;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 1;
+                    transition: all 0.4s ease-in-out;
+
+                    }
+                    .programmes .nav-pills .side-link.active, .nav-pills .show &gt; .side-link {
+                    color: #FFF;
+                    background-color: #3E7B4A;
+                    }
+                    .side-link::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                    width: 0;
+                    height: 100%;
+                    background: #3e7b4a;
+                    transition: all 0.4s ease-in-out;
+                    z-index: -1;
+
+                    }
+                    .programmes .nav-pills .side-link:hover{
+                    color:white;
+                    }
+                    .programmes .nav-pills .side-link:hover::before{
+                    width:100%;
+                    }
+                    .programmes .nav-pills .tab_links {
+                    width: 200px;
+                    padding: 13px 27px;
+                    color: #000;
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px;
+                    border-radius: 0;
+
+                    }
+                    .programmes .nav-pills .tab_links.active, .nav-pills .show &gt; .tab_links {
+                    border-bottom: 1px solid #3e7b4a;
+                    background-color: #fff;
+                    }
+                    .sub_title{
+                    color: #000;
+                    font-family: 'Roboto';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 30px;
+                    background: white;
+                    margin: 0;
+                    padding: 7px 0;
+                    padding-left: 20px;
+                    border-bottom: 0.2px solid #3e7b4a45;
+                    }
+                    .programme_section{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 11px 20px;
+                    text-decoration: none !important;
+                    transition:all 0.3s ease-in-out;
+                    }
+                    .prgramme_name{
+                    color: #383838;
+                    text-align: justify;
+                    font-family: urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    transition:all 0.3s ease-in-out;
+                    }
+                    .prgramme_link{
+                    display: block;
+                    color: #383838;
+                    text-align: right;
+                    font-family: urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-decoration: none;
+                    transition:all 0.3s ease-in-out;
+                    }
+                    #section-white{
+                    background: #FFF;
+
+                    }
+                    .programme_section:hover{
+                    background: #E5F3E8;
+                    }
+                    .programme_section:hover .prgramme_name{
+                    color: #3E7B4A;
+                    }
+                    .programme_section:hover .prgramme_link{
+                    color: #3E7B4A;
+                    }
+                    .right_menu_title{
+                    color: #000;
+                    text-align: left;
+                    font-family: 'Roboto';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    margin: 0;
+                    padding: 10px 20px;
+                    }
+                    .right_menu_links{
+                    border-top: 1px solid #FFC82C;
+
+                    padding-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+
+                    }
+                    .right_menu_link{
+                    color: #000;
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-decoration:none !important;
+                    padding: 10px 20px;
+                    width: 100%;
+                    display: block;
+                    transition:all 0.3s ease-in-out;
+                    }
+                    .right_menu_link.active{
+                    border-left: 5px solid #3E7B4A;
+                    background: #FFF;
+
+                    }
+                    .right_menu_link:hover{
+                    background: #E5F3E8;
+                    color:#000;
+
+                    }
+                    .third-column{
+                    width: auto;
+                    flex: 1 1 auto;
+                    height: fit-content;
+                    padding-bottom:30px;
+                    }
+                    .programme_description{
+                    color: #383838;
+                    text-align: justify;
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    padding: 24px;
+                    padding-bottom: 0;
+                    }
+                    .syllabus-block{
+                    padding: 24px;
+                    }
+                    .syllabus_link{
+                    display: flex;
+                    gap: 10px;
+                    text-decoration: none ! IMPORTANT;
+                    }
+                    .syllabus_link_name{
+                    color: #383838;
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                    }
+                    .syllabus-block .row section{
+                    width:40%;
+                    }
+                    .syllabus-block .row {
+                    row-gap: 30px;
+                    }
+                    .syllabus_link path{
+                    transition:all 0.3s ease-in-out;
+                    }
+                    .syllabus_link:hover path{
+                    fill:#FFC82C;
+                    }
+                    .brochure{
+                    color: #383838;
+                    text-align: justify;
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    padding: 9px 15px;
+                    border: 1px solid #FFC82C;
+                    display: block;
+                    width: fit-content;
+                    gap:10px;
+                    transition:all 0.4s ease-in-out;
+                    text-decoration: none ! IMPORTANT;
+
+                    }
+                    .brochure:hover{
+                    background:#3E7B4A;
+                    border-color:#3E7B4A;
+                    color:white;
+                    }
+                    .brochure path{
+                    transition:all 0.4s ease-in-out;
+                    }
+                    .brochure:hover path{
+                    fill:#fff;
+                    }
+                    @media(max-width:1024px){
+                    .programmes .nav-pills .tab_links {
+                    width: auto;
+                    }
+                    .department_img{
+                    object-fit: cover;
+                    height: 300px;
+                    width: 100%;
+                    }
+                    }
+                    @media(max-width:900px){
+                    .third-column {
+                    width: auto;
+                    flex: 0 1 50%;
+                    margin: auto;
+                    }
+
+                    .s_tabs_contents{
+                    width:65%;
+                    }
+                    .programmes .nav-pills .side-link {
+                    line-height: 20px;
+                    padding: 5px 15px;
+                    }
+                    .s_tabs_main .col-md-3{
+                    width:30%;
+                    }
+                    }
+                    @media(max-width:600px){
+                    .s_tabs_main .col-md-3 {
+                    width: 100%;
+                    }
+                    .programmes .nav-pills .side-link {
+                    line-height: 40px;
+
+                    }
+                    .s_tabs_contents{
+                    width:100%;
+                    }
+                    .third-column {
+                    flex: 0 1 100%;
+                    width: 100%;
+                    }
+                    .department_title {
+                    font-size: 28px;
+                    line-height: 20px;
+                    }
+                    }
+                    .card-body{
+                    padding:0;
+                    background-color: transparent !important;
+                    }
+                    .row-faculty{
+                    justify-content: space-between;
+                    gap: 30px;
+                    padding-left: 40px;
+                    }
+                    .faculty_dep{
+                    background: #3E7B4A;
+                    color: #FFF;
+                    font-family:'Urbanist' ;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 40px;
+                    width:100%;
+                    padding-left:20px;
+                    }
+                    .college-card {
+
+                    background: white;
+                    border-radius: 0px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+                    width: 400px;
+                    max-width: 100%;
+                    position: relative;
+                    }
+
+                    /* Image */
+                    .college-card-left img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    position: relative;
+                    right: 50%;
+                    }
+
+
+                    .college-card-content h3 {
+                    color: #383838;
+                    font-family: Urbanist;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    text-align:left;
+                    }
+
+                    .college-card-content p {
+                    color: #383838;
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin: 0;
+                    }
+
+                    /* Yellow Separator */
+                    .college-card-separator {
+                    width: 5px;
+                    background: #FFC82C;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    }
+
+                    /* Responsive Design */
+                    @media (max-width: 600px) {
+                    .college-card {
+                    flex-direction: row;
+                    text-align: left;
+                    width: 90%;
+                    margin-left: auto;
+                    }
+                    .row-faculty{
+                    padding-left:0;
+                    }
+
+                    .college-card-content {
+                    margin-left: 10px;
+                    }
+
+                    .college-card-separator {
+                    height: 40px;
+                    }
+                    }
+                </style>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const links = document.querySelectorAll('.programme-link');
+                const panes = document.querySelectorAll('.programme-pane');
+
+                function activateTab(link) {
+                // Remove all active classes
+                links.forEach(l =&gt; l.classList.remove('active'));
+                panes.forEach(p =&gt; p.classList.remove('active', 'show'));
+
+                // Activate clicked link
+                link.classList.add('active');
+
+                // Activate corresponding pane
+                const targetId = link.getAttribute('href');
+                const targetPane = document.querySelector(targetId);
+                if (targetPane) {
+                targetPane.classList.add('active', 'show');
+                }
+                }
+
+                // Bind click to each link
+                links.forEach(link =&gt; {
+                link.addEventListener('click', function (e) {
+                e.preventDefault();
+                activateTab(this);
+                });
+                });
+
+                // Auto-activate first tab on page load
+                if (links.length &gt; 0) {
+                activateTab(links[0]);
+                }
+                });
+            </script>
+        </t>
+    </template>
+</odoo>

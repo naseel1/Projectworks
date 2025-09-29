@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_admission_manage_admin,Admission Manage Admin,model_prospects_manage,base.group_user,1,1,1,1
+access_admission_manage_public,Admission Manage Public,model_prospects_manage,base.group_public,1,0,0,0
+access_admission_manage_portal,Admission Manage Portal,model_prospects_manage,base.group_portal,1,0,0,0

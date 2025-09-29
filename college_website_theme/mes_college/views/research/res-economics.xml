@@ -1,0 +1,141 @@
+<odoo>
+    <data>
+        <record id="res-economics" model="ir.ui.view">
+            <field name="name">Research Centre - Economics</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.res-economics</field>
+            <field name="arch" type="xml">
+                <t name="economics" t-name="mes_college.res-economics_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Research Centre - Economics
+                                                </h2>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    <strong style="font-size: 20px;line-height: 40px;">Preface
+                                                    </strong>
+                                                    <br/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/res-chemistry" class="readmore" id="naac_link">
+                                                    Chemistry
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/res-history"
+                                                   class="readmore" id="naac_link" target="_blank">
+                                                    History
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Economics
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Facilities
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Guides
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+                                            <h2 class="main-head">Research Guides</h2>
+                                            <div class=" col-md-8" style="margin:auto;">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div
+                                                            class="faculty_name">
+                                                        Name Of Guide
+                                                    </div>
+                                                    <div class="designation">Designation</div>
+                                                    <a href="#"
+                                                       class="view_profile">View Profile
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Research Scholars
+                                    </h2>
+                                    <div class=" pb32">
+                                        <table class="milestone scholar" cellspacing="0" cellpadding="7">
+                                            <thead>
+                                                <tr>
+                                                    <th style="min-width:80px;">SI No</th>
+                                                    <th>
+                                                        Name of the Ph.D Scholar
+                                                    </th>
+                                                    <th>
+                                                        Name of Supervisor
+                                                    </th>
+                                                    <th>
+                                                        Mode of Ph.D (Full time/Parttime)
+                                                    </th>
+                                                    <th>
+                                                        Registration Number
+                                                    </th>
+                                                    <th>
+                                                        Date of Registration
+                                                    </th>
+                                                    <th style="min-width:350px;">
+                                                        Research Topic
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr valign="top">
+                                                    <td style="height: 24px;" width="80">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;">
+                                                    </td>
+                                                    <td style="height: 24px;" width="350">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="res-economics_page" model="website.page">
+            <field name="url">/res-economics</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="res-economics"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

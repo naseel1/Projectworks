@@ -1,0 +1,42 @@
+<odoo>
+    <record id="view_admission_form" model="ir.ui.view">
+        <field name="name">admission.manage.form</field>
+        <field name="model">prospects.manage</field>
+        <field name="arch" type="xml">
+            <form string="Prospects">
+                <sheet>
+                    <group>
+                        <field name="prospects_year"/>
+                        <field name="pdf_file" filename="file_name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_admission_tree" model="ir.ui.view">
+        <field name="name">admission.tree</field>
+        <field name="model">prospects.manage</field>
+        <field name="arch" type="xml">
+            <tree string="Prospects">
+                <field name="prospects_year"/>
+                <field name="file_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_admission_manage" model="ir.actions.act_window">
+        <field name="name">Admission</field>
+        <field name="res_model">prospects.manage</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_admission_tree"/>
+    </record>
+    <menuitem id="menu_admission_manage_root" name="Admission" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_prospectus_manage"
+              name="Prospectus"
+              parent="menu_admission_manage_root"
+              action="action_admission_manage"
+              sequence="11"
+              groups="admission_manage.group_admission_manage_admin"/>
+
+</odoo>

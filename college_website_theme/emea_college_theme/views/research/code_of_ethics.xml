@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <record id="code_of_ethics" model="ir.ui.view">
+            <field name="name">Code Of Ethics</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.code_of_ethics</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.code_of_ethics_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">Code of Ethics</h2>
+                                <div class="page_text">
+
+                                    The college has directed research guides, Research scholars and the system of
+                                    assessment of academic and research work leading to award of degrees at Masters and
+                                    Research level in the form of thesis, dissertation and research publications, books
+                                    and chapters in books and similar research works which reflected the highest element
+                                    of academic integrity and originality observed as per provision of the college and
+                                    University Grants Commission (UGC).
+                                    <br/>
+
+                                    A research committee is formed to monitor and promote the research activities among
+                                    students and teachers on the campus. It gives advice and assist to the Head of the
+                                    institution and the College Council in the fulfillment of the research aspects of
+                                    the College Strategic Plan. The mission of the research committee is to enhance
+                                    quality research by adhering to the highest ethical standards and professional best
+                                    practices and to inculcate innovation and performance centered research culture
+                                    among faculties and students. To minimize the plagiarism in research works, College
+                                    Central library has started the Plagiarism Checking Service using the software
+                                    URKUND provided by the University of Calicut.
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="code_of_ethics_page" model="website.page">
+            <field name="url">/code_of_ethics</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="code_of_ethics"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,180 @@
+<odoo>
+    <data>
+        <record id="capacity_building_programmes" model="ir.ui.view">
+            <field name="name">Capacity Building Programmes</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.capacity_building_programmes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.capacity_building_programmes_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align:left">Capacity Building Programmes
+                                            </h2>
+                                            <div class="text_content">
+                                                <strong>ASAP
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                Additional Skill
+                                                Acquisition
+                                                Programme (ASAP) , a
+                                                joint initiative of
+                                                General and Higher
+                                                Education
+                                                Departments, was
+                                                launched with an
+                                                objective to impart
+                                                quality skill
+                                                education to the
+                                                undergraduate
+                                                students alongside
+                                                their regular
+                                                curriculum. The very
+                                                philosophy of ASAP
+                                                is to accentuate the
+                                                employability of the
+                                                youth. ASAP gives
+                                                special edge to
+                                                those students who
+                                                are in need of
+                                                immediate
+                                                employment.
+                                                <br/>
+                                                <br/>
+                                                <strong>
+                                                    Remedial
+                                                    Coaching
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                The college offers
+                                                special attention to
+                                                weaker students,
+                                                especially those
+                                                coming from socially
+                                                and economically
+                                                disadvantaged back
+                                                grounds. Remedial
+                                                coaching sessions
+                                                are held throughout
+                                                the year for them.
+                                                <br/>
+                                                <br/>
+                                                <ul>
+                                                    <li>Tutorial
+                                                        System: The
+                                                        tutorial
+                                                        system has
+                                                        been
+                                                        designed to
+                                                        make
+                                                        teaching and
+                                                        learning
+                                                        student
+                                                        friendly. It
+                                                        envisages
+                                                        close
+                                                        interaction
+                                                        between
+                                                        students and
+                                                        teachers to
+                                                        create the
+                                                        right
+                                                        ambience for
+                                                        academic
+                                                        pursuits. It
+                                                        also
+                                                        contributes
+                                                        to the
+                                                        maintenance
+                                                        of general
+                                                        discipline
+                                                        in the
+                                                        college. The
+                                                        students are
+                                                        divided into
+                                                        batches and
+                                                        each batch
+                                                        is placed
+                                                        under a
+                                                        Group Tutor.
+                                                        The Group
+                                                        Tutor will
+                                                        closely
+                                                        monitor the
+                                                        attendance,
+                                                        academic
+                                                        progress and
+                                                        conduct of
+                                                        the students
+                                                        under his
+                                                        charge and
+                                                        initiate
+                                                        corrective
+                                                        measures
+                                                        wherever
+                                                        necessary.
+                                                    </li>
+                                                    <li>
+                                                        Soft Skill
+                                                        Programmes
+                                                        for
+                                                        developing
+                                                        soft skill
+                                                        are
+                                                        conducted by
+                                                        departments
+                                                    </li>
+                                                    <li>
+                                                        Communication
+                                                        Skill
+                                                        Programmes
+                                                        for
+                                                        developing
+                                                        communication
+                                                        skill are
+                                                        conducted by
+                                                        departments
+                                                        or various
+                                                        clubs like
+                                                        debate club
+                                                    </li>
+                                                    <li>NET Coaching
+                                                        Centre:
+                                                        UGC/CSIR
+                                                        NET/JRF
+                                                        coaching is
+                                                        given to PG
+                                                        students.
+                                                        Classes are
+                                                        handled by
+                                                        teachers of
+                                                        the
+                                                        departments
+                                                        along with
+                                                        expert
+                                                        lectures.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="capacity_building_programmes_page" model="website.page">
+            <field name="url">/capacity_building_programmes</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="capacity_building_programmes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

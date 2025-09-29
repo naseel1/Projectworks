@@ -1,0 +1,794 @@
+<odoo>
+    <data>
+        <record id="hostels-retiring-rooms" model="ir.ui.view">
+            <field name="name">Facilities</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.hostels-retiring-emea</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.hostels-retiring-rooms">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                    <div class="clubs">Hostels/Retiring Rooms</div>
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row" style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title="" title="" aria-describedby="tooltip336631">
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs1" data-original-title="" title=""
+                                                           class="nav-link active" aria-controls="tabs1"
+                                                           aria-selected="true">Mens Hostel
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs2" data-original-title="" title=""
+                                                           class="nav-link" aria-selected="false">
+                                                            Ladies Hostel
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                                           role="tab" data-original-title="" title="" class="nav-link"
+                                                           aria-selected="false">
+                                                            Guest Room
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs4" id="sidebar_tabs4" data-bs-toggle="tab"
+                                                           role="tab" data-original-title="" title="" class="nav-link"
+                                                           aria-selected="false">
+                                                            Guest Retiring Room
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs5" id="sidebar_tabs5" data-bs-toggle="tab"
+                                                           role="tab" data-original-title="" title="" class="nav-link"
+                                                           aria-selected="false">BSc
+                                                            Girls Retiring Room
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs6" id="sidebar_tabs6" data-bs-toggle="tab"
+                                                           role="tab" data-original-title="" title="" class="nav-link"
+                                                           aria-selected="false">BSc
+                                                            Ladies Retiring Room
+                                                        </a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                                             id="page-content">
+                                            <div id="tabs1" class="tab-pane fade active show">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                            <section style="background-image: none;">
+                                                                <section class="s_carousel_wrapper" data-vxml="001"
+                                                                         data-snippet="s_carousel" data-name="Carousel"
+                                                                         style="background-image: none;">
+                                                                    <div class="s_carousel s_carousel_default carousel slide"
+                                                                         data-bs-interval="10000"
+                                                                         id="myCarousel1709634366864"
+                                                                         style="background-image: none;">
+
+                                                                        <ol class="carousel-indicators o_we_no_overlay">
+                                                                            <li data-bs-slide-to="0"
+                                                                                data-bs-target="#myCarousel1709634366864"
+                                                                                class="active" aria-current="true"/>
+                                                                            <li data-bs-slide-to="1"
+                                                                                data-bs-target="#myCarousel1709634366864"/>
+                                                                            <li data-bs-slide-to="2"
+                                                                                data-bs-target="#myCarousel1709634366864"/>
+                                                                        </ol>
+                                                                        <div class="carousel-inner"
+                                                                             style="height:350px; min-height:auto;">
+
+                                                                            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active"
+                                                                                 style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                                                 data-name="Slide">
+                                                                                <div class="container oe_unremovable">
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                 style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                                                 data-name="Slide">
+                                                                                <div class="container oe_unremovable">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                 style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                                                 data-name="Slide">
+                                                                                <div class="container oe_unremovable">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                           data-bs-slide="prev" role="img"
+                                                                           aria-label="Previous" title="Previous"
+                                                                           href="#myCarousel1709634366864">
+                                                                            <span class="carousel-control-prev-icon"/>
+                                                                            <span class="visually-hidden o_default_snippet_text">
+                                                                                Previous
+                                                                            </span>
+                                                                        </a>
+                                                                        <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                           data-bs-slide="next" role="img"
+                                                                           aria-label="Next" title="Next"
+                                                                           href="#myCarousel1709634366864">
+                                                                            <span class="carousel-control-next-icon"/>
+                                                                            <span class="visually-hidden o_default_snippet_text">
+                                                                                Next
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                </section>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h3 class="department_subhead ">Mens Hostel</h3>
+                                                        <p class="page_text" style="text-align:justify;">The Men’s
+                                                            Sports hostel is located in the west side and adjacent to
+                                                            the college campus and have office, reading facility and
+                                                            mess within the hostel premises. The mess has a centralized
+                                                            modern kitchen and dining room. Special menu will be
+                                                            introduced by Kerala Sports Council. The hostel provides
+                                                            accommodation and nutritious food for all sports students.
+                                                            The rooms are furnished with table, chair, cot and fan.
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div id="tabs2" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs2">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="oe_structure oe_empty"
+                                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                <section style="background-image: none;">
+                                                                    <section class="s_carousel_wrapper" data-vxml="001"
+                                                                             data-snippet="s_carousel"
+                                                                             data-name="Carousel"
+                                                                             style="background-image: none;">
+                                                                        <div class="s_carousel s_carousel_default carousel slide"
+                                                                             data-bs-interval="10000"
+                                                                             id="myCarousel1709634366874"
+                                                                             style="background-image: none;">
+
+                                                                            <ol class="carousel-indicators o_we_no_overlay">
+                                                                                <li data-bs-slide-to="0"
+                                                                                    data-bs-target="#myCarousel1709634366874"
+                                                                                    class="active" aria-current="true"/>
+                                                                                <li data-bs-slide-to="1"
+                                                                                    data-bs-target="#myCarousel1709634366874"/>
+                                                                                <li data-bs-slide-to="2"
+                                                                                    data-bs-target="#myCarousel1709634366874"/>
+                                                                            </ol>
+
+
+                                                                            <div class="carousel-inner"
+                                                                                 style="height:350px; min-height:auto;">
+
+                                                                                <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="prev" role="img"
+                                                                               aria-label="Previous" title="Previous"
+                                                                               href="#myCarousel1709634366874">
+                                                                                <span class="carousel-control-prev-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Previous
+                                                                                </span>
+                                                                            </a>
+                                                                            <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="next" role="img"
+                                                                               aria-label="Next" title="Next"
+                                                                               href="#myCarousel1709634366874">
+                                                                                <span class="carousel-control-next-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Next
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </section>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <h3 class="department_subhead ">Ladies Hostel</h3>
+                                                            <p class="page_text"
+                                                               style="text-align:justify;min-height: 0vh;">A home away
+                                                                from home!. It is a two storied building with spacious
+                                                                rooms for providing accommodation facility to 200
+                                                                students and is designed to provide an ideal environment
+                                                                conducive for academic pursuit. The hostel is located in
+                                                                the north east side and adjacent to the college campus.
+                                                                Major facilities include dining halls, uninterrupted
+                                                                water supply, reading halls, internet connection, indoor
+                                                                recreation, television, hostel office, guest room and
+                                                                mess within the hostel premises. The mess has a
+                                                                centralized modern kitchen and dining room. Special menu
+                                                                will be introduced and served in the mess on all
+                                                                important religious festivals.
+                                                            </p>
+                                                            <h3 class="department_subhead ">General Facilities Room</h3>
+                                                            <p class="page_text"
+                                                               style="text-align:justify;min-height: 0vh;">There are 2
+                                                                floor in the main block with capacity of 50 rooms.Each
+                                                                room can accomodate 4 students
+                                                            </p>
+                                                            <h3 class="department_subhead ">Guest Room</h3>
+                                                            <p class="page_text"
+                                                               style="text-align:justify;min-height: 0vh;">A guest room
+                                                                is attached to main block with two bed capacity.
+                                                            </p>
+                                                            <h3 class="department_subhead ">Mess</h3>
+                                                            <p class="page_text"
+                                                               style="text-align:justify;min-height: 0vh;">One spacious
+                                                                dining hall with seating capacity around 50 students at
+                                                                a time with kitchen equipments such as
+                                                            </p>
+                                                            <ul class="laborataries_class">
+                                                                <li>Steam Boiler</li>
+                                                                <li>Stainless steel steam cooker</li>
+                                                                <li>Commercial Grinder</li>
+                                                                <li>Water Cooler</li>
+                                                            </ul>
+                                                            <h3 class="department_subhead ">Rules</h3>
+                                                            <ul class="laborataries_class">
+                                                                <li>Students seeking hostel accommodation are required
+                                                                    to give a written request countersigned by their
+                                                                    parent guardian.
+                                                                </li>
+                                                                <li>Students who wish to be residents shall strictly
+                                                                    abide by the rules and regulations precribed by the
+                                                                    Management.
+                                                                </li>
+                                                                <li>Inmates of each room are jointly and severally
+                                                                    responsible for the furniture, fitting, etc. and any
+                                                                    damage to the Hostel property is recoverable from
+                                                                    them.r
+                                                                </li>
+                                                                <li>Guests or outsiders are need permission from
+                                                                    concerned authority to entering the hostel.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="page_text" style="text-align:justify;">At the time
+                                                                of admission to the college and hostel, parents should
+                                                                accompany their wards compulsorily.
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs3" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs3">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="oe_structure oe_empty"
+                                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                <section style="background-image: none;">
+                                                                    <section class="s_carousel_wrapper" data-vxml="001"
+                                                                             data-snippet="s_carousel"
+                                                                             data-name="Carousel"
+                                                                             style="background-image: none;">
+                                                                        <div class="s_carousel s_carousel_default carousel slide"
+                                                                             data-bs-interval="10000"
+                                                                             id="myCarousel1709634366884"
+                                                                             style="background-image: none;">
+
+                                                                            <ol class="carousel-indicators o_we_no_overlay">
+                                                                                <li data-bs-slide-to="0"
+                                                                                    data-bs-target="#myCarousel1709634366884"/>
+                                                                                <li data-bs-slide-to="1"
+                                                                                    data-bs-target="#myCarousel1709634366884"
+                                                                                    class="active" aria-current="true"/>
+                                                                                <li data-bs-slide-to="2"
+                                                                                    data-bs-target="#myCarousel1709634366884"/>
+                                                                            </ol>
+
+
+                                                                            <div class="carousel-inner"
+                                                                                 style="height:350px; min-height:auto;">
+
+                                                                                <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level active"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="prev" role="img"
+                                                                               aria-label="Previous" title="Previous"
+                                                                               href="#myCarousel1709634366884">
+                                                                                <span class="carousel-control-prev-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Previous
+                                                                                </span>
+                                                                            </a>
+                                                                            <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="next" role="img"
+                                                                               aria-label="Next" title="Next"
+                                                                               href="#myCarousel1709634366884">
+                                                                                <span class="carousel-control-next-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Next
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </section>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <h3 class="department_subhead ">Guest Room</h3>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs4" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs4">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="oe_structure oe_empty"
+                                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                <section style="background-image: none;">
+                                                                    <section class="s_carousel_wrapper" data-vxml="001"
+                                                                             data-snippet="s_carousel"
+                                                                             data-name="Carousel"
+                                                                             style="background-image: none;">
+                                                                        <div class="s_carousel s_carousel_default carousel slide"
+                                                                             data-bs-interval="10000"
+                                                                             id="myCarousel1709634366894"
+                                                                             style="background-image: none;">
+
+                                                                            <ol class="carousel-indicators o_we_no_overlay">
+                                                                                <li data-bs-slide-to="0"
+                                                                                    data-bs-target="#myCarousel1709634366894"
+                                                                                    class="active" aria-current="true"/>
+                                                                                <li data-bs-slide-to="1"
+                                                                                    data-bs-target="#myCarousel1709634366894"/>
+                                                                                <li data-bs-slide-to="2"
+                                                                                    data-bs-target="#myCarousel1709634366894"/>
+                                                                            </ol>
+
+
+                                                                            <div class="carousel-inner"
+                                                                                 style="height:350px; min-height:auto;">
+
+                                                                                <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="prev" role="img"
+                                                                               aria-label="Previous" title="Previous"
+                                                                               href="#myCarousel1709634366894">
+                                                                                <span class="carousel-control-prev-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Previous
+                                                                                </span>
+                                                                            </a>
+                                                                            <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="next" role="img"
+                                                                               aria-label="Next" title="Next"
+                                                                               href="#myCarousel1709634366894">
+                                                                                <span class="carousel-control-next-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Next
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </section>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <h3 class="department_subhead ">Guest Retiring Room</h3>
+                                                            <p class="page_text" style="text-align:justify;">The
+                                                                Computer Science Laboratory
+                                                                List of equipment / apparatus used in microbiology
+                                                                laboratory include Autoclave, Incubator, Hot air oven,
+                                                                Inoculating loop, Water bath, Heating mantle, Hot plate
+                                                                with magnetic stirrer, UV chamber,Inoculation chamber,
+                                                                pH meter, Colony counter, Microscope, Refrigerator,
+                                                                Bunsen burner, Spirit lamp, Micrometer (stage and
+                                                                ocular), Balance (Digital and 4-beam) and Thermometer.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs5" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs5">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="oe_structure oe_empty"
+                                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                <section style="background-image: none;">
+                                                                    <section class="s_carousel_wrapper" data-vxml="001"
+                                                                             data-snippet="s_carousel"
+                                                                             data-name="Carousel"
+                                                                             style="background-image: none;">
+                                                                        <div class="s_carousel s_carousel_default carousel slide"
+                                                                             data-bs-interval="10000"
+                                                                             id="myCarousel1709634366854"
+                                                                             style="background-image: none;">
+
+                                                                            <ol class="carousel-indicators o_we_no_overlay">
+                                                                                <li data-bs-slide-to="0"
+                                                                                    data-bs-target="#myCarousel1709634366854"
+                                                                                    class="active" aria-current="true"/>
+                                                                                <li data-bs-slide-to="1"
+                                                                                    data-bs-target="#myCarousel1709634366854"/>
+                                                                                <li data-bs-slide-to="2"
+                                                                                    data-bs-target="#myCarousel1709634366854"/>
+                                                                            </ol>
+
+
+                                                                            <div class="carousel-inner"
+                                                                                 style="height:350px; min-height:auto;">
+
+                                                                                <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="prev" role="img"
+                                                                               aria-label="Previous" title="Previous"
+                                                                               href="#myCarousel1709634366854">
+                                                                                <span class="carousel-control-prev-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Previous
+                                                                                </span>
+                                                                            </a>
+                                                                            <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="next" role="img"
+                                                                               aria-label="Next" title="Next"
+                                                                               href="#myCarousel1709634366854">
+                                                                                <span class="carousel-control-next-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Next
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </section>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <h3 class="department_subhead ">Girls Retiring Room</h3>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs6" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs6">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="oe_structure oe_empty"
+                                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                <section style="background-image: none;">
+                                                                    <section class="s_carousel_wrapper" data-vxml="001"
+                                                                             data-snippet="s_carousel"
+                                                                             data-name="Carousel"
+                                                                             style="background-image: none;">
+                                                                        <div class="s_carousel s_carousel_default carousel slide"
+                                                                             data-bs-interval="10000"
+                                                                             id="myCarousel1709634366844"
+                                                                             style="background-image: none;">
+
+                                                                            <ol class="carousel-indicators o_we_no_overlay">
+                                                                                <li data-bs-slide-to="0"
+                                                                                    data-bs-target="#myCarousel1709634366844"
+                                                                                    class="active" aria-current="true"/>
+                                                                                <li data-bs-slide-to="1"
+                                                                                    data-bs-target="#myCarousel1709634366844"/>
+                                                                                <li data-bs-slide-to="2"
+                                                                                    data-bs-target="#myCarousel1709634366844"/>
+                                                                            </ol>
+
+
+                                                                            <div class="carousel-inner"
+                                                                                 style="height:350px; min-height:auto;">
+
+                                                                                <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="prev" role="img"
+                                                                               aria-label="Previous" title="Previous"
+                                                                               href="#myCarousel1709634366844">
+                                                                                <span class="carousel-control-prev-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Previous
+                                                                                </span>
+                                                                            </a>
+                                                                            <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="next" role="img"
+                                                                               aria-label="Next" title="Next"
+                                                                               href="#myCarousel1709634366844">
+                                                                                <span class="carousel-control-next-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Next
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </section>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <h3 class="department_subhead ">Ladies Retiring Room</h3>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs7" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs7">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="oe_structure oe_empty"
+                                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                                <section style="background-image: none;">
+                                                                    <section class="s_carousel_wrapper" data-vxml="001"
+                                                                             data-snippet="s_carousel"
+                                                                             data-name="Carousel"
+                                                                             style="background-image: none;">
+                                                                        <div class="s_carousel s_carousel_default carousel slide"
+                                                                             data-bs-interval="10000"
+                                                                             id="myCarousel1709634366844"
+                                                                             style="background-image: none;">
+
+                                                                            <ol class="carousel-indicators o_we_no_overlay">
+                                                                                <li data-bs-slide-to="0"
+                                                                                    data-bs-target="#myCarousel1709634366844"
+                                                                                    class="active" aria-current="true"/>
+                                                                                <li data-bs-slide-to="1"
+                                                                                    data-bs-target="#myCarousel1709634366844"/>
+                                                                                <li data-bs-slide-to="2"
+                                                                                    data-bs-target="#myCarousel1709634366844"/>
+                                                                            </ol>
+
+
+                                                                            <div class="carousel-inner"
+                                                                                 style="height:350px; min-height:auto;">
+
+                                                                                <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                                                     style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                                                     data-name="Slide">
+                                                                                    <div class="container oe_unremovable">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="prev" role="img"
+                                                                               aria-label="Previous" title="Previous"
+                                                                               href="#myCarousel1709634366844">
+                                                                                <span class="carousel-control-prev-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Previous
+                                                                                </span>
+                                                                            </a>
+                                                                            <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                               data-bs-slide="next" role="img"
+                                                                               aria-label="Next" title="Next"
+                                                                               href="#myCarousel1709634366844">
+                                                                                <span class="carousel-control-next-icon"/>
+                                                                                <span class="visually-hidden o_default_snippet_text">
+                                                                                    Next
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </section>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <h3 class="department_subhead ">Language Lab</h3>
+                                                            <p class="page_text" style="text-align:justify;">The
+                                                                Language Lab is equipped with a professionally
+                                                                engineered comprehensive end user friendly language
+                                                                learning software provided by Thaliyola Digital Language
+                                                                lab with 21 numbers of dedicated system.Here students
+                                                                are trained to develop and hone their Communicative
+                                                                skills of Reading, Writing, Listening and Speaking using
+                                                                headphones with mics. Leadership qualities and Team
+                                                                skills of the students are honed through group
+                                                                activities like Group Presentations and Discussions
+                                                                &amp;amp; Brainstorming. Through these activities
+                                                                students learn to critically analyze, negotiate and
+                                                                think logically with clarity of their ideas. Oral
+                                                                presentation, GD, Role playing, public speaking
+                                                                activities, drama enhances their speaking skills. Mock
+                                                                interviews are held from the first semester to help them
+                                                                prepare for On/ Off campus interviews. Presentation
+                                                                skills are developed through training of PowerPoint
+                                                                presentations. Online IELTS and TOEFL and aptitude exams
+                                                                are regularly conducted to help them prepare for
+                                                                national, international and competitive examinations and
+                                                                GATE. Newspaper in education is an integral part in
+                                                                developing the reading and comprehension skills of the
+                                                                students.
+                                                            </p>
+                                                            <p class="page_text" style="text-align:justify;">The Digital
+                                                                Linguistic Mentor (DLM) is a revolutionary
+                                                                software-driven language learning laboratory that blends
+                                                                time-tested methodologies with interactive technology to
+                                                                deliver a superb teaching and learning experience. The
+                                                                methodology is LSRW or
+                                                                Listening-Speaking-Reading-Writing in tandem with
+                                                                appropriate learning materials brought to you through
+                                                                easy-to-use yet state-of-the art information technology
+                                                                that is preprogrammed to run seamlessly across multiple
+                                                                operating systems while making the learning process
+                                                                interactive and enjoyable. DLM is indeed an effective
+                                                                evaluation tool for the mentor and an efficient
+                                                                communication boon for the mentee
+
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="hostels-retiring-rooms_page" model="website.page">
+            <field name="url">/hostels-retiring-rooms</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="hostels-retiring-rooms"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="website.s_dynamic_snippet.carousel">
+        <div t-att-id="uniqueId" class="carousel slide" t-att-data-bs-interval="interval" data-bs-ride="carousel">
+            <!-- Content -->
+            <t t-set="rowSize" t-value="chunkSize"/>
+            <t t-set="slideSize" t-value="rowSize * rowPerSlide"/>
+            <t t-set="colClass"
+               t-value="'d-flex flex-grow-0 flex-shrink-0 col-' + Math.trunc(12 / rowSize).toString()"/>
+            <t t-set="slideIndexGenerator" t-value="Array.from(Array(Math.ceil(data.length/slideSize)).keys())"/>
+            <t t-set="rowIndexGenerator" t-value="Array.from(Array(rowPerSlide).keys())"/>
+            <t t-set="colIndexGenerator" t-value="Array.from(Array(rowSize).keys())"/>
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <t t-foreach="slideIndexGenerator" t-as="slideIndex">
+                    <t t-set="slideOffset" t-value="slideIndex * slideSize"/>
+                    <div t-attf-class="carousel-item #{extraClasses} #{slideIndex_first ? 'active' : ''}">
+                        <t t-foreach="rowIndexGenerator" t-as="rowIndex">
+                            <t t-set="rowOffset" t-value="slideOffset + (rowIndex * rowSize)"/>
+                            <t t-if="rowOffset &lt; data.length">
+                                <div class="row">
+                                    <t t-foreach="colIndexGenerator" t-as="colIndex">
+                                        <t t-set="itemIndex" t-value="rowOffset + colIndex"/>
+                                        <t t-if="itemIndex &lt; data.length">
+                                            <div t-attf-class="#{colClass}">
+                                                <t t-out="data[itemIndex]"/>
+                                            </div>
+                                        </t>
+                                    </t>
+                                </div>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+            </div>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <!-- Your additional content goes here -->
+                <!-- For example, you can add indicators here -->
+                <t t-foreach="emea_college_events_snippet.s_dynamic_snippet.carousel.slideIndexGenerator"
+                   t-as="slideIndex">
+                    <li type="button" t-att-data-bs-target="##{uniqueId}" t-att-data-bs-slide-to="slideIndex"
+                        t-att-aria-label="Slide #{slideIndex + 1}" t-att-class="slideIndex_first ? 'active' : ''"/>
+                </t>
+            </ol>
+        </div>
+    </t>
+</templates>

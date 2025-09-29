@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="template_header_mes" inherit_id="website.layout" name="Header Mes College">
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+            <header id="top" data-anchor="true" data-name="Header" class="">
+                <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level">
+                    <div class="top-bar" style="list-style-type:none;" data-oe-model="ir.ui.view" data-oe-id="834"
+                         data-oe-field="arch" data-oe-xpath="/data/xpath/header/nav[1]/div[1]">
+                        <li class="nav-item dropdown dropdown  position-static">
+                            <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle" aria-expanded="false"
+                               id="top1">
+                                <span>Statutory Cells</span>
+                            </a>
+                            <style>
+                                .head_ td{ background: var(--primary) !important;
+                                color: white;
+                                border:none !important;
+                                box-shadow: #ffffff 2px 0px 3px 1px !important;
+                                font-weight: 600;
+                                text-align: center;}
+                            </style>
+                            <div data-name="Mega Menu" class="dropdown-menu top_drop">
+                                <section class=" o_colored_level " style="background-image: none;">
+                                    <div class="container px-0">
+                                        <div class="row">
+                                            <section class="col-md-6 col-lg-12 o_colored_level">
+                                                <nav class="nav flex-column">
+                                                    <a href="/anti_ragging_cell" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Anti Ragging Cell</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/anti_sexual_harassment_cell"
+                                                       class="nav-link  top_nav_link" data-name="Menu Item"
+                                                       data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Anti Sexual Harassment Cell
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/students_grievance_redressal_cell"
+                                                       class="nav-link top_nav_link" data-name="Menu Item"
+                                                       data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Students Grievance Redressal
+                                                            Cell
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/sc_st_cell" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">SC/ST Cell</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/minority_cell" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Minority Cell</span>
+                                                    </a>
+                                                    <a href="/obc_cell" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">OBC Cell</span>
+                                                    </a>
+                                                </nav>
+                                            </section>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown  position-static">
+                            <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle " aria-expanded="true"
+                               id="top1">
+                                <span>Admission</span>
+                            </a>
+                            <div data-name="Mega Menu" class="dropdown-menu  top_drop" data-bs-popper="none">
+                                <section class=" o_colored_level " style="background-image: none;">
+                                    <div class="container px-0">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-12 o_colored_level">
+                                                <nav class="nav flex-column">
+                                                    <a href="/mes_college/static/pdf/Prospectus-2022-MES-KC.pdf"
+                                                       target="_blank" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Prospectus
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="https://meskc.ac.in/upload/Website/Documents/Admission%20Rules%20and%20Regulations.pdf"
+                                                       class="nav-link  top_nav_link" target="_blank"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Rules and Regulations
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/admission_procedure" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Admission Procedure</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/fee_structure" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Fee Structure
+
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/distribution_seats" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Distribution of seats</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/cut_of_marks" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Cut off marks</span>
+                                                    </a>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown  position-static">
+                            <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle " aria-expanded="true"
+                               id="top1">
+                                <span>Students Corner</span>
+                            </a>
+                            <div data-name="Mega Menu" class="dropdown-menu  top_drop" id="stduent_corner"
+                                 data-bs-popper="none">
+                                <section class=" o_colored_level " style="background-image: none;">
+                                    <div class="container px-0">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-12 o_colored_level">
+                                                <nav class="nav flex-column">
+                                                    <a href="/scholarships" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Scholarships
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/skill_tune" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">SKILL TUNE
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/udyami" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">UDYAMI</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/technology_business" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Technology Business
+                                                            Incubation Centre
+                                                            Cell
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/civil_service_academy" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Civil Service Academy</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/capacity_building_programmes"
+                                                       class="nav-link  top_nav_link" data-name="Menu Item"
+                                                       data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Capacity Building
+                                                            Programmes
+                                                        </span>
+                                                    </a>
+                                                    <a href="/nptel_local" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">NPTEL Local Chapter</span>
+                                                    </a>
+                                                    <a href="/counselling" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Counselling</span>
+                                                    </a>
+                                                    <a href="/nss" class="nav-link  top_nav_link" data-name="Menu Item"
+                                                       data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">NSS</span>
+                                                    </a>
+                                                    <a href="/ncc" class="nav-link  top_nav_link" data-name="Menu Item"
+                                                       data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">NCC</span>
+                                                    </a>
+                                                    <a href="/facilitation_centres" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Facilitation Centres</span>
+                                                    </a>
+                                                    <a href="student_union" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Students Union
+                                                        </span>
+                                                    </a>
+                                                    <a href="/pta" class="nav-link  top_nav_link" data-name="Menu Item"
+                                                       data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">PTA
+                                                        </span>
+                                                    </a>
+                                                    <a href="/career_guidance_placement" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Career Guidance and Placement
+                                                        </span>
+                                                    </a>
+                                                    <a href="/clubs/1" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Clubs and Forums
+                                                        </span>
+                                                    </a>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </div>
+
+                        </li>
+                        <li class="nav-item dropdown dropdown  position-static">
+                            <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle " aria-expanded="true"
+                               id="top1">
+                                <span>Facilities</span>
+                            </a>
+                            <div data-name="Mega Menu" class="dropdown-menu  top_drop" id="stduent_corner"
+                                 data-bs-popper="none">
+                                <section class=" o_colored_level " style="background-image: none;">
+                                    <div class="container px-0">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-12 o_colored_level">
+                                                <nav class="nav flex-column">
+                                                    <a href="/academic_facilities" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Academic facilities
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+
+                                                    <a href="/ict_labs" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">ICT Labs</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/laboratories" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Laboratories</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/sports_infrastructure" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Sports Infrastructure
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/hostel" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Hostel</span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/auditorium" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Auditorium/Conference Halls
+                                                        </span>
+                                                    </a>
+                                                    <a href="/campus_amenities" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Campus amenities</span>
+                                                    </a>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </div>
+                        </li>
+                        <a href="/outreach" class="pl-3  float-right" id="top1">Outreach
+                        </a>
+                        <a href="/achievements" class="pl-3  float-right" id="top1">Achievements</a>
+                        <li class="nav-item dropdown dropdown  position-static">
+                            <a data-bs-toggle="dropdown" href="library" class="nav-link dropdown-toggle"
+                               aria-expanded="false" id="top1">
+                                <span>Library</span>
+                            </a>
+                            <div data-name="Mega Menu" class="dropdown-menu top_drop" id="stduent_corner">
+                                <section class="o_colored_level" style="background-image: none;">
+                                    <div class="container px-0">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-12 o_colored_level" style="">
+                                                <nav class="nav flex-column">
+                                                    <a href="/library" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Library
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/library_e_resources" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Library E-resources
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="https://nlist.inflibnet.ac.in/" target="_blank"
+                                                       class="nav-link  top_nav_link" data-name="Menu Item"
+                                                       data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">INFLIBNET N-List
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="http://117.251.18.129:8000" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title=""
+                                                       target="_blank">
+                                                        <span style="font-weight: normal;">Online catalogue</span>
+                                                        <br/>
+                                                    </a>
+
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </div>
+
+                        </li>
+                        <li class="nav-item dropdown dropdown  position-static">
+                            <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle " aria-expanded="true"
+                               id="top1">
+                                <span>Alumni</span>
+                            </a>
+                            <div data-name="Mega Menu" class="dropdown-menu  top_drop" id="stduent_corner"
+                                 data-bs-popper="none" style="right:10px;">
+                                <section class=" o_colored_level " style="background-image: none;">
+                                    <div class="container px-0">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-12 o_colored_level">
+                                                <nav class="nav flex-column">
+                                                    <a href="/alumni_associate" class="nav-link  top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Alumni Association
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+
+                                                    <a href="/distinguished_alumni" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Distinguished Alumni
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                    <a href="/alumni_registration" class="nav-link top_nav_link"
+                                                       data-name="Menu Item" data-bs-original-title="" title="">
+                                                        <span style="font-weight: normal;">Alumni Registration
+                                                        </span>
+                                                        <br/>
+                                                    </a>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </div>
+                        </li>
+                        <a href="/gallery" class="pl-3 float-right" id="top1">Gallery</a>
+                    </div>
+
+
+                    <div class="row m-lg-0" style="width:100%;">
+                        <div class="mes-logo">
+                            <a href="#" class="logo">
+                                <img src="/mes_college/static/img/logo.svg" loading="lazy" class="logo-img"/>
+                                <h2 id="logo-name">
+                                    MES KALLADI COLLEGE
+                                    <p>MANNARKKAD | KERALA
+                                    </p>
+                                </h2>
+                            </a>
+
+
+                        </div>
+                        <button class="navbar-toggler collapsed" type="button" aria-controls="top_menu_collapse"
+                                aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse"
+                                data-bs-target="#top_menu_collapse">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="top_menu_collapse">
+                            <!-- Left links -->
+                            <ul class="navbar-nav me-auto ps-lg-0 mes">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item dropdown"/>
+                                        <t t-set="link_class" t-valuef="nav-link dropdown-toggle mes-link"/>
+                                    </t>
+                                </t>
+                                <!--                                <li class="nav-item">-->
+                                <!--                                    <a class="nav-link mes-link" href="#">Home</a>-->
+                                <!--                                </li>-->
+                                <!--                                &lt;!&ndash; Navbar dropdown &ndash;&gt;-->
+                                <!--                                <li class="nav-item dropdown dropdown-hover position-static">-->
+                                <!--                                    <a class="nav-link dropdown-toggle mes-link" href="#" id="navbarDropdown"-->
+                                <!--                                       role="button"-->
+                                <!--                                       data-bs-toggle="dropdown" aria-expanded="false">-->
+                                <!--                                        About Us-->
+                                <!--                                    </a>-->
+                                <!--                                    &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+                                <!--                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;-->
+                                <!--                            border-top-right-radius: 0;-->
+                                <!--                          ">-->
+
+                                <!--                                        <div class="container">-->
+                                <!--                                            <div class="row my-4">-->
+                                <!--                                                <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">-->
+                                <!--                                                    <div class="list-group list-group-flush">-->
+                                <!--                                                        <h2 id="main_name">Organization</h2>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">About-->
+                                <!--                                                            MES-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Management Committee-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <h2 id="main_name">COLLEGE PROFILE</h2>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            College Prayer-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Milestone-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            College Crest-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Vision and Mission-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <div class="next"></div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">-->
+                                <!--                                                    <div class="list-group list-group-flush">-->
+                                <!--                                                        <h2 id="main_name">QUALITY POLICY</h2>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Quality Policy-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Perspective Plan-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">Core-->
+                                <!--                                                            Values-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Strategic Plan-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Resource Mobilization Policy-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Graduate Attributes-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Financial Support to Teachers-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <div class="next"></div>-->
+
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div class="col-md-6 col-lg-3 mb-3 mb-md-0">-->
+                                <!--                                                    <div class="list-group list-group-flush">-->
+                                <!--                                                        <h2 id="main_name">Administration</h2>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            College Council-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Coordinators-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Administrative Staff-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Organization Structure-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <h2 id="main_name">CODE OF CONDUCTS</h2>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Code of Conducts Students-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Code of Conducts Hostel Inmates-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Code of Conducts Staff-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <div class="next"></div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div class="col-md-6 col-lg-3">-->
+                                <!--                                                    <div class="list-group list-group-flush">-->
+                                <!--                                                        <h2 id="main_name">Mandatory Disclosure</h2>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Affiliation Certificate-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">UGC-->
+                                <!--                                                            2(f) and 12(B) Certificate-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Minority Certificate-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">-->
+                                <!--                                                            Self Declaration-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">NIRF-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">NAAC-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">ARIIA-->
+                                <!--                                                        </a>-->
+                                <!--                                                        <a href="" class="list-group-item list-group-item-action">AISHE-->
+                                <!--                                                        </a>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </li>-->
+                                <!--                                <li class="nav-item">-->
+                                <!--                                    <a class="nav-link mes-link" href="#">Administration</a>-->
+                                <!--                                </li>-->
+                                <!--                                <li class="nav-item">-->
+                                <!--                                    <a class="nav-link mes-link" href="#">iqac</a>-->
+                                <!--                                </li>-->
+                                <!--                                <li class="nav-item">-->
+                                <!--                                    <a class="nav-link mes-link" href="#">Departments</a>-->
+                                <!--                                </li>-->
+                                <!--                                <li class="nav-item">-->
+                                <!--                                    <a class="nav-link mes-link" href="#">Research</a>-->
+                                <!--                                </li>-->
+                                <!--                                <li class="nav-item">-->
+                                <!--                                    <a class="nav-link mes-link" href="#">NIRF</a>-->
+                                <!--                                </li>-->
+                                <!--                                <li class="nav-item">-->
+                                <!--                                    <a class="nav-link mes-link" href="#">IQAC</a>-->
+                                <!--                                </li>-->
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,239 @@
+<odoo>
+    <data>
+        <record id="plagiarism_policy" model="ir.ui.view">
+            <field name="name">Plagiarism Policy</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.plagiarism_policy</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.plagiarism_policy_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Plagiarism Policy
+                                                </h2>
+                                                <div class="row pt32">
+                                                    <section class="d-flex o_colored_level margin_30 ssr"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-6 programme_link">
+                                                            UGC Guidelines on Plagiarism
+                                                        </div>
+                                                        <a href="#"
+                                                           target="_blank" class="readmore" id="view">View
+                                                        </a>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30 ssr"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-6 programme_link">
+                                                            Institutional Policy on
+                                                            Plagiarism
+                                                        </div>
+                                                        <a href="#"
+                                                           target="_blank" class="readmore" id="view">View
+                                                        </a>
+                                                    </section>
+
+                                                </div>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    <strong>
+                                                        PLAGIARISM POLICY
+                                                    </strong>
+                                                    <br/>
+                                                    <br/>
+                                                    The policy to curb plagiarism and tendency towards it in the early
+                                                    academic carriers is a necessity and our institutions already taken
+                                                    initiatives to implement a policy. The present UGC notification 2018
+                                                    (University Grants Commission [Promotion of Academic Integrity and
+                                                    Prevention of Plagiarism in Higher Educational Institutions
+                                                    Regulations, 2018) provides and in depth understanding to the
+                                                    issues, its challenges and it is mandatory to implement in all
+                                                    academic institutions. The college council has entrusted the
+                                                    Research Promotion Council (RPC) for the implementation of UGC
+                                                    regulations. The RPC has formulated the following guidelines.
+                                                    <br/>
+                                                    <br/>
+                                                    <ol>
+                                                        <li>
+                                                            An Institutional Academic Integrity Panel (IAIP) with
+                                                            Principal as Chairman is to formed
+                                                        </li>
+                                                        <li>The Plagiarism regulation of UGC 2018 is mandatory to
+                                                            PhD
+                                                            Research thesis.
+                                                        </li>
+                                                        <li>All the PG dissertations and PhD thesis has to be
+                                                            screened for plagiarism software and a certificate has
+                                                            to be
+                                                            attached along with the Ph D thesis
+                                                        </li>
+                                                        <li>Every student submitting a thesis, dissertation, or any
+                                                            other such documents to the Institution shall submit an
+                                                            undertaking indicating that the document has been
+                                                            prepared
+                                                            by him or her and that the document is his/her original
+                                                            work
+                                                        </li>
+                                                        <li>The undertaking of PhD thesis shall include the fact
+                                                            that
+                                                            the document has been duly checked through a Plagiarism
+                                                            detection tool approved by the institution
+                                                        </li>
+                                                        <li>Each supervisor of Ph D thesis shall submit a
+                                                            certificate
+                                                            indicating that the work done by the researcher under
+                                                            him /
+                                                            her is plagiarism free.
+                                                        </li>
+                                                        <li>A repository available in the college website shall
+                                                            include dissertation / thesis and other in-house
+                                                            publications
+                                                        </li>
+                                                        <li>Institution shall submit to INFLIBNET soft copies of all
+                                                            Ph D thesis within a month after the award of degrees
+                                                            for
+                                                            hosting in the digital repository under the " ShodGanga
+                                                            e-repository".
+                                                        </li>
+                                                        <li>The penalty for plagiarism is in accordance with and as
+                                                            described in Section 8, 12.1 and I2.2 of the UGC
+                                                            Plagiarism
+                                                            Regulation 2018) 10. All the faculties are required to
+                                                            review and check for plagiarism 2-4 weeks prior to the
+                                                            submission date and the students are require to submit
+                                                            within this period so that students can get an
+                                                            opportunity
+                                                            to revise the manuscript to avoid any chances of
+                                                            plagiarism
+                                                            and punishment
+                                                        </li>
+                                                        <li>The IAIP is recommend for proper action, reporting to
+                                                            university for further action if plagiarism is detected
+                                                            repeatedly and no mitigation measures are taken or
+                                                            effective
+                                                            within the stipulated time 12.All the research proposal,
+                                                            major and minor has to be submitted to the Research
+                                                            Council
+                                                            fat least a draft) at least 10 days prior to the
+                                                            submission
+                                                            date
+                                                        </li>
+                                                        <li>It is also envisaged t}at all the major and minor
+                                                            research proposals should be presented before the
+                                                            committee
+                                                        </li>
+                                                        <li>All departments has to conduct synopsis and final
+                                                            project
+                                                            presentation for all PG and PhD research projects.
+                                                        </li>
+                                                    </ol>
+                                                    <br/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/code_of_ethics" class="readmore" id="naac_link">
+                                                    Code Of Ethics
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/research-projects"
+                                                   class="readmore" id="naac_link" target="_blank">
+                                                    Research Projects
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/research-promotion-council" class="readmore" id="naac_link">
+                                                    Research Promotion Council
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Facilities
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Guides
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    The members of Institutional Academic Integrity Panel (IAIP) are as
+                                    follows
+                                    <br/>
+                                    <br/>
+                                    <div class="row pb32">
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr.C.Rajesh
+
+                                                </div>
+                                                <div class="designation">Principal-Chairman</div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. Ranjini MC
+                                                </div>
+                                                <div class="designation">Coordinator</div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. Job Sabu
+                                                </div>
+                                                <div class="designation">Member</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <strong>Contact</strong>
+                                    <br/>
+                                    www.meskc.ac.in
+                                    <br/>
+                                    <br/>
+                                    <strong>UGC Plagiarism Regulation 2018</strong>
+                                    <br/>
+                                    wwwugc.ac.in
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="plagiarism_policy_page" model="website.page">
+            <field name="url">/plagiarism_policy</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="plagiarism_policy"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

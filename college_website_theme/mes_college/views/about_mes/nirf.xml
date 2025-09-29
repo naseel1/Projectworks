@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+        <record id="nirf_mes" model="ir.ui.view">
+            <field name="name">NIRF</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.nirf_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.nirf_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align: left;padding-left: 20px;">
+                                                NIRF
+                                            </h2>
+                                            <table class="milestone" style="width:auto;    margin: inherit;"
+                                                   cellspacing="0" cellpadding="7">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Year
+                                                        </th>
+                                                        <th>
+                                                            NIRF Overall
+                                                        </th>
+                                                        <th>
+                                                            NIRF College
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr valign="top">
+                                                        <td style="padding-top: 40px;padding-bottom: 40px;">2022-2023
+                                                        </td>
+                                                        <td>
+                                                            <a href="mes_college/static/img/NIRF-2023-OVERALL-MES-KALLADI-COLLEGE-MANNARKKAD.pdf"
+                                                               target="_blank" class="readmore" id="view">
+                                                                View
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="mes_college/static/img/NIRF-2023-COLLEGE-MES-KALLADI-COLLEGE-MANNARKKAD.pdf"
+                                                               target="_blank" class="readmore" id="view">View
+                                                            </a>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="nirf_mes_page" model="website.page">
+            <field name="url">/nirf</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="nirf_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

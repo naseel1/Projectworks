@@ -1,0 +1,124 @@
+<odoo>
+
+    <!-- Kanban View -->
+    <record id="view_department_kanban" model="ir.ui.view">
+        <field name="name">website.department.kanban</field>
+        <field name="model">website.department</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <field name="id"/>
+                <field name="dep_name"/>
+                <field name="dep_image"/>
+                <field name="dep_description"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click o_kanban_card">
+
+                            <strong>
+                                <field name="dep_name"/>
+                            </strong>
+                            <div>
+                                <field name="dep_id"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_department_form" model="ir.ui.view">
+        <field name="name">website.department.form</field>
+        <field name="model">website.department</field>
+        <field name="arch" type="xml">
+            <form string="Department">
+                <sheet>
+                    <group>
+                        <field name="dep_name"/>
+                        <field name="dep_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Profile">
+                            <group>
+                                <field name="image_ids">
+                                    <tree editable="bottom">
+                                        <field name="image" widget="image" class="oe_avatar"/>
+
+                                    </tree>
+                                </field>
+
+                                <field name="dep_description"/>
+                                <field name="vision"/>
+                                <field name="mission"/>
+                            </group>
+                        </page>
+                        <page string="Programmes Offered">
+                            <field name="programme_ids" context="{'default_department_id': active_id}" mode="tree,form">
+                                <tree>
+                                    <field name="programme_name"/>
+                                    <field name="programme_id"/>
+                                </tree>
+                                <form string="Programme Details">
+                                    <group>
+                                        <field name="programme_name"/>
+                                        <field name="programme_id" readonly="1"/>
+                                        <field name="programme_type"/>
+                                        <field name="programme_category"/>
+                                        <field name="programme_points" widget="html"/>
+                                        <field name="programme_description" widget="html"/>
+                                        <field name="syllabus_ids">
+                                            <tree editable="bottom">
+                                                <field name="name" string="Title"/>
+                                                <field name="syllabus_url" string="Syllabus URL"/>
+                                                <field name="syllabus_pdf" filename="syllabus_filename" string="PDF"/>
+                                                <field name="syllabus_filename" invisible="1"/>
+                                            </tree>
+                                        </field>
+
+
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+
+                        <page string="Club">
+                            <field name="club_ids">
+                                <tree editable="bottom">
+                                    <field name="club_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_website_department" model="ir.actions.act_window">
+        <field name="name">Departments</field>
+        <field name="res_model">website.department</field>
+        <field name="view_mode">kanban,form</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_id" ref="view_department_kanban"/>
+        <field name="groups_id"
+               eval="[(4, ref('landing_page.group_allowed_department_admin')), (4, ref('landing_page.group_allowed_department_user'))]"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No departments found.</p>
+        </field>
+    </record>
+    <!-- Menu -->
+    <menuitem id="menu_department_page_root"
+              name="Departments"
+              parent="website.menu_website_configuration"
+              sequence="20"/>
+
+    <menuitem id="menu_departments"
+              name="Manage Departments"
+              parent="menu_department_page_root"
+              action="action_website_department"
+              sequence="20"
+              groups="landing_page.group_allowed_department_admin,landing_page.group_allowed_department_user"/>
+</odoo>

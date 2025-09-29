@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="view_blog_post_form_inherit_description" model="ir.ui.view">
+            <field name="name">blog_post.view.form.inherit.description</field>
+            <field name="model">blog.post</field>
+            <field name="inherit_id" ref="website_blog.view_blog_post_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='subtitle']" position="after">
+                    <field name="event_description"/>
+                    <field name="event_image" widget="image" class="oe_avatar"/>
+                    <field name="is_event"/>
+                    <field name="is_newses"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="dynamic_filter_show_in_event_filter" model="ir.filters">
+            <field name="name">Published in Events</field>
+            <field name="model_id">blog.post</field>
+            <field name="user_id" eval="False"/>
+            <field name="domain">
+                [('post_date', '&lt;=', context_today()), ('is_event', '=', 'True')]
+            </field>
+            <field name="sort">['post_date desc']</field>
+            <field name="action_id" ref="website.action_website"/>
+        </record>
+        <record id="dynamic_filter_show_in_event" model="website.snippet.filter">
+            <field name="name">Published in Events</field>
+            <field name="filter_id" ref="cpa_college_events_snippet.dynamic_filter_show_in_event_filter"/>
+            <field name="field_names">name,teaser,subtitle</field>
+            <field name="limit" eval="16"/>
+            <!-- ... -->
+        </record>
+        <record id="dynamic_filter_news_filter" model="ir.filters">
+            <field name="name">News</field>
+            <field name="model_id">blog.post</field>
+            <field name="user_id" eval="False"/>
+            <field name="domain">
+                [('post_date', '=', context_today()), ('is_newses', '=', 'True')]
+            </field>
+            <field name="sort">['post_date desc']</field>
+            <field name="action_id" ref="website.action_website"/>
+        </record>
+        <!--Newses  add in filter-->
+        <record id="dynamic_filter_news" model="website.snippet.filter">
+            <field name="name">News</field>
+            <field name="filter_id" ref="cpa_college_events_snippet.dynamic_filter_news_filter"/>
+            <field name="field_names">name,teaser,subtitle</field>
+            <field name="limit" eval="16"/>
+        </record>
+    </data>
+</odoo>

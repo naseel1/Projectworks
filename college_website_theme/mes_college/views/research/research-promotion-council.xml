@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+        <record id="research-promotion-council" model="ir.ui.view">
+            <field name="name">Research Promotion Council</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.research-promotion-council</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.research-promotion-council_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Research Promotion Council
+                                    </h2>
+                                    <div class="content_text" style="text-align:justify;padding: 0;">
+                                        The objective of Research promotion council is to encourage and promote research
+                                        attitude among the faculty and students.
+                                    </div>
+                                    <div class="pt32 pb32">
+                                        <table class="milestone scholar pt32" cellspacing="0" cellpadding="7">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="min-width:80px;">Dr. Ranjini MC</td>
+                                                    <td>
+                                                        Name of the Ph.D Scholar
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width:80px;">Dr. Job Sabu K</td>
+                                                    <td>
+                                                        Department of Physics, Joint Coordinator
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width:80px;">Dr. Azhar A</td>
+                                                    <td>
+                                                        IQAC Coordinator , Member
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="research-promotion-council_page" model="website.page">
+            <field name="url">/research-promotion-council</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="research-promotion-council"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

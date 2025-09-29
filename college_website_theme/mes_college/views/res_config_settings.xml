@@ -1,0 +1,24 @@
+<odoo>
+    <!-- Inherit the Website form and add a checkbox -->
+    <record id="view_website_form_inherit_mes_popup" model="ir.ui.view">
+        <field name="name">website.form.inherit.mes.popup</field>
+        <field name="model">website</field>
+        <field name="inherit_id" ref="website.view_website_form"/>
+        <field name="arch" type="xml">
+            <!-- Insert right after Website Domain field -->
+            <xpath expr="//field[@name='domain']" position="after">
+                <field name="x_show_popup" groups="base.group_system"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_website_tree_inherit_mes_popup" model="ir.ui.view">
+        <field name="name">website.tree.inherit.mes.popup</field>
+        <field name="model">website</field>
+        <field name="inherit_id" ref="website.view_website_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <field name="x_show_popup"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

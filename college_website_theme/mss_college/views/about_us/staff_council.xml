@@ -1,0 +1,191 @@
+<odoo>
+    <data>
+        <record id="staff_council" model="ir.ui.view">
+            <field name="name">Staff Council</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.staff_council</field>
+            <field name="arch" type="xml">
+                <t name="Staff Council" t-name="mss_college.staff_council_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <h3 class="about_heading history_heading">Staff Council</h3>
+                            <hr id="heading_line"/>
+                            <section style="padding-top:20px;z-index:0;">
+                                <div class="row" style="margin-right: 0px;">
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-right: 0px;">
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="/mss_college/static/img/Ellipse 1.png"
+                                                     alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy
+                                                    <small>department</small>
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 w-100 float-left text-center">
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="staff_council_page" model="website.page">
+            <field name="url">/staff_council</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="staff_council"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,71 @@
+<odoo>
+    <data>
+        <record id="seminars-workshops" model="ir.ui.view">
+            <field name="name"> Seminars and Workshops</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.seminars-workshops</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.seminars-workshops_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32">
+                                <h2 class="page_head" style="text-align: left;padding-left: 20px;padding-top:20px;">
+                                    Seminars and Workshops
+                                </h2>
+                                <div class="news row">
+                                    <t t-foreach="data" t-as="events">
+                                        <section class="news-card o_colored_level"
+                                                 style="background-image: none;box-shadow: rgba(149, 157, 165, 0.2) 1px -5px 24px 11px;">
+                                            <div class="news-card-image">
+
+                                                <img t-att-src="str(events['poster_link'])" alt="" loading="lazy"
+                                                     id="news-card-image" style=""/>
+
+                                            </div>
+                                            <div class="news-card-box">
+                                                <h1 class="news-card-name">
+                                                    <t t-if="events['program_name']">
+                                                        <t t-esc="events['program_name']"/>
+                                                    </t>
+                                                </h1>
+                                                <p class="news-card-p">
+                                                    <t t-if="events['description']">
+                                                        <t t-esc="events['description']"/>
+                                                    </t>
+                                                </p>
+                                                <t t-if="events['program_details_id']">
+                                                    <a t-att-href="'news/' + str(events['program_details_id']) + '/news_detail'"
+                                                       class="read_more">Read More
+                                                        <span class="fa fa-long-arrow-right" data-bs-original-title=""
+                                                              title="" aria-describedby="tooltip544395"/>
+                                                    </a>
+                                                </t>
+                                            </div>
+                                        </section>
+                                    </t>
+
+                                </div>
+                                <div class="pagination">
+                                    <t t-foreach="meta.get('links', [])" t-as="link">
+                                        <t t-if="link['url']">
+                                            <a t-att-href="'/news_events?page=' + link['url'].split('=')[-1]"
+                                               t-att-class="link['active']">
+                                                <t t-raw="link['label']"/>
+                                            </a>
+                                        </t>
+                                    </t>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="seminars-workshops_page" model="website.page">
+            <field name="url">/seminars-workshops</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="seminars-workshops"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,93 @@
+<odoo>
+    <data>
+        <record id="ugc" model="ir.ui.view">
+            <field name="name">ugc</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.ugc</field>
+            <field name="arch" type="xml">
+                <t name="Administrative Staff" t-name="emea_college_theme.ugc_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                    <div class="clubs">UGC</div>
+                                </div>
+                                <div class="row" style="margin-right: 0px;">
+                                    <div class="col-lg-12">
+                                        <div style="">
+                                            <h3 class="department_subhead" style="margin-left:60px;">UGC</h3>
+                                            <P class="page_text"
+                                               style="text-align:center;text-align:justify;min-height:0vh !important; margin-left:60px;margin-right:60px">
+                                                The University Grants Commission of India (UGC India) is a statutory
+                                                body set up by the Government of India in accordance to the UGC Act 1956
+                                                under Ministry of Education, and is charged with coordination,
+                                                determination and maintenance of standards of higher education. It
+                                                provides recognition to universities in India, and disbursements of
+                                                funds to such recognized universities and colleges. Without its
+                                                recognition, no university in India can grant degree. Its headquarters
+                                                is in New Delhi, and has six regional centres in Pune, Bhopal, Kolkata,
+                                                Hyderabad, Guwahati and Bangalore. A proposal to replace it with another
+                                                new regulatory body called HECI is under consideration of Government of
+                                                India.
+                                            </P>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-right: 0px;">
+                                    <div class="col o_colored_level" style="margin-top: 30px;">
+                                        <div class="main_table_box_2">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>S.No</th>
+                                                    <th>Project name</th>
+                                                    <th>Status</th>
+                                                    <th>Date</th>
+                                                    <th>View Files</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-label="S.No">1</td>
+                                                        <td data-label="Project name">UGC Projects 2014-15</td>
+                                                        <td data-label="Status">Completed</td>
+                                                        <td data-label="Date">18-July-2020</td>
+                                                        <td data-label="View Files">view</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td data-label="S.No">2</td>
+                                                        <td data-label="Project name">UGC Projects 2017-18</td>
+                                                        <td data-label="Status">Completed</td>
+                                                        <td data-label="Date">18-July-2020</td>
+                                                        <td data-label="View Files">view</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td data-label="S.No">3</td>
+                                                        <td data-label="Project name">UGC Projects 2016-17</td>
+                                                        <td data-label="Status">Completed</td>
+                                                        <td data-label="Date">18-July-2020</td>
+                                                        <td data-label="View Files">view</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="ugc_page" model="website.page">
+            <field name="url">/ugc</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="ugc"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

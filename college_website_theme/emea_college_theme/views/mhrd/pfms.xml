@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+        <record id="pfms" model="ir.ui.view">
+            <field name="name">PFMS</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.pfms</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.pfms">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                                <div class="clubs">PFMS</div>
+                            </div>
+                            <div class="row" style="    margin-right: 0px;">
+                                <div class="col-md-9">
+                                    <h1 class="department_subhead" style="padding-left:35px;">PFMS</h1>
+                                    <p class="page_text " style="padding-left:35px;text-align:justify;">Public Financial
+                                        Management System (PFMS) initially started as a Plan scheme named CPSMS of the
+                                        Planning Commission in 2008-09 as a pilot in four States of Madhya Pradesh,
+                                        Bihar, Punjab and Mizoram for four Flagship schemes e.g. MGNREGS, NRHM, SSA and
+                                        PMGSY. After the initial phase of establishing a network across Ministries /
+                                        Departments, it has been decided to undertake National rollout of CPSMS (PFMS)
+                                        to link the financial networks of Central, State Governments and the agencies of
+                                        State Governments. The scheme was included in 12th Plan initiative of Planning
+                                        Commission and Ministry of Finance.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image" loading="lazy" style=""/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="pfms_page" model="website.page">
+            <field name="url">/pfms</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="pfms"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

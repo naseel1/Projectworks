@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="template_cpa_header" inherit_id="website.layout" name="Header CPA ">
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+            <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+                  rel="stylesheet"/>
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"/>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"/>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", () =&gt; {
+                const navToggler = document.getElementById("navToggler");
+                const topMenuCollapse = document.getElementById("top_menu_collapse");
+                const homepage = document.querySelector("#wrapwrap");
+
+                // Function to handle toggle state
+                function toggleMenu() {
+                const isExpanded = navToggler.getAttribute("aria-expanded") === "true";
+
+                if (isExpanded) {
+                // Add classes to show the menu
+                topMenuCollapse.classList.add("show");
+                topMenuCollapse.style.transition = "all 0.3s ease-in-out"; // Ensure smooth transition
+                homepage.classList.add("lock-scroll");
+                } else {
+                // Remove classes to hide the menu
+                topMenuCollapse.classList.remove("show");
+                homepage.classList.remove("lock-scroll");
+                }
+                }
+
+                // Listen for clicks on the toggler
+                navToggler.addEventListener("click", () =&gt; {
+                // Introduce a slight delay to sync with Bootstrap transitions if needed
+                requestAnimationFrame(toggleMenu);
+                });
+
+                // Ensure the initial state is synchronized on page load
+                toggleMenu();
+                });
+            </script>
+            <style>
+                .cpa_nav .nav-item .cpa_link{
+                display: flex;
+                align-items: center;
+                }
+                #top .dropdown-toggle::after{
+                align-items: center;
+                right: auto;
+                position: relative;
+                display: flex;
+                top: auto;
+                transform: none;
+                margin-left: 5px;
+                transition: all 0.3s ease-in-out;
+                }
+
+                header#top {
+                z-index: 10300;
+                }
+                #top_menu_collapse {
+                justify-content: end;
+                }
+                .cpa_nav .nav-item .cpa_link.show{
+                color: #0E5D7C !important;
+                }
+                .cpa_nav .nav-item .cpa_link
+                display: flex;
+                align-items: center;
+                }
+                #top .dropdown-toggle::after {
+                align-items: center;
+                right: auto;
+
+                position: relative;
+
+                display: flex;
+                top: auto;
+                transform: none;
+                margin-left: 5px;
+                transition: all 0.3s ease-in-out;
+                }
+                @media(max-width: 900px){
+                .navbar-light .navbar-toggler{
+                z-index: 11031;
+                }
+                .cpa_nav{
+                gap:0px;
+                }
+                }
+            </style>
+            <header id="top" data-anchor="true" data-name="Header" class="header">
+                <section class="top-bar">
+                    <div class="container" id="header-container">
+                        <div class="top-items">
+                            <div class="top-item1">
+                                <a href="#">
+                                    OPAC
+                                </a>
+                                <a href="#">
+                                    EMBASE Login
+                                </a>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </div>
+                            <div class="top-item2">
+                                <div class="top-item2-block">
+                                    <a href="#" class="top-contact-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             viewBox="0 0 16 16" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M1 3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H3.91467C4.488 1 4.988 1.39067 5.12733 1.94667L5.864 4.89533C5.9237 5.134 5.91164 5.38497 5.82934 5.61682C5.74704 5.84866 5.59815 6.05106 5.40133 6.19867L4.53933 6.84533C4.44933 6.91267 4.43 7.01133 4.45533 7.08C4.83159 8.10323 5.42573 9.03247 6.19663 9.80337C6.96753 10.5743 7.89677 11.1684 8.92 11.5447C8.98867 11.57 9.08667 11.5507 9.15467 11.4607L9.80133 10.5987C9.94894 10.4018 10.1513 10.253 10.3832 10.1707C10.615 10.0884 10.866 10.0763 11.1047 10.136L14.0533 10.8727C14.6093 11.012 15 11.512 15 12.086V13C15 13.5304 14.7893 14.0391 14.4142 14.4142C14.0391 14.7893 13.5304 15 13 15H11.5C5.70133 15 1 10.2987 1 4.5V3Z"
+                                                  fill="white"/>
+                                        </svg>
+                                        <span>+91 7510 363 333</span>
+                                        <span>|</span>
+                                        <span>0494 2973333</span>
+                                    </a>
+                                    <a href="#" class="top-contact-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             viewBox="0 0 16 16" fill="none">
+                                            <path d="M1 5.78003V11.5C1 12.0305 1.21071 12.5392 1.58579 12.9142C1.96086 13.2893 2.46957 13.5 3 13.5H13C13.5304 13.5 14.0391 13.2893 14.4142 12.9142C14.7893 12.5392 15 12.0305 15 11.5V5.78003L9.048 9.44203C8.73283 9.63593 8.37004 9.73859 8 9.73859C7.62996 9.73859 7.26717 9.63593 6.952 9.44203L1 5.78003Z"
+                                                  fill="white"/>
+                                            <path d="M15 4.60533V4.5C15 3.96957 14.7893 3.46086 14.4142 3.08579C14.0391 2.71071 13.5304 2.5 13 2.5H3C2.46957 2.5 1.96086 2.71071 1.58579 3.08579C1.21071 3.46086 1 3.96957 1 4.5V4.60533L7.476 8.59067C7.63359 8.68762 7.81498 8.73895 8 8.73895C8.18502 8.73895 8.36641 8.68762 8.524 8.59067L15 4.60533Z"
+                                                  fill="white"/>
+                                        </svg>
+                                        <span>cpacollegeinfo@gmail.com</span>
+
+
+                                    </a>
+                                </div>
+                                <div class="top-last-item">
+                                    <img src="/cpa/static/img/icon1.png"/>
+                                    <img src="/cpa/static/img/icon2.png"/>
+                                    <img src="/cpa/static/img/icon3.png"/>
+                                    <img src="/cpa/static/img/icon4.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container" id="header-container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="cpa-logo">
+                            <a href="/" class="">
+
+                                <img src="/cpa/static/img/header-logo.jpg" id="logo-img"/>
+
+
+                            </a>
+
+                            <button class="navbar-toggler collapsed " id="navToggler" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#top_menu_collapse"
+                                    aria-controls="top_menu_collapse" aria-label="Toggle navigation" style="">
+                                <span class="navbar-toggler-icon"/>
+                            </button>
+                        </div>
+
+                        <div class="center collapse navbar-collapse " id="top_menu_collapse">
+                            <ul class="navbar-nav cpa_nav">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item "/>
+                                        <t t-set="link_class" t-valuef=" nav-link cpa_link"/>
+                                    </t>
+                                </t>
+                                <t t-call="portal.user_dropdown">
+                                    <!--<t t-set="_user_name" t-value="true"/>-->
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown "/>
+                                    <t t-set="_link_class" t-valuef="nav-link dropdown-toggle"/>
+                                </t>
+                            </ul>
+
+                        </div>
+                        <style>
+
+
+                        </style>
+
+                    </nav>
+                </div>
+            </header>
+        </xpath>
+    </template>
+</odoo>
+

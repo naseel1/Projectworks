@@ -1,0 +1,172 @@
+<odoo>
+    <record id="view_notes_update_kanban" model="ir.ui.view">
+        <field name="name">notes.update.kanban</field>
+        <field name="model">notes.update</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <field name="notes_title"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click o_kanban_card">
+                            <strong>
+                                <field name="notes_title"/>
+                            </strong>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+    <!-- Form View -->
+    <record id="view_notes_update_form" model="ir.ui.view">
+        <field name="name">notes.update.form</field>
+        <field name="model">notes.update</field>
+        <field name="arch" type="xml">
+            <form string="Department Notes">
+                <sheet>
+                    <group>
+                        <field name="notes_title"/>
+                    </group>
+                    <notebook>
+                        <page string="Semester 1">
+                            <field name="semester1_ids" mode="tree,form" context="{'default_notes_id_sem1': active_id}">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="notes_pdf"/>
+                                    <field name="url"/>
+                                </tree>
+                                <form string="Semester 1 Notes">
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="notes_pdf" required="0"
+                                               attrs="{'readonly': [('url', '!=', False)]}"/>
+                                        <field name="url" required="0"
+                                               attrs="{'readonly': [('notes_pdf', '!=', False)]}"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+
+                        <!-- Repeat for Semester 2 to 6 -->
+                        <page string="Semester 2">
+                            <field name="semester2_ids" mode="tree,form" context="{'default_notes_id_sem2': active_id}">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="notes_pdf"/>
+                                    <field name="url"/>
+                                </tree>
+                                <form string="Semester 2 Notes">
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="notes_pdf" required="0"
+                                               attrs="{'readonly': [('url', '!=', False)]}"/>
+                                        <field name="url" required="0"
+                                               attrs="{'readonly': [('notes_pdf', '!=', False)]}"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Semester 3">
+                            <field name="semester3_ids" mode="tree,form" context="{'default_notes_id_sem3': active_id}">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="notes_pdf"/>
+                                    <field name="url"/>
+                                </tree>
+                                <form string="Semester 3 Notes">
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="notes_pdf" required="0"
+                                               attrs="{'readonly': [('url', '!=', False)]}"/>
+                                        <field name="url" required="0"
+                                               attrs="{'readonly': [('notes_pdf', '!=', False)]}"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Semester 4">
+                            <field name="semester4_ids" mode="tree,form" context="{'default_notes_id_sem4': active_id}">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="notes_pdf"/>
+                                    <field name="url"/>
+                                </tree>
+                                <form string="Semester 4 Notes">
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="notes_pdf" required="0"
+                                               attrs="{'readonly': [('url', '!=', False)]}"/>
+                                        <field name="url" required="0"
+                                               attrs="{'readonly': [('notes_pdf', '!=', False)]}"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Semester 5">
+                            <field name="semester5_ids" mode="tree,form" context="{'default_notes_id_sem5': active_id}">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="notes_pdf"/>
+                                    <field name="url"/>
+                                </tree>
+                                <form string="Semester 5 Notes">
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="notes_pdf" required="0"
+                                               attrs="{'readonly': [('url', '!=', False)]}"/>
+                                        <field name="url" required="0"
+                                               attrs="{'readonly': [('notes_pdf', '!=', False)]}"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Semester 6">
+                            <field name="semester6_ids" mode="tree,form" context="{'default_notes_id_sem6': active_id}">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="notes_pdf"/>
+                                    <field name="url"/>
+                                </tree>
+                                <form string="Semester 6 Notes">
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="notes_pdf" required="0"
+                                               attrs="{'readonly': [('url', '!=', False)]}"/>
+                                        <field name="url" required="0"
+                                               attrs="{'readonly': [('notes_pdf', '!=', False)]}"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+
+                        <!-- Add similar tabs for semester3_ids to semester6_ids -->
+                        <!-- ... -->
+
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- Action -->
+    <record id="action_notes_update_manage" model="ir.actions.act_window">
+        <field name="name">Manage Notes</field>
+        <field name="res_model">notes.update</field>
+        <field name="view_mode">kanban,form</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_id" ref="view_notes_update_kanban"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No notes uploaded yet. Click to create one.</p>
+        </field>
+    </record>
+    <menuitem id="menu_notes_update"
+              name="Notes Update"
+              parent="menu_landing_page_root"
+              action="action_notes_update_manage"
+              sequence="23"
+              groups="landing_page.group_notes_pages_admin"/>
+</odoo>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Kanban View -->
+    <record id="view_iqac_main_kanban" model="ir.ui.view">
+        <field name="name">iqac.main.kanban</field>
+        <field name="model">iqac.main</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <field name="name"/>
+                <field name="description"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click o_kanban_card">
+                            <strong>
+                                <field name="name"/>
+                            </strong>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_iqac_main_tree" model="ir.ui.view">
+        <field name="name">iqac.main.tree</field>
+        <field name="model">iqac.main</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_iqac_main_form" model="ir.ui.view">
+        <field name="name">iqac.main.form</field>
+        <field name="model">iqac.main</field>
+        <field name="arch" type="xml">
+            <form string="IQAC Main Category">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="iqac_id" readonly="1"/>
+                        <field name="description"/>
+                        <field name="public_url" readonly="1" widget="url"/>
+                    </group>
+
+                    <notebook>
+                        <!-- IQAC Links Tab -->
+                        <page string="IQAC Documents">
+                            <field name="item_ids">
+                                <tree editable="bottom">
+                                    <field name="title"/>
+                                    <field name="url"/>
+                                    <field name="pdf_file" filename="pdf_filename"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <!-- Sub Items Tab -->
+                        <page string="Sub Sections">
+                            <field name="subitem_ids" mode="tree,form">
+                                <tree>
+                                    <field name="name"/>
+                                </tree>
+                                <form string="IQAC Sub Section">
+                                    <sheet>
+                                        <group>
+                                            <field name="main_id"/>
+                                            <field name="subitem_id" readonly="1"/>
+                                            <field name="name"/>
+                                            <field name="description"/>
+                                            <field name="public_url" readonly="1" widget="url"/>
+                                        </group>
+                                        <notebook>
+                                            <page string="IQAC Documents">
+                                                <field name="attachment_ids">
+                                                    <tree editable="bottom">
+                                                        <field name="title"/>
+                                                        <field name="url"/>
+                                                        <field name="file" filename="file_name"/>
+                                                        <field name="file_name" invisible="1"/>
+                                                    </tree>
+                                                </field>
+                                            </page>
+                                        </notebook>
+                                    </sheet>
+                                </form>
+                            </field>
+                        </page>
+
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_iqac_main" model="ir.actions.act_window">
+        <field name="name">IQAC</field>
+        <field name="res_model">iqac.main</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_id" ref="view_iqac_main_kanban"/>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_iqac_root" name="IQAC" parent="website.menu_website_configuration" sequence="30"/>
+
+    <menuitem id="menu_iqac_manage"
+              name="Manage IQAC"
+              parent="menu_iqac_root"
+              action="action_iqac_main"
+              groups="iqac_management.group_iqac_admin"/>
+
+</odoo>

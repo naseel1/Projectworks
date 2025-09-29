@@ -1,0 +1,67 @@
+<odoo>
+    <!-- Form View for Aqar Attachment -->
+    <record id="view_aqar_attachment_config_form" model="ir.ui.view">
+        <field name="name">aqar.attachment.config.form</field>
+        <field name="model">aqar.attachment</field>
+        <field name="arch" type="xml">
+            <form string="AQAR Attachment">
+                <sheet>
+                    <group>
+                        <field name="year" string="Year" required="1"/>
+                        <field name="name" string="Name" required="1"/>
+                        <field name="file_data" string="Upload File" widget="binary" filename="file_name"/>
+                        <field name="url" string="File URL" readonly="1"/>
+                        <field name="date" required="1" string="Date" widget="date" options="{'format': '%d-%m-%Y'}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for AQAR Attachment -->
+
+    <record id="view_aqar_attachment_config_tree" model="ir.ui.view">
+        <field name="name">aqar.attachment.config.tree</field>
+        <field name="model">aqar.attachment</field>
+        <field name="arch" type="xml">
+            <tree string="AQAR Attachment">
+                <field name="year" string="Year" required="1"/>
+                <field name="name" string=" Name" required="1"/>
+                <field name="date" required="1" string="Date" widget="date" options="{'format': '%d-%m-%Y'}"/>
+                <field name="url" string="File URL" readonly="1"/>
+                <!-- Updated to use date instead of sequence -->
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for AQAR Attachment -->
+    <record id="action_aqar_attachment" model="ir.actions.act_window">
+        <field name="name">AQAR Attachment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">aqar.attachment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_aqar_attachment_config_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Data Found
+            </p>
+        </field>
+    </record>
+    <record id="attachment_rule_public" model="ir.rule">
+        <field name="name">Public Access to Attachments</field>
+        <field name="model_id" ref="base.model_ir_attachment"/>
+        <field name="groups" eval="[(4, ref('base.group_public'))]"/>
+        <field name="domain_force">[('public', '=', True)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+
+    <!-- Menu Items for AQAR Attachment -->
+    <menuitem id="menu_aqar_attachment_root" name="AQAR Documents" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_aqar_attachment" name="Manage AQAR Attachment" parent="menu_aqar_attachment_root"
+              action="action_aqar_attachment" sequence="20"
+              groups="aqar_attachment_handler.group_aqar_attachment_admin"/>
+</odoo>

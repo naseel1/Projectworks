@@ -1,0 +1,291 @@
+<odoo>
+    <data>
+        <record id="sss_emea" model="ir.ui.view">
+            <field name="name">SSS Feedback</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.sss_emea</field>
+            <field name="arch" type="xml">
+                <t name="sss" t-name="emea_college_theme.sss_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                  <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435"><div class="clubs">IQAC
+                                            </div></div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+
+                                                    <a href="#" id="drop_" data-bs-toggle="collapse"
+                                                       data-bs-target="#iqac_profile"
+                                                       class="collapsed" aria-expanded="false">
+                                                        <div id="sidebar-li">
+                                                            <p class="nav-link">
+                                                                <span>IQAC PROFILE
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div id="iqac_profile" class="collapse"
+                                                         style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/composition_iqac"
+                                                               data-original-title="" title="" class="nav-link ">
+                                                                Composition Of IQAC
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/function_objectives"
+                                                               data-original-title="" title="" class="nav-link ">
+                                                                Function
+                                                                &amp; Objectives
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/minutes_atr"
+                                                               data-original-title="" title="" class="nav-link ">
+                                                                Minutes
+                                                                &amp; ATR
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/iqac_annual_report"
+                                                               data-original-title="" title="" class="nav-link ">
+                                                                IQAC Annual Reports
+                                                            </a>
+                                                        </li>
+                                                    </div>
+
+                                                    <a href="#" id="drop_" data-bs-toggle="collapse"
+                                                       data-bs-target="#iqac_quality_initiatives"
+                                                       class="collapsed" aria-expanded="false">
+                                                        <div id="sidebar-li">
+                                                            <p class="nav-link">
+                                                                <span>IQAC QUALITY INITIATIVES
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div id="iqac_quality_initiatives" class="collapse"
+                                                         style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/api"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                API
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/workshops/fdp"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Workshops/FDP
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/aaa"
+                                                               data-original-title="" title="" class="nav-link">AAA
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/sss_annual_report"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                SSS
+                                                            </a>
+                                                        </li>
+                                                    </div>
+
+                                                    <a href="#" id="drop_" data-bs-toggle="collapse"
+                                                       data-bs-target="#naac"
+                                                       class="collapsed" aria-expanded="false">
+                                                        <div id="sidebar-li">
+                                                            <p class="nav-link">
+                                                                <span>NAAC
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div id="naac" class="collapse"
+                                                         style="background: white;    margin-bottom: 10px;transition: all 0.2s ease-in-out ;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="aqar"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                AQAR
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/ssr"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                SSR
+                                                            </a>
+                                                        </li>
+                                                    </div>
+
+                                                    <a href="#" id="drop_" data-bs-toggle="collapse"
+                                                       data-bs-target="#ranking"
+                                                       class="collapsed" aria-expanded="false">
+                                                        <div id="sidebar-li">
+                                                            <p class="nav-link">
+                                                                <span>RANKING
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div id="ranking" class="collapse"
+                                                         style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="aishe"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                AISHE
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/nirf"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                NIRF
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/ariia"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                ARIIA
+                                                            </a>
+                                                        </li>
+                                                    </div>
+
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="/iqac_best_practices"
+                                                           data-original-title="" title="" class="nav-link"
+                                                           aria-controls="tabs1">BEST PRACTICES
+                                                        </a>
+                                                    </li>
+
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="/institutional_distinctiveness"
+                                                           data-original-title="" title="" class="nav-link "
+                                                           aria-controls="tabs1">Institutional Distinctiveness
+                                                        </a>
+                                                    </li>
+
+                                                    <a href="#" id="drop_" data-bs-toggle="collapse"
+                                                       data-bs-target="#audit"
+                                                       class="collapsed" aria-expanded="false">
+                                                        <div id="sidebar-li">
+                                                            <p class="nav-link">
+                                                                <span>AUDIT
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div id="audit" class="collapse"
+                                                         style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/green"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Green
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/energy"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Energy
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/gender"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Gender
+                                                            </a>
+                                                        </li>
+                                                    </div>
+
+                                                    <a href="#" id="drop_" data-bs-toggle="collapse"
+                                                       data-bs-target="#feedback"
+                                                       class="" aria-expanded="false">
+                                                        <div id="sidebar-li">
+                                                            <p class="nav-link">
+                                                                <span>FEEDBACK
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div id="feedback" class="collapse show"
+                                                         style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/stakeholders"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Stakeholders
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/sss_feedback"
+                                                               data-original-title="" title="" class="nav-link active">
+                                                                SSS
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/curriculum_feedback"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Curriculum Feedback
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/general"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                General
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/employer"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Employer
+                                                            </a>
+                                                        </li>
+                                                    </div>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                <section>
+                                                    <section>
+                                                        <h2 class="page_head" id="iqac_subhead">SSS feedback
+                                                        </h2>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">SSS Feedback 2023-24
+                                                        </div>
+                                                        <span class="readmore" id="view">View
+                                                            <a href="/web/content/959?unique=22fee4ebf9deb7746f635aabd471237938f9d598"
+                                                               data-mimetype="application/pdf" target="_blank"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                </section>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="sss_emea_page" model="website.page">
+            <field name="url">/sss_feedback</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="sss_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,72 @@
+<odoo>
+    <data>
+        <record id="principal_message" model="ir.ui.view">
+            <field name="name">Principal Message</field>
+            <field name="type">qweb</field>
+            <field name="key">fathima_college.principal_message</field>
+            <field name="arch" type="xml">
+                <t name="Principal Message" t-name="fathima_college.principal_message_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page pt32 pb32">
+                                <div class="align-center container pt32">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-3 ">
+                                            <div id="prince_page">
+                                                <img src="/fathima_college/static/img/principal.jpeg" id="prince_img"/>
+                                                <h2 class="notes_head">Dr.
+                                                    Prof.(Dr) Geetha Janet Vitus
+                                                </h2>
+                                                <div class="top_contact" id="read">
+                                                    <a href="#" id="readmore">VIEW PROFILE
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 align-left col-lg-9 padding-0">
+                                            <div class=" card-wrapper  prince_card">
+                                                <p class=" about_paragraph">
+                                                    <span class="prince_head">PRINCIPAL’S MESSAGE</span>
+                                                    <br/>
+                                                    <strong>Greetings from Fathima college!</strong>.
+                                                    <br/>It is an immense pleasure to thank you for showing interest to
+                                                    peek into our official website. Let us pave the way to the academic
+                                                    session 2024-2025 with great passion and sustenance to achieve
+                                                    remarkable educational excellence. This higher education system has
+                                                    proven its significance in this urban area and motivated number of
+                                                    students to aspire higher. The college is delighted to serve the
+                                                    humanity by nurturing the talented young minds with holistic
+                                                    education. The institution’s strength lies in the hands of our
+                                                    dedicated management and highly qualified teachers.The dedication
+                                                    and commitment of our faculty induces creativity and vivacity which
+                                                    promotes to our motto “ Lighted to Lighten”. The college fosters
+                                                    quality education in a safe and affordable environment which
+                                                    ultimately aims at improving the personality and overall development
+                                                    of a student.
+                                                    <br/>
+                                                    THERE IS NOTHING MORE DIVINE THAN EDUCATION. IT IS ONLY THROUGH
+                                                    EDUCATION THAT ONE TRULY BECOMES MAN - PLATO
+                                                    <br/>
+                                                    A wholehearted welcome to all out there in search of a successful
+                                                    and transfoming learning experience.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="principal_message_page" model="website.page">
+            <field name="url">/principal_message</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="principal_message"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

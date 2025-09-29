@@ -1,0 +1,161 @@
+<odoo>
+    <data>
+        <record id="milestone_mes" model="ir.ui.view">
+            <field name="name">Milestone</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.milestone_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.milestone_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <h2 class="main-head" id="title">Milestones</h2>
+                                <div class=" pt32 pb32">
+                                    <table class="milestone" cellspacing="0" cellpadding="7">
+                                        <tbody>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1967</td>
+                                                <td style="height: 24px;" width="375">College started functioning as a
+                                                    Junior College
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 72px;" valign="top">
+                                                <td style="height: 72px;" width="94">1971-72</td>
+                                                <td style="height: 72px;" width="375">University of Calicut permitted to
+                                                    start degree courses in History, Economics, Mathematics, Botany and
+                                                    Commerce
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1972</td>
+                                                <td style="height: 24px;" width="375">UGC 12 (b) Certificate</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1976</td>
+                                                <td style="height: 24px;" width="375">Affiliation for B.Sc. Chemistry
+                                                    course was granted
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;" valign="top">
+                                                <td style="height: 48px;" width="94">1978</td>
+                                                <td style="height: 48px;" width="375">College upgraded as Post Graduate
+                                                    College with the introduction of M.Com
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1978</td>
+                                                <td style="height: 24px;" width="375">UGC 2 (f) Certificate</td>
+                                            </tr>
+                                            <tr style="height: 48px;" valign="top">
+                                                <td style="height: 48px;" width="94">1979</td>
+                                                <td style="height: 48px;" width="375">Affiliation of BA Islamic History
+                                                    &amp; Arabic was granted
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1981</td>
+                                                <td style="height: 24px;" width="375">Started M.Sc. Chemistry</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1984</td>
+                                                <td style="height: 24px;" width="375">Started MA History</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1993</td>
+                                                <td style="height: 24px;" width="375">Started B.Sc. Physics</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1995</td>
+                                                <td style="height: 24px;" width="375">Started M.Sc. Mathematics</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1998</td>
+                                                <td style="height: 24px;" width="375">Started MA Economics</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">1999</td>
+                                                <td style="height: 24px;" width="375">Started BBA</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">2001</td>
+                                                <td style="height: 24px;" width="375">Started M.Sc. Physics</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">2004</td>
+                                                <td style="height: 24px;" width="375">NAAC First Accredited with B++
+                                                    Grade
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">2007</td>
+                                                <td style="height: 24px;" width="375">Minority Status</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td>2013</td>
+                                                <td>Started B.Com Computer
+                                                    Application (Self financing),
+
+                                                    B.Com Co-operation(Self financing), BBA (Self financing) ,BA English
+                                                    (Self financing)
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">2013</td>
+                                                <td style="height: 24px;" width="375">NAAC reaccredited with A Grade
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;" valign="top">
+                                                <td style="height: 48px;" width="94">2014</td>
+                                                <td style="height: 48px;" width="375">Started B.Sc. Computer Science
+                                                    (Self financing) and BCA (Self financing)
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 72px;" valign="top">
+                                                <td style="height: 72px;" width="94">2015</td>
+                                                <td style="height: 72px;" width="375">Started M.Sc. Botany (Self
+                                                    financing), B.Sc. Food Technology (Self financing), BA Mass
+                                                    Communication (Self financing)
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">2016</td>
+                                                <td style="height: 24px;" width="375">History department is upgraded to
+                                                    Research Centre
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;" valign="top">
+                                                <td style="height: 48px;" width="94">2017</td>
+                                                <td style="height: 48px;" width="375">Chemistry department is upgraded
+                                                    to Research Centre
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">2017</td>
+                                                <td style="height: 24px;" width="375">College Golden Jubilee</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>NAAC Re-accredited with A+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>Started M.Sc. Forensic Science &amp; Integrated M.Sc. Psychology
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="milestone_mes_page" model="website.page">
+            <field name="url">/milestone</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="milestone_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

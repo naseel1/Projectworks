@@ -1,0 +1,76 @@
+<odoo>
+    <data>
+        <record id="nptel_local" model="ir.ui.view">
+            <field name="name">NPTEL Local Chapter</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.nptel_local</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.nptel_local_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align:left">NPTEL Local Chapter</h2>
+                                            <div class="text_content">
+                                                National Programme
+                                                on Technology
+                                                Enhanced Learning
+                                                (NPTEL) is a project
+                                                of MHRD initiated by
+                                                seven Indian
+                                                Institutes of
+                                                Technology (Bombay,
+                                                Delhi, Kanpur,
+                                                Kharagpur, Madras,
+                                                Guwahati and
+                                                Roorkee) along with
+                                                the Indian Institute
+                                                of Science,
+                                                Bangalore in 2003,
+                                                to provide quality
+                                                education to anyone
+                                                interested in
+                                                learning from the
+                                                IITs. The main goal
+                                                was to create web
+                                                and video courses in
+                                                all major branches
+                                                of engineering and
+                                                physical sciences at
+                                                the undergraduate
+                                                and postgraduate
+                                                levels and
+                                                management courses
+                                                at the postgraduate
+                                                level. Our college
+                                                is a SWAYAM NPTEL
+                                                Local chapter.
+                                                <br/>
+                                                <br/>
+                                                For more
+                                                Information:https://swayam.gov.in/
+                                                <br/>SPOC of NPTEL
+                                                Local Chapter: Laila
+                                                Abdulla (Department
+                                                of Computer Science)
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="nptel_local_page" model="website.page">
+            <field name="url">/nptel_local</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="nptel_local"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+    <record id="pta_single_record" model="pta.manage">
+        <field name="incharge_name">PTA Incharge</field>
+    </record>
+</odoo>

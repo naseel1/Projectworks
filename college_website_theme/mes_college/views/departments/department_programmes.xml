@@ -1,0 +1,383 @@
+<odoo>
+    <data>
+        <record id="department_programmes_mes" model="ir.ui.view">
+            <field name="name">Department Programmes</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.department_programmes_mes</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="mes_college.department_programmes_menu">
+                    <t t-call="website.layout">
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                            // Get the first tab link and tab content
+                            var firstTabLink = document.querySelector('.tabs-lists .nav-link');
+                            var firstTabContent = document.querySelector('.s_tabs_contents .tab-pane');
+
+                            // Add the 'active' class to the first tab link and tab content
+                            firstTabLink.classList.add('active');
+                            firstTabContent.classList.add('show', 'active');
+                            });
+                        </script>
+                        <!-- Add a JavaScript block to your page -->
+                        <script type="text/javascript">
+                            document.addEventListener('DOMContentLoaded', function () {
+                            // Function to open the modal
+                            function openModal(courseId, syllabusIndex) {
+                            var modalOverlay = document.getElementById('modalOverlay' + courseId);
+                            modalOverlay.style.display = 'flex';
+
+                            // Optionally, you can highlight the selected syllabus
+                            var syllabusLinks = document.querySelectorAll('#modalOverlay' + courseId + '
+                            .syllabus_link');
+                            syllabusLinks.forEach(function (link, index) {
+                            link.classList.toggle('selected', index === syllabusIndex);
+                            });
+                            }
+
+                            // Function to close the modal
+                            function closeModal(courseId) {
+                            var modalOverlay = document.getElementById('modalOverlay' + courseId);
+                            modalOverlay.style.display = 'none';
+                            }
+
+                            // Attach click event listeners to buttons
+                            var syllabusButtons = document.querySelectorAll('[id^="syllabusButton"]');
+                            syllabusButtons.forEach(function (button, index) {
+                            button.addEventListener('click', function () {
+                            openModal(button.getAttribute('id').replace('syllabusButton', ''), index);
+                            });
+                            });
+
+                            var closeModalButtons = document.querySelectorAll('[id^="closeModalButton"]');
+                            closeModalButtons.forEach(function (button) {
+                            button.addEventListener('click', function () {
+                            closeModal(button.getAttribute('id').replace('closeModalButton', ''));
+                            });
+                            });
+                            });
+                        </script>
+                        <script type="text/javascript">
+                            document.addEventListener('DOMContentLoaded', function () {
+                            // Function to open the modal
+                            function openModal(courseId, syllabusIndex) {
+                            var modalOverlay = document.getElementById('modalOverlay1' + courseId);
+                            modalOverlay.style.display = 'flex';
+
+                            // Optionally, you can highlight the selected syllabus
+                            var syllabusLinks = document.querySelectorAll('#modalOverlay1' + courseId + '
+                            .syllabus_link');
+                            syllabusLinks.forEach(function (link, index) {
+                            link.classList.toggle('selected', index === syllabusIndex);
+                            });
+                            }
+
+                            // Function to close the modal
+                            function closeModal(courseId) {
+                            var modalOverlay = document.getElementById('modalOverlay1' + courseId);
+                            modalOverlay.style.display = 'none';
+                            }
+
+                            // Attach click event listeners to buttons
+                            var syllabusButtons = document.querySelectorAll('[id^="poButton"]');
+                            syllabusButtons.forEach(function (button, index) {
+                            button.addEventListener('click', function () {
+                            openModal(button.getAttribute('id').replace('poButton', ''), index);
+                            });
+                            });
+
+                            var closeModalButtons = document.querySelectorAll('[id^="closeModalButton1"]');
+                            closeModalButtons.forEach(function (button) {
+                            button.addEventListener('click', function () {
+                            closeModal(button.getAttribute('id').replace('closeModalButton1', ''));
+                            });
+                            });
+                            });
+                        </script>
+
+
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " id="programme_main" style="margin: 0 32px;">
+                                        <t t-if="data">
+                                            <div class="col-12 col-md-3 o_colored_level s_tabs_nav side_programme"
+                                                 id="side_section" data-original-title="" title=""
+                                                 aria-describedby="tooltip336631">
+
+                                                <div class="clubs">
+                                                    <t t-esc="data['name']"/>
+                                                </div>
+                                                <div class="side-bar" id="sidebar">
+                                                    <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                        style="padding-inline-start: 0;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a t-att-href="'/department/' + str(data['dep_id'])"
+                                                                   data-original-title="" title="" class="nav-link ">
+                                                                    Home
+                                                                </a>
+                                                            </t>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a t-att-href="'/department/' + str(data['dep_id']) + '/faculty'"
+                                                                   data-original-title="" title="" class="nav-link ">
+                                                                    Faculties
+                                                                </a>
+                                                            </t>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a t-att-href="'/department/' + str(data['dep_id']) + '/programme?dep_id=' + str(data['dep_id'])"
+                                                                   data-original-title="" title=""
+                                                                   class="nav-link active">
+                                                                    Programmes
+                                                                </a>
+                                                            </t>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a href="/chemistry_reports" data-original-title=""
+                                                                   title=""
+                                                                   class="nav-link">
+                                                                    Reports
+                                                                </a>
+                                                            </t>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a t-att-href="'/department/' + str(data['dep_id']) + '/activities'"
+                                                                   data-original-title="" title="" class="nav-link">
+                                                                    Activities
+                                                                </a>
+                                                            </t>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a t-att-href="'/department/' + str(data['dep_id']) + '/facilities?dep_id=' + str(data['dep_id'])"
+                                                                   data-original-title="" title="" class="nav-link ">
+                                                                    Facilities
+                                                                </a>
+                                                            </t>
+                                                        </li>
+
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a href="'/department/' + str(data['dep_id']) + '/exam_results'"
+                                                                   title="" class="nav-link">
+                                                                    Exam Results
+                                                                </a>
+                                                            </t>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <t t-if="data">
+                                                                <a t-att-href="'/department/' + str(data['dep_id']) + '/dep_gallery'"
+                                                                   data-original-title="" title="" class="nav-link">
+                                                                    Gallery
+                                                                </a>
+                                                            </t>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </t>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level"
+                                             id="programme_block">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                <section class="">
+                                                    <div class="container" id="container_width">
+                                                        <div class="iqac" style="margin:0;padding:0;">Programmes
+                                                        </div>
+                                                        <section class="s_tabs pb o_colored_level  " data-vcss="001"
+                                                                 data-snippet="s_tabs" data-name="Tabs"
+                                                                 style="background-image: none;">
+                                                            <div class="s_tabs_main">
+                                                                <div class="col-12  o_colored_level s_tabs_nav"
+                                                                     id="clubs" data-original-title="" title=""
+                                                                     aria-describedby="tooltip336631">
+
+                                                                    <div class="side-bar s_tabs_nav" id="sidebar"
+                                                                         style="    top: 5px;margin-bottom: 0;padding-bottom: 0px;background: white;">
+                                                                        <ul class="tabs-lists nav nav-pills  "
+                                                                            id="programme_tab" role="tablist">
+                                                                            <t t-foreach="programme_data"
+                                                                               t-as="allprogramme">
+                                                                                <li id="sidebar-li" class="nav-item"
+                                                                                    style="    font-weight: 500;font-size: 1rem;">
+                                                                                    <a t-att-href="'#tab_' + str(allprogramme['graduation_id'])"
+                                                                                       t-att-id="'tabs_' +  str(allprogramme['graduation_id'])"
+                                                                                       data-bs-toggle="tab" role="tab"
+                                                                                       t-att-aria-controls="'tab_' + str(allprogramme['graduation_id'])"
+                                                                                       aria-selected="true"
+                                                                                       data-original-title="" title=""
+                                                                                       class="nav-link"
+                                                                                       style="box-shadow: rgb(99 99 99 / 52%) 0px 2px 8px 0px;">
+                                                                                        <t t-esc="allprogramme['graduation_name']"/>
+                                                                                    </a>
+
+                                                                                </li>
+                                                                            </t>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-md-12 order-1 order-md-2 pb48 o_colored_level">
+
+                                                                    <div class="s_tabs_contents tab-content">
+                                                                        <t t-foreach="programme_data"
+                                                                           t-as="allprogramme">
+                                                                            <div class="tab-pane fade"
+                                                                                 t-att-id="'tab_' + str(allprogramme['graduation_id'])"
+                                                                                 role="tabpanel"
+                                                                                 t-att-aria-labelledby="'tabs_' +  str(allprogramme['graduation_id'])">
+                                                                                <div class="oe_structure oe_empty"
+                                                                                     data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                                                    <section class="objectives_iqac"
+                                                                                             style="">
+                                                                                        <div class="row pt32"
+                                                                                             style="gap: 2rem;justify-content: center;">
+                                                                                            <t t-foreach="allprogramme.get('programmes', [])"
+                                                                                               t-as="programme"
+                                                                                               t-att-index="index">
+                                                                                                <div class="col-md-5"
+                                                                                                     id="programme_details"
+                                                                                                     style="box-shadow:rgb(160 160 160 / 30%) 0px 0px 0px 3px;padding:10px;">
+                                                                                                    <div style="padding: 0;">
+                                                                                                        <h2 class="main-head"
+                                                                                                            style="  font-size: 21px;  padding: 10px 0px 0;">
+                                                                                                            <t t-esc="programme['programme_name']"/>
+                                                                                                        </h2>
+                                                                                                        <div class="content_text"
+                                                                                                             style="font-size: 12px;padding: 10px 0;">
+                                                                                                            Duration 6
+                                                                                                            semesters.
+                                                                                                            Eligibility
+                                                                                                            a
+                                                                                                            pass (with
+                                                                                                            eligible for
+                                                                                                            higher
+                                                                                                            studies) in
+                                                                                                            the +2
+                                                                                                            Science
+                                                                                                            group
+                                                                                                            or
+                                                                                                            its
+                                                                                                            equivalent.
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="row pt16"
+                                                                                                         style="gap: 1rem;padding: 0;margin:auto;">
+                                                                                                        <t t-set="index"
+                                                                                                           t-value="0"/>
+                                                                                                        <button t-att-id="'syllabusButton' + str(programme['course_id'])"
+                                                                                                                class="syllabus_link">
+                                                                                                            Syllabus
+                                                                                                        </button>
+                                                                                                        <button t-att-id="'poButton' + str(programme['course_id'])"
+                                                                                                                class="syllabus_link"
+                                                                                                                style="min-width: max-content;font-size: 14px;">
+                                                                                                            Programme
+                                                                                                            Objectives
+                                                                                                        </button>
+                                                                                                    </div>
+                                                                                                    <div class="row"
+                                                                                                         style="gap: 2rem; padding: 0;">
+                                                                                                        <div class="overlay"
+                                                                                                             t-att-id="'modalOverlay' + str(programme['course_id'])">
+                                                                                                            <div id="modal">
+                                                                                                                <t t-foreach="programme.get('syllabus', [])"
+                                                                                                                   t-as="Syllabus">
+                                                                                                                    <t t-if="Syllabus">
+                                                                                                                        <a t-att-href="str(Syllabus['link'])"
+                                                                                                                           class="syllabus_link"
+                                                                                                                           id="syllabus_link">
+                                                                                                                            <t t-esc="Syllabus['syllabus_name']"/>
+                                                                                                                            <span class="fa fa-file-pdf-o"
+                                                                                                                                  contenteditable="false"/>
+                                                                                                                        </a>
+                                                                                                                    </t>
+
+                                                                                                                    <t t-set="index"
+                                                                                                                       t-value="index + 1"/>
+                                                                                                                </t>
+                                                                                                                <button t-att-id="'closeModalButton' + str(programme['course_id'])"
+                                                                                                                        t-att-index="index"
+                                                                                                                        class="closing">
+                                                                                                                    X
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+                                                                                                    <div class="row"
+                                                                                                         style="gap: 2rem; padding: 0;">
+                                                                                                        <div class="overlay"
+                                                                                                             t-att-id="'modalOverlay1' + str(programme['course_id'])">
+                                                                                                            <div id="modal">
+                                                                                                                <t t-foreach="programme.get('programmeObjectives', [])"
+                                                                                                                   t-as="pgm_objectives"
+                                                                                                                   t-att-index="objective_index">
+                                                                                                                    <li style=" list-style-type:none;    width: 100%;">
+                                                                                                                        <div style="font-weight:600;">
+                                                                                                                            <t t-esc="pgm_objectives['programme_objective']"/>
+                                                                                                                            -
+                                                                                                                            <t t-esc="pgm_objectives['objective_name']"/>
+                                                                                                                        </div>
+                                                                                                                        <div class="content_text"
+                                                                                                                             style="font-size: 12px;">
+                                                                                                                            <t t-esc="pgm_objectives['description']"/>
+                                                                                                                        </div>
+                                                                                                                    </li>
+                                                                                                                </t>
+                                                                                                                <button t-att-id="'closeModalButton1' + str(programme['course_id'])"
+                                                                                                                        t-att-index="index"
+                                                                                                                        class="closing">
+                                                                                                                    X
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+                                                                                                    <!-- Syllabus Section -->
+                                                                                                </div>
+                                                                                            </t>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                </div>
+                                                                            </div>
+                                                                        </t>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="department_programmes_mes_page" model="website.page">
+            <field name="url">/programme</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="department_programmes_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

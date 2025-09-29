@@ -1,0 +1,35 @@
+<odoo>
+    <record id="rule_department_admin_full_access_all" model="ir.rule">
+        <field name="name">Department Admin Full Access</field>
+        <field name="model_id" ref="model_website_department"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('landing_page.group_allowed_department_admin'))]"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+        <field name="global" eval="True"/>
+    </record>
+
+    <record id="rule_allowed_department_user_restricted" model="ir.rule">
+        <field name="name">Allowed Department User Restricted</field>
+        <field name="model_id" ref="model_website_department"/>
+        <field name="groups" eval="[(4, ref('landing_page.group_allowed_department_user'))]"/>
+        <field name="domain_force">[('dep_id', '=', user.user_department_id.dep_id)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+    <record id="rule_website_department_own_user" model="ir.rule">
+        <field name="name">Own Department Only</field>
+        <field name="model_id" ref="landing_page.model_website_department"/>
+        <field name="domain_force">[('id', '=', user.user_department_id.id)]</field>
+        <field name="groups" eval="[(4, ref('landing_page.group_allowed_department_user'))]"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+
+</odoo>

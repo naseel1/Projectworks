@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_iqac_main_admin,IQAC Main Admin,model_iqac_main,group_iqac_admin,1,1,1,1
+access_iqac_item_admin,IQAC Item Admin,model_iqac_item,group_iqac_admin,1,1,1,1
+access_iqac_subitem_admin,IQAC Sub Item Admin,model_iqac_subitem,group_iqac_admin,1,1,1,1
+access_iqac_subitem_attachment_admin,IQAC Sub Item Attachment Admin,model_iqac_subitem_attachment,group_iqac_admin,1,1,1,1
+access_iqac_main_public,IQAC Main Public,model_iqac_main,base.group_public,1,0,0,0
+access_iqac_item_public,IQAC Item Public,model_iqac_item,base.group_public,1,0,0,0
+access_iqac_subitem_public,IQAC Sub Item Public,model_iqac_subitem,base.group_public,1,0,0,0
+access_iqac_subitem_attachment_public,IQAC Sub Item Attachment Public,model_iqac_subitem_attachment,base.group_public,1,0,0,0
+access_attachment_public,Attachment Public,base.model_ir_attachment,base.group_public,1,0,0,0

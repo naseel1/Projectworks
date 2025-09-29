@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+        <record id="history" model="ir.ui.view">
+            <field name="name">History</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.history</field>
+            <field name="arch" type="xml">
+                <t name="History" t-name="mss_college.history_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section>
+                                <div class="history_college">
+                                    <h3 class="about_heading history_heading">History</h3>
+                                    <hr id="heading_line"/>
+
+                                    <p class="history_para">The MSS College of Arts and Science is an institution for
+                                        higher learning in Wayanad that started functioning in 2022. Currently, the
+                                        college is undergoing construction and is operating from a temporary building.
+
+                                        The college offers five undergraduate programs, namely BA English, BA Economics,
+                                        B Com, BBA, and BSc (Psychology). It is affiliated with Kannur University. The
+                                        college is situated on 6 acres of land at Vellamunda Panchayat in North Wayanad.
+                                        While the permanent campus is under construction, students can enjoy the scenic
+                                        beauty of Wayanad, along with its salubrious climate and serene ambiance,
+                                        providing them with an ideal atmosphere to pursue their studies.
+                                    </p>
+                                </div>
+
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="history_page" model="website.page">
+            <field name="url">/history</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="history"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

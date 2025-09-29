@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+        <record id="events" model="ir.ui.view">
+            <field name="name">events</field>
+            <field name="type">qweb</field>
+            <field name="key">cpa.events</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="cpa.events_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section>
+                                <div class="news row">
+                                    <t t-foreach="data" t-as="events">
+                                        <section class="news-card o_colored_level"
+                                                 style="background-image: none;box-shadow: rgba(149, 157, 165, 0.2) 1px -5px 24px 11px;">
+                                            <div class="news-card-image">
+                                                <t t-if="events['attachments']">
+                                                    <!-- Check if attachments exist -->
+                                                    <t t-set="first_attachment" t-value="events['attachments'][0]"/>
+                                                    <img t-if="first_attachment"
+                                                         t-att-src="str(first_attachment['attachment_link'])" alt=""
+                                                         loading="lazy" id="news-card-image" style=""/>
+                                                </t>
+                                            </div>
+                                            <div class="news-card-box">
+                                                <h1 class="news-card-name">
+                                                    <t t-esc="events['program_name']"/>
+                                                </h1>
+                                                <p class="news-card-p">
+                                                    <t t-esc="events['description']"/>
+                                                </p>
+                                                <a t-att-href="'news/' + str(events['program_details_id']) + '/news_detail'"
+                                                   class="read_more">Read More
+                                                    <span class="fa fa-long-arrow-right" data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"/>
+                                                </a>
+                                            </div>
+                                        </section>
+                                    </t>
+
+                                </div>
+                                <div class="pagination">
+                                    <t t-if="data">
+                                        <t t-foreach="meta.get('links', [])" t-as="link">
+                                            <t t-if="link['url']">
+                                                <a t-att-href="'/events?page=' + link['url'].split('=')[-1]"
+                                                   t-att-class="link['active']">
+                                                    <t t-raw="link['label']"/>
+                                                </a>
+                                            </t>
+                                        </t>
+                                    </t>
+                                </div>
+                            </section>
+
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="events_page" model="website.page">
+            <field name="url">/events</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="events"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

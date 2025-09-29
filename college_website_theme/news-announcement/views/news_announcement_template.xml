@@ -1,0 +1,62 @@
+<odoo>
+    <template id="homepage_extension" inherit_id="website.homepage" name="Homepage News Section">
+       <xpath expr="//div[@id='wrap']" position="inside">
+            <div class="bottombar" style="">
+                <section class="flash o_colored_level" data-original-title="" title="" aria-describedby="tooltip896014"
+                         style="background-image: none;">
+                    <div id="flash">
+                        <font class="text-900" style="">
+                        </font>
+                        <font style="color: rgb(156, 198, 239);">Announcement</font>
+                        <font class="text-900" style="">
+                        </font>
+                    </div>
+                    <style>
+                        #announce-item a {
+                        display: block;
+                        color: black;font-family: 'Lato-Bol';
+                        transition:all 0.2s ease-in-out;
+                        }
+                        #announce-item a:hover {
+                        color: #800000;
+                        }
+                        .announcement-items {
+                        will-change: transform;
+                        animation: xc-marquee 20s linear infinite;
+                        display: flex
+                        ;
+                        align-items: center;
+                        z-index: 2;
+                        position: relative;
+                        width: 60%;
+                        overflow: visible;
+                        white-space: nowrap;
+                        }
+                        @keyframes xc-marquee{
+                        0% {
+                        transform: translateX(100%);
+                        }
+                        100% {
+                        transform: translateX(-100%);
+                        }}
+                        #announce-item {
+                        margin: 0 1rem;
+                        }.announcement-items:hover {
+                        -webkit-animation-play-state: paused;
+                        animation-play-state: paused;
+                        }
+                    </style>
+                    <div class="announcement-items" data-original-title="" title="" aria-describedby="tooltip920002">
+                        <t t-foreach="announcements" t-as="a">
+                            <section id="announce-item" style="background-image: none;" class="o_colored_level">
+                                <a t-att-href="a.url" target="_blank">
+                                    <t t-esc="a.title"/>
+                                </a>
+                            </section>
+                        </t>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+</odoo>

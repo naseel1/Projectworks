@@ -1,0 +1,67 @@
+<odoo>
+    <data>
+        <record id="about_us" model="ir.ui.view">
+            <field name="name">About Us</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.about_us</field>
+            <field name="arch" type="xml">
+                <t name="About Us" t-name="mss_college.about_us_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" pt32 pb32">
+                                <div class="about_us_image">
+                                    <img id="about_us_image_1" src="/mss_college/static/img/2151164375.jpg"/>
+                                    <div class="black_background">
+                                        <p id="about_head">About Us</p>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <section  style="margin-bottom:150px;">
+                                <div class="row" style="margin-right: 0px;">
+                                    <div class="col-md-6">
+                                <p id="about_para">Lorem ipsum dolor sit amet consectetur. Dignissim aliquam amet iaculis at elit aenean. Semper aliquam nunc integer et enim id sapien feugiat. Ullamcorper in gravida ornare posuere magna. Habitant in tincidunt urna risus massa. Id quam eget a morbi vulputate sagittis. Sagittis ultricies risus aliquet sapien quis phasellus sodales sit. Purus cursus ipsum eu vitae vel est. Pretium et posuere ultricies etiam gravida integer a nec a. Morbi venenatis lacinia ornare scelerisque ut. Cum enim duis semper volutpat. Ultrices vitae placerat eget nam a. Bibendum nibh sit tortor urna condimentum augue dolor sed. Condimentum nec aliquet vel egestas eleifend pretium lorem faucibus nibh. Aliquet augue mi luctus arcu est nam. Ut leo pellentesque dolor purus quisque venenatis consequat. Phasellus faucibus nullam in justo. Egestas ornare et metus eget. Est molestie non mi tempor id vel tincidunt integer. Nunc eros pretium eget vitae tortor maecenas.
+                                </p>
+                                        </div>
+                                    <div class="col-md-6">
+                                        <p id="about_para">Egestas magnis integer nec amet ut morbi ultricies tellus. Ut eu at mattis habitasse ultrices amet mauris. Eu risus gravida senectus diam tortor est adipiscing diam. Suscipit et pellentesque fringilla venenatis lorem convallis arcu. Nibh erat consequat eu vel. Ultrices nibh habitasse quisque congue at. Tortor diam ipsum nec suspendisse auctor. Aenean maecenas adipiscing id volutpat dignissim fringilla commodo pulvinar dignissim. Libero vel sed nunc sollicitudin viverra. Purus odio consequat condimentum adipiscing facilisi duis ullamcorper. Amet et tincidunt mauris tempus aliquam. Lectus proin sodales quisque mollis euismod a risus consectetur. Gravida ultrices sapien et vel. Neque sagittis in egestas a egestas. Hendrerit lacus non ultrices eu semper</p>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-right: 0px;">
+                                    <div class="col-md-4">
+                                        <div class="mission">
+                                            <h3 class="heading_mission">Mission</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur. Mauris euismod cursus sit orci ut lectus. Sed tincidunt blandit fusce sit suspendisse nisi fringilla arcu. Id dolor auctor placerat lorem. At diam nascetur id massa metus viverra ut mauris aliquam. Magna proin lorem mattis tincidunt mattis scelerisque. Facilisis nunc non integer est ante. Tincidunt tincidunt duis sem nibh aliquet euismod.</p>
+
+                                        </div>
+                                    </div>
+                                     <div class="col-md-4">
+                                         <div class="mission">
+                                              <h3 class="heading_mission">Vision</h3>
+                                         <p>Lorem ipsum dolor sit amet consectetur. Mauris euismod cursus sit orci ut lectus. Sed tincidunt blandit fusce sit suspendisse nisi fringilla arcu. Id dolor auctor placerat lorem. At diam nascetur id massa metus viverra ut mauris aliquam. Magna proin lorem mattis tincidunt mattis scelerisque. Facilisis nunc non integer est ante. Tincidunt tincidunt duis sem nibh aliquet euismod.</p>
+
+                                        </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <div class="mission">
+                                              <h3 class="heading_mission">Core Values</h3>
+                                          <p>Lorem ipsum dolor sit amet consectetur. Mauris euismod cursus sit orci ut lectus. Sed tincidunt blandit fusce sit suspendisse nisi fringilla arcu. Id dolor auctor placerat lorem. At diam nascetur id massa metus viverra ut mauris aliquam. Magna proin lorem mattis tincidunt mattis scelerisque. Facilisis nunc non integer est ante. Tincidunt tincidunt duis sem nibh aliquet euismod.</p>
+
+                                        </div>
+                                     </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_about_page" model="website.page">
+            <field name="url">/about_us</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="about_us"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

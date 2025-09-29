@@ -1,0 +1,177 @@
+<odoo>
+    <data>
+        <record id="ipr_cell" model="ir.ui.view">
+            <field name="name">IPR Cell</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.ipr_cell</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.ipr_cell_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    IPR Cell
+                                                </h2>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    Intellectual property plays an important role in providing a
+                                                    competitive edge to any Institution. The tangible assets like
+                                                    inventions, designs, software, brand name and other creative &amp;
+                                                    innovative ideas are more valuable than physical assets. MES Kalladi
+                                                    College IPR Cell is committed to encourage, protect, manage and
+                                                    commercialize Intellectual Property such as Patent, Copyright,
+                                                    Trademark etc. generated through the College. The cell creates
+                                                    conducive environment in the academics for the development of
+                                                    Intellectual Property. Faculty and students of MES Kalladi College
+                                                    are actively participating in the IPR filing process in different
+                                                    disciplines of Engineering &amp; Technology.
+                                                    <br/>
+                                                    <strong>
+                                                        Importance of IPR
+                                                    </strong>
+                                                    <br/>
+                                                    <br/>
+                                                    It is necessary to protect the Intellectual property in order to
+                                                    enable organizations to earn recognition or financial benefits.
+                                                    Governments of various countries protect the innovative ideas of
+                                                    the inventors through Intellectual Property Rights (IPR).
+                                                    Recently, IPR has become a central issue in the developed and
+                                                    developing countries. The rationale for this IPR lies in the
+                                                    need to create awareness about the importance of IPRs as a
+                                                    marketable financial asset and economic tool among the
+                                                    researchers, faculty and students of the College. Intellectual
+                                                    property Rights: means the rights derived from the IP e.g.
+                                                    Patents, registered designs, copyright etc.Indian Government has
+                                                    revised the National IPR Policy in May 2016 and its vision,
+                                                    Mission and objectives are given as follows.
+                                                    <br/>
+                                                    <br/>
+                                                    <strong>Types of IP:
+                                                    </strong>
+                                                    <br/>
+                                                    <br/>
+                                                    The intellectual properties can be broadly listed as follows:
+                                                    <br/>
+                                                    <ul>
+                                                        <li>
+                                                            Patent: is an exclusive right granted for an invention,
+                                                            which is a product or a process that provides a new way of
+                                                            doing something, or offers a new technical solution to a
+                                                            problem.
+                                                        </li>
+                                                        <li>
+                                                            Copyright: is an exclusive right given to the author of the
+                                                            original literary, architectural, dramatic, musical and
+                                                            artistic works; cinematograph films; and sound recordings.
+                                                        </li>
+                                                        <li>
+                                                            Trade/Service mark: means a mark capable of being
+                                                            represented graphically and which is capable of
+                                                            distinguishing the goods or services of one person from
+                                                            those of others and may include shape of goods, their
+                                                            packaging and combination of colours.
+                                                        </li>
+                                                        <li>
+                                                            Industrial Design: means only the features of shape,
+                                                            configuration, pattern, ornament or composition of lines or
+                                                            colours applied to any article whether in two dimensional or
+                                                            three dimensional or in both forms, by any industrial
+                                                            process or means, whether manual, mechanical or chemical,
+                                                            separate or combined, which in the finished article appeal
+                                                            to and are judged solely by the eye; but does not include
+                                                            any mode or principle of construction or anything which is
+                                                            in substance a mere mechanical device.
+                                                        </li>
+                                                        <li>
+                                                            IC Layout Designs: means a layout of transistors and other
+                                                            circuitry elements and includes lead wires connecting such
+                                                            elements and expressed in any manner in a semiconductor
+                                                            integrated circuit.
+                                                        </li>
+                                                        <li>
+                                                            New Plant Variety: a plant variety that is novel, distinct
+                                                            and shows uniform and stable characteristics.g)
+                                                            Biotechnology Inventions: include recombinant products such
+                                                            as vectors, nucleotide sequences and micro‐organisms.
+
+                                                        </li>
+                                                        <li>
+                                                            Traditional Knowledge: The knowledge developed by the
+                                                            indigenous or local communities for the use of a natural
+                                                            resource with respect to agriculture, food, medicine etc.
+                                                            over a period of time and has been passed from one
+                                                            generation to another traditionally.
+                                                        </li>
+                                                        <li>
+                                                            Geographical Indications: means an indication which identify
+                                                            such goods as agricultural goods, natural goods as
+                                                            originating or manufactured in the territory of a country or
+                                                            manufactured in the territory of a country or a region or
+                                                            locality in that territory where a given quality, reputation
+                                                            or other characteristic of such goods is essentially
+                                                            attributable to its geographical origin and in case where
+                                                            such goods are manufactured one of the activities of either
+                                                            the production or of processing or preparation of the goods
+                                                            concerned takes place in such territory, regions or locality
+                                                            as the case may be.
+                                                        </li>
+                                                        <li>
+                                                            Sajna P (Department of Chemistry)-Coordinator
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/code_of_ethics" class="readmore" id="naac_link">
+                                                    Code Of Ethics
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/research-projects"
+                                                   class="readmore" id="naac_link" target="_blank">
+                                                    Research Projects
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/research-promotion-council" class="readmore" id="naac_link">
+                                                    Research Promotion Council
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Facilities
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Guides
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="ipr_cell_page" model="website.page">
+            <field name="url">/ipr_cell</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="ipr_cell"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

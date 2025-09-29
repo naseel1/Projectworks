@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="external_snippets" inherit_id="website.snippets" >
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="emea_college_theme.basic_snippet"
+               t-thumbnail="emea_college_theme/static/img/left.svg"/>
+        </xpath>
+    </template>
+    <template id="basic_snippet" name="Basic Snippet">
+        <section class="page o_colored_level"  style="padding: 0px; background-image: none;">
+            <div class="bg_color_club" data-original-title="" title=""
+                 aria-describedby="tooltip229435">
+                <div class="clubs">Department Of
+                </div>
+            </div>
+            <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                     data-name="Tabs" style="background-image: none;">
+                <div class="s_tabs_main row" style="margin: 0 32px;">
+                    <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                         data-original-title="" title="" aria-describedby="tooltip336631">
+                        <div class="side-bar" id="sidebar">
+                            <ul class="tabs-list1 nav nav-pills flex-column"
+                                style="padding-inline-start: 0;">
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                       id="sidebar_tabs1" data-original-title="" title=""
+                                       class="nav-link active" aria-controls="tabs1"
+                                       aria-selected="true">Home
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                       id="sidebar_tabs2" data-original-title="" title=""
+                                       class="nav-link">Faculty
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Course Outline
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs4" id="sidebar_tabs4" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Alumni
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs5" id="sidebar_tabs5" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link"
+                                       aria-selected="false">Academics
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs6" id="sidebar_tabs6" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link"
+                                       aria-selected="false">Facilities
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs7" id="sidebar_tabs7" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Study Materials
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs8" id="sidebar_tabs8" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Conferences &amp; Seminars
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs9" id="sidebar_tabs9" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Funded Projects
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs10" id="sidebar_tabs10" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Action plan and ATR
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#" id="drop_  sidebar-li " data-bs-toggle="collapse"
+                                       data-bs-target="#achievements" class="collapsed nav-link"
+                                       aria-expanded="false">Achievements
+                                        <i style="padding-left:150px" class="fa fa-caret-down"/>
+                                    </a>
+                                </li>
+                                <div id="achievements" class="collapse"
+                                     style="transition: all 0.2s ease-in-out;background: white;margin-bottom:10px;">
+                                    <ul class="nav flex-column">
+                                        <li id="sidebar-li" class="nav-item">
+                                            <a href="#tabs11" id="sidebar_tabs11"
+                                               data-bs-toggle="tab" role="tab"
+                                               data-original-title="" title="" class="nav-link"
+                                               aria-selected="true">Faculty Achievements
+                                            </a>
+                                        </li>
+                                        <li id="sidebar-li" class="nav-item">
+                                            <a href="#tabs12" id="sidebar_tabs12"
+                                               data-bs-toggle="tab" role="tab"
+                                               data-original-title="" title="" class="nav-link"
+                                               aria-selected="false">Student Achievements
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs21" id="sidebar_tabs21" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Club &amp; Activities
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs22" id="sidebar_tabs22" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Extension Activities
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs23" id="sidebar_tabs23" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        News &amp; Announcements
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs24" id="sidebar_tabs24" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Activities
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs25" id="sidebar_tabs25" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Community Services
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs26" id="sidebar_tabs26" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Placement
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs27" id="sidebar_tabs27" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Gallery
+                                    </a>
+                                </li>
+                                <li id="sidebar-li" class="nav-item">
+                                    <a href="#tabs28" id="sidebar_tabs28" data-bs-toggle="tab"
+                                       role="tab" data-original-title="" title="" class="nav-link">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                         id="page-content">
+                        <div id="tabs1" class="tab-pane fade active show">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <section style="padding-left: 40px; background-image: none;">
+                                    <div style="background-image: none;" class="o_colored_level">
+                                        <img class="d-block w-100 depart_image"
+                                             src="/emea_college_theme/static/img/gallery1.jpg"
+                                             alt="" loading="lazy" data-original-id="2157"
+                                             data-original-src="/emea_college_theme/static/img/academic2.jpg"
+                                             data-mimetype="image/jpeg" data-resize-width="1170"
+                                             data-original-title="" title=""
+                                             aria-describedby="tooltip825815" data-quality="100"
+                                             style="transform: scaleY(0.92); height: 300px; border-radius: 5px; animation-play-state: paused; transition: none 0s ease 0s;"/>
+                                    </div>
+                                    <div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h2 class="department_subhead pt32">Profile</h2>
+                                                <div class="page_text" id="department_text">The
+                                                    Postgraduate
+                                                    Department of English is
+                                                    one of the major
+                                                    departments of EMEA College. It offers two
+                                                    popular
+                                                    programmes namely MA English and BA English
+                                                    Language and
+                                                    Literature. The faculty of department teach
+                                                    English in all
+                                                    other departments of the college. MA English
+                                                    started in
+                                                    unaided stream in 2014 and has an intake
+                                                    capacity of 30
+                                                    students, while BA in English Language and
+                                                    Literature is in
+                                                    aided sector with a legacy of 20 years, having
+                                                    an intake
+                                                    capacity of 60. At presen
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h2 class="department_subhead pt32">News</h2>
+                                                <marquee width="100%" direction="up" height="250px"
+                                                         onmouseover="this.stop();"
+                                                         onmouseout="this.start();">
+                                                    <section id="dep_news" class="pt32 pb32">
+
+                                                        <span id="mini_head">News Head</span>
+                                                        <div>Enhance your career readiness with
+                                                            workshops on
+                                                            resume building, interview skills, and
+                                                            networking. Guest speakers from various
+                                                            industries will share valuable
+                                                            insights.The
+                                                            Cultural Festival will feature music,
+                                                            dance, and
+                                                            delicious cuisine from around the world.
+                                                        </div>
+                                                    </section>
+                                                    <hr class="main_line"/>
+                                                    <section id="dep_news" class="pb32">
+                                                        <sapn id="mini_head">News Head</sapn>
+                                                        <div>Enhance your career readiness with
+                                                            workshops on
+                                                            resume building, interview skills, and
+                                                            networking. Guest speakers from various
+                                                            industries will share valuable
+                                                            insights.The
+                                                            Cultural Festival will feature music,
+                                                            dance, and
+                                                            delicious cuisine from around the world.
+                                                        </div>
+
+                                                    </section>
+                                                </marquee>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h2 class="department_subhead pt32">Mission</h2>
+                                            <div class="page_text" id="department_text">Identifying
+                                                and
+                                                developing the talent of the youth and moulding them
+                                                into
+                                                useful citizens with due emphasize on right
+                                                character
+                                                formation is the avowed mission of EMEA College. The
+                                                fulfilment of this lofty goal is the basis of
+                                                educational
+                                                programes formulated and pursued by the institution.
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h2 class="department_subhead">Vision</h2>
+                                            <div class="page_text" id="department_text"
+                                                 style="text-align: left;">
+                                                To be a centre of excellence in higher education,
+                                                affordable
+                                                to common man.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs2" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs2">
+                            <div class="oe_structure oe_empty show"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Faculty</h2>
+                                <section class="former_card" style="margin-left: 16px;">
+                                    <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                         alt="Person" class="card-image" loading="lazy"/>
+                                    <div class="card-content">
+                                        <div class="name">Name Of Professor</div>
+                                        <div class="designation">Designation Of Professor
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="row">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person" class="card-image" loading="lazy"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person" class="card-image" loading="lazy"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person" class="card-image" loading="lazy"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person" class="card-image" loading="lazy"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person" class="card-image" loading="lazy"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person" class="card-image" loading="lazy"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs3" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs3">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Course Outline</h2>
+                                <section class="pt32 pb32">
+                                    <h2 class="department_subhead pt32">Semester 1</h2>
+                                    <section class="d-flex o_colored_level margin_30"
+                                             style="background-image: none;">
+
+                                        <div class="col-md-4 programme_link">Semester 1 Paper Name
+                                            in This Department
+                                        </div>
+                                        <span class="readmore" id="view">View
+                                            <a href="emea_college_theme/static/img/Course Outline_Eng1 A02 Ways With Words2019-2020(5).pdf"
+                                               data-mimetype="application/pdf"
+                                               class="o_image seminar" scontenteditable="false"/>
+                                        </span>
+
+                                    </section>
+                                </section>
+                                <section class="pt32 pb32">
+                                    <h2 class="department_subhead pt32">Semester 2</h2>
+                                    <section class="d-flex o_colored_level margin_30"
+                                             style="background-image: none;">
+                                        <div class="col-md-4 programme_link">Semester 2 Paper Name
+                                            in This Department
+                                        </div>
+                                        <span class="readmore" id="view">View
+                                            <a href="emea_college_theme/static/img/Course Outline_Eng1 A02 Ways With Words2019-2020(5).pdf"
+                                               data-mimetype="application/pdf"
+                                               class="o_image seminar" scontenteditable="false"/>
+                                        </span>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs4" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs4">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Alumni</h2>
+                                <section>
+                                    <h2 class="department_subhead pt32">A Name Of Your Alumni</h2>
+                                    <div class="page_text pt32">
+                                        <div class="page_text " style="text-align: left;">
+                                            To be an effective resource for students aspiring to
+                                            build
+                                            successful
+                                            careers in general management and They decide to conduct
+                                            events
+                                            bearing
+                                            on every functional area of management such as Invited
+                                            Lecturers,
+                                            Role
+                                            Plays, Debates, Quizzes, Cultural and Publishing, Sports
+                                            activities
+                                            and
+                                            Management Competitions
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs5" class="tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs5">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Academics</h2>
+                                <section class="pt32 pb32">
+                                    <h2 class="department_subhead pt32">UG Programmes</h2>
+                                    <section class="d-flex o_colored_level margin_30"
+                                             style="background-image: none;">
+                                        <div class="col-md-4 programme_link">Name The Programme
+                                        </div>
+                                        <span class="readmore" id="view">Syllabus
+                                            <a href="#" data-mimetype="application/pdf"
+                                               class="o_image seminar" scontenteditable="false"/>
+                                        </span>
+                                    </section>
+                                </section>
+                                <section class="pt32 pb32">
+                                    <h2 class="department_subhead pt32">PG Programmes</h2>
+                                    <section class="d-flex o_colored_level margin_30"
+                                             style="background-image: none;">
+                                        <div class="col-md-4 programme_link">Name The Programme
+                                        </div>
+                                        <span class="readmore" id="view">Syllabus
+                                            <a href="#" data-mimetype="application/pdf"
+                                               class="o_image seminar" scontenteditable="false"/>
+                                        </span>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs6" class="tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs6">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+
+                                <h2 class="page_head">Facilities</h2>
+                                <div class="row confrance">
+                                    <div class="col-md-4" style="padding:0">
+                                        <img src="/emea_college_theme/static/img/book1.jpg"
+                                             loading="lazy"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3 class="confrance_head">Head of The Conferences</h3>
+                                        <h4 class="sub_date">01/12/2023</h4>
+                                        <p style="text-align:justify;    line-height: 1.8;">
+                                            Identifying and PG Department , EMEA College of Arts
+                                            &amp;amp; Science, Kondotty organizes A Seminar on
+                                            Margins in/of Literature 04 -02- 19, Monday. Audio
+                                            Visual Theatre EMEA College, Kondotty KeyNote Address:
+                                            Literature and the Margins Prof. M T Ansari (Centre for
+                                            Comparative Literature, University of Hyderabad) Special
+                                            Address: Dr. Manoj Kumar. C M (Dept. of English, SS
+                                            University, Kaladi)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row confrance">
+                                    <div class="col-md-8">
+                                        <h3 class="confrance_head">Head of The Conferences</h3>
+                                        <h4 class="sub_date">01/12/2023</h4>
+                                        <p style="text-align:justify;    line-height: 1.8;">
+                                            Identifying and PG Department , EMEA College of Arts
+                                            &amp;amp; Science, Kondotty organizes A Seminar on
+                                            Margins in/of Literature 04 -02- 19, Monday. Audio
+                                            Visual Theatre EMEA College, Kondotty KeyNote Address:
+                                            Literature and the Margins Prof. M T Ansari (Centre for
+                                            Comparative Literature, University of Hyderabad) Special
+                                            Address: Dr. Manoj Kumar. C M (Dept. of English, SS
+                                            University, Kaladi)
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-4" style="padding:0">
+                                        <img src="/emea_college_theme/static/img/book1.jpg"
+                                             loading="lazy"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs7" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs7">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Study Materials</h2>
+                                <section class="pt32 pb32">
+                                    <h2 class="department_subhead pt32">Head of The Study Materials
+                                    </h2>
+                                    <section class="d-flex o_colored_level margin_30"
+                                             style="background-image: none;">
+                                        <div class="col-md-4 programme_link">Name The Study Material
+                                        </div>
+                                        <span class="readmore" id="view">Syllabus
+                                            <a href="#" data-mimetype="application/pdf"
+                                               class="o_image seminar" scontenteditable="false"/>
+                                        </span>
+                                    </section>
+                                </section>
+                                <section class="pt32 pb32">
+                                    <h2 class="department_subhead pt32">Head of The Study Materials
+                                    </h2>
+                                    <section class="d-flex o_colored_level margin_30"
+                                             style="background-image: none;">
+                                        <div class="col-md-4 programme_link">Name The Study Material
+                                        </div>
+                                        <span class="readmore" id="view">Syllabus
+                                            <a href="#" data-mimetype="application/pdf"
+                                               class="o_image seminar" scontenteditable="false"/>
+                                        </span>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs8" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs8">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <section class="pt-5 pb-5" style="background-image: none;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h2 class="page_head">CONFERENCES &amp;amp;
+                                                    SEMINARS
+                                                </h2>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                            </div>
+                                            <div class="col-12 o_colored_level">
+                                                <div id="carouselExampleIndicators2"
+                                                     class="carousel slide" data-ride="carousel">
+
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active o_colored_level"
+                                                             style="background-image: none;">
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-3 o_colored_level">
+                                                                    <div class="card">
+                                                                        <img src="/web/image/590-9363271a/room-interior-design.jpg"
+                                                                             alt=""
+                                                                             class="img-fluid img o_we_custom_image"
+                                                                             data-original-id="587"
+                                                                             data-original-src="/web/image/587-108e3085/room-interior-design.jpg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="690"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3 o_colored_level">
+                                                                    <div class="card">
+                                                                        <img src="/web/image/592-90c2236f/vintage-landscapes-with-buildings.jpg"
+                                                                             alt=""
+                                                                             class="img-fluid img o_we_custom_image"
+                                                                             data-original-id="588"
+                                                                             data-original-src="/web/image/588-6e9c4508/vintage-landscapes-with-buildings.jpg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="690"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3 o_colored_level">
+                                                                    <div class="card">
+                                                                        <img src="/web/image/591-3619b403/friends-library-table.jpg"
+                                                                             alt=""
+                                                                             class="img-fluid img o_we_custom_image"
+                                                                             data-original-id="589"
+                                                                             data-original-src="/web/image/589-8c6230f7/friends-library-table.jpg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="690"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="">
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-3">
+                                                                    <div class="card">
+                                                                        <img class="img-fluid"
+                                                                             alt="100%x280"
+                                                                             src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <div class="card">
+                                                                        <img class="img-fluid"
+                                                                             alt="100%x280"
+                                                                             src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <div class="card">
+                                                                        <img class="img-fluid"
+                                                                             alt="100%x280"
+                                                                             src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="">
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-3">
+                                                                    <div class="card">
+                                                                        <img class="img-fluid"
+                                                                             alt="100%x280"
+                                                                             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <div class="card">
+                                                                        <img class="img-fluid"
+                                                                             alt="100%x280"
+                                                                             src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <div class="card">
+                                                                        <img class="img-fluid"
+                                                                             alt="100%x280"
+                                                                             src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                                                                             loading="lazy"/>
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">
+                                                                                Facilitie Name
+                                                                            </h4>
+                                                                            <p class="card-text">
+                                                                                With supporting text
+                                                                                below as a natural
+                                                                                lead-in to
+                                                                                additional content.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                        <div id="tabs9" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs9">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Funded Projects</h2>
+                                <h3 style="font-size:18px;font-weight:800;">nil</h3>
+                                <p style="font-size:16px;font-weight:800;">01-Nov-2019</p>
+                                <p style="font-size:16px;font-weight:800;">No funded projects</p>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs10" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs10">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Action plan and ATR</h2>
+                                <section class="pt32 pb32">
+                                    <section class="d-flex o_colored_level margin_30"
+                                             style="background-image: none;">
+                                        <div class="col-md-4 programme_link">Action Plan 2021-22
+                                        </div>
+                                        <span class="readmore" id="view">Syllabus
+                                            <a href="#" data-mimetype="application/pdf"
+                                               class="o_image seminar" scontenteditable="false"/>
+                                        </span>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs11" class="tab-pane fade " role="tabpanel"
+                             aria-labelledby="sidebar_tabs11">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Faculty Achievements</h2>
+                                <section class="s_tabs pt48 pb48" data-vcss="001"
+                                         data-snippet="s_tabs" data-name="Tabs"
+                                         style="background-image: none;">
+                                    <div class="container">
+                                        <div class="s_tabs_main card">
+                                            <div class="s_tabs_nav card-header">
+                                                <ul class="nav nav-tabs card-header-tabs"
+                                                    role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active"
+                                                           id="nav_tabs_link_1709115121934_196"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121934_196"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121934_196"
+                                                           aria-selected="true">Prestegious
+                                                            Placements
+                                                        </a>
+                                                        <br/>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  o_default_snippet_text "
+                                                           id="nav_tabs_link_1709115121935_197"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_197"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_197"
+                                                           aria-selected="false">Progress
+                                                            To Higher Studies
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  o_default_snippet_text"
+                                                           id="nav_tabs_link_1709115121935_198"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_198"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_198"
+                                                           aria-selected="false">NET/UGC Qualified
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  o_default_snippet_text"
+                                                           id="nav_tabs_link_1709115121935_199"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_199"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_19"
+                                                           aria-selected="false">Rank
+
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  o_default_snippet_text"
+                                                           id="nav_tabs_link_1709115121935_200"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_200"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_200"
+                                                           aria-selected="false">Awards
+
+                                                        </a>
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                            <div class="s_tabs_content tab-content card-body">
+                                                <div class="tab-pane fade active show"
+                                                     id="nav_tabs_content_1709115121934_196"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121934_196">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <section class="former_card ">
+                                                                    <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                         alt="Person"
+                                                                         class="card-image"
+                                                                         loading="lazy"/>
+                                                                    <div class="card-content">
+                                                                        <div class="name">Name Of
+                                                                            Professor
+                                                                        </div>
+                                                                        <div class="designation">
+                                                                            Designation Of Professor
+                                                                            <br/>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade"
+                                                     id="nav_tabs_content_1709115121935_197"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_197">
+                                                    <div class="oe_structure oe_empty "
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <div class="row confrance">
+                                                                    <div class="col-md-4"
+                                                                         style="padding:0">
+                                                                        <img src="/emea_college_theme/static/img/book1.jpg"
+                                                                             loading="lazy"
+                                                                             style="width:290px"/>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <h3 class="confrance_head">
+                                                                            Head of The Conferences
+                                                                        </h3>
+                                                                        <h4 class="sub_date">
+                                                                            01/12/2023
+                                                                        </h4>
+                                                                        <p style="text-align:justify;    line-height: 1.8;">
+                                                                            Identifying and PG
+                                                                            Department , EMEA
+                                                                            College of Arts
+                                                                            &amp;amp; Science,
+                                                                            Kondotty organizes A
+                                                                            Seminar on
+                                                                            Margins in/of Literature
+                                                                            04 -02- 19, Monday.
+                                                                            Audio
+                                                                            Visual Theatre EMEA
+                                                                            College, Kondotty
+                                                                            KeyNote Address:
+                                                                            Literature and the
+                                                                            Margins Prof. M T Ansari
+                                                                            (Centre for
+                                                                            Comparative Literature,
+                                                                            University of Hyderabad)
+                                                                            Special
+                                                                            Address: Dr. Manoj
+                                                                            Kumar. C M (Dept. of
+                                                                            English, SS
+                                                                            University, Kaladi)
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade"
+                                                     id="nav_tabs_content_1709115121935_198"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_198">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <h2 class="page_head">NET/UGC
+                                                                    Qualified
+                                                                </h2>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade "
+                                                     id="nav_tabs_content_1709115121935_199"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_199">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <h2 class="page_head">Rank</h2>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade "
+                                                     id="nav_tabs_content_1709115121935_200"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_200">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <h2 class="page_head">Awards</h2>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div id="tabs12" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs12">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Student Achievements</h2>
+                                <section class="s_tabs pt48 pb48" data-vcss="001"
+                                         data-snippet="s_tabs" data-name="Tabs"
+                                         style="background-image: none;">
+                                    <div class="container">
+                                        <div class="s_tabs_main card">
+                                            <div class="s_tabs_nav card-header">
+                                                <ul class="nav nav-tabs card-header-tabs"
+                                                    role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active"
+                                                           id="nav_tabs_link_1709115121934_205"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121934_205"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121934_196"
+                                                           aria-selected="false">Prestegious
+                                                            Placements
+                                                        </a>
+                                                        <br/>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link o_default_snippet_text"
+                                                           id="nav_tabs_link_1709115121935_204"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_204"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_197"
+                                                           aria-selected="true">Progress
+                                                            To Higher Studies
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  o_default_snippet_text"
+                                                           id="nav_tabs_link_1709115121935_203"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_203"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_198"
+                                                           aria-selected="false">NET/UGC Qualified
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  o_default_snippet_text"
+                                                           id="nav_tabs_link_1709115121935_202"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_202"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_19"
+                                                           aria-selected="false">Rank
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  o_default_snippet_text"
+                                                           id="nav_tabs_link_1709115121935_201"
+                                                           data-bs-toggle="tab"
+                                                           href="#nav_tabs_content_1709115121935_201"
+                                                           role="tab"
+                                                           aria-controls="nav_tabs_content_1709115121935_200"
+                                                           aria-selected="false">Awards
+
+                                                        </a>
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                            <div class="s_tabs_content tab-content card-body">
+                                                <div class="tab-pane fade active show"
+                                                     id="nav_tabs_content_1709115121934_205"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121934_205">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <section class="former_card ">
+                                                                    <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                         alt="Person"
+                                                                         class="card-image"
+                                                                         loading="lazy"/>
+                                                                    <div class="card-content">
+                                                                        <div class="name">Name Of
+                                                                            Professor
+                                                                        </div>
+                                                                        <div class="designation">
+                                                                            Designation Of Professor
+                                                                            <br/>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade "
+                                                     id="nav_tabs_content_1709115121935_204"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_204">
+                                                    <div class="oe_structure oe_empty "
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <div class="row confrance">
+                                                                    <div class="col-md-4"
+                                                                         style="padding:0">
+                                                                        <img src="/emea_college_theme/static/img/book1.jpg"
+                                                                             loading="lazy"
+                                                                             style="width:290px"/>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <h3 class="confrance_head">
+                                                                            Head of The Conferences
+                                                                        </h3>
+                                                                        <h4 class="sub_date">
+                                                                            01/12/2023
+                                                                        </h4>
+                                                                        <p style="text-align:justify;    line-height: 1.8;">
+                                                                            Identifying and PG
+                                                                            Department , EMEA
+                                                                            College of Arts
+                                                                            &amp;amp; Science,
+                                                                            Kondotty organizes A
+                                                                            Seminar on
+                                                                            Margins in/of Literature
+                                                                            04 -02- 19, Monday.
+                                                                            Audio
+                                                                            Visual Theatre EMEA
+                                                                            College, Kondotty
+                                                                            KeyNote Address:
+                                                                            Literature and the
+                                                                            Margins Prof. M T Ansari
+                                                                            (Centre for
+                                                                            Comparative Literature,
+                                                                            University of Hyderabad)
+                                                                            Special
+                                                                            Address: Dr. Manoj
+                                                                            Kumar. C M (Dept. of
+                                                                            English, SS
+                                                                            University, Kaladi)
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade"
+                                                     id="nav_tabs_content_1709115121935_203"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_203">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <h2 class="page_head">NET/UGC
+                                                                    Qualified
+                                                                </h2>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade "
+                                                     id="nav_tabs_content_1709115121935_202"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_202">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <h2 class="page_head">Rank</h2>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade "
+                                                     id="nav_tabs_content_1709115121935_201"
+                                                     role="tabpanel"
+                                                     aria-labelledby="nav_tabs_link_1709115121935_201">
+                                                    <div class="oe_structure oe_empty"
+                                                         data-editor-message-default="true"
+                                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                        <section class="s_text_block"
+                                                                 style="background-image: none;"
+                                                                 data-name="Text">
+                                                            <div class="container s_allow_columns">
+                                                                <h2 class="page_head">Awards</h2>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs13" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs13">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">NET/UGC Qualified
+                                </h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs14" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs14">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Rank</h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs15" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs15">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Award</h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs16" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs16">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Prestigious Placements</h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs17" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs17">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Progress
+                                    To Higher Studies
+                                </h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs18" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs18">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">NET/UGC Qualified
+                                </h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs19" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs19">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Rank</h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs20" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs20">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Award</h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs21" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs21">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <section class="pt32">
+                                    <h2 class="page_head">Clubs Name</h2>
+                                    <h3 class="in_charge">In-Charge
+                                    </h3>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person" class="card-image" loading="lazy"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div class="page_text pt32">
+                                        <div class="page_text " style="text-align: left;">
+                                            All the computer Science students are the members of IT
+                                            club. 15
+                                            students, 5
+                                            students from each batch, are selected as executive
+                                            members.
+                                            The
+                                            students from other
+                                            discipline can also register as a member.
+
+                                            The main objective of the club is to keep aware the
+                                            students
+                                            with
+                                            the latest skills
+                                            in IT apart from the regular IT syllabus, and give them
+                                            practical
+                                            hands on
+                                            experience and to enhance the analytical and logical
+                                            aptitude of
+                                            students. The club
+                                            also aims to bring out the best in students &amp;amp;
+                                            enhance
+                                            their
+                                            logical and creative
+                                            ability to groom individual's potentials and provide an
+                                            environment
+                                            to work
+                                            independently. It also facilitates to make them aware of
+                                            the
+                                            various
+                                            career
+                                            opportunities in the IT industry and related job
+                                            profiles.
+                                        </div>
+                                    </div>
+                                    <h2 class="department_subhead pt32">Activities</h2>
+                                    <div class="row confrance">
+                                        <div class="col-md-4" style="padding:0">
+                                            <img style="width: 250px; min-width: auto;"
+                                                 src="emea_college_theme/static/img/achivement.jpg"
+                                                 loading="lazy"/>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h1 class="achievement-card-name">Activity Head</h1>
+                                            <p class="achievement-card-p">The college has proudly
+                                                secured top rankings in arecent national academic
+                                                assessment, highlighting its commitment to
+                                                excellence.
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                </section>
+                                <section class="pb32">
+                                    <h2 class="department_subhead pt32">REPORTS</h2>
+                                    <a href="#" target="_blank" title="Download"
+                                       data-target="tooltip" class="readmore" id="readmore">
+                                        Report 2014-23
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs22" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs22">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Extension Activities</h2>
+                                <section class="d-flex o_colored_level margin_30"
+                                         style="background-image: none;">
+                                    <div class="col-md-4 seminar_link">Extension Activities Name
+                                    </div>
+                                    <span class="readmore" id="view">View
+                                        <a href="/web/content/415?unique=52d134ba738eb9b122e4ef70dea9f32bce738c72"
+                                           title="Stages of Doing Research -webinar report 2021-22.pdf"
+                                           data-mimetype="application/pdf" class="o_image seminar"
+                                           scontenteditable="false"/>
+                                    </span>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs23" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs23">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">News &amp;amp; Announcements</h2>
+                                <div class="row confrance">
+                                    <div class="col-md-4" style="padding:0">
+                                        <img src="/emea_college_theme/static/img/book1.jpg"
+                                             loading="lazy"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3 class="confrance_head">Head of The Conferences</h3>
+                                        <h4 class="sub_date">01/12/2023</h4>
+                                        <p style="text-align:justify;    line-height: 1.8;">
+                                            Identifying and PG Department , EMEA College of Arts
+                                            &amp;amp; Science, Kondotty organizes A Seminar on
+                                            Margins in/of Literature 04 -02- 19, Monday. Audio
+                                            Visual Theatre EMEA College, Kondotty KeyNote Address:
+                                            Literature and the Margins Prof. M T Ansari (Centre for
+                                            Comparative Literature, University of Hyderabad) Special
+                                            Address: Dr. Manoj Kumar. C M (Dept. of English, SS
+                                            University, Kaladi)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs24" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs24">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="department_subhead pt32">Activities</h2>
+                                <div class="achievement" style="display:flex">
+                                    <section class="achievement-card" style="margin:10px">
+                                        <div class="achievement-card-image">
+                                            <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                 alt="" loading="lazy"/>
+                                        </div>
+                                        <div class="achievement-card-box">
+                                            <h1 class="achievement-card-name">Activity Head</h1>
+                                            <p class="achievement-card-p">
+                                                The college has proudly secured top rankings in
+                                                a
+                                                recent
+                                                national academic
+                                                assessment, highlighting its commitment to
+                                                excellence.
+                                            </p>
+                                            <a href="#" class="readmore pos_relative">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </section>
+                                    <section class="achievement-card" style="margin:10px">
+                                        <div class="achievement-card-image">
+                                            <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                 alt="" loading="lazy"/>
+                                        </div>
+                                        <div class="achievement-card-box">
+                                            <h1 class="achievement-card-name">Activity Head</h1>
+                                            <p class="achievement-card-p">
+                                                The college has proudly secured top rankings in
+                                                a
+                                                recent
+                                                national academic
+                                                assessment, highlighting its commitment to
+                                                excellence.
+                                            </p>
+                                            <a href="#" class="readmore pos_relative">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </section>
+                                    <section class="achievement-card" style="margin:10px">
+                                        <div class="achievement-card-image">
+                                            <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                 alt="" loading="lazy"/>
+                                        </div>
+                                        <div class="achievement-card-box">
+                                            <h1 class="achievement-card-name">Activity Head</h1>
+                                            <p class="achievement-card-p">
+                                                The college has proudly secured top rankings in
+                                                a
+                                                recent
+                                                national academic
+                                                assessment, highlighting its commitment to
+                                                excellence.
+                                            </p>
+                                            <a href="#" class="readmore pos_relative">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs25" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs25">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Community Services</h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs26" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs26">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <section style="background-image: none;" class="section_center">
+                                    <div class="row">
+                                        <div class="col o_colored_level" style="margin-top: 30px;">
+                                            <div class="main_table_box_2">
+                                                <table class="table_class_main_2" style="width:90%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="table-main-heading"
+                                                                colspan="6">PLACEMENTS
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub"
+                                                                style="background-color: #2EA28F; font-weight: bold; color:white; font-size:18px; ">
+                                                                SL NO
+                                                            </td>
+                                                            <td class="td_sub"
+                                                                style="background-color: #2EA28F; font-weight: bold; color:white; font-size:18px; ">
+                                                                Name of the Student
+                                                            </td>
+                                                            <td class="td_sub"
+                                                                style="background-color: #2EA28F; font-weight: bold; color:white; font-size:18px; ">
+                                                                Name of the Programme
+                                                            </td>
+                                                            <td class="td_sub"
+                                                                style="background-color: #2EA28F; font-weight: bold; color:white; font-size:18px; ">
+                                                                Batch/Year
+                                                            </td>
+                                                            <td class="td_sub"
+                                                                style="background-color: #2EA28F; font-weight: bold; color:white; font-size:18px; ">
+                                                                Name of the Institution got placed
+                                                            </td>
+                                                            <td class="td_sub"
+                                                                style="background-color: #2EA28F; font-weight: bold; color:white; font-size:18px; ">
+                                                                Designation
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">1</td>
+                                                            <td class="td_sub">Hena Sivadasan</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2017/19</td>
+                                                            <td class="td_sub">Devagiri College
+                                                                Calicut
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">2</td>
+                                                            <td class="td_sub">Sanjay</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2017/19</td>
+                                                            <td class="td_sub">Ramanattukara Higher
+                                                                Secondary School
+                                                            </td>
+                                                            <td class="td_sub">Teacher</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">3</td>
+                                                            <td class="td_sub">Sameer Koppilan</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2015/18</td>
+                                                            <td class="td_sub">Devagiri College
+                                                                Calicut
+                                                            </td>
+                                                            <td class="td_sub">Reporter</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">4</td>
+                                                            <td class="td_sub">Vaishnav</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2015/18</td>
+                                                            <td class="td_sub">Jai Hind V</td>
+                                                            <td class="td_sub">Photographer</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">5</td>
+                                                            <td class="td_sub">Aneesunneesa</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2016/18</td>
+                                                            <td class="td_sub">Safi Institute of
+                                                                Advance Studies, Vazhayoor
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">6</td>
+                                                            <td class="td_sub">Ajisha Mohammed</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2015/17</td>
+                                                            <td class="td_sub">Brain RX, Dots n
+                                                                Links
+                                                            </td>
+                                                            <td class="td_sub">English Language,
+                                                                Soft Skill &amp; Cognitive Trainer
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">7</td>
+                                                            <td class="td_sub">Faseela PA</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2014/16</td>
+                                                            <td class="td_sub">EMEA College of Arts
+                                                                &amp; Science
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">8</td>
+                                                            <td class="td_sub">Yousuf</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2014/16</td>
+                                                            <td class="td_sub">Malabar College
+                                                                Vengara
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">9</td>
+                                                            <td class="td_sub">Prageesh TP</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2014/16</td>
+                                                            <td class="td_sub">PPTM Arts&amp;
+                                                                Science, Cheroor
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">10</td>
+                                                            <td class="td_sub">Rasiya OK</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2014/16</td>
+                                                            <td class="td_sub">AKM HSS, Cheroor</td>
+                                                            <td class="td_sub">Teacher</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">11</td>
+                                                            <td class="td_sub">Sadhikali</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2014/16</td>
+                                                            <td class="td_sub">IHRD, Vazhzkkad</td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">12</td>
+                                                            <td class="td_sub">Shirin NK</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2012/15</td>
+                                                            <td class="td_sub">Childline,
+                                                                Malappuram
+                                                            </td>
+                                                            <td class="td_sub">Counselor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">13</td>
+                                                            <td class="td_sub">Abdul Samad</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2013/15</td>
+                                                            <td class="td_sub">HM College of Science
+                                                                &amp; Technology
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">14</td>
+                                                            <td class="td_sub">Subair Kalathil</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2013/15</td>
+                                                            <td class="td_sub">EMEA College of Arts
+                                                                &amp; Science
+                                                            </td>
+                                                            <td class="td_sub">Office Assistant</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">15</td>
+                                                            <td class="td_sub">Suhail Ayyapalli</td>
+                                                            <td class="td_sub">MA English</td>
+                                                            <td class="td_sub">2013/15</td>
+                                                            <td class="td_sub">Darul Huda Islamic
+                                                                School, Al Ain, Abudhabi
+                                                            </td>
+                                                            <td class="td_sub">Teacher</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">16</td>
+                                                            <td class="td_sub">Rebin TP</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2011/14</td>
+                                                            <td class="td_sub">MES College, Chathamangalam  </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">17</td>
+                                                            <td class="td_sub">Nargees MK</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2010/13</td>
+                                                            <td class="td_sub">EMEA College of Arts
+                                                                &amp; Science
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">18</td>
+                                                            <td class="td_sub">Sharbanu CP</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2010/13</td>
+                                                            <td class="td_sub">EMEA College of Arts&amp; Science</td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">19
+                                                            </td> <!-- Corrected sequence number -->
+                                                            <td class="td_sub">Suhada</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2009/12</td>
+                                                            <td class="td_sub">Noble Women’s
+                                                                College, Manjeri
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">20</td>
+                                                            <td class="td_sub">Irfana Parveen</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2008/11</td>
+                                                            <td class="td_sub">EMEA College of Arts
+                                                                &amp; Science
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">21</td>
+                                                            <td class="td_sub">Abdul Bari</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2007/10</td>
+                                                            <td class="td_sub">Malabar College
+                                                                Advance Studies, Vengara
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">22</td>
+                                                            <td class="td_sub">Noufal N</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2006/09</td>
+                                                            <td class="td_sub">PSMO College
+                                                                Thirurangadi
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td_sub">23</td>
+                                                            <td class="td_sub">Abdul Jaleel M</td>
+                                                            <td class="td_sub">BA English</td>
+                                                            <td class="td_sub">2005/08</td>
+                                                            <td class="td_sub">EMEA College of Arts
+                                                                &amp; Science
+                                                            </td>
+                                                            <td class="td_sub">Assistant Professor
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs27" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs27">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+
+                                <h2 class="page_head">Gallery</h2>
+                                <section class="s_image_gallery o_spc-small pt24 pb24 o_grid"
+                                         data-vcss="001" data-columns="3"
+                                         style="overflow: hidden; background-image: none;"
+                                         data-snippet="s_images_wall" data-name="Images Wall">
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-lg-4">
+                                                <img class="img img-fluid d-block"
+                                                     src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-index="0" data-name="Image" loading="lazy"
+                                                     data-original-id="164"
+                                                     data-original-src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="img img-fluid d-block"
+                                                     src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-index="1" data-name="Image" loading="lazy"
+                                                     data-original-id="174"
+                                                     data-original-src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-mimetype="image/jpeg"
+                                                     data-bs-original-title="" title=""
+                                                     aria-describedby="tooltip96001"/>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="img img-fluid d-block"
+                                                     src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-index="2" data-name="Image" loading="lazy"
+                                                     data-original-id="175"
+                                                     data-original-src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                            </div>
+                                        </div>
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-lg-4">
+                                                <img class="img img-fluid d-block"
+                                                     src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-index="3" data-name="Image" loading="lazy"
+                                                     data-original-id="171"
+                                                     data-original-src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="img img-fluid d-block"
+                                                     src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-index="4" data-name="Image" loading="lazy"
+                                                     data-original-id="166"
+                                                     data-original-src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="img img-fluid d-block"
+                                                     src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-index="5" data-name="Image" loading="lazy"
+                                                     data-original-id="177"
+                                                     data-original-src="/emea_college_theme/static/img/blank.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tabs28" class=" tab-pane fade" role="tabpanel"
+                             aria-labelledby="sidebar_tabs28">
+                            <div class="oe_structure oe_empty"
+                                 data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                <h2 class="page_head">Contact Us</h2>
+                                <div class="page_text pt32">
+                                    <div class="page_text " style="font-size:inherit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </template>
+</odoo>

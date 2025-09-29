@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('/emea_college_theme/static/src/fonts/Poppins-Bold.ttf');
+    src: local('Poppins Bold'), local('Poppins Bold'),
+        url('/emea_college_theme/static/src/fonts/Poppins-Bold.ttf') format('embedded-opentype'),
+        url('/emea_college_theme/static/src/fonts/Poppins-Bold.ttf') format('ttf'),
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('/emea_college_theme/static/src/fonts/Poppins-Medium.ttf');
+    src: local('/emea_college_theme/static/src/fonts/Poppins-Medium.ttf'), local('Poppins Medium'),
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Black';
+    src: url('/emea_college_theme/static/src/fonts/Poppins-Black.ttf');
+    src: local('/emea_college_theme/static/src/fonts/Poppins-Black.ttf'), local('Poppins Black'),
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins ';
+    src: url('/emea_college_theme/static/src/fonts/Poppins-Regular.ttf');
+    src: local('/emea_college_theme/static/src/fonts/Poppins-Regular.ttf'), local('Poppins Regular'),
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url('/mincetech_website/static/src/fonts/MabryPro-BoldItalic.eot');
+    src: local('/mincetech_website/static/src/fonts/Mabry Pro Bold Italic'), local('MabryPro-BoldItalic'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BoldItalic.woff2') format('woff2'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BoldItalic.woff') format('woff'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url('/mincetech_website/static/src/fonts/MabryPro-Light.eot');
+    src: local('Mabry Pro Light'), local('MabryPro-Light'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Light.woff2') format('woff2'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Light.woff') format('woff'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url('/mincetech_website/static/src/fonts/MabryPro-BlackItalic.eot');
+    src: local('Mabry Pro Black Italic'), local('MabryPro-BlackItalic'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BlackItalic.woff2') format('woff2'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BlackItalic.woff') format('woff'),
+        url('/mincetech_website/static/src/fonts/MabryPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url('/mincetech_website/static/src/fonts/MabryPro-MediumItalic.eot');
+    src: local('Mabry Pro Medium Italic'), local('MabryPro-MediumItalic'),
+        url('/mincetech_website/static/src/fonts/MabryPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/mincetech_website/static/src/fonts/MabryPro-MediumItalic.woff2') format('woff2'),
+        url('/mincetech_website/static/src/fonts/MabryPro-MediumItalic.woff') format('woff'),
+        url('/mincetech_website/static/src/fonts/MabryPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url('/mincetech_website/static/src/fonts/MabryPro-Italic.eot');
+    src: local('Mabry Pro Italic'), local('MabryPro-Italic'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Italic.woff2') format('woff2'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Italic.woff') format('woff'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url('/mincetech_website/static/src/fonts/MabryPro-Regular.eot');
+    src: local('Mabry Pro'), local('MabryPro-Regular'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Regular.woff2') format('woff2'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Regular.woff') format('woff'),
+        url('/mincetech_website/static/src/fonts/MabryPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

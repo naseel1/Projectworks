@@ -1,0 +1,101 @@
+<odoo>
+    <data>
+        <record id="nss" model="ir.ui.view">
+            <field name="name">NSS</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.nss</field>
+            <field name="arch" type="xml">
+                <t name="NSS" t-name="emea_college_theme.nss_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+
+                            <section class=" page">
+                                <h2 class="page_head">NSS (National Service Scheme)</h2>
+                                <h3 class="in_charge">In-Charge
+                                </h3>
+                                <section class="former_card"  >
+                                    <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                         class="card-image"/>
+                                    <div class="card-content">
+                                        <div class="name">Name Of Professor</div>
+                                        <div class="designation">Designation Of Professor
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="page_text pt32">
+                                    <h3 class="sub_head" style="">Objectives</h3>
+                                    <div class="page_text " style="text-align: left;">
+
+                                        <strong style="font-size: 18px;">The main objectives of National Service Scheme
+                                            (NSS) are :
+                                        </strong>
+                                        <ul>
+                                            <li>Understand the community in which they work
+                                            </li>
+                                            <li>Understand themselves in relation to their community</li>
+                                            <li>Identify the needs and problems of the community and involve them in
+                                                problem-solving
+                                            </li>
+                                            <li>Develop among themselves a sense of social and civic responsibility
+                                            </li>
+                                            <li>
+                                                Utilize their knowledge in finding practical solutions to individual and
+                                                community problems
+                                            </li>
+                                            <li>
+                                                Develop competence required for group-living and sharing of
+                                                responsibilities
+                                            </li>
+                                            <li>
+                                                Gain skills in mobilizing community participation
+                                            </li>
+                                            <li>Acquire leadership qualities and democratic attitudes
+                                            </li>
+                                            <li>Develop capacity to meet emergencies and natural disasters and Practice
+                                                national integration and social harmony
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <section class="pb32" style="text-align:center;">
+                                    <h2 class="page_head pt32">NSS REPORTS</h2>
+                                    <a href="#" target="_blank" title="Download"
+                                       data-target="tooltip" class="readmore" id="readmore">
+                                        NSS Report 2014-23
+                                    </a>
+                                </section>
+                                <h2 class="page_head pt32">NSS Activities</h2>
+                                <div class="achievement">
+                                    <section class="achievement-card">
+                                        <div class="achievement-card-image">
+                                            <img src="/emea_college_theme/static/img/achivement.jpg" alt=""/>
+                                        </div>
+                                        <div class="achievement-card-box">
+                                            <h1 class="achievement-card-name">Activity Head</h1>
+                                            <p class="achievement-card-p">
+                                                The college has proudly secured top rankings in a recent national
+                                                academic
+                                                assessment, highlighting its commitment to excellence.
+                                            </p>
+                                            <a href="#"
+                                               class="readmore pos_relative">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="nss_page" model="website.page">
+            <field name="url">/nss</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="nss"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

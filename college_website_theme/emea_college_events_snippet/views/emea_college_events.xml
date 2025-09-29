@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="view_blog_post_form_inherit_description" model="ir.ui.view">
+            <field name="name">blog_post.view.form.inherit.description</field>
+            <field name="model">blog.post</field>
+            <field name="inherit_id" ref="website_blog.view_blog_post_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='subtitle']" position="after">
+                    <field name="event_description"/>
+                    <field name="event_image" widget="image" class="oe_avatar"/>
+                    <field name="event_date"/>
+                    <field name="event_location"/>
+                    <field name="is_homepage"/>
+                    <field name="is_highlight"/>
+                    <field name="is_achievements"/>
+                </xpath>
+            </field>
+        </record>
+        <!--News Show in Homepage-->
+        <record id="dynamic_filter_show_in_homepage_filter" model="ir.filters">
+            <field name="name">Event Show in Homepage</field>
+            <field name="model_id">blog.post</field>
+            <field name="user_id" eval="False"/>
+            <field name="domain">
+                [('post_date', '&lt;=', context_today()), ('is_homepage', '=', 'True')]
+            </field>
+            <field name="sort">['post_date desc']</field>
+            <field name="action_id" ref="website.action_website"/>
+        </record>
+        <!--News Show in Homepage add in filter-->
+        <record id="dynamic_filter_show_in_homepage" model="website.snippet.filter">
+            <field name="name">Latest Event Show in Homepage</field>
+            <field name="filter_id" ref="emea_college_events_snippet.dynamic_filter_show_in_homepage_filter"/>
+            <field name="field_names">name,teaser,subtitle</field>
+            <field name="limit" eval="16"/>
+            <!-- ... -->
+        </record>
+        <record id="dynamic_filter_upcoming_event_filter" model="ir.filters">
+            <field name="name">Upcoming Event</field>
+            <field name="model_id">blog.post</field>
+            <field name="user_id" eval="False"/>
+            <field name="domain">
+                [('event_date', '>', context_today())]
+            </field>
+            <field name="sort">['event_date asc']</field>
+            <field name="action_id" ref="website.action_website"/>
+        </record>
+        <record id="dynamic_filter_upcoming" model="website.snippet.filter">
+            <field name="name">Upcoming Events</field>
+            <field name="filter_id" ref="emea_college_events_snippet.dynamic_filter_upcoming_event_filter"/>
+            <field name="field_names">name,teaser,subtitle</field>
+            <field name="limit" eval="16"/>
+            <!-- ... -->
+        </record>
+
+        <!--Highlight News-->
+        <record id="dynamic_filter_highlight_filter" model="ir.filters">
+            <field name="name">Highlight Events</field>
+            <field name="model_id">blog.post</field>
+            <field name="user_id" eval="False"/>
+            <field name="domain">
+                [('post_date', '&lt;=', context_today()), ('is_highlight', '=', 'True')]
+            </field>
+            <field name="sort">['post_date desc']</field>
+            <field name="action_id" ref="website.action_website"/>
+        </record>
+        <!--Highlight News add in filter-->
+        <record id="dynamic_filter_highlight" model="website.snippet.filter">
+            <field name="name">Highlight Events</field>
+            <field name="filter_id" ref="emea_college_events_snippet.dynamic_filter_highlight_filter"/>
+            <field name="field_names">name,teaser,subtitle</field>
+            <field name="limit" eval="16"/>
+        </record>
+        <!--Achievements-->
+        <record id="dynamic_filter_achievements_filter" model="ir.filters">
+            <field name="name">Achievements</field>
+            <field name="model_id">blog.post</field>
+            <field name="user_id" eval="False"/>
+            <field name="domain">
+                [('post_date', '&lt;=', context_today()), ('is_achievements', '=', 'True')]
+            </field>
+            <field name="sort">['post_date desc']</field>
+            <field name="action_id" ref="website.action_website"/>
+        </record>
+        <!--Achievements  add in filter-->
+        <record id="dynamic_filter_achievements" model="website.snippet.filter">
+            <field name="name">Achievements</field>
+            <field name="filter_id" ref="emea_college_events_snippet.dynamic_filter_achievements_filter"/>
+            <field name="field_names">name,teaser,subtitle</field>
+            <field name="limit" eval="16"/>
+        </record>
+    </data>
+</odoo>

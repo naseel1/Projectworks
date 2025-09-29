@@ -1,0 +1,76 @@
+<odoo>
+    <data>
+        <record id="college_magazine" model="ir.ui.view">
+            <field name="name">College Magazine</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.college_magazine</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.college_magazine_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">College Magazines</h2>
+                                <div class="col-md-12 Marginbottom">
+                                    <div class="container-fluid">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-3" style="margin:40px 0px; align-items:center">
+                                                <a href="http://emeacollege.ac.in/Uploads/Files/തുറന്ന പുസ്തകം.pdf"
+                                                   target="_blank" title="Download" data-target="tooltip">
+                                                    <img class="img-fluid d-block mx-auto border-1 magazine"
+                                                         src="http://emeacollege.ac.in/uploads/images/Images_M0_D1008_F1759.jpeg"
+                                                         width="200"/>
+                                                    <h6 class="text-center magazine-text m-0 Font-W600">COLLEGE MAGAZINE
+                                                        2020-2021
+                                                    </h6>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3" style="margin:40px 0px; align-items:center">
+                                                <a href="http://emeacollege.ac.in/Uploads/Files/വള്ളിo തെറ്റി പുള്ളിo തെറ്റി.pdf"
+                                                   target="_blank" title="Download" data-target="tooltip">
+                                                    <img class="img-fluid d-block mx-auto border-1 magazine"
+                                                         src="http://emeacollege.ac.in/uploads/images/Images_M0_D782_F1758.jpeg"
+                                                         width="200"/>
+                                                    <h6 class="text-center magazine-text m-0 Font-W600">COLLEGE MAGAZINE
+                                                        2019-2020
+                                                    </h6>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3" style="margin:40px 0px; align-items:center">
+                                                <a href="http://emeacollege.ac.in/Uploads/Files/EMEA College_Magazine_2019.pdf"
+                                                   target="_blank" title="Download" data-target="tooltip">
+                                                    <img class="img-fluid d-block mx-auto border-1 magazine"
+                                                         src="http://emeacollege.ac.in/uploads/images/Images_M0_D523_F645.jpeg"
+                                                         width="200"/>
+                                                    <h6 class="text-center magazine-text m-0 Font-W600">COLLEGE MAGAZINE
+                                                        2018-2019
+                                                    </h6>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3" style="margin:40px 0px; align-items:center">
+                                                <a href="http://emeacollege.ac.in/Uploads/Files/kama emea clg magazine.pdf"
+                                                   target="_blank" title="Download" data-target="tooltip">
+                                                    <img class="img-fluid d-block mx-auto border-1 magazine"
+                                                         src="http://emeacollege.ac.in/uploads/images/Images_M0_D524_F646.jpeg"
+                                                         width="200"/>
+                                                    <h6 class="text-center magazine-text m-0 Font-W600">COLLEGE MAGAZINE
+                                                        2017-2018
+                                                    </h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_magazine_page" model="website.page">
+            <field name="url">/college_magazine</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="college_magazine"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

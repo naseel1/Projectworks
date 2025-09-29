@@ -1,0 +1,46 @@
+<odoo>
+    <record id="view_examination_calendar_config_form" model="ir.ui.view">
+        <field name="name">examination.calendar.config.form</field>
+        <field name="model">examination.calendar</field>
+        <field name="arch" type="xml">
+            <form string="Examination calendar">
+                <sheet>
+                    <group>
+                        <field name="calendar_name"/>
+                        <field name="pdf_file" filename="file_name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for  Career Manage -->
+    <record id="view_examination_calendar_config_tree" model="ir.ui.view">
+        <field name="name">examination.calendar.config.tree</field>
+        <field name="model">examination.calendar</field>
+        <field name="arch" type="xml">
+            <tree string="Examination calendar">
+                <field name="calendar_name"/>
+                <field name="file_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for  Career Manage -->
+    <record id="action_examination_calendar" model="ir.actions.act_window">
+        <field name="name">Examination calendar</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">examination.calendar</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_examination_calendar_config_tree"/>
+    </record>
+    <menuitem id="menu_examinations_root" name="Examinations" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_examination_calendar"
+              name="Calendar"
+              parent="menu_examinations_root"
+              action="action_examination_calendar"
+              sequence="10"
+              groups="examinations.group_examinations_manage_admin"/>
+
+</odoo>

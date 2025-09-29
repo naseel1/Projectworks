@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+        <record id="environmental_policy" model="ir.ui.view">
+            <field name="name">Environmental Policy</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.environmental_policy</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.environmental_policy_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align:left">Environmental policy</h2>
+                                            <div class="content_text" style="text-align:left;padding: 0;">
+                                                Our institution is devoted to excel not only in educational pursuits but
+                                                also in endeavors that promote enhanced environmental consciousness
+                                                among the youth, with the objective of active contribution in shaping a
+                                                more conducive world to inhabit.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+<!--        <section class="pt48 bg_color">-->
+<!--            <div class="container" id="container_width">-->
+<!--                <t t-foreach="data" t-as="allprogramme">-->
+<!--                    <h2 class="main-head" style="text-align:left;">-->
+<!--                        <t t-esc="allprogramme['graduation_name']"/>-->
+<!--                    </h2>-->
+<!--                    <div class="row" style="row-gap: 2rem;gap: 2rem;">-->
+<!--                        <t t-foreach="allprogramme.get('programmes', [])"-->
+<!--                           t-as="programme">-->
+<!--                            <div class="prog">-->
+<!--                                <h3 class="programme_name">-->
+<!--                                    <t t-esc="programme['programme_name']"/>-->
+<!--                                </h3>-->
+<!--                                <div id="syllabus">-->
+<!--                                    <t t-foreach="programme.get('syllabus', [])"-->
+<!--                                       t-as="syllabus">-->
+<!--                                        <a t-att-href="str(syllabus['link'])"-->
+<!--                                           class="programme_link" target="_blank">-->
+<!--                                            <t t-esc="syllabus['syllabus_name']"/>-->
+<!--                                            <span class="fa fa-long-arrow-right text-o-color-3"-->
+<!--                                                  data-bs-original-title=""-->
+<!--                                                  title="" aria-describedby="tooltip544395"></span>-->
+<!--                                        </a>-->
+
+
+<!--                                    </t>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </t>-->
+<!--                    </div>-->
+<!--                </t>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <record id="environmental_policy_page" model="website.page">
+            <field name="url">/environmental_policy</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="environmental_policy"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,292 @@
+<odoo>
+    <data>
+        <record id="programmes_emea" model="ir.ui.view">
+            <field name="name">Programmes</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.programmes_emea</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="emea_college_theme.programmes_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                     <div class="clubs">Programmes
+                                            </div>
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs1"
+                                                           data-original-title="" title="" class="nav-link active"
+                                                           aria-controls="tabs1">UG Programmes
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs2"
+                                                           data-original-title="" title="" class="nav-link">PG
+                                                            Programmes
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Research
+                                                            Programmes
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                                             id="page-content">
+                                            <div id="tabs1" class=" tab-pane fade active show" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs1">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">UG Programmes</h2>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-5 programme_link">B.A. Economics
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. West Asian Studies
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.Com with Computer
+                                                            Application
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.Com with Co-operation
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.Sc. Biotechnology (SF)
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                            <div id="tabs2" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs2">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">PG Programmes</h2>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">B.A. Economics
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">M.A. English
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">M.A History (SF)
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 v">M.Com-Finance
+
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">M.Sc. Microbiology (SF)
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                </div>
+
+                                            </div>
+                                            <div id="tabs3" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs3">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Research Programmes</h2>
+                                                    <section class="d-flex o_colored_level margin_30"
+                                                             style="background-image: none;">
+                                                        <div class="col-md-4 programme_link">Ph.D in Economics
+                                                        </div>
+                                                        <span class="readmore" id="view">Syllabus
+                                                            <a href="#"
+                                                               data-mimetype="application/pdf"
+                                                               class="o_image seminar" scontenteditable="false"/>
+                                                        </span>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="programmes_emea_page" model="website.page">
+            <field name="url">/programmes</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="programmes_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

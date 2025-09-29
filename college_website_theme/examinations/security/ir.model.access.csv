@@ -1,0 +1,20 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_examination_calendar_admin,Examination Calendar Admin,model_examination_calendar,base.group_user,1,1,1,1
+access_examination_calendar_public,Examination Calendar Public,model_examination_calendar,base.group_public,1,0,0,0
+access_examination_calendar_portal,Examination Calendar Portal,model_examination_calendar,base.group_portal,1,0,0,0
+
+access_notice_board_admin,Notice Board Admin,model_notice_board,base.group_user,1,1,1,1
+access_notice_board_public,Notice Board Public,model_notice_board,base.group_public,1,0,0,0
+access_notice_board_portal,Notice Board Portal,model_notice_board,base.group_portal,1,0,0,0
+
+access_ese_admin,End Semester Examination Admin,model_end_semester,base.group_user,1,1,1,1
+access_ese_public,End Semester Examination Public,model_end_semester,base.group_public,1,0,0,0
+access_ese_portal,End Semester Examination Portal,model_end_semester,base.group_portal,1,0,0,0
+
+access_examination_results_admin,Examination Results Admin,model_exam_results,base.group_user,1,1,1,1
+access_examination_results_public,Examination Results Public,model_exam_results,base.group_public,1,0,0,0
+access_examination_results_portal,Examination Results Portal,model_exam_results,base.group_portal,1,0,0,0
+
+access_examination_calendar_user,Examination Calendar User,model_examination_calendar,base.group_user,1,1,1,1
+access_examination_calendar_public,Examination Calendar Public,model_examination_calendar,base.group_public,1,0,0,0
+access_examination_calendar_portal,Examination Calendar Portal,model_examination_calendar,base.group_portal,1,0,0,0

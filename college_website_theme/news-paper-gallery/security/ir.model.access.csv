@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+,,,,,,,,
+access_news_paper_public,news.paper public access,model_news_paper,,1,0,0,0
+access_news_paper_user,news.paper user access,model_news_paper,news-paper-gallery.group_news_paper_admin,1,1,1,1
+

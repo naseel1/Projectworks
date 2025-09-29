@@ -1,0 +1,141 @@
+<odoo>
+    <data>
+        <record id="organogram" model="ir.ui.view">
+            <field name="name">organogram</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.organogram</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="mes_college.organogram_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="container" id="container_width">
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Organogram
+                                    </h2>
+                                    <figure class="org-chart cf" style="height:100vh;">
+                                        <div class="board ">
+                                            <ul class="columnTwo">
+                                                <li>
+                                                    <span>
+                                                        <strong>Government of Kerala</strong>
+
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        <strong>UGC</strong>
+
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <ul class="columnTwo">
+                                                <li>
+                                                    <span>
+                                                        <strong>University of calicut</strong>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        <strong>College Managing Committee
+                                                        </strong>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <ul class="departments ">
+                                            <li class="org_department ">
+                                                <span class="lvl-b">
+                                                    <strong>Principal</strong>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <ul class="departments columnTwo" style="top: 20px;position: relative;">
+                                            <li style="position: absolute;max-width: 260px;left: 18%;">
+                                                <span>
+                                                    <strong>College Council</strong>
+                                                </span>
+                                            </li>
+                                            <li class="department " style="top: -10px;">
+                                                <div class="lvl-b vice_principal">
+                                                    <strong>Vice Principal</strong>
+                                                </div>
+
+                                            </li>
+                                            <li style="position: absolute;max-width: 260px;right: 18%;">
+                                                <span>
+                                                    <strong>IQAC</strong>
+
+
+                                                </span>
+                                            </li>
+
+                                        </ul>
+                                        <ul class="columnTwo" style="top: 50px;">
+
+                                            <li style="float: left;">
+                                                <span>
+                                                    <strong>Head of Departments</strong>
+                                                </span>
+                                            </li>
+                                            <span class="head_of">
+
+                                            </span>
+
+                                            <li style="top:-70px;">
+                                                <span>
+                                                    <strong>Office Superintendent
+                                                    </strong>
+                                                </span>
+                                            </li>
+                                            <span class="office_super"/>
+                                            <span class="teaching"/>
+                                        </ul>
+                                        <ul class="columndown">
+                                            <li style="min-width: 200px;">
+                                                <span class="teaching_staff">
+                                                    <strong>Teaching Staff</strong>
+                                                </span>
+                                            </li>
+                                            <li style="min-width: 200px;">
+                                                <span class="various">
+                                                    <strong>Various Committee
+                                                    </strong>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <ul class="columndown" id="column_last">
+                                            <li style="min-width: 200px;">
+                                                <span class="teaching_staff">
+                                                    <strong>Office Staff</strong>
+                                                </span>
+                                            </li>
+                                            <li style="min-width: 200px;">
+                                                <span>
+                                                    <strong>Technical Staff
+                                                    </strong>
+                                                </span>
+                                            </li>
+                                            <li style="min-width: 200px;">
+                                                <span>
+                                                    <strong>library Staff
+                                                    </strong>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="organogram_page" model="website.page">
+            <field name="url">/organogram</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="organogram"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

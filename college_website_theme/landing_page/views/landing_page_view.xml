@@ -1,0 +1,294 @@
+<odoo>
+    <!-- Form View for Awards -->
+    <record id="view_landing_page_config_form" model="ir.ui.view">
+        <field name="name">landing.page.config.form</field>
+        <field name="model">landing.page</field>
+        <field name="arch" type="xml">
+            <form string="Landing Page">
+                <sheet>
+                    <group>
+                        <field name="title" string="Title"/>
+                        <field name="image" string="Image"/>
+                        <field name="description" string="Description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Awards -->
+    <record id="view_landing_page_config_tree" model="ir.ui.view">
+        <field name="name">landing.page.config.tree</field>
+        <field name="model">landing.page</field>
+        <field name="arch" type="xml">
+            <tree string="Landing Page">
+                <field name="title" string="Title"/>
+                <field name="image" string="Image"/>
+                <field name="description" string="Description"/>
+                <!-- Updated to use date instead of sequence -->
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Awards -->
+    <record id="action_landing_page" model="ir.actions.act_window">
+        <field name="name">Landing Page</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">landing.page</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_landing_page_config_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Data Found
+            </p>
+        </field>
+    </record>
+
+    <!--         Placement Section        -->
+    <!-- Form View for Placement Section -->
+    <record id="view_placement_config_form" model="ir.ui.view">
+        <field name="name">placement.config.form</field>
+        <field name="model">placement.section</field>
+        <field name="arch" type="xml">
+            <form string="Placement Section">
+                <sheet>
+                    <group>
+                        <field name="placement_image" string="Image"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Placement Section -->
+    <record id="view_placement_config_tree" model="ir.ui.view">
+        <field name="name">placement.config.tree</field>
+        <field name="model">placement.section</field>
+        <field name="arch" type="xml">
+            <tree string="Placement Section">
+                <field name="placement_image" string="Image"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Placement Section -->
+    <record id="action_placement" model="ir.actions.act_window">
+        <field name="name">Placement Section</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">placement.section</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_placement_config_tree"/>
+    </record>
+
+    <!--         Gallery Section        -->
+    <!-- Form View for Gallery Section -->
+    <record id="view_gallery_config_form" model="ir.ui.view">
+        <field name="name">gallery.config.form</field>
+        <field name="model">gallery.section</field>
+        <field name="arch" type="xml">
+            <form string="Gallery Section">
+                <sheet>
+                    <group>
+                        <field name="visitor_name" string="Visitor Name"/>
+                        <field name="gallery_image" string="Image"/>
+                        <field name="gallery_description" string="Description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Gallery Section -->
+    <record id="view_gallery_config_tree" model="ir.ui.view">
+        <field name="name">gallery.config.tree</field>
+        <field name="model">gallery.section</field>
+        <field name="arch" type="xml">
+            <tree string="Gallery Section">
+                <field name="visitor_name" string="Visitor Name"/>
+                <field name="gallery_image" string="Image"/>
+                <field name="gallery_description" string="Description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Gallery Section -->
+    <record id="action_gallery" model="ir.actions.act_window">
+        <field name="name">Gallery Section</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">gallery.section</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_gallery_config_tree"/>
+    </record>
+
+    <!--         Student Voice Section        -->
+    <!-- Form View for Student Voice Section -->
+    <record id="view_student_voice_config_form" model="ir.ui.view">
+        <field name="name">student.voice.config.form</field>
+        <field name="model">student.voice</field>
+        <field name="arch" type="xml">
+            <form string="Student Voice Section">
+                <sheet>
+                    <group>
+                        <field name="student_name" string="Student Name"/>
+                        <field name="batch" string="Batch"/>
+                        <field name="student_image" string="Image"/>
+                        <field name="student_description" string="Description"/>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Student Voice Section -->
+    <record id="view_student_voice_config_tree" model="ir.ui.view">
+        <field name="name">student.voice.config.tree</field>
+        <field name="model">student.voice</field>
+        <field name="arch" type="xml">
+            <tree string="Student Voice Section">
+                <field name="student_name" string="Student Name"/>
+                <field name="batch" string="Batch"/>
+                <field name="student_image" string="Image"/>
+                <field name="student_description" string="Description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Student Voice Section -->
+    <record id="action_student_voice" model="ir.actions.act_window">
+        <field name="name">Student Voice Section</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">student.voice</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_student_voice_config_tree"/>
+    </record>
+
+    <!--         News Letter Section        -->
+    <!-- Form View for News Letter Section -->
+    <record id="view_news_letter_config_form" model="ir.ui.view">
+        <field name="name">news.letter.config.form</field>
+        <field name="model">news.letter</field>
+        <field name="arch" type="xml">
+            <form string="News Letter Section">
+                <sheet>
+                    <group>
+                        <field name="title" string="Title"/>
+                        <field name="news_image" string="Image"/>
+                        <field name="file_data" string="Upload File" widget="binary" filename="file_name"/>
+                        <field name="url" string="File URL" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for News Letter Section -->
+    <record id="view_news_letter_config_tree" model="ir.ui.view">
+        <field name="name">news.letter.config.tree</field>
+        <field name="model">news.letter</field>
+        <field name="arch" type="xml">
+            <tree string="News Letter Section">
+                <field name="title" string="Title"/>
+                <field name="url" string="File URL" readonly="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for News Letter Section -->
+    <record id="action_news_letter" model="ir.actions.act_window">
+        <field name="name">News Letter Section</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">news.letter</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_news_letter_config_tree"/>
+    </record>
+
+    <!--         Career Manage        -->
+    <!-- Form View for  Career Manage -->
+    <record id="view_career_manage_config_form" model="ir.ui.view">
+        <field name="name">career.manage.config.form</field>
+        <field name="model">career.manage</field>
+        <field name="arch" type="xml">
+            <form string="Add Career">
+                <sheet>
+                    <group>
+                        <field name="post_title" string="Title"/>
+                        <field name="available_post" string="Post Available "/>
+                        <field name="job_description" string="Job description"/>
+                        <field name="experience" string="Experience"/>
+                        <field name="job_type" string="Job Type"/>
+                        <field name="last_date" string="Last date of apply"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for  Career Manage -->
+    <record id="view_career_manage_config_tree" model="ir.ui.view">
+        <field name="name">career.manage.config.tree</field>
+        <field name="model">career.manage</field>
+        <field name="arch" type="xml">
+            <tree string="Add Career">
+                <field name="post_title" string="Title"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for  Career Manage -->
+    <record id="action_career_manage" model="ir.actions.act_window">
+        <field name="name">Add Career</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">career.manage</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_career_manage_config_tree"/>
+    </record>
+
+
+    <!-- Menu Items for Landing Page -->
+    <menuitem id="menu_landing_page_root" name="Website Data Manage" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <!-- Menu Items for Awards and Achievements -->
+    <menuitem id="menu_awards_and_achievements"
+              name="Manage Award and Achievements"
+              parent="menu_landing_page_root"
+              action="action_landing_page"
+              sequence="20"
+              groups="landing_page.group_landing_page_admin"/>
+    <!-- Menu Items for Placement -->
+    <menuitem id="menu_placement"
+              name="Placement Section"
+              parent="menu_landing_page_root"
+              action="action_placement"
+              sequence="21"
+              groups="landing_page.group_landing_page_admin"/>
+    <!-- Menu Items for Gallery -->
+    <menuitem id="menu_gallery"
+              name="Gallery Section"
+              parent="menu_landing_page_root"
+              action="action_gallery"
+              sequence="22"
+              groups="landing_page.group_landing_page_admin"/>
+    <!-- Menu Items for Voice Of Students -->
+    <menuitem id="menu_students_voice"
+              name="Students Voice Section"
+              parent="menu_landing_page_root"
+              action="action_student_voice"
+              sequence="23"
+              groups="landing_page.group_landing_page_admin"/>
+    <!-- Menu Items for News Letter -->
+    <menuitem id="menu_news_letter"
+              name="Students News Letter"
+              parent="menu_landing_page_root"
+              action="action_news_letter"
+              sequence="23"
+              groups="landing_page.group_landing_page_admin"/>
+     <!-- Menu Items for Add Career -->
+    <menuitem id="menu_career_manage"
+              name="Add Career"
+              parent="menu_landing_page_root"
+              action="action_career_manage"
+              sequence="23"
+              groups="landing_page.group_landing_page_admin"/>
+
+</odoo>

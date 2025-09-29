@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="mes_college_home" name="  College Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"/>
+
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="o_colored_level" loading="lazy" style="background-image: none;">
+                    <div id="banner_image">
+
+
+                        <div class="fadesample color-me-in">
+
+                            <div class="dark"/>
+                            <img src="/mes_college/static/img/banner.jpg" class="banner" style="z-index: 1;"
+                                 loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip194006"
+                                 alt=""/>
+
+                            <div class="centered">
+                                <h2 class="bannerh2 m-0 d-inline-block" role="heading" level="1">KALLADI COLLEGE
+                                </h2>
+                                <span id="underline">
+                                </span>
+                                <p class="bannerp m-0">
+                                    “The future belongs to those
+                                    <br/>
+                                    who believe in the beauty of their dreams.
+                                    <a href="https://meskc.ac.in/360-virtual-reality-tour" class="readmore" id="virtual"
+                                       target="_blank">Virtual Tour
+                                        <span class="fa fa-long-arrow-right text-o-color-3" data-bs-original-title=""
+                                              title="" aria-describedby="tooltip544395"
+                                              style="color: #F6F6F6 !important;"/>
+                                    </a>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <style>
+
+                    .achieve-img {
+                    top:-20px;
+                    position:relative;
+                    width: 65% !important;
+                    height: auto;
+                    border-radius: 0;
+                    }
+                    #achievements-image {
+                    margin:0;
+                    height: 300px;
+                    margin-left: 15px;
+                    background:transparent;
+                    }
+                    .centered {
+                    top: 25%;
+                    z-index: 11;}
+                    .bannerp {
+                    font-family: Poppins;
+                    font-size: 22px;
+                    font-weight: 500;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    }
+                    #boxes{position: fixed;
+                    top: 120px;
+                    z-index: 10000;
+                    width: 100%;
+                    height: 100%;
+                    min-width: 300px;
+                    left: auto;
+                    scale: 0.8;
+                    max-width: 100%;
+                    justify-content: center;
+                    display: flex;
+                    max-height:650px !important;
+                    }
+                    #boxes #dialog {
+                    margin: auto;
+                    max-width: 100%;
+                    height: auto;
+                    padding: 0;
+                    font-size: 15pt;
+                    left: auto !important;
+                    min-width: 300px;
+                    top: 0 !important;
+                    }
+                    #boxes{
+                    position: fixed;
+                    top: 120px;
+
+                    }
+                    #mask {
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    z-index:9000;
+
+                    display:none;
+                    }
+                    #upcoming-card-image img {
+                    object-fit: cover;
+                    }
+                    #boxes .window {
+                    position: absolute;
+                    top: 0% !important;
+                    z-index: 9999;
+                    text-align: center;
+
+                    background-clip: padding-box;
+
+                    outline: 0;
+                    }
+                    #boxes #dialog {
+                    width:450px;
+                    height:auto;
+                    padding: 0;
+                    font-size: 15pt;
+                    }
+
+                    .agree:hover{
+                    background-color: #D1D1D1;
+                    }
+                    .popupoption:hover{
+                    background-color:#D1D1D1;
+                    color: green;
+                    }
+                    .popupoption2:hover{
+                    color: red;
+                    }
+                    .agree {
+                    font-weight: 600;
+                    position: absolute;
+                    color: white;
+                    right: 0;
+                    font-size: 1rem;
+                    background: black;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: sans-serif;
+                    border-radius: 0 0px 0 10px;
+                    transition: all 0.3s ease-in-out;
+                    }
+                    #upcoming-card-image img {
+                    object-fit: fill;
+                    max-height: 395px !important;
+                    border-radius:5px;}
+
+                    #upcoming-card-image {
+                    border-radius:5px;
+                    }
+                    @media(max-width:600px){
+
+                    #san img{
+                    width: 100% !important;
+                    }
+                    .bannerp {
+                    font-size: 18px ! IMPORTANT;
+                    padding: 0 5px !important;
+                    }
+                    #upcoming-card-image img {
+                    max-height:350px !important;
+                    }
+                    #upcoming-card-image {
+                    min-height: 380px;
+                    margin-bottom: 40px;
+                    }
+
+                    }
+                    .s_carousel.s_carousel_default .carousel-indicators li, .s_quotes_carousel.s_carousel_default
+                    .carousel-indicators li {
+                    height: 12px !important;}
+                </style>
+
+
+                <div class="announcement">
+                    <span id="announce_head" class="o_default_snippet_text">FLASH NEWS</span>
+                    <scetion class="announcement_content">
+                        <marquee id="announce" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+                            <ul class="d-flex  m-0 text-white" data-original-title="" title=""
+                                aria-describedby="tooltip39087" style="gap: 110px;">
+                                <section style="background-image: none;" class="o_colored_level">
+                                    <a href="/web/content/844?unique=7ba9de5a2d3ae4628f9ddb89155ea75a9ab9ecde"
+                                       data-original-title="" title="" class="flash_text" data-bs-original-title=""
+                                       target="_blank"
+                                       aria-label="Sports Quota Ranklist.pdf - opens in new tab - opens in new tab - opens in new tab - opens in new tab">
+                                        Sports Quota Ranklist.pdf
+                                    </a>
+                                </section>
+                                <section style="background-image: none;" class="o_colored_level">
+                                    <a href="/web/content/843?unique=33b7fe302686e7b3c020b687c544b8571ce345f9"
+                                       data-original-title="" title="" class="flash_text" data-bs-original-title=""
+                                       target="_blank"
+                                       aria-label="Integrated Psycology Sports quota rank list.pdf - opens in new tab - opens in new tab - opens in new tab - opens in new tab">
+                                        Integrated Psycology Sports quota rank list.pdf
+                                    </a>
+                                </section>
+                                <section style="background-image: none;" class="o_colored_level">
+                                    <a href="/web/content/860?unique=e366c1a86d1011d96d5da843a201eef2ddb35c5d"
+                                       data-original-title="" title="" class="flash_text" data-bs-original-title=""
+                                       target="_blank"
+                                       aria-label="Fourth Sem PG Internal Marks - opens in new tab - opens in new tab - opens in new tab - opens in new tab">
+                                        Fourth Sem PG Internal Marks
+                                    </a>
+                                    <br/>
+                                </section>
+                            </ul>
+                        </marquee>
+                    </scetion>
+                </div>
+                <section class="bg__color o_colored_level" loading="lazy" style="background-image: none;">
+                    <div class="row">
+                        <div class="col-12 col-md-6 principal_block o_colored_level o_animate o_animate_on_scroll o_animate_out o_anim_fade_in o_anim_from_left"
+                             data-scroll-zone-start="0" data-scroll-zone-end="100"
+                             style="animation-delay: -1.46617s; --wanim-intensity: 66;">
+                            <div>
+                                <h2 class="main-head" role="heading" level="1">Welcome To M.E.S Kalladi College</h2>
+                                <div class="text_">Kalladi College, Mannarkkad is the proud symbol of the Muslim
+                                    Educational Society,
+                                    Calicut to the
+                                    cause of higher education in Kerala, especially to the educationally backward areas
+                                    of
+                                    Malabar. This is
+                                    the first college started by the and it is also the felicitous outcome of the
+                                    nobleii endeavor of the late
+                                    Kalladi Cheriya Kunhammed Sahib and the local public. College is located in a vast
+                                    area,
+                                    a major part of
+                                    which was donated by the late Janab...
+                                </div>
+                                <a href="/welcome_mes" class="readmore">Read More
+                                    <span class="fa fa-long-arrow-right text-o-color-3" data-bs-original-title=""
+                                          title="" aria-describedby="tooltip544395"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 sec o_colored_level">
+                            <img src="/web/image/627-b914b460/mes.jpg" alt=""
+                                 class="w-100 h-100 img img-fluid o_we_custom_image o_animate o_animate_on_scroll o_animate_out o_anim_fade_in o_anim_from_right"
+                                 style="animation-delay: -1.46617s; --wanim-intensity: 59;" data-original-id="419"
+                                 data-original-src="/web/image/419-6a83787a/mes.jpg" data-mimetype="image/jpeg"
+                                 data-resize-width="927" data-quality="30" data-bs-original-title="" title=""
+                                 aria-describedby="tooltip669171" data-scroll-zone-start="0" data-scroll-zone-end="100"
+                                 loading="eager"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section3 o_colored_level oe_img_bg o_bg_img_center"
+                         style="background-image: url(&quot;/mes_college/static/img/section3.jpg&quot;);">
+                    <div class=" prince_container pt32">
+                        <div class="row">
+                            <div class="col-md-3 my-auto padding-0 o_colored_level prince_block">
+                                <div class="image-wrapper">
+                                    <img src="/web/image/628-70fb3b59/Rajesh.jpeg" alt=""
+                                         class="prince-img o_animate o_anim_zoom_out o_anim_from_left o_visible img img-fluid o_we_custom_image"
+                                         style="--wanim-intensity: 34; animation-duration: 2s;" data-original-id="626"
+                                         data-original-src="/web/image/626-314b6627/Rajesh.jpeg"
+                                         data-mimetype="image/jpeg" data-resize-width="512" loading="eager"/>
+                                </div>
+                            </div>
+                            <div class="col-md-9 align-left padding-0 o_colored_level principal_block o_animate o_anim_fade_in o_anim_from_right o_visible"
+                                 id="prince_message" style="animation-duration: 2s; --wanim-intensity: 23;">
+                                <h2 class="main-head pt-0" id="prince_head" role="heading" level="1">Principal’s
+                                    Message
+                                </h2>
+                                <div class="text_1">Kalladi College is one of the most prestigious institutions in
+                                    the Palakkad District. It is an
+                                    honour to lead as the principal of this esteemed institution as it surpasses all the
+                                    glories in ac
+                                    ademics, arts and sports. The institution serves as a promise to the society by
+                                    providing quality
+                                    education by reinforcing social commitment. The excellence the college renders
+                                    through the
+                                    education is an asset to the young generation. It caters...
+                                </div>
+                                <a href="/principal" class="readmore">Read More
+                                    <span class="fa fa-long-arrow-right text-o-color-3" data-bs-original-title=""
+                                          title="" aria-describedby="tooltip544395" contenteditable="false">​
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="pb32 bg__color o_colored_level" style="overflow: hidden; background-image: none;">
+                    <section class="gallery_head">
+                        <h2 class="main-head " id="gallery_head" role="heading" level="1">Our Gallery</h2>
+                    </section>
+                    <section class="gallery pt48 o_colored_level" style="background-image: none;">
+                        <figure class="gallery__item gallery__item--1">
+                            <img src="/web/image/630-7cf10a8a/gallery5%20%281%29.jpg" alt=""
+                                 class="gallery__img img img-fluid o_we_custom_image" data-original-id="625"
+                                 data-original-src="/web/image/625-72f014d5/gallery5%20%281%29.jpg"
+                                 data-mimetype="image/jpeg" data-resize-width="1024" data-bs-original-title="" title=""
+                                 aria-describedby="tooltip621525" style="" data-quality="31" loading="lazy"/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--2">
+                            <img src="/web/image/629-206ae5a8/gallery2.jpg" alt=""
+                                 class="gallery__img img img-fluid o_we_custom_image" data-original-id="624"
+                                 data-original-src="/web/image/624-18bc9cb4/gallery2.jpg" data-mimetype="image/jpeg"
+                                 data-resize-width="1024" data-quality="58" style="" loading="lazy"/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--3">
+                            <img src="/mes_college/static/img/gallery1.jpg" class="gallery__img" alt="Image 1"
+                                 loading="lazy" style="" data-bs-original-title="" title=""
+                                 aria-describedby="tooltip859930"/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--4">
+                            <img src="/web/image/619-c4b0baef/gallery6.jpg" alt=""
+                                 class="gallery__img img img-fluid o_we_custom_image" data-original-id="618"
+                                 data-original-src="/web/image/618-5782b009/gallery6.jpg" data-mimetype="image/jpeg"
+                                 data-resize-width="447" data-quality="40" loading="lazy" style=""
+                                 data-bs-original-title="" title="" aria-describedby="tooltip728515"/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--5">
+                            <img src="/mes_college/static/img/mes.jpg" class="gallery__img" alt="Image 1" loading="lazy"
+                                 style=""/>
+                            <a href="/gallery" class="readmore" id="gallery_view">View More
+                                <span class="fa fa-long-arrow-right text-o-color-3" style="white !important;"
+                                      data-bs-original-title="" title="" aria-describedby="tooltip544395"/>
+                            </a>
+                        </figure>
+                    </section>
+                </section>
+
+
+                <section class="pb32 bg__color o_colored_level" style="overflow: hidden; background-image: none;">
+                    <section class="news_head">
+                        <h2 class="main-head " id="news_head" role="heading" level="1">News And Events</h2>
+                        <div class="view">
+                            <a href="/news_events" id="readmore">View More
+                                <span class="fa fa-long-arrow-right" data-bs-original-title="" title=""
+                                      aria-describedby="tooltip544395"/>
+                            </a>
+                        </div>
+                        <span id="lines">
+
+                        </span>
+                    </section>
+                    <div id="events" class="carousel slide" data-snippet="event_carousel" data-name="Event carousel"
+                         data-bs-ride="carousel" style="padding: 0px 0px 5rem; background-image: none;">
+                        <div class="carousel-inner">
+                            <t t-foreach="grouped_data" t-as="group">
+                                <div t-att-class="'carousel-item department-item ' + ('active' if group_index == 0 else '')">
+                                    <t t-foreach="group" t-as="event">
+                                        <section class="news-card o_colored_level" style="background-image: none;">
+                                            <div class="news-card-image">
+                                                <t t-if="event['attachments']">
+                                                    <!-- Check if attachments exist -->
+                                                    <t t-set="first_attachment" t-value="event['attachments'][0]"/>
+                                                    <img t-if="first_attachment"
+                                                         t-att-src="str(first_attachment['attachment_link'])" alt=""
+                                                         loading="lazy" id="news-card-image" style=""/>
+                                                </t>
+                                            </div>
+                                            <div class="news-card-box">
+                                                <h1 class="news-card-name">
+                                                    <t t-if="event['program_name']">
+                                                        <t t-esc="event['program_name']"/>
+                                                    </t>
+                                                </h1>
+                                                <p class="news-card-p">
+                                                    <t t-if="event['description']">
+                                                        <t t-esc="event['description']"/>
+                                                    </t>
+                                                </p>
+                                                <t t-if="event['program_details_id']">
+                                                    <a t-att-href="str(event['program_details_id']) + '/programme_detail'"
+                                                       class="read_more">Read More
+                                                        <span class="fa fa-long-arrow-right" data-bs-original-title=""
+                                                              title="" aria-describedby="tooltip544395"/>
+                                                    </a>
+                                                </t>
+                                            </div>
+                                        </section>
+                                    </t>
+                                </div>
+                            </t>
+                        </div>
+                        <t t-if="grouped_data">
+                            <div class="carousel-indicators">
+                                <button type="button" class="active" data-bs-target="#events" data-bs-slide-to="0"/>
+                                <t t-foreach="range(1, len(grouped_data))" t-as="index">
+                                    <button type="button" data-bs-target="#events" t-att-data-bs-slide-to="index"/>
+                                </t>
+                            </div>
+                        </t>
+
+                    </div>
+
+                </section>
+                <section class="">
+                    <div id="container">
+                        <div class="row" style="justify-content: center;">
+                            <div class="col-md-3" id="upcome">
+                                <h2 class="main-head " style="padding-top: 20px;padding-left: 20px;text-align: center;">
+                                    Upcoming
+                                    Events
+                                </h2>
+
+                                <div id="upcoming_events" class="carousel slide" data-bs-ride="carousel"
+                                     data-snippet="upcoming_event_carousel" data-name="Upcoming Event carousel"
+                                     style="padding: 0px 0px 0rem; background-image: none;position:relative;">
+                                    <div class="carousel-inner">
+                                        <t t-foreach="grouped_upcoming_data" t-as="groups">
+                                            <div t-att-class="'carousel-item department-item ' + ('active' if groups_index == 0 else '')">
+                                                <t t-foreach="groups" t-as="events">
+                                                    <section class="news-card o_colored_level" id="upcoming_card"
+                                                             style="background-image: none;">
+                                                        <div class="news-card-image" id="upcoming-card-image">
+                                                            <t t-if="events['poster_link']">
+                                                                <img t-att-src="str(events['poster_link'])" alt=""
+                                                                     loading="lazy" id="news-card-image"
+                                                                     style="max-height:100% !important;"/>
+                                                            </t>
+                                                            <div class="news-card-box" id="news-card-box">
+                                                                <h1 class="news-card-name"
+                                                                    style="color:white !important;">
+                                                                    <t t-if="events['program_name']">
+                                                                        <t t-esc="events['program_name']"/>
+                                                                    </t>
+                                                                </h1>
+                                                                <p class="news-card-p" style="color:white !important;">
+                                                                    <t t-if="events['description']">
+                                                                        <t t-esc="events['description']"/>
+                                                                    </t>
+                                                                </p>
+                                                                <t t-if="events['program_details_id']">
+                                                                    <a t-att-href="str(events['program_details_id']) + '/programme_detail'"
+                                                                       class="read_more" id="upcome_more">Read More
+                                                                        <span class="fa fa-long-arrow-right"
+                                                                              data-bs-original-title="" title=""
+                                                                              aria-describedby="tooltip544395"/>
+                                                                    </a>
+                                                                </t>
+                                                            </div>
+                                                        </div>
+
+                                                    </section>
+                                                </t>
+                                            </div>
+                                        </t>
+
+                                    </div>
+
+                                    <t t-if="grouped_upcoming_data"> <!-- Add this condition to check if there is data -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" class="active" data-bs-target="#upcoming_events"
+                                                    data-bs-slide-to="0"/>
+
+                                            <t t-foreach="range(1, len(grouped_upcoming_data))" t-as="index">
+                                                <button type="button" data-bs-target="#upcoming_events"
+                                                        t-att-data-bs-slide-to="index"/>
+                                            </t>
+                                        </div>
+                                    </t>
+
+                                </div>
+                            </div>
+                            <div class="col-md-5 pb32" id="attappadi_porject">
+                                <div style="position:relative;">
+                                    <h2 class="main-head " style="padding-top: 20px;text-align: center;">
+                                        Attappadi Projects
+                                    </h2>
+                                    <a href="attappadi" id="readmore" class="view-more"
+                                       style="    margin-right: 10px;right:0;">View More
+                                        <span class="fa fa-long-arrow-right" data-bs-original-title="" title=""
+                                              aria-describedby="tooltip544395"/>
+                                    </a>
+                                </div>
+                                <section>
+                                    <style>
+                                        .news-card-image {
+                                        min-height:280px;
+                                        }
+                                        .project_section{
+                                        display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                                        grid-auto-rows: 195px;
+                                        grid-auto-flow: dense;
+                                        grid-gap: 10px;}
+                                        .project_section #project{
+                                        grid-column: span 1;
+                                        grid-row: span 1;
+                                        max-width: 100%;
+                                        max-width:100%;
+                                        min-width: 200px;
+                                        }
+                                        #project img {
+                                        width: 100%;
+                                        height: 100%;
+                                        opacity: 1;
+                                        object-fit: cover;
+                                        transition:all 0.3s ease-in-out;
+                                        }
+                                        #project img:hover {
+                                        opacity: 1;
+                                        scale: 1.05;
+                                        }
+                                        @media (max-width: 1439px) and (min-width: 1001px) {
+                                        .news_head {
+                                        grid-template-rows: repeat(1, 10vw) !important;
+                                        }
+                                        }
+                                    </style>
+                                    <div class="project_section">
+                                        <div id="project">
+                                            <img src="/mes_college/static/img/IMG_7167-330x370.jpg" loading="lazy"
+                                                 style=""/>
+                                        </div>
+                                        <div id="project">
+                                            <img src="/mes_college/static/img/IMG_7148-330x370.jpg" loading="lazy"
+                                                 style=""/>
+                                        </div>
+                                        <div id="project">
+                                            <img src="/mes_college/static/img/IMG-20190424-WA0014-330x370.jpg"
+                                                 loading="lazy" style=""/>
+                                        </div>
+                                        <div id="project">
+                                            <img src="/mes_college/static/img/IMG-20190320-WA0034-330x370.jpg"
+                                                 loading="lazy" style=""/>
+                                        </div>
+                                        <div class="project">
+                                            <img src="/mes_college/static/img/IMG-20190320-WA0033-330x370.jpg"
+                                                 loading="lazy" style=""/>
+                                        </div>
+                                        <div class="project" style="border-bottom-right-radius:60px;">
+                                            <img src="/mes_college/static/img/IMG-20181108-WA0057-330x370.jpg"
+                                                 loading="lazy" style=""/>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg__color pb32 o_colored_level s_carousel_wrapper" id="section_news"
+                         style="background-image: none;" data-name="Carousel">
+                    <div class="container" style="max-width:90%;">
+                        <h2 class="main-head " style="    padding-top: 30px;" role="heading" level="1">Achievements</h2>
+                        <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel"
+                                 data-name="Carousel">
+                            <div class="s_carousel s_carousel_default carousel achieve_carousel slide pointer-event"
+                                 data-bs-interval="10000" id="achievement_carousels" style="background-image: none;">
+
+                                <div class="container  pb32">
+                                    <style>
+                                        .news_head {
+                                        grid-template-rows: none;
+                                        padding-top: 0;
+                                        }
+                                        .achieve_card {
+                                        width:80%;
+                                        padding: 10px;
+                                        }
+                                        #achievement{
+                                        width:80%;
+                                        padding: 10px;
+                                        }
+                                        .achievements_text {
+                                        word-break: break-all;
+                                        font-size: 16px;
+                                        max-width: 100%;
+                                        }
+                                        #achievement_img {
+                                        top: 0;
+                                        transition:all 0.4s ease-in-out;
+                                        height: auto;
+                                        box-shadow: rgb(99 99 99 / 17%) 0px 0px 12px 5px;
+
+                                        border-radius: 0px 20px;
+                                        width: 80% !important;
+                                        }
+                                        .achieve-img:hover{
+                                        box-shadow: rgb(99 99 99 / 35%) 8px 7px 14px 3px !Important;
+                                        }
+                                        .news-card-name {
+                                        height:auto !important;
+                                        }
+                                        .achieve_carousel .carousel-item.active{
+                                        display: flex;
+                                        }
+
+                                    </style>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item o_colored_level active"
+                                             style="background-image: none;" data-name="Slide">
+                                            <div class="col-12 col-lg-4 padding-0 o_colored_level">
+                                                <img src="https://meskc.ac.in/web/image/837-bcfca172/WhatsApp%20Image%202024-07-02%20at%206.34.37%20PM.jpeg"
+                                                     alt="" class="achieve-img o_we_custom_image d-block"
+                                                     id="achievement_img" data-original-id="836"
+                                                     data-original-src="/web/image/836-3df4e6b3/WhatsApp%20Image%202024-07-02%20at%206.34.37%20PM.jpeg"
+                                                     data-mimetype="image/jpeg" data-resize-width="1357"
+                                                     data-quality="100" loading="lazy" style=""/>
+                                                <div class="achieve_card">
+                                                    <h1 class="news-card-name">Rank Holders
+                                                    </h1>
+                                                    <p class="achievements_text ">
+                                                        Rank Holders
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-12 col-lg-4 padding-0  o_colored_level">
+
+
+                                                <img src="https://meskc.ac.in/web/image/839-c391c42c/WhatsApp%20Image%202024-07-03%20at%209.30.35%20AM.jpeg"
+                                                     alt="" class="achieve-img img img-fluid o_we_custom_image"
+                                                     data-original-id="838"
+                                                     data-original-src="/web/image/838-37759c72/WhatsApp%20Image%202024-07-03%20at%209.30.35%20AM.jpeg"
+                                                     data-mimetype="image/jpeg" data-resize-width="1131"
+                                                     data-bs-original-title="" title="" aria-describedby="tooltip469696"
+                                                     data-quality="100" loading="lazy" id="achievement_img" style=""/>
+                                                <div id="achievement">
+                                                    <div>
+                                                        <h1 class="news-card-name">CHAMPIONS REVEALED
+                                                        </h1>
+
+                                                    </div>
+                                                    <p class="achievements_text ">
+                                                        Three teams of our college being selected as the winners of the
+                                                        preliminary contest of the YIP 6.0 Idea Hackathon
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 padding-0 o_colored_level">
+                                                <img src="https://meskc.ac.in/web/image/837-bcfca172/WhatsApp%20Image%202024-07-02%20at%206.34.37%20PM.jpeg"
+                                                     alt="" class="achieve-img img img-fluid o_we_custom_image"
+                                                     data-original-id="838"
+                                                     data-original-src="/mes_college/static/img/achivement2.jpg"
+                                                     data-mimetype="image/jpeg" data-resize-width="1131"
+                                                     data-bs-original-title="" title="" aria-describedby="tooltip469696"
+                                                     data-quality="100" loading="lazy" id="achievement_img" style=""/>
+                                                <div id="achievement">
+                                                    <div>
+                                                        <h1 class="news-card-name">Achievement Name
+                                                        </h1>
+
+                                                    </div>
+                                                    <p class="achievements_text ">
+                                                        Three teams of our college being selected as the winners of the
+                                                        preliminary contest of the YIP 6.0 Idea Hackathon
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators o_we_no_overlay">
+                                    <li type="button" data-bs-target="#achievement_carousels" data-bs-slide-to="0"
+                                        id="dot" aria-label="Slide 1" class="active" aria-current="true"/>
+                                </ol>
+
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="pb16 o_colored_level s_carousel_wrapper" style="background-image: none;"
+                         data-name="Carousel">
+                    <h2 class="main-head " style="    padding-top: 30px;">Alumni</h2>
+                    <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel"
+                             style="&#10;    padding-bottom: 32px;&#10;">
+                        <div class="s_carousel s_carousel_default carousel slide pointer-event" data-bs-interval="10000"
+                             id="alumni" style="background-image: none;">
+
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item o_colored_level pb0 active" style="background-image: none;">
+                                    <div class="alumni">
+                                        <div style="padding-left: 5%;">
+                                            <img src="/mes_college/static/img/alumni.jpg" id="alumni1" loading="lazy"
+                                                 class="rounded-circle" data-original-id="3361"
+                                                 data-original-src="/mes_college/static/img/alumni.jpg"
+                                                 data-mimetype="image/jpeg" data-resize-width="750" data-quality="100"
+                                                 style="" alt="Description missing for this image."/>
+                                        </div>
+                                        <div class="col-md-7 principal_block" id="alumni-p">
+                                            <p class="text_1" style="padding-bottom: 10px;">
+                                                MES provided an opportunity to discover my true potential. Mentoring and
+                                                counseling had paved way for that. It prepared me for the unforeseen
+                                                future
+                                                and the harsh realities of outside world. At the same time it is a
+                                                second
+                                                home for me and I am glad to be a part of MES family.
+                                                <br/>
+                                            </p>
+
+                                            <p id="text_1 pt1" style="">
+                                                Rashmi PT
+                                                -
+                                                <span style="color: #16704c94;font-weight: 500;">
+                                                    Advocate Department
+                                                </span>
+                                            </p>
+                                            <p id="text_1 pt1" style="">
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item o_colored_level" style="background-image: none;">
+                                    <div class="alumni">
+                                        <div style="padding-left: 5%;">
+                                            <img src="/mes_college/static/img/alumni.jpg" id="alumni1" loading="lazy"
+                                                 class="rounded-circle" data-original-id="3361"
+                                                 data-original-src="/mes_college/static/img/alumni.jpg"
+                                                 data-mimetype="image/jpeg" data-resize-width="750" data-quality="100"
+                                                 style="" alt="Description missing for this image."/>
+                                        </div>
+                                        <div class="col-md-7 principal_block" id="alumni-p">
+                                            <p class="text_1" style="padding-bottom: 10px;">
+                                                MES provided an opportunity to discover my true potential. Mentoring and
+                                                counseling had paved way for that. It prepared me for the unforeseen
+                                                future
+                                                and the harsh realities of outside world. At the same time it is a
+                                                second
+                                                home for me and I am glad to be a part of MES family.
+                                                <br/>
+                                            </p>
+
+                                            <p id="text_1 pt1" style="">
+                                                Rashmi PT
+                                                -
+                                                <span style="color: #16704c94;font-weight: 500;">
+                                                    Advocate Department
+                                                </span>
+                                            </p>
+                                            <p id="text_1 pt1" style="">
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="carousel-item o_colored_level" style="background-image: none;">
+                                    <div class="alumni">
+                                        <div style="padding-left: 5%;">
+                                            <img src="/mes_college/static/img/alumni.jpg" id="alumni1" loading="lazy"
+                                                 class="rounded-circle" data-original-id="3361"
+                                                 data-original-src="/mes_college/static/img/alumni.jpg"
+                                                 data-mimetype="image/jpeg" data-resize-width="750" data-quality="100"
+                                                 style="" alt="Description missing for this image."/>
+                                        </div>
+                                        <div class="col-md-7 principal_block" id="alumni-p">
+                                            <p class="text_1" style="padding-bottom: 10px;">
+                                                MES provided an opportunity to discover my true potential. Mentoring and
+                                                counseling had paved way for that. It prepared me for the unforeseen
+                                                future
+                                                and the harsh realities of outside world. At the same time it is a
+                                                second
+                                                home for me and I am glad to be a part of MES family.
+                                                <br/>
+                                            </p>
+
+                                            <p id="text_1 pt1" style="">
+                                                Rashmi PT
+                                                -
+                                                <span style="color: #16704c94;font-weight: 500;">
+                                                    Advocate Department
+                                                </span>
+                                            </p>
+                                            <p id="text_1 pt1" style="">
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators o_we_no_overlay">
+                                <li type="button" data-bs-target="#alumni" data-bs-slide-to="0" id="dot"
+                                    aria-label="Slide 1" class="active" aria-current="true"/>
+                                <li type="button" data-bs-target="#alumni" data-bs-slide-to="1" aria-label="Slide 2"
+                                    id="dot"/>
+                                <li type="button" data-bs-target="#alumni" data-bs-slide-to="2" aria-label="Slide 3"
+                                    id="dot"/>
+                            </ol>
+
+                        </div>
+                    </section>
+                </section>
+
+
+            </div>
+        </xpath>
+    </template>
+</odoo>

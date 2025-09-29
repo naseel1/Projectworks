@@ -1,0 +1,51 @@
+<odoo>
+    <!-- scholarships Form View -->
+    <record id="view_scholarships_manage_config_form" model="ir.ui.view">
+        <field name="name">scholarships.manage.config.form</field>
+        <field name="model">scholarships.manage</field>
+        <field name="arch" type="xml">
+            <form string="Scholarships">
+                <sheet>
+                    <group>
+                        <field name="incharge_name"/>
+                        <field name="incharge_image"/>
+                        <field name="designation"/>
+
+                    </group>
+
+                    <notebook>
+                        <page string="Scholarships and Website Url">
+                            <field name="scholarship_ids">
+                                <tree editable="bottom">
+                                    <field name="scholarship_name"/>
+                                    <field name="website_url"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- scholarships Menu Action (links to single record) -->
+    <record id="scholarships_manage_action" model="ir.actions.act_window">
+        <field name="name">scholarships</field>
+        <field name="res_model">scholarships.manage</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_scholarships_manage_config_form"/>
+        <field name="res_id" ref="scholarships_single_record"/>
+        <field name="context">{'create': False}</field>
+    </record>
+
+    <menuitem id="menu_scholarships_root" name="Scholarships" parent="website.menu_website_configuration"
+              sequence="17"/>
+    <!-- scholarships Menu -->
+    <menuitem id="menu_scholarships_manage"
+              name="Scholarships Manage"
+              parent="menu_scholarships_root"
+              action="scholarships_manage_action"
+              sequence="25"
+              groups="scholarships.group_scholarships_admin"/>
+</odoo>

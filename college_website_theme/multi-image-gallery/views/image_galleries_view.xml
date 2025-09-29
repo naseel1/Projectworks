@@ -1,0 +1,52 @@
+<odoo>
+    <!-- Form View -->
+    <record id="view_multi_image_gallery_config_form" model="ir.ui.view">
+        <field name="name">image.gallery.config.form</field>
+        <field name="model">image.galleries</field>
+        <field name="arch" type="xml">
+            <form string="Image Gallery">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                    </group>
+                    <group string="Gallery Images">
+                        <field name="image_ids">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="image" widget="image"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_multi_image_gallery_config_tree" model="ir.ui.view">
+        <field name="name">image.gallery.config.tree</field>
+        <field name="model">image.galleries</field>
+        <field name="arch" type="xml">
+            <tree string="Image Galleries">
+                <field name="name"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_image_gallery" model="ir.actions.act_window">
+        <field name="name">Image Gallery</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">image.galleries</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_multi_image_gallery_config_tree"/>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_image_gallery_root" name="Image Gallery" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_image_galleries" name="Manage Images" parent="menu_image_gallery_root"
+              action="action_image_gallery" sequence="20" groups="multi-image-gallery.group_multi_image_gallery_admin"/>
+</odoo>

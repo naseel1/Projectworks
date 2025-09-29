@@ -1,0 +1,89 @@
+<odoo>
+    <data>
+        <record id="technology_business" model="ir.ui.view">
+            <field name="name">technology_business</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.technology_business</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.technology_business_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">Technology Business
+                                                    Incubation Centre
+                                                </h2>
+                                                <div class="text_content">
+                                                    The Technology
+                                                    Business Incubation
+                                                    Centre (TBI) is
+                                                    functioning in the
+                                                    college under
+                                                    Institution
+                                                    Innovation Council
+                                                    (IIC) and Innovation
+                                                    and Entrepreneurship
+                                                    and Development Cell
+                                                    (IEDC). The
+                                                    objective is to
+                                                    provide assistance
+                                                    to start business
+                                                    ventures with
+                                                    innovative ideas.
+                                                    The room space with
+                                                    necessary amenities
+                                                    is provided by the
+                                                    institution for a
+                                                    period of two years
+                                                    to incubate the
+                                                    business.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h2 class="main-head">Coordinators</h2>
+                                            <div class="col-md-7 mb32 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Dr. Sainul Abidin
+                                                    </div>
+                                                    <div class="designation">Department of Physics</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 mb32 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Saritha U
+                                                    </div>
+                                                    <div class="designation">Department of Physics</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="technology_business_page" model="website.page">
+            <field name="url">/technology_business</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="technology_business"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

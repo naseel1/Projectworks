@@ -1,0 +1,315 @@
+<odoo>
+    <data>
+        <record id="programmes" model="ir.ui.view">
+            <field name="name">Programmes</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.programmes</field>
+            <field name="arch" type="xml">
+                <t name="Academic Calender" t-name="mss_college.programmes_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32 pb32 o_colored_level" style="background-image: none;">
+                                <div class="container">
+                                    <div class="about_head s_header">Programmes Offered
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+                                    <section
+                                            class="administration  pt32 s_tabs pb o_colored_level tabs_back tabs_back"
+                                            data-vcss="001"
+                                            data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                                        <div class=" row " id="department_row">
+                                            <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section"
+                                                 data-original-title="" title="" aria-describedby="tooltip336631">
+
+                                                <div class="side-bar s_tabs_nav" id="sidebar"
+                                                     style="top: 5px;margin-bottom: 0;">
+                                                    <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                        style="padding-inline-start: 0;" role="tablist">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#ug-programmes" id="ug-programmes_lnk"
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="ug-programmes" aria-selected="true"
+                                                               data-original-title="" title="" class="nav-link active">
+                                                                UG Programmes
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#pg-programmes" id="pg-programmes_link"
+                                                               data-bs-toggle="tab"
+                                                               role="tab" aria-controls="pg-programmes" aria-selected=""
+                                                               data-original-title="" title="" class="nav-link ">
+                                                                PG Programmes
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#addon"
+                                                               id="addon_link"
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="addon" aria-selected=""
+                                                               data-original-title="" title="" class="nav-link ">
+                                                                Add-on Courses
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-9 order-1 order-md-2 second_section  pb48 o_colored_level">
+                                                <div class="s_tabs_content tab-content">
+                                                    <div class="tab-pane fade active show" id="ug-programmes"
+                                                         role="tabpanel" aria-labelledby="ug-programmes_link">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header" id="header_small">UG Programmes
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <section
+                                                                        class="s_faq_collapse  pb32 o_colored_level s_faq_collapse_boxed"
+                                                                        id="programmes_dep"
+                                                                        data-snippet="s_faq_collapse"
+                                                                        data-name="Accordion"
+                                                                        style="background-image: none;">
+                                                                    <div class="container">
+                                                                        <div id="myCollapse" class="accordion"
+                                                                             role="tablist">
+                                                                            <div class="card bg-white" data-name="Item">
+                                                                                <a href="#" role="tab"
+                                                                                   data-bs-toggle="collapse"
+                                                                                   aria-expanded="true"
+                                                                                   class="card-header s_faq_collapse_right_icon"
+                                                                                   data-bs-target="#myCollapseTab944516_1">
+                                                                                    B.Sc Chemistry
+                                                                                </a>
+                                                                                <div class="programme_collapse collapse show"
+                                                                                     data-bs-parent="#myCollapse"
+                                                                                     role="tabpanel"
+                                                                                     id="myCollapseTab944516_1"
+                                                                                     style="">
+                                                                                    <div class="card-body">
+                                                                                        <div class="about_paragraph">
+                                                                                            <div class="programme_sub">
+                                                                                                <strong>Eligibility for
+                                                                                                    Admission
+                                                                                                </strong>
+                                                                                            </div>
+                                                                                            A pass in Higher Secondary
+                                                                                            Examination of the state or
+                                                                                            an
+                                                                                            Examination accepted by the
+                                                                                            University as equivalent
+                                                                                            thereto.
+                                                                                        </div>
+                                                                                        <div class="programme_sub">
+                                                                                            <strong>Duration</strong>
+                                                                                        </div>
+                                                                                        6 Semesters
+                                                                                        <div class="programme_sub">
+                                                                                            <strong>Core Course</strong>
+                                                                                        </div>
+                                                                                        Chemistry
+                                                                                        <div class="programme_sub">
+                                                                                            <strong>Elective</strong>
+                                                                                        </div>
+                                                                                        Polymer Chemistry
+                                                                                        <div class="programme_sub">
+                                                                                            <strong>Open Course</strong>
+                                                                                        </div>
+                                                                                        Environmental Pollution
+                                                                                        <section class="syllabus">
+                                                                                            <div class="row">
+                                                                                                <a class="btnsyllabus"
+                                                                                                   href="#"
+                                                                                                   target="_blank">
+                                                                                                    <span class="fa fa-book"></span>
+                                                                                                    View Syllabus
+                                                                                                </a>
+                                                                                                <a class=" btnsyllabus"
+                                                                                                   href="#">
+                                                                                                    <span class="fa fa-graduation-cap"></span>
+                                                                                                    POs, PSOs and COs
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </section>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade " id="pg-programmes" role="tabpanel"
+                                                         aria-labelledby="pg-programmes_link">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header" id="header_small">PG Programmes
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <section
+                                                                        class="s_faq_collapse  pb32 o_colored_level s_faq_collapse_boxed"
+                                                                        id="programmes_dep"
+                                                                        data-snippet="s_faq_collapse"
+                                                                        data-name="Accordion"
+                                                                        style="background-image: none;">
+                                                                    <div class="container">
+                                                                        <div id="myCollapse" class="accordion"
+                                                                             role="tablist">
+                                                                            <div class="card bg-white" data-name="Item">
+                                                                                <a href="#" role="tab"
+                                                                                   data-bs-toggle="collapse"
+                                                                                   aria-expanded="true"
+                                                                                   class="card-header s_faq_collapse_right_icon"
+                                                                                   data-bs-target="#myCollapseTab944516_p1">
+                                                                                    M.Com
+                                                                                </a>
+                                                                                <div class="programme_collapse collapse show"
+                                                                                     data-bs-parent="#myCollapse"
+                                                                                     role="tabpanel"
+                                                                                     id="myCollapseTab944516_p1"
+                                                                                     style="">
+                                                                                    <div class="card-body">
+                                                                                        <div class="about_paragraph">
+                                                                                            <div class="programme_sub">
+                                                                                                <strong>Eligibility for
+                                                                                                    Admission
+                                                                                                </strong>
+                                                                                            </div>
+                                                                                            A pass in Higher Secondary
+                                                                                            Examination of the state or
+                                                                                            an
+                                                                                            Examination accepted by the
+                                                                                            University as equivalent
+                                                                                            thereto.
+                                                                                        </div>
+                                                                                        <div class="programme_sub">
+                                                                                            <strong>Duration</strong>
+                                                                                        </div>
+                                                                                        4 Semesters
+                                                                                        <section class="syllabus">
+                                                                                            <div class="row">
+                                                                                                <a class="btnsyllabus"
+                                                                                                   href="#"
+                                                                                                   target="_blank">
+                                                                                                    <span class="fa fa-book"></span>
+                                                                                                    View Syllabus
+                                                                                                </a>
+                                                                                                <a class=" btnsyllabus"
+                                                                                                   href="#">
+                                                                                                    <span class="fa fa-graduation-cap"></span>
+                                                                                                    POs, PSOs and COs
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </section>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade " id="addon" role="tabpanel"
+                                                         aria-labelledby="addon_link">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header" id="header_small">Add-on Courses
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <section
+                                                                        class="s_faq_collapse  pb32 o_colored_level s_faq_collapse_boxed"
+                                                                        id="programmes_dep"
+                                                                        data-snippet="s_faq_collapse"
+                                                                        data-name="Accordion"
+                                                                        style="background-image: none;">
+                                                                    <div class="container">
+                                                                        <div id="myCollapse" class="accordion"
+                                                                             role="tablist">
+                                                                            <div class="card bg-white" data-name="Item">
+                                                                                <a href="#" role="tab"
+                                                                                   data-bs-toggle="collapse"
+                                                                                   aria-expanded="true"
+                                                                                   class="card-header s_faq_collapse_right_icon"
+                                                                                   data-bs-target="#myCollapseTab944516_a1">
+                                                                                    JRF &amp; NET Coaching
+                                                                                </a>
+                                                                                <div class="programme_collapse collapse show"
+                                                                                     data-bs-parent="#myCollapse"
+                                                                                     role="tabpanel"
+                                                                                     id="myCollapseTab944516_a1"
+                                                                                     style="">
+                                                                                    <div class="card-body">
+                                                                                        <div class="about_paragraph">
+                                                                                            <div class="programme_sub">
+                                                                                                <strong>Eligibility for
+                                                                                                    Admission
+                                                                                                </strong>
+                                                                                            </div>
+                                                                                            Examination accepted by the
+                                                                                            University as equivalent
+                                                                                            thereto.
+                                                                                        </div>
+                                                                                        <div class="programme_sub">
+                                                                                            <strong>Duration</strong>
+                                                                                        </div>
+                                                                                        6 Semesters
+                                                                                        <section class="syllabus">
+                                                                                            <div class="row">
+                                                                                                <a class="btnsyllabus"
+                                                                                                   href="#"
+                                                                                                   target="_blank">
+                                                                                                    <span class="fa fa-book"></span>
+                                                                                                    View Syllabus
+                                                                                                </a>
+                                                                                                <a class=" btnsyllabus"
+                                                                                                   href="#">
+                                                                                                    <span class="fa fa-graduation-cap"></span>
+                                                                                                    POs, PSOs and COs
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </section>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="programmes_page" model="website.page">
+            <field name="url">/programmes</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="programmes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

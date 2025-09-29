@@ -1,0 +1,179 @@
+<odoo>
+    <data>
+        <record id="department_page_mes" model="ir.ui.view">
+            <field name="name">Department page</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.department_page_mes</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="mes_college.department_page_mes_menu">
+                    <t t-call="website.layout">
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                            // Set the first carousel item as active
+                            var firstCarouselItem = document.querySelector('.department-item');
+                            firstCarouselItem.classList.add('active');
+                            });
+                        </script>
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <t t-if="data">
+                                            <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section"
+                                                 data-original-title="" title="" aria-describedby="tooltip336631">
+
+                                                <div class="clubs">
+                                                    <t t-esc="data['name']"/>
+                                                </div>
+                                                <div class="side-bar" id="sidebar">
+                                                    <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                        style="padding-inline-start: 0;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a t-att-href="'/department/' + str(data['dep_id'])"
+                                                               data-original-title="" title="" class="nav-link active">
+                                                                Home
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a t-att-href="'/department/' + str(data['dep_id']) + '/faculty'"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Faculties
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a t-att-href="'/department/' + str(data['dep_id']) + '/programme?dep_id=' + str(data['dep_id'])"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Programmes
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/chemistry_reports" data-original-title="" title=""
+                                                               class="nav-link">
+                                                                Reports
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a t-att-href="'/department/' + str(data['dep_id']) + '/activities'"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Activities
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a t-att-href="'/department/' + str(data['dep_id']) + '/facilities?dep_id=' + str(data['dep_id'])"
+                                                               data-original-title="" title="" class="nav-link ">
+                                                                Facilities
+                                                            </a>
+                                                        </li>
+
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a t-att-href="'/department/' + str(data['dep_id']) + '/exam_results'"
+                                                               title="" class="nav-link">
+                                                                Exam Results
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a t-att-href="'/department/' + str(data['dep_id']) + '/dep_gallery'"
+                                                               data-original-title="" title="" class="nav-link">
+                                                                Gallery
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                    <section id="departments_page">
+                                                        <h2 class="page_head" id="department_subhead">Department Profile
+                                                        </h2>
+                                                        <div id="department_profile"
+                                                             class="carousel slide s_carousel s_carousel_default"
+                                                             data-bs-ride="carousel ">
+                                                            <div id="arrows">
+                                                                <a class="alumni-left" id="department_left"
+                                                                   href="#department_profile" role="button"
+                                                                   data-bs-slide="prev">
+                                                                    <img src="/mes_college/static/img/alumni_left.svg"
+                                                                         loading="lazy" data-original-title="" title=""
+                                                                         aria-describedby="tooltip850287"/>
+                                                                    <span class="sr-only">Previous</span>
+                                                                </a>
+                                                                <a class="alumni-right" id="department_right"
+                                                                   href="#department_profile" role="button"
+                                                                   data-bs-slide="next">
+                                                                    <img src="/mes_college/static/img/alumni_right.svg"
+                                                                         loading="lazy"/>
+                                                                    <span class="sr-only">Next</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="carousel-inner">
+                                                                <t t-foreach="data.get('backgrounds', [])"
+                                                                   t-as="background">
+                                                                    <div class="carousel-item department-item o_colored_level">
+                                                                        <t t-if="background.get('url')">
+                                                                            <img t-att-src=" background['url']" alt=""
+                                                                                 class="depart_image img-fluid w-100 img"/>
+                                                                        </t>
+                                                                    </div>
+                                                                </t>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content_text">
+                                                            <t t-if="data.get('profile')">
+                                                                <t t-esc="data['profile'].get('about')"/>
+                                                            </t>
+                                                        </div>
+                                                        <div class="row ">
+                                                            <div class="col-md-6" style="padding:0 10px 0px 0px;">
+                                                                <h2 class="page_head" id="depart_titles">Vision
+                                                                </h2>
+                                                                <div class="content_text">
+                                                                    <t t-if="data.get('profile')">
+                                                                        <t t-esc="data['profile']['vision']"/>
+                                                                    </t>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 p-0">
+                                                                <h2 class="page_head" id="depart_titles">Mission
+                                                                </h2>
+                                                                <div class="content_text">
+                                                                    <t t-if="data.get('profile')">
+                                                                        <t t-esc="data['profile']['mission']"/>
+                                                                    </t>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </t>
+                                        <t t-else="">
+
+                                            Profile Not Setted
+                                        </t>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="department_page_page" model="website.page">
+            <field name="url">/department</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="department_page_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

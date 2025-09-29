@@ -1,0 +1,122 @@
+<odoo>
+    <data>
+        <record id="composition" model="ir.ui.view">
+            <field name="name">COMPOSITION OF IQAC</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.composition</field>
+            <field name="arch" type="xml">
+                <t name="composition of iqac" t-name="mss_college.composition_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div class="row" style="margin:20px">
+
+                                <div class="col-12  col-md-3 order-2 order-md-1" style="padding-left:0;">
+                                    <div class="side-bar" id="sidebar">
+
+                                        <div id="sb1" style="color: var(--primary);padding: 10px 0px 10px 0;">
+                                            <h2 style="font-family: lato;font-weight: 900;font-size: 18px;line-height: 1.8;background: white;padding: 10px;border-radius: 5px  0px 0px 5px;">
+                                                IQAC
+                                            </h2>
+                                        </div>
+                                        <div class="sidebar-item " id="sb1">
+                                            <a href="/objective">
+                                                <p class="sidebar-text">
+                                                    <span>IQAC MINUTES</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item sidebar-item-active" id="sb2">
+                                            <a href="/composition">
+                                                <p class="sidebar-text">
+                                                    <span>AQAR</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <a href="#" id="quality" data-toggle="collapse" data-target="#s2">
+                                            <div class="sidebar-item">
+                                                <p class="sidebar-text">
+                                                    <span>Profile
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="s2" class="collapse" style="background-color: #fff;">
+                                            <div class="sidebar-item" id="sb11">
+                                                <a href="#">
+                                                    <p class="sidebar-text">
+                                                        <span>Chairman's Lecture Series</span>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item" id="sb11">
+                                                <a href="#">
+                                                    <p class="sidebar-text">
+                                                        <span>Friday Seminar Series</span>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item" id="sb12">
+                                                <a href="#">
+                                                    <p class="sidebar-text">
+                                                        <span>Student Seminar series</span>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item" id="sb13">
+                                                <a href="#">
+                                                    <p class="sidebar-text">
+                                                        <span>Monthly Activity Report(MAR)</span>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item" id="sb14">
+                                                <a href="#">
+                                                    <p class="sidebar-text">
+                                                        <span>Academic and Research Review Committee(ARRC)</span>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="sidebar-item" id="sb3">
+                                            <a href="#">
+                                                <p class="sidebar-text">
+                                                    <span>MEMBERS</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item" id="sb4">
+                                            <a href="#">
+                                                <p class="sidebar-text">
+                                                    <span>PHOTOS</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item" id="sb5">
+                                            <a href="#">
+                                                <p class="sidebar-text">
+                                                    <span>REPORTS</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 order-1 order-md-2" id="page-content">
+                                    <div style="padding-left: 50px;">
+                                        <h3 class="iqac_head">COMPOSITION OF IQAC</h3>
+                                        <hr id="heading_line"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="staff_composition_page" model="website.page">
+            <field name="url">/composition</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="composition"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="emea_college_index" inherit_id="website.snippets"
+              name="Emea  Website Index">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]"
+               position="inside">
+            <t t-snippet="emea_college_theme.emea_college_home"
+               t-thumbnail="/emea_college_theme/static/img/emea.svg"/>
+        </xpath>
+    </template>
+
+    <template id="emea_college_home" name=" Emea College Homepage">
+        <section class="banner section1 o_colored_level" data-snippet="emea_college_home"
+                 data-name=" Emea College Homepage" style="background: none;">
+            <video poster="/emea_college_theme/static/img/emea_banner.png" width="100%" height="100%" loop="True"
+                   autoplay="True" muted="" style="object-fit: cover;object-position: bottom;">
+                <source src="/emea_college_theme/static/img/EMEA COLLEGE.mp4?raw=true" type="video/mp4">
+                    Video tag is not supported in this browser.
+                </source>
+            </video>
+        </section>
+        <div class="announcement">
+            <span id="announce_head">Announcement</span>
+            <span class="announcement_content">
+                <marquee id="announce">This announcement is aimed at Our New Website is launching Soon</marquee>
+            </span>
+        </div>
+        <section class="pt32 pb32 section2">
+            <div class="col-md-10 m-auto">
+                <h2 class="notes_head">WELCOME TO EMEA COLLEGE</h2>
+                <div class="notes">EMEA College of Arts and Science, Kondotti is fast emerging as a resourceful
+                    destination for higher
+                    studies in Malabar, spreading the fragrance ofeducation in the society. This college is affiliated
+                    to th
+                    e University of Calicut. The college offers up-to-date, advanced, and job-oriented pro grammes in th
+                    e vast expanding horizon of humanities, commerece, and science and technology. The college is sit
+                    uated at Kumminiparamba in Kondotti,6 KMs away from University of Calicut, 2 KMs from Calicut In
+                    ternational Airport, 18 KMs from Feroke Railway Station,and 32 KMs from Calicut City;with a congeni
+                    al atmosphere for academic pursuits. The place is ideally suited for the growth and development of e
+                    ducational institutions for higher learning.
+                </div>
+                <a href="#" class="readmore">Read More</a>
+            </div>
+
+        </section>
+
+        <section class="pt32 pb32 section3 mt">
+            <h2 class="notes_head">PRINCIPAL’S MESSAGE</h2>
+            <div class="align-center container pt32" style="max-width: 1320px;">
+                <div class="row">
+                    <div class="col-md-12 col-lg-3 my-auto padding-0">
+                        <div class="image-wrapper">
+                            <img src="/emea_college_theme/static/img/princi.jpg" class="prince-img"/>
+                        </div>
+                    </div>
+                    <div class="col-12 align-left col-lg-9 padding-0">
+                        <div class="card-wrapper">
+                            <p class="notes">
+                                EMEA College of Arts and Science, Kondottti, was established as an embodiment of a long
+                                cherished dream of people of Ernad, a backward region in erstwhile Malabar District of
+                                British India. With the illustrious aim of bringing the educationally deprived youth of
+                                the region into the mainstream of education, the college came into existence in 1982
+                                thanks to the efforts of visionary social leaders like Sayyid Mohammed Ali Shihab
+                                Thangal, Jb. P Seethi Haji Sahib, Jb. Avukader Kutty Naha Sahib, Jb. N.V Ibrahim Master,
+                                etc.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="pt32 pb48">
+            <h2 class="notes_head ">NEWS AND EVENTS</h2>
+            <div id="news-content">To be a centre of excellence in higher education, affordable to common man.
+            </div>
+            <div id="news" class="carousel slide" data-ride="carousel "
+                 style="padding: 0;padding-bottom:5rem;">
+                <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level active">
+                        <div class="align-center container pt32" style="max-width: 100vw;">
+                            <div class="row">
+                                <div class="news_events">
+                                    <figure class=" news_events--1">
+                                        <section class="news_events__img">
+                                            <img src="/emea_college_theme/static/img/news1.jpg"
+                                                 alt="Image 1"
+                                                 loading="lazy"/>
+                                        </section>
+                                        <div class="news_block">
+                                            <h2 class="news_title">EVENT NAME
+                                            </h2>
+                                            <div class="news_description">Lorem ipsum dolor sit amet consectetur. Et
+                                                aliquet o
+                                                dio sit accumsan proin imperdiet.
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <figure class="news_events--2">
+                                        <section class="news_events__img2">
+                                            <img src="/emea_college_theme/static/img/news2.jpg"
+                                                 alt="Image 2"
+                                                 loading="lazy"/>
+                                        </section>
+                                        <div class="news_block">
+                                            <h2 class="news_title" id="news_title">EVENT NAME
+                                            </h2>
+                                            <div class="news_description" id="description">Lorem ipsum dolor sit amet
+                                                consectetur. Et
+                                                aliquet o
+                                                dio sit accumsan proin imperdiet.
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <figure class="news_events--3">
+                                        <section class="news_events__img2">
+                                            <img src="/emea_college_theme/static/img/news3.jpg"
+                                                 alt="Image 3"
+                                                 loading="lazy"/>
+                                        </section>
+                                        <div class="news_block">
+                                            <h2 class="news_title" id="news_title">EVENT NAME
+                                            </h2>
+                                            <div class="news_description" id="description">Lorem ipsum dolor sit amet
+                                                consectetur. Et
+                                                aliquet o
+                                                dio sit accumsan proin imperdiet.
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item o_colored_level ">
+                        <div class="align-center container pt32" style="max-width: 100vw;">
+                            <div class="row">
+                                <div class="news_events">
+                                    <figure class=" news_events--1">
+                                        <section class="news_events__img">
+                                            <img src="/emea_college_theme/static/img/news1.jpg"
+                                                 alt="Image 1"
+                                                 loading="lazy"/>
+                                        </section>
+                                        <div class="news_block">
+                                            <h2 class="news_title">EVENT NAME
+                                            </h2>
+                                            <div class="news_description">Lorem ipsum dolor sit amet consectetur. Et
+                                                aliquet o
+                                                dio sit accumsan proin imperdiet.
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <figure class="news_events--2">
+                                        <section class="news_events__img2">
+                                            <img src="/emea_college_theme/static/img/news2.jpg"
+                                                 alt="Image 2"
+                                                 loading="lazy"/>
+                                        </section>
+                                        <div class="news_block">
+                                            <h2 class="news_title" id="news_title">EVENT NAME
+                                            </h2>
+                                            <div class="news_description" id="description">Lorem ipsum dolor sit amet
+                                                consectetur. Et
+                                                aliquet o
+                                                dio sit accumsan proin imperdiet.
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <figure class="news_events--3">
+                                        <section class="news_events__img2">
+                                            <img src="/emea_college_theme/static/img/news3.jpg"
+                                                 alt="Image 3"
+                                                 loading="lazy"/>
+                                        </section>
+                                        <div class="news_block">
+                                            <h2 class="news_title" id="news_title">EVENT NAME
+                                            </h2>
+                                            <div class="news_description" id="description">Lorem ipsum dolor sit amet
+                                                consectetur. Et
+                                                aliquet o
+                                                dio sit accumsan proin imperdiet.
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="0" id="dot" class=" active"
+                            aria-label="Slide 1">
+
+                    </button>
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="" id="dot" aria-current="true">
+
+                    </button>
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="" id="dot">
+
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="pt32 pb32 section3">
+            <h2 class="notes_head ">ACHIEVEMENTS</h2>
+            <div class="achieve-text">Lorem ipsum dolor sit amet consectetur. Habitasse sem odio nunc mauris. Amet
+                ornare
+                ultrices sit dictumst vestibulum ultrices urna
+            </div>
+            <div class="achievement">
+                <section class="achievement-card">
+                    <div class="achievement-card-image">
+                        <img src="/emea_college_theme/static/img/achivement.jpg" alt=""/>
+                    </div>
+                    <div class="achievement-card-box">
+                        <h1 class="achievement-card-name">Achievement Name</h1>
+                        <p class="achievement-card-p">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quis exercitationem recusandae eius! Quisquam dolores esse
+                        </p>
+                    </div>
+                </section>
+                <section class="achievement-card">
+                    <div class="achievement-card-image">
+                        <img src="/emea_college_theme/static/img/achievement2.jpg" alt=""/>
+                    </div>
+                    <div class="achievement-card-box">
+                        <h1 class="achievement-card-name">Achievement Name</h1>
+                        <p class="achievement-card-p">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quis exercitationem recusandae eius! Quisquam dolores esse
+                        </p>
+                    </div>
+                </section>
+                <section class="achievement-card">
+                    <div class="achievement-card-image">
+                        <img src="/emea_college_theme/static/img/achievement2.jpg" alt=""/>
+                    </div>
+                    <div class="achievement-card-box">
+                        <h1 class="achievement-card-name">Achievement Name</h1>
+                        <p class="achievement-card-p">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quis exercitationem recusandae eius! Quisquam dolores esse
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <a href="#" class="readmore">More Achievements</a>
+        </section>
+        <section class="pt48 pb32">
+            <h2 class="notes_head ">GALLERY</h2>
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="/emea_college_theme/static/img/gallery1.jpg" class="gallery__img" alt="Image 1"
+                         loading="lazy"/>
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="/emea_college_theme/static/img/achievement1.jpg" class="gallery__img" alt="Image 1"
+                         loading="lazy"/>
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="/emea_college_theme/static/img/gallery3.jpg" class="gallery__img" alt="Image 1"
+                         loading="lazy"/>
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="/emea_college_theme/static/img/gallery4.jpg" class="gallery__img" alt="Image 1"
+                         loading="lazy"/>
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="/emea_college_theme/static/img/galler5.jpg" class="gallery__img" alt="Image 1"
+                         loading="lazy"/>
+                </figure>
+            </div>
+            <a href="#" class="readmore">More Achievements</a>
+        </section>
+        <section class="pt32 pb48 section3">
+            <h2 class="notes_head ">FACILITY</h2>
+            <div id="facilities" class="carousel slide" data-bs-ride="carousel "
+                 style="padding-top: 5%;">
+                <div id="arrows">
+                    <a class="facilities-left" href="#facilities" role="button" data-bs-slide="prev">
+                        <img src="/emea_college_theme/static/img/left.svg" loading="lazy" data-original-title=""
+                             title=""
+                             aria-describedby="tooltip850287"/>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="facilities-right" href="#facilities" role="button" data-bs-slide="next">
+                        <img src="/emea_college_theme/static/img/right.svg" loading="lazy"/>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level active">
+                        <div class="row">
+                            <div class="col-12 col-md-6 padding-0 res_facility">
+                                <img src="/emea_college_theme/static/img/facility.jpg"
+                                     class="facility-img"/>
+                            </div>
+                            <div class="col-12 col-md-6 res_facility" style="background: #039990;">
+                                <h2 class="facility-name">Audio Visual Theatre</h2>
+                                <div class="facility-p">The Audio-Visual Theatre in a college is a cutting-edge
+                                    facility designed to enhance the educational experience for
+                                    bothstudents and faculty. This dedicated space provides a
+                                    platform for the presentation and consumption of audio
+                                    and visual
+                                    <br/>
+                                    content, creating an immersive and interactive learning
+                                    environment. Here are ten detailed paragraphs that delve
+                                    deeper into the aspects and significance of an Audio-Visual
+                                    Theatre in a college:
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item o_colored_level">
+                        <div class="row">
+                            <div class="col-12 col-md-6 padding-0 res_facility">
+                                <img src="/emea_college_theme/static/img/facility1.jpg"
+                                     class="facility-img"/>
+                            </div>
+                            <div class="col-12 col-md-6 res_facility" style="background: #039990;">
+                                <h2 class="facility-name">Solar Energy System</h2>
+                                <div class="facility-p">With the challenging situation of global climate change and
+                                    the need to cut down carbon emissions EMEA College has
+                                    taken an initiative by setting up 10 KW grid connected roof
+                                    top Solar PV Plant with 32 panel at the terrace of Main Block.
+                                    This Solar PV system at our college will promote green
+                                    energy and clean energy.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item o_colored_level">
+                        <div class="row">
+                            <div class="col-12 col-md-6 padding-0 res_facility">
+                                <img src="/emea_college_theme/static/img/facility2.jpg"
+                                     class="facility-img"/>
+                            </div>
+                            <div class="col-12 col-md-6 res_facility" style="background: #039990;">
+                                <h2 class="facility-name">Computer Science Lab</h2>
+                                <div class="facility-p">The Computer Science Laboratory coordinates the
+                                    acquisition, maintenance, and operation of the computi
+                                    ng equipment and network services. The lab is situated
+                                    in the ground floor of the Main Block. As computer bec
+                                    oming an integral part of today’s learning, we are
+                                    equipped with the latest hardware and software infrast
+                                    ructure to cater to the computing needs of all students
+                                    and faculty.
+                                    <br/>
+                                    The college provides air-conditioned Lab equipped with
+                                    60 numbers of Computer with LAN &amp; the WAN facility
+                                    with adequate centralized UPS backup.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item o_colored_level">
+                        <div class="row">
+                            <div class="col-12 col-md-6 padding-0 res_facility">
+                                <img src="/emea_college_theme/static/img/facility3.jpg"
+                                     class="facility-img"/>
+                            </div>
+                            <div class="col-12 col-md-6 res_facility" style="background: #039990;">
+                                <h2 class="facility-name">Canteen</h2>
+                                <div class="facility-p">Canteens and cafeterias are one of the important parts of
+                                    student life where you can find most of students chatting
+                                    and gossiping on different topics. It plays a vital role in
+                                    removing tensions and refreshing students. The college
+                                    canteen is fairly new and provides enough and delicious
+                                    food at affordable rates. EMEA College of Arts &amp; Science
+                                    has the facility of spacious, clean and hygienic canteens
+                                    and cafeterias that caters to the taste of all students.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item o_colored_level">
+                        <div class="row">
+                            <div class="col-12 col-md-6 padding-0 res_facility">
+                                <img src="/emea_college_theme/static/img/facility4.jpg"
+                                     class="facility-img"/>
+                            </div>
+                            <div class="col-12 col-md-6 res_facility" style="background: #039990;">
+                                <h2 class="facility-name">Play Ground</h2>
+                                <div class="facility-p">A college playground is a vital physical space within a
+                                    ollege campus that serves various functions beyond just
+                                    recreational activities. It provides a venue for students to
+                                    engage in physical fitness, sports, relaxation, and social
+                                    interactions. Here's a detailed overview of a college
+                                    playground:
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt32 pb32">
+            <div class="row" style="    margin: 0;width: 100%;">
+                <div class="col-12 col-md-6 padding-0 res_facility">
+                    <section class="documentary">
+                        <h2 class="notes_head " id="college_head">COLLEGE DOCUMENTARY</h2>
+                        <div class="embed-responsive_emea mt32">
+                            <h2 class="notes_head o_default_snippet_text" id="documentary_head">EMEA COLLEGE
+                                DOCUMENTARY
+                            </h2>
+                            <iframe width="560" height="315"
+                                    src="https://www.youtube-nocookie.com/embed/7tlXezjPpGc?si=UdupDmaQ9jP-Xh6a"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                                    allowfullscreen=""></iframe>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6 padding-0 res_facility">
+                    <h2 class="notes_head " id="book_release">BOOKS RELEASED</h2>
+                    <section class="release ">
+                        <div class="books">
+                            <img src="/emea_college_theme/static/img/book1.jpg" class="book"/>
+                            <h1 class="book_name">BOOK NAME</h1>
+                            <div id="book_para">
+                                Lorem ipsum dolor sit amet con
+                                sectetur. Aliquam in lectus viver
+                                ra proin commodo id mauris ali
+                                uam. Consectetur eget ornare v
+                                ulputate varius blandit.
+                            </div>
+                        </div>
+                        <div class="books">
+                            <section background="background: #F0EFEF;">
+                                <img src="/emea_college_theme/static/img/book2.jpg" class="book"/>
+                                <div class="date">SEP<br/>23
+                                </div>
+                                <h1 class="book_name">BOOK NAME</h1>
+                                <div id="book_para">
+                                    Lorem ipsum dolor sit amet con
+                                    sectetur. Aliquam in lectus viver
+                                    ra proin commodo id mauris ali
+                                    uam. Consectetur eget ornare v
+                                    ulputate varius blandit.
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="pt32 pb48 section3">
+            <h2 class="notes_head ">ALUMNI AND PLACEMENT</h2>
+            <div id="alumni" class="carousel slide" data-ride="carousel "
+                 style="padding: 0;padding-bottom:5rem;">
+                <div id="arrows-alumni">
+                    <a class="alumni-left" href="#alumni" role="button" data-bs-slide="prev">
+                        <img src="/emea_college_theme/static/img/left.svg" loading="lazy" data-original-title=""
+                             title=""
+                             aria-describedby="tooltip850287"/>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="alumni-right" href="#alumni" role="button" data-bs-slide="next">
+                        <img src="/emea_college_theme/static/img/right.svg" loading="lazy"/>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level active">
+                        <div class="align-center container pt32" style="max-width: 85vw;">
+                            <div class="row">
+                                <div class="col-12 align-left col-lg-9 padding-0">
+                                    <div class="card-wrapper" id="alumni">
+                                        <p class="notes">
+                                            Lorem ipsum dolor sit amet consectetur. Amet ultrices in id nibh tellus
+                                            laoreet leo augue. Malesuada nibh quis integer donec id molestie. Ultri
+                                            ces id aliquam egestas dignissim. Tortor sit tortor nec maecenas eget r
+                                            isus nibh morbi. Enim sed purus varius pellentesque suscipit nulla. Dap
+                                            ibus nunc in euismod a quis amet quisque sed justo. Consequat turpis
+                                            consectetur eget dignissim consequat. Faucibus feugiat fringilla turpis
+                                            imperdiet a nec elit eleifend nulla. Sed duis nec elementum mattis.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-3 my-auto padding-0">
+                                    <div class="image-wrapper" id="alumni-image">
+                                        <img src="/emea_college_theme/static/img/alumni1.jpg" class="prince-img"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item o_colored_level ">
+                        <div class="align-center container pt32" style="max-width: 1320px;">
+                            <div class="row">
+                                <div class="col-12 align-left col-lg-9 padding-0">
+                                    <div class="card-wrapper" id="alumni">
+                                        <p class="notes">
+                                            Lorem ipsum dolor sit amet consectetur. Amet ultrices in id nibh tellus
+                                            laoreet leo augue. Malesuada nibh quis integer donec id molestie. Ultri
+                                            ces id aliquam egestas dignissim. Tortor sit tortor nec maecenas eget r
+                                            isus nibh morbi. Enim sed purus varius pellentesque suscipit nulla. Dap
+                                            ibus nunc in euismod a quis amet quisque sed justo. Consequat turpis
+                                            consectetur eget dignissim consequat. Faucibus feugiat fringilla turpis
+                                            imperdiet a nec elit eleifend nulla. Sed duis nec elementum mattis.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-3 my-auto padding-0">
+                                    <div class="image-wrapper" id="alumni-image">
+                                        <img src="/emea_college_theme/static/img/alumni1.jpg" class="prince-img"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item o_colored_level ">
+                        <div class="align-center container pt32" style="max-width: 1320px;">
+                            <div class="row">
+                                <div class="col-12 align-left col-lg-9 padding-0">
+                                    <div class="card-wrapper" id="alumni">
+                                        <p class="notes">
+                                            Lorem ipsum dolor sit amet consectetur. Amet ultrices in id nibh tellus
+                                            laoreet leo augue. Malesuada nibh quis integer donec id molestie. Ultri
+                                            ces id aliquam egestas dignissim. Tortor sit tortor nec maecenas eget r
+                                            isus nibh morbi. Enim sed purus varius pellentesque suscipit nulla. Dap
+                                            ibus nunc in euismod a quis amet quisque sed justo. Consequat turpis
+                                            consectetur eget dignissim consequat. Faucibus feugiat fringilla turpis
+                                            imperdiet a nec elit eleifend nulla. Sed duis nec elementum mattis.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-3 my-auto padding-0">
+                                    <div class="image-wrapper" id="alumni-image">
+                                        <img src="/emea_college_theme/static/img/alumni1.jpg" class="prince-img"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <li type="button" data-bs-target="#alumni" data-bs-slide-to="0" id="dot" class=" active"
+                        aria-label="Slide 1"></li>
+                    <li type="button" data-bs-target="#alumni" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="" id="dot" aria-current="true"></li>
+                    <li type="button" data-bs-target="#alumni" data-bs-slide-to="2"
+                        aria-label="Slide 3" class="" id="dot"></li>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

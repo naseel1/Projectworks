@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+access_scholarships_manage_public,scholarships.manage public,model_scholarships_manage,base.group_public,1,0,0,0
+access_scholarships_manage_user,scholarships.manage user,model_scholarships_manage,scholarships.group_scholarships_admin,1,1,1,1
+
+access_scholarship_item_public,scholarship.item public,model_scholarship_item,base.group_public,1,0,0,0
+access_scholarship_item_user,scholarship.item user,model_scholarship_item,scholarships.group_scholarships_admin,1,1,1,1

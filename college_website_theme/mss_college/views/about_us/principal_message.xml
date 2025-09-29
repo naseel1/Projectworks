@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+        <record id="principal_message" model="ir.ui.view">
+            <field name="name">Principal Message</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.principal_message</field>
+            <field name="arch" type="xml">
+                <t name="Principal Message" t-name="mss_college.principal_message_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+            <section>
+                <div class="code_of_conduct_main">
+                    <h3 class="about_heading history_heading">Principal Message</h3>
+                    <hr id="heading_line"/>
+                    <div style="padding:20px;margin: 30px;">
+                        <div class="row" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                            <div class="col-md-4">
+                                <img src="/mss_college/static/img/principle.png" style="width:100%; padding:20px"/>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="code_para" style="    padding: 20px 20px 20px 0px;">Lorem ipsum dolor sit amet consectetur. Vestibulum id vitae vestibulum cursus. Non nulla sollicitudin habitant neque. Risus libero adipiscing tristique feugiat arcu amet ipsum. Massa elit semper faucibus sed condimentum odio tellus vel. Ornare ultrices eget nec nulla vulputate turpis a ut. Gravida tempor ullamcorper purus risus vel molestie ac. Augue fringilla consequat sit nulla scelerisque nibh condimentum at. Magna nibh morbi pretium aliquet aliquam. Amet rhoncus leo aliquet diam mattis. Aenean ac pellentesque tellus et id consectetur. In blandit urna lacus orci aliquam. Fermentum amet nunc nisi quam volutpat. Quam ullamcorper blandit ullamcorper leo diam a. Senectus ultricies ullamcorper pretium lectus erat. Dignissim sed nec pharetra auctor malesuada facilisis. Id porta ut mattis ullamcorper dui. Vitae facilisis ac nisi pretium turpis pellentesque sapien. Mattis mus non a arcu suspendisse cursus est at. Quis vestibulum sit tortor tortor eu eu feugiat ut tristique.</p>
+                                <h1 id="principal_align">Dr Joseph K Job</h1>
+                                <p id="principal_name">PRINCIPAL</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="principal_message_page" model="website.page">
+            <field name="url">/principal_message</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="principal_message"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

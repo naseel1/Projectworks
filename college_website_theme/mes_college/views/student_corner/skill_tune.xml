@@ -1,0 +1,108 @@
+<odoo>
+    <data>
+        <record id="skill_tune" model="ir.ui.view">
+            <field name="name">skill_tune</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.skill_tune</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.skill_tune_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-12">
+                                            <div>
+                                                <h2 class="page_head">SKILL TUNE</h2>
+                                                <div class="text_content">
+                                                    The college has
+                                                    launched a new
+                                                    scheme for skill and
+                                                    entrepreneurship
+                                                    development of
+                                                    students. We have
+                                                    signed MoUs with
+                                                    various government
+                                                    agencies to conduct
+                                                    job oriented add on
+                                                    courses to the
+                                                    students. The
+                                                    agencies include
+                                                    KELTRON, Centre for
+                                                    Continuing Education
+                                                    Kerala, ICT Academy
+                                                    and Bharat Sevak
+                                                    Samaj. After
+                                                    completion of these
+                                                    courses and the
+                                                    subsequent
+                                                    internships the
+                                                    students will become
+                                                    equipped with job
+                                                    skills that help
+                                                    them placed in good
+                                                    companies
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 row pt16">
+
+                                                <div class="col-md-3 mb32 ">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100" loading="lazy" style=""/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Dr. Faisal Babu
+                                                        </div>
+                                                        <div class="designation">Department of Arabic and Islamic
+                                                            History
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mb32 ">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100" loading="lazy" style=""/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Shajitha M
+                                                        </div>
+                                                        <div class="designation">Department of Mathematics
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mb32 ">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100" loading="lazy" style=""/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Ratheesh CK
+                                                        </div>
+                                                        <div class="designation">Department of Malayalam
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="skill_tune_page" model="website.page">
+            <field name="url">/skill_tune</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="skill_tune"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

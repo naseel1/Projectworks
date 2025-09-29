@@ -1,0 +1,478 @@
+<odoo>
+    <data>
+        <record id="faculty_details_mu" model="ir.ui.view">
+            <field name="name">Faculty Details</field>
+            <field name="type">qweb</field>
+            <field name="key">mazharul_uloom_college.faculty_details_mu</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="mazharul_uloom_college.faculty_details_mu_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="all_profiles page pb32" style="padding: 10px;">
+
+                                <t t-if="data">
+                                    <div class="wrapper" style="margin-top: 0px;">
+                                        <div class="sidebar-wrapper">
+                                            <h2 class="page_head"
+                                                style=" padding-top:20px;text-align:center;color:white;"
+                                                data-oe-model="ir.ui.view" data-oe-id="1409" data-oe-field="arch"
+                                                data-oe-xpath="/t[1]/t[1]/div[1]/section[1]/div[1]/h2[1]">
+                                                Profile
+                                            </h2>
+                                            <div class="profile-container">
+
+                                                <t t-if="data.get('image')">
+                                                    <img t-att-src=" str(data['image'])" class="w-100 h-100 profile"/>
+                                                </t>
+
+                                                <h1 class="name">
+                                                    <t t-if="data.get('name')">
+                                                        <t t-esc="data['name']"/>
+                                                    </t>
+                                                </h1>
+                                                <h3 class="tagline">
+                                                    <t t-if="data.get('designation')">
+                                                        <t t-esc="data['designation']"/>
+                                                    </t>
+                                                </h3>
+                                                <h3 class="tagline">
+                                                    <t t-if="data.get('department')">
+                                                        <t t-esc="data['department']['name']"/>
+                                                    </t>
+                                                </h3>
+
+                                            </div><!--//profile-container-->
+
+                                            <div class="contact-container container-block pb-0">
+                                                <ul class="list-unstyled contact-list">
+
+                                                    <li class="email">
+                                                        <t t-if="data.get('faculty_email')">
+                                                            <i class="fa fa-envelope-o" aria-hidden="true"/>
+
+                                                            <t t-esc="data['faculty_email']"/>
+                                                        </t>
+                                                    </li>
+                                                </ul>
+                                            </div><!--//contact-container-->
+                                            <div class="education-container container-block "
+                                                 style="padding-bottom: 0;">
+
+                                                <t t-foreach="data.get('experiences', [])" t-as="experience">
+                                                    <!-- Checking if 'name' attribute exists before accessing -->
+
+                                                    <div class="Education my-3">
+                                                        <h5 class="degree">
+                                                            <t t-if="experience.get('position')">
+                                                                <h2 class="container-block-title">EXPERIENCES</h2>
+
+                                                                <t t-esc="experience['position']"/>
+                                                            </t>
+                                                        </h5>
+                                                        <h5 class="meta">
+                                                            <t t-if="experience.get('organization_name')">
+                                                                <t t-esc="experience['organization_name']"/>
+                                                            </t>
+                                                        </h5>
+
+                                                        <h5 class="meta">
+                                                            <t t-if="experience.get('address')">
+                                                                <t t-esc="experience['address']"/>
+                                                            </t>
+                                                        </h5>
+                                                        <div class="year">
+                                                            <t t-if="experience.get('start_date')">
+                                                                <t t-esc="experience['start_date']"/>
+                                                            </t>
+                                                            -
+                                                            <t t-if="experience.get('end_date')">
+                                                                <t t-esc="experience['end_date']"/>
+                                                            </t>
+                                                        </div>
+                                                    </div>
+
+                                                </t>
+                                            </div>
+                                        </div>
+
+
+                                        <!--//sidebar-wrapper-->
+
+                                        <div class="main-wrapper">
+                                            <div class="col-md-12">
+                                                <section
+                                                        class="profile_card s_faq_collapse  pb32 o_colored_level s_faq_collapse_boxed"
+                                                        data-snippet="s_faq_collapse" data-name="Accordion" style="">
+                                                    <div class="container">
+                                                        <t t-if="data">
+                                                            <div id="myCollapse1700712777280" class="accordion"
+                                                                 role="tablist">
+                                                                <t t-if="data.get('qualifications')">
+                                                                    <div class="card" data-name="Item">
+
+                                                                        <a href="#" role="tab" data-bs-toggle="collapse"
+                                                                           aria-expanded="true"
+                                                                           class="card-header s_faq_collapse_right_icon"
+                                                                           data-bs-target="#myCollapseTab1700712777281"
+                                                                           style=" ">
+                                                                            <span style="color: rgb(31, 31, 31);font-size: 11px"/>
+                                                                            <span style="font-size: 21px;"
+                                                                                  class="text-o-color-3">
+                                                                                <strong>
+                                                                                    <span class="fa fa-user-circle"
+                                                                                          style="padding-right: 10px;"
+                                                                                          contenteditable="false">&amp;ZeroWidthSpace;
+                                                                                    </span>
+                                                                                    EDUCATION
+                                                                                </strong>
+                                                                            </span>
+                                                                            <br/>
+                                                                        </a>
+                                                                        <div class="collapse show"
+                                                                             data-parent="#myCollapse1700712777280"
+                                                                             role="tabpanel"
+                                                                             id="myCollapseTab1700712777281">
+                                                                            <div class="card-body p-5">
+                                                                                <section
+                                                                                        class="section summary-section">
+                                                                                    <table class="table table-bordered profile">
+                                                                                        <thead>
+                                                                                            <tr class="text-white"
+                                                                                                style="background-color:var(--primary);">
+                                                                                                <th>Qualification</th>
+                                                                                                <th>Institution</th>
+                                                                                                <th>Year</th>
+                                                                                                <th>Specialization</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <t t-foreach="data.get('qualifications', [])"
+                                                                                               t-as="qualification">
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <t t-esc="qualification['qualification']"/>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <t t-esc="qualification['university']"/>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <t t-esc="qualification['graduation_year']"/>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <t t-esc="qualification['specialization']"/>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </t>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <table class="table table-bordered profile">
+                                                                                        <t t-foreach="data.get('qualified_exams', [])"
+                                                                                           t-as="qualified_exam">
+                                                                                            <thead>
+                                                                                                <tr class="text-white"
+                                                                                                    style="background-color:var(--primary);">
+                                                                                                    <th>Exams
+                                                                                                        Qualified
+                                                                                                    </th>
+                                                                                                    <th>Year</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <t t-esc="qualified_exam['exam_name']"/>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <t t-esc="qualified_exam['qualified_year']"/>
+                                                                                                    </td>
+                                                                                                </tr>
+
+
+                                                                                            </tbody>
+                                                                                        </t>
+                                                                                    </table>
+                                                                                </section>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                                <t t-if="data.get('achievements')">
+                                                                    <div class="card" data-name="Item">
+                                                                        <a href="#" role="tab" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           class=" card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                                           data-bs-target="#myCollapseTab1700712777282">
+                                                                            <span style="color: rgb(31, 31, 31);font-size: 11px"/>
+                                                                            <span style="font-size: 21px;"
+                                                                                  class="text-o-color-3">
+                                                                                <strong>
+                                                                                    <span class="fa fa-user-circle"
+                                                                                          style="padding-right: 10px;"
+                                                                                          contenteditable="false">&amp;ZeroWidthSpace;
+                                                                                    </span>
+                                                                                    Achievements
+                                                                                </strong>
+                                                                            </span>
+                                                                            <br/>
+                                                                        </a>
+                                                                        <div class="collapse"
+                                                                             data-parent="#myCollapse1700712777280"
+                                                                             role="tabpanel"
+                                                                             id="myCollapseTab1700712777282">
+                                                                            <div class="card-body">
+                                                                                <section class=" m-3">
+                                                                                    <h3 style="font-size: 16px;color: var(--primary);font-weight: 600;">
+                                                                                        Award and Achievements
+                                                                                    </h3>
+                                                                                    <ul>
+                                                                                        <t t-foreach="data.get('achievements', [])"
+                                                                                           t-as="achievement">
+                                                                                            <li>
+                                                                                                <div style="font-size: 18px;font-weight: 600;">
+                                                                                                    <t t-esc="achievement['achievement_name']"/>
+
+                                                                                                    -
+                                                                                                    <t t-esc="achievement['organized_by']"/>
+                                                                                                </div>
+                                                                                                <div style="font-weight: 500;font-size: 16px;">
+                                                                                                    <t t-esc="achievement['description']"/>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                        </t>
+                                                                                    </ul>
+
+                                                                                </section>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                                <t t-if="data.get('presentations')">
+                                                                    <div class="card bg-white" data-name="Item">
+                                                                        <a href="#" role="tab" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           class=" card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                                           data-bs-target="#myCollapseTab1700712777283">
+                                                                            <span style="color: rgb(31, 31, 31);font-size: 11px"/>
+                                                                            <span style="font-size: 21px;"
+                                                                                  class="text-o-color-3">
+                                                                                <strong>
+                                                                                    <span class="fa fa-user-circle"
+                                                                                          style="padding-right: 10px;"
+                                                                                          contenteditable="false">&amp;ZeroWidthSpace;
+                                                                                    </span>
+                                                                                    PAPER
+                                                                                    PRESENTATION
+                                                                                </strong>
+                                                                            </span>
+                                                                            <br/>
+                                                                        </a>
+                                                                        <div class="collapse"
+                                                                             data-parent="#myCollapse1700712777280"
+                                                                             role="tabpanel"
+                                                                             id="myCollapseTab1700712777283">
+                                                                            <div class="card-body">
+                                                                                <section class="paperpresentations m-3">
+                                                                                    <div class="RightPanelInner">
+                                                                                        <div class="m-3 mt-4">
+                                                                                            <div style="text-align:justify;">
+                                                                                                <ol>
+                                                                                                    <t t-foreach="data.get('presentations', [])"
+                                                                                                       t-as="presentation">
+                                                                                                        <li class="mt-4">
+                                                                                                            <h3 class="section-sub-title mb-0">
+                                                                                                                <t t-esc="presentation['title']"/>
+                                                                                                            </h3>
+                                                                                                            <p style="font-weight:600;font-size:14px;">
+                                                                                                                Organized
+                                                                                                                By
+                                                                                                                <t t-esc="presentation['organization_name']"/>
+                                                                                                            </p>
+                                                                                                            <p>
+                                                                                                                <t t-esc="presentation['description']"/>
+                                                                                                            </p>
+                                                                                                        </li>
+                                                                                                    </t>
+                                                                                                </ol>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </section>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                                <t t-if="data.get('publications')">
+                                                                    <div class="card bg-white" data-name="Item">
+                                                                        <a href="#" role="tab" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           class=" card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                                           data-bs-target="#myCollapseTab1700712777284">
+                                                                            <span style="color: rgb(31, 31, 31);font-size: 11px"/>
+                                                                            <span style="font-size: 21px;"
+                                                                                  class="text-o-color-3">
+                                                                                <strong>
+                                                                                    <span class="fa fa-user-circle"
+                                                                                          style="padding-right: 10px;"
+                                                                                          contenteditable="false">&amp;ZeroWidthSpace;
+                                                                                    </span>
+                                                                                    Publications
+                                                                                </strong>
+                                                                            </span>
+                                                                            <br/>
+                                                                        </a>
+                                                                        <div class="collapse"
+                                                                             data-parent="#myCollapse1700712777280"
+                                                                             role="tabpanel"
+                                                                             id="myCollapseTab1700712777284">
+                                                                            <div class="card-body">
+
+                                                                                <section class="m-3">
+                                                                                    <ul>
+                                                                                        <t t-foreach="data.get('publications', [])"
+                                                                                           t-as="publication">
+                                                                                            <li class="mt-4">
+                                                                                                <h3 class="section-sub-title mb-0">
+                                                                                                    <t t-esc="publication['title']"/>
+                                                                                                </h3>
+                                                                                                <p style="font-weight:600;font-size:14px;">
+                                                                                                    Publisher:-
+                                                                                                    <t t-esc="publication['author']"/>
+                                                                                                </p>
+                                                                                                <p>
+                                                                                                    <t t-esc="publication['description']"/>
+                                                                                                </p>
+                                                                                            </li>
+                                                                                        </t>
+                                                                                    </ul>
+
+
+                                                                                </section>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                                <t t-if="data.get('books_authorized')">
+                                                                    <div class="card bg-white" data-name="Item">
+                                                                        <a href="#" role="tab" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           class=" card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                                           data-bs-target="#myCollapseTab1700712777285">
+                                                                            <span style="color: rgb(31, 31, 31);font-size: 11px"/>
+                                                                            <span style="font-size: 21px;"
+                                                                                  class="text-o-color-3">
+                                                                                <strong>
+                                                                                    <span class="fa fa-user-circle"
+                                                                                          style="padding-right: 10px;"
+                                                                                          contenteditable="false">&amp;ZeroWidthSpace;
+                                                                                    </span>
+                                                                                    Books Authorized
+                                                                                </strong>
+                                                                            </span>
+                                                                            <br/>
+                                                                        </a>
+                                                                        <div class="collapse"
+                                                                             data-parent="#myCollapse1700712777280"
+                                                                             role="tabpanel"
+                                                                             id="myCollapseTab1700712777285">
+                                                                            <div class="card-body">
+
+                                                                                <section class="m-3">
+                                                                                    <ul>
+                                                                                        <t t-foreach="data.get('books_authorized', [])"
+                                                                                           t-as="books_authorize">
+                                                                                            <li class="mt-4">
+                                                                                                <h3 class="section-sub-title mb-0">
+                                                                                                    <t t-esc="books_authorize['title']"/>
+                                                                                                </h3>
+                                                                                                <p style="font-weight:600;font-size:14px;">
+                                                                                                    Author:-
+                                                                                                    <t t-esc="books_authorize['author']"/>
+                                                                                                </p>
+                                                                                                <p>
+                                                                                                    <t t-esc="books_authorize['description']"/>
+                                                                                                </p>
+                                                                                            </li>
+                                                                                        </t>
+                                                                                    </ul>
+
+
+                                                                                </section>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                                <t t-if="data.get('researches')">
+                                                                    <div class="card bg-white" data-name="Item">
+                                                                        <a href="#" role="tab" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           class=" card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                                           data-bs-target="#myCollapseTab1700712777286">
+                                                                            <span style="color: rgb(31, 31, 31);font-size: 11px"/>
+                                                                            <span style="font-size: 21px;"
+                                                                                  class="text-o-color-3">
+                                                                                <strong>
+                                                                                    <span class="fa fa-user-circle"
+                                                                                          style="padding-right: 10px;"
+                                                                                          contenteditable="false">&amp;ZeroWidthSpace;
+                                                                                    </span>
+                                                                                    Researches
+                                                                                </strong>
+                                                                            </span>
+                                                                            <br/>
+                                                                        </a>
+                                                                        <div class="collapse"
+                                                                             data-parent="#myCollapse1700712777280"
+                                                                             role="tabpanel"
+                                                                             id="myCollapseTab1700712777286">
+                                                                            <div class="card-body">
+
+                                                                                <section class="m-3">
+                                                                                    <ul>
+                                                                                        <t t-foreach="data.get('researches', [])"
+                                                                                           t-as="research">
+                                                                                            <li class="mt-4">
+                                                                                                <h3 class="section-sub-title mb-0">
+                                                                                                    <t t-esc="research['research_guide']"/>
+                                                                                                </h3>
+                                                                                                <p style="font-weight:600;font-size:14px;">
+                                                                                                    <t t-esc="research['department']"/>
+                                                                                                </p>
+                                                                                                <p>
+                                                                                                    <t t-esc="research['institution']"/>
+                                                                                                </p>
+                                                                                            </li>
+                                                                                        </t>
+                                                                                    </ul>
+
+
+                                                                                </section>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                            </div>
+                                                        </t>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="faculty_details_mu_page" model="website.page">
+            <field name="url">/faculty_details</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="faculty_details_mu"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

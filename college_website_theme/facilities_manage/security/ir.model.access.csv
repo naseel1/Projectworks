@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_facility_manage_admin,Facilities Manage Admin,model_facility_manage,base.group_user,1,1,1,1
+access_facility_manage_public,Facilities Manage Public,model_facility_manage,base.group_public,1,0,0,0
+access_facility_manage_portal,Facilities Manage Portal,model_facility_manage,base.group_portal,1,0,0,0
+
+access_facility_image_admin,Facilities Image Admin,model_facility_image,base.group_user,1,1,1,1
+access_facility_image_public,Facilities Image Public,model_facility_image,base.group_public,1,0,0,0
+access_facility_image_portal,Facilities Image Portal,model_facility_image,base.group_portal,1,0,0,0

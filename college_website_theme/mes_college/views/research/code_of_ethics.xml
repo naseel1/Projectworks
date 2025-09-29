@@ -1,0 +1,114 @@
+<odoo>
+    <data>
+        <record id="code_of_ethics" model="ir.ui.view">
+            <field name="name">Code Of Ethics</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.code_of_ethics</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.code_of_ethics_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Code Of Ethics
+                                                </h2>
+                                                <div class="content_text" style="text-align:justify;padding: 0;">
+                                                    For promoting productivity and intellectual output and honesty in
+                                                    academic writing, MES Kalladi College has taken immense number of
+                                                    measures for maintaining ethical practices in research activities.
+                                                    The guidelines of the procedures has to be abide by the students and
+                                                    teachers for their excellence in research by the following :
+                                                    <br/>
+                                                    <br/>
+                                                    <ul>
+                                                        <li>
+                                                            All research and academic works of the students such as
+                                                            assignment, project reports, dissertations should be free
+                                                            from plagiarism.
+                                                        </li>
+                                                        <li>
+                                                            Students shall give an undertaking that their project/
+                                                            dissertation/ assignment submitted for assessment is
+                                                            bonafide and has not been published anywhere for any other
+                                                            degree
+                                                        </li>
+                                                        <li>
+                                                            It is the duty of the supervising faculty to check and
+                                                            verify that the submitted assignments are free from
+                                                            plagiarism before issuing the certificate to the student.
+                                                        </li>
+                                                        <li>
+                                                            To ensure the authenticity of the projects/theses
+                                                            /dissertations submitted the students and faculty members
+                                                            may use the Plagiarism Checker software provided in the
+                                                            library .
+                                                        </li>
+                                                        <li>
+                                                            Research Promotion Council arranges awareness and
+                                                            sensitization programmes on Plagiarism for the students and
+                                                            faculties
+                                                        </li>
+                                                        <li>
+                                                            The Research guides and their Research scholars of our
+                                                            Institution can access the plagiarism check software using
+                                                            Username and Password provided by the University of Calicut.
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/res-chemistry" class="readmore" id="naac_link">
+                                                    Chemistry
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/res-history"
+                                                   class="readmore" id="naac_link" target="_blank">
+                                                    History
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Economics
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Facilities
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Research Guides
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="code_of_ethics_page" model="website.page">
+            <field name="url">/code_of_ethics</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="code_of_ethics"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

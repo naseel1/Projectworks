@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="template_emea" inherit_id="website.layout" name="Header Emea" active="once">
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+                  rel="stylesheet"/>
+
+            <header id="top" data-anchor="true" data-name="Header" class="">
+                <div class="top-bar" style="list-style-type:none;" data-oe-model="ir.ui.view" data-oe-id="760"
+                     data-oe-field="arch" data-oe-xpath="/data/xpath/header/div[1]">
+                    <ul class="navbar-nav" id="top_bar-item">
+                        <div class="top-item">
+                            <span id="top-contacts">
+                                <img src="/emea_training_college/static/img/phone-fill.svg" class="top-icons"/>
+                                1234567890
+                            </span>
+                            <span id="top-contacts">
+                                <img src="/emea_training_college/static/img/mail.svg" class="top-icons"/>
+                                abc@gmail.com
+                            </span>
+                            <span id="top-contacts">
+                                <img src="/emea_training_college/static/img/location.svg"
+                                     class="top-icons"/>
+                                kondotty, Malappuram, Kerala
+                            </span>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" id="top1">Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" id="top1">Facilities</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" id="top1">Library</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" id="top1">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" id="top1">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container" id="header-container">
+                    <nav class="navbar navbar-expand-lg navbar-light emea-navbar">
+                        <div class="emea-logo">
+                            <a href="/" class="logo">
+                                <div class="logo-img">
+                                    <img src="/emea_training_college/static/img/logo.svg" loading="lazy"
+                                         class="logo_image"/>
+                                </div>
+                                <div class="emea_name">
+                                    <h2 id="logo-name">
+                                        EMEA Training College
+                                        <br/>
+                                        <span id="logo-address">kondotty, Malappuram, Kerala</span>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-togglering navbar-toggler" id="navToggler">
+                            <span/>
+                            <span/>
+                            <span/>
+                        </div>
+                        <div class="collapse navbar-collapse " id="top_menu_collapse">
+                            <ul class="navbar-nav emea_nav">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item "/>
+                                        <t t-set="link_class" t-valuef=" nav-link emea_link "/>
+                                    </t>
+                                </t>
+                                <t t-call="portal.user_dropdown">
+                                    <!--<t t-set="_user_name" t-value="true"/>-->
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown "/>
+                                    <t t-set="_link_class" t-valuef="nav-link dropdown-toggle "/>
+                                </t>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </xpath>
+    </template>
+</odoo>
+

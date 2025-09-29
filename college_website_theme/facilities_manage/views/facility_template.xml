@@ -1,0 +1,39 @@
+<odoo>
+    <template id="template_facility_page" name="Facility Detail Page">
+        <t t-call="website.layout">
+            <section class="pt48 pb48 o_colored_level" style="background-image: none;">
+                <div class="container">
+                    <t t-if="facility">
+                        <h2 class="main_title">
+                            <t t-esc="facility.name"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1071" height="2" viewBox="0 0 1071 2"
+                                 fill="none"
+                                 class="depsvg" style="     width: 100%; ">
+                                <path d="M1 1L1070 1.00009" stroke="#3E7B4A" stroke-linecap="round"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                 fill="none">
+                                <circle cx="6.32715" cy="6.00684" r="6.00684" fill="#FFC82C"/>
+                            </svg>
+                        </h2>
+                    </t>
+                </div>
+
+            </section>
+            <section class="s_image_gallery" data-vcss="001" data-columns="3" data-snippet="s_images_wall"
+                     data-name="Images Wall">
+                <div class="container">
+                    <div class="d-flex gap-3">
+                        <t t-foreach="facility.images_ids" t-as="img">
+                            <div class="col-md-3 mb-3 o_masonry_col">
+                                <img t-att-src="'/web/image?model=facility.image&amp;id=%s&amp;field=image' % img.id"
+                                     class="facility-img img-fluid d-block" data-index="0" alt="" data-name="Image"/>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+
+</odoo>

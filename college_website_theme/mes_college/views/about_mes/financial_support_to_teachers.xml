@@ -1,0 +1,55 @@
+<odoo>
+    <data>
+        <record id="financial_support_to_teachers_mes" model="ir.ui.view">
+            <field name="name">Financial Support To Teachers</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.financial_support_to_teachers_mes</field>
+            <field name="arch" type="xml">
+                <t name="Financial Support To Teachers" t-name="mes_college.financial_support_to_teachers_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title">Financial Support To Teachers</h2>
+                                    <div class=" pt32 pb32" style="padding:15px;">
+                                        <section class="col-md-12" style="margin:auto;">
+                                            <div>
+                                                <div class="content_text">
+                                                    Policy on providing financial support to teachers to attend
+                                                    conferences workshops and towards membership fee of professional
+                                                    bodies
+                                                    <br/>
+                                                    <br/>
+                                                    The policy on providing financial support to the teachers is in
+                                                    force in order to attend conferences workshops organised by
+                                                    Institutions of National repule. Universities and Colleges and
+                                                    towards membership fee of professional bodies
+                                                </div>
+                                            </div>
+                                            <section class="d-flex o_colored_level margin_30 ssr"
+                                                     style="background-image: none;">
+                                                <div class="col-md-6 programme_link">
+                                                    Policy Manual
+                                                </div>
+                                                <a href="/mes_college/static/img/Policy-Manual.jpg"
+                                                   target="_blank" class="readmore" id="view">View
+                                                </a>
+                                            </section>
+
+                                        </section>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="financial_support_to_teachers_page" model="website.page">
+            <field name="url">/financial_support_to_teachers</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="financial_support_to_teachers_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

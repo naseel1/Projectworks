@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- IQAC Admin Group -->
+    <record id="group_iqac_admin" model="res.groups">
+        <field name="name">IQAC Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>

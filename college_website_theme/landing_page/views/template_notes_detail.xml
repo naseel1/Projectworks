@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="template_notes_detail" name="Notes - Semesters">
+        <t t-call="website.layout">
+            <div class="container py-5">
+                <h2 class="text-center mb-4">
+                    <t t-esc="notes_title"/>
+                </h2>
+                <div class="row">
+                    <t t-foreach="semesters" t-as="sem">
+                        <div class="col-md-4 mb-3">
+                            <a t-att-href="'/notes/' + notes_title.replace(' ', '-') + '/' + str(sem['number'])">
+                                <div class="shadow p-4 rounded bg-white text-center h-100">
+                                    <h5>
+                                        <t t-esc="sem['label']"/>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

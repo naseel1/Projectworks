@@ -1,0 +1,167 @@
+<odoo>
+    <data>
+        <record id="football" model="ir.ui.view">
+            <field name="name">Football</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.football</field>
+            <field name="arch" type="xml">
+                <t name="Football" t-name="mss_college.football_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div class="row" style="margin:20px">
+
+                                <div class="col-12  col-md-3 order-2 order-md-1" style="padding-left:0;">
+                                    <div class="side-bar" id="sidebar">
+
+                                        <div id="sb1" style="color: var(--primary);padding: 10px 0px 10px 0;">
+                                            <h2 style="font-family: lato;font-weight: 900;font-size: 18px;line-height: 1.8;background: white;padding: 10px;border-radius: 5px  0px 0px 5px;">
+                                                Sports
+                                            </h2>
+                                        </div>
+                                        <div class="sidebar-item" id="sb1">
+                                            <a href="/sports">
+                                                <p class="sidebar-text">
+                                                    <span>Sports Ground</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item  sidebar-item-active" id="sb2">
+                                            <a href="/football">
+                                                <p class="sidebar-text">
+                                                    <span>Football</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item" id="sb3">
+                                            <a href="/volleyball">
+                                                <p class="sidebar-text">
+                                                    <span>volleyball</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item" id="sb4">
+                                            <a href="/cricket">
+                                                <p class="sidebar-text">
+                                                    <span>Cricket</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item" id="sb5">
+                                            <a href="/badminton">
+                                                <p class="sidebar-text">
+                                                    <span>Badminton</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="sidebar-item" id="sb6">
+                                            <a href="/basketball">
+                                                <p class="sidebar-text">
+                                                    <span>Basketball</span>
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 order-1 order-md-2" id="page-content">
+                                    <div style="padding-left: 50px;">
+                                        <h3 class="iqac_head">Football</h3>
+                                        <hr id="heading_line"/>
+                                        <div class="oe_structure oe_empty"
+                                             data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                            <section style="background-image: none;">
+                                                <section class="s_carousel_wrapper" data-vxml="001"
+                                                         data-snippet="s_carousel" data-name="Carousel"
+                                                         style="background-image: none;">
+                                                    <div class="s_carousel s_carousel_default carousel slide"
+                                                         data-bs-interval="10000" id="myCarousel1709634366864"
+                                                         style="background-image: none;">
+
+                                                        <ol class="carousel-indicators o_we_no_overlay">
+                                                            <li data-bs-slide-to="0"
+                                                                data-bs-target="#myCarousel1709634366864" class="active"
+                                                                aria-current="true"/>
+                                                            <li data-bs-slide-to="1"
+                                                                data-bs-target="#myCarousel1709634366864"/>
+                                                            <li data-bs-slide-to="2"
+                                                                data-bs-target="#myCarousel1709634366864"/>
+                                                            <li data-bs-target="#myCarousel1709634366864"
+                                                                data-bs-slide-to="3"/>
+                                                        </ol>
+                                                        <div class="carousel-inner"
+                                                             style="height:350px; min-height:auto;">
+
+                                                            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active"
+                                                                 style="background-image: url(&quot;/web/image/2189-d0d843c7/Images_M1591_D0_F618.jpeg&quot;);"
+                                                                 data-name="Slide" data-original-id="2188"
+                                                                 data-original-src="/web/image/2188-efa9c103/Images_M1591_D0_F618.jpeg"
+                                                                 data-mimetype="image/jpeg" data-resize-width="900">
+                                                                <div class="container oe_unremovable">
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center"
+                                                                 style="background-image: url(&quot;/web/image/2191-07877267/Images_M1591_D0_F620.jpeg&quot;);"
+                                                                 data-name="Slide" data-original-id="2187"
+                                                                 data-original-src="/web/image/2187-02681dfd/Images_M1591_D0_F620.jpeg"
+                                                                 data-mimetype="image/jpeg" data-resize-width="900">
+                                                                <div class="container oe_unremovable">
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center"
+                                                                 style="background-image: url(&quot;/web/image/2190-68179ff7/Images_M1591_D0_F621.jpeg&quot;);"
+                                                                 data-name="Slide" data-original-id="2186"
+                                                                 data-original-src="/web/image/2186-6d0e9fec/Images_M1591_D0_F621.jpeg"
+                                                                 data-mimetype="image/jpeg" data-resize-width="900">
+                                                                <div class="container oe_unremovable">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item pt128 pb128 o_colored_level oe_img_bg o_bg_img_center"
+                                                                 style="background-image: url(&quot;/web/image/2192-875860cf/Images_M1591_D0_F735.jpeg&quot;);"
+                                                                 data-name="Slide" data-original-id="2185"
+                                                                 data-original-src="/web/image/2185-368ff13e/Images_M1591_D0_F735.jpeg"
+                                                                 data-mimetype="image/jpeg" data-resize-width="900">
+                                                                <div class="container oe_unremovable">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                           data-bs-slide="prev" role="img" aria-label="Previous"
+                                                           title="Previous" href="#myCarousel1709634366864">
+                                                            <span class="carousel-control-prev-icon"/>
+                                                            <span class="visually-hidden o_default_snippet_text">
+                                                                Previous
+                                                            </span>
+                                                        </a>
+                                                        <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                           data-bs-slide="next" role="img" aria-label="Next"
+                                                           title="Next" href="#myCarousel1709634366864"
+                                                           style="right: 0px;">
+                                                            <span class="carousel-control-next-icon"/>
+                                                            <span class="visually-hidden o_default_snippet_text">
+                                                                Next
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </section>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_football_page" model="website.page">
+            <field name="url">/football</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="football"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

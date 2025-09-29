@@ -1,0 +1,83 @@
+<odoo>
+    <data>
+        <record id="strategic_plan_mes" model="ir.ui.view">
+            <field name="name">Strategic Plan</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.strategic_plan_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.strategic_plan_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align: left;padding-left: 20px;">
+                                                Strategic Plan
+                                            </h2>
+                                            <section class="d-flex o_colored_level margin_30 ssr"
+                                                     style="background-image: none;">
+                                                <div class="col-md-6 programme_link">
+                                                    Strategic Plan 2020-2021
+                                                </div>
+                                                <a href="#"
+                                                   target="_blank" class="readmore" id="view">View
+                                                </a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <section class="col-md-12" style="margin:auto;">
+                                        <h2 class="main-head" style="text-align: left;padding-left: 20px;padding-top:20px;">Vision 2020
+                                        </h2>
+                                        <div class="content_text">
+                                            M.E.S. Kalladi College, Mannarkkad is a Government Aided college is
+                                            affiliated to University of Calicut. The college started functioning as a
+                                            Junior College in 1967. University of Calicut permitted to start degree
+                                            classes during 1971-72. The campus is situated in the Mannarkkad Panchayath
+                                            on a beautiful hillock in the Palakkad-Calicut National Highway and is
+                                            bordered by the perennial Kunthipuzha and fortressed by panoramic Attapadi
+                                            hills.
+
+                                            The college is the proud symbol of the Muslim Educational Society, which is
+                                            one of the largest minority educational agency in India. This is the first
+                                            college started by the MES to the cause of higher education in Kerala,
+                                            especially to the educationally backward areas of Malabar. The vision and
+                                            mission statement of the college are in tune with the objectives of the
+                                            Higher Education Policy. The college offers seven UG programmes, six PG
+                                            programmes and eight Certificate programmes. The administration implemented
+                                            the Decentralized mechanism for quality improvement.
+
+                                            A meeting of the Management with the Internal Quality Assurance Cell and
+                                            Planning forum has been convened to formulate a strategic plan of the
+                                            institution based on the NAAC Peer Team report on Institutional Re-
+                                            accreditation of 22nd November, 2012 suggested recommendations for quality
+                                            enhancement of the institution. The meeting analyzed the recommendations of
+                                            the report in detail and thrust areas were identified to transform the
+                                            institution to “Autonomous status and Potential of Excellence”. The areas
+                                            identified by the meeting are Inclusive Excellence, Digital Campus, Building
+                                            Students Ability, Research, Green Campus, Sports, Community Building and
+                                            Infrastructure
+
+                                            The meeting entrusted faculty members for monitoring the progress. There
+                                            will be three level target achievement analysis Short term (2014-16J,
+                                            Midterm (2016-18J and Vision accomplishment [2020). The funds required will
+                                            be mobilized from Management and Government funding agencies.
+
+                                            The strategic plan is signed on 20th March,2013
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="strategic_plan_mes_page" model="website.page">
+            <field name="url">/strategic_plan</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="strategic_plan_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

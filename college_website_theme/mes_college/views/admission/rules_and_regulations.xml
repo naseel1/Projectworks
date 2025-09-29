@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record id="rules_and_regulations" model="ir.ui.view">
+            <field name="name">rules_and_regulations</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.rules_and_regulations</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.rules_and_regulations_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div id="wrap" class="oe_structure">
+                                <section class="bg_color">
+                                    <div class="container" id="container_width">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">Rules and Regulations</h2>
+                                                <div class="content_text" style="text-align:left;padding: 0;">
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="rules_and_regulations_page" model="website.page">
+            <field name="url">/rules_and_regulations</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="rules_and_regulations"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

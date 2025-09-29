@@ -1,0 +1,133 @@
+<odoo>
+    <data>
+        <record id="research_projects" model="ir.ui.view">
+            <field name="name">Research Projects</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.research_projects</field>
+            <field name="arch" type="xml">
+                <t name="Research Project" t-name="emea_college_theme.research_projects_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">Research Projects</h2>
+                                <section>
+                                    <div class="container" style="max-width:1000px;">
+                                        <div class="table-responsive">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sl No</th>
+                                                        <th>Name of the Researcher</th>
+                                                        <th>Title of the Project</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1
+                                                        </td>
+                                                        <td>Abdul Rasaque PM
+                                                        </td>
+                                                        <td>
+                                                            <ol>
+                                                                <li>Development and Environment : A study of Development
+                                                                    Induced Displacement in Calicut International
+                                                                    Airport
+                                                                </li>
+                                                                <li>Performance Evaluation of Commercial banks : A study
+                                                                    of Malappuram District using CD ratio
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            Dr. Ibrahim Cholakkal
+                                                        </td>
+                                                        <td>
+                                                            <ol>
+                                                                <li>Education and Health Status of Household: A Study of
+                                                                    Tanur
+                                                                    Grama Panchayath
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            Dr. Shiji Thomas
+                                                        </td>
+                                                        <td>
+                                                            <ol>
+                                                                <li>Synergistic effect of antibiotics on some pathogenic
+                                                                    strains
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>
+                                                            Lt. Abdul Rasheed K
+                                                        </td>
+                                                        <td>
+                                                            <ol>
+                                                                <li>Hurdles and solution in English language
+                                                                    acquisition: a
+                                                                    study on undergraduate and higher secondary school
+                                                                    students
+                                                                    from educationally backward eranad taluk of
+                                                                    malappuram
+                                                                    district
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>
+                                                            Dr.KrishnaKumar T
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6
+                                                        </td>
+                                                        <td>
+                                                            Hussain .V
+                                                        </td>
+                                                        <td>
+                                                            <ol>
+                                                                <li>Role of MGNREGS in Eradicating poverty of SC and
+                                                                    ST
+                                                                    families in Pulamanthol Panchayath in Malappuram
+                                                                    District.
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                                <h2 class="page_head">Ongoing Projects
+                                </h2>
+                                <div>
+                                    Nill
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="research_projects_page" model="website.page">
+            <field name="url">/research_projects</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="research_projects"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

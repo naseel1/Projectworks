@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <record id="cut_of_marks" model="ir.ui.view">
+            <field name="name">cut_of_marks</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.cut_of_marks</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.cut_of_marks_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align:left">Cut of Marks</h2>
+                                            <div class="content_text" style="text-align:justify;padding: 0;">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="cut_of_marks_page" model="website.page">
+            <field name="url">/cut_of_marks</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="cut_of_marks"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

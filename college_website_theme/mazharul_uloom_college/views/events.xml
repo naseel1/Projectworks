@@ -1,0 +1,113 @@
+ <div id="wrap" class="oe_structure oe_empty">
+             <section class="pt40 pb40">
+                        <div class="leader-container">
+                            <div class="news_block">
+                                <div class="events">
+
+
+                                <div class=" about-heading ">
+
+                                    <h2>Events &amp;amp; Happenings</h2>
+                                     <div class="about-dash"/>
+                                    </div>
+
+                                      <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pt16 pb32 o_colored_level s_blog_post_mu_college o_dynamic_empty" data-name="Blog Posts" style="background-image: none;" data-filter-by-blog-id="2" data-number-of-records="2" data-filter-id="1" data-template-key="mu_college_events_snippet.dynamic_filter_template_blog_post_mu_college" data-force-minimum-max-limit-to16="1">
+            <div class="container o_not_editable">
+                <div class="css_non_editable_mode_hidden">
+                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                        Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                    </div>
+                </div>
+                <div class="dynamic_snippet_template"/>
+            </div>
+        </section>
+
+
+                                </div>
+                                <div class="notifications">
+                                    <div class="notification_head">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+  <path d="M7.81368 4.87515C7.97016 4.68867 8.04796 4.44863 8.03063 4.20581C8.01331 3.96299 7.90221 3.73643 7.72083 3.57406C7.53946 3.41168 7.30204 3.32622 7.05879 3.33576C6.81554 3.3453 6.58553 3.44908 6.41743 3.62515C4.88177 5.33797 3.86397 7.45158 3.48243 9.72015C3.44714 9.96273 3.50825 10.2095 3.65268 10.4075C3.79712 10.6056 4.01337 10.7392 4.25512 10.7797C4.49687 10.8203 4.74488 10.7645 4.94602 10.6244C5.14716 10.4843 5.28542 10.271 5.33118 10.0302C5.65385 8.11142 6.51474 6.32375 7.81368 4.87515ZM24.5849 3.62515C24.5031 3.53257 24.4037 3.45709 24.2926 3.40303C24.1815 3.34898 24.0608 3.31743 23.9374 3.3102C23.8141 3.30297 23.6905 3.3202 23.5738 3.36089C23.4571 3.40159 23.3496 3.46495 23.2575 3.54733C23.1654 3.62972 23.0905 3.72949 23.0371 3.84093C22.9837 3.95237 22.9529 4.07326 22.9463 4.19666C22.9398 4.32007 22.9578 4.44354 22.9992 4.55998C23.0405 4.67642 23.1045 4.78353 23.1874 4.87515C24.4868 6.32364 25.3481 8.1113 25.6712 10.0302C25.7123 10.2755 25.8492 10.4944 26.0517 10.6388C26.152 10.7103 26.2654 10.7614 26.3854 10.7891C26.5054 10.8167 26.6297 10.8205 26.7512 10.8002C26.8727 10.7798 26.9889 10.7357 27.0934 10.6704C27.1978 10.6051 27.2884 10.5199 27.3599 10.4196C27.4314 10.3193 27.4824 10.206 27.5101 10.0859C27.5378 9.96592 27.5415 9.84163 27.5212 9.72015C27.1389 7.45134 26.1214 5.33771 24.5849 3.62515Z" fill="#FFC82C"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4993 3.3125C13.2615 3.3125 11.1154 4.20145 9.53307 5.78379C7.95073 7.36613 7.06179 9.51224 7.06179 11.75V12.6875C7.06563 15.2365 6.12154 17.6958 4.41304 19.5875C4.31043 19.7013 4.2373 19.8386 4.20003 19.9872C4.16276 20.1358 4.16249 20.2913 4.19925 20.4401C4.23601 20.5889 4.30867 20.7263 4.41088 20.8405C4.51309 20.9547 4.64173 21.0421 4.78554 21.095C6.71554 21.8075 8.73554 22.3325 10.8243 22.6488C10.7773 23.2914 10.8632 23.9369 11.0769 24.5448C11.2905 25.1528 11.6272 25.7102 12.0659 26.1822C12.5046 26.6542 13.0359 27.0306 13.6267 27.2881C14.2174 27.5455 14.8549 27.6783 15.4993 27.6783C16.1437 27.6783 16.7812 27.5455 17.3719 27.2881C17.9626 27.0306 18.494 26.6542 18.9327 26.1822C19.3714 25.7102 19.7081 25.1528 19.9217 24.5448C20.1353 23.9369 20.2213 23.2914 20.1743 22.6488C22.2343 22.3364 24.2572 21.8154 26.2118 21.0938C26.3554 21.0407 26.4838 20.9534 26.5858 20.8393C26.6879 20.7252 26.7604 20.5879 26.7972 20.4393C26.8339 20.2908 26.8337 20.1354 26.7966 19.987C26.7595 19.8385 26.6866 19.7013 26.5843 19.5875C24.8762 17.6957 23.9326 15.2363 23.9368 12.6875V11.75C23.9368 9.51224 23.0478 7.36613 21.4655 5.78379C19.8832 4.20145 17.737 3.3125 15.4993 3.3125ZM12.6868 23C12.6868 22.9575 12.6868 22.9163 12.6893 22.875C14.5588 23.0435 16.4397 23.0435 18.3093 22.875L18.3118 23C18.3118 23.7459 18.0155 24.4613 17.488 24.9887C16.9606 25.5162 16.2452 25.8125 15.4993 25.8125C14.7534 25.8125 14.038 25.5162 13.5105 24.9887C12.9831 24.4613 12.6868 23.7459 12.6868 23Z" fill="#FFC82C"/>
+</svg>
+                                        Notifications
+                                    </div>
+                                    <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pt32 pb32 o_colored_level s_blog_post_mu_college_notification o_dynamic_empty" data-name="Blog Posts" style="background-image: none;" data-filter-by-blog-id="-1" data-number-of-records="10" data-filter-id="1" data-template-key="mu_college_events_snippet.dynamic_filter_template_blog_post_mu_college_notification" data-force-minimum-max-limit-to16="1">
+            <div class="container o_not_editable">
+                <div class="css_non_editable_mode_hidden">
+                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                        Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                    </div>
+                </div>
+                <div class="dynamic_snippet_template"/>
+            </div>
+        </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+        </div>
+                    <style>
+                        .notification_head{
+                            border-radius: 20px 20px 0px 0px;
+    border-bottom: 3px solid #FFC82C;
+    background: #141F7E;
+    display: flex;
+    color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 50px;
+gap:14px;
+
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+    z-index: 1;
+    position: relative;
+                        }
+                        .leader-container {
+                       padding:0 70px;
+                        }
+                        .news_block {
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-heading {
+    display: flex
+;
+    align-items: center;
+    position: relative;
+}
+.events {
+    width: 886px;
+}
+.about-heading h2 {
+    color: #112215;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    margin: 0;
+}
+.about-dash {
+    flex-grow: 1;
+    height: 1px;
+    background: #141F7E;
+    margin-left: 20px;
+}
+.notifications {
+       width: 384px;
+    border-bottom: 3px solid #141F7E;
+    background: #F5F8FF;
+    position: relative;
+    max-height: 628px;
+    overflow: hidden;
+}
+
+                    </style>

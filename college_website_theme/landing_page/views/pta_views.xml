@@ -1,0 +1,54 @@
+<odoo>
+    <!-- PTA Form View -->
+    <record id="view_pta_manage_config_form" model="ir.ui.view">
+        <field name="name">pta.manage.config.form</field>
+        <field name="model">pta.manage</field>
+        <field name="arch" type="xml">
+            <form string="PTA">
+                <sheet>
+                    <group>
+                        <field name="incharge_name"/>
+                        <field name="incharge_image"/>
+                        <field name="designation"/>
+
+                    </group>
+
+                    <group string="PTA Reports">
+                        <field name="report_ids">
+                            <tree editable="bottom">
+                                <field name="report_title"/>
+                                <field name="report_file" filename="report_filename"/>
+                                <field name="report_filename" readonly="1"/>
+                            </tree>
+                            <form string="PTA Report">
+                                <group>
+                                    <field name="report_title"/>
+                                    <field name="report_file" filename="report_filename"/>
+                                    <field name="report_filename" readonly="1"/>
+                                </group>
+                            </form>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- PTA Menu Action (links to single record) -->
+    <record id="pta_manage_action" model="ir.actions.act_window">
+        <field name="name">PTA</field>
+        <field name="res_model">pta.manage</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_pta_manage_config_form"/>
+        <field name="res_id" ref="pta_single_record"/>
+        <field name="context">{'create': False}</field>
+    </record>
+
+    <!-- PTA Menu -->
+    <menuitem id="menu_pta_manage"
+              name="PTA"
+              parent="menu_landing_page_root"
+              action="pta_manage_action"
+              sequence="25"
+              groups="landing_page.group_pta_manage_admin"/>
+</odoo>

@@ -1,0 +1,50 @@
+<odoo>
+    <!-- Form View for Image Gallery -->
+    <record id="view_image_gallery_config_form" model="ir.ui.view">
+        <field name="name">image.gallery.config.form</field>
+        <field name="model">image.galleries</field>
+        <field name="arch" type="xml">
+            <form string="Image Gallery">
+                <sheet>
+                    <group>
+                        <field name="name" string="Image Name"/>
+                        <field name="image" widget="image" required="1" class="oe_avatar"/>
+                        <field name="date" required="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Image Gallery -->
+    <record id="view_image_gallery_config_tree" model="ir.ui.view">
+        <field name="name">image.gallery.config.tree</field>
+        <field name="model">image.galleries</field>
+        <field name="arch" type="xml">
+            <tree string="Image Gallery">
+                <field name="name" required="1" string="Image Name"/>
+                <field name="date" required="1"/> <!-- Updated to use date instead of sequence -->
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Image Gallery -->
+    <record id="action_image_gallery" model="ir.actions.act_window">
+        <field name="name">Image Gallery</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">image.galleries</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_image_gallery_config_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Images Found
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Items for Image Gallery -->
+    <menuitem id="menu_image_gallery_root" name="Image Gallery" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_image_galleries" name="Manage Images" parent="menu_image_gallery_root"
+              action="action_image_gallery" sequence="20" groups="image-gallery.group_image_gallery_admin"/>
+</odoo>

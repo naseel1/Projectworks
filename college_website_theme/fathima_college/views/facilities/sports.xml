@@ -1,0 +1,394 @@
+<odoo>
+    <data>
+        <record id="sports" model="ir.ui.view">
+            <field name="name">sports</field>
+            <field name="type">qweb</field>
+            <field name="key">fathima_college.sports</field>
+            <field name="arch" type="xml">
+                <t name="sports" t-name="fathima_college.sports_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32 pb32 o_colored_level" style="background-image: none;">
+                                <div class="container">
+                                    <div class="about_head s_header">Facilities
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+                                    <section class="administration pt16  pb o_colored_level tabs_back tabs_back"
+                                             data-vcss="001"
+                                             data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                                        <section class="all-facilities">
+                                            <div class="row">
+                                                <div class="facilities">
+                                                    <a href="/physical" data-original-title="" title=""
+                                                       class="facility-link ">
+                                                        Physical Facilities
+                                                    </a>
+                                                </div>
+                                                <div class="facilities">
+                                                    <a href="/sports" data-original-title="" title=""
+                                                       class="facility-link active">
+                                                        Sports Facilities
+                                                    </a>
+                                                </div>
+                                                <div class="facilities">
+                                                    <a href="/it" data-original-title="" title=""
+                                                       class="facility-link ">
+                                                        IT Facilities
+                                                    </a>
+                                                </div>
+                                                <div class="facilities">
+                                                    <a href="/amenities" data-original-title="" title=""
+                                                       class="facility-link">Amenities
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class=" row " id="department_row">
+                                            <div class="col-12 col-md-3 o_colored_level " id="side_section"
+                                                 data-original-title="" title="" aria-describedby="tooltip336631">
+                                                <div class="side-bar " id="sidebar"
+                                                     style="top: 5px;margin-bottom: 0;">
+                                                    <ul class=" nav nav-pills  flex-column"
+                                                        style="padding-inline-start: 0;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#sports-1" data-original-title="" title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="sports-1"
+                                                               class="nav-link active">
+                                                                Football Ground
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#sports-2" data-original-title="" title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="sports-2"
+                                                               class="nav-link ">
+                                                                indoor Court
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#sports-3" data-original-title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="sports-3"
+                                                               class="nav-link ">
+                                                                Basket Ball Court
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#sports-4" data-original-title="" title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="sports-4"
+                                                               class="nav-link ">
+                                                                Gymnasium
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-9 order-1 order-md-2 second_section  pb48 o_colored_level">
+                                                <div class="s_tabs_content tab-content">
+                                                    <div class="tab-pane fade active show" id="sports-1"
+                                                         role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">Football Ground
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    Fathima Arts and Science College, Nilambur, features
+                                                                    a well-maintained football ground designed to
+                                                                    support both training and competitive play. The
+                                                                    ground provides ample space for practice sessions,
+                                                                    inter-college tournaments, and recreational matches,
+                                                                    promoting physical fitness and team spirit among
+                                                                    students. Its quality surface and facilities
+                                                                    contribute to a positive sports experience and
+                                                                    encourage active participation in football.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="sports-2" role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">indoor Court
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    Fathima Arts and Science College, Nilambur, boasts a
+                                                                    well-equipped indoor court that caters to a variety
+                                                                    of sports such as basketball, volleyball, and
+                                                                    badminton. The indoor court provides a versatile
+                                                                    space for both practice and competitive events,
+                                                                    ensuring that students can engage in sports
+                                                                    activities regardless of weather conditions. Its
+                                                                    modern design and facilities support a range of
+                                                                    physical activities, promoting fitness and
+                                                                    sportsmanship within the college community.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="sports-3" role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">Basket Ball Court
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    Fathima Arts and Science College, Nilambur, features
+                                                                    a well-maintained basketball court that serves as a
+                                                                    hub for both casual play and organized competitions.
+                                                                    The court's quality surface and equipment support a
+                                                                    range of basketball activities, fostering teamwork
+                                                                    and athletic skill development. Whether for
+                                                                    practice, inter-college matches, or recreational
+                                                                    games, the basketball court provides an excellent
+                                                                    space for students to engage in the sport and stay
+                                                                    active.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="sports-4" role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">Gymnasium
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    Fathima Arts and Science College, Nilambur, has a
+                                                                    modern gymnasium equipped with a range of fitness
+                                                                    equipment including cardio machines, free weights,
+                                                                    and resistance training gear. The gymnasium is
+                                                                    designed to support students' fitness and wellness
+                                                                    goals, offering a space for regular workouts,
+                                                                    strength training, and overall physical
+                                                                    conditioning. It encourages a healthy lifestyle and
+                                                                    complements the college's commitment to holistic
+                                                                    student development.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="sports_page" model="website.page">
+            <field name="url">/sports</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="sports"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

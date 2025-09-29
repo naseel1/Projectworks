@@ -1,0 +1,386 @@
+<odoo>
+    <data>
+        <record id="physical" model="ir.ui.view">
+            <field name="name">physical</field>
+            <field name="type">qweb</field>
+            <field name="key">fathima_college.physical</field>
+            <field name="arch" type="xml">
+                <t name="Badminton" t-name="fathima_college.physical_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32 pb32 o_colored_level" style="background-image: none;">
+                                <div class="container">
+                                    <div class="about_head s_header">Facilities
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+                                    <section class="administration pt16  pb o_colored_level tabs_back tabs_back"
+                                             data-vcss="001"
+                                             data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                                        <section class="all-facilities">
+                                            <div class="row">
+                                                <div class="facilities">
+                                                    <a href="/physical" data-original-title="" title=""
+                                                       class="facility-link active">
+                                                        Physical Facilities
+                                                    </a>
+                                                </div>
+                                                <div class="facilities">
+                                                    <a href="/sports" data-original-title="" title=""
+                                                       class="facility-link ">
+                                                        Sports Facilities
+                                                    </a>
+                                                </div>
+                                                <div class="facilities">
+                                                    <a href="/it" data-original-title="" title=""
+                                                       class="facility-link ">
+                                                        IT Facilities
+                                                    </a>
+                                                </div>
+                                                <div class="facilities">
+                                                    <a href="/amenities" data-original-title="" title=""
+                                                       class="facility-link">Amenities
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class=" row " id="department_row">
+                                            <div class="col-12 col-md-3 o_colored_level " id="side_section"
+                                                 data-original-title="" title="" aria-describedby="tooltip336631">
+                                                <div class="side-bar " id="sidebar"
+                                                     style="top: 5px;margin-bottom: 0;">
+                                                    <ul class=" nav nav-pills  flex-column"
+                                                        style="padding-inline-start: 0;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#physical-1" data-original-title="" title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="physical-1"
+                                                               class="nav-link active">
+                                                                Class Rooms
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#physical-2" data-original-title="" title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="physical-2"
+                                                               class="nav-link ">
+                                                                Laboratories
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#physical-3" data-original-title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="physical-3"
+                                                               class="nav-link ">
+                                                                Library
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="#physical-4" data-original-title="" title=""
+                                                               data-bs-toggle="tab" role="tab"
+                                                               aria-controls="physical-4"
+                                                               class="nav-link ">
+                                                                Seminar Hall
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-9 order-1 order-md-2 second_section  pb48 o_colored_level">
+                                                <div class="s_tabs_content tab-content">
+                                                    <div class="tab-pane fade active show" id="physical-1"
+                                                         role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">Class Rooms
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    The College has 08 ventilated class rooms for
+                                                                    conducting theory classes. The class rooms are
+                                                                    equipped with conventional teaching tools &amp;
+                                                                    furnished comfortably to meet the students
+                                                                    requirements each classes have the provision of
+                                                                    black board, Dyce or Table, Fans, Tubes, CCTV and
+                                                                    WiFi etc.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="physical-2" role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">Laboratories
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    All departmental laboratories such as Microbiology,
+                                                                    Computer Science &amp; Chemistry are will equipped
+                                                                    with
+                                                                    modern, modular &amp; functional workspace. All the
+                                                                    departmental laboratories have sophisticated
+                                                                    instrumentation &amp; computational facilities. All
+                                                                    the
+                                                                    requirements of students such as water, electricity,
+                                                                    gas, server connection provided by all the
+                                                                    departments. The laboratories are well maintained
+                                                                    for carrying out curriculum oriented practical’s as
+                                                                    well as experiments beyond the curriculum.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="physical-3" role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">Library
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    The College has central library &amp; separate
+                                                                    reading
+                                                                    room. Library is enriched with Reference &amp;
+                                                                    Textbooks, Periodicals, News papers and Pathfinder
+                                                                    E-Library Intranet Web Portal it is an E-Resource
+                                                                    Management Software System which can contain
+                                                                    thousands of e-resources – in multiple fields, also
+                                                                    library is equipped with Wi-Fi, Internet facility,
+                                                                    OPAC facility &amp; zeroing facility for Staff.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="physical-4" role="tabpanel">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                            <section id="administration" style="">
+                                                                <div class=" s_header pt16">Seminar Hall
+                                                                    <div class="s_line">
+                                                                        <div class="s_dot"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="about_paragraph pt8">
+                                                                    The College has seminar hall for organizing
+                                                                    interaction programme special lecturers, seminar
+                                                                    &amp;
+                                                                    meetings with a seating capacity of 200.
+                                                                </div>
+                                                            </section>
+                                                            <section
+                                                                    class="s_image_gallery pt24 pb24 o_colored_level o_spc-big o_masonry"
+                                                                    data-vcss="001" data-columns="3"
+                                                                    style="overflow: hidden; background-image: none;"
+                                                                    data-snippet="s_images_wall"
+                                                                    data-name="Images Wall">
+                                                                <div class="container">
+                                                                    <div class="row s_nb_column_fixed">
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                        <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                                                                            <img src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 alt=""
+                                                                                 class="img img-fluid d-block o_we_custom_image"
+                                                                                 data-original-id="735"
+                                                                                 data-original-src="https://fathimaasc.ac.in/web/image/733-ada76e3b/no…houette-in-frame-isolated-illustration-vector.jpg"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="960" style=""/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="physical_page" model="website.page">
+            <field name="url">/physical</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="physical"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

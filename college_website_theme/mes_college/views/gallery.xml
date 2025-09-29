@@ -1,0 +1,97 @@
+<odoo>
+    <data>
+        <record id="gallery" model="ir.ui.view">
+            <field name="name">gallery</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.gallery</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="mes_college.gallery_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="container" id="container_width">
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Gallery
+                                    </h2>
+                                    <section class="s_image_gallery">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 col-lg-4 o_colored_level">
+                                                <div class="feature-box-7 shadow"
+                                                     style="position: relative;overflow: hidden;margin-bottom: 30px;border-radius: 10px;">
+                                                    <div class="media-box">
+                                                        <img class="img img-fluid d-block"
+                                                             src="/web/image/website.library_image_13" data-index="1"
+                                                             data-name="Image" loading="lazy" data-original-id="46"
+                                                             data-original-src="/website/static/src/img/library/shop.jpg"
+                                                             data-mimetype="image/jpeg" data-bs-original-title=""
+                                                             title=""
+                                                             aria-describedby="tooltip272784"/>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="info-box">
+                                                            <div class="text">
+                                                                <div class="title">Title Of The Image</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-4 o_colored_level">
+                                                <div class="feature-box-7 shadow"
+                                                     style="position: relative;overflow: hidden;margin-bottom: 30px;border-radius: 10px;">
+                                                    <div class="media-box">
+                                                        <img class="img img-fluid d-block"
+                                                             src="/web/image/website.library_image_13" data-index="1"
+                                                             data-name="Image" loading="lazy" data-original-id="46"
+                                                             data-original-src="/website/static/src/img/library/shop.jpg"
+                                                             data-mimetype="image/jpeg" data-bs-original-title=""
+                                                             title=""
+                                                             aria-describedby="tooltip272784"/>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="info-box">
+                                                            <div class="text">
+                                                                <div class="title">Title Of The Image</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-4 o_colored_level">
+                                                <div class="feature-box-7 shadow"
+                                                     style="position: relative;overflow: hidden;margin-bottom: 30px;border-radius: 10px;">
+                                                    <div class="media-box">
+                                                        <img class="img img-fluid d-block"
+                                                             src="/web/image/website.library_image_13" data-index="1"
+                                                             data-name="Image" loading="lazy" data-original-id="46"
+                                                             data-original-src="/website/static/src/img/library/shop.jpg"
+                                                             data-mimetype="image/jpeg" data-bs-original-title=""
+                                                             title=""
+                                                             aria-describedby="tooltip272784"/>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="info-box">
+                                                            <div class="text">
+                                                                <div class="title">Title Of The Image</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="gallery_page" model="website.page">
+            <field name="url">/gallery</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="gallery"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

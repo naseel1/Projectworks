@@ -1,0 +1,147 @@
+<odoo>
+    <data>
+        <record id="research_committee" model="ir.ui.view">
+            <field name="name">Research Committee</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.research_committee</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.research_committee_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">Research in EMEA College</h2>
+                                <div class="page_text">
+                                    Timely and accurate economic research is vital for undertaking more sound economic
+                                    policies for boosting a stable and non-inflationary growth and for coping with
+                                    various risks under a dynamic and rapid integration of world economies. The Research
+                                    Centre in Economics was established in the year 2014. At present, there are three
+                                    research supervisors with specialization in Health Economics and migration Studies
+                                    with an intake of 14.
+                                </div>
+                                <h2 class="page_head">Research Committee</h2>
+                                <div class="row">
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="research_committee_page" model="website.page">
+            <field name="url">/research_committee</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="research_committee"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

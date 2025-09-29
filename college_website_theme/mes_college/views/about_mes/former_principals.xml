@@ -1,0 +1,103 @@
+<odoo>
+    <data>
+        <record id="former_principals" model="ir.ui.view">
+            <field name="name">Former Principals</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.former_principals</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.former_principals_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <h2 class="main-head" id="title" style="text-align:center;">Former Principals</h2>
+                                <div class=" pt32 pb32">
+                                    <table class="milestone" cellspacing="0" cellpadding="7">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>
+                                                    Time period
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Prof. A. P. Ibrahim Kunju (Late)
+                                                </td>
+                                                <td style="height: 24px;" width="375">1967-1972
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 72px;" valign="top">
+                                                <td style="height: 72px;" width="94">Prof. K. I. Muhammed Kutty (Late)
+                                                </td>
+                                                <td style="height: 72px;" width="375">1972-1990
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Prof. P. K. Noorudheen</td>
+                                                <td style="height: 24px;" width="375">1990-1991</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Prof. M. Mohammed</td>
+                                                <td style="height: 24px;" width="375">1991-1996
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;" valign="top">
+                                                <td style="height: 48px;" width="94">Prof. P. K. Noorudheen</td>
+                                                <td style="height: 48px;" width="375">1996-1998
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Prof. M. K. Fareed</td>
+                                                <td style="height: 24px;" width="375">1998-2001</td>
+                                            </tr>
+                                            <tr style="height: 48px;" valign="top">
+                                                <td style="height: 48px;" width="94">Prof. T. T. Saidalavi</td>
+                                                <td style="height: 48px;" width="375">2001-2008
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Dr. K. K. Abdhurahiman</td>
+                                                <td style="height: 24px;" width="375">2008-2015</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Prof. Usman Vengasseri</td>
+                                                <td style="height: 24px;" width="375">2015-2017</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Dr. O P Salahudheen</td>
+                                                <td style="height: 24px;" width="375">2017-2019</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Dr. Ajims P. Mohammed</td>
+                                                <td style="height: 24px;" width="375">2019</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Dr. T. K. Jaleel</td>
+                                                <td style="height: 24px;" width="375">2019-2021</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Prof. Shihab A.M</td>
+                                                <td style="height: 24px;" width="375">2021-2022</td>
+                                            </tr>
+                                            <tr style="height: 24px;" valign="top">
+                                                <td style="height: 24px;" width="94">Dr. Haseena V A</td>
+                                                <td style="height: 24px;" width="375">2022 Onwards</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="former_principals_page" model="website.page">
+            <field name="url">/former_principals</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="former_principals"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

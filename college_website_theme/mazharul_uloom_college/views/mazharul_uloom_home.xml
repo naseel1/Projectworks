@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="mazharul_uloom_website" name="Mazharul Uloom Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="home-page">
+                    <div class="text-box">
+                        <h1 class="headings">Mazharul Uloom college</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Eligendi corporis in nobis nihil,
+                            ea atque distinctio dolorum assumenda
+                        </p>
+
+                        <a href="Admission_page.html" class="hero-btn">Admission Open</a>
+                    </div>
+                </section>
+                <section class="course" id="course_call">
+                    <h1 class="headings">About Us</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="about-img" src="mazharul_uloom_college/static/img/college-2.jpg" alt=""
+                                 srcset=""/>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="center">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+                                    nesciunt laudantium, sunt, sit animi autem eum veniam voluptatum nobis consectetur
+                                    sed voluptate dolores fugit? Pariatur obcaecati aliquid eos unde architecto!
+                                    adipisicing elit. Officia, nesciunt laudantium, sunt, sit animi autem eum veniam
+                                    voluptatum nobis consectetur sed voluptate dolores fugit? Pariatur obcaecati aliquid
+                                    eos unde architecto!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="course" id="course_call">
+                    <h1 class="headings">principal's message</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="center">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+                                    nesciunt laudantium, sunt, sit animi autem eum veniam voluptatum nobis consectetur
+                                    sed voluptate dolores fugit? Pariatur obcaecati aliquid eos unde architecto!
+                                    adipisicing elit. Officia, nesciunt laudantium, sunt, sit animi autem eum veniam
+                                    voluptatum nobis consectetur sed voluptate dolores fugit? Pariatur obcaecati aliquid
+                                    eos unde architecto!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="about-img" src="mazharul_uloom_college/static/img/principal.jpg" alt=""
+                                 srcset=""/>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="campus">
+                    <h1 class="headings">Our Campus</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam atque non voluptate</p> -->
+
+                    <div class="row">
+                        <div class="campus-col">
+                            <img src="mazharul_uloom_college/static/img/cm1.jfif" alt=""/>
+                            <div class="layer">
+                                <h3>Environment</h3>
+                            </div>
+                        </div>
+
+                        <div class="campus-col">
+                            <img src="mazharul_uloom_college/static/img/cm2.jfif" alt=""/>
+                            <div class="layer">
+                                <h3>Community</h3>
+                            </div>
+                        </div>
+
+                        <div class="campus-col">
+                            <img src="mazharul_uloom_college/static/img/cm3.jfif" alt=""/>
+                            <div class="layer">
+                                <h3>Education</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Facilities Section-->
+
+                <section class="facilities">
+                    <h1 class="headings">Our facilities</h1>
+                    <p>Facilities provide for Students by Gokul Global University</p>
+
+                    <div class="row">
+                        <div class="facilities-col">
+                            <img src="mazharul_uloom_college/static/img/canteen.jfif" alt=""/>
+                            <h3>Canteen</h3>
+                            <p class="paragraph">The objective of the Canteen and meal service is to protect by reducing
+                                the risk of foodborne illness, with proper sanitary conditions.
+                            </p>
+                        </div>
+
+                        <div class="facilities-col">
+                            <img src="mazharul_uloom_college/static/img/auditorium.jfif" alt=""/>
+                            <h3>Auditorium</h3>
+                            <p class="paragraph">The college is having a huge indoor auditorium with a
+                                professionally-deployed acoustic system and a seating capacity of about 200 people.
+                            </p>
+                        </div>
+
+                        <div class="facilities-col">
+                            <img src="mazharul_uloom_college/static/img/hostel.jfif" alt=""/>
+                            <h3>Hostel</h3>
+                            <p class="paragraph">hostel consists of a separate mess, administrative office, warden
+                                quarter. In addition to well furnished rooms.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </xpath>
+    </template>
+</odoo>

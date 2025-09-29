@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <record id="no_data" model="ir.ui.view">
+            <field name="name">no_data</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.no_data</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="mes_college.no_data_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                               <img src="/mes_college/static/img/404.jpg" style="    width: 50%;
+    height: 50%;
+    margin: auto;
+    display: flex;"/>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="no_data_page" model="website.page">
+            <field name="url">/no_data</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="no_data"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,169 @@
+<odoo>
+    <data>
+        <record id="scholarships_emea" model="ir.ui.view">
+            <field name="name">Scholarships</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.scholarships_emea</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.scholarships_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">scholarships</h2>
+                                <div class="page_text">
+                                    The Government of Kerala has introduced various scholarships awarded to meritorious
+                                    students of outstanding performance in the education sector as well as to the
+                                    students of socially and economically backward categories. The Higher Education
+                                    Department of Government of Kerala is entrusted with the responsibility of selection
+                                    and disbursement of various scholarships to Under Graduate and Post Graduate
+                                    Streams. The college has a very active Scholarship Cell to give the students timely
+                                    information and guidance on various scholarships and freeships they are entitled
+                                    to., Mr. Mohamed Sadiqu P.A. Assistant Professor, Department of Arabic is the Nodal
+                                    Officer of Scholarships at the college. Our students have received many scholarships
+                                    being offered by various government and non-governmental agencies.Our College
+                                    sponsored Shihab Thangal Memorial Fellowship, State Merit Scholarship, Suvarna
+                                    Jubilee Merit Scholarship, Blind/PH Scholarship, Higher Education Scholarship,
+                                    Central Sector Scholarship, Snehapoorvam Scholarship, Postmatric Scholarship, Muslim
+                                    Girls Scholarship, CH Muhammed Koya Scholarship, Indian Jeeva Karunya Trust
+                                    scholarship are a few to mention.
+                                    <br/>
+
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container" style="max-width:1000px;">
+                                    <div class="table-responsive">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Types of Scholarships</th>
+                                                    <th>Website</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>DCE Scholarships
+                                                        <ol>
+                                                            <li>
+                                                                1. Blind/ PH Scholarship
+                                                            </li>
+                                                            <li>2. District Merit Scholarship (DMS )</li>
+                                                            <li>3. Hindi Scholarship (HS)</li>
+                                                            <li>4. Muslim Nadar Girls Scholarship (MNS)</li>
+                                                            <li>5. Post Matric Scholarship (PMS)</li>
+                                                            <li>5. State Merit Scholarship (SMS)</li>
+                                                            <li>6. Suvarna Jubilee Merit Scholarship (SJMS)</li>
+                                                        </ol>
+
+                                                    </td>
+                                                    <td>
+                                                        <a href="http://www.dcescholarship.kerala.gov.in">
+                                                            http://www.dcescholarship.kerala.gov.in
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Central Sector Scholarship</td>
+                                                    <td>
+                                                        <a href="https://pfms.nic.in">
+                                                            https://pfms.nic.in
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Higher Education Scholarship</td>
+                                                    <td>
+                                                        <a href="http//www.kshec.kerala.gov.in">
+                                                            http//www.kshec.kerala.gov.in
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Prathibha Scholarship (STARS)</td>
+                                                    <td>
+                                                        <a href="http://www.kscste.kerala.gov.in">
+                                                            http://www.kscste.kerala.gov.in
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.H. Mohammed Koya Scholarship</td>
+                                                    <td>
+                                                        <a href="http://www.minoritywelfare.kerala.gov.in">
+                                                            http://www.minoritywelfare.kerala.gov.in
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UGC Scholarships
+                                                        <ol>
+                                                            <li>
+                                                                PG Scholarship for University rank holders
+                                                            </li>
+                                                            <li>Indira Gandhi PG Scholarship for Single Girl Child</li>
+                                                        </ol>
+
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://www.ugc.ac.in/">
+                                                            https://www.ugc.ac.in/
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CBSE Scholarships
+                                                        <ol>
+                                                            <li>
+                                                                Central Sector Scholarship
+                                                            </li>
+                                                            <li>Single Girl Child Scholarship</li>
+                                                        </ol>
+
+                                                    </td>
+                                                    <td>
+                                                        <a href=" www.cbse.nic.in">
+                                                            www.cbse.nic.in
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <h3 class="in_charge">In-Charge
+                            </h3>
+                            <div class="row">
+                                <section class="former_card"  >
+                                    <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                         alt="Person"
+                                         class="card-image"/>
+                                    <div class="card-content">
+                                        <div class="name">Name Of Professor</div>
+                                        <div class="designation">Designation Of Professor
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <section class="pb32" style="text-align:center;">
+                                <h2 class="page_head pt32">REPORTS</h2>
+                                <a href="#" target="_blank" title="Download"
+                                   data-target="tooltip"
+                                   class="readmore" id="readmore">
+                                    Report 2014-23
+                                </a>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="scholarships_emea_page" model="website.page">
+            <field name="url">/scholarships</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="scholarships_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,86 @@
+<odoo>
+    <data>
+        <record id="nss" model="ir.ui.view">
+            <field name="name">NSS</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.nss</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.nss_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">NSS</h2>
+                                                <div class="text_content">
+                                                    The NSS units of the college Have a remarkably good record of team
+                                                    spirit and social commitment. The units Regularly organize a number
+                                                    of
+                                                    student welfare and community welfare extension programmers. Many
+                                                    awareness Programs are organized in the college under the auspice of
+                                                    the
+                                                    NSS.
+                                                    <br/>
+                                                    <br/>
+                                                    A lot of the Society useful productive work is being successfully
+                                                    carried out during the annual seven-day camp conducted each year at
+                                                    rural localities.
+                                                    <br/>
+                                                    <br/>
+                                                    There are two NSS Units in this College. The student, who volunteers
+                                                    to
+                                                    participate in a 7- days special camp (work camp) and a mini-camp as
+                                                    well as devotes 280 hours to community service within a period of
+                                                    two
+                                                    years in the course of study, gets a national merit certificate, by
+                                                    the
+                                                    University. NSS volunteers who have certificates are eligible for a
+                                                    grace mark for their University examination.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h2 class="main-head">Programme Officers</h2>
+                                            <div class="col-md-7 mb32 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Dr. Sreenivasan KP
+                                                    </div>
+                                                    <div class="designation">Department of Chemistry</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 mb32 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Laila Abdulla
+                                                    </div>
+                                                    <div class="designation">Department of Computer Science</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="nss_page" model="website.page">
+            <field name="url">/nss</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="nss"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

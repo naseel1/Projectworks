@@ -1,0 +1,95 @@
+<odoo>
+    <data>
+        <record id="upcoming_activity_detail" model="ir.ui.view">
+            <field name="name">Upcoming Event Activities</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.upcoming_activity_detail</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="mes_college.upcoming_activity_detail_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                </div>
+                                <section>
+                                    <div class="col-md-12">
+                                        <t t-if="data">
+                                            <section class="mt48 mb48">
+                                                <div class="container" id="container_width">
+                                                    <div class="row" id="detail_row">
+                                                        <div class="col-md-6">
+                                                            <h1 class="news-card-name" id="upcome_title">
+                                                                <t t-if="data['program_name']">
+                                                                    <t t-esc="data['program_name']"/>
+                                                                </t>
+                                                            </h1>
+                                                            <t t-if="data['start_time']">
+                                                                <div class="detail_date"
+                                                                     style="padding-top: 0px;font-size: 1rem;">
+                                                                    Reported on:
+                                                                    <t t-esc="data['start_time']"/>
+                                                                </div>
+                                                            </t>
+                                                            <p class="news-card-p" id="detail_top"
+                                                               style="padding-top: 5px;font-size: 1.2rem;height: auto ! IMPORTANT;">
+                                                                <t t-if="data['description']">
+                                                                    <t t-esc="data['description']"/>
+                                                                </t>
+                                                            </p>
+                                                            <p class="news-card-p" id="detail_top"
+                                                               style="padding-top: 5px;font-size: 16px;height: auto ! IMPORTANT;">
+                                                                <t t-if="data['report']">
+                                                                    <t t-esc="data['report']"/>
+                                                                </t>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <t t-if="data['poster_link']">
+                                                                <img t-att-src=" str(data['poster_link'])" alt=""
+                                                                     loading="lazy"
+                                                                     class="upcoming_poster"
+                                                                />
+                                                            </t>
+                                                        </div>
+                                                        <style>
+                                                            #upcome_title{
+                                                            font-size:2rem;
+                                                            }
+                                                            .upcoming_poster{
+                                                            width: 90%;
+                                                            margin: 30px auto;
+                                                            box-shadow: rgb(0 0 0 / 4%) 0px 1px 28px 0px, rgba(0, 0, 0,
+                                                            0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px
+                                                            1px inset;
+                                                            height: auto;
+                                                            border-radius: 10px;
+                                                            object-fit: contain;
+                                                            object-position: center;
+                                                            min-height: 450px !important;
+                                                            display: block !important;
+                                                            max-height: 550px;
+                                                            padding: 10px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </t>
+                                    </div>
+
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="upcoming_activity_detail_page" model="website.page">
+            <field name="url">/upcoming</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="upcoming_activity_detail"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="management_mes" model="ir.ui.view">
+            <field name="name">Management</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.management_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.management_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title">Management</h2>
+                                    <div class="row pt32">
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. P.A.Fazal Ghafoor
+
+                                                </div>
+                                                <div class="designation">
+                                                    MES State President
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Prof. Kadavanad Mohamed
+                                                </div>
+                                                <div class="designation">
+                                                    MES State General Secretary
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    KCK Syed Ali
+                                                </div>
+                                                <div class="designation">
+                                                    Chairman, MES Kalladi College
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 management">
+                                            <div class="faculties">
+                                                <div class="faculty_img">
+                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                         class="w-100 h-100"/>
+                                                </div>
+                                                <div class="faculty_name">
+                                                    Dr. K. A. Hashim
+                                                </div>
+                                                <div class="designation">
+                                                    Corporate Manager
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <h2 class="main-head" id="title">Local Managing Committee Members</h2>
+                                    <section>
+                                        <div class="text_1" id="local">
+                                            <ul>
+                                                <li>Jb K. C. K. SYED ALI</li>
+                                                <li>Mrs. V K RAMLA MANAYATH</li>
+                                                <li>Dr. K A HASHIM</li>
+                                                <li>Dr. T. P. BASHEER</li>
+                                                <li>Dr. C P SHIHABUDHEEN</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Jb. A. JABBARALI</li>
+                                                <li>Jb. M ABDUL KAREEM HAJJI</li>
+                                                <li>Jb S.M.S MUJEEB RAHMAN</li>
+                                                <li>Jb. V K HAROON</li>
+                                                <li>Jb. K C K MOIDUTTY</li>
+                                                <li>Jb. V K HABEEB MOHAMMED</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Jb. P.P.K ABDUL RAHIMAN</li>
+                                                <li>Jb. SHERIN ABDULLA</li>
+                                                <li>Jb. P. ADUPPU HAJI</li>
+                                                <li>Jb. V FASAL</li>
+                                                <li>Jb.P T UMMER</li>
+                                                <li>Jb C.T SAITHALAVI</li>
+                                                <li>Mrs. ROSHINI JAHAN NASSAR</li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+
+        </record>
+        <record id="management_mes_page" model="website.page">
+            <field name="url">/management</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="management_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+
+</odoo>

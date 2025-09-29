@@ -1,0 +1,28 @@
+<odoo>
+    <template id="multi_image_gallery_template" name="Image Gallery Page">
+        <t t-call="website.layout">
+            <link href="/multi-image-gallery/static/src/css/style.css" rel="stylesheet" type="text/css"/>
+            <div class="container pt48">
+                <h1 class="page-head pb16">Gallery</h1>
+                <div class="row s_image_gallery" style="row-gap: 2rem;">
+                    <t t-foreach="images" t-as="gallery">
+                        <div class="col-12">
+                            <h2 class="gallery-name" t-field="gallery.name"/>
+                            <div class="row s_image_gallery" style="row-gap: 2rem;">
+                                <t t-foreach="gallery.image_ids" t-as="img">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="galleries">
+                                            <img t-att-src="'/web/image?model=image.gallery.image&amp;id=%s&amp;field=image' % img.id"
+                                                 class="img-fluid gallery-img" t-att-alt="img.name"/>
+                                            <p t-esc="img.name" class="gallery-name mt8"/>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

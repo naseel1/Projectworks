@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+        <record id="history" model="ir.ui.view">
+            <field name="name">History</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.history</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.history_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">HISTORY OF EMEA COLLEGE</h2>
+                                <div class="page_text">
+                                    EMEA College of Arts and Science, Kondotti is fast emerging as a resourceful
+                                    destination
+                                    for higher studies in Malabar, spreading the fragrance of education in the society.
+                                    This
+                                    college is affiliated to the University of Calicut. The college offers up-to-date,
+                                    advanced, and job-oriented programmes in the vast expanding horizon of humanities,
+                                    commerece, and science and technology. The college is situated at Kumminiparamba in
+                                    Kondotti, 6 KMs away from University of Calicut, 2 KMs from Calicut International
+                                    Airport, 18 KMs from Feroke Railway Station, and 32 KMs from Calicut City; with a
+                                    congenial atmosphere for academic pursuits. The place is ideally suited for the
+                                    growth
+                                    and development of educational institutions for higher learning. The institution
+                                    aims at
+                                    the over all development of this backward area of Kerala by opening new vistas of
+                                    opportunities to the future generations, without any discrimination against caste,
+                                    creed, sex or colour. The college is run by Ernad Muslim Educational Association,
+                                    which
+                                    was formed with the objective of establishing a chain of educational institutions
+                                    and
+                                    cultural centres to cater to the needs of educationally and culturally backward
+                                    section
+                                    of the community. The college is a stepping stone to realize the objectives
+                                    envisaged by
+                                    the Association. Established on 1st November 1982 as a junior college, it flourished
+                                    as
+                                    a post graduate college today.
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="history_page" model="website.page">
+            <field name="url">/history</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="history"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

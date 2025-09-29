@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+        <record id="vision_mission" model="ir.ui.view">
+            <field name="name">Vision And Mission</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.vision_mission</field>
+            <field name="arch" type="xml">
+                <t t-name="emea_college_theme.vision_mission_template">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <div class="row" style="justify-content: center;">
+                                    <div class="col-md-5 col-12">
+                                        <div id="vision">
+                                            <h2 class="page_head">ViSION</h2>
+                                            <div class="vision">
+                                                To be a centre of excellence in higher education, affordable to common
+                                                man.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div id="vision" style="background: var(--primary);">
+                                            <h2 class="page_head" style="color: white;">MISSION
+                                            </h2>
+                                            <div class="vision" id="mission">
+                                                Identifying and developing the talent of the youth and moulding them
+                                                into
+                                                useful
+                                                citizens with due emphasize on right character formation is the avowed
+                                                mission of EMEA
+                                                College. The fulfilment of this lofty goal is the basis of educational
+                                                programes
+                                                formulated and pursued by the institution.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-12">
+                                        <div id="vision">
+                                            <h2 class="page_head">CORE VALUES</h2>
+                                            <div class="vision">
+                                                Multiculturalism ,
+                                                Universal Brotherhood ,
+                                                Secularism ,
+                                                Democracy ,
+                                                Equality ,
+                                                Gender Equity ,
+                                                Professional Ethics ,
+                                                Environmental Consciousness and
+                                                Social Inclusion
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="vision_mission_page" model="website.page">
+            <field name="url">/vision_mission</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="vision_mission"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

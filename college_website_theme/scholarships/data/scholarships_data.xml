@@ -1,0 +1,5 @@
+<odoo>
+    <record id="scholarships_single_record" model="scholarships.manage">
+        <field name="incharge_name">Scholarship Incharge</field>
+    </record>
+</odoo>

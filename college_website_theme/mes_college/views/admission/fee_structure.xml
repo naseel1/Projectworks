@@ -1,0 +1,440 @@
+<odoo>
+    <data>
+        <record id="fee_structure" model="ir.ui.view">
+            <field name="name">fee_structure</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.fee_structure</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.fee_structure_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div id="wrap" class="oe_structure">
+                                <section class="bg_color">
+                                    <div class="container" id="container_width">
+                                        <div class="row">
+                                            <div class=" pt32 pb32 col-md-10 mx-auto">
+                                                <div>
+                                                    <h2 class="main-head">Fee Structure
+                                                    </h2>
+                                                    <div class="content_text" style="text-align:justify;padding: 0;">
+                                                        <table class="milestone scholar pt32 pb16" cellspacing="0"
+                                                               cellpadding="7" style="width:100%;">
+                                                            <tbody>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">Class
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">
+                                                                        Tution Fees
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 147.133px;">
+                                                                        Admission
+                                                                        Fees
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 111.367px;">Special
+                                                                        Fees
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 82.1333px;">Lab Fees
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 54.4833px;">Total
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">I Year
+                                                                        BA/Bcom/BBA
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="height: 24px; width: 147.133px;">75</td>
+                                                                    <td style="height: 24px; width: 111.367px;">495</td>
+                                                                    <td style="height: 24px; width: 82.1333px;"></td>
+                                                                    <td style="height: 24px; width: 54.4833px;">1570
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">II&amp;III
+                                                                        Year
+                                                                        BA/Bcom/BBA
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="height: 24px; width: 147.133px;"></td>
+                                                                    <td style="height: 24px; width: 111.367px;">740</td>
+                                                                    <td style="height: 24px; width: 82.1333px;"></td>
+                                                                    <td style="height: 24px; width: 54.4833px;">1740
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">I Year
+                                                                        BSc
+                                                                        Maths
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="width: 147.133px; height: 24px;">75</td>
+                                                                    <td style="height: 24px; width: 111.367px;">645</td>
+                                                                    <td style="height: 24px; width: 82.1333px;">150</td>
+                                                                    <td style="height: 24px; width: 54.4833px;">1870
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">II Year
+                                                                        BSc
+                                                                        Maths
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="height: 24px; width: 147.133px;"></td>
+                                                                    <td style="height: 24px; width: 111.367px;">740</td>
+                                                                    <td style="height: 24px; width: 82.1333px;">150</td>
+                                                                    <td style="height: 24px; width: 54.4833px;">1890
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">III Year
+                                                                        BSc
+                                                                        Maths
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="height: 24px; width: 147.133px;"></td>
+                                                                    <td style="height: 24px; width: 111.367px;">740</td>
+                                                                    <td style="height: 24px; width: 82.1333px;"></td>
+                                                                    <td style="height: 24px; width: 54.4833px;">1740
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">I Year
+                                                                        BSc
+                                                                        Botany
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="width: 147.133px; height: 24px;">75</td>
+                                                                    <td style="height: 24px; width: 111.367px;">1045
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 82.1333px;">550</td>
+                                                                    <td style="height: 24px; width: 54.4833px;">2670
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">II Year
+                                                                        BSc
+                                                                        Botany
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="height: 24px; width: 147.133px;"></td>
+                                                                    <td style="height: 24px; width: 111.367px;">740</td>
+                                                                    <td style="height: 24px; width: 82.1333px;">550</td>
+                                                                    <td style="height: 24px; width: 54.4833px;">2290
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">I Year
+                                                                        BSc
+                                                                        (Physics &amp; Chemistry)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="width: 147.133px; height: 24px;">75</td>
+                                                                    <td style="height: 24px; width: 111.367px;">895</td>
+                                                                    <td style="height: 24px; width: 82.1333px;">400</td>
+                                                                    <td style="height: 24px; width: 54.4833px;">2370
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 225.133px;">II Year
+                                                                        BSc
+                                                                        Physics
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 122.75px;">1000</td>
+                                                                    <td style="height: 24px; width: 147.133px;"></td>
+                                                                    <td style="height: 24px; width: 111.367px;">740</td>
+                                                                    <td style="height: 24px; width: 82.1333px;">400</td>
+                                                                    <td style="height: 24px; width: 54.4833px;">2140
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 48px;">
+                                                                    <td style="width: 225.133px; height: 48px;">II Year
+                                                                        BSc
+                                                                        Chemistry
+                                                                    </td>
+                                                                    <td style="width: 122.75px; height: 48px;">1000</td>
+                                                                    <td style="width: 147.133px; height: 48px;"></td>
+                                                                    <td style="width: 111.367px; height: 48px;">740</td>
+                                                                    <td style="width: 82.1333px; height: 48px;">400</td>
+                                                                    <td style="width: 54.4833px; height: 48px;">2140
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 72px;">
+                                                                    <td style="width: 225.133px; height: 72px;">III
+                                                                        Year
+                                                                        BSc (Physics/Chemistry/Botany
+                                                                    </td>
+                                                                    <td style="width: 122.75px; height: 72px;">1000</td>
+                                                                    <td style="width: 147.133px; height: 72px;"></td>
+                                                                    <td style="width: 111.367px; height: 72px;">740</td>
+                                                                    <td style="width: 82.1333px; height: 72px;">250</td>
+                                                                    <td style="width: 54.4833px; height: 72px;">1990
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2 class="main-head">Self Financing Courses
+                                                        </h2>
+                                                        <table class="milestone scholar pt32 pb16" cellspacing="0"
+                                                               style="width:100%;"
+                                                               cellpadding="7">
+                                                            <tbody>
+                                                                <tr style="height: 48px;">
+                                                                    <td style="height: 48px; width: 345.783px;">B.Com.
+                                                                        Computer Application
+                                                                    </td>
+                                                                    <td style="height: 48px; width: 198.15px;">11,250
+                                                                        (Each Semester)
+                                                                    </td>
+                                                                    <td style="height: 48px; width: 45.2167px;"></td>
+                                                                    <td style="height: 48px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 48px; width: 59.3px;"></td>
+                                                                    <td style="height: 48px; width: 73.3333px;">11990
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">
+                                                                        B.Com/BBA/BA
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">9,000
+                                                                        (Each Semester)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 24px; width: 59.3px;"></td>
+                                                                    <td style="height: 24px; width: 73.3333px;">9740
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">B.Sc.
+                                                                        Computer Science
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">18,750
+                                                                        (Each Semester)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 24px; width: 59.3px;">200</td>
+                                                                    <td style="height: 24px; width: 73.3333px;">19690
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">BCA</td>
+                                                                    <td style="height: 24px; width: 198.15px;">18,750
+                                                                        (Each Semester)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 24px; width: 59.3px;">200</td>
+                                                                    <td style="height: 24px; width: 73.3333px;">19690
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">B.Sc.
+                                                                        Food
+                                                                        Technology
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">19,500
+                                                                        (Each Semester)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 24px; width: 59.3px;"></td>
+                                                                    <td style="height: 24px; width: 73.3333px;">20240
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">BA. Mass
+                                                                        Communication
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">18,750
+                                                                        (Each Semester)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 24px; width: 59.3px;"></td>
+                                                                    <td style="height: 24px; width: 73.3333px;">19490
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">I Year
+                                                                        MA/Mcom/MSc Maths
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">1800</td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">745</td>
+                                                                    <td style="height: 24px; width: 59.3px;"></td>
+                                                                    <td style="height: 24px; width: 73.3333px;">2695
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">II Year
+                                                                        MA/Mcom/MSc Maths
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">1800</td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 24px; width: 59.3px;"></td>
+                                                                    <td style="height: 24px; width: 73.3333px;">2540
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">I Year
+                                                                        MSc
+                                                                        (Chemistry &amp; Physics)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">1800</td>
+                                                                    <td style="height: 24px; width: 45.2167px;">150</td>
+                                                                    <td style="height: 24px; width: 45.2167px;">745</td>
+                                                                    <td style="height: 24px; width: 59.3px;">1200</td>
+                                                                    <td style="height: 24px; width: 73.3333px;">3895
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="height: 24px; width: 345.783px;">II Year
+                                                                        MSc
+                                                                        (Chemistry &amp; Physics)
+                                                                    </td>
+                                                                    <td style="height: 24px; width: 198.15px;">1800</td>
+                                                                    <td style="height: 24px; width: 45.2167px;"></td>
+                                                                    <td style="height: 24px; width: 45.2167px;">740</td>
+                                                                    <td style="height: 24px; width: 59.3px;">1200</td>
+                                                                    <td style="height: 24px; width: 73.3333px;">3740
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height: 24px;">
+                                                                    <td style="width: 345.783px; height: 24px;">MSc
+                                                                        Botany
+                                                                        (Self Financing)
+                                                                    </td>
+                                                                    <td style="width: 198.15px; height: 24px;">22500
+                                                                    </td>
+                                                                    <td style="width: 45.2167px; height: 24px;"></td>
+                                                                    <td style="width: 45.2167px; height: 24px;">740</td>
+                                                                    <td style="width: 59.3px; height: 24px;">1200</td>
+                                                                    <td style="width: 73.3333px; height: 24px;">24440
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong>(The caution deposit (Refundable) Should be remitted on
+                                                            admission as follows)
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <table class="milestone scholar pt32 pb16" style="width:100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width: 304.2px;">UG</td>
+                                                                    <td style="width: 304.05px;">360</td>
+                                                                    <td style="width: 40.1833px;"></td>
+                                                                    <td style="width: 40.1833px;"></td>
+                                                                    <td style="width: 40.2px;"></td>
+                                                                    <td style="width: 40.1833px;"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width: 304.2px;">PG</td>
+                                                                    <td style="width: 304.05px;">600</td>
+                                                                    <td style="width: 40.1833px;"></td>
+                                                                    <td style="width: 40.1833px;"></td>
+                                                                    <td style="width: 40.2px;"></td>
+                                                                    <td style="width: 40.1833px;"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2 class="main-head" style="text-align:left">Notes
+                                                        </h2>
+                                                        <ul>
+                                                            <li>
+                                                                Tuition fees will be collected either in lump at the
+                                                                beginning of the year or in installments at the
+                                                                beginning of
+                                                                each terms or semester, as the case may be.
+                                                                Special fees should be paid together with the first
+                                                                instalment of tuition fees.
+                                                            </li>
+                                                            <li>
+                                                                After the 7th working day the fees can be paid with a
+                                                                fine
+                                                                of Rs. 5/-, on or before the next 10th day. Even after
+                                                                this
+                                                                date, the the fees will be received with a fine of Rs.
+                                                                10/-
+                                                                on the date prescribed before the last working day of
+                                                                the
+                                                                month.
+                                                            </li>
+                                                            <li>
+                                                                The names of students who do not remit fees with in the
+                                                                prescribed dates will be published on the notice board.
+                                                                The
+                                                                names of the defaulters will be removed from the roll
+                                                                and
+                                                                for re-admission they have to remit the fees, fine and
+                                                                Rs.
+                                                                50 (charge of re-admission). The fees for semester
+                                                                course
+                                                                has to be paid at the beginning of each semester and if
+                                                                a
+                                                                student defaults the above rules will be applicable. At
+                                                                the
+                                                                beginning of the academic year the special fees has to
+                                                                be
+                                                                paid in total.
+                                                            </li>
+                                                            <li>
+                                                                Fees will be received at the office counter between 9.30
+                                                                am.
+                                                                and 1.30 pm.(on all working days).
+                                                                Students should always obtain a receipt from the office
+                                                                for
+                                                                any payment made by them for any future reference.
+                                                            </li>
+                                                            <li>
+                                                                Every students is liable to pay the prescribed fees for
+                                                                the
+                                                                entire term during any part of which his/her name
+                                                                remains on
+                                                                the rolls of the college.
+                                                            </li>
+                                                            <li>
+                                                                When the due date for any payment happens to be a
+                                                                holiday,
+                                                                the next working day will be treated as a due date.
+                                                            </li>
+                                                            <li>
+                                                                Students when admitted as term students for making up
+                                                                shortage of attendance, one third of annual tuition fees
+                                                                with full special fees and the caution deposits would be
+                                                                collected from them at the time of admission.
+                                                            </li>
+                                                            <li>
+                                                                Fees once collected will not be re funded.
+                                                                The guardians of all newly admitted students have to pay
+                                                                Rs.
+                                                                1750/- towards the membership fee of the Parents and
+                                                                Teachers Association
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="fee_structure_page" model="website.page">
+            <field name="url">/fee_structure</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="fee_structure"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,355 @@
+<odoo>
+    <data>
+        <record id="bba" model="ir.ui.view">
+            <field name="name">BBA</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.bba</field>
+            <field name="arch" type="xml">
+                <t name="BBA" t-name="mss_college.bba_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="background-image: none;">
+
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row" style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title="" title="" aria-describedby="tooltip336631">
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs1" data-original-title="" title=""
+                                                           class="nav-link active" aria-controls="tabs1"
+                                                           aria-selected="true">Department Profile
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs2" data-original-title="" title=""
+                                                           class="nav-link" aria-selected="false">
+                                                            Faculty
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                                           role="tab" data-original-title="" title="" class="nav-link"
+                                                           aria-selected="false">
+                                                            Course Outline
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                                             id="page-content">
+                                            <div id="tabs1" class="tab-pane fade active show">
+                                                <div class="row">
+                                                    <div class="col-lg-12 o_colored_level">
+                                                        <div class="oe_structure oe_empty"
+                                                             data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                            <section style="background-image: none;">
+                                                                <section class="s_carousel_wrapper" data-vxml="001"
+                                                                         data-snippet="s_carousel" data-name="Carousel"
+                                                                         style="background-image: none;">
+                                                                    <div class="s_carousel s_carousel_default carousel slide"
+                                                                         data-bs-interval="10000"
+                                                                         id="myCarousel1709634366864"
+                                                                         style="background-image: none;">
+
+                                                                        <ol class="carousel-indicators o_we_no_overlay">
+                                                                            <li data-bs-slide-to="0"
+                                                                                data-bs-target="#myCarousel1709634366864"
+                                                                                class="active" aria-current="true"/>
+                                                                            <li data-bs-slide-to="1"
+                                                                                data-bs-target="#myCarousel1709634366864"/>
+                                                                            <li data-bs-slide-to="2"
+                                                                                data-bs-target="#myCarousel1709634366864"/>
+                                                                            <li data-bs-target="#myCarousel1709634366864"
+                                                                                data-bs-slide-to="3"/>
+                                                                        </ol>
+                                                                        <div class="carousel-inner"
+                                                                             style="height:350px; min-height:auto;">
+
+                                                                            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active"
+                                                                                 style="background-image: url(&quot;/web/image/2189-d0d843c7/Images_M1591_D0_F618.jpeg&quot;);"
+                                                                                 data-name="Slide"
+                                                                                 data-original-id="2188"
+                                                                                 data-original-src="/web/image/2188-efa9c103/Images_M1591_D0_F618.jpeg"
+                                                                                 data-mimetype="image/jpeg"
+                                                                                 data-resize-width="900">
+                                                                                <div class="container oe_unremovable">
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center"
+                                                                                 style="background-image: url(&quot;/web/image/2191-07877267/Images_M1591_D0_F620.jpeg&quot;);"
+                                                                                 data-name="Slide"
+                                                                                 data-original-id="2187"
+                                                                                 data-original-src="/web/image/2187-02681dfd/Images_M1591_D0_F620.jpeg"
+                                                                                 data-mimetype="image/jpeg"
+                                                                                 data-resize-width="900">
+                                                                                <div class="container oe_unremovable">
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center"
+                                                                                 style="background-image: url(&quot;/web/image/2190-68179ff7/Images_M1591_D0_F621.jpeg&quot;);"
+                                                                                 data-name="Slide"
+                                                                                 data-original-id="2186"
+                                                                                 data-original-src="/web/image/2186-6d0e9fec/Images_M1591_D0_F621.jpeg"
+                                                                                 data-mimetype="image/jpeg"
+                                                                                 data-resize-width="900">
+                                                                                <div class="container oe_unremovable">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="carousel-item pt128 pb128 o_colored_level oe_img_bg o_bg_img_center"
+                                                                                 style="background-image: url(&quot;/web/image/2192-875860cf/Images_M1591_D0_F735.jpeg&quot;);"
+                                                                                 data-name="Slide"
+                                                                                 data-original-id="2185"
+                                                                                 data-original-src="/web/image/2185-368ff13e/Images_M1591_D0_F735.jpeg"
+                                                                                 data-mimetype="image/jpeg"
+                                                                                 data-resize-width="900">
+                                                                                <div class="container oe_unremovable">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                                           data-bs-slide="prev" role="img"
+                                                                           aria-label="Previous" title="Previous"
+                                                                           href="#myCarousel1709634366864">
+                                                                            <span class="carousel-control-prev-icon"/>
+                                                                            <span class="visually-hidden o_default_snippet_text">
+                                                                                Previous
+                                                                            </span>
+                                                                        </a>
+                                                                        <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                                           data-bs-slide="next" role="img"
+                                                                           aria-label="Next" title="Next"
+                                                                           href="#myCarousel1709634366864"
+                                                                           style="right: 0px;">
+                                                                            <span class="carousel-control-next-icon"/>
+                                                                            <span class="visually-hidden o_default_snippet_text">
+                                                                                Next
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                </section>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 o_colored_level">
+                                                        <h3 class="about_heading">Department Of BBA</h3>
+                                                        <hr id="heading_line" style="margin:0px 20px 20px 0px"/>
+                                                        <p class="code_para">The Bachelor
+                                                            of Business Administration (BBA) is an undergraduate degree
+                                                            program typically offered by
+                                                            business schools or universities. It's designed to give
+                                                            students a broad understanding of business principles and
+                                                            practices. BBA programs usually cover
+                                                            various areas such as accounting, finance, marketing,
+                                                            management, economics, and business law. Depending on the
+                                                            institution, students might have the
+                                                            opportunity to specialize in specific areas of business or
+                                                            pursue concentrations like entrepreneurship, international
+                                                            business, or supply chain management.
+                                                            BBA programs often include practical experiences such as
+                                                            internships or cooperative education opportunities to
+                                                            provide students with real-world exposure to
+                                                            the business environment. Graduates with a BBA degree often
+                                                            pursue careers in fields such as management, consulting,
+                                                            finance, marketing, or entrepreneurship.
+                                                        </p>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div id="tabs2" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs2">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+
+                                                        <div class="col-lg-12 o_colored_level">
+                                                            <div id="wrap" class="oe_structure">
+                                                                <h3 class="about_heading history_heading">Faculty</h3>
+                                                                <hr id="heading_line"/>
+                                                                <section style="padding-top:20px;z-index:0;">
+                                                                    <div class="row" style="margin-right: 0px;">
+                                                                        <h4/>
+                                                                        <div class="col-md-3">
+                                                                            <div class="card profile-card-3">
+                                                                                <div class="background-block">
+
+                                                                                </div>
+                                                                                <div class="profile-thumb-block">
+                                                                                    <img src="/mss_college/static/img/Ellipse 1.png"
+                                                                                         alt="profile-image"
+                                                                                         class="profile"/>
+                                                                                </div>
+                                                                                <div class="card-content">
+                                                                                    <h2>Justin Mccoy
+                                                                                        <small>ASSISTANT PROFESSOR ,
+                                                                                            HOD
+                                                                                        </small>
+                                                                                    </h2>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="mt-3 w-100 float-left text-center">
+
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="row" style="margin-right: 0px;">
+                                                                        <div class="col-md-3">
+                                                                            <div class="card profile-card-3">
+                                                                                <div class="background-block">
+
+                                                                                </div>
+                                                                                <div class="profile-thumb-block">
+                                                                                    <img src="/mss_college/static/img/Ellipse 1.png"
+                                                                                         alt="profile-image"
+                                                                                         class="profile"/>
+                                                                                </div>
+                                                                                <div class="card-content">
+                                                                                    <h2>Justin Mccoy
+                                                                                        <small>ASSISTANT PROFESSOR
+                                                                                        </small>
+                                                                                    </h2>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="mt-3 w-100 float-left text-center">
+
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="card profile-card-3">
+                                                                                <div class="background-block">
+
+                                                                                </div>
+                                                                                <div class="profile-thumb-block">
+                                                                                    <img src="/mss_college/static/img/Ellipse 1.png"
+                                                                                         alt="profile-image"
+                                                                                         class="profile"/>
+                                                                                </div>
+                                                                                <div class="card-content">
+                                                                                    <h2>Justin Mccoy
+                                                                                        <small>ASSISTANT PROFESSOR
+                                                                                        </small>
+                                                                                    </h2>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="mt-3 w-100 float-left text-center">
+
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="card profile-card-3">
+                                                                                <div class="background-block">
+
+                                                                                </div>
+                                                                                <div class="profile-thumb-block">
+                                                                                    <img src="/mss_college/static/img/Ellipse 1.png"
+                                                                                         alt="profile-image"
+                                                                                         class="profile"/>
+                                                                                </div>
+                                                                                <div class="card-content">
+                                                                                    <h2>Justin Mccoy
+                                                                                        <small>ASSISTANT PROFESSOR
+                                                                                        </small>
+                                                                                    </h2>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="mt-3 w-100 float-left text-center">
+
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="card profile-card-3">
+                                                                                <div class="background-block">
+
+                                                                                </div>
+                                                                                <div class="profile-thumb-block">
+                                                                                    <img src="/mss_college/static/img/Ellipse 1.png"
+                                                                                         alt="profile-image"
+                                                                                         class="profile"/>
+                                                                                </div>
+                                                                                <div class="card-content">
+                                                                                    <h2>Justin Mccoy
+                                                                                        <small>ASSISTANT PROFESSOR
+                                                                                        </small>
+                                                                                    </h2>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="mt-3 w-100 float-left text-center">
+
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs3" class="tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs3">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row" style="background-image: none;">
+                                                        <div class="col-lg-6 o_colored_level">
+                                                            <div class="course_box">
+                                                                <h2>Semester 1</h2>
+                                                                <p>subject</p>
+                                                                <hr/>
+                                                                <p>subject</p>
+                                                                <hr/>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-6 o_colored_level">
+                                                            <div class="course_box">
+                                                                <h2>Semester 1</h2>
+                                                                <p>subject</p>
+                                                                <hr/>
+                                                                <p>subject</p>
+                                                                <hr/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+
+
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_bba_page" model="website.page">
+            <field name="url">/bba</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="bba"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

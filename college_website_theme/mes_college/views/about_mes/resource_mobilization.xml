@@ -1,0 +1,172 @@
+<odoo>
+    <data>
+        <record id="resource_mobilization_mes" model="ir.ui.view">
+            <field name="name">Resource Mobilization Policy</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.resource_mobilization_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.resource_mobilization_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <section class="col-md-12" style="margin:auto;">
+                                        <h2 class="main-head"
+                                            style="text-align: left;padding-left: 20px;padding-top:20px;">Resource
+                                            Mobilization Policy
+                                        </h2>
+                                        <div class="content_text">
+                                            The Institution has a transparent and well-planned financial management
+                                            system. The major source of funding is from state and central government in
+                                            addition to the revenue generated through fee collection. The Resource
+                                            mobilization policy focuses on achieving the goals and target of the
+                                            institution ensuring accountability and transparency. The harmonized
+                                            Governing body coordinates and monitors the optimal utilization of the funds
+                                            for the promotion of learner-centric ecosystem.
+
+                                            <ul>
+                                                <li>
+                                                    The Institution is a centrally managed non-profit organization with
+                                                    honorary governing body members which ensures the income generated
+                                                    is spent optimally in the institution itself
+                                                </li>
+                                                <li>
+                                                    A financial advisory body is in place to manage the managed funds.
+                                                    The government funds are taken care of by the Planning forum, UGC
+                                                    plan coordinator and DST-FIST coordinator of the college
+                                                </li>
+                                                <li>
+                                                    Funds are provided to meet the infrastructure requirement of the
+                                                    institution while starting new programmes and centers
+                                                </li>
+                                                <li>
+                                                    The management provides financial supports to
+                                                    seminars/workshops/expert talks/Association activities/Faculty
+                                                    Development programmes
+                                                </li>
+                                                <li>
+                                                    The extracurricular activities of the students are a major concern
+                                                    and adequate funds provide for Sports and Cultural activities
+                                                </li>
+                                                <li>
+                                                    Scholarships and free ships to the deserving students
+                                                </li>
+                                                <li>
+                                                    Provident fund(PF) and Employee State Insurance(ESI) benefits are
+                                                    provided to the Management appointed staffs
+                                                </li>
+                                                <li>
+                                                    Tuition fee and Corporate grant are used for the infrastructure
+                                                    development and academic activities Government funds are optimally
+                                                    used for which it is sanctioned Transparency and accountability is
+                                                    ensured by conducting annual financial audits
+
+                                                </li>
+                                                <li>
+                                                    Hostel Fee
+                                                </li>
+                                                <li>
+                                                    Government funds-UGC/DST/Grant-in-Aid of Kerala Government
+
+                                                </li>
+                                                <li>
+                                                    Grants From individuals, philanthropist
+                                                </li>
+                                                <li>
+                                                    College Development Fund
+                                                </li>
+                                                <li>
+                                                    Alumni Contribution
+                                                </li>
+                                                <li>
+                                                    Central development fund
+                                                </li>
+                                                <li>
+                                                    Tuition fee and Corporate grant is used for the infrastructure and
+                                                    academic activities
+                                                </li>
+                                                <li>
+                                                    Government funds are optimally used for which it is sanctioned
+                                                </li>
+                                                <li>
+                                                    Transparency and accountability is ensured by conducting an annual
+                                                    audit of the statements
+                                                </li>
+                                                <li>
+                                                    Financial support provided by the government agencies are audited by
+                                                    the respective Government Departments
+                                                </li>
+
+                                            </ul>
+                                            <div>
+                                                <strong>Financial Audit of Grant : Grants and funds sanctioned by
+                                                    Government/UGC :
+                                                </strong>
+                                                There are their levels of audit for the funds
+                                                sanctioned by the Government. They are as follows:
+                                            </div>
+                                            <ol>
+                                                <li>
+                                                    Chartered Accountant-After a stipulated period of time, the accounts
+                                                    for all the grants and funds sanctioned by the Government/UGC are
+                                                    initially submitted to an external Chartered Accountant. The audit
+                                                    report issued by the auditor with utilization certificate and all
+                                                    necessary ratified accounts are submitted to the concerned
+                                                    sanctioned authorities.
+                                                </li>
+                                                <li>
+                                                    Directorate of Collegiate Education-At the time of annual audits by
+                                                    the Directorate of Collegiate Education, the audit team verifies all
+                                                    the financial documents related to the public funds utilized by
+                                                    College. After hearing the clarifications and corrections, the final
+                                                    accounts are settled.
+                                                </li>
+                                                <li>
+                                                    Accountant General, Kerala-The Accountant General, Kerala also
+                                                    conduct their periodic verification of all the accounts sanctioned
+                                                    by the Government. Their suggestions and directions are also
+                                                    incorporated in the further utilization of the funds.
+                                                </li>
+                                            </ol>
+                                            <div>
+                                                <strong>Grants and funds sanctioned by Management
+                                                </strong>
+                                            </div>
+                                            <ol>
+                                                <li>
+                                                    The institution has a strong financial advisory board for Management
+                                                    of accounts and all the accounts sanctioned are audited internally
+                                                    as well as externally. On behalf of the Management, all daily
+                                                    transactions are verified by the financial advisor of the college.
+                                                </li>
+                                                <li>
+                                                    The internal audit of Management accounts is done by the Treasurer,
+                                                    MES Central Committee, Calicut periodically. They verify all
+                                                    financial transactions and submit a detailed report of observations
+                                                    based on the observations given by internal auditor. The financial
+                                                    advisor of the college modifies the statements of accounts.
+                                                </li>
+                                                <li>
+                                                    The Management has appointed M. A. Moideen and Associates as the
+                                                    external auditor of the Management accounts. At the end of every
+                                                    financial year they prepare annual financial statements and audit
+                                                    reports.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="resource_mobilization_mes_page" model="website.page">
+            <field name="url">/resource_mobilization</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="resource_mobilization_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

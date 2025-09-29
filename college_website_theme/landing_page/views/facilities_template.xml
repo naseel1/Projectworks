@@ -1,0 +1,33 @@
+<odoo>
+    <template id="template_facility_details" name="Facility Detail Page">
+        <t t-call="website.layout">
+            <div class="container mt-5">
+                <h2 t-esc="facility.name"/>
+                <img t-if="facility.cover_image"
+                     t-att-src="'/web/image?model=facilities.manage&amp;id=%s&amp;field=cover_image' % facility.id"
+                     class="img-fluid mb-4"/>
+
+                <t t-if="sub_facilities">
+                    <div class="row">
+                        <t t-foreach="sub_facilities" t-as="sub">
+                            <div class="col-md-6 mb-4">
+                                <div class="card p-3 h-100">
+                                    <h5 t-esc="sub.name"/>
+                                    <p t-esc="sub.description"/>
+                                    <div class="d-flex flex-wrap">
+                                        <t t-foreach="sub.image_ids" t-as="img">
+                                            <img t-att-src="'/web/image?model=facilities.sub.image&amp;id=%s&amp;field=image' % img.id"
+                                                 class="img-thumbnail me-2 mb-2"
+                                                 style="width:100px; height:auto;"/>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+
+</odoo>

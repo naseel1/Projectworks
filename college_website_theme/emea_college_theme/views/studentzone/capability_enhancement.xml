@@ -1,0 +1,164 @@
+<odoo>
+    <data>
+        <record id="capability_enhancement" model="ir.ui.view">
+            <field name="name">Capability Enhancement</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.capability_enhancement</field>
+            <field name="arch" type="xml">
+                <t name="Capability Enhancement" t-name="emea_college_theme.capability_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">Capability Enhancement and Development Schemes</h2>
+                                <div class="page_text">
+                                    <h3 class="sub_head">GUIDANCE FOR COMPETITIVE EXAMINATIONS</h3>
+                                    The College has initiated various competitive examinations to improve the capability
+                                    of students who are ready and interested to prepare for competitive examinations.
+                                    The centre is providing regular coaching for UGC-NET, Kerala PSC, UPSC, and Bank
+                                    Tests. The guidance courses offered by the college help the students prepare
+                                    thoroughly for the competitive exams. The syllabi of such courses stick on to the
+                                    point of view from which the competitive exams are held. The basic categories of
+                                    questions that are asked for such exams are explained and taught in length. These
+                                    courses help to an overall development of language and other subject wise skills to
+                                    the students.
+                                    <br/>
+                                    <br/>
+
+                                    <h3 class="sub_head">CAREER COUNSELLING</h3>
+                                    The College has a career counseling cell. The main aim of Career Counseling is to
+                                    help the students to choose a field that is in tune with their skills and their job
+                                    expectations. With the help of career counseling, most students end up choosing the
+                                    right career and perform their level best, which ultimately helps them succeed.
+                                    Career Counseling helps the students to understand their strength and weakness. It
+                                    helps them to work on their short comings and prepares them to face interviews.
+                                    These sessions make sure the students are well prepared to face the outside world
+                                    and help them to understand the work culture of the companies. Placement cell
+                                    organizes career counseling sessions for all the students especially final years on
+                                    regular intervals
+                                    <br/>
+                                    <br/>
+
+                                    <h3 class="sub_head">SOFTSKILL DEVELOPMENT</h3>
+                                    Soft Skill development is an essential thing in the current growing world. The
+                                    students at the college are taught to communicate and interact at a professional
+                                    level. The qualities of confidence and critical thinking are developed making the
+                                    students better at soft skills. Soft skill development courses inculcate ethical
+                                    attitude towards others and also help in the nurturing of better interpersonal
+                                    skills. Much of the communication related activities are developed and taught to
+                                    students who are willing and interested to enhance their skills.
+                                    <br/>
+                                    <br/>
+
+                                    <h3 class="sub_head">REMEDIAL COACHING</h3>
+                                    College is providing regular remedial coaching to the slow learners. Remedial
+                                    coaching is undertaken by individual lecturers of each department to provide some
+                                    extra academic help to slow learners and those students who have been observed to
+                                    score consistently low marks in the internal examinations. These students are
+                                    re-taught parts of the syllabus that they could not follow in the classes. Certain
+                                    additional assignments and tests are administered to them to ascertain their
+                                    progress in learning the concepts that they could not master during the class
+                                    lectures and continuous internal assessments. These classes are generally held in
+                                    the sixth hour. Students lacking in confidence to ask questions during class hours
+                                    also benefit from these classes as they are able to put forth their queries freely
+                                    in smaller groups. An important skill that students with poor writing skills learn
+                                    during these classes is the art of organizing the points in an essay-type answer as
+                                    per the requirements of the question. Remedial coaching has been shown to improve
+                                    the performance of those students who struggle to keep up with the demands of the
+                                    syllabus in the semester system
+                                    <br/>
+                                    <br/>
+
+                                    <h3 class="sub_head">BRIDGE COURSE</h3>
+                                    Bridge course is offered by all the Departments to First year students to connect
+                                    them to the UG Syllabus. The course also aims at aiding the students in learning to
+                                    listen to lectures in English effectively and comprehend them properly, speaking
+                                    fluently so as to be able to express the basic concepts. Students coming from rural
+                                    backgrounds and those who face minor challenges with language are particularly able
+                                    to benefit from this course.
+                                    <br/>
+                                    <br/>
+
+                                    <h3 class="sub_head">PERSONAL COUNSELLING</h3>
+                                    Personal counseling sessions are undertaken by the professional counselor appointed
+                                    by the college and the trained teachers of our college. The counselor helps students
+                                    with problems during their stay in the college. Counseling is a collaborative effort
+                                    between the counselor and the client. This kind of collaboration helps the clients
+                                    identify goals and potential solutions to the problems which cause emotional
+                                    turmoil, seek to improve communication and coping skills, strength self-esteem and
+                                    promote behavior change and optimal mental health. The counselor serves as an
+                                    empathetic listener. The counselor analyses the problems of the students and takes a
+                                    standardized psychological method to treat the student. The students might face
+                                    emotional turbulence due to various problems like depression, abuse, harassment,
+                                    family problems etc… The counselor provides guidance and advice on solving the
+                                    problems through the counseling sessions. The information shared by the students
+                                    during the personal counseling sessions is kept confidential and dealt with
+                                    compassionately. The Counseling Cell of the college takes care of all the counseling
+                                    related activities. They make up the core body that deals with issues faced by the
+                                    students and provide early interventions, help and support to them.
+                                    <br/>
+                                    <br/>
+
+                                    <h3 class="sub_head">YOGA AND MEDITATION</h3>
+                                    Since teaching and learning demands more concentration our college gives more
+                                    emphasis for Yoga and meditation. Yoga is defined as a physical, mental and
+                                    spiritual practice which has its roots in ancient India. Yoga is practiced widely
+                                    around the world for around thousand years and has developed various
+                                    interpretations. Yoga mainly is stretching exercises to build flexibility and relax
+                                    the body and mind. The college has initiated to conduct yoga and meditation to
+                                    encourage students for living a healthy and balanced life. The yoga classes have
+                                    been helpful and supportive to the students. Meditation classes have helped the
+                                    students use techniques of mindfulness and train their mental ability to concentrate
+                                    their attention on a particular subject or thought.
+                                    <br/>
+                                    <br/>
+
+                                    <h3 class="sub_head">LANGUAGE LAB</h3>
+                                    Good communication skills are indispensable for the success of any professional. If
+                                    one wants to reach out to people, he or she has to speak their language. The English
+                                    language, in particular, has become essential in the lives of young people who
+                                    aspire to advance their careers anywhere in the world. English language learning has
+                                    therefore become a must for any Indian student today. This programme enhances
+                                    linguistic skills while improving communication, with an emphasis on phonetics for
+                                    language fluency. It encourages sound listening and speaking abilities. Reading
+                                    comprehension makes sure students utilize their analytical and interpretive
+                                    abilities. Practical exercises provide ample opportunities to practice language and
+                                    grammar skills. The demonstration of sentence formation provides clarity of usage of
+                                    grammatical elements.
+                                </div>
+                            </section>
+                            <h3 class="in_charge">In-Charge
+                            </h3>
+                            <div class="row">
+                                <section class="former_card"  >
+                                    <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                         alt="Person"
+                                         class="card-image"/>
+                                    <div class="card-content">
+                                        <div class="name">Name Of Professor</div>
+                                        <div class="designation">Designation Of Professor
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <section class="pb32" style="text-align:center;">
+                                <h2 class="page_head pt32">REPORTS</h2>
+                                <a href="#" target="_blank" title="Download"
+                                   data-target="tooltip"
+                                   class="readmore" id="readmore">
+                                    Report 2014-23
+                                </a>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="capability_enhancement_page" model="website.page">
+            <field name="url">/capability_enhancement</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="capability_enhancement"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="emea_clg_website" name="EMEA COllege Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div class="oe_structure  o_editable " id="wrap">
+                <script type="text/javascript"
+                        src="https://amalcollege.ac.in/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17"
+                        id="mediaelement-core-js"/>
+                <script type="text/javascript"
+                        src="https://amalcollege.ac.in/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.5.5"
+                        id="mediaelement-migrate-js"/>
+                <script type="text/javascript" id="mediaelement-js-extra">
+                    /* */
+                    var _wpmejsSettings =
+                    {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+                    /* */
+                </script>
+                <script type="text/javascript"
+                        src="https://amalcollege.ac.in/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.5.5"
+                        id="wp-mediaelement-js"/>
+
+                <!-- <script>-->
+                <!--document.addEventListener('DOMContentLoaded', function() {-->
+                <!--    var marquee = document.getElementById('announce');-->
+
+                <!--    // Function to handle the marquee behavior based on edit mode-->
+                <!--    function updateMarqueeBehavior() {-->
+                <!--        if (document.body.classList.contains('odoo-editor-editable')) {-->
+                <!--            marquee.stop(); // Stop scrolling if in edit mode-->
+                <!--            marquee.onmouseover = null; // Remove hover events-->
+                <!--            marquee.onmouseout = null;-->
+                <!--        } else {-->
+                <!--            // Default behavior-->
+                <!--            marquee.onmouseover = function() {-->
+                <!--                this.stop();-->
+                <!--            };-->
+                <!--            marquee.onmouseout = function() {-->
+                <!--                this.start();-->
+                <!--            };-->
+                <!--        }-->
+                <!--    }-->
+
+                <!--    // Initial update-->
+                <!--    updateMarqueeBehavior();-->
+
+                <!--    // Optionally, monitor changes to the class-->
+                <!--    var observer = new MutationObserver(function() {-->
+                <!--        updateMarqueeBehavior();-->
+                <!--    });-->
+
+                <!--    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });-->
+                <!--});-->
+
+                <!-- </script>-->
+                <!--  <script>-->
+                <!--           document.addEventListener("DOMContentLoaded", function () {-->
+                <!--    const container = document.querySelector(".upcom_snippet_container");-->
+                <!--    const template = document.querySelector(".upcome_template");-->
+
+                <!--    // Simplified selector based on provided structure-->
+                <!--    const items = template.querySelectorAll(".row");-->
+                <!--    if (items.length === 0) {-->
+                <!--        console.error("No items found in the template.");-->
+                <!--        return;-->
+                <!--    }-->
+
+                <!--    let currentIndex = 0;-->
+
+                <!--    function slideToNextItem() {-->
+                <!--        // Get the height of the current item-->
+                <!--        const currentItem = items[currentIndex];-->
+                <!--        if (!currentItem) return; // Safety check-->
+
+                <!--        const currentHeight = currentItem.offsetHeight;-->
+
+                <!--        // Set the container height dynamically-->
+                <!--        container.style.height = `${currentHeight}px`;-->
+
+                <!--        // Move to the next item-->
+                <!--        currentIndex = (currentIndex + 1) % items.length;-->
+
+                <!--        // Calculate the offset for the next item-->
+                <!--        const nextOffset = Array.from(items)-->
+                <!--            .slice(0, currentIndex)-->
+                <!--            .reduce((total, item) =&gt; total + item.offsetHeight, 0);-->
+
+                <!--        // Slide the template-->
+                <!--        template.style.transform = `translateY(-${nextOffset}px)`;-->
+                <!--    }-->
+
+                <!--    // Set the initial height of the container-->
+                <!--    container.style.height = `${items[0].offsetHeight}px`;-->
+
+                <!--    // Auto-slide every 3 seconds-->
+                <!--    setInterval(slideToNextItem, 3000);-->
+                <!--});-->
+
+
+                <!--        </script>-->
+
+
+                <section class="banner section1 o_colored_level" data-snippet="emea_college_home"
+                         data-name=" Emea College Homepage" style="background-image: none;">
+                    <img src="/web/image/4551-fe98136f/00A%5B1%5D-min.png"
+                         style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+                         loading="lazy" data-original-src="/web/image/4551-fe98136f/00A%5B1%5D-min.png"
+                         data-mimetype="image/png" data-resize-width="512"/>
+                    <mediaelementwrapper id="mejs_4796955352947423">
+                        <video loop="loop" autoplay="true" playsinline="" muted="" id="mejs_4796955352947423_html5"
+                               preload="auto"
+                               src="https://emeacollege.ac.in/emea_college_theme/static/src/video/emea_video.webm"
+                               poster="/web/image/4551-fe98136f/00A%5B1%5D-min.png"
+                               style="width: 100%; height: 100%; object-fit: cover; object-position:  bottom;"
+                               __idm_id__="72541185">
+
+                            <source type="video/webm"
+                                    src="https://emeacollege.ac.in/emea_college_theme/static/src/video/emea_video.webm">
+                            </source>
+                        </video>
+                    </mediaelementwrapper>
+                    <div class="upcome">
+                        <div style="     text-align: center;     font-size: 18px;     font-weight: 600;     color: white;     background: #35a7a0b0;     padding: 15px 10px; ">
+                            Upcoming Events
+                        </div>
+                        <section data-snippet="s_blog_posts"
+                                 class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_post_big_picture s_blog_posts_effect_marley s_dynamic o_colored_level s_blog_post_upcoming_home s_blog_post_news_home o_dynamic_empty"
+                                 data-name="Blog Posts" data-filter-by-blog-id="106" data-number-of-records="16"
+                                 data-filter-id="6"
+                                 data-template-key="emea_college_events_snippet.dynamic_filter_template_blog_post_upcoming_home"
+                                 data-force-minimum-max-limit-to16="1" style="background: transparent;">
+                            <div class="container upcom_snippet_container o_not_editable">
+                                <div class="css_non_editable_mode_hidden">
+                                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                        Your Dynamic Snippet will be displayed here... This message is displayed because
+                                        you did not provided both a filter and a template to use.
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="dynamic_snippet_template upcome_template"/>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="side_banner">
+                        <ul>
+                            <li class="side_round side_round_1">
+                                <a href="https://www.linkedin.com/school/emeacollege-kondotty">
+                                    <i class="ri-linkedin-fill"/>
+                                </a>
+                            </li>
+                            <li class="side_round side_round_4">
+                                <a href="https://www.instagram.com/emea_college_official/?igsh=MXBrNDFhaHZseXUxbA%3D%3D&amp;utm_source=qr">
+                                    <i class="ri-instagram-fill"/>
+                                </a>
+                            </li>
+                            <li class="side_round side_round_2">
+                                <a href="https://www.youtube.com/channel/UCQG5OoObUi3oYIMRmQAtyOw"
+                                   data-original-title="" title="">
+                                    <i class="ri-youtube-fill"/>
+                                </a>
+                            </li>
+                            <li class="side_round side_round_3">
+                                <a href="https://www.facebook.com/emeacollegekdty">
+                                    <i class="ri-facebook-fill"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+                <div id="first_section"></div>
+                <style>
+                    .s_blog_post_achievements_home .achievement-card-name{
+                    max-height: 46px;
+                    overflow: hidden;
+                    margin-bottom: 5px;
+                    padding-bottom:2px;
+                    }
+                    .achievement-card-image img {
+
+                    min-height: 255px;
+                    }
+                    #achieve_date {
+                    padding: 8px 16px;
+                    width: 80px;
+                    height: 90px;
+                    font-size: 17px ! IMPORTANT;
+                    align-items: center;
+                    }
+                    .news_card_2 {
+                    height: auto;
+                    }
+                    #event-location {
+                    font-size: 14px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    font-family: 'Poppins';
+                    }
+                    .s_blog_post_upcoming_home .container {
+                    padding-right: 0;
+                    padding-left: 0;
+                    }
+                    .upcom_snippet_container {
+                    overflow: hidden;
+                    position: relative;
+                    height: auto; /* Will adjust dynamically based on the active item's height */
+                    }
+
+                    @keyframes translate{
+                    0%{transform:translateY(0%)}
+                    100%{transform:translateY(-100%)}
+                    }
+                    .s_blog_post_upcoming_home .dynamic_snippet_template{
+                    position: relative;
+                    transition: transform 0.5s ease-in-out;
+                    }
+                    .s_blog_post_upcoming_home .dynamic_snippet_template::-webkit-scrollbar {
+                    display: none;
+                    }
+                    .s_blog_post_upcoming_home .dynamic_snippet_template {
+
+                    overflow: hidden;
+                    height: 345px;
+
+                    }
+                    .upcome .s_blog_post_upcoming_home{
+                    width: 460px;
+                    }
+
+                    .s_blog_post_upcoming_home .dynamic_snippet_template .row {
+                    animation: translate 18s linear infinite !important;
+                    overflow: auto;
+                    }
+                    .s_blog_post_upcoming_home .upcome_template:hover .row {
+                    animation-play-state: paused !important;
+                    }
+                    .upcom-content {
+                    width: calc(100% - 120px);
+                    }
+                    .upcome{
+                    width: 460px;
+                    position: absolute;
+                    left:2%;
+                    top:200px;
+                    height: 345px;
+
+                    }
+                    .upcoming-event{
+
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    gap: 20px;
+                    padding: 0 !important;
+                    background: linear-gradient(149.87deg, #202120b5 9.25%, #06b6a0a3 93.84%) !important;
+                    height: auto;
+                    margin: 0px 0;
+                    min-height:100px;
+                    }
+                    .upcome_date{
+                    height: 100%;
+                    border-radius: 10px;
+                    background: #ffff;
+                    color:#000;
+                    text-align: center;
+                    font-size: 14px;
+                    word-break: break-word;
+                    width: 70px;
+                    padding: 8px;
+                    font-weight: 400;
+                    white-space: normal;
+                    margin-left: 8px;
+                    border: 2px solid #bcbcbce6;
+                    }
+                    .upcome-name{
+                    text-shadow: 1px 1px 7px #4b4949b0;
+
+                    font-weight: 600;
+                    color: #ffffff !important;
+                    font-family: 'Poppins';
+                    font-size: 16px;
+                    line-height: 1.2;
+
+                    }
+                    .upcome_read{
+                    padding: 4px 12px;
+                    position: absolute;
+                    background: #ffffff;
+                    color: #000 !important;
+                    display: flex;
+                    width: fit-content;
+                    margin: 10px 0;
+                    margin-left: auto;
+                    font-size: 12px;
+                    right: 10px;
+                    bottom: 0px;
+                    }
+                    @media(max-width:900px){
+                    .upcome{
+                    display:none;
+                    }
+                    }
+                    #achieve_date {
+                    padding: 8px 16px;
+                    width:80px;
+                    }
+                    .achievement-card-name {
+                    padding-top: 10px;
+                    font-weight: 500;
+                    font-size:14px;
+                    }
+                    .achievement-card .readmore {
+                    margin-bottom: 0;
+                    padding: 0px 0;
+                    }
+                    .achievement-card-image img {
+
+                    object-position: center top;
+                    max-height: 255px;
+                    }
+                    .news-card-img{
+                    overflow:hidden;
+                    transition:all 0.4s ease-in-out;
+                    }
+
+                    .news-card-img img {
+
+                    transition: all 0.4s ease-in-out;
+                    }
+
+                    .news-card-img:hover img {
+                    scale: 1.03;
+                    }
+
+                    .news_card_2 .news_description{
+                    display:none;
+                    }
+                    #news_block {
+                    overflow: hidden;
+                    max-height: 100px !Important;
+                    font-size: 15px;
+                    padding: 0px;
+                    }
+
+                    #news_title {
+                    font-size: 15px;
+                    padding: 3px;
+                    text-transform: capitalize;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    height: 90px;
+                    }
+                    .s_blog_post_news_home{
+                    max-height:345px !important;
+                    }
+                    .s_achieve .row{
+                    width:100%;
+                    }
+
+                    .achievement-card-box{
+                    padding: 15px 14px;
+                    padding-top: 0 !IMPORTANT;
+                    padding-bottom: 0 !important;
+                    }
+                    .achievement-card-name {
+                    color: #212529;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    padding-top: 20px;
+                    margin: 0;
+                    word-wrap: break-word;
+                    }
+                    .achievement-card{
+                    box-shadow: 0px 19px 46px 0px rgba(0, 0, 0, 0.10);
+                    }
+                    .notes_facility {
+                    word-break: break-word !important;
+                    white-space: normal;
+                    hyphens: auto;
+                    }
+                    .odoo-editor-editable #announce {
+                    /* Styles for edit mode */
+                    overflow: scroll;
+                    white-space: nowrap;
+
+                    }.carousel-indicators [data-bs-target] {
+                    border:none;
+                    background-color: #039990 !important;
+                    }
+                    .s_carousel.s_carousel_default .carousel-indicators li, .s_quotes_carousel.s_carousel_default
+                    .carousel-indicators li {
+                    height: 3px;}
+
+
+                    .banner {
+                    background: none !Important;}
+
+                    .container-2 {
+                    max-width: 1350px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    }
+
+                    .row-2 {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+                    gap: 20px;
+                    }
+
+                    .column-2 {
+                    background: #fff;
+                    text-align: center;
+                    padding: 20px;
+                    border: 1px solid #039990;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .column-2 i {
+                    color: rgb(3, 153, 144);
+                    font-size: 3em;
+                    margin-bottom: 10px;
+                    }
+
+                    .counter {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                    color: #333;
+                    }
+                    @media (max-width: 425px) and (min-width: 320px) {
+                    .flex-column a {
+                    line-height: 12px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    }
+                    }
+                    @media (max-width: 425px) and (min-width: 320px) {
+                    .books{
+                    margin-bottom: 20px !important;
+                    }}
+                    @media (max-width: 425px) and (min-width: 320px) {
+                    .counter{
+                    font-size:12px !important;
+                    }}
+                    @media (max-width: 320px) and (min-width: 320px) {
+                    .column-2 i{
+                    font-size:1rem !important;
+                    }}
+                    @media (max-width: 768px) {
+                    .row-2 {
+                    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+                    }
+                    .notes {
+                    white-space: normal;
+                    letter-spacing: -0.1px;
+                    }
+                    }
+
+                    @media (max-width: 600px) {
+                    .s_dynamic .carousel-control-prev {
+                    left: auto;
+                    right: 50px !important;
+                    }
+                    .banner{
+                    height: 50vh !important;
+                    }
+                    .announcement {
+                    top:0 !important;
+                    }
+                    }
+
+
+                    @media (max-width: 480px) {
+                    .row-2 {
+                    grid-template-columns: repeat(2, 1fr); /* 2 columns on very small screens */
+                    }
+                    }
+                    .content_height{
+                    min-height:0 !important;
+                    }
+                    .side_round_4{
+
+                    }
+                    .side_round_4:hover{
+                    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+                    margin-left: -30px;
+                    box-shadow: 2px 5px 10px grey;
+                    }
+
+                    .side_round_3{
+                    border-radius: 0 0 0px 14px;
+                    }
+
+                    .side_round_3:hover{
+                    background:#3B5998;
+                    margin-left: -30px;
+                    box-shadow: 2px 5px 10px grey;
+                    }
+                    .side_round_2{
+
+                    }
+                    .side_round_2:hover{
+                    background:#FF0000;
+                    margin-left: -30px;
+                    box-shadow: 2px 5px 10px grey;
+                    }
+                    .side_round_1{
+                    border-radius: 14px 0 0 0px;
+
+                    }
+
+                    .side_round_1:hover{
+                    background:#007AB9;
+                    margin-left: -30px;
+                    box-shadow: 2px 5px 10px grey;
+                    }
+                    .side_round a i{
+                    color:white;
+                    }
+
+                    .side_round{
+                    list-style: none;
+
+                    }
+
+                    .side_banner li {
+                    padding:10px;
+                    font-size: 25px;
+                    background: rgb(3 153 144 / 65%);
+                    transition: all 0.5s ease-in-out;
+
+                    }
+                    .side_banner{
+
+                    height: auto;
+                    width: 77px;
+                    z-index:1;
+                    position: absolute;
+
+                    top: 50%;
+                    right: 0%;
+                    border-radius: 14px 0px 0px 14px;
+                    }
+                    .achievement-card .readmore:hover:after {
+                    top: 5px;
+                    right: 0px;
+                    }
+                    #more_button::after {
+                    top: 6px;
+                    }.achievement-card .readmore::after {
+                    top: 5px;
+                    right: 0px;
+                    }
+                    .s_dynamic.s_blog_post_news_home .s_blog_posts_post {
+                    min-height: 100px !important;
+                    }
+                    .news_read {
+                    margin-top: -2px;
+                    display: block;
+                    font-size: 14px;
+                    color: var(--primary) !important;
+                    font-weight: 400;
+                    text-align: right;
+                    }
+                    .s_blog_post_news_home .col-3 {
+                    width:100%;
+                    }
+                    .s_blog_post_news_home{
+                    width:419px;background: whitesmoke;
+                    padding-bottom: 50px;
+                    max-height:386px;
+                    overflow:hidden;
+                    }
+                    .s_blog_post_news_home .row{
+                    display:block;
+                    }
+                    .s_blog_post_news_home .col-4 {
+                    width:100%;
+                    }
+                    .newses-name {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: var(--primary) !important;
+                    margin: 0;
+                    width: 100%;
+                    word-break: break-all;
+                    }
+                    .news_date{
+                    color: var(--primary);
+                    font-size: 12px;
+                    float: left;
+                    padding-right: 5px;
+                    }
+                    .newses-p {
+                    position: relative;
+                    overflow: hidden;
+                    white-space: break-spaces;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                    display: block;
+                    vertical-align: top;
+                    margin: 0;
+                    color: black;
+                    max-height: 60px;
+                    margin-bottom: 3px;
+                    }
+                    .newses-p p{
+                    margin-bottom: 0rem;
+                    max-height: 60px;
+                    overflow: hidden;
+                    word-break: break-all;
+                    font-size:13px;
+                    }
+                    .s_blog_post_news_home .dynamic_snippet_template:hover .row {
+                    animation-play-state: paused;
+                    }
+                    .s_blog_post_news_home .dynamic_snippet_template .row{
+                    animation: moveUp 20s linear infinite;overflow: auto;}
+                    @keyframes moveUp {
+                    0% {
+                    transform: translateY(10%);
+                    }
+                    100% {
+                    transform: translateY(-100%);
+                    }
+                    }
+
+                    .homepage #wrap {
+                    overflow-x: clip;
+                    }
+                    .achievement-card .readmore {
+                    background: transparent;
+                    color: var(--primary) !important;
+                    font-weight: 400;
+                    margin-left: auto;
+                    margin-right: 0;
+                    }
+                    .s_blog_post_achievements_home .container {
+                    padding-right: 0;
+                    padding-left: 0;
+                    }
+                    .s_blog_post_news_home .col-4 {
+                    width: 100%;
+                    padding: 0;
+                    }.achiev {
+                    margin: 0;
+                    padding: 0;}
+                    .s_blog_post_achievements_home .achievement-card{min-width:419px;}.s_blog_post_achievements_home
+                    .achievement-card-name{color:black !important;word-break: break-all;font-size: 12px; font-weight:
+                    400;
+                    padding-top: 15px;}.s_blog_post_achievements_home .achievement-card-p { display:none; margin-bottom:
+                    10px;
+                    max-height: 85px !important;}
+                    .news_home {
+                    width: 419px;
+                    padding: 0;
+                    }
+                    @media (max-width: 600px) {
+                    .note_p {
+                    line-height: 1.5rem !important;
+                    padding: 0px 0px 0px 0px !important;
+                    }
+                    .facility-img {
+                    width: 100%;
+                    height: 400px !important;
+                    object-fit: cover;
+                    min-height: 400px;
+                    max-height: 400px;
+                    }
+                    .facility-name{
+                    padding-top:10px;
+                    }
+
+                    }
+
+                </style>
+                <style>
+
+                    .s_dynamic.s_blog_post_news_home .s_blog_posts_post {
+                    min-height: 100px !important;
+                    }
+                    .news_read {
+                    margin-top: -2px;
+                    display: block;
+                    font-size: 14px;
+                    color: var(--primary) !important;
+                    font-weight: 400;
+                    text-align: right;
+                    }
+                    .s_blog_post_news_home .col-3 {
+                    width:100%;
+                    }
+                    .s_blog_post_news_home{
+                    width:419px;background: whitesmoke;
+                    padding-bottom: 50px;
+                    max-height:357px;
+                    overflow:hidden;
+                    }
+                    .s_blog_post_news_home .row{
+                    display:block;
+                    }
+                    .s_blog_post_news_home .col-4 {
+                    width:100%;
+                    }
+                    .newses-name {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: var(--primary) !important;
+                    margin: 0;
+                    width: 100%;
+                    word-break: break-all;
+                    }
+                    .news_date{
+                    color: var(--primary);
+                    font-size: 12px;
+                    float: left;
+                    padding-right: 5px;
+                    }
+                    .newses-p {
+                    position: relative;
+                    overflow: hidden;
+                    white-space: break-spaces;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                    display: block;
+                    vertical-align: top;
+                    margin: 0;
+                    color: black;
+                    max-height: 60px;
+                    margin-bottom: 3px;
+                    }
+                    .newses-p p{
+                    margin-bottom: 0rem;
+                    max-height: 60px;
+                    overflow: hidden;
+                    word-break: break-all;
+                    font-size:13px;
+                    }
+                    .readmore::after {
+                    content: '»';
+                    position: absolute;
+                    opacity: 0;
+                    top: auto;
+                    right: 0px;
+                    transition: all 0.2s ease-in-out;
+                    display: inline-block;
+                    font-size: 14px;
+                    }
+                    .s_dynamic .carousel-control-prev &gt; span.fa, .s_dynamic .carousel-control-next &gt; span.fa {
+                    color: #828585 !important;
+                    background: transparent;
+                    font-size: 30px;
+                    }
+                    .carousel-indicators li{
+                    background-color: #8c8b8b !important;
+                    }
+                    .readmore:hover {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    border-radius: 0px;
+                    }
+                    @media(max-width:320px){
+                    .achievement-card-image{
+                    margin:0;
+                    }
+                    }
+                    .notes_facility{
+                    padding: 25px !important;
+                    font-size: 1rem !important;
+                    line-height: 1.8rem;
+                    font-weight: 500;
+                    color: white;
+                    text-align: justify;
+                    }
+                    #rele{
+                    margin:0;
+                    }
+
+                    .readmore:hover:after {
+                    opacity: 1;
+                    right: 3px;
+                    }
+                    .documentary {
+                    width: 100% !important;
+                    }
+                    .s_dynamic_snippet_carousel .col-12{
+                    padding: 0;
+                    }
+                    .s_dynamic_snippet_2 .flex-shrink-0{
+                    padding:0;
+                    }
+                    .achievement-card{
+                    width: 419px;
+                    }
+                    .achievement-card-image{
+                    max-width: 100%;
+                    max-height: 255px;
+                    }
+                    .gallery {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr) !important;
+                    }
+                    .readmore {
+                    text-transform: capitalize;
+                    position: relative;
+                    }
+
+                    .card-wrapper{
+                    padding-left: 4rem;
+                    min-height: 300px;
+                    padding-right: 2rem;
+                    height: auto;
+                    }
+                    .image-wrapper{
+                    padding-left: 0px !important;
+                    }
+                    .college_banner{
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    }
+
+                    .section3 .row{
+                    margin:0px;
+                    }
+                    .notes {
+                    word-break: break-word;
+                    }
+
+                    .highlight .carousel-item{
+                    min-height:480px !important;max-height:480px;
+                    }
+                    .publish_home .carousel-item {
+
+                    min-height: 480px !important;
+                    max-height: 480px !important;
+                    }
+                    .highlight .carousel-item.active, .carousel-item-next, .carousel-item-prev{
+                    display: block;
+                    }
+                    .publish_home{
+                    padding-left:0;
+                    }
+
+
+                    #description p{
+                    color: black;
+                    word-break: break-all;
+                    }
+                    #news_title {
+                    color: rgb(3, 153, 144) !important;
+                    }
+                    #news_block{
+                    overflow: hidden;
+                    max-height: 130px;
+                    background: white;
+                    }
+                    .news-card-image{
+                    height:430px;
+                    }
+                    .news_description p{
+                    color: #FFF;
+                    font-family: 'Poppins';
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    word-break: break-all;
+                    max-height: 50px;
+                    overflow: hidden;
+                    margin: 0;
+                    }
+                    .news-card-image img{
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    object-fit: fill !important;
+                    }
+                    .news_description p strong{
+                    font-weight: inherit !important;
+                    }
+
+                    .news_block{
+                    position: absolute;
+                    bottom: 0;
+                    padding: 20px;
+                    transition: all 0.4s ease-in-out;
+                    background: #0000008f;
+                    width:100%;
+                    }
+                    .notes_head{
+                    margin: 0;
+                    text-transform: capitalize;
+                    padding: 25px !important;
+                    font-size: 2rem;}
+                    .notes{
+
+                    font-size: 1rem;
+                    line-height: 1.5rem !important;
+                    font-weight: 500;
+                    color:#191818;
+                    }
+                    .readmore{
+                    margin-top:0;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    padding: 8px 15px;
+                    }
+                    .image-wrapper{
+                    padding-left: 90px;
+                    }
+                    .prince-img{
+                    object-fit: cover;
+                    width: 250px !important;
+                    z-index: 100;
+                    position: relative;
+                    height: 260px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    }
+                    .card-wrapper{
+                    padding-left: 4rem;
+                    height: 300px;
+                    padding-right: 2rem;
+                    }
+                    .news_events--1{
+                    grid-row-end: 8;
+                    }
+                    #news-content{
+                    padding-bottom: 10px;
+                    }
+                    .news_title{
+                    font-size: 1rem;
+                    }
+                    .news_description{
+                    font-size: 1rem;
+                    }
+                    .achievement-card-p{
+                    color:#191818;
+                    }
+                    .achieve-text{
+                    color:#191818;
+                    }
+                    .res_facility{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    }
+                    .facility-img{
+                    width: 100%;
+                    height: 400px !important;
+                    object-fit: cover;
+                    }
+
+                    .facility-p{
+                    color:white !important;
+                    }
+                    .notes{
+                    line-height: 1.8rem !important;
+                    padding: 0px 0px 25px 0 !important;
+                    }
+                    #alumni{
+                    padding-right: 8rem;
+                    }
+                    .note_p{
+                    line-height: 1.8rem !important;
+                    padding: 0px 0px 0px 35px !important;
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                    font-weight: 500;
+                    color: #191818;
+                    text-align:justify;
+                    margin: 0;
+                    }
+                    .notes_facility {
+                    word-break: break-all;
+                    }
+                    @media(max-width:600px){
+                    .s_blog_post_achievements_home .achievement-card {
+                    min-width: 100% !important;
+                    }
+                    .s_blog_post_news_home {
+                    width: 100%;
+                    }
+                    .achiev {
+                    width: 100% !important;
+                    }
+                    .news_home {
+                    width: 100% !important;
+                    }
+                    .achievement-card-image {
+                    max-width: 100%;
+                    margin: 0;
+                    }
+                    .note_p {
+                    line-height: 1.8rem !important;
+                    padding: 0px 0px 0px 0px !important;
+                    }
+                    }
+                    .book_name {
+
+                    padding-top: 0px;
+                    }
+
+                    #book_para{
+                    padding-top:10px !important;
+                    }
+
+                    .counter {
+                    font-size: 22px;
+                    font-weight:600;
+                    margin: 10px 0;
+                    color: #333;
+                    }
+                    @media (max-width: 768px) {
+                    .homepage #emea_top_menu_collapse {
+                    background-color: #ffffff !important;
+                    height: 66vh !IMPORTANT;
+                    overflow: scroll;
+                    min-height: 100% ! IMPORTANT;
+                    padding-bottom: 40px !important;
+                    }
+                    .drop-emea .nav-item {
+                    box-shadow: rgb(99 99 99 / 31%) 1px 1px 2px 0px !important;
+                    top: 0;
+                    margin-bottom: 20px;
+                    }
+                    .homepage #top .navbar-light .navbar-nav .nav-link {
+                    color: black !important;
+                    }
+                    #top-item { margin-bottom: 0px;
+                    background: #f4f4f4 !important;
+                    }
+                    .counter-box {
+                    flex: 1 1 45%; /* 2 columns on smaller screens */
+                    }
+                    }
+                    @media (max-width: 480px) {
+                    .counter-box {
+                    flex: 1 1 100%; /* 1 column on very small screens */
+                    }
+                    }
+                    .book_content {
+                    display: flex;
+                    justify-content: center;
+                    }
+                    @media (max-width: 1440px) {
+
+                    .homepage #emea_top_menu_collapse {
+                    position: relative;
+                    top: -10px;
+                    left: 30px;
+                    }}
+                </style>
+                <script>
+                    function countUp(elementId, start, end, duration) {
+                    let startTimestamp = null;
+                    const step = (timestamp) =&gt; {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    document.getElementById(elementId).innerText = Math.floor(progress * (end - start) + start);
+                    if (progress &lt; 1) {
+                    window.requestAnimationFrame(step);
+                    }
+                    };
+                    window.requestAnimationFrame(step);
+                    }
+
+                    document.addEventListener('DOMContentLoaded', () =&gt; {
+                    countUp('since1982-value', 0, 1982, 2000);
+                    countUp('ugPrograms-value', 0, 14, 2000);
+                    countUp('pgPrograms-value', 0, 5, 2000);
+                    countUp('phdPrograms-value', 0, 1, 2000);
+                    countUp('students-value', 0, 2600, 2000);
+                    countUp('faculty-value', 0, 100, 2000);
+                    });
+                </script>
+
+                <!--<div class="announcement" data-snippet="emea_college_home" data-name=" Emea College Homepage" style="    position: relative; top:-6px;">-->
+
+                <!--    <span id="announce_head" class="o_default_snippet_text" style="font-weight: 500;     text-transform: uppercase;">Announcement</span>-->
+                <!--   <span class="announcement_content">-->
+                <!--        <marquee id="announce">-->
+                <!--        <a href="https://emeacollege.ac.in/Uploads/Files/APPLICATION%20FORM%20for%20guest%20faculty.docx" style="color: white !important;">അതിഥി അദ്ധ്യാപക നിയമനം 2025-2026</a>-->
+                <!--        </marquee>-->
+                <!--    </span> -->
+
+                <!--</div>-->
+
+                <section>
+
+                    <div class="pt-4 container">
+                        <div class="row-2">
+                            <div class="column-2">
+
+                                <div class="counter-box">
+                                    <i class="fas fa-calendar-alt"/>
+                                    <div class="counter" id="since1982">Since:
+                                        <span id="since1982-value">1982</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="counter-box">
+                                    <i class="fas fa-graduation-cap"/>
+                                    <div class="counter" id="ugPrograms">UG Programmes:
+                                        <span id="ugPrograms-value">14</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="counter-box">
+                                    <i class="fas fa-university"/>
+                                    <div class="counter" id="pgPrograms">PG Programmes:
+                                        <span id="pgPrograms-value">5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="counter-box">
+                                    <i class="fas fa-user-graduate"/>
+                                    <div class="counter" id="phdPrograms">PhD Programmes:
+                                        <span id="phdPrograms-value">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="counter-box">
+                                    <i class="fas fa-users"/>
+                                    <div class="counter" id="students">Students:
+                                        <span id="students-value">2600</span>
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="counter-box">
+                                    <i class="fas fa-chalkboard-teacher"/>
+                                    <div class="counter" id="faculty">Faculty:
+                                        <span id="faculty-value">100</span>
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section2 o_colored_level" data-snippet="emea_college_home"
+                         data-name=" Emea College Homepage" style="background-image: none;">
+                    <div class="container">
+                        <h2 class="notes_head o_default_snippet_text">WELCOME TO EMEA COLLEGE</h2>
+                        <div class="notes" style="padding:10px;" placeholder="Type &quot;/&quot; for commands">EMEA
+                            College of Arts and Science, Kondotti is fast emerging as a resourceful destination for
+                            higher
+                            studies in Malabar, spreading the fragrance of education in the society. This college is
+                            affiliated to the University of
+                            Calicut. The college offers up-to-date, advanced, and job-oriented programmes in the vast
+                            expanding horizon of
+                            humanities, commerce, and science and technology. The college is situated at Kumminiparamba
+                            in Kondotti,6 KMs away
+                            from University of Calicut, 2 KMs from Calicut International Airport, 18 KMs from Feroke
+                            Railway Station,and 32 KMs from Calicut City;with a congenial atmosphere for
+                            academic pursuits. The place is ideally suited for the growth and development of educational
+                            institutions for higher learning.
+                        </div>
+                        <a href="/about" class="readmore o_default_snippet_text">Read More</a>
+                    </div>
+                </section>
+                <section class="section3 mt o_colored_level" data-snippet="emea_college_home"
+                         data-name=" Emea College Homepage" style="background-image: none;padding-bottom: 20px;">
+                    <div class="container">
+                        <h2 class="notes_head">Principal’s Message</h2>
+                        <div class="align-center" style="max-width: 1320px;">
+                            <div class="row card-wrapper">
+
+                                <div class="col-md-3 align-left padding-0 o_colored_level">
+                                    <div>
+                                        <img src="/web/image/5809-49454b41/WhatsApp%20Image%202024-09-24%20at%201.01.29%20PM.jpeg"
+                                             alt="" class="prince-img img o_we_custom_image img-fluid"
+                                             data-original-id="5214"
+                                             data-original-src="/web/image/5214-aae8ced5/WhatsApp%20Image%202024-09-24%20at%201.01.29%20PM.jpeg"
+                                             data-mimetype="image/jpeg" data-resize-width="512" data-quality="100"
+                                             loading="lazy" style="" data-bs-original-title="" title=""
+                                             aria-describedby="tooltip541308"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-9 o_colored_level">
+
+                                    <p class="note_p" style="padding;0px;">
+                                        EMEA College of Arts and Science, Kondottti, was established as an embodiment of
+                                        a long
+                                        cherished dream of people of Ernad, a backward region in erstwhile Malabar
+                                        District of
+                                        British India. With the illustrious aim of bringing the educationally deprived
+                                        youth of
+                                        the region into the mainstream of education, the college came into existence in
+                                        1982
+                                        thanks to the efforts of visionary social leaders like Sayyid Mohammed Ali
+                                        Shihab
+                                        Thangal, Jb. P Seethi Haji Sahib,Jb. N.V Ibrahim Master,Jb. Avukader Kutty Naha
+                                        Sahib,
+                                        etc.
+                                        <br/>
+                                        <span style="&#10;    font-weight: 600;&#10;">Prof. (Dr.) Riyad A.M,</span>
+                                        <span style="&#10;    font-size: 14px;&#10;    padding-left: 10px;&#10;">
+                                            Principal
+                                        </span>
+                                        <a href="/principal" class="readmore o_default_snippet_text"
+                                           style="&#10;    margin: 0;&#10;    padding: 2px 15px;&#10;    margin-top: 10px;&#10;">
+                                            Read More
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <style>
+                    .card-wrapper {
+                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+                    backdrop-filter: blur(3.5px);
+                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+                    margin: 0;
+                    z-index: 1;
+                    overflow: visible;
+                    position: relative;
+                    justify-content: center;
+                    padding: 30px;
+                    border-radius: 10px;
+                    height: 350px;
+                    align-items: center;
+                    display: flex;
+                    }
+
+
+                    .prince-img {
+                    object-fit: cover !important;
+                    width: 350px !important;
+                    z-index: 100;
+                    position: relative;
+                    height: 295px;
+                    border-radius: 5px;
+                    object-fit: cover;
+                    object-position: center top;
+                    }
+                </style>
+
+                <section class="container o_colored_level" style="background-image: none; padding-bottom: 20px;">
+                    <h2 class="notes_head ">Latest Events</h2>
+
+
+                    <div class="d-flex flex-wrap">
+                        <section data-snippet="s_dynamic_snippet_carousel"
+                                 class="highlight s_dynamic_snippet_carousel s_dynamic pt32 pb16 o_colored_level col-md-6 s_blog_post_emea o_dynamic_empty"
+                                 data-name="Dynamic Carousel" style="background-image: none;padding-right:0;"
+                                 data-number-of-records="2" data-filter-id="4"
+                                 data-template-key="emea_college_events_snippet.dynamic_filter_template_blog_post_emea"
+                                 data-carousel-interval="10000" data-force-minimum-max-limit-to16="1"
+                                 data-number-of-elements="1">
+                            <div class="o_not_editable container">
+                                <div class="css_non_editable_mode_hidden">
+                                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                        Your Dynamic Snippet will be displayed here... This message is displayed because
+                                        you did not provided both a filter and a template to use.
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="dynamic_snippet_template"/>
+                            </div>
+                        </section>
+                        <section data-snippet="s_dynamic_snippet_carousel"
+                                 class="publish_home col-md-6 s_dynamic_snippet_carousel pb16 s_dynamic pt32 o_colored_level s_blog_post_emea_2 o_dynamic_empty"
+                                 data-name="Dynamic Carousel" style="background-image: none;"
+                                 data-number-of-records="16" data-filter-id="3"
+                                 data-template-key="emea_college_events_snippet.dynamic_filter_template_blog_post_emea_2"
+                                 data-carousel-interval="10000" data-force-minimum-max-limit-to16="1"
+                                 data-number-of-elements="2">
+                            <div class="container o_not_editable">
+                                <div class="css_non_editable_mode_hidden">
+                                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                        Your Dynamic Snippet will be displayed here... This message is displayed because
+                                        you did not provided both a filter and a template to use.
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="dynamic_snippet_template"/>
+                            </div>
+                        </section>
+                    </div>
+                    <a href="/blog" class="readmore o_default_snippet_text">Read More</a>
+
+                </section>
+
+                <section class="section3 o_colored_level pb8" data-snippet="emea_college_home"
+                         data-name=" Emea College Homepage" style="background-image: none;padding-bottom:20px;">
+                    <div class="container">
+                        <div class="row">
+                            <style>
+                                .achiev{
+                                width: calc(100% - 419px);
+
+                                }
+                                .news_home{
+                                width:419px;
+                                position:relative;
+                                }
+                            </style>
+
+                            <div class="news_home o_colored_level">
+                                <h2 class="notes_head">News</h2>
+                                <section data-snippet="s_blog_posts"
+                                         class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_post_big_picture s_blog_posts_effect_marley s_dynamic o_colored_level s_blog_post_news_home o_dynamic_empty"
+                                         data-name="Blog Posts" style="background-image: none;"
+                                         data-filter-by-blog-id="53" data-number-of-records="10" data-filter-id="1"
+                                         data-template-key="emea_college_events_snippet.dynamic_filter_template_blog_post_news_home"
+                                         data-force-minimum-max-limit-to16="1">
+                                    <div class="container o_not_editable">
+                                        <div class="css_non_editable_mode_hidden">
+                                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                                Your Dynamic Snippet will be displayed here... This message is displayed
+                                                because you did not provided both a filter and a template to use.
+                                                <br/>
+                                            </div>
+                                        </div>
+                                        <div class="dynamic_snippet_template"/>
+                                    </div>
+
+                                </section>
+                                <a href="/blog/newshome-53" class="readmore o_default_snippet_text" id="news-more">More
+                                    News
+                                </a>
+                            </div>
+                            <div class="achiev o_colored_level" style="">
+                                <h2 class="notes_head" style="    padding-bottom: 0 !important;">Achievements</h2>
+
+                                <section data-snippet="s_dynamic_snippet_carousel"
+                                         data-select-data-attribute="post_date desc"
+                                         class="s_achieve s_dynamic_snippet_carousel s_dynamic pb32 o_colored_level s_blog_post_achievements_home o_dynamic_empty"
+                                         data-name="Dynamic Carousel" style="background-image: none;"
+                                         data-number-of-records="9" data-filter-id="5"
+                                         data-template-key="emea_college_events_snippet.dynamic_filter_template_blog_post_achievements_home"
+                                         data-carousel-interval="10000" data-number-of-elements="3"
+                                         data-order="post_date desc" data-force-minimum-max-limit-to16="1">
+                                    <div class="container o_not_editable">
+                                        <div class="css_non_editable_mode_hidden">
+                                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                                Your Dynamic Snippet will be displayed here... This message is displayed
+                                                because you did not provided both a filter and a template to use.
+                                                <br/>
+                                            </div>
+                                        </div>
+                                        <div class="dynamic_snippet_template"/>
+                                    </div>
+                                </section>
+                                <style>
+                                    #more_button{
+                                    margin-top: 20px;
+
+                                    font-size: 14px;
+                                    padding: 8px 15px;
+                                    }
+                                    .s_achieve .achievement-card {
+                                    height: auto;
+                                    margin-bottom: 55px;
+                                    width: 100%;
+                                    min-width: 100%;
+                                    margin-top: 25px;
+                                    box-shadow: rgb(99 99 99 / 18%) 0px 0px 13px 0px;
+                                    }
+                                    #news-more{
+                                    margin-top: 0;
+                                    position: absolute;
+                                    bottom: 0;
+                                    transform: translate(30%, 0%);
+                                    left: 30%;
+                                    font-size: 14px;
+                                    padding: 8px 15px;
+                                    }
+                                    .news-card-img img {
+                                    height: 330px;
+                                    }
+                                </style>
+                                <a href="/achievements" class="readmore o_default_snippet_text" id="more_button">More
+                                    Achievements
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="o_colored_level s_image_gallery" data-snippet="emea_college_home"
+                         data-name=" Emea College Homepage" style="background-image: none;padding-bottom:20px;">
+                    <h2 class="notes_head o_default_snippet_text">Gallery</h2>
+                    <div class="gallery container">
+                        <figure class="gallery__item gallery__item--1">
+                            <img src="/web/image/4882-aa7c1ac2/emea4.jpeg" alt=""
+                                 class="gallery__img img img-fluid o_we_custom_image" data-original-id="4853"
+                                 data-original-src="/web/image/4853-08a5abd8/emea4.jpeg" data-mimetype="image/jpeg"
+                                 data-resize-width="1600" data-quality="100" loading="lazy" style=""/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--2">
+                            <img src="/web/image/4881-be96635d/WhatsApp%20Image%202024-08-24%20at%2010.25.06%20AM.jpeg"
+                                 alt="" class="gallery__img img img-fluid o_we_custom_image" data-original-id="4870"
+                                 data-original-src="/web/image/4870-37d3690d/WhatsApp%20Image%202024-08-24%20at%2010.25.06%20AM.jpeg"
+                                 data-mimetype="image/jpeg" data-resize-width="1920" data-quality="100" loading="lazy"
+                                 style=""/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--3">
+                            <img src="/web/image/4883-c8b001c7/WhatsApp%20Image%202024-08-23%20at%205.40.34%20PM.jpeg"
+                                 alt="" class="gallery__img img img-fluid o_we_custom_image" data-original-id="4877"
+                                 data-original-src="/web/image/4877-3eaf0846/WhatsApp%20Image%202024-08-23%20at%205.40.34%20PM.jpeg"
+                                 data-mimetype="image/jpeg" data-resize-width="1600" data-quality="100" loading="lazy"
+                                 style=""/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--4">
+                            <img src="/web/image/4885-d053b1bb/Images_M0_D639_F1048.jpg" alt=""
+                                 class="gallery__img img img-fluid o_we_custom_image" data-original-id="4850"
+                                 data-original-src="/web/image/4850-ff000a74/Images_M0_D639_F1048.jpg"
+                                 data-mimetype="image/jpeg" data-resize-width="1920" data-bs-original-title="" title=""
+                                 aria-describedby="tooltip340830" data-quality="100" loading="lazy" style=""/>
+                        </figure>
+                        <figure class="gallery__item gallery__item--5">
+                            <img src="/web/image/4886-d512ae56/emea1.jpeg" alt=""
+                                 class="gallery__img img img-fluid o_we_custom_image" data-original-id="4848"
+                                 data-original-src="/web/image/4848-a9f288b4/emea1.jpeg" data-mimetype="image/jpeg"
+                                 data-resize-width="1600" data-bs-original-title="" title=""
+                                 aria-describedby="tooltip564376" data-quality="100" loading="lazy" style=""/>
+                        </figure>
+                    </div>
+                    <a href="/gallery" class="readmore o_default_snippet_text" style="margin-top:10px;;">More Photos</a>
+                </section>
+                <section class="section3 o_colored_level pb32" data-snippet="emea_college_home"
+                         data-name=" Emea College Homepage"
+                         style="padding-bottom: 50px !important; background-image: none;">
+                    <h2 class="notes_head o_default_snippet_text">Facilities</h2>
+                    <div id="myCarousel1701693495275" class="carousel slide s_carousel s_carousel_default pointer-event"
+                         data-ride="carousel " style=" background-image: none;">
+                        <div id="arrows">
+                            <a class="facilities-left" href="#myCarousel1701693495275" role="button"
+                               data-bs-slide="prev" data-bs-original-title="" title="">
+                                <img src="/emea_college_theme/static/img/left.svg" loading="lazy" data-original-title=""
+                                     title="" aria-describedby="tooltip850287" style=""/>
+                                <span class="sr-only o_default_snippet_text">Previous</span>
+                            </a>
+                            <a class="facilities-right" href="#myCarousel1701693495275" role="button"
+                               data-bs-slide="next" data-bs-original-title="" title="">
+                                <img src="/emea_college_theme/static/img/right.svg" loading="lazy" style=""
+                                     data-bs-original-title="" title="" aria-describedby="tooltip453522"/>
+                                <span class="sr-only o_default_snippet_text">Next</span>
+                            </a>
+                        </div>
+                        <div class="container carousel-inner">
+                            <div class="carousel-item o_colored_level content_height" style="background-image: none;">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 padding-0 res_facility  o_colored_level ">
+                                        <img src="/emea_college_theme/static/img/facility.jpg" class="facility-img"
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="col-12 col-md-6 res_facility o_colored_level "
+                                         style="background: #039990;">
+                                        <h2 class="facility-name o_default_snippet_text">Audio Visual Theatre</h2>
+                                        <div class="facility-p notes_facility o_default_snippet_text">The Audio-Visual
+                                            Theatre in a college is a cutting-edge
+                                            facility designed to enhance the educational experience for
+                                            bothstudents and faculty. This dedicated space provides a
+                                            platform for the presentation and consumption of audio
+                                            and visual
+
+                                            content, creating an immersive and interactive learning
+                                            environment. Here are ten detailed paragraphs that delve
+                                            deeper into the aspects and significance of an Audio-Visual
+                                            Theatre in a college:
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item o_colored_level content_height" style="background-image: none;">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 res_facility padding-0  o_colored_level ">
+                                        <img src="/emea_college_theme/static/img/facility1.jpg" class="facility-img"
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="col-12 col-md-6 res_facility o_colored_level"
+                                         style="background: #039990;">
+                                        <h2 class="facility-name o_default_snippet_text">Solar Energy System</h2>
+                                        <div class="facility-p notes_facility o_default_snippet_text">With the
+                                            challenging situation of global climate change and
+                                            the need to cut down carbon emissions EMEA College has
+                                            taken an initiative by setting up 10 KW grid connected roof
+                                            top Solar PV Plant with 32 panel at the terrace of Main Block.
+                                            This Solar PV system at our college will promote green
+                                            energy and clean energy.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item content_height o_colored_level" style="background-image: none;">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 padding-0 res_facility o_colored_level ">
+                                        <img src="/emea_college_theme/static/img/facility2.jpg" class="facility-img"
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="col-12 col-md-6 res_facility o_colored_level"
+                                         style="background: #039990;">
+                                        <h2 class="facility-name o_default_snippet_text">Computer Science Lab</h2>
+                                        <div class="facility-p notes_facility o_default_snippet_text">The Computer
+                                            Science Laboratory coordinates the
+                                            acquisition, maintenance, and operation of the computi
+                                            ng equipment and network services. The lab is situated
+                                            in the ground floor of the Main Block. As computer bec
+                                            oming an integral part of today’s learning, we are
+                                            equipped with the latest hardware and software infrast
+                                            ructure to cater to the computing needs of all students
+                                            and faculty.
+
+                                            The college provides air-conditioned Lab equipped with
+                                            60 numbers of Computer with LAN &amp;amp; the WAN facility
+                                            with adequate centralized UPS backup.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item o_colored_level content_height active"
+                                 style="background-image: none;">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 padding-0 res_facility o_colored_level ">
+                                        <img src="/emea_college_theme/static/img/facility3.jpg" class="facility-img"
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="col-12 col-md-6 res_facility o_colored_level"
+                                         style="background: #039990;">
+                                        <h2 class="facility-name o_default_snippet_text">Canteen</h2>
+                                        <div class="facility-p notes_facility o_default_snippet_text">Canteens and
+                                            cafeterias are one of the important parts of
+                                            student life where you can find most of students chatting
+                                            and gossiping on different topics. It plays a vital role in
+                                            removing tensions and refreshing students. The college
+                                            canteen is fairly new and provides enough and delicious
+                                            food at affordable rates. EMEA College of Arts &amp;amp; Science
+                                            has the facility of spacious, clean and hygienic canteens
+                                            and cafeterias that caters to the taste of all students.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item content_height o_colored_level" style="background-image: none;">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 res_facility padding-0  o_colored_level">
+                                        <img src="/emea_college_theme/static/img/facility4.jpg" class="facility-img"
+                                             loading="lazy" style=""/>
+                                    </div>
+                                    <div class="col-12 col-md-6 res_facility o_colored_level"
+                                         style="background: #039990;">
+                                        <h2 class="facility-name o_default_snippet_text">Play Ground</h2>
+                                        <div class="facility-p notes_facility o_default_snippet_text">A college
+                                            playground is a vital physical space within a
+                                            ollege campus that serves various functions beyond just
+                                            recreational activities. It provides a venue for students to
+                                            engage in physical fitness, sports, relaxation, and social
+                                            interactions. Here's a detailed overview of a college
+                                            playground:
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="o_colored_level" data-snippet="emea_college_home" data-name=" Emea College Homepage"
+                         style="background-image: none;">
+                    <div class="container" style="padding: 0 !important;">
+                        <div class="d-flex flex-wrap" style="    margin: 0;width: 100%;">
+                            <div class="col-12 col-md-5 padding-0  res_facility1 o_colored_level">
+                                <section class="documentary o_colored_level" style="background-image: none;">
+                                    <h2 class="notes_head o_default_snippet_text" id="college_head">COLLEGE
+                                        DOCUMENTARY
+                                    </h2>
+                                    <div class="embed-responsive_emea ">
+                                        <h2 class="notes_head o_default_snippet_text" id="documentary_head"
+                                            style="height:100px;">EMEA COLLEGE
+                                            DOCUMENTARY
+                                        </h2>
+                                        <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/K_4-_tw4olU?si=Pcp5RduxVnMalhhm"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen=""/>
+
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-12 col-md-7 padding-0 res_facility res_facility1 o_colored_level"
+                                 id="res_facility">
+                                <h2 class="notes_head o_default_snippet_text" id="book_release">Books Released</h2>
+                                <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel"
+                                         data-name="Carousel">
+                                    <div class="s_carousel s_carousel_default carousel slide pointer-event"
+                                         data-bs-interval="5000" id="book-release" style="background-image: none;">
+                                        <div class="carousel-inner" style="padding: 0rem 0rem 5rem 0rem;">
+
+                                            <div class="mn carousel-item o_colored_level active" data-name="Slide"
+                                                 style="background-image: none;">
+                                                <div class="oe_unremovable container" style="padding: 0 !important;">
+                                                    <div class=" content">
+                                                        <div class="carousel-content    o_colored_level">
+                                                            <section class="row o_colored_level" id="rele"
+                                                                     style="background-image: none; padding: 0 !important;">
+                                                                <div class="col-md-6 o_colored_level book_content">
+                                                                    <div class="books">
+                                                                        <img src="/web/image/2442-5fae747f/Images_M0_D924_F1553%20%281%29.jpeg"
+                                                                             alt=""
+                                                                             class="book img img-fluid o_we_custom_image"
+                                                                             data-original-id="2402"
+                                                                             data-original-src="/web/image/2442-5fae747f/Images_M0_D924_F1553%20%281%29.jpeg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="300" loading="lazy"
+                                                                             style=""/>
+                                                                        <div class="date">Mar<br/>29
+                                                                        </div>
+
+                                                                        <div id="book_para">
+                                                                            <h5>Pandemic Turn: Business Resilience
+                                                                                Practice
+                                                                            </h5>
+
+                                                                            <br/>
+                                                                        </div>
+                                                                        <h1 class="book_name">29/03/2022
+                                                                            <br/>
+                                                                        </h1>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 o_colored_level book_content">
+                                                                    <div class="books">
+                                                                        <img src="/web/image/2429-48aef143/Images_M0_D681_F1036.jpeg"
+                                                                             alt=""
+                                                                             class="book img img-fluid o_we_custom_image"
+                                                                             data-original-id="2403"
+                                                                             data-original-src="/web/image/2429-48aef143/Images_M0_D681_F1036.jpeg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="300" loading="lazy"
+                                                                             style=""/>
+                                                                        <div class="date">SEP<br/>16
+                                                                        </div>
+
+                                                                        <div id="book_para">
+                                                                            <h5>Published By Dr.Mohammed Haneefa
+                                                                                <br/>
+                                                                            </h5>
+                                                                            <br/>
+                                                                        </div>
+                                                                        <h1 class="book_name">16/09/2020&amp;nbsp;
+                                                                            <br/>
+                                                                        </h1>
+                                                                    </div>
+
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mn carousel-item o_colored_level" data-name="Slide"
+                                                 style="background-image: none;">
+                                                <div class="container oe_unremovable">
+                                                    <div class=" content">
+                                                        <div class="carousel-content    o_colored_level">
+                                                            <section class="row o_colored_level" id="rele"
+                                                                     style="background-image: none;">
+                                                                <div class="col-md-6 o_colored_level book_content">
+                                                                    <div class="books">
+                                                                        <img src="/web/image/2439-e12ef9ef/Images_M0_D681_F1037.jpeg"
+                                                                             alt=""
+                                                                             class="book img img-fluid o_we_custom_image"
+                                                                             data-original-id="2406"
+                                                                             data-original-src="/web/image/2439-e12ef9ef/Images_M0_D681_F1037.jpeg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="300" loading="lazy"
+                                                                             style="" data-bs-original-title="" title=""
+                                                                             aria-describedby="tooltip512790"/>
+                                                                        <div class="date">SEP<br/>16
+                                                                        </div>
+
+                                                                        <div id="book_para">
+
+                                                                            <h5>Published By Dr.Mohammed Haneefa
+                                                                                <br/>
+                                                                            </h5>
+                                                                        </div>
+                                                                        <h1 class="book_name">16/09/2020</h1>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 o_colored_level book_content">
+                                                                    <div class="books">
+                                                                        <img src="/web/image/2440-a7fd908c/Images_M0_D682_F1038.jpeg"
+                                                                             alt=""
+                                                                             class="book img img-fluid o_we_custom_image"
+                                                                             data-original-id="2407"
+                                                                             data-original-src="/web/image/2440-a7fd908c/Images_M0_D682_F1038.jpeg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="300" loading="lazy"
+                                                                             style=""/>
+                                                                        <div class="date">SEP<br/>12
+                                                                        </div>
+
+                                                                        <div id="book_para">
+                                                                            <h5>Published By Dr.Mohammed Haneefa
+                                                                                <br/>
+                                                                            </h5>
+                                                                        </div>
+                                                                        <h1 class="book_name">12/09/2020</h1>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mn carousel-item o_colored_level" data-name="Slide"
+                                                 style="background-image: none;">
+                                                <div class="oe_unremovable container">
+                                                    <div class=" content">
+                                                        <div class="carousel-content    o_colored_level">
+                                                            <section class="row o_colored_level" id="rele"
+                                                                     style="background-image: none;">
+                                                                <div class="col-md-6 o_colored_level book_content">
+                                                                    <div class="books">
+                                                                        <img src="/web/image/2441-0dcbd36e/Images_M0_D682_F1039.jpeg"
+                                                                             alt=""
+                                                                             class="book img img-fluid o_we_custom_image"
+                                                                             data-original-id="2410"
+                                                                             data-original-src="/web/image/2441-0dcbd36e/Images_M0_D682_F1039.jpeg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="300" loading="lazy"
+                                                                             style=""/>
+                                                                        <div class="date">SEP<br/>12
+                                                                        </div>
+
+                                                                        <div id="book_para">
+                                                                            <h5>Published By Dr.Mohammed Haneefa
+                                                                                <br/>
+                                                                            </h5>
+                                                                        </div>
+                                                                        <h1 class="book_name">12/09/2020</h1>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 o_colored_level book_content">
+                                                                    <div class="books">
+                                                                        <img src="/web/image/2430-b703333e/Images_M0_D646_F929.jpeg"
+                                                                             alt=""
+                                                                             class="book img img-fluid o_we_custom_image"
+                                                                             data-original-id="2411"
+                                                                             data-original-src="/web/image/2430-b703333e/Images_M0_D646_F929.jpeg"
+                                                                             data-mimetype="image/jpeg"
+                                                                             data-resize-width="300" loading="lazy"
+                                                                             style=""/>
+                                                                        <div class="date">FEB<br/>03
+                                                                        </div>
+
+                                                                        <div id="book_para">
+                                                                            <h5>Published By Dr.MASHHOOR K
+                                                                                <br/>
+                                                                            </h5>
+                                                                        </div>
+                                                                        <h1 class="book_name">03/02/2020</h1>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                        </div>
+                                        <ol class="carousel-indicators o_we_no_overlay"
+                                            style="    margin-bottom: 5rem;">
+                                            <li data-bs-slide-to="0" data-bs-target="#book-release" class="active"/>
+                                            <li data-bs-slide-to="1" data-bs-target="#book-release"/>
+                                            <li data-bs-slide-to="2" data-bs-target="#book-release"
+                                                aria-current="true"/>
+                                        </ol>
+
+                                        <div>
+                                            <a href="/more_books" class="readmore o_default_snippet_text"
+                                               style="margin-top:0px;;">More Books
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <style>
+                    @media(max-width:1400px){
+                    .s_blog_post_achievements_home .achievement-card {
+                    min-width: 100%;
+                    }
+                    .achievement-card {
+                    width: 100%;
+                    }
+                    }
+                    @media(max-width:600px){
+                    #alumni-image {
+
+                    margin-left: 0;
+                    }
+                    .notes_facility {
+                    text-align: start;
+                    padding: 15px ! IMPORTANT;
+                    word-break: normal;
+                    text-rendering: optimizeLegibility;
+                    text-size-adjust: 100%;
+                    font-size: 18px ! IMPORTANT;
+                    }
+                    .notes_head {
+                    font-size:1.5rem;
+                    }
+                    .s_carousel.s_carousel_default .carousel-indicators li, .s_quotes_carousel.s_carousel_default
+                    .carousel-indicators li{
+                    margin-bottom: 0.5rem;
+                    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                    width: 20px !important;
+                    height: 20px !important;
+                    border-radius: 50px;
+                    border: none !important;
+                    opacity: 1 !important;
+                    background: #D9D9D9;
+                    margin-right: 10px;
+                    outline: none;
+                    }
+
+                    .prince-img{
+                    margin-top: 10px;
+                    width: 80% !important;
+                    margin-bottom: 10px;
+                    height: auto;
+                    }
+                    #news-content{
+                    padding-bottom: 10px;
+                    padding: 10px;
+                    text-align: justify;
+                    word-break: break-all;
+                    }}
+                    @media(min-width: 800px) and (max-width: 1024px){
+                    .card-wrapper {
+                    padding-left: 8rem !important;
+                    padding-right: 2rem;
+                    }
+                    }
+
+                    .release{
+                    margin-top: 0px;
+                    }
+
+                    .books{
+                    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.18);
+
+                    }
+
+
+                    @media(max-width: 320px){
+                    .books{
+                    margin:0px;
+                    }}
+                    .carousel-indicators{
+                    margin-bottom: -2rem;
+                    }
+                    .carousel-indicators [data-bs-target]{
+                    background: #F0EFEF;
+                    }
+
+
+                </style>
+            </div>
+
+        </xpath>
+    </template>
+</odoo>

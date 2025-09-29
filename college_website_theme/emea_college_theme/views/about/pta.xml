@@ -1,0 +1,130 @@
+<odoo>
+    <data>
+        <record id="pta_emea" model="ir.ui.view">
+            <field name="name">PTA</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.pta_emea</field>
+            <field name="arch" type="xml">
+                <t name="PTA" t-name="emea_college_theme.pta_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">PTA (Parent Teacher Association)</h2>
+                                <div class="page_text">
+                                    The Parent Teacher Association (PTA) of the college provides remarkable support to
+                                    the
+                                    activities of the institution. The PTA assists the overall development of students
+                                    by
+                                    extending financial and other supports to the curricular, co-curricular and
+                                    extracurricular activities of students. Aims and Objectives To work for the welfare
+                                    of
+                                    the students and the institution and to offer constructive suggestions for the
+                                    smooth
+                                    and successful functioning of the college. To promote better participation of the
+                                    parents in the various programs of the college and to establish better liaison with
+                                    teachers. To set up facilities in the college premises for the benefit of the
+                                    students
+                                    as and when required. To institute scholarships, prizes, medals etc. to benefit
+                                    students
+                                    showing high proficiency in their studies and extracurricular activities. Every
+                                    year,
+                                    the PTA elects an executive committee to put into practice its plan of action.
+                                    During
+                                    the report period, there were five executive members with Principal as the ex-offcio
+                                    president of the committee. One of the faculty members is acting as the secretary,
+                                    where
+                                    as one of the parent is elected as the vice president.
+                                </div>
+                                <h2 class="page_head pt32">OFFICE BEARERS</h2>
+                                <div class="row" id="former_principals">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                                <h2 class="page_head pt32">REPORTS</h2>
+                                <a href="#" target="_blank" title="Download"
+                                   data-target="tooltip" class="readmore" id="readmore">
+                                    PTA Report 2014-23
+                                </a>
+                                <h2 class="page_head pt32">PTA Activities</h2>
+                                <div class="achievement">
+                                    <section class="achievement-card">
+                                        <div class="achievement-card-image">
+                                            <img src="/emea_college_theme/static/img/achivement.jpg" alt=""/>
+                                        </div>
+                                        <div class="achievement-card-box">
+                                            <h1 class="achievement-card-name">Activity Head</h1>
+                                            <p class="achievement-card-p">
+                                                The college has proudly secured top rankings in a recent national
+                                                academic
+                                                assessment, highlighting its commitment to excellence.
+                                            </p>
+                                            <a href="#"
+                                               class="readmore pos_relative">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="pta_emea_page" model="website.page">
+            <field name="url">/pta</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="pta_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

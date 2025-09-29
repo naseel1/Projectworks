@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="replace_footer" inherit_id="website.footer_custom" name="Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="" class="" t-ignore="true" t-if="not no_footer" style="background:var(--primary);">
+                <div class="mince">
+                    <footer>
+                        <section class="" id="footer_mes">
+                            <div>
+                                <div class="row" style="justify-content: center;">
+                                    <div class="col-sm-6 col-md-3 col-lg-3 o_colored_level footer_column">
+                                        <h2 class="main-head " id="foot_head">MES Kalladi College</h2>
+                                        <p class="text_1" style="color: #171717;">
+                                            Mannarkkad PO , Mannarkkad College
+                                            <br/>
+                                            Palakkad Dist
+                                            <br/>
+                                            Kerala - 678583<br/>04924 222 377, 04924 222 311<br/>info@meskc.ac.in,
+                                            principal@meskc.ac.in
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2 o_colored_level footer_column">
+                                        <h2 class="main-head " id="foot_head">Quick Links</h2>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="foot_link">MHRD</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="foot_link">UGC</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="foot_link">RTI</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="foot_link">Admission</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="foot_link">SOP</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="foot_link">E-Governance</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="foot_link">Useful Weblinks</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="foot_link">News And Events</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-3 o_colored_level footer_column">
+                                        <h2 class="main-head " id="foot_head">Location</h2>
+                                        <div class="row">
+                                            <iframe width="400" height="300" id="gmap_canvas"
+                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15666.583084381098!2d76.4383315!3d10.9900874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d59e035e5f09%3A0xdab0d01ef49c7f62!2sMES%20Kalladi%20College%20Mannarkkad!5e0!3m2!1sen!2sin!4v1705300150950!5m2!1sen!2sin"
+                                                    frameborder="0" scrolling="no" marginheight="0"
+                                                    marginwidth="0">
+
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="footer_bottom">
+                            <div class="foot_icons">
+                                <a href="#" style="color: var(--primary) !important;">
+                                    <img src="/mes_college/static/img/facebook.svg"/>
+                                </a>
+                                <a href="#" style="color: var(--primary) !important;">
+                                    <img src="/mes_college/static/img/whatsapp.svg"/>
+                                </a>
+                                <a href="#" style="color: var(--primary) !important;">
+                                    <img src="/mes_college/static/img/instagram.svg"/>
+                                </a>
+                                <a href="#" style="color: var(--primary) !important;">
+                                    <img src="/mes_college/static/img/twitter.svg"/>
+                                </a>
+                            </div>
+                            <div id="designed" class="col-md-8">Designed and devoloped by
+                                <a href="#" style="color:white !important;">EM.MINCETECH</a>
+                            </div>
+                        </section>
+                    </footer>
+                </div>
+            </div>
+
+
+        </xpath>
+    </template>
+</odoo>

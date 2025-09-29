@@ -1,0 +1,78 @@
+<odoo>
+    <data>
+        <record id="administrative_staff" model="ir.ui.view">
+            <field name="name">Administrative Staff</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.administrative_staff</field>
+            <field name="arch" type="xml">
+                <t name="Administrative Staff" t-name="emea_college_theme.administrative_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">Administrative Staff</h2>
+                                <div class="row" id="former_principals">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="administrative_staff_page" model="website.page">
+            <field name="url">/administrative_staff</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="administrative_staff"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

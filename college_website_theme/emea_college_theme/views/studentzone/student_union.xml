@@ -1,0 +1,172 @@
+<odoo>
+    <data>
+        <record id="student_union" model="ir.ui.view">
+            <field name="name">Student Union</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.student_union</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.student_union_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">Student Union</h2>
+                                <div class="page_text">
+                                    <strong>College Union</strong>
+                                    A body of students’ representatives is formed every year as per the guidelines
+                                    issued by the University of Calicut and Lyngdoh Commission Report. The principal
+                                    office bearers include: Chairman, Vice Chairman, General Secretary, Arts Club
+                                    Secretary, Student Editor, University Union Councilors (two), Lady Representatives
+                                    (two),various class representatives and the Secretaries to the various Subject
+                                    Associations.The college union is intended to organize most of the co-curricular
+                                    activities of the college, under the guidance of the Principal and the staff
+                                    advisors concerned.
+                                    <br/>
+                                    <strong>The objectives of the college union are:</strong>
+
+                                    To train students of the college on the duties and responsibilities of citizenship,
+                                    To promote opportunities for the development of character, leadership and spirit of
+                                    service among students.To organize debates, seminars, work squads etc. and to
+                                    promote opportunities for students to organize sports, arts and other cultural and
+                                    recreational activities Every student of the college shall ipsofacto be ordinary
+                                    members of the union and shall have the right to vote and contest in the election of
+                                    the union. The tenure of the college union is one academic year. The Principal is
+                                    the ex-officio patron and honorary treasurer of the college union. The executive of
+                                    the college union normally formulates the general policy of the union. All union
+                                    meetings and stage programmes are conducted under the guidance and presence of the
+                                    staff advisor deputed by the Principal.
+                                </div>
+                                <h2 class="page_head">Office Bearers</h2>
+                                <div class="row">
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="former_card"  >
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                             alt="Person"
+                                             class="card-image"/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <section class="pb32" style="text-align:center;">
+                                    <h2 class="page_head pt32">REPORTS</h2>
+                                    <a href="#" target="_blank" title="Download"
+                                       data-target="tooltip"
+                                       class="readmore" id="readmore">
+                                        Report 2014-23
+                                    </a>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="student_union_page" model="website.page">
+            <field name="url">/student_union</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="student_union"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,190 @@
+<odoo>
+    <data>
+        <record id="library_e_resources" model="ir.ui.view">
+            <field name="name">library_e_resources</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.library_e_resources</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.library_e_resources_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-12">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Library E-resources
+                                                </h2>
+                                                <div class="content_text" style="text-align:left;padding: 0;">
+                                                    <strong>E Resources and Institutional Repository:</strong>
+                                                    <br/>
+                                                    <br/>
+                                                    Electronic resources (or e-resources) are materials in digital
+                                                    format accessible electronically. e-resources are electronic
+                                                    journals (e-journal), electronic books (e-book) online databases in
+                                                    varied digital formats are maintained in the library.
+                                                    <br/>
+                                                    <br/>
+                                                    Using D Space an open source institutional repository library aid
+                                                    the management and dissemination of the increasingly copious amount
+                                                    of scholarly electronic resources produced by academics.
+                                                    <br/>
+                                                    <br/>
+                                                    N-List E-Books:
+                                                    <a href="http://nlist.inflibnet.ac.in/">
+                                                        http://nlist.inflibnet.ac.in/
+                                                    </a>40.00,000+
+                                                    <br/> <br/>
+                                                    <br/>
+                                                    <table class="milestone scholar pt32 pb32"
+                                                           style="width:100%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    E-Resorces
+                                                                </th>
+                                                                <th>Number</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr style="height: 24px;">
+                                                                <td>N-List E-Journals:
+                                                                    <a href="http://nlist.inflibnet.ac.in/">
+                                                                        http://nlist.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td style="height: 24px; width: 122.75px;">
+                                                                    6000+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Shodganga:
+                                                                    <a href="http://shodhganga.inflibnet.ac.in/">
+                                                                        http://shodhganga.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td>223971 thesis</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ShodaSindhu:
+                                                                    <a href=" https://www.inflibnet.ac.in/ess/">
+                                                                        https://www.inflibnet.ac.in/ess/
+                                                                    </a>
+                                                                </td>
+                                                                <td>10000+ journals 31350000+ e books</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Shod Gangotri:
+                                                                    <a href="https://shodhgangotri.inflibnet.ac.in/">
+                                                                        https://shodhgangotri.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td>6450 synopsis</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ePG Pathshala:
+                                                                    <a href="https://epgp.inflibnet.ac.in/">
+                                                                        https://epgp.inflibnet.ac.in/
+                                                                    </a>
+                                                                </td>
+                                                                <td>70 subjects</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DOAJ:
+                                                                    <a href="https://doaj.org/">https://doaj.org/</a>
+                                                                </td>
+                                                                <td>12980</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>J-Gate:
+                                                                    <a href="https://jgateplus.com/home/">
+                                                                        https://jgateplus.com/home/
+                                                                    </a>
+                                                                </td>
+                                                                <td>50,164</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>International journal of Biological Sciences:
+                                                                    <a href="http://www.ijbs.com/">
+                                                                        http://www.ijbs.com/
+                                                                    </a>
+                                                                </td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>J-Store:
+                                                                    <a href="https://www.jstor.org/">
+                                                                        https://www.jstor.org/
+                                                                    </a>
+                                                                </td>
+                                                                <td>20,00,000+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>OAIster:
+                                                                    <a href="https://www.oclc.org/en/oaister.html">
+                                                                        https://www.oclc.org/en/oaister.html
+                                                                    </a>
+                                                                </td>
+                                                                <td>70,00000+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PubChem:
+                                                                    <a href="https://pubchem.ncbi.nlm.nih.gov/">
+                                                                        https://pubchem.ncbi.nlm.nih.gov/
+                                                                    </a>
+                                                                </td>
+                                                                <td>123535</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>RePEc:
+                                                                    <a href="http://repec.org/">http://repec.org/</a>
+                                                                </td>
+                                                                <td>3000+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Spriger LinK:
+                                                                    <a href="https://link.springer.com/">
+                                                                        https://link.springer.com/
+                                                                    </a>
+                                                                </td>
+                                                                <td>324</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>NISCAIR Journals:
+                                                                    <a href="https://www.niscair.res.in/sciencecommunication/researchjournals/rejour/rejour1-del.htm/">
+                                                                        https://www.niscair.res.in/sciencecommunication/researchjournals/rejour/rejour1-del.htm
+                                                                    </a>
+                                                                </td>
+                                                                <td>16</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DRDO Journals:
+                                                                    <a href="https://www.drdo.gov.in/drdo/English/index.jsp?pg=journals.jsp">
+                                                                        https://www.drdo.gov.in/drdo/English/index.jsp?pg=journals.jsp
+                                                                    </a>
+                                                                </td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="library_e_resources_page" model="website.page">
+            <field name="url">/library_e_resources</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="library_e_resources"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

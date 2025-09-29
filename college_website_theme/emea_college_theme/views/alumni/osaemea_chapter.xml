@@ -1,0 +1,183 @@
+<odoo>
+    <data>
+        <record id="osaemea_chapter" model="ir.ui.view">
+            <field name="name">OSAEMEA CHAPTER</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.osaemea_chapter</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.osaemea_chapter_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                    <div class="clubs">ALUMNI
+                                    </div>
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row" style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title="" title="" aria-describedby="tooltip336631">
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs1" data-original-title="" title=""
+                                                           class="nav-link active" aria-controls="tabs1"
+                                                           aria-selected="true">OSAEMEA Riyadh Chapter
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs2" data-original-title="" title=""
+                                                           class="nav-link">OSAEMEA Jiddah Chapter
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                                           role="tab" data-original-title="" title="" class="nav-link">
+                                                            OSAEMEA UAE Chapter
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                                             id="page-content">
+                                            <div id="tabs1" class="tab-pane fade active show">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <div class="row">
+                                                        <h2 class="page_head">OSAEMEA Riyadh Chapter</h2>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">C.V Mehaboob</div>
+                                                                <div class="designation">President
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">Shafseer Vengat</div>
+                                                                <div class="designation">General Secretary
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">Jabir Giyas</div>
+                                                                <div class="designation">Treasurer
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs2" class=" tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs2">
+                                                <div class="oe_structure oe_empty show"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">OSAEMEA Jiddah Chapter</h2>
+                                                    <div class="row">
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">K.N.A Latheef</div>
+                                                                <div class="designation">President
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">Noushad Bava, Vadakkengara</div>
+                                                                <div class="designation">General Sercretary
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs3" class=" tab-pane fade" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs3">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">OSAEMEA UAE Chapter</h2>
+                                                    <p class="page_text ">The purposes of EMEA alumni association is to
+                                                        support a network of former graduates who will, in turn, help to
+                                                        raise the profile of the EMEA College by bringing together all
+                                                        alumni in UAE in a common platform. UAE Alumni (UAEMEA) is
+                                                        formed on 2nd Dec, 2009 with following objectives To develop a
+                                                        common platform for all EMEA Alumni in UAE To Support
+                                                        development of personal and career objectives of Alumni Members.
+                                                        To guide new EMEA alumni on Job &amp; carrier opportunities.
+                                                        Physical, mental and social wellbeing of Alumni member by
+                                                        arranging Entertainment educational and other Programs.
+                                                        Coordinate and support EMEA college and Global Alumni activities
+                                                    </p>
+                                                    <div class="row">
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">C.V Mehaboob</div>
+                                                                <div class="designation">President
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">Shafseer Vengat</div>
+                                                                <div class="designation">General Secretary
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person" class="card-image" loading="lazy"/>
+                                                            <div class="card-content">
+                                                                <div class="name">Jabir Giyas</div>
+                                                                <div class="designation">Treasurer
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="osaemea_chapter_page" model="website.page">
+            <field name="url">/osaemea</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="osaemea_chapter"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

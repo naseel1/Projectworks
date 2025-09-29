@@ -1,0 +1,100 @@
+<odoo>
+    <data>
+        <record id="research-projects" model="ir.ui.view">
+            <field name="name">Research Projects</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.research-projects</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.research-projects_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Research Projects
+                                    </h2>
+                                    <div class="pt32 pb32">
+                                        <table class="milestone scholar pt32" cellspacing="0" cellpadding="7">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        SI No
+                                                    </th>
+                                                    <th>
+                                                        Name
+                                                    </th>
+                                                    <th>Subject</th>
+                                                    <th>Research Centre</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="min-width:80px;">1</td>
+                                                    <td>
+                                                        Dr. Ranjith.M
+                                                    </td>
+                                                    <td>Hindi</td>
+                                                    <td>Govt. Arts &amp; Science College, Meenchantha, Calicut
+                                                        <br/>
+                                                        D.B.H.P.S Chennai
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width:80px;">2</td>
+                                                    <td>
+                                                        Dr. Gireesh.K.P
+                                                    </td>
+                                                    <td>Mathematics</td>
+                                                    <td>Govt. College Chittur, Palakkad</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width:80px;">3</td>
+                                                    <td>
+                                                        Dr. Sreenivasan K.P
+                                                    </td>
+                                                    <td>Chemistry</td>
+                                                    <td>MES Kalladi College, Mannarkkad, Palakkad</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width:80px;">4</td>
+                                                    <td>
+                                                        Dr. Sereena.K
+                                                    </td>
+                                                    <td>Botany</td>
+                                                    <td>MES Asmabi College, Padinjare Vemballur, Thrissur</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width:80px;">5</td>
+                                                    <td>
+                                                        Dr. Muhammad Musthafa.T.N
+                                                    </td>
+                                                    <td>Chemistry</td>
+                                                    <td>MES Kalladi College, Mannarkkad, Palakkad</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width:80px;">6</td>
+                                                    <td>
+                                                        Dr. T.P Sivadasan
+                                                    </td>
+                                                    <td>History</td>
+                                                    <td>MES Kalladi College, Mannarkkad, Palakkad</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="research-projects_page" model="website.page">
+            <field name="url">/research-projects</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="research-projects"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

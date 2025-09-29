@@ -1,0 +1,121 @@
+<odoo>
+    <data>
+        <record id="counselling" model="ir.ui.view">
+            <field name="name">Counselling</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.counselling</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.counselling_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">Counselling</h2>
+                                                <div class="text_content">
+                                                    <strong>
+                                                        General Counselling
+                                                    </strong>
+                                                    <br/>
+                                                    <br/>
+                                                    The general counseling center started in the College with the vision
+                                                    of
+                                                    addressing the needs and problems of Students community at their
+                                                    intra
+                                                    personal, interpersonal and social levels; and thereby increasing
+                                                    their
+                                                    mental health. The purpose of this Centre is to help students in
+                                                    their
+                                                    personal development. , and also help the students deal with day to
+                                                    day
+                                                    problems, issues, crises and other painful life events.
+                                                    Some of the common issues faced by the students are problems in
+                                                    studies
+                                                    like lack of concentration, absents, exam fear, anxiety,
+                                                    depressions,
+                                                    suicidal intention, confusions, addictions of various types and
+                                                    handling
+                                                    relationships in personal and family life. The various activity of
+                                                    the
+                                                    centre like one to one counseling, group counseling, trainings and
+                                                    seminars help the students to get awareness,learn coping skills and
+                                                    makes their experiences as students to be more productive and
+                                                    successful
+                                                    <br/>
+                                                    <br/>
+                                                    <b>The mission of general counselling is</b>
+                                                    <br/>
+                                                    <ul>
+                                                        <li>To promote mental health of students.
+                                                        </li>
+                                                        <li>Provide awareness classes to avoid alcoholism, drug abuse
+                                                            and
+                                                            marital disharmony
+                                                        </li>
+                                                        <li>Crisis intervention and proper management.</li>
+                                                        <li>
+                                                            Create a better learning environment.
+                                                        </li>
+                                                    </ul>
+                                                    The activities of the Counselling Centre are coordinated by
+                                                    Department
+                                                    of Psychology. Government has appointed a counsellor under the
+                                                    Jeevani
+                                                    Project
+                                                    <br/>
+                                                    <br/>
+                                                    <strong>Premarital Counselling
+                                                    </strong>
+                                                    <br/>
+                                                    <br/>
+                                                    Premarital Counseling Centre is an initiative of Directorate of
+                                                    Minority
+                                                    Welfare, Govt. of Kerala for the social and family upliftment of
+                                                    minority youth. Centre provides counseling courses to youth,
+                                                    preparing
+                                                    for marriage. The centre organizes four day counseling courses,
+                                                    including eight sessions related to various aspects of family life,
+                                                    such
+                                                    as social impact of family life, Husband- Wife relationship, Legal
+                                                    aspects of marriage , conflict management, Healthy sexual life,
+                                                    parenting and family budgeting etc. Students are also given chances
+                                                    to
+                                                    interact with family counselors, psychologists, advocates and other
+                                                    counseling experts.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h2 class="main-head">Coordinator</h2>
+                                            <div class="col-md-7 mb32 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Shihab AM
+                                                    </div>
+                                                    <div class="designation">Department of Islamic History</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="counselling_page" model="website.page">
+            <field name="url">/counselling</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="counselling"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

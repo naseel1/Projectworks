@@ -1,0 +1,57 @@
+<odoo>
+    <data>
+        <record id="library_members" model="ir.ui.view">
+            <field name="name">LIBRARY MEMBERS</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.library_members</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.library_members_menu">
+                    <t t-call="website.layout">
+                        <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                            <div class="clubs">LIBRARY MEMBERS</div>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <section class="former_card">
+                                <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person" class="card-image"
+                                     loading="lazy"/>
+                                <div class="card-content">
+                                    <div class="name">Name Of Professor</div>
+                                    <div class="designation">Designation Of Professor
+                                        <br/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="former_card">
+                                <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person" class="card-image"
+                                     loading="lazy"/>
+                                <div class="card-content">
+                                    <div class="name">Name Of Professor</div>
+                                    <div class="designation">Designation Of Professor
+                                        <br/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="former_card">
+                                <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person" class="card-image"
+                                     loading="lazy"/>
+                                <div class="card-content">
+                                    <div class="name">Name Of Professor</div>
+                                    <div class="designation">Designation Of Professor
+                                        <br/>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="library_members_page" model="website.page">
+            <field name="url">/library</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="library_members"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

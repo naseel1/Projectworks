@@ -1,0 +1,465 @@
+<odoo>
+    <template id="minutes_atr_template" name="Minutes ATR Page">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="page o_colored_level" id="club_tabs" style="padding: 0px; background-image: none;">
+                    <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                        <div class="clubs">IQAC
+                        </div>
+                    </div>
+                    <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs" data-name="Tabs"
+                             style="background-image: none;">
+                        <div class="s_tabs_main row " style="margin: 0 32px;">
+                            <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs" data-original-title=""
+                                 title="" aria-describedby="tooltip336631">
+
+                                <div class="side-bar" id="sidebar">
+                                    <ul class="tabs-list1 nav nav-pills  flex-column" style="padding-inline-start: 0;">
+
+                                        <a href="#" id="drop_" data-bs-toggle="collapse" data-bs-target="#iqac_profile"
+                                           aria-expanded="true">
+                                            <div id="sidebar-li">
+                                                <p class="nav-link">
+                                                    <span>IQAC PROFILE
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="iqac_profile" class="drop_iqac collapse show"
+                                             style="background: white; margin-bottom: 10px; transition: all 0.2s ease-in-out 0s;">
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/composition_iqac" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Composition Of IQAC
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/function_objectives" data-original-title="" title=""
+                                                   class="nav-link">Function
+                                                    &amp;amp; Objectives
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/minutes_atr" data-original-title="" title=""
+                                                   class="nav-link active">Minutes
+                                                    &amp;amp; ATR
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/iqac_annual_report" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    IQAC Annual Reports
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <a href="#" id="drop_" data-bs-toggle="collapse"
+                                           data-bs-target="#iqac_quality_initiatives" class="collapsed"
+                                           aria-expanded="false">
+                                            <div id="sidebar-li">
+                                                <p class="nav-link">
+                                                    <span>IQAC QUALITY INITIATIVES
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="iqac_quality_initiatives" class="collapse drop_iqac"
+                                             style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/api" data-original-title="" title="" class="nav-link">
+                                                    API
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/workshops/fdp" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Workshops/FDP
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/aaa" data-original-title="" title="" class="nav-link">AAA
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/sss_annual_report" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Students Satisfaction Survey (SSS)
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <a href="#" id="drop_" data-bs-toggle="collapse" data-bs-target="#naac"
+                                           class="collapsed" aria-expanded="false">
+                                            <div id="sidebar-li">
+                                                <p class="nav-link">
+                                                    <span>NAAC
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="naac" class="collapse drop_iqac"
+                                             style="background: white;    margin-bottom: 10px;transition: all 0.2s ease-in-out ;">
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="aqar" data-original-title="" title="" class="nav-link">
+                                                    AQAR
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/ssr" data-original-title="" title="" class="nav-link">
+                                                    SSR
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <a href="#" id="drop_" data-bs-toggle="collapse" data-bs-target="#ranking"
+                                           class="collapsed" aria-expanded="false">
+                                            <div id="sidebar-li">
+                                                <p class="nav-link">
+                                                    <span>RANKING
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="ranking" class="collapse drop_iqac"
+                                             style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="aishe" data-original-title="" title="" class="nav-link">
+                                                    AISHE
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/nirf" data-original-title="" title="" class="nav-link">
+                                                    NIRF
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/ariia" data-original-title="" title="" class="nav-link">
+                                                    ARIIA
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <li id="sidebar-li" class=" nav-item">
+                                            <a href="/iqac_best_practices" data-original-title="" title=""
+                                               class="nav-link" aria-controls="tabs1">BEST PRACTICES
+                                            </a>
+                                        </li>
+
+                                        <li id="sidebar-li" class=" nav-item">
+                                            <a href="/institutional_distinctiveness" data-original-title="" title=""
+                                               class="nav-link " aria-controls="tabs1">Institutional Distinctiveness
+                                            </a>
+                                        </li>
+                                        <li id="sidebar-li" class=" nav-item">
+                                            <a href="/activities" data-original-title="" title="" class="nav-link"
+                                               aria-controls="tabs1">Activities
+                                            </a>
+                                        </li>
+
+                                        <li id="sidebar-li" class=" nav-item">
+                                            <a href="/gender-equity" data-original-title="" title="" class="nav-link"
+                                               aria-controls="tabs1">Gender Equity
+                                            </a>
+                                        </li>
+                                        <a href="#" id="drop_" data-bs-toggle="collapse" data-bs-target="#audit"
+                                           class="collapsed" aria-expanded="false">
+                                            <div id="sidebar-li">
+                                                <p class="nav-link">
+                                                    <span>AUDIT
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="audit" class="collapse drop_iqac"
+                                             style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/green" data-original-title="" title="" class="nav-link">
+                                                    Green
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/energy" data-original-title="" title="" class="nav-link">
+                                                    Energy
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/gender" data-original-title="" title="" class="nav-link">
+                                                    Gender
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <a href="#" id="drop_" data-bs-toggle="collapse" data-bs-target="#feedback"
+                                           class="collapsed" aria-expanded="false">
+                                            <div id="sidebar-li">
+                                                <p class="nav-link">
+                                                    <span>FEEDBACK
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="feedback" class="collapse drop_iqac"
+                                             style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/curriculum_feedback_report" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Curriculum Feedback Reports
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/curriculum_feedback_atr" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Curriculum Feedback ATR
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <a href="#" id="drop_" data-bs-toggle="collapse"
+                                           data-bs-target="#mandatory_disclosure" class="collapsed"
+                                           aria-expanded="false">
+                                            <div id="sidebar-li">
+                                                <p class="nav-link">
+                                                    <span>
+                                                        Mandatory Disclosure
+
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="mandatory_disclosure" class="collapse drop_iqac"
+                                             style="background: white;margin-bottom: 10px;transition: all 0.2s ease-in-out;">
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/naac_accreditation" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    NAAC Accreditation
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/aishe_certificate" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    AISHE Certificate
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/affiliation_Orders" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Affiliation Orders
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/self_declaration" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Self Declaration
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/12b" data-original-title="" title="" class="nav-link">
+                                                    12B
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/2f" data-original-title="" title="" class="nav-link">
+                                                    2F
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/undertaking" data-original-title="" title="" class="nav-link">
+                                                    Undertaking
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/minority-certificate-1" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Minority Certificate
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/lyngdoh-report" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Lyngdoh-report
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/gda_letter_from_ugc" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    GDA Letter from UGC
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/kerala_service_rules" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Kerala Service Rules
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/calicut_university_act" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Calicut University Act Statutes Ordinances
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/emea_2020" data-original-title="" title="" class="nav-link">
+                                                    EMEA at 2020
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/strategic_Plan" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Strategic Plan
+                                                </a>
+                                            </li>
+                                            <li id="sidebar-li" class="nav-item">
+                                                <a href="/calicut_university_fin" data-original-title="" title=""
+                                                   class="nav-link">
+                                                    Calicut University Fine Arts Fest Bylaw
+                                                </a>
+                                            </li>
+                                        </div>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                    <section>
+                                        <section>
+                                            <h2 class="page_head" id="iqac_subhead">Minutes
+                                                &amp; ATR
+                                            </h2>
+                                        </section>
+                                        <table class="table">
+
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Year">MINUTES 2022-2023</td>
+                                                    <td data-label="Date">26-February-2024</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/IQAC%20MINUTES%202022-2023.pdf">Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 2021-2022</td>
+                                                    <td data-label="Date">30-July-2021</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/07-30-2023%2018.01.21.pdf">Click</a>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes &amp; ATR 2020-2021</td>
+                                                    <td data-label="Date">10-June-2021</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/IQAC%20MINUTES%20&amp;%20ATR%202020-21.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes &amp; ATR 2019-2020</td>
+                                                    <td data-label="Date">15-March-2020</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/ATR%20&amp;%20Minutes%202019-2020.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 26-08-2019</td>
+                                                    <td data-label="Date">28-August-2019</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/New%20Doc%202019-11-23%2016.46.56-9.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 02-08-2019</td>
+                                                    <td data-label="Date">10-August-2019</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/New%20Doc%202019-11-23%2016.46.56-8.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 19-03-2019</td>
+                                                    <td data-label="Date">21-March-2019</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/New%20Doc%202019-11-23%2016.46.56-7.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 21-02-2019</td>
+                                                    <td data-label="Date">25-February-2019</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/IQAC%20Minutes%2021-2-2019.pdf">Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-label="Year">ATR 2017-2018</td>
+                                                    <td data-label="Date">05-January-2019</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/Action%20Taken%20Reprot%20of%20IQAC-2017-18-website%20link.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 18-10-2018</td>
+                                                    <td data-label="Date">20-October-2018</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/New%20Doc%202019-11-23%2016.46.56-5.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 27-3-2018</td>
+                                                    <td data-label="Date">05-April-2018</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/New%20Doc%202019-11-23%2016.46.56-7.pdf">
+                                                            Click
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 02-02-2018</td>
+                                                    <td data-label="Date">10-February-2018</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/Minutes%202-2-18.pdf">Click</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 20-12-2017</td>
+                                                    <td data-label="Date">02-January-2018</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/Minutes%2020-12-17.pdf">Click</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Year">Minutes 22-12-2017</td>
+                                                    <td data-label="Date">25-December-2017</td>
+                                                    <td data-label="View">
+                                                        <a href="/Uploads/Files/Minutes%2022-12-2017.pdf">Click</a>
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </t>
+    </template>
+
+</odoo>

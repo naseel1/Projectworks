@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+        <record id="add_on_courses" model="ir.ui.view">
+            <field name="name">Add-On Courses</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.add_on_courses</field>
+            <field name="arch" type="xml">
+                <t name="Add-On Courses" t-name="mss_college.add_on_courses_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section>
+                                <div class="row" style="margin-right:0px">
+                                    <div class="col-md-6">
+                                        <div class="add_on">
+                                            <h3 class="add_on_heading">Program</h3>
+                                            <div class="add_on_box">
+                                                <div class="course_sub">
+                                                    <span>course name</span>
+                                                    <a class="course_btn">Click</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <div class="add_on">
+                                              <h3 class="add_on_heading">Program</h3>
+                                              <div class="add_on_box">
+                                                   <div class="course_sub">
+                                                    <span>course name</span>
+                                                    <a class="course_btn">Click</a>
+                                                </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_add_on_courses_page" model="website.page">
+            <field name="url">/add_on_courses</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="add_on_courses"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

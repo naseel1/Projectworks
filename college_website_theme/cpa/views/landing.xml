@@ -1,0 +1,1691 @@
+<odoo>
+    <data>
+        <record id="landing_template" model="ir.ui.view">
+            <field name="name">Landing Page</field>
+            <field name="type">qweb</field>
+            <field name="key">cpa.landing_template</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="cpa.landing_template_menu">
+                    <t t-call="website.layout">
+                        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+                        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+                              rel="stylesheet"/>
+                        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap"
+                              rel="stylesheet"/>
+                        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900amp;&amp;display=swap"
+                              rel="stylesheet"/>
+                        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"/>
+                        <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"/>
+                        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"/>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"/>
+                        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0"/>
+
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                            const landingPageHead = document.querySelector('.landing-page-head');
+                            const landingPageContents = document.querySelector('.landing-landing-para');
+                            const landingPageButton = document.querySelector('.landing_page_btn');
+                            const awardsSection = document.querySelector('.awards-sec1');
+                            const placementHead = document.querySelector('.placement');
+                            const galleriesHead = document.querySelector('.galleries');
+                            const voiceHead = document.querySelector('.voice');
+                            const quoteHead = document.querySelector('.quote-head');
+                            const adminssionOpen = document.querySelector('.admission-open');
+                            const placementCareer = document.querySelector('.featured-products-list');
+                            const wrappers = document.querySelector('.wrappers');
+                            const wrapping = document.querySelector('.wrapping');
+                            const onEntry = function (entries, observer) {
+                            entries.forEach(entry =&gt; {
+                            if (entry.isIntersecting) {
+                            entry.target.classList.add('inview');
+                            }
+                            });
+                            };
+                            const observer = new IntersectionObserver(onEntry, { threshold: 0.2 });
+
+                            if (landingPageHead) observer.observe(landingPageHead);
+                            if (landingPageContents) observer.observe(landingPageContents);
+                            if (landingPageButton) observer.observe(landingPageButton);
+                            if (awardsSection) observer.observe(awardsSection);
+                            if (placementHead) observer.observe(placementHead);
+                            if (galleriesHead) observer.observe(galleriesHead);
+                            if (voiceHead) observer.observe(voiceHead);
+                            if (quoteHead) observer.observe(quoteHead);
+                            if (adminssionOpen) observer.observe(adminssionOpen);
+                            if (placementCareer) observer.observe(placementCareer);
+                            if (wrappers) observer.observe(wrappers);
+                            if (wrapping) observer.observe(wrapping);
+
+
+                            });
+                        </script>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                            const scrollContainer = document.querySelector(".landing");
+                            const sticky = document.querySelector(".landing-top");
+                            const landing = document.querySelector(".landing-logo");
+
+                            function updateStickyPosition() {
+                            const t = scrollContainer.scrollTop;
+
+                            if (t &gt; 20) {
+                            sticky.style.backgroundColor = "#fff";
+                            landing.style.mixBlendMode = "exclusion";
+                            sticky.style.boxShadow = "rgb(8 58 78 / 14%) 0px 1px 11px";
+
+                            } else {
+                            sticky.style.backgroundColor = "transparent";
+                            landing.style.mixBlendMode = "normal";
+                            sticky.style.boxShadow = "none";
+                            }
+                            }
+
+                            scrollContainer.addEventListener("scroll", updateStickyPosition);
+                            updateStickyPosition(); // Run once on page load
+                            });
+                        </script>
+                        <div id="wrap" class="oe_structure" style="background:black;">
+                            <section class="landing ">
+
+
+                                <section class="landing-img ">
+                                    <div class="landing-top">
+                                        <img src="/cpa/static/img/cpa-logo.svg" class="landing-logo"/>
+                                        <a href="/homepage" class="home-btn" style="    width: auto;">
+                                            Go to home
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 25" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M12 2.47913C6.615 2.47913 2.25 6.84413 2.25 12.2291C2.25 17.6141 6.615 21.9791 12 21.9791C17.385 21.9791 21.75 17.6141 21.75 12.2291C21.75 6.84413 17.385 2.47913 12 2.47913ZM16.28 12.7591C16.4205 12.6185 16.4993 12.4279 16.4993 12.2291C16.4993 12.0304 16.4205 11.8398 16.28 11.6991L13.28 8.69913C13.2113 8.62544 13.1285 8.56634 13.0365 8.52534C12.9445 8.48435 12.8452 8.46231 12.7445 8.46053C12.6438 8.45876 12.5438 8.47728 12.4504 8.515C12.357 8.55272 12.2722 8.60887 12.201 8.68009C12.1297 8.75131 12.0736 8.83614 12.0359 8.92953C11.9982 9.02292 11.9796 9.12295 11.9814 9.22365C11.9832 9.32435 12.0052 9.42366 12.0462 9.51566C12.0872 9.60766 12.1463 9.69046 12.22 9.75913L13.94 11.4791H8.25C8.05109 11.4791 7.86032 11.5581 7.71967 11.6988C7.57902 11.8394 7.5 12.0302 7.5 12.2291C7.5 12.428 7.57902 12.6188 7.71967 12.7595C7.86032 12.9001 8.05109 12.9791 8.25 12.9791H13.94L12.22 14.6991C12.1463 14.7678 12.0872 14.8506 12.0462 14.9426C12.0052 15.0346 11.9832 15.1339 11.9814 15.2346C11.9796 15.3353 11.9982 15.4353 12.0359 15.5287C12.0736 15.6221 12.1297 15.7069 12.201 15.7782C12.2722 15.8494 12.357 15.9055 12.4504 15.9432C12.5438 15.981 12.6438 15.9995 12.7445 15.9977C12.8452 15.9959 12.9445 15.9739 13.0365 15.9329C13.1285 15.8919 13.2113 15.8328 13.28 15.7591L16.28 12.7591Z"
+                                                      fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <img src="/cpa/static/img/banner.png" class="w-100 landing-banner"/>
+
+
+                                    <div class="landing_page-content">
+                                        <div class="col-md-6">
+                                            <div class="content-box">
+                                                <div class="landing-page-title " title="CPA cOLLEGE OF GLOBAL STUDEIS"
+                                                     style="margin:0;">
+                                                    <h1 class="landing-page-head" style="margin: 0;">CPA COLLEGE OF
+                                                        GLOBAL STUDIES
+                                                    </h1>
+
+                                                    <p class="landing-landing-para">Affiliated to University of Calicut,
+                                                        Recognized By Govt. of Kerala and Run by Nice Educational Trust
+                                                    </p>
+                                                    <div class="landing_page_btn">
+                                                        <a href="#" class="landing-page-btn ">
+                                                            <span class="btn-title">Admission 2025</span>
+                                                            <span class="icon-arrow">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                     width="17" height="17" viewBox="0 0 66 43"
+                                                                     version="1.1">
+                                                                    <g id="arrow" stroke="none" stroke-width="1"
+                                                                       fill="none" fill-rule="evenodd">
+                                                                        <path id="arrow-icon-one"
+                                                                              d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                                                                              fill="#000"/>
+                                                                        <path id="arrow-icon-two"
+                                                                              d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                                                                              fill="#000"/>
+                                                                        <path id="arrow-icon-three"
+                                                                              d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                                                                              fill="#000"/>
+                                                                    </g>
+                                                                </svg>
+                                                            </span>
+                                                            <style>
+                                                                html {
+                                                                scroll-behavior: smooth;
+                                                                }
+
+                                                                .gallery .prev:hover, .gallery .next:hover, .voice-sec
+                                                                .prev-back:hover,
+                                                                .voice-sec .next-move:hover {
+                                                                background-position: right top;
+                                                                }
+                                                                .gallery .prev, .gallery .next, .voice-sec .prev-back,
+                                                                .voice-sec .next-move{
+                                                                background-size: 280% auto;
+                                                                background-image: linear-gradient(325deg, #0a2530 0%,
+                                                                #1c6785 60%, #063649 90%);
+                                                                transition: 0.8s;
+                                                                }
+                                                            </style>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="social-icons">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_214_45)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                          d="M18.9554 4.02841C19.2657 4.34071 19.4885 4.72904 19.6016 5.15453C20.0198 6.72498 20.0198 9.99998 20.0198 9.99998C20.0198 9.99998 20.0198 13.275 19.6016 14.8454C19.4885 15.2709 19.2657 15.6593 18.9554 15.9716C18.6451 16.2839 18.2582 16.5092 17.8334 16.625C16.2698 17.0454 10.0198 17.0454 10.0198 17.0454C10.0198 17.0454 3.76978 17.0454 2.20614 16.625C1.78138 16.5092 1.39449 16.2839 1.08418 15.9716C0.773872 15.6593 0.55103 15.2709 0.437957 14.8454C0.0197754 13.275 0.0197754 9.99998 0.0197754 9.99998C0.0197754 9.99998 0.0197754 6.72498 0.437957 5.15453C0.55103 4.72904 0.773872 4.34071 1.08418 4.02841C1.39449 3.7161 1.78138 3.49078 2.20614 3.37498C3.76978 2.95453 10.0198 2.95453 10.0198 2.95453C10.0198 2.95453 16.2698 2.95453 17.8334 3.37498C18.2582 3.49078 18.6451 3.7161 18.9554 4.02841ZM13.2016 10L7.97433 7.02615V12.9739L13.2016 10Z"
+                                                          fill="white"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_214_45">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_214_47)">
+                                                    <path d="M9.99999 3.05176e-05C15.5228 3.05176e-05 20 4.47719 20 10C20 15.1127 16.1629 19.3287 11.2115 19.9268V13.0559L13.9167 13.0559L14.4779 10H11.2115V8.91927C11.2115 8.11184 11.3699 7.55286 11.7332 7.19572C12.0966 6.83858 12.6649 6.68331 13.4848 6.68331C13.6923 6.68331 13.8833 6.68537 14.0527 6.6895C14.2992 6.6955 14.5002 6.70587 14.64 6.72059V3.95043C14.5841 3.9349 14.5181 3.91937 14.4442 3.90408C14.2767 3.86945 14.0685 3.83606 13.8447 3.80675C13.377 3.74547 12.8411 3.70195 12.4662 3.70195C10.952 3.70195 9.80767 4.02588 9.00891 4.69685C8.0449 5.50662 7.58423 6.82188 7.58423 8.68326V10H5.52216V13.0559H7.58423V19.7055C3.2286 18.6249 0 14.6898 0 10C0 4.47719 4.47716 3.05176e-05 9.99999 3.05176e-05Z"
+                                                          fill="white"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_214_47">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_214_49)">
+                                                    <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z"
+                                                          fill="white"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_214_49">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_214_51)">
+                                                    <path d="M16.3263 0H19.6998L12.3297 8.89539L21 21H14.2112L8.89404 13.6586L2.80995 21H-0.565568L7.31743 11.4854L-1 0H5.96111L10.7674 6.71031L16.3263 0ZM15.1423 18.8677H17.0116L4.94539 2.02031H2.93946L15.1423 18.8677Z"
+                                                          fill="white"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_214_51">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <path d="M15.3293 5.85177C14.6671 5.85306 14.1286 5.31684 14.1273 4.65457C14.126 3.9923 14.6622 3.45381 15.3248 3.45251C15.9874 3.45122 16.5259 3.98776 16.5272 4.65003C16.5281 5.3123 15.9919 5.85047 15.3293 5.85177Z"
+                                                      fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M10.0096 15.1342C7.17424 15.1397 4.87092 12.8457 4.86542 10.0097C4.8599 7.17436 7.15446 4.87068 9.98981 4.86517C12.8258 4.85966 15.1294 7.15492 15.1349 9.98996C15.1404 12.826 12.8452 15.1287 10.0096 15.1342ZM9.99337 6.66696C8.15304 6.6702 6.66328 8.16548 6.66652 10.0062C6.67009 11.8472 8.16568 13.3366 10.006 13.333C11.847 13.3295 13.3367 11.8345 13.3332 9.99352C13.3296 8.15252 11.834 6.6634 9.99337 6.66696Z"
+                                                      fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M3.43267 0.538732C4.06772 0.289896 4.79445 0.119468 5.85846 0.0692485C6.92509 0.0180605 7.2656 0.00639252 9.98073 0.00121052C12.6965 -0.00397148 13.037 0.00639051 14.1036 0.0536945C15.168 0.0997025 15.895 0.267541 16.5314 0.513786C17.1897 0.767478 17.7483 1.10898 18.305 1.66336C18.8616 2.21837 19.2044 2.77502 19.4613 3.43242C19.7098 4.06812 19.8802 4.79421 19.9308 5.8589C19.9813 6.92519 19.9936 7.26539 19.9988 9.98088C20.004 12.696 19.993 13.0369 19.9463 14.1042C19.9 15.1679 19.7325 15.8953 19.4863 16.5313C19.2319 17.1897 18.8911 17.7482 18.3367 18.3049C17.7823 18.8619 17.2251 19.2043 16.5677 19.4616C15.932 19.7098 15.2059 19.8802 14.1419 19.9311C13.0753 19.9816 12.7347 19.9936 10.0186 19.9988C7.30383 20.004 6.96332 19.9936 5.89671 19.9466C4.83235 19.9 4.10498 19.7325 3.46896 19.4865C2.8106 19.2319 2.25202 18.8913 1.69538 18.3366C1.13843 17.7819 0.795321 17.225 0.538715 16.5676C0.289881 15.9322 0.120089 15.2058 0.0692272 14.1421C0.0183632 13.0751 0.00637922 12.7343 0.00119922 10.0191C-0.00400078 7.30363 0.00669722 6.96343 0.0533472 5.8968C0.100333 4.83212 0.267197 4.10505 0.513441 3.46838C0.767773 2.81033 1.10862 2.25207 1.66364 1.69511C2.218 1.13847 2.77527 0.795015 3.43267 0.538732ZM4.11795 17.8066C4.47078 17.9423 5.00019 18.1043 5.97512 18.1468C7.03006 18.1925 7.34595 18.2025 10.0154 18.1973C12.6858 18.1924 13.0017 18.1811 14.0563 18.1315C15.0303 18.0852 15.5597 17.9213 15.9116 17.7839C16.3785 17.6015 16.7109 17.3834 17.0601 17.0338C17.4094 16.6829 17.6255 16.3495 17.8063 15.8826C17.9424 15.5295 18.1041 14.9997 18.1465 14.0248C18.1928 12.9705 18.2026 12.6542 18.1974 9.98412C18.1925 7.31464 18.1812 6.99842 18.131 5.94378C18.0849 4.96949 17.9213 4.44007 17.7836 4.08853C17.6012 3.62099 17.3838 3.28921 17.0333 2.93961C16.6827 2.59 16.3493 2.37454 15.8818 2.19375C15.5295 2.05734 14.9995 1.89598 14.0252 1.85355C12.9703 1.80721 12.654 1.79781 9.98397 1.803C7.31452 1.80818 6.99863 1.81887 5.94401 1.86877C4.96942 1.9151 4.44064 2.07872 4.08812 2.21643C3.62156 2.39884 3.28914 2.6156 2.93955 2.9665C2.59059 3.31739 2.37448 3.65015 2.1937 4.11801C2.05827 4.47053 1.89529 5.0006 1.8535 5.97489C1.80748 7.02984 1.79777 7.34608 1.80296 10.0155C1.80782 12.6857 1.81915 13.0019 1.86873 14.0559C1.91441 15.0308 2.07932 15.5596 2.21638 15.9124C2.39879 16.3787 2.6162 16.7111 2.96644 17.0607C3.31734 17.409 3.65073 17.6258 4.11795 17.8066Z"
+                                                      fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <section class="counter">
+
+                                        <div class="stat-box first_box">
+                                            <h2>15+</h2>
+                                            <p>Years of excellence</p>
+                                        </div>
+                                        <div class="stat-box ">
+                                            <h2>1000+</h2>
+                                            <p>Students</p>
+                                        </div>
+                                        <div class="stat-box">
+                                            <h2>340+</h2>
+                                            <p>Teachers</p>
+                                        </div>
+                                        <div class="stat-box">
+                                            <h2>50+</h2>
+                                            <p>Courses</p>
+                                        </div>
+
+
+                                    </section>
+                                </section>
+                                <section class="awards-section scrolling" data-speed="auto">
+                                    <img src="/cpa/static/img/vector1.svg" class="vector1"/>
+                                    <img src="/cpa/static/img/vector2.svg" class="vector2"/>
+                                    <div class="awards-sec">
+                                        <div class="awards-sec1">
+                                            <div class="award-remark-moment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="49"
+                                                     viewBox="0 0 39 49" fill="none">
+                                                    <path d="M19.4757 1.02316L2.63015 2.92333C1.70171 3.02806 1 3.81337 1 4.7477V31.3892C1 31.6492 1.05339 31.9059 1.16592 32.1402C4.6513 39.3985 14.0732 45.3048 19.007 47.684C19.4394 47.8925 19.9369 47.9094 20.3849 47.7368C31.1157 43.603 36.6964 35.8398 38.3184 32.1071C38.411 31.8939 38.4531 31.6642 38.4531 31.4318V4.74859C38.4531 3.81388 37.7509 3.02838 36.822 2.92411L19.8863 1.02305C19.7499 1.00773 19.6121 1.00777 19.4757 1.02316Z"
+                                                          fill="#CBF0FF" stroke="#5CD1FF" stroke-opacity="0.28"
+                                                          stroke-width="0.924769"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                          d="M18.3743 12.9685C18.7886 11.9725 20.2016 11.9725 20.6159 12.9685L22.5413 17.5979L27.5387 17.9992C28.6152 18.0852 29.0517 19.428 28.2314 20.1308L24.4241 23.3925L25.5866 28.2688C25.8372 29.3193 24.6951 30.1488 23.774 29.5866L19.4951 26.9732L15.2162 29.5866C14.2951 30.1488 13.153 29.3184 13.4037 28.2688L14.5661 23.3925L10.7588 20.1308C9.93855 19.428 10.375 18.0852 11.4515 17.9992L16.4489 17.5979L18.3743 12.9685Z"
+                                                          fill="#5CD1FF"/>
+                                                </svg>
+                                                <div class="remark-moment">Remarkable moment
+                                                </div>
+                                            </div>
+                                            <div class="award-head">
+                                                Awards and achievements
+                                            </div>
+                                            <div class="award-description">A legacy of recognition, driven by excellence
+                                                in education, innovation,
+                                                and student success.
+                                            </div>
+                                            <a href="#" class="home-btn view-all">
+                                                View all
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                     viewBox="0 0 24 25" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                          d="M12 2.47913C6.615 2.47913 2.25 6.84413 2.25 12.2291C2.25 17.6141 6.615 21.9791 12 21.9791C17.385 21.9791 21.75 17.6141 21.75 12.2291C21.75 6.84413 17.385 2.47913 12 2.47913ZM16.28 12.7591C16.4205 12.6185 16.4993 12.4279 16.4993 12.2291C16.4993 12.0304 16.4205 11.8398 16.28 11.6991L13.28 8.69913C13.2113 8.62544 13.1285 8.56634 13.0365 8.52534C12.9445 8.48435 12.8452 8.46231 12.7445 8.46053C12.6438 8.45876 12.5438 8.47728 12.4504 8.515C12.357 8.55272 12.2722 8.60887 12.201 8.68009C12.1297 8.75131 12.0736 8.83614 12.0359 8.92953C11.9982 9.02292 11.9796 9.12295 11.9814 9.22365C11.9832 9.32435 12.0052 9.42366 12.0462 9.51566C12.0872 9.60766 12.1463 9.69046 12.22 9.75913L13.94 11.4791H8.25C8.05109 11.4791 7.86032 11.5581 7.71967 11.6988C7.57902 11.8394 7.5 12.0302 7.5 12.2291C7.5 12.428 7.57902 12.6188 7.71967 12.7595C7.86032 12.9001 8.05109 12.9791 8.25 12.9791H13.94L12.22 14.6991C12.1463 14.7678 12.0872 14.8506 12.0462 14.9426C12.0052 15.0346 11.9832 15.1339 11.9814 15.2346C11.9796 15.3353 11.9982 15.4353 12.0359 15.5287C12.0736 15.6221 12.1297 15.7069 12.201 15.7782C12.2722 15.8494 12.357 15.9055 12.4504 15.9432C12.5438 15.981 12.6438 15.9995 12.7445 15.9977C12.8452 15.9959 12.9445 15.9739 13.0365 15.9329C13.1285 15.8919 13.2113 15.8328 13.28 15.7591L16.28 12.7591Z"
+                                                          fill="white"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="slides-container">
+                                            <div class="slides-inner">
+                                                <t t-foreach="request.env['landing.page'].sudo().search([],)"
+                                                   t-as="awards">
+                                                    <div class="slide">
+                                                        <div class="award-image">
+                                                            <img t-att-src="'/web/image?model=landing.page&amp;id=%s&amp;field=image' % awards.id"
+                                                                 class="award-img"/>
+                                                        </div>
+                                                        <div class="award-content">
+                                                            <div class="award-title" t-esc="awards.title"/>
+                                                            <div class="award-para" t-esc="awards.description"/>
+
+                                                        </div>
+                                                    </div>
+                                                    <style>
+                                                        .award-content{
+                                                        height:140px;
+                                                        }
+                                                        .award-image{
+                                                        height:370px;
+                                                        }
+                                                        .award-image img{
+                                                        height:100%;
+                                                        object-fit:cover;
+                                                        object-position:top center;
+                                                        }
+                                                    </style>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <!--  <svg xmlns="http://www.w3.org/2000/svg" width="1515" height="30" viewBox="0 0 1515 30" fill="none" style="     position: absolute;     bottom: 10px; ">-->
+                                        <!--<g clip-path="url(#clip0_214_140)" filter="url(#filter0_d_214_140)">-->
+                                        <!--<rect width="1515" height="6" transform="translate(0 15)" fill="url(#paint0_linear_214_140)" style=" "/>-->
+                                        <!--<line x1="-38.0203" y1="-11.4368" x2="61.5591" y2="44.0606" stroke="#032E3F"/>-->
+                                        <!--<line x1="-40.4543" y1="-7.06926" x2="59.125" y2="48.4281" stroke="#032E3F"/>-->
+                                        <!--<line x1="-42.8884" y1="-2.70171" x2="56.6909" y2="52.7956" stroke="#032E3F"/>-->
+                                        <!--<line x1="-45.3225" y1="1.66579" x2="54.2568" y2="57.1631" stroke="#032E3F"/>-->
+                                        <!--<line x1="-47.7566" y1="6.03328" x2="51.8228" y2="61.5306" stroke="#032E3F"/>-->
+                                        <!--<line x1="13.9797" y1="-11.4368" x2="113.559" y2="44.0606" stroke="#032E3F"/>-->
+                                        <!--<line x1="11.5457" y1="-7.06926" x2="111.125" y2="48.4281" stroke="#032E3F"/>-->
+                                        <!--<line x1="9.11157" y1="-2.70171" x2="108.691" y2="52.7956" stroke="#032E3F"/>-->
+                                        <!--<line x1="6.67749" y1="1.66579" x2="106.257" y2="57.1631" stroke="#032E3F"/>-->
+                                        <!--<line x1="4.24341" y1="6.03328" x2="103.823" y2="61.5306" stroke="#032E3F"/>-->
+                                        <!--<line x1="1403.98" y1="-18.4368" x2="1503.56" y2="37.0606" stroke="#032E3F"/>-->
+                                        <!--<line x1="1401.55" y1="-14.0693" x2="1501.12" y2="41.4281" stroke="#032E3F"/>-->
+                                        <!--<line x1="1399.11" y1="-9.70171" x2="1498.69" y2="45.7956" stroke="#032E3F"/>-->
+                                        <!--<line x1="1396.68" y1="-5.33421" x2="1496.26" y2="50.1631" stroke="#032E3F"/>-->
+                                        <!--<line x1="1394.24" y1="-0.96672" x2="1493.82" y2="54.5306" stroke="#032E3F"/>-->
+                                        <!--<line x1="1455.98" y1="-18.4368" x2="1555.56" y2="37.0606" stroke="#032E3F"/>-->
+                                        <!--<line x1="1453.55" y1="-14.0693" x2="1553.12" y2="41.4281" stroke="#032E3F"/>-->
+                                        <!--<line x1="1451.11" y1="-9.70171" x2="1550.69" y2="45.7956" stroke="#032E3F"/>-->
+                                        <!--<line x1="1448.68" y1="-5.33421" x2="1548.26" y2="50.1631" stroke="#032E3F"/>-->
+                                        <!--<line x1="1446.24" y1="-0.96672" x2="1545.82" y2="54.5306" stroke="#032E3F"/>-->
+                                        <!--</g>-->
+                                        <!--<defs>-->
+                                        <!--<filter id="filter0_d_214_140" x="-11.7" y="0.3" width="1538.4" height="29.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">-->
+                                        <!--<feFlood flood-opacity="0" result="BackgroundImageFix"/>-->
+                                        <!--<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>-->
+                                        <!--<feOffset dy="-3"/>-->
+                                        <!--<feGaussianBlur stdDeviation="5.85"/>-->
+                                        <!--<feComposite in2="hardAlpha" operator="out"/>-->
+                                        <!--<feColorMatrix type="matrix" values="0 0 0 0 0.347115 0 0 0 0 0.234537 0 0 0 0 0 0 0 0 0.18 0"/>-->
+                                        <!--<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_214_140"/>-->
+                                        <!--<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_214_140" result="shape"/>-->
+                                        <!--</filter>-->
+                                        <!--<linearGradient id="paint0_linear_214_140" x1="2.33013e-07" y1="-15.75" x2="1527.28" y2="374.527" gradientUnits="userSpaceOnUse">-->
+                                        <!--<stop offset="0.00534244" stop-color="#FBCC36"/>-->
+                                        <!--<stop offset="1" stop-color="#F8B917"/>-->
+                                        <!--</linearGradient>-->
+                                        <!--<clipPath id="clip0_214_140">-->
+                                        <!--<rect width="1515" height="6" fill="white" transform="translate(0 15)"/>-->
+                                        <!--</clipPath>-->
+                                        <!--</defs>-->
+                                        <!--</svg>-->
+
+                                    </div>
+
+                                </section>
+                                <section class="featured-products pb48 scrolling">
+                                    <div id="placement" class="placement pb40">
+                                        <div class="award-remark-moment">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="49"
+                                                 viewBox="0 0 39 49" fill="none">
+                                                <path d="M19.4757 1.02316L2.63015 2.92333C1.70171 3.02806 1 3.81337 1 4.7477V31.3892C1 31.6492 1.05339 31.9059 1.16592 32.1402C4.6513 39.3985 14.0732 45.3048 19.007 47.684C19.4394 47.8925 19.9369 47.9094 20.3849 47.7368C31.1157 43.603 36.6964 35.8398 38.3184 32.1071C38.411 31.8939 38.4531 31.6642 38.4531 31.4318V4.74859C38.4531 3.81388 37.7509 3.02838 36.822 2.92411L19.8863 1.02305C19.7499 1.00773 19.6121 1.00777 19.4757 1.02316Z"
+                                                      fill="#CBF0FF" stroke="#5CD1FF" stroke-opacity="0.28"
+                                                      stroke-width="0.924769"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M14.5 14.25C14.5 13.4544 14.8161 12.6913 15.3787 12.1287C15.9413 11.5661 16.7044 11.25 17.5 11.25H20.5C21.2956 11.25 22.0587 11.5661 22.6213 12.1287C23.1839 12.6913 23.5 13.4544 23.5 14.25V14.455C24.433 14.54 25.357 14.652 26.274 14.789C27.728 15.007 28.75 16.272 28.75 17.706V20.739C28.75 21.95 28.016 23.091 26.814 23.491C24.2938 24.3275 21.6554 24.7526 19 24.75C16.27 24.75 13.643 24.308 11.186 23.491C9.984 23.091 9.25 21.95 9.25 20.739V17.706C9.25 16.272 10.272 15.006 11.726 14.789C12.6473 14.6512 13.5723 14.5398 14.5 14.455V14.25ZM22 14.25V14.34C20.0018 14.2186 17.9982 14.2186 16 14.34V14.25C16 13.8522 16.158 13.4706 16.4393 13.1893C16.7206 12.908 17.1022 12.75 17.5 12.75H20.5C20.8978 12.75 21.2794 12.908 21.5607 13.1893C21.842 13.4706 22 13.8522 22 14.25ZM19 22.5C19.1989 22.5 19.3897 22.421 19.5303 22.2803C19.671 22.1397 19.75 21.9489 19.75 21.75C19.75 21.5511 19.671 21.3603 19.5303 21.2197C19.3897 21.079 19.1989 21 19 21C18.8011 21 18.6103 21.079 18.4697 21.2197C18.329 21.3603 18.25 21.5511 18.25 21.75C18.25 21.9489 18.329 22.1397 18.4697 22.2803C18.6103 22.421 18.8011 22.5 19 22.5Z"
+                                                      fill="#5CD1FF"/>
+                                                <path d="M10 27.4V24.604C10.2278 24.7287 10.4665 24.8324 10.713 24.914C13.3857 25.8014 16.1839 26.2525 19 26.25C21.892 26.25 24.68 25.782 27.287 24.915C27.539 24.831 27.777 24.726 28 24.604V27.4C28 28.852 26.953 30.128 25.477 30.323C23.357 30.605 21.195 30.75 19 30.75C16.834 30.7504 14.6702 30.6078 12.523 30.323C11.047 30.128 10 28.852 10 27.4Z"
+                                                      fill="#5CD1FF"/>
+                                            </svg>
+
+                                            <div class="remark-moment">Placement partners
+                                            </div>
+                                        </div>
+                                        <div class="award-head pt12  w-100">
+                                            Launch your career with us
+                                        </div>
+                                    </div>
+                                    <div class="featured-products-list-container">
+                                        <ul class="featured-products-list">
+                                            <t t-foreach="request.env['placement.section'].sudo().search([],)"
+                                               t-as="placement">
+                                                <li class="product-card">
+                                                    <div class="product-card-img">
+                                                        <img draggable="false"
+                                                             t-att-src="'/web/image?model=placement.section&amp;id=%s&amp;field=placement_image' % placement.id"
+                                                             alt=""/>
+                                                    </div>
+
+                                                </li>
+                                            </t>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <section class="gallery scrolling" data-speed="auto">
+                                    <img src="/cpa/static/img/vector3.svg" class="vector2"/>
+                                    <div id="placement" class="pb48 galleries">
+                                        <div class="award-remark-moment">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="49"
+                                                 viewBox="0 0 38 49" fill="none">
+                                                <path d="M18.4757 1.02316L1.63015 2.92333C0.701706 3.02806 0 3.81337 0 4.7477V31.3892C0 31.6492 0.0533912 31.9059 0.165918 32.1402C3.6513 39.3985 13.0732 45.3048 18.007 47.684C18.4394 47.8925 18.9369 47.9094 19.3849 47.7368C30.1157 43.603 35.6964 35.8398 37.3184 32.1071C37.411 31.8939 37.4531 31.6642 37.4531 31.4318V4.74859C37.4531 3.81388 36.7509 3.02838 35.822 2.92411L18.8863 1.02305C18.7499 1.00773 18.6121 1.00777 18.4757 1.02316Z"
+                                                      fill="#CBF0FF" stroke="#5CD1FF" stroke-opacity="0.28"
+                                                      stroke-width="0.924769"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M14.25 15.75C14.25 14.7554 14.6451 13.8016 15.3483 13.0983C16.0516 12.3951 17.0054 12 18 12C18.9946 12 19.9484 12.3951 20.6517 13.0983C21.3549 13.8016 21.75 14.7554 21.75 15.75C21.75 16.7446 21.3549 17.6984 20.6517 18.4017C19.9484 19.1049 18.9946 19.5 18 19.5C17.0054 19.5 16.0516 19.1049 15.3483 18.4017C14.6451 17.6984 14.25 16.7446 14.25 15.75ZM21.75 18.75C21.75 17.9544 22.0661 17.1913 22.6287 16.6287C23.1913 16.0661 23.9544 15.75 24.75 15.75C25.5456 15.75 26.3087 16.0661 26.8713 16.6287C27.4339 17.1913 27.75 17.9544 27.75 18.75C27.75 19.5456 27.4339 20.3087 26.8713 20.8713C26.3087 21.4339 25.5456 21.75 24.75 21.75C23.9544 21.75 23.1913 21.4339 22.6287 20.8713C22.0661 20.3087 21.75 19.5456 21.75 18.75ZM8.25 18.75C8.25 17.9544 8.56607 17.1913 9.12868 16.6287C9.69129 16.0661 10.4544 15.75 11.25 15.75C12.0456 15.75 12.8087 16.0661 13.3713 16.6287C13.9339 17.1913 14.25 17.9544 14.25 18.75C14.25 19.5456 13.9339 20.3087 13.3713 20.8713C12.8087 21.4339 12.0456 21.75 11.25 21.75C10.4544 21.75 9.69129 21.4339 9.12868 20.8713C8.56607 20.3087 8.25 19.5456 8.25 18.75ZM12.31 24.117C12.92 23.161 13.7611 22.3743 14.7556 21.8294C15.7502 21.2846 16.866 20.9994 18 21C18.9498 20.9991 19.8891 21.1989 20.7564 21.5862C21.6237 21.9734 22.3994 22.5395 23.0327 23.2474C23.6661 23.9552 24.1428 24.7888 24.4317 25.6936C24.7205 26.5985 24.815 27.5541 24.709 28.498C24.696 28.6153 24.6556 28.7278 24.591 28.8265C24.5263 28.9252 24.4393 29.0073 24.337 29.066C22.4086 30.1725 20.2233 30.7532 18 30.75C15.695 30.75 13.53 30.138 11.663 29.066C11.5607 29.0073 11.4737 28.9252 11.409 28.8265C11.3444 28.7278 11.304 28.6153 11.291 28.498C11.1231 26.9646 11.4825 25.4198 12.31 24.118V24.117Z"
+                                                      fill="#5CD1FF"/>
+                                                <path d="M11.0821 23.254C10.0958 24.7764 9.63633 26.5803 9.77408 28.389C9.17359 28.298 8.58299 28.1507 8.01008 27.949L7.89508 27.909C7.79248 27.8726 7.70263 27.8072 7.63643 27.7208C7.57023 27.6344 7.53051 27.5306 7.52208 27.422L7.51208 27.301C7.47169 26.799 7.53284 26.294 7.69188 25.8161C7.85093 25.3382 8.10462 24.8972 8.4378 24.5195C8.77099 24.1418 9.17685 23.8351 9.63116 23.6177C10.0855 23.4003 10.5789 23.2766 11.0821 23.254ZM26.2261 28.389C26.3638 26.5803 25.9043 24.7764 24.9181 23.254C25.4212 23.2766 25.9147 23.4003 26.369 23.6177C26.8233 23.8351 27.2292 24.1418 27.5624 24.5195C27.8955 24.8972 28.1492 25.3382 28.3083 25.8161C28.4673 26.294 28.5285 26.799 28.4881 27.301L28.4781 27.422C28.4695 27.5304 28.4297 27.634 28.3635 27.7202C28.2973 27.8064 28.2075 27.8717 28.1051 27.908L27.9901 27.948C27.4231 28.148 26.8341 28.297 26.2261 28.389Z"
+                                                      fill="#5CD1FF"/>
+                                            </svg>
+
+
+                                            <div class="remark-moment">Visitors
+                                            </div>
+                                        </div>
+                                        <div class="award-head pt12 w-100">
+                                            Gallery of guest
+                                        </div>
+                                    </div>
+                                    <div class="wrappers">
+                                        <t t-foreach="request.env['gallery.section'].sudo().search([],)" t-as="gallery">
+                                            <div class="box" id="slide">
+                                                <img t-att-src="'/web/image?model=gallery.section&amp;id=%s&amp;field=gallery_image' % gallery.id"
+                                                     class="gallery-img"/>
+                                                <div class="gallery-content">
+                                                    <div class="gallery-title" t-esc="gallery.visitor_name"/>
+                                                    <div class="gallery-para" t-esc="gallery.gallery_description"/>
+
+                                                    <!--<a href="#" class="view-details">-->
+                                                    <!--    View Details-->
+                                                    <!--</a>-->
+                                                </div>
+                                            </div>
+
+                                        </t>
+                                    </div>
+                                    <button class="prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M7.71991 11.47C7.57946 11.6106 7.50057 11.8012 7.50057 12C7.50057 12.1987 7.57946 12.3893 7.71991 12.53L15.2199 20.03C15.3621 20.1625 15.5501 20.2346 15.7444 20.2311C15.9387 20.2277 16.1241 20.149 16.2615 20.0116C16.3989 19.8742 16.4777 19.6888 16.4811 19.4945C16.4845 19.3002 16.4124 19.1121 16.2799 18.97L9.30991 12L16.2799 5.02997C16.4124 4.88779 16.4845 4.69975 16.4811 4.50545C16.4777 4.31114 16.3989 4.12576 16.2615 3.98835C16.1241 3.85093 15.9387 3.77222 15.7444 3.76879C15.5501 3.76537 15.3621 3.83749 15.2199 3.96997L7.71991 11.47Z"
+                                                  fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <button class="next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M16.2801 11.47C16.4205 11.6106 16.4994 11.8012 16.4994 12C16.4994 12.1987 16.4205 12.3893 16.2801 12.53L8.78009 20.03C8.63792 20.1625 8.44987 20.2346 8.25557 20.2311C8.06127 20.2277 7.87588 20.149 7.73847 20.0116C7.60106 19.8742 7.52234 19.6888 7.51892 19.4945C7.51549 19.3002 7.58761 19.1121 7.72009 18.97L14.6901 12L7.72009 5.02997C7.58761 4.88779 7.51549 4.69975 7.51892 4.50545C7.52234 4.31114 7.60106 4.12576 7.73847 3.98835C7.87588 3.85093 8.06127 3.77222 8.25557 3.76879C8.44987 3.76537 8.63792 3.83749 8.78009 3.96997L16.2801 11.47Z"
+                                                  fill="white"/>
+                                        </svg>
+                                    </button>
+
+                                    <style>
+                                        .gallery-img{
+                                        object-fit:cover;
+                                        object-position:top center;
+                                        }
+                                    </style>
+                                </section>
+                                <section class="voice-sec scrolling" data-speed="auto">
+                                    <div id="voice" class="pb48 voice">
+                                        <div class="award-remark-moment">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="49"
+                                                 viewBox="0 0 39 49" fill="none">
+                                                <path d="M19.4757 1.02316L2.63015 2.92333C1.70171 3.02806 1 3.81337 1 4.7477V31.3892C1 31.6492 1.05339 31.9059 1.16592 32.1402C4.6513 39.3985 14.0732 45.3048 19.007 47.684C19.4394 47.8925 19.9369 47.9094 20.3849 47.7368C31.1157 43.603 36.6964 35.8398 38.3184 32.1071C38.411 31.8939 38.4531 31.6642 38.4531 31.4318V4.74859C38.4531 3.81388 37.7509 3.02838 36.822 2.92411L19.8863 1.02305C19.7499 1.00773 19.6121 1.00777 19.4757 1.02316Z"
+                                                      fill="#CBF0FF" stroke="#5CD1FF" stroke-opacity="0.28"
+                                                      stroke-width="0.924769"/>
+                                                <g clip-path="url(#clip0_559_2625)">
+                                                    <path d="M16.0164 13.4908C15.3012 12.3624 13.5781 12.6624 13.2867 13.9659L11.8948 20.1758L10.263 21.2101C9.29925 21.8209 8.66057 23.0119 9.03606 24.2431C9.29268 25.0814 9.66108 25.8813 10.1313 26.6213C10.6121 27.3798 11.18 28.0498 11.8162 28.6257C12.768 29.4905 14.1181 29.4221 15.0819 28.8113L16.712 27.7781L22.9219 29.17C24.226 29.4622 25.2328 28.0321 24.5176 26.9036L16.0164 13.4908ZM20.8705 11.6526C20.9141 11.4587 21.0329 11.29 21.2007 11.1836C21.3686 11.0772 21.5719 11.0418 21.7658 11.0852C27.0202 12.2621 30.3249 17.4761 29.1471 22.731C29.0979 22.919 28.9777 23.0806 28.8117 23.1817C28.6458 23.2829 28.4471 23.3156 28.2574 23.2731C28.0678 23.2306 27.9021 23.1162 27.7952 22.9539C27.6882 22.7916 27.6485 22.5942 27.6843 22.4032C27.9213 21.3459 27.9478 20.2523 27.7621 19.1849C27.5765 18.1174 27.1824 17.0969 26.6024 16.1818C26.0224 15.2666 25.2677 14.4747 24.3816 13.8512C23.4955 13.2277 22.4952 12.7848 21.438 12.5479C21.2441 12.5043 21.0754 12.3856 20.969 12.2177C20.8626 12.0498 20.8272 11.8466 20.8705 11.6526Z"
+                                                          fill="#5CD1FF"/>
+                                                    <path d="M20.0497 15.3112C20.0712 15.2151 20.1114 15.1241 20.1681 15.0435C20.2248 14.9629 20.2968 14.8943 20.3801 14.8415C20.4633 14.7888 20.5561 14.753 20.6532 14.7361C20.7502 14.7192 20.8497 14.7217 20.9458 14.7432C21.7148 14.9155 22.4423 15.2376 23.0867 15.691C23.7312 16.1445 24.28 16.7205 24.7019 17.3861C25.1238 18.0517 25.4104 18.7938 25.5454 19.5702C25.6804 20.3466 25.6611 21.1419 25.4887 21.9108C25.4423 22.1019 25.3226 22.2671 25.1556 22.3709C24.9885 22.4747 24.7874 22.5086 24.5955 22.4655C24.4037 22.4224 24.2364 22.3057 24.1297 22.1405C24.0231 21.9752 23.9856 21.7747 24.0254 21.5821C24.1546 21.0055 24.169 20.409 24.0678 19.8268C23.9665 19.2446 23.7516 18.688 23.4352 18.1889C23.1189 17.6898 22.7073 17.2578 22.224 16.9177C21.7407 16.5777 21.1952 16.3361 20.6185 16.2069C20.4246 16.1633 20.2559 16.0445 20.1495 15.8766C20.0431 15.7087 20.0077 15.5055 20.051 15.3115L20.0497 15.3112Z"
+                                                          fill="#5CD1FF"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_559_2625">
+                                                        <rect width="24" height="24" fill="white"
+                                                              transform="translate(2.44019 17.2884) rotate(-32.3668)"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+
+                                            <div class="remark-moment">Experience meets impact
+                                            </div>
+                                        </div>
+                                        <div class="award-head pt12 w-100">
+                                            Voice of our students
+                                        </div>
+                                    </div>
+                                    <img src="/cpa/static/img/vector4.svg" class="vector4"/>
+                                    <div class="wrapping">
+                                        <t t-foreach="request.env['student.voice'].sudo().search([],)" t-as="voice">
+                                            <div class="voicebox" id="voice-cards">
+
+                                                <img t-att-src="'/web/image?model=student.voice&amp;id=%s&amp;field=student_image' % voice.id"
+                                                     class="student-img"/>
+                                                <div class="student_details">
+                                                    <div class="student-title" t-esc="voice.student_name"/>
+                                                    <div class="batch" t-esc="voice.batch"/>
+                                                </div>
+                                                <div class="student-para" t-esc="voice.student_description">....</div>
+                                            </div>
+
+                                        </t>
+
+                                        <style>
+                                            .student-para{
+                                            overflow:hidden;
+                                            height:132px;
+                                            max-height:132px;
+                                            }
+                                            .student_details{
+                                            width:100%;
+                                            }
+                                            .student-img{
+                                            object-fit:cover;
+                                            object-position:top center;
+                                            }
+                                            .gallery-img{
+                                            height:250px;
+                                            }
+                                            .gallery-content{
+                                            height:250px;
+                                            }
+                                        </style>
+
+                                    </div>
+                                    <button class=" prev-back" id="prevbtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M7.71991 11.47C7.57946 11.6106 7.50057 11.8012 7.50057 12C7.50057 12.1987 7.57946 12.3893 7.71991 12.53L15.2199 20.03C15.3621 20.1625 15.5501 20.2346 15.7444 20.2311C15.9387 20.2277 16.1241 20.149 16.2615 20.0116C16.3989 19.8742 16.4777 19.6888 16.4811 19.4945C16.4845 19.3002 16.4124 19.1121 16.2799 18.97L9.30991 12L16.2799 5.02997C16.4124 4.88779 16.4845 4.69975 16.4811 4.50545C16.4777 4.31114 16.3989 4.12576 16.2615 3.98835C16.1241 3.85093 15.9387 3.77222 15.7444 3.76879C15.5501 3.76537 15.3621 3.83749 15.2199 3.96997L7.71991 11.47Z"
+                                                  fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <button class=" next-move" id="nextbtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M16.2801 11.47C16.4205 11.6106 16.4994 11.8012 16.4994 12C16.4994 12.1987 16.4205 12.3893 16.2801 12.53L8.78009 20.03C8.63792 20.1625 8.44987 20.2346 8.25557 20.2311C8.06127 20.2277 7.87588 20.149 7.73847 20.0116C7.60106 19.8742 7.52234 19.6888 7.51892 19.4945C7.51549 19.3002 7.58761 19.1121 7.72009 18.97L14.6901 12L7.72009 5.02997C7.58761 4.88779 7.51549 4.69975 7.51892 4.50545C7.52234 4.31114 7.60106 4.12576 7.73847 3.98835C7.87588 3.85093 8.06127 3.77222 8.25557 3.76879C8.44987 3.76537 8.63792 3.83749 8.78009 3.96997L16.2801 11.47Z"
+                                                  fill="white"/>
+                                        </svg>
+                                    </button>
+                                </section>
+
+                                <section class="quote-section scrolling" data-speed="auto">
+                                    <div class="quote-box">
+                                        <div class="quote-hide"/>
+                                        <div class="quote-hide-right"/>
+                                        <div class="quote-head">CPA COLLEGE
+                                            <div class="quotes-text">
+                                                <span class="quote-icon">“</span>We believe in our good education and
+                                                development system and we know how to work together to reach greater
+                                                success...
+                                                <span class="quote-icon-right">“</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+                                <section>
+                                    <section class="cpa-footer scrolling">
+                                        <div class="admission-open">
+                                            <img src="/cpa/static/img/dots1.svg" class="dots1"/>
+                                            <img src="/cpa/static/img/dots2.svg" class="dots2"/>
+                                            <div class="admission-open-text">Admissions Open for 2025 - 2026
+                                                <a href="#" class="home-btn view-all mt0" style="    width: auto;">
+                                                    Apply now
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                         viewBox="0 0 24 25" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M12 2.47913C6.615 2.47913 2.25 6.84413 2.25 12.2291C2.25 17.6141 6.615 21.9791 12 21.9791C17.385 21.9791 21.75 17.6141 21.75 12.2291C21.75 6.84413 17.385 2.47913 12 2.47913ZM16.28 12.7591C16.4205 12.6185 16.4993 12.4279 16.4993 12.2291C16.4993 12.0304 16.4205 11.8398 16.28 11.6991L13.28 8.69913C13.2113 8.62544 13.1285 8.56634 13.0365 8.52534C12.9445 8.48435 12.8452 8.46231 12.7445 8.46053C12.6438 8.45876 12.5438 8.47728 12.4504 8.515C12.357 8.55272 12.2722 8.60887 12.201 8.68009C12.1297 8.75131 12.0736 8.83614 12.0359 8.92953C11.9982 9.02292 11.9796 9.12295 11.9814 9.22365C11.9832 9.32435 12.0052 9.42366 12.0462 9.51566C12.0872 9.60766 12.1463 9.69046 12.22 9.75913L13.94 11.4791H8.25C8.05109 11.4791 7.86032 11.5581 7.71967 11.6988C7.57902 11.8394 7.5 12.0302 7.5 12.2291C7.5 12.428 7.57902 12.6188 7.71967 12.7595C7.86032 12.9001 8.05109 12.9791 8.25 12.9791H13.94L12.22 14.6991C12.1463 14.7678 12.0872 14.8506 12.0462 14.9426C12.0052 15.0346 11.9832 15.1339 11.9814 15.2346C11.9796 15.3353 11.9982 15.4353 12.0359 15.5287C12.0736 15.6221 12.1297 15.7069 12.201 15.7782C12.2722 15.8494 12.357 15.9055 12.4504 15.9432C12.5438 15.981 12.6438 15.9995 12.7445 15.9977C12.8452 15.9959 12.9445 15.9739 13.0365 15.9329C13.1285 15.8919 13.2113 15.8328 13.28 15.7591L16.28 12.7591Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="call-number">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                         viewBox="0 0 25 24" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M2 3.5C2 2.70435 2.31607 1.94129 2.87868 1.37868C3.44129 0.816071 4.20435 0.5 5 0.5H6.372C7.232 0.5 7.982 1.086 8.191 1.92L9.296 6.343C9.38554 6.701 9.36746 7.07746 9.24401 7.42522C9.12055 7.77299 8.89723 8.07659 8.602 8.298L7.309 9.268C7.174 9.369 7.145 9.517 7.183 9.62C7.74738 11.1549 8.6386 12.5487 9.79495 13.7051C10.9513 14.8614 12.3451 15.7526 13.88 16.317C13.983 16.355 14.13 16.326 14.232 16.191L15.202 14.898C15.4234 14.6028 15.727 14.3794 16.0748 14.256C16.4225 14.1325 16.799 14.1145 17.157 14.204L21.58 15.309C22.414 15.518 23 16.268 23 17.129V18.5C23 19.2956 22.6839 20.0587 22.1213 20.6213C21.5587 21.1839 20.7956 21.5 20 21.5H17.75C9.052 21.5 2 14.448 2 5.75V3.5Z"
+                                                              fill="black"/>
+                                                    </svg>
+                                                    +91 7510 363 333
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="foot-item1">
+                                            <img src="/cpa/static/img/foot-logo.svg"/>
+                                            <div class="foot-logo-name">CPA COLLEGE OF GLOBAL STUDIES, PUTHANATHANI
+                                            </div>
+                                            <div class="footer-social-icons">
+                                                <a href="#" class="foot-icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <g clip-path="url(#clip0_398_758)">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                  d="M18.9554 4.02847C19.2657 4.34077 19.4885 4.7291 19.6016 5.15459C20.0198 6.72504 20.0198 10 20.0198 10C20.0198 10 20.0198 13.275 19.6016 14.8455C19.4885 15.271 19.2657 15.6593 18.9554 15.9716C18.6451 16.2839 18.2582 16.5092 17.8334 16.625C16.2698 17.0455 10.0198 17.0455 10.0198 17.0455C10.0198 17.0455 3.76978 17.0455 2.20614 16.625C1.78138 16.5092 1.39449 16.2839 1.08418 15.9716C0.773872 15.6593 0.55103 15.271 0.437957 14.8455C0.0197754 13.275 0.0197754 10 0.0197754 10C0.0197754 10 0.0197754 6.72504 0.437957 5.15459C0.55103 4.7291 0.773872 4.34077 1.08418 4.02847C1.39449 3.71617 1.78138 3.49084 2.20614 3.37504C3.76978 2.95459 10.0198 2.95459 10.0198 2.95459C10.0198 2.95459 16.2698 2.95459 17.8334 3.37504C18.2582 3.49084 18.6451 3.71617 18.9554 4.02847ZM13.2016 10.0001L7.97433 7.02621V12.9739L13.2016 10.0001Z"
+                                                                  fill="#032E3F"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_398_758">
+                                                                <rect width="20" height="20" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="foot-icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <g clip-path="url(#clip0_398_761)">
+                                                            <path d="M9.99999 0C15.5228 0 20 4.47716 20 9.99999C20 15.1127 16.1629 19.3287 11.2115 19.9267V13.0558L13.9167 13.0558L14.4779 10H11.2115V8.91924C11.2115 8.11181 11.3699 7.55282 11.7332 7.19569C12.0966 6.83855 12.6649 6.68327 13.4848 6.68327C13.6923 6.68327 13.8833 6.68534 14.0527 6.68947C14.2992 6.69547 14.5002 6.70584 14.64 6.72056V3.9504C14.5841 3.93487 14.5181 3.91934 14.4442 3.90405C14.2767 3.86942 14.0685 3.83603 13.8447 3.80672C13.377 3.74544 12.8411 3.70192 12.4662 3.70192C10.952 3.70192 9.80767 4.02585 9.00891 4.69682C8.0449 5.50659 7.58423 6.82185 7.58423 8.68323V9.99999H5.52216V13.0558H7.58423V19.7055C3.2286 18.6249 0 14.6898 0 9.99999C0 4.47716 4.47716 0 9.99999 0Z"
+                                                                  fill="#032E3F"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_398_761">
+                                                                <rect width="20" height="20" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="foot-icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <g clip-path="url(#clip0_398_764)">
+                                                            <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z"
+                                                                  fill="#032E3F"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_398_764">
+                                                                <rect width="20" height="20" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="foot-icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                         viewBox="0 0 22 22" fill="none">
+                                                        <path d="M16.7512 1H19.818L13.1179 9.4718L21 21H14.8284L9.99458 14.0082L4.46359 21H1.39494L8.5613 11.9385L1 1H7.32828L11.6976 7.39077L16.7512 1ZM15.6748 18.9692H17.3742L6.4049 2.9241H4.58133L15.6748 18.9692Z"
+                                                              fill="#032E3F"/>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="foot-icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <path d="M15.3293 5.85177C14.6671 5.85306 14.1286 5.31684 14.1273 4.65457C14.126 3.9923 14.6622 3.45381 15.3248 3.45251C15.9874 3.45122 16.5259 3.98776 16.5272 4.65003C16.5281 5.3123 15.9919 5.85047 15.3293 5.85177Z"
+                                                              fill="#032E3F"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M10.0096 15.1342C7.17424 15.1397 4.87092 12.8457 4.86542 10.0097C4.8599 7.17436 7.15446 4.87068 9.98981 4.86517C12.8258 4.85966 15.1294 7.15492 15.1349 9.98996C15.1404 12.826 12.8452 15.1287 10.0096 15.1342ZM9.99337 6.66696C8.15304 6.6702 6.66328 8.16548 6.66652 10.0062C6.67009 11.8472 8.16568 13.3366 10.006 13.333C11.847 13.3295 13.3367 11.8345 13.3332 9.99352C13.3296 8.15252 11.834 6.6634 9.99337 6.66696Z"
+                                                              fill="#032E3F"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M3.43267 0.538732C4.06772 0.289896 4.79445 0.119468 5.85846 0.0692485C6.92509 0.0180605 7.2656 0.00639252 9.98073 0.00121052C12.6965 -0.00397148 13.037 0.00639051 14.1036 0.0536945C15.168 0.0997025 15.895 0.267541 16.5314 0.513786C17.1897 0.767478 17.7483 1.10898 18.305 1.66336C18.8616 2.21837 19.2044 2.77502 19.4613 3.43242C19.7098 4.06812 19.8802 4.79421 19.9308 5.8589C19.9813 6.92519 19.9936 7.26539 19.9988 9.98088C20.004 12.696 19.993 13.0369 19.9463 14.1042C19.9 15.1679 19.7325 15.8953 19.4863 16.5313C19.2319 17.1897 18.8911 17.7482 18.3367 18.3049C17.7823 18.8619 17.2251 19.2043 16.5677 19.4616C15.932 19.7098 15.2059 19.8802 14.1419 19.9311C13.0753 19.9816 12.7347 19.9936 10.0186 19.9988C7.30383 20.004 6.96332 19.9936 5.89671 19.9466C4.83235 19.9 4.10498 19.7325 3.46896 19.4865C2.8106 19.2319 2.25202 18.8913 1.69538 18.3366C1.13843 17.7819 0.795321 17.225 0.538715 16.5676C0.289881 15.9322 0.120089 15.2058 0.0692272 14.1421C0.0183632 13.0751 0.00637922 12.7343 0.00119922 10.0191C-0.00400078 7.30363 0.00669722 6.96343 0.0533472 5.8968C0.100333 4.83212 0.267197 4.10505 0.513441 3.46838C0.767773 2.81033 1.10862 2.25207 1.66364 1.69511C2.218 1.13847 2.77527 0.795015 3.43267 0.538732ZM4.11795 17.8066C4.47078 17.9423 5.00019 18.1043 5.97512 18.1468C7.03006 18.1925 7.34595 18.2025 10.0154 18.1973C12.6858 18.1924 13.0017 18.1811 14.0563 18.1315C15.0303 18.0852 15.5597 17.9213 15.9116 17.7839C16.3785 17.6015 16.7109 17.3834 17.0601 17.0338C17.4094 16.6829 17.6255 16.3495 17.8063 15.8826C17.9424 15.5295 18.1041 14.9997 18.1465 14.0248C18.1928 12.9705 18.2026 12.6542 18.1974 9.98412C18.1925 7.31464 18.1812 6.99842 18.131 5.94378C18.0849 4.96949 17.9213 4.44007 17.7836 4.08853C17.6012 3.62099 17.3838 3.28921 17.0333 2.93961C16.6827 2.59 16.3493 2.37454 15.8818 2.19375C15.5295 2.05734 14.9995 1.89598 14.0252 1.85355C12.9703 1.80721 12.654 1.79781 9.98397 1.803C7.31452 1.80818 6.99863 1.81887 5.94401 1.86877C4.96942 1.9151 4.44064 2.07872 4.08812 2.21643C3.62156 2.39884 3.28914 2.6156 2.93955 2.9665C2.59059 3.31739 2.37448 3.65015 2.1937 4.11801C2.05827 4.47053 1.89529 5.0006 1.8535 5.97489C1.80748 7.02984 1.79777 7.34608 1.80296 10.0155C1.80782 12.6857 1.81915 13.0019 1.86873 14.0559C1.91441 15.0308 2.07932 15.5596 2.21638 15.9124C2.39879 16.3787 2.6162 16.7111 2.96644 17.0607C3.31734 17.409 3.65073 17.6258 4.11795 17.8066Z"
+                                                              fill="#032E3F"/>
+                                                    </svg>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="foot-item2">
+                                            <h2 class="foot-titles">
+                                                Useful Links
+                                            </h2>
+                                            <div class="foot-item-link">
+                                                <a href="#">
+                                                    Home
+                                                </a>
+                                                <a href="#">
+                                                    About
+                                                </a>
+                                                <a href="#">
+                                                    Calendar
+                                                </a>
+                                                <a href="#">
+                                                    Contact Us
+                                                </a>
+                                                <a href="#">
+                                                    Alumni
+                                                </a>
+                                                <a href="#">
+                                                    Gallery
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="foot-item3">
+                                            <h2 class="foot-titles">
+                                                Contact Us
+                                            </h2>
+                                            <div>
+                                                <div class="contact-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                         viewBox="0 0 24 25" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M1.5 4C1.5 3.20435 1.81607 2.44129 2.37868 1.87868C2.94129 1.31607 3.70435 1 4.5 1H5.872C6.732 1 7.482 1.586 7.691 2.42L8.796 6.843C8.88554 7.201 8.86746 7.57746 8.74401 7.92522C8.62055 8.27299 8.39723 8.57659 8.102 8.798L6.809 9.768C6.674 9.869 6.645 10.017 6.683 10.12C7.24738 11.6549 8.1386 13.0487 9.29495 14.2051C10.4513 15.3614 11.8451 16.2526 13.38 16.817C13.483 16.855 13.63 16.826 13.732 16.691L14.702 15.398C14.9234 15.1028 15.227 14.8794 15.5748 14.756C15.9225 14.6325 16.299 14.6145 16.657 14.704L21.08 15.809C21.914 16.018 22.5 16.768 22.5 17.629V19C22.5 19.7956 22.1839 20.5587 21.6213 21.1213C21.0587 21.6839 20.2956 22 19.5 22H17.25C8.552 22 1.5 14.948 1.5 6.25V4Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                    <a href="tel:+91 7510 363 333" target="_blank">
+                                                        <span>+91 7510 363 333,
+                                                            <br/>
+                                                            0494 297 3333
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                         viewBox="0 0 24 25" fill="none">
+                                                        <path d="M1.5 8.16992V16.7499C1.5 17.5456 1.81607 18.3086 2.37868 18.8712C2.94129 19.4339 3.70435 19.7499 4.5 19.7499H19.5C20.2956 19.7499 21.0587 19.4339 21.6213 18.8712C22.1839 18.3086 22.5 17.5456 22.5 16.7499V8.16992L13.572 13.6629C13.0992 13.9538 12.5551 14.1078 12 14.1078C11.4449 14.1078 10.9008 13.9538 10.428 13.6629L1.5 8.16992Z"
+                                                              fill="white"/>
+                                                        <path d="M22.5 6.408V6.25C22.5 5.45435 22.1839 4.69129 21.6213 4.12868C21.0587 3.56607 20.2956 3.25 19.5 3.25H4.5C3.70435 3.25 2.94129 3.56607 2.37868 4.12868C1.81607 4.69129 1.5 5.45435 1.5 6.25V6.408L11.214 12.386C11.4504 12.5314 11.7225 12.6084 12 12.6084C12.2775 12.6084 12.5496 12.5314 12.786 12.386L22.5 6.408Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                    <a href="mailto:cpacollegeinfo@gmail.com" target="_blank">
+                                                        <span>cpacollegeinfo@gmail.com</span>
+                                                    </a>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                         viewBox="0 0 24 25" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M11.54 21.851L11.61 21.891L11.638 21.907C11.749 21.967 11.8733 21.9985 11.9995 21.9985C12.1257 21.9985 12.25 21.967 12.361 21.907L12.389 21.892L12.46 21.851C12.8511 21.6191 13.2328 21.3716 13.604 21.109C14.5651 20.4305 15.463 19.6667 16.287 18.827C18.231 16.837 20.25 13.847 20.25 10C20.25 7.81196 19.3808 5.71354 17.8336 4.16637C16.2865 2.61919 14.188 1.75 12 1.75C9.81196 1.75 7.71354 2.61919 6.16637 4.16637C4.61919 5.71354 3.75 7.81196 3.75 10C3.75 13.846 5.77 16.837 7.713 18.827C8.53664 19.6667 9.43427 20.4304 10.395 21.109C10.7666 21.3716 11.1485 21.6191 11.54 21.851ZM12 13C12.7956 13 13.5587 12.6839 14.1213 12.1213C14.6839 11.5587 15 10.7956 15 10C15 9.20435 14.6839 8.44129 14.1213 7.87868C13.5587 7.31607 12.7956 7 12 7C11.2044 7 10.4413 7.31607 9.87868 7.87868C9.31607 8.44129 9 9.20435 9 10C9 10.7956 9.31607 11.5587 9.87868 12.1213C10.4413 12.6839 11.2044 13 12 13Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                    <span>CPA College of Global Studies
+                                                        <br/>
+                                                        Puthanathani,Cheloor, Punnathala
+                                                        <br/>
+                                                        P.O, 676552, Malappuram, Kerala
+                                                    </span>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="foot-item4">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.526103622867!2d75.99978817499236!3d10.923574756462404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b6a8f6680b47%3A0x69d24ec9500367b9!2sCPA%20College%20of%20Global%20Studies%20accredited%20by%20NAAC!5e0!3m2!1sen!2sin!4v1750077829647!5m2!1sen!2sin"
+                                                    width="600" height="326" style="border:0;" allowfullscreen=""
+                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+
+                                        </div>
+
+                                    </section>
+                                    <div class="footer-bottom">© 2025.All Rights Reserved. Designed &amp; Developed by
+                                        &amp;nbsp;
+                                        <a href="https://mincetech.com/">EM.MINCETECH</a>
+                                    </div>
+                                </section>
+
+
+                            </section>
+                            <!--Awards section Script-->
+                            <script>
+                                gsap.registerPlugin(Draggable, InertiaPlugin);
+
+                                var slideDelay = 4;
+                                var slideDuration = 4;
+                                var wrap = true;
+
+                                var slides = document.querySelectorAll(".slide");
+                                var prevButton = document.querySelector("#prevButton");
+                                var nextButton = document.querySelector("#nextButton");
+                                var progressWrap = gsap.utils.wrap(0, 1);
+
+                                var numSlides = slides.length;
+
+                                gsap.set(slides, {
+
+                                xPercent: i =&gt; i * 100
+                                });
+
+                                var wrapX = gsap.utils.wrap(-100, (numSlides - 1) * 100);
+                                var timer = gsap.delayedCall(slideDelay, autoPlay);
+
+                                var animation = gsap.to(slides, {
+                                xPercent: "+=" + (numSlides * 100),
+                                duration: 4,
+                                ease: "none",
+                                paused: true,
+                                repeat: -1,
+                                modifiers: {
+                                xPercent: wrapX
+                                }
+                                });
+
+                                var proxy = document.createElement("div");
+                                var slideAnimation = gsap.to({}, {});
+                                var slideWidth = 0;
+                                var wrapWidth = 0;
+
+                                var draggable = new Draggable(proxy, {
+                                trigger: ".slides-container",
+                                type: "x",
+                                inertia: true,
+                                allowNativeTouchScrolling: true,
+                                onPress: updateDraggable,
+                                onDrag: updateProgress,
+                                onThrowUpdate: updateProgress,
+                                snap: {
+                                x: snapX
+                                }
+                                });
+
+                                resize();
+
+                                window.addEventListener("resize", resize);
+
+
+                                function updateDraggable() {
+                                timer.restart(true);
+                                slideAnimation.kill();
+                                this.update();
+                                }
+
+                                function animateSlides(direction) {
+
+                                timer.restart(true);
+                                slideAnimation.kill();
+                                var x = snapX(gsap.getProperty(proxy, "x") + direction * slideWidth);
+
+                                slideAnimation = gsap.to(proxy, {
+                                x: x,
+                                duration: slideDuration,
+                                onUpdate: updateProgress
+                                });
+                                }
+
+                                function autoPlay() {
+                                if (draggable.isPressed || draggable.isDragging || draggable.isThrowing) {
+                                timer.restart(true);
+                                } else {
+                                animateSlides(-1);
+                                }
+                                }
+
+                                function updateProgress() {
+                                animation.progress(progressWrap(gsap.getProperty(proxy, "x") / wrapWidth));
+                                }
+
+                                function snapX(value) {
+                                let snapped = gsap.utils.snap(slideWidth, value);
+                                return wrap ? snapped : gsap.utils.clamp(-slideWidth * (numSlides - 1), 0, snapped);
+                                }
+
+                                function resize() {
+
+                                var norm = (gsap.getProperty(proxy, "x") / wrapWidth) || 0;
+
+                                slideWidth = slides[0].offsetWidth;
+                                wrapWidth = (slideWidth + 20) * numSlides; // 👈 match the margin
+
+
+                                wrap || draggable.applyBounds({minX: -slideWidth * (numSlides - 1), maxX: 0});
+
+                                gsap.set(proxy, {
+                                x: norm * wrapWidth
+                                });
+
+                                animateSlides(0);
+                                slideAnimation.progress(1);
+                                }
+
+                            </script>
+                            <!--Stats count Script-->
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function () {
+                                const counters = document.querySelectorAll(".stat-box h2");
+                                let hasAnimated = false;
+
+                                function animateCounters() {
+                                counters.forEach(counter =&gt; {
+                                const targetText = counter.textContent.trim();
+                                const target = parseInt(targetText.replace(/[^0-9]/g, ''));
+                                const plus = targetText.includes("+");
+
+                                let count = 0;
+                                const increment = Math.ceil(target / 100);
+                                const duration = 2000;
+                                const stepTime = Math.floor(duration / (target / increment));
+
+                                const updateCounter = () =&gt; {
+                                count += increment;
+                                if (count &gt;= target) {
+                                count = target;
+                                clearInterval(interval);
+                                }
+                                counter.textContent = count.toLocaleString() + (plus ? " +" : "");
+                                };
+
+                                const interval = setInterval(updateCounter, stepTime);
+                                });
+                                }
+
+                                const section = document.querySelector(".counter");
+                                const observer = new IntersectionObserver((entries, observer) =&gt; {
+                                entries.forEach(entry =&gt; {
+                                if (entry.isIntersecting &amp;&amp; !hasAnimated) {
+                                animateCounters();
+                                hasAnimated = true;
+                                observer.unobserve(section);
+                                }
+                                });
+                                }, { threshold: 0.3 });
+
+                                if (section) {
+                                observer.observe(section);
+                                }
+                                });
+                            </script>
+                            <!--Placement Script-->
+                            <script>
+                                const wrapper = document.querySelector(".featured-products-list");
+
+                                const boxes = gsap.utils.toArray(".product-card");
+
+
+                                const loop = horizontalLoop(boxes, { paused: false, draggable: true, repeat: -1 });
+
+                                document
+                                .querySelector(".featured-products-list")
+                                .addEventListener("mouseenter", () =&gt;
+                                loop.pause()
+                                );
+
+                                document
+                                .querySelector(".featured-products-list")
+                                .addEventListener("mouseleave", () =&gt;
+                                loop.play()
+                                );
+
+                                document
+                                .querySelector(".next")
+                                .addEventListener("click", () =&gt;
+                                loop.next({ duration: 0.4, ease: "power1.inOut" })
+                                );
+                                document
+                                .querySelector(".prev")
+                                .addEventListener("click", () =&gt;
+                                loop.previous({ duration: 0.4, ease: "power1.inOut" })
+                                );
+
+
+                                /*
+                                This helper function makes a group of elements animate along the x-axis in a seamless,
+                                responsive loop.
+
+                                Features:
+                                - Uses xPercent so that even if the widths change (like if the window gets resized), it
+                                should still work in most cases.
+                                - When each item animates to the left or right enough, it will loop back to the other
+                                side
+                                - Optionally pass in a config object with values like draggable: true, speed (default:
+                                1, which travels at roughly 100 pixels per second), paused (boolean), repeat, reversed,
+                                and paddingRight.
+                                - The returned timeline will have the following methods added to it:
+                                - next() - animates to the next element using a timeline.tweenTo() which it returns. You
+                                can pass in a vars object to control duration, easing, etc.
+                                - previous() - animates to the previous element using a timeline.tweenTo() which it
+                                returns. You can pass in a vars object to control duration, easing, etc.
+                                - toIndex() - pass in a zero-based index value of the element that it should animate to,
+                                and optionally pass in a vars object to control duration, easing, etc. Always goes in
+                                the shortest direction
+                                - current() - returns the current index (if an animation is in-progress, it reflects the
+                                final index)
+                                - times - an Array of the times on the timeline where each element hits the "starting"
+                                spot. There's also a label added accordingly, so "label1" is when the 2nd element
+                                reaches the start.
+                                */
+                                function horizontalLoop(items, config) {
+                                items = gsap.utils.toArray(items);
+                                config = config || {};
+                                let tl = gsap.timeline({
+                                repeat: config.repeat,
+                                paused: config.paused,
+                                defaults: { ease: "none" },
+                                onReverseComplete: () =&gt; tl.totalTime(tl.rawTime() + tl.duration() * 100)
+                                }),
+                                length = items.length,
+                                startX = items[0].offsetLeft - 20,
+                                times = [],
+                                widths = [],
+                                xPercents = [],
+                                curIndex = 0,
+                                pixelsPerSecond = (config.speed || 1) * 100,
+                                snap = config.snap === false ? (v) =&gt; v : gsap.utils.snap(config.snap || 1), // some
+                                browsers shift by a pixel to accommodate flex layouts, so for example if width is 20%
+                                the first element's width might be 242px, and the next 243px, alternating back and
+                                forth. So we snap to 5 percentage points to make things look more natural
+                                populateWidths = () =&gt;
+                                items.forEach((el, i) =&gt; {
+                                widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
+                                xPercents[i] = snap(
+                                (parseFloat(gsap.getProperty(el, "x", "px")) / widths[i]) * 100 +
+                                gsap.getProperty(el, "xPercent")
+                                );
+                                }),
+                                getTotalWidth = () =&gt;
+                                items[length - 1].offsetLeft +
+                                (xPercents[length - 1] / 100) * widths[length - 1] -
+                                startX +
+                                items[length - 1].offsetWidth *
+                                gsap.getProperty(items[length - 1], "scaleX") +
+                                (parseFloat(config.paddingRight) || 0),
+                                totalWidth,
+                                curX,
+                                distanceToStart,
+                                distanceToLoop,
+                                item,
+                                i;
+                                populateWidths();
+                                gsap.set(items, {
+                                // convert "x" to "xPercent" to make things responsive, and populate the
+                                widths/xPercents Arrays to make lookups faster.
+                                xPercent: (i) =&gt; xPercents[i]
+                                });
+                                gsap.set(items, { x: 0 });
+                                totalWidth = getTotalWidth();
+                                for (i = 0; i &lt; length; i++) {
+                                item = items[i];
+                                curX = (xPercents[i] / 100) * widths[i];
+                                distanceToStart = item.offsetLeft + curX - startX;
+                                distanceToLoop =
+                                distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+                                tl.to(
+                                item,
+                                {
+                                xPercent: snap(((curX - distanceToLoop) / widths[i]) * 100),
+                                duration: distanceToLoop / pixelsPerSecond
+                                },
+                                0
+                                )
+                                .fromTo(
+                                item,
+                                {
+                                xPercent: snap(
+                                ((curX - distanceToLoop + totalWidth) / widths[i]) * 100
+                                )
+                                },
+                                {
+                                xPercent: xPercents[i],
+                                duration:
+                                (curX - distanceToLoop + totalWidth - curX) / pixelsPerSecond,
+                                immediateRender: false
+                                },
+                                distanceToLoop / pixelsPerSecond
+                                )
+                                .add("label" + i, distanceToStart / pixelsPerSecond);
+                                times[i] = distanceToStart / pixelsPerSecond;
+                                }
+                                function toIndex(index, vars) {
+                                vars = vars || {};
+                                Math.abs(index - curIndex) &gt; length / 2 &amp;&amp;
+                                (index += index &gt; curIndex ? -length : length); // always go in the shortest
+                                direction
+                                let newIndex = gsap.utils.wrap(0, length, index),
+                                time = times[newIndex];
+                                if (time &gt; tl.time() !== index &gt; curIndex) {
+                                // if we're wrapping the timeline's playhead, make the proper adjustments
+                                vars.modifiers = { time: gsap.utils.wrap(0, tl.duration()) };
+                                time += tl.duration() * (index &gt; curIndex ? 1 : -1);
+                                }
+                                curIndex = newIndex;
+                                vars.overwrite = true;
+                                return tl.tweenTo(time, vars);
+                                }
+                                tl.next = (vars) =&gt; {
+                                toIndex(curIndex + 1, vars);
+                                };
+                                tl.previous = (vars) =&gt; {
+                                toIndex(curIndex - 1, vars);
+                                };
+                                tl.current = () =&gt; curIndex;
+                                tl.toIndex = (index, vars) =&gt; toIndex(index, vars);
+                                tl.updateIndex = () =&gt; (curIndex = Math.round(tl.progress() * items.length));
+                                tl.times = times;
+                                tl.progress(1, true).progress(0, true); // pre-render for performance
+                                if (config.reversed) {
+                                tl.vars.onReverseComplete();
+                                tl.reverse();
+                                }
+                                if (config.draggable &amp;&amp; typeof Draggable === "function") {
+                                let proxy = document.createElement("div"),
+                                wrap = gsap.utils.wrap(0, 1),
+                                ratio,
+                                startProgress,
+                                draggable,
+                                dragSnap,
+                                roundFactor,
+                                align = () =&gt;
+                                tl.progress(
+                                wrap(startProgress + (draggable.startX - draggable.x) * ratio)
+                                ),
+                                syncIndex = () =&gt; tl.updateIndex();
+                                typeof InertiaPlugin === "undefined" &amp;&amp;
+                                console.warn(
+                                "InertiaPlugin required for momentum-based scrolling and snapping.
+                                https://greensock.com/club"
+                                );
+                                draggable = Draggable.create(proxy, {
+                                trigger: 'items[0].parentNode',
+                                type: "x",
+                                onPress() {
+                                startProgress = tl.progress();
+                                tl.progress(0);
+                                populateWidths();
+                                totalWidth = getTotalWidth();
+                                ratio = 1 / totalWidth;
+                                dragSnap = totalWidth / items.length;
+                                roundFactor = Math.pow(
+                                10,
+                                ((dragSnap + "").split(".")[1] || "").length
+                                );
+                                tl.progress(startProgress);
+                                },
+                                onDrag: align,
+                                onThrowUpdate: align,
+                                inertia: true,
+                                snap: (value) =&gt; {
+                                let n =
+                                Math.round(parseFloat(value) / dragSnap) * dragSnap * roundFactor;
+                                return (n - (n % 1)) / roundFactor;
+                                },
+                                onRelease: syncIndex,
+                                onThrowComplete: () =&gt;
+                                gsap.set(proxy, { x: 0 }) &amp;&amp; syncIndex() &amp;&amp; setMiddle(tl.current() + 2)
+                                //Find the middle item and toggle Class
+                                })[0];
+
+                                tl.draggable = draggable;
+                                }
+
+                                return tl;
+                                }
+
+                            </script>
+                            <!--Gallery Script-->
+                            <script>
+                                const wrapping = document.querySelector(".wrapping");
+                                const gallerybox = gsap.utils.toArray(".box");
+
+                                gsap.registerPlugin(Draggable,InertiaPlugin);
+
+                                const looper = horizontalLoop(gallerybox, {
+                                repeat: -1,
+                                draggable: true,
+                                speed: 0.6
+                                });
+
+                                document
+                                .querySelector(".wrapping")
+                                .addEventListener("mouseenter", () =&gt;
+                                looper.pause()
+                                );
+
+                                document
+                                .querySelector(".wrapping")
+                                .addEventListener("mouseleave", () =&gt;
+                                looper.play()
+                                );
+
+                                document
+                                .querySelector(".next")
+                                .addEventListener("click", () =&gt;
+                                looper.next({ duration: 0.6, ease: "power1.inOut" })
+                                );
+                                document
+                                .querySelector(".prev")
+                                .addEventListener("click", () =&gt; {
+                                looper.previous({ duration: 0.6, ease: "power1.inOut" });
+                                console.log(looper.current())}
+                                );
+
+
+                                // This helper function makes a group of elements animate along the x-axis in a
+                                seamless, responsive loop.
+
+                                // Features:
+                                // - Uses xPercent so that even if the widths change (like if the window gets resized),
+                                it should still work in most cases.
+                                // - When each item animates to the left or right enough, it will loop back to the other
+                                side
+                                // - Optionally pass in a config object with values like draggable: true, center: true,
+                                speed (default: 1, which travels at roughly 100 pixels per second), paused (boolean),
+                                repeat, reversed, and paddingRight.
+                                // - The returned timeline will have the following methods added to it:
+                                // - next() - animates to the next element using a timeline.tweenTo() which it returns.
+                                You can pass in a vars object to control duration, easing, etc.
+                                // - previous() - animates to the previous element using a timeline.tweenTo() which it
+                                returns. You can pass in a vars object to control duration, easing, etc.
+                                // - toIndex() - pass in a zero-based index value of the element that it should animate
+                                to, and optionally pass in a vars object to control duration, easing, etc. Always goes
+                                in the shortest direction
+                                // - current() - returns the current index (if an animation is in-progress, it reflects
+                                the final index)
+                                // - times - an Array of the times on the timeline where each element hits the
+                                "starting" spot.
+
+                                function horizontalLoop(items, config) {
+                                items = gsap.utils.toArray(items);
+                                config = config || {};
+                                let onChange = config.onChange,
+                                lastIndex = 0,
+                                tl = gsap.timeline({repeat: config.repeat, onUpdate: onChange &amp;&amp; function() {
+                                let i = tl.closestIndex();
+                                if (lastIndex !== i) {
+                                lastIndex = i;
+                                onChange(items[i], i);
+                                }
+                                }, paused: config.paused, defaults: {ease: "none"}, onReverseComplete: () =&gt;
+                                tl.totalTime(tl.rawTime() + tl.duration() * 100)}),
+                                length = items.length,
+                                startX = items[0].offsetLeft - 32,
+                                times = [],
+                                widths = [],
+                                spaceBefore = [],
+                                xPercents = [],
+                                curIndex = 0,
+                                indexIsDirty = false,
+                                center = config.center,
+                                pixelsPerSecond = (config.speed || 1) * 100,
+                                snap = config.snap === false ? v =&gt; v : gsap.utils.snap(config.snap || 1), // some
+                                browsers shift by a pixel to accommodate flex layouts, so for example if width is 20%
+                                the first element's width might be 242px, and the next 243px, alternating back and
+                                forth. So we snap to 5 percentage points to make things look more natural
+                                timeOffset = 0,
+                                container = center === true ? items[0].parentNode : gsap.utils.toArray(center)[0] ||
+                                items[0].parentNode,
+                                totalWidth,
+                                getTotalWidth = () =&gt; items[length-1].offsetLeft + xPercents[length-1] / 100 *
+                                widths[length-1] - startX + spaceBefore[0] + items[length-1].offsetWidth *
+                                gsap.getProperty(items[length-1], "scaleX") + (parseFloat(config.paddingRight) || 0),
+                                populateWidths = () =&gt; {
+                                let b1 = container.getBoundingClientRect(), b2;
+                                items.forEach((el, i) =&gt; {
+                                widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
+                                xPercents[i] = snap(parseFloat(gsap.getProperty(el, "x", "px")) / widths[i] * 100 +
+                                gsap.getProperty(el, "xPercent"));
+                                b2 = el.getBoundingClientRect();
+                                spaceBefore[i] = b2.left - (i ? b1.right : b1.left);
+                                b1 = b2;
+                                });
+                                gsap.set(items, { // convert "x" to "xPercent" to make things responsive, and populate
+                                the widths/xPercents Arrays to make lookups faster.
+                                xPercent: i =&gt; xPercents[i]
+                                });
+                                totalWidth = getTotalWidth();
+                                },
+                                timeWrap,
+                                populateOffsets = () =&gt; {
+                                timeOffset = center ? tl.duration() * (container.offsetWidth / 2) / totalWidth : 0;
+                                center &amp;&amp; times.forEach((t, i) =&gt; {
+                                times[i] = timeWrap(tl.labels["label" + i] + tl.duration() * widths[i] / 2 / totalWidth
+                                - timeOffset);
+                                });
+                                },
+                                getClosest = (values, value, wrap) =&gt; {
+                                let i = values.length,
+                                closest = 1e10,
+                                index = 0, d;
+                                while (i--) {
+                                d = Math.abs(values[i] - value);
+                                if (d &gt; wrap / 2) {
+                                d = wrap - d;
+                                }
+                                if (d &lt; closest) {
+                                closest = d;
+                                index = i;
+                                }
+                                }
+                                return index;
+                                },
+                                populateTimeline = () =&gt; {
+                                let i, item, curX, distanceToStart, distanceToLoop;
+                                tl.clear();
+                                for (i = 0; i &lt; length; i++) {
+                                item = items[i];
+                                curX = xPercents[i] / 100 * widths[i];
+                                distanceToStart = item.offsetLeft + curX - startX + spaceBefore[0];
+                                distanceToLoop = distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+                                tl.to(item, {xPercent: snap((curX - distanceToLoop) / widths[i] * 100), duration:
+                                distanceToLoop / pixelsPerSecond}, 0)
+                                .fromTo(item, {xPercent: snap((curX - distanceToLoop + totalWidth) / widths[i] * 100)},
+                                {xPercent: xPercents[i], duration: (curX - distanceToLoop + totalWidth - curX) /
+                                pixelsPerSecond, immediateRender: false}, distanceToLoop / pixelsPerSecond)
+                                .add("label" + i, distanceToStart / pixelsPerSecond);
+                                times[i] = distanceToStart / pixelsPerSecond;
+                                }
+                                timeWrap = gsap.utils.wrap(0, tl.duration());
+                                },
+                                refresh = (deep) =&gt; {
+                                let progress = tl.progress();
+                                tl.progress(0, true);
+                                populateWidths();
+                                deep &amp;&amp; populateTimeline();
+                                populateOffsets();
+                                deep &amp;&amp; tl.draggable ? tl.time(times[curIndex], true) : tl.progress(progress,
+                                true);
+                                },
+                                proxy;
+                                gsap.set(items, {x: 0});
+                                populateWidths();
+                                populateTimeline();
+                                populateOffsets();
+                                window.addEventListener("resize", () =&gt; refresh(true));
+                                function toIndex(index, vars) {
+                                vars = vars || {};
+                                (Math.abs(index - curIndex) &gt; length / 2) &amp;&amp; (index += index &gt; curIndex ?
+                                -length : length); // always go in the shortest direction
+                                let newIndex = gsap.utils.wrap(0, length, index),
+                                time = times[newIndex];
+                                if (time &gt; tl.time() !== index &gt; curIndex &amp;&amp; index !== curIndex) { // if
+                                we're wrapping the timeline's playhead, make the proper adjustments
+                                time += tl.duration() * (index &gt; curIndex ? 1 : -1);
+                                }
+                                if (time &lt; 0 || time &gt; tl.duration()) {
+                                vars.modifiers = {time: timeWrap};
+                                }
+                                curIndex = newIndex;
+                                vars.overwrite = true;
+                                gsap.killTweensOf(proxy);
+                                return vars.duration === 0 ? tl.time(timeWrap(time)) : tl.tweenTo(time, vars);
+                                }
+                                tl.toIndex = (index, vars) =&gt; toIndex(index, vars);
+                                tl.closestIndex = setCurrent =&gt; {
+                                let index = getClosest(times, tl.time(), tl.duration());
+                                if (setCurrent) {
+                                curIndex = index;
+                                indexIsDirty = false;
+                                }
+                                return index;
+                                };
+                                tl.current = () =&gt; indexIsDirty ? tl.closestIndex(true) : curIndex;
+                                tl.next = vars =&gt; toIndex(tl.current()+1, vars);
+                                tl.previous = vars =&gt; toIndex(tl.current()-1, vars);
+                                tl.times = times;
+                                tl.progress(1, true).progress(0, true); // pre-render for performance
+                                if (config.reversed) {
+                                tl.vars.onReverseComplete();
+                                tl.reverse();
+                                }
+                                if (config.draggable &amp;&amp; typeof(Draggable) === "function") {
+                                proxy = document.createElement("div")
+                                let wrap = gsap.utils.wrap(0, 1),
+                                ratio, startProgress, draggable, dragSnap, lastSnap, initChangeX,
+                                align = () =&gt; tl.progress(wrap(startProgress + (draggable.startX - draggable.x) *
+                                ratio)),
+                                syncIndex = () =&gt; tl.closestIndex(true);
+                                typeof(InertiaPlugin) === "undefined" &amp;&amp; console.warn("InertiaPlugin required
+                                for momentum-based scrolling and snapping. https://greensock.com/club");
+                                draggable = Draggable.create(proxy, {
+                                trigger: items[0].parentNode,
+                                type: "x",
+                                onPressInit() {
+                                let x = this.x;
+                                gsap.killTweensOf(tl);
+                                startProgress = tl.progress();
+                                refresh();
+                                ratio = 1 / totalWidth;
+                                initChangeX = (startProgress / -ratio) - x;
+                                gsap.set(proxy, {x: startProgress / -ratio});
+                                },
+                                onDrag: align,
+                                onThrowUpdate: align,
+                                overshootTolerance: 0,
+                                inertia: true,
+                                snap(value) {
+                                //note: if the user presses and releases in the middle of a throw, due to the sudden
+                                correction of proxy.x in the onPressInit(), the velocity could be very large, throwing
+                                off the snap. So sense that condition and adjust for it. We also need to set
+                                overshootTolerance to 0 to prevent the inertia from causing it to shoot past and come
+                                back
+                                if (Math.abs(startProgress / -ratio - this.x) &lt; 10) {
+                                return lastSnap + initChangeX
+                                }
+                                let time = -(value * ratio) * tl.duration(),
+                                wrappedTime = timeWrap(time),
+                                snapTime = times[getClosest(times, wrappedTime, tl.duration())],
+                                dif = snapTime - wrappedTime;
+                                Math.abs(dif) &gt; tl.duration() / 2 &amp;&amp; (dif += dif &lt; 0 ? tl.duration() :
+                                -tl.duration());
+                                lastSnap = (time + dif) / tl.duration() / -ratio;
+                                return lastSnap;
+                                },
+                                onRelease() {
+                                syncIndex();
+                                draggable.isThrowing &amp;&amp; (indexIsDirty = true);
+                                },
+                                onThrowComplete: syncIndex
+                                })[0];
+                                tl.draggable = draggable;
+                                }
+                                tl.closestIndex(true);
+                                lastIndex = curIndex;
+                                onChange &amp;&amp; onChange(items[curIndex], curIndex);
+                                return tl;
+                                }
+                            </script>
+                            <!--voice Script-->
+                            <script>
+                                const wrappers = document.querySelector(".wrappers");
+                                const voicebox = gsap.utils.toArray(".voicebox");
+
+                                gsap.registerPlugin(Draggable,InertiaPlugin);
+
+                                const looping = horizontalLoop(voicebox, {
+                                repeat: -1,
+                                draggable: true,
+                                speed: 0.4
+                                });
+
+                                document
+                                .querySelector(".wrappers")
+                                .addEventListener("mouseenter", () =&gt;
+                                looping.pause()
+                                );
+
+                                document
+                                .querySelector(".wrappers")
+                                .addEventListener("mouseleave", () =&gt;
+                                looping.play()
+                                );
+
+                                document
+                                .querySelector(".next-move")
+                                .addEventListener("click", () =&gt;
+                                looping.next({ duration: 0.4, ease: "power1.inOut" })
+                                );
+                                document
+                                .querySelector(".prev-back")
+                                .addEventListener("click", () =&gt; {
+                                looping.previous({ duration: 0.4, ease: "power1.inOut" });
+                                console.log(looping.current())}
+                                );
+
+
+                                // This helper function makes a group of elements animate along the x-axis in a
+                                seamless, responsive loop.
+
+                                // Features:
+                                // - Uses xPercent so that even if the widths change (like if the window gets resized),
+                                it should still work in most cases.
+                                // - When each item animates to the left or right enough, it will loop back to the other
+                                side
+                                // - Optionally pass in a config object with values like draggable: true, center: true,
+                                speed (default: 1, which travels at roughly 100 pixels per second), paused (boolean),
+                                repeat, reversed, and paddingRight.
+                                // - The returned timeline will have the following methods added to it:
+                                // - next() - animates to the next element using a timeline.tweenTo() which it returns.
+                                You can pass in a vars object to control duration, easing, etc.
+                                // - previous() - animates to the previous element using a timeline.tweenTo() which it
+                                returns. You can pass in a vars object to control duration, easing, etc.
+                                // - toIndex() - pass in a zero-based index value of the element that it should animate
+                                to, and optionally pass in a vars object to control duration, easing, etc. Always goes
+                                in the shortest direction
+                                // - current() - returns the current index (if an animation is in-progress, it reflects
+                                the final index)
+                                // - times - an Array of the times on the timeline where each element hits the
+                                "starting" spot.
+
+                                function horizontalLoop(items, config) {
+                                items = gsap.utils.toArray(items);
+                                config = config || {};
+                                let onChange = config.onChange,
+                                lastIndex = 0,
+                                tl = gsap.timeline({repeat: config.repeat, onUpdate: onChange &amp;&amp; function() {
+                                let i = tl.closestIndex();
+                                if (lastIndex !== i) {
+                                lastIndex = i;
+                                onChange(items[i], i);
+                                }
+                                }, paused: config.paused, defaults: {ease: "none"}, onReverseComplete: () =&gt;
+                                tl.totalTime(tl.rawTime() + tl.duration() * 100)}),
+                                length = items.length,
+                                startX = items[0].offsetLeft - 32,
+                                times = [],
+                                widths = [],
+                                spaceBefore = [],
+                                xPercents = [],
+                                curIndex = 0,
+                                indexIsDirty = false,
+                                center = config.center,
+                                pixelsPerSecond = (config.speed || 1) * 100,
+                                snap = config.snap === false ? v =&gt; v : gsap.utils.snap(config.snap || 1), // some
+                                browsers shift by a pixel to accommodate flex layouts, so for example if width is 20%
+                                the first element's width might be 242px, and the next 243px, alternating back and
+                                forth. So we snap to 5 percentage points to make things look more natural
+                                timeOffset = 0,
+                                container = center === true ? items[0].parentNode : gsap.utils.toArray(center)[0] ||
+                                items[0].parentNode,
+                                totalWidth,
+                                getTotalWidth = () =&gt; items[length-1].offsetLeft + xPercents[length-1] / 100 *
+                                widths[length-1] - startX + spaceBefore[0] + items[length-1].offsetWidth *
+                                gsap.getProperty(items[length-1], "scaleX") + (parseFloat(config.paddingRight) || 0),
+                                populateWidths = () =&gt; {
+                                let b1 = container.getBoundingClientRect(), b2;
+                                items.forEach((el, i) =&gt; {
+                                widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
+                                xPercents[i] = snap(parseFloat(gsap.getProperty(el, "x", "px")) / widths[i] * 100 +
+                                gsap.getProperty(el, "xPercent"));
+                                b2 = el.getBoundingClientRect();
+                                spaceBefore[i] = b2.left - (i ? b1.right : b1.left);
+                                b1 = b2;
+                                });
+                                gsap.set(items, { // convert "x" to "xPercent" to make things responsive, and populate
+                                the widths/xPercents Arrays to make lookups faster.
+                                xPercent: i =&gt; xPercents[i]
+                                });
+                                totalWidth = getTotalWidth();
+                                },
+                                timeWrap,
+                                populateOffsets = () =&gt; {
+                                timeOffset = center ? tl.duration() * (container.offsetWidth / 2) / totalWidth : 0;
+                                center &amp;&amp; times.forEach((t, i) =&gt; {
+                                times[i] = timeWrap(tl.labels["label" + i] + tl.duration() * widths[i] / 2 / totalWidth
+                                - timeOffset);
+                                });
+                                },
+                                getClosest = (values, value, wrap) =&gt; {
+                                let i = values.length,
+                                closest = 1e10,
+                                index = 0, d;
+                                while (i--) {
+                                d = Math.abs(values[i] - value);
+                                if (d &gt; wrap / 2) {
+                                d = wrap - d;
+                                }
+                                if (d &lt; closest) {
+                                closest = d;
+                                index = i;
+                                }
+                                }
+                                return index;
+                                },
+                                populateTimeline = () =&gt; {
+                                let i, item, curX, distanceToStart, distanceToLoop;
+                                tl.clear();
+                                for (i = 0; i &lt; length; i++) {
+                                item = items[i];
+                                curX = xPercents[i] / 100 * widths[i];
+                                distanceToStart = item.offsetLeft + curX - startX + spaceBefore[0];
+                                distanceToLoop = distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+                                tl.to(item, {xPercent: snap((curX - distanceToLoop) / widths[i] * 100), duration:
+                                distanceToLoop / pixelsPerSecond}, 0)
+                                .fromTo(item, {xPercent: snap((curX - distanceToLoop + totalWidth) / widths[i] * 100)},
+                                {xPercent: xPercents[i], duration: (curX - distanceToLoop + totalWidth - curX) /
+                                pixelsPerSecond, immediateRender: false}, distanceToLoop / pixelsPerSecond)
+                                .add("label" + i, distanceToStart / pixelsPerSecond);
+                                times[i] = distanceToStart / pixelsPerSecond;
+                                }
+                                timeWrap = gsap.utils.wrap(0, tl.duration());
+                                },
+                                refresh = (deep) =&gt; {
+                                let progress = tl.progress();
+                                tl.progress(0, true);
+                                populateWidths();
+                                deep &amp;&amp; populateTimeline();
+                                populateOffsets();
+                                deep &amp;&amp; tl.draggable ? tl.time(times[curIndex], true) : tl.progress(progress,
+                                true);
+                                },
+                                proxy;
+                                gsap.set(items, {x: 0});
+                                populateWidths();
+                                populateTimeline();
+                                populateOffsets();
+                                window.addEventListener("resize", () =&gt; refresh(true));
+                                function toIndex(index, vars) {
+                                vars = vars || {};
+                                (Math.abs(index - curIndex) &gt; length / 2) &amp;&amp; (index += index &gt; curIndex ?
+                                -length : length); // always go in the shortest direction
+                                let newIndex = gsap.utils.wrap(0, length, index),
+                                time = times[newIndex];
+                                if (time &gt; tl.time() !== index &gt; curIndex &amp;&amp; index !== curIndex) { // if
+                                we're wrapping the timeline's playhead, make the proper adjustments
+                                time += tl.duration() * (index &gt; curIndex ? 1 : -1);
+                                }
+                                if (time &lt; 0 || time &gt; tl.duration()) {
+                                vars.modifiers = {time: timeWrap};
+                                }
+                                curIndex = newIndex;
+                                vars.overwrite = true;
+                                gsap.killTweensOf(proxy);
+                                return vars.duration === 0 ? tl.time(timeWrap(time)) : tl.tweenTo(time, vars);
+                                }
+                                tl.toIndex = (index, vars) =&gt; toIndex(index, vars);
+                                tl.closestIndex = setCurrent =&gt; {
+                                let index = getClosest(times, tl.time(), tl.duration());
+                                if (setCurrent) {
+                                curIndex = index;
+                                indexIsDirty = false;
+                                }
+                                return index;
+                                };
+                                tl.current = () =&gt; indexIsDirty ? tl.closestIndex(true) : curIndex;
+                                tl.next = vars =&gt; toIndex(tl.current()+1, vars);
+                                tl.previous = vars =&gt; toIndex(tl.current()-1, vars);
+                                tl.times = times;
+                                tl.progress(1, true).progress(0, true); // pre-render for performance
+                                if (config.reversed) {
+                                tl.vars.onReverseComplete();
+                                tl.reverse();
+                                }
+                                if (config.draggable &amp;&amp; typeof(Draggable) === "function") {
+                                proxy = document.createElement("div")
+                                let wrap = gsap.utils.wrap(0, 1),
+                                ratio, startProgress, draggable, dragSnap, lastSnap, initChangeX,
+                                align = () =&gt; tl.progress(wrap(startProgress + (draggable.startX - draggable.x) *
+                                ratio)),
+                                syncIndex = () =&gt; tl.closestIndex(true);
+                                typeof(InertiaPlugin) === "undefined" &amp;&amp; console.warn("InertiaPlugin required
+                                for momentum-based scrolling and snapping. https://greensock.com/club");
+                                draggable = Draggable.create(proxy, {
+                                trigger: items[0].parentNode,
+                                type: "x",
+                                onPressInit() {
+                                let x = this.x;
+                                gsap.killTweensOf(tl);
+                                startProgress = tl.progress();
+                                refresh();
+                                ratio = 1 / totalWidth;
+                                initChangeX = (startProgress / -ratio) - x;
+                                gsap.set(proxy, {x: startProgress / -ratio});
+                                },
+                                onDrag: align,
+                                onThrowUpdate: align,
+                                overshootTolerance: 0,
+                                inertia: true,
+                                snap(value) {
+                                //note: if the user presses and releases in the middle of a throw, due to the sudden
+                                correction of proxy.x in the onPressInit(), the velocity could be very large, throwing
+                                off the snap. So sense that condition and adjust for it. We also need to set
+                                overshootTolerance to 0 to prevent the inertia from causing it to shoot past and come
+                                back
+                                if (Math.abs(startProgress / -ratio - this.x) &lt; 10) {
+                                return lastSnap + initChangeX
+                                }
+                                let time = -(value * ratio) * tl.duration(),
+                                wrappedTime = timeWrap(time),
+                                snapTime = times[getClosest(times, wrappedTime, tl.duration())],
+                                dif = snapTime - wrappedTime;
+                                Math.abs(dif) &gt; tl.duration() / 2 &amp;&amp; (dif += dif &lt; 0 ? tl.duration() :
+                                -tl.duration());
+                                lastSnap = (time + dif) / tl.duration() / -ratio;
+                                return lastSnap;
+                                },
+                                onRelease() {
+                                syncIndex();
+                                draggable.isThrowing &amp;&amp; (indexIsDirty = true);
+                                },
+                                onThrowComplete: syncIndex
+                                })[0];
+                                tl.draggable = draggable;
+                                }
+                                tl.closestIndex(true);
+                                lastIndex = curIndex;
+                                onChange &amp;&amp; onChange(items[curIndex], curIndex);
+                                return tl;
+                                }
+                            </script>
+
+
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="landing_template_page" model="website.page">
+            <field name="url">/cpa</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="landing_template"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

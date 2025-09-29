@@ -1,0 +1,156 @@
+<odoo>
+    <data>
+        <record id="alumni_associates" model="ir.ui.view">
+            <field name="name">alumni_associates</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.alumni_associates</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.alumni_associates_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class="col-md-9 pb16">
+                                            <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                Alumni Association
+                                            </h2>
+                                            <div class="content_text" style="text-align:justify;padding: 0;">
+                                                College is devoted to cherishing the relationship with our family
+                                                members by
+                                                constant touchups, interactions, and friendly get-together. Alumni of
+                                                the
+                                                college envision fostering friendly cooperation between present and old
+                                                generation of our students thereby enhancing the betterment of the
+                                                institution.
+                                                Alumni associations of our college arrange to get together yearly on a
+                                                departmental basis, where the members of MES Kalladi family gather
+                                                together
+                                                offering their vibrant involvement in all spheres of college activities.
+                                                Annual
+                                                alumni meet conducted on 2017 December 15 approved the bye-law regarding
+                                                the
+                                                registration of Alumni associations.
+                                                <br/>
+                                                <br/>
+                                                The general alumni (MES KALLADI COLLEGE ALUMNI ASSOCIATION) is
+                                                registered
+                                                under
+                                                the Societies Act of 1860 with No. PKD CA/101/2019, and is committed to
+                                                renewing
+                                                the registration as per rules. Annual alumni meet are conducted and
+                                                office
+                                                bearers of respective academic years are selected. Notifications
+                                                regarding
+                                                the
+                                                Alumni meets are published in the leading newspapers as well as the
+                                                concerned
+                                                faculties in-charge used to send personal invitations to the alumni
+                                                members
+                                                using the possibilities of Social Media.
+                                                <br/>
+                                                <br/>
+                                                The get together offers their valuable bits of advice and contributions
+                                                on
+                                                infrastructure, academic activities and overall development of the
+                                                college.
+                                                Alumni associations are dynamic in Kalladi premises where the warmth of
+                                                togetherness is enjoyed and assured.
+                                                <br/>
+                                                <br/>
+                                                The college conducts departmental level alumni meets, family
+                                                get-together
+                                                and
+                                                annual family meets. Executive meetings of Departmental Alumni’s are
+                                                conducted
+                                                every year to ensure coordination and proper conduct of alumni
+                                                gatherings.
+                                                Every
+                                                department keeps a separate register of their alumni members where their
+                                                permanent address, phone number, and professional details are entered
+                                                and
+                                                the
+                                                departments ensure to update the details every year. Alumni committee of
+                                                each
+                                                department is constituted under the charge of department head where
+                                                present
+                                                faculties, retired faculties and the alumni member of nearby locale are
+                                                members.
+                                                The college is committed towards the valuable feedback of alumni members
+                                                which
+                                                are effectively channelized for the better functioning and development
+                                                of
+                                                the
+                                                college.
+                                                <br/>
+                                                <br/>
+                                                All retired staffs are invited to the alumni gatherings and departments
+                                                follow
+                                                the practice of observing a day where a space of interaction with former
+                                                faculties and present students of the college is offered. Financial and
+                                                placement supports are given by alumni members to the needy students of
+                                                the
+                                                college. The Alumni of the departments maintain charitable fund with the
+                                                aim
+                                                of
+                                                supporting the old students of the college. Alumni also insist on
+                                                offering a
+                                                cash prize for the UG and PG toppers of the Department. The Alumni
+                                                association
+                                                of the department provides scholarships, placement training, and various
+                                                student
+                                                support programs. Alumni sponsor books, uniforms and tuition fees to the
+                                                economically backward students of the college.
+                                                <br/>
+                                                <br/>
+                                                Alumni’s of each department follows the practice of collecting feedbacks
+                                                and
+                                                suggestions from each member where better conduct is assured in the
+                                                coming
+                                                years. Alumni of the college actively participate in curricular and
+                                                co-curricular betterments of the institution. College alumni is having
+                                                its
+                                                overseas branches in the United Arab Emirates, Qatar, and the Kingdom of
+                                                Saudi
+                                                Arabia.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h2 style="padding:40px 0;text-align:center;font-size:20px;font-weight: 600;">
+                                                Registration Certificate
+                                            </h2>
+                                            <div class="certificate">
+                                                <img src="mes_college/static/img/alumni-certificate.jpg"
+                                                     class="img-fluid"/>
+                                            </div>
+                                            <h2 style="padding:40px 0 10px;text-align:center;font-size:20px;font-weight: 600;">
+                                                Reports
+                                            </h2>
+                                            <section class="naac_link" id="alumni_repo">
+                                                <a href="/res-chemistry" class="readmore" id="naac_link">
+                                                    Report Heading
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title="" title=""
+                                                          aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                        Alumni Activities
+                                    </h2>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="alumni_associates_page" model="website.page">
+            <field name="url">/alumni_associate</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="alumni_associates"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

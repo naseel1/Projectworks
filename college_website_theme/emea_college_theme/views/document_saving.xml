@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <record id="document_saving" model="ir.ui.view">
+            <field name="name">Document Saving</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.document_saving</field>
+            <field name="arch" type="xml">
+                <t name="Academic Calendar" t-name="emea_college_theme.document_saving_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <section class="d-flex o_colored_level margin_30"
+                                         style="background-image: none;">
+                                    <div class="col-md-4 programme_link">Documents
+                                    </div>
+                                    <span class="readmore" id="view">View
+                                        <a href="/web/content/959?unique=22fee4ebf9deb7746f635aabd471237938f9d598"
+                                           data-mimetype="application/pdf" target="_blank"
+                                           class="o_image seminar" scontenteditable="false"/>
+                                    </span>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="document_saving_page" model="website.page">
+            <field name="url">/document_saving</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="document_saving"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

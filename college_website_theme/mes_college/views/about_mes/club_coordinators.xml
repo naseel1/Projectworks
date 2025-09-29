@@ -1,0 +1,641 @@
+<odoo>
+    <data>
+        <record id="club_coordinators_mes" model="ir.ui.view">
+            <field name="name">Club Coordinators</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.club_coordinators_mes</field>
+            <field name="arch" type="xml">
+                <t name="Club Coordinators" t-name="mes_college.club_coordinators_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <h2 class="main-head" id="title">Club Coordinators</h2>
+                                <div class=" pt32 pb32">
+                                    <table class="milestone" cellspacing="0" cellpadding="7">
+                                        <tbody>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%; height: 48px; text-align: center;">
+                                                    <strong>Title of the Cell</strong>
+                                                </td>
+                                                <td style="width: 14.6666%; height: 48px; text-align: center;">
+                                                    <strong>Coordinator/ Convener</strong>
+                                                </td>
+                                                <td style="width: 58.0606%; height: 48px; text-align: center;">
+                                                    <strong>Assistant / Joint. / Member</strong>
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 168px;">
+                                                <td style="width: 26.0606%;">Discipline Committee</td>
+                                                <td style="width: 14.6666%;">S. Lt. Dr. TK Jaleel, Dr. Sereena K,
+                                                    Saithalavi P, Dr. Sainul Abidin K
+                                                </td>
+                                                <td style="width: 58.0606%;">Dr. M Ranjith, Dr. Azad P, Manju R.V, Dr.
+                                                    Job Sabu, Dr. Gireesh K.P, Sakkeer P, Muhammed Rafi P, Surjith V.P,
+                                                    Mohammed Jaish N.P, Saritha U.K, Ramlath A, Sirajudheen P, Abdul
+                                                    Basidh P.K, Dr. P. Junais, Dr. Juliya A.P, K.H Fausia, Laila
+                                                    Abdulla, Dr. Saleej K.T, Ummuhabeeba K, Yasmin C.K, Asmabi. K, Latha
+                                                    M, Abi K.S, Ratheesh C.K, Muhammadali P, Thasleema T, Dr. Faisal
+                                                    Babu, Alex P Abraham, Sreevidhya N.R, Preetha Rajagopal
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 72px;">
+                                                <td style="width: 26.0606%;">Proctorial Committee Members</td>
+                                                <td style="width: 14.6666%;"></td>
+                                                <td style="width: 58.0606%;">P.M Salahudheen, Muhammadali P, Sreevidya
+                                                    N.R, Vijesh C.K, Thasleena, Saleej K.T, Yasmin C.K, K.H Fousiya,
+                                                    Mohammed Rafi P, C.K Mushtaq
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 104px;">
+                                                <td style="width: 26.0606%;">Dean of Students Welfare (Grievance &amp;
+                                                    Redressal Forum)
+                                                </td>
+                                                <td style="width: 14.6666%;">Gopalakrishnan K</td>
+                                                <td style="width: 58.0606%;">Shameera MK (Deputy Dean), Preetha
+                                                    Rajagopal, Manju RV, Alex. P Abraham, Dr. Fathimath Fouziya M
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">IQAC</td>
+                                                <td style="width: 14.6666%;">Dr. Azhar A</td>
+                                                <td style="width: 58.0606%;">Sajna A</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">College Council Secretary</td>
+                                                <td style="width: 14.6666%;">Sajna A</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Staff Secretary</td>
+                                                <td style="width: 14.6666%;">Anu Joseph</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">PTA Secretary</td>
+                                                <td style="width: 14.6666%;">Shihab A.M</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Union Advisor</td>
+                                                <td style="width: 14.6666%;"></td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 80px;">
+                                                <td style="width: 26.0606%;">Staff Editor (College Magazine)</td>
+                                                <td style="width: 14.6666%;">Shihab A.M</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Anti-ragging Cell</td>
+                                                <td style="width: 14.6666%;">Sirajudheen</td>
+                                                <td style="width: 58.0606%;">Muhammadali P, Sreevidhya N.R, Dr. Job
+                                                    Sabu
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Anti- Narcotic Cell</td>
+                                                <td style="width: 14.6666%;">Surjith V.P</td>
+                                                <td style="width: 58.0606%;">Abi K.S, Sainudheen C.P, Reena K</td>
+                                            </tr>
+                                            <tr style="height: 72px;">
+                                                <td style="width: 26.0606%;">Anti-Sexual Harassment Committee</td>
+                                                <td style="width: 14.6666%;">Fousiya K.H</td>
+                                                <td style="width: 58.0606%;">Jisena Mol, Abdul Basid P.K</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Nodal Officer – UG Admission</td>
+                                                <td style="width: 14.6666%;">Dr. Zainul Abid</td>
+                                                <td style="width: 58.0606%;">Saithalavi P, Alex P Abraham, Ratheesh C.K,
+                                                    Abdul Basid P.K
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 96px;">
+                                                <td style="width: 26.0606%;">Nodal Officer – PG Admission</td>
+                                                <td style="width: 14.6666%;">Dr. Job Sabu</td>
+                                                <td style="width: 58.0606%;">Sainudheen C.P, Ratheesh C.K</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Chief Superintendent (Exams)</td>
+                                                <td style="width: 14.6666%;">M. Ramdas</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Paper in-Charge (Exams)</td>
+                                                <td style="width: 14.6666%;">Anu Joseph</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 56px;">
+                                                <td style="width: 26.0606%;">College Calendar</td>
+                                                <td style="width: 14.6666%;">Dr. Zainul Abid.T</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">NCC -Naval Wing</td>
+                                                <td style="width: 14.6666%;">S.Lt.Dr. Jaleel T K</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">NCC -Army Wing</td>
+                                                <td style="width: 14.6666%;">Lt. Saithalavi.P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">NSS Program Officers</td>
+                                                <td style="width: 14.6666%;">Laila Abdulla, Dr. KP Sreenivasan</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 96px;">
+                                                <td style="width: 26.0606%;">Public information officer</td>
+                                                <td style="width: 14.6666%;">Abdul Muneer A</td>
+                                                <td style="width: 58.0606%;">Nazeeha C.N (Head Accountant)</td>
+                                            </tr>
+                                            <tr style="height: 96px;">
+                                                <td style="width: 26.0606%;">Public Relation Wing</td>
+                                                <td style="width: 14.6666%;">Dr. Zainul Abid.T</td>
+                                                <td style="width: 58.0606%;">Ratheesh C.K, Ameera K, Nashriya K</td>
+                                            </tr>
+                                            <tr style="height: 144px;">
+                                                <td style="width: 26.0606%;">Fine Arts Co-ordinator</td>
+                                                <td style="width: 14.6666%;">Dr. M Ranjith, Dr. Fathimath Fausia M</td>
+                                                <td style="width: 58.0606%;">Sajna A (Assi. Co-ordinator),Dr.
+                                                    Sivadasan T. P, Laila Abdulla, Fathimath Thasleena K, Sainudheen C
+                                                    P, Mushtaq Ali CK, Shareena NP, Asmabi K, Dr. Juliya AP, Surjith VP,
+                                                    Megha, Chinnu
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Documentation and Report Writing</td>
+                                                <td style="width: 14.6666%;">Ramlath A</td>
+                                                <td style="width: 58.0606%;">Jushaini, Nasrin</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">MES FORT</td>
+                                                <td style="width: 14.6666%;">Goplakrishnan K</td>
+                                                <td style="width: 58.0606%;">Manju RV</td>
+                                            </tr>
+                                            <tr style="height: 80px;">
+                                                <td style="width: 26.0606%;">Internal Examination Cell (IEC)
+                                                    Coordinator
+                                                </td>
+                                                <td style="width: 14.6666%;">Muhsina K</td>
+                                                <td style="width: 58.0606%;">All HODs, Laila Abdulla, Preethamol, Abdul
+                                                    Azees K A, Fausia K H, Nabeela MK
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Internal Marks UG-Coordinator</td>
+                                                <td style="width: 14.6666%;">Saijyothi S</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 96px;">
+                                                <td style="width: 26.0606%;">Internal Marks PG-Coordinator</td>
+                                                <td style="width: 14.6666%;">Sakkeer P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Exam Registration Coordinator</td>
+                                                <td style="width: 14.6666%;">Fausia K H</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">University Liaison Officer</td>
+                                                <td style="width: 14.6666%;">Dr. Junais P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Teacher’s Diary</td>
+                                                <td style="width: 14.6666%;">Dr. Juliya AP</td>
+                                                <td style="width: 58.0606%;">Aghna S Nath, Megha Muraleedharan</td>
+                                            </tr>
+                                            <tr style="height: 80px;">
+                                                <td style="width: 26.0606%;">CBCSS UG Regulation-2019 Nodal Officer
+                                                    :
+                                                </td>
+                                                <td style="width: 14.6666%;">Sakkeer P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Returning Officer</td>
+                                                <td style="width: 14.6666%;"></td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">College Prospectus</td>
+                                                <td style="width: 14.6666%;">Dr. Zainul Abid.T</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Alumni Association</td>
+                                                <td style="width: 14.6666%;">Salahudheen P M</td>
+                                                <td style="width: 58.0606%;">Saijyothi S, Vijesh CK, Shareena NP, Reena
+                                                    K
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 96px;">
+                                                <td style="width: 26.0606%;">Academic Monitoring Committee</td>
+                                                <td style="width: 14.6666%;">Dr. Girish K P, Dr. M Ranjith</td>
+                                                <td style="width: 58.0606%;">Ramdas.M, Dr. Azhar. A, Nusrath P,
+                                                    Resmi.K.R, Asmabi K, Noorjahan,
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Career guidance Cell</td>
+                                                <td style="width: 14.6666%;">Shajitha A</td>
+                                                <td style="width: 58.0606%;">Shabna.M.K, Ashfak Ahammed O</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Placement Cell</td>
+                                                <td style="width: 14.6666%;">Dr. Azad P</td>
+                                                <td style="width: 58.0606%;">Shameera M.K, Ramlath A, Jushaini, Alfin
+                                                    &amp; Ajmal
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">NET Coaching Centre</td>
+                                                <td style="width: 14.6666%;">Dr. Faisal Babu.M</td>
+                                                <td style="width: 58.0606%;">Sainudeen CP</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Counselling Centre</td>
+                                                <td style="width: 14.6666%;">Thasneema</td>
+                                                <td style="width: 58.0606%;">Femina E P, Dr. Saleej</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Purchase Committee</td>
+                                                <td style="width: 14.6666%;">Nusrath P</td>
+                                                <td style="width: 58.0606%;">Mohammed Jaish N.P</td>
+                                            </tr>
+                                            <tr style="height: 72px;">
+                                                <td style="width: 26.0606%;">Research &amp; Development Cell</td>
+                                                <td style="width: 14.6666%;">Dr. M Ranjith</td>
+                                                <td style="width: 58.0606%;">Dr. Gireesh K.P(Joint Co-ordinator), Dr.
+                                                    Sreenivasan.K.P, Dr. Job Sabu, Dr.Saleej KT, Dr. T. N.Muhammed
+                                                    Musthafa, Dr. Sereena.K, Dr. Junais .P, Dr. Zainul Abid.T, Dr. Azhar
+                                                    A, Dr. Azeez
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Extension Cell</td>
+                                                <td style="width: 14.6666%;">Abdul Basith</td>
+                                                <td style="width: 58.0606%;">Mohammed Jaish N.P, Sreevidya N. R,
+                                                    Sakeer
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Consultancy Cell &amp; IPR Cell</td>
+                                                <td style="width: 14.6666%;">Dr. Sivadasan T. P</td>
+                                                <td style="width: 58.0606%;">Manju R.V</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Minority Cell</td>
+                                                <td style="width: 14.6666%;">Vijeesh C K</td>
+                                                <td style="width: 58.0606%;">Sakeer P</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">OBC Cell</td>
+                                                <td style="width: 14.6666%;">Sreevidhya N.R</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">SC/ST Cell</td>
+                                                <td style="width: 14.6666%;">Nusrath P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 72px;">
+                                                <td style="width: 26.0606%;">Women Cell</td>
+                                                <td style="width: 14.6666%;">Yasmin C.K</td>
+                                                <td style="width: 58.0606%;">Shajitha A, Sajna. A, Juliya AP., Fathimath
+                                                    Fousiya M, Saritha UK,Ummu Habeeba K, Fathimath Shabana PK,
+                                                    Remya. P, Sreevidya NR
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Statistical Data and Stock Register</td>
+                                                <td style="width: 14.6666%;">Dr. Girish KP</td>
+                                                <td style="width: 58.0606%;">Anjali P R</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">TCS Coordinator</td>
+                                                <td style="width: 14.6666%;">Nusrath P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Campus Beautification</td>
+                                                <td style="width: 14.6666%;">Femina E P</td>
+                                                <td style="width: 58.0606%;">Ummu Habeeba. K, Ratheesh C K, Semeema K
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Deputy Warden Men’s Hostel</td>
+                                                <td style="width: 14.6666%;">Abdurahiman</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Deputy Warden Ladies Hostel</td>
+                                                <td style="width: 14.6666%;">Dr. Sereena K</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">FM Radio</td>
+                                                <td style="width: 14.6666%;">Nashariya</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Tourism Club</td>
+                                                <td style="width: 14.6666%;">Dr. Fathimath Fouziya K.H</td>
+                                                <td style="width: 58.0606%;">Moideen OA, Muhammed Rafi, Sreevidya NR,
+                                                    Fathimath Shabana PK
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Archaeological Museum Director</td>
+                                                <td style="width: 14.6666%;">Abdul Muneer A</td>
+                                                <td style="width: 58.0606%;">Dr. Sivadasan T. P.</td>
+                                            </tr>
+                                            <tr style="height: 104px;">
+                                                <td style="width: 26.0606%;">Entrepreneurship Development Club (ED)</td>
+                                                <td style="width: 14.6666%;">Femina E.P</td>
+                                                <td style="width: 58.0606%;">Asmabi. K, Shabna M.K</td>
+                                            </tr>
+                                            <tr style="height: 128px;">
+                                                <td style="width: 26.0606%;">Innovation &amp; Entrepreneurship
+                                                    Development Cell (IEDC)
+                                                </td>
+                                                <td style="width: 14.6666%;">Dr. Sainul Abidin K</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 104px;">
+                                                <td style="width: 26.0606%;">Young Innovators Programme (YEP)
+                                                    Facilitators
+                                                </td>
+                                                <td style="width: 14.6666%;">R V Manju, Thasleena</td>
+                                                <td style="width: 58.0606%;">Shameena T.T</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Literacy Club</td>
+                                                <td style="width: 14.6666%;">Sirajudheen</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Computer Lieracy &amp; Website</td>
+                                                <td style="width: 14.6666%;">Preetha Rajagopal M</td>
+                                                <td style="width: 58.0606%;">Muhammed Musthak</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Quiz Club</td>
+                                                <td style="width: 14.6666%;">Archana R Nair</td>
+                                                <td style="width: 58.0606%;">Remya. PA</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Debate Club</td>
+                                                <td style="width: 14.6666%;">Sirajudheen, Alfin</td>
+                                                <td style="width: 58.0606%;">Salahudheen PM, Arathy A.P, Alka Krishna
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Health Club</td>
+                                                <td style="width: 14.6666%;">Dr.Saleej KT</td>
+                                                <td style="width: 58.0606%;">Moideen.O.A, Beena T K</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Cycle Club</td>
+                                                <td style="width: 14.6666%;">Mustaq Ali C K, Alex P Abraham</td>
+                                                <td style="width: 58.0606%;">Fousiya K H</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Yoga Club</td>
+                                                <td style="width: 14.6666%;">Saritha UK</td>
+                                                <td style="width: 58.0606%;">Dr. Sivadasan T. P., Lt. Saithalavi P</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Swachh Bharat Abhiyan</td>
+                                                <td style="width: 14.6666%;">Resmi K.R</td>
+                                                <td style="width: 58.0606%;">Ummu Habeeba K</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Forestry Club</td>
+                                                <td style="width: 14.6666%;">Dr. Sereena K</td>
+                                                <td style="width: 58.0606%;">Ameera K, Ashfak Ahammed O</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Science Club</td>
+                                                <td style="width: 14.6666%;">Sai Jyothi S</td>
+                                                <td style="width: 58.0606%;">Saritha UK, Muhammed Nasih T</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Bhoomitra Club</td>
+                                                <td style="width: 14.6666%;">Ummu Habeeba.K</td>
+                                                <td style="width: 58.0606%;">Ashfak Ahammed O</td>
+                                            </tr>
+                                            <tr style="height: 10px;">
+                                                <td style="width: 26.0606%;">Green Campus Initiatives</td>
+                                                <td style="width: 14.6666%;">Ummu Habeeba K</td>
+                                                <td style="width: 58.0606%;">Akhila K</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Parliamentary Literacy Club</td>
+                                                <td style="width: 14.6666%;">Salahudheen P M</td>
+                                                <td style="width: 58.0606%;">Surjith V.P</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Media Club &amp; Documentation</td>
+                                                <td style="width: 14.6666%;">Surjith V.P</td>
+                                                <td style="width: 58.0606%;">Dr. Sivadasan TP</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Income Tax Cell</td>
+                                                <td style="width: 14.6666%;">Dr. Yasmin CK</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 80px;">
+                                                <td style="width: 26.0606%;">Property Register &amp; U G C Accounts</td>
+                                                <td style="width: 14.6666%;">Ramadas M</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 72px;">
+                                                <td style="width: 26.0606%;">Internal Complaint Committee &amp;
+                                                    Grievance
+                                                </td>
+                                                <td style="width: 14.6666%;">Sajna P, Manju R.V</td>
+                                                <td style="width: 58.0606%;">Shahana Jasmine, Akhila K</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Uniform Committee</td>
+                                                <td style="width: 14.6666%;">Abdul Basith</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Remedial &amp;Tutorial Committee</td>
+                                                <td style="width: 14.6666%;">Sakkeer P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Canteen Committee</td>
+                                                <td style="width: 14.6666%;">Moideen OA, Dr. Sereena K</td>
+                                                <td style="width: 58.0606%;">Sajna. P, Mushtaq Ali CK, Anu Joseph,
+                                                    Muhammadali
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">PF Liaison Officer</td>
+                                                <td style="width: 14.6666%;">Saithalavi P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Scholarship Liaison Officer</td>
+                                                <td style="width: 14.6666%;">Mohammed Fasil M</td>
+                                                <td style="width: 58.0606%;">Nabeela MK</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">General Time Table</td>
+                                                <td style="width: 14.6666%;">Resmi K R</td>
+                                                <td style="width: 58.0606%;">Saijyothi S, Mohasina</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Day Care(MIC)</td>
+                                                <td style="width: 14.6666%;">Shemeera MK</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">SDE Coordinator</td>
+                                                <td style="width: 14.6666%;">Mohammed Rafi P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Awards &amp; Endowments</td>
+                                                <td style="width: 14.6666%;">Anu Joseph</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Masjid (MIC)</td>
+                                                <td style="width: 14.6666%;">Abdul Jalal</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Staff Credit Society</td>
+                                                <td style="width: 14.6666%;">Naseeha. CN</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Cooperative Store</td>
+                                                <td style="width: 14.6666%;">Saithalavi</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">FIST-DST</td>
+                                                <td style="width: 14.6666%;">Mohammed Fasil C M</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Unnat Bharat Abhiyan (UBA)</td>
+                                                <td style="width: 14.6666%;">Resmi K R</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">AISHE</td>
+                                                <td style="width: 14.6666%;">Ramadas M</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">NIRF</td>
+                                                <td style="width: 14.6666%;">Preethamol P</td>
+                                                <td style="width: 58.0606%;">Shahida, Fousiya K H, Shabna. MK, Ramadas.
+                                                    M., Muhammed Rafi P, Dr. Saleej KT
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">RUSA</td>
+                                                <td style="width: 14.6666%;">Dr. Mohammed Musthafa T N</td>
+                                                <td style="width: 58.0606%;">Reena K, Preetha Rajagopalan</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Red Cross</td>
+                                                <td style="width: 14.6666%;">Sirajudheen P</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Premarital Counseling Centre</td>
+                                                <td style="width: 14.6666%;">Shihab A.M</td>
+                                                <td style="width: 58.0606%;">Shabna M.K, Raseena P.K, Shaheera T.A</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">B-Voc</td>
+                                                <td style="width: 14.6666%;">Dr. Sainul Abidin T</td>
+                                                <td style="width: 58.0606%;">Sainudheen C P</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Swayam / Mooc / NPTEL</td>
+                                                <td style="width: 14.6666%;">Fathimath Tasleena K</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Readers’ Forum</td>
+                                                <td style="width: 14.6666%;">Faisunnisa (Librarian)</td>
+                                                <td style="width: 58.0606%;">Ratheesh C.K</td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Writers’ Forum</td>
+                                                <td style="width: 14.6666%;">Mustak Ali C.K</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Vijayaveethi</td>
+                                                <td style="width: 14.6666%;">Nabeela</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Autonomous Committee</td>
+                                                <td style="width: 14.6666%;">Sajna A</td>
+                                                <td style="width: 58.0606%;">Mohammed Jaish N.P, Abdhul Muneer A, Dr.
+                                                    Faisal Babu, Mohammed Musthak
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 56px;">
+                                                <td style="width: 26.0606%;">Library Advisory Committee</td>
+                                                <td style="width: 14.6666%;">Shameem Ummer</td>
+                                                <td style="width: 58.0606%;">All HODs</td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Civil Service Coaching Centre</td>
+                                                <td style="width: 14.6666%;">Nasrin. N, Jushaini</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 72px;">
+                                                <td style="width: 26.0606%;">Higher Education for Persons with Special
+                                                    Needs (HEPSN):
+                                                </td>
+                                                <td style="width: 14.6666%;">Sajna A</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">ACCA &amp; CMA</td>
+                                                <td style="width: 14.6666%;">Fathimath Shabna MK</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 48px;">
+                                                <td style="width: 26.0606%;">Students Initiative Palliative (SIP)</td>
+                                                <td style="width: 14.6666%;">PM Salahudheen</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                            <tr style="height: 24px;">
+                                                <td style="width: 26.0606%;">Teacher’s Diary</td>
+                                                <td style="width: 14.6666%;">Dr. Julia AP</td>
+                                                <td style="width: 58.0606%;"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="club_coordinators_page" model="website.page">
+            <field name="url">/club_coordinators</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="club_coordinators_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

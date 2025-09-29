@@ -1,0 +1,553 @@
+<odoo>
+    <data>
+        <record id="management" model="ir.ui.view">
+            <field name="name">Management</field>
+            <field name="type">qweb</field>
+            <field name="key">fathima_college.management</field>
+            <field name="arch" type="xml">
+                <t name="Staff Council" t-name="fathima_college.management_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32 pb32 o_colored_level" style="background-image: none;">
+                                <div class="container">
+                                    <div class="about_head s_header">Management
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+                                    <section class="pt32 pb48 managers" id="chief_patron">
+                                        <div class=" s_header" id="sub-header">Our Patrons
+                                            <div class="s_line">
+                                                <div class="s_dot"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row" style="margin: 0;">
+                                            <div class="card pt48 pb32" id="management">
+                                                <div class="img">
+                                                    <div class="object1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="93"
+                                                             viewBox="0 0 49 93" fill="none" style="
+    width: 200px;
+    height: 200px;
+">
+                                                            <path d="M44.3004 5.51253L48.1934 3.20353L44.3004 0.894531L44.3004 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 14.2166L48.1934 11.9076L44.3004 9.59863L44.3004 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 22.9207L48.1934 20.6117L44.3004 18.3027L44.3004 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 31.6243L48.1934 29.3153L44.3004 27.0063L44.3004 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 40.3284L48.1934 38.0194L44.3004 35.7104L44.3004 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 49.0326L48.1934 46.7235L44.3004 44.4146L44.3004 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 57.7366L48.1934 55.4277L44.3004 53.1187L44.3004 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 66.4407L48.1934 64.1318L44.3004 61.8228L44.3004 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 75.1444L48.1934 72.8354L44.3004 70.5264L44.3004 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 83.8485L48.1934 81.5395L44.3004 79.2305L44.3004 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 92.5526L48.1934 90.2436L44.3004 87.9346L44.3004 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 5.51253L39.4902 3.20353L35.5972 0.894531L35.5972 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 14.2166L39.4902 11.9076L35.5972 9.59863L35.5972 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 22.9207L39.4902 20.6117L35.5972 18.3027L35.5972 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 31.6243L39.4902 29.3153L35.5972 27.0063L35.5972 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 40.3284L39.4902 38.0194L35.5972 35.7104L35.5972 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 49.0326L39.4902 46.7235L35.5972 44.4146L35.5972 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 57.7366L39.4902 55.4277L35.5972 53.1187L35.5972 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 66.4407L39.4902 64.1318L35.5972 61.8228L35.5972 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 75.1444L39.4902 72.8354L35.5972 70.5264L35.5972 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 83.8485L39.4902 81.5395L35.5972 79.2305L35.5972 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 92.5526L39.4902 90.2436L35.5972 87.9346L35.5972 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 5.51253L30.7852 3.20353L26.8922 0.894531L26.8922 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 14.2166L30.7852 11.9076L26.8922 9.59863L26.8922 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 22.9207L30.7852 20.6117L26.8922 18.3027L26.8922 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 31.6243L30.7852 29.3153L26.8922 27.0063L26.8922 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 40.3284L30.7852 38.0194L26.8922 35.7104L26.8922 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 49.0326L30.7852 46.7235L26.8922 44.4146L26.8922 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 57.7366L30.7852 55.4277L26.8922 53.1187L26.8922 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 66.4407L30.7852 64.1318L26.8922 61.8228L26.8922 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 75.1444L30.7852 72.8354L26.8922 70.5264L26.8922 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 83.8485L30.7852 81.5395L26.8922 79.2305L26.8922 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 92.5526L30.7852 90.2436L26.8922 87.9346L26.8922 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 5.51253L22.082 3.20353L18.189 0.894531L18.189 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 14.2166L22.082 11.9076L18.189 9.59863L18.189 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 22.9207L22.082 20.6117L18.189 18.3027L18.189 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 31.6243L22.082 29.3153L18.189 27.0063L18.189 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 40.3284L22.082 38.0194L18.189 35.7104L18.189 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 49.0326L22.082 46.7235L18.189 44.4146L18.189 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 57.7366L22.082 55.4277L18.189 53.1187L18.189 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 66.4407L22.082 64.1318L18.189 61.8228L18.189 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 75.1444L22.082 72.8354L18.189 70.5264L18.189 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 83.8485L22.082 81.5395L18.189 79.2305L18.189 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 92.5526L22.082 90.2436L18.189 87.9346L18.189 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 5.51253L13.377 3.20353L9.48395 0.894531L9.48395 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 14.2166L13.377 11.9076L9.48395 9.59863L9.48395 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 22.9207L13.377 20.6117L9.48395 18.3027L9.48395 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 31.6243L13.377 29.3153L9.48395 27.0063L9.48395 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 40.3284L13.377 38.0194L9.48395 35.7104L9.48395 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 49.0326L13.377 46.7235L9.48395 44.4146L9.48395 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 57.7366L13.377 55.4277L9.48395 53.1187L9.48395 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 66.4407L13.377 64.1318L9.48395 61.8228L9.48395 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 75.1444L13.377 72.8354L9.48395 70.5264L9.48395 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 83.8485L13.377 81.5395L9.48395 79.2305L9.48395 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 92.5526L13.377 90.2436L9.48395 87.9346L9.48395 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 5.51253L4.67383 3.20353L0.780823 0.894531L0.780823 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 14.2166L4.67383 11.9076L0.780823 9.59863L0.780823 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 22.9207L4.67383 20.6117L0.780823 18.3027L0.780823 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 31.6243L4.67383 29.3153L0.780823 27.0063L0.780823 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 40.3284L4.67383 38.0194L0.780823 35.7104L0.780823 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 49.0326L4.67383 46.7235L0.780823 44.4146L0.780823 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 57.7366L4.67383 55.4277L0.780823 53.1187L0.780823 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 66.4407L4.67383 64.1318L0.780823 61.8228L0.780823 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 75.1444L4.67383 72.8354L0.780823 70.5264L0.780823 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 83.8485L4.67383 81.5395L0.780823 79.2305L0.780823 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 92.5526L4.67383 90.2436L0.780823 87.9346L0.780823 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="obj2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg" style="
+    width: 20px;
+    height: 20px;
+">
+                                                            <path d="M17.0576 10.8162C18.0838 6.34281 15.2894 1.88452 10.816 0.858314C6.34261 -0.167895 1.88432 2.62658 0.858115 7.09995C-0.168094 11.5733 2.62638 16.0316 7.09975 17.0578C11.5731 18.084 16.0314 15.2896 17.0576 10.8162Z"
+                                                                  fill="#244271" fill-opacity="0.4" style="
+    fill: #ffc107;
+"></path>
+                                                        </svg>
+
+                                                    </div>
+                                                    <img src="/fathima_college/static/img/chiefpatron.jpeg" alt=""
+                                                         class="img img-fluid o_we_custom_image" data-original-id="282"
+                                                         data-original-src="/fathima_college/static/img/chiefpatron.jpeg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="management_image" style=""/>
+                                                </div>
+                                                <div id="management_content">
+
+                                                    <h2 class="naming">Moran Mor Baselios Cardinal Cleemis Catholicose
+                                                    </h2>
+                                                    <span>Chief Patron</span>
+                                                </div>
+                                            </div>
+                                            <div class="card pt48 pb32" id="management">
+                                                <div class="img">
+                                                    <div class="object1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="93"
+                                                             viewBox="0 0 49 93" fill="none" style="
+    width: 200px;
+    height: 200px;
+">
+                                                            <path d="M44.3004 5.51253L48.1934 3.20353L44.3004 0.894531L44.3004 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 14.2166L48.1934 11.9076L44.3004 9.59863L44.3004 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 22.9207L48.1934 20.6117L44.3004 18.3027L44.3004 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 31.6243L48.1934 29.3153L44.3004 27.0063L44.3004 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 40.3284L48.1934 38.0194L44.3004 35.7104L44.3004 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 49.0326L48.1934 46.7235L44.3004 44.4146L44.3004 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 57.7366L48.1934 55.4277L44.3004 53.1187L44.3004 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 66.4407L48.1934 64.1318L44.3004 61.8228L44.3004 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 75.1444L48.1934 72.8354L44.3004 70.5264L44.3004 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 83.8485L48.1934 81.5395L44.3004 79.2305L44.3004 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M44.3004 92.5526L48.1934 90.2436L44.3004 87.9346L44.3004 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 5.51253L39.4902 3.20353L35.5972 0.894531L35.5972 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 14.2166L39.4902 11.9076L35.5972 9.59863L35.5972 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 22.9207L39.4902 20.6117L35.5972 18.3027L35.5972 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 31.6243L39.4902 29.3153L35.5972 27.0063L35.5972 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 40.3284L39.4902 38.0194L35.5972 35.7104L35.5972 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 49.0326L39.4902 46.7235L35.5972 44.4146L35.5972 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 57.7366L39.4902 55.4277L35.5972 53.1187L35.5972 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 66.4407L39.4902 64.1318L35.5972 61.8228L35.5972 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 75.1444L39.4902 72.8354L35.5972 70.5264L35.5972 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 83.8485L39.4902 81.5395L35.5972 79.2305L35.5972 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M35.5972 92.5526L39.4902 90.2436L35.5972 87.9346L35.5972 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 5.51253L30.7852 3.20353L26.8922 0.894531L26.8922 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 14.2166L30.7852 11.9076L26.8922 9.59863L26.8922 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 22.9207L30.7852 20.6117L26.8922 18.3027L26.8922 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 31.6243L30.7852 29.3153L26.8922 27.0063L26.8922 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 40.3284L30.7852 38.0194L26.8922 35.7104L26.8922 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 49.0326L30.7852 46.7235L26.8922 44.4146L26.8922 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 57.7366L30.7852 55.4277L26.8922 53.1187L26.8922 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 66.4407L30.7852 64.1318L26.8922 61.8228L26.8922 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 75.1444L30.7852 72.8354L26.8922 70.5264L26.8922 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 83.8485L30.7852 81.5395L26.8922 79.2305L26.8922 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M26.8922 92.5526L30.7852 90.2436L26.8922 87.9346L26.8922 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 5.51253L22.082 3.20353L18.189 0.894531L18.189 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 14.2166L22.082 11.9076L18.189 9.59863L18.189 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 22.9207L22.082 20.6117L18.189 18.3027L18.189 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 31.6243L22.082 29.3153L18.189 27.0063L18.189 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 40.3284L22.082 38.0194L18.189 35.7104L18.189 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 49.0326L22.082 46.7235L18.189 44.4146L18.189 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 57.7366L22.082 55.4277L18.189 53.1187L18.189 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 66.4407L22.082 64.1318L18.189 61.8228L18.189 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 75.1444L22.082 72.8354L18.189 70.5264L18.189 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 83.8485L22.082 81.5395L18.189 79.2305L18.189 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M18.189 92.5526L22.082 90.2436L18.189 87.9346L18.189 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 5.51253L13.377 3.20353L9.48395 0.894531L9.48395 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 14.2166L13.377 11.9076L9.48395 9.59863L9.48395 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 22.9207L13.377 20.6117L9.48395 18.3027L9.48395 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 31.6243L13.377 29.3153L9.48395 27.0063L9.48395 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 40.3284L13.377 38.0194L9.48395 35.7104L9.48395 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 49.0326L13.377 46.7235L9.48395 44.4146L9.48395 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 57.7366L13.377 55.4277L9.48395 53.1187L9.48395 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 66.4407L13.377 64.1318L9.48395 61.8228L9.48395 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 75.1444L13.377 72.8354L9.48395 70.5264L9.48395 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 83.8485L13.377 81.5395L9.48395 79.2305L9.48395 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M9.48395 92.5526L13.377 90.2436L9.48395 87.9346L9.48395 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 5.51253L4.67383 3.20353L0.780823 0.894531L0.780823 5.51253Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 14.2166L4.67383 11.9076L0.780823 9.59863L0.780823 14.2166Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 22.9207L4.67383 20.6117L0.780823 18.3027L0.780823 22.9207Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 31.6243L4.67383 29.3153L0.780823 27.0063L0.780823 31.6243Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 40.3284L4.67383 38.0194L0.780823 35.7104L0.780823 40.3284Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 49.0326L4.67383 46.7235L0.780823 44.4146L0.780823 49.0326Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 57.7366L4.67383 55.4277L0.780823 53.1187L0.780823 57.7366Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 66.4407L4.67383 64.1318L0.780823 61.8228L0.780823 66.4407Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 75.1444L4.67383 72.8354L0.780823 70.5264L0.780823 75.1444Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 83.8485L4.67383 81.5395L0.780823 79.2305L0.780823 83.8485Z"
+                                                                  fill="#FBDA03"></path>
+                                                            <path d="M0.780823 92.5526L4.67383 90.2436L0.780823 87.9346L0.780823 92.5526Z"
+                                                                  fill="#FBDA03"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="obj2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg" style="
+    width: 20px;
+    height: 20px;
+">
+                                                            <path d="M17.0576 10.8162C18.0838 6.34281 15.2894 1.88452 10.816 0.858314C6.34261 -0.167895 1.88432 2.62658 0.858115 7.09995C-0.168094 11.5733 2.62638 16.0316 7.09975 17.0578C11.5731 18.084 16.0314 15.2896 17.0576 10.8162Z"
+                                                                  fill="#244271" fill-opacity="0.4" style="
+    fill: #ffc107;
+"></path>
+                                                        </svg>
+
+                                                    </div>
+
+                                                    <img src="/fathima_college/static/img/managerpatron.jpeg" alt=""
+                                                         class="img img-fluid o_we_custom_image" data-original-id="282"
+                                                         data-original-src="/fathima_college/static/img/managerpatron.jpeg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="management_image"/>
+                                                </div>
+                                                <div id="management_content">
+                                                    <h2 class="naming">Dr. Joseph Mar Thomas</h2>
+                                                    <span>Patron &amp; Manager</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                    <section class="pt32 pb32  managers" id="principal">
+                                        <div class=" s_header" id="sub-header">The Principal
+                                            <div class="s_line">
+                                                <div class="s_dot"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="card others" id="prince">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/principal.jpeg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/principal.jpeg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Prof.(Dr) Geetha Janet Vitus</h2>
+                                                    <span>Principal</span>
+                                                </div>
+                                            </div>
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Vice Principal Name</h2>
+                                                    <span>Vice Principal</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="pt32 pb32 managers" id="members">
+                                        <div class="row">
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/ceo.jpeg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/bursar.jpeg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Rev.Fr Varghese kaniyaparambil</h2>
+                                                    <span>Bursar &amp; Ceo</span>
+                                                </div>
+                                            </div>
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Staff Secretary Name</h2>
+                                                    <span>Staff Secretary</span>
+                                                </div>
+                                            </div>
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/directors.jpeg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/director.jpeg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Dr.Ka Andrew</h2>
+                                                    <span>IQAC coordinator</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="pt32 pb32 managers" id="members">
+                                    <div class=" s_header" id="sub-header" style="  max-width: 50%;">College Administration Team
+                                            <div class="s_line">
+                                                <div class="s_dot"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Name</h2>
+                                                    <span>Designation</span>
+                                                </div>
+                                            </div>
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Name</h2>
+                                                    <span>Designation</span>
+                                                </div>
+                                            </div>
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Name</h2>
+                                                    <span>Designation</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="pt32 pb32 managers" id="members">
+                                        <div class=" s_header" id="sub-header" style="    max-width: 50%;">Succession List Of Bursars
+                                            <div class="s_line">
+                                                <div class="s_dot"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Name</h2>
+                                                    <span>Designation</span>
+                                                </div>
+                                            </div>
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Name</h2>
+                                                    <span>Designation</span>
+                                                </div>
+                                            </div>
+                                            <div class="card others" id="others">
+                                                <div class="img">
+                                                    <img src="/fathima_college/static/img/profile.jpg" alt=""
+                                                         class="img img-fluid o_we_custom_image"
+                                                         data-original-id="/fathima_college/static/img/profile.jpg"
+                                                         data-mimetype="image/png" data-resize-width="286"
+                                                         loading="lazy" id="others_images"/>
+                                                </div>
+                                                <div id="others_content">
+                                                    <h2 class="naming">Name</h2>
+                                                    <span>Designation</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="management_page" model="website.page">
+            <field name="url">/management</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="management"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

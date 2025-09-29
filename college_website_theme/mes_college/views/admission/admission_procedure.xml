@@ -1,0 +1,601 @@
+<odoo>
+    <data>
+        <record id="admission_procedure" model="ir.ui.view">
+            <field name="name">admission_procedure</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.admission_procedure</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.admission_procedure_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div id="wrap" class="oe_structure">
+                                <section class="bg_color">
+                                    <div class="container" id="container_width">
+                                        <div class="row">
+                                            <div class=" pt32 pb32 col-md-8">
+                                                <div>
+                                                    <h2 class="main-head" style="text-align:left">Admission Procedure
+                                                    </h2>
+                                                    <div class="content_text" style="text-align:left;padding: 0;">
+                                                        <strong>
+                                                            CENTRALIZED ADMISSION PROCESS (CAP)
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Introduction</strong>
+                                                        <br/>
+                                                        <br/>
+                                                        Admission to merit seats in the /programmes/courses in Arts and
+                                                        Science colleges affiliated to the University of Calicut
+                                                        (including
+                                                        50% of seats set apart for Merit Admission in the Self Financing
+                                                        colleges and Self Financing programmes/ courses in Aided
+                                                        colleges)
+                                                        are being conducted through Centralized Admission Process (CAP).
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Aims and Objectives:</strong>
+                                                        <br/>
+                                                        <br/>
+                                                        The University introduced the ‘Online registration’ for
+                                                        admissions
+                                                        to UG/PG programmes/courses in the academic year 2013-2014 to
+                                                        cater
+                                                        to the aspirations of students who otherwise could not pursue
+                                                        tendering applications, by personally approaching various
+                                                        Colleges
+                                                        spread over 5 districts affiliated to the University for
+                                                        admissions.
+                                                        While introducing the Online Registration for Centralised
+                                                        admission
+                                                        the University aimed a lofty goal of extending a hand out to the
+                                                        candidates from the socially backward sector of the society and
+                                                        those residing in the remote areas within the jurisdiction of
+                                                        Calicut University.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Seat Nomenclature:</strong>
+                                                        <br/>
+                                                        <br/>
+                                                        The seats available in the various colleges are classified as
+                                                        <ol>
+                                                            <li>Merit</li>
+                                                            <li>Mandatory reservations</li>
+                                                            <li>Community</li>
+                                                            <li>Management</li>
+                                                            <li>Other Reservation Category Seats</li>
+                                                            <li>Special Reservation Category seats.</li>
+                                                        </ol>
+                                                        <strong style="font-size:12px;">Admission Schedule/Notification
+                                                        </strong>
+                                                        The admission schedule will be prepared and published in the
+                                                        admission notification every year. The date of commencement of
+                                                        online registration to the closing date of admissions will be
+                                                        available in the admission schedule. The dates for each
+                                                        allotment
+                                                        and admissions to all categories will be published in the
+                                                        admission
+                                                        schedule.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Mandatory Fee.
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        The candidates receiving allotment should remit the Mandatory
+                                                        Fee
+                                                        prescribed in the admission notification. The mandatory fee need
+                                                        to
+                                                        be remitted only once. The candidates failing to remit mandatory
+                                                        fee
+                                                        will lose his/her current allotment and they will be expelled
+                                                        from
+                                                        further allotments. The candidates, thus expelled will not be
+                                                        reinstated in the allotment process at any stage of the
+                                                        allotment.
+                                                        <br/>
+                                                        <br/>
+                                                        The candidates admitted other than through allotment should also
+                                                        compulsorily remit mandatory fee.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Eligibility for Admission
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        Those candidates who are “Eligible for Higher Studies” as per
+                                                        the
+                                                        Kerala State Higher Secondary Examination or a pass in the
+                                                        equivalent examinations are the minimum criteria for admission
+                                                        to
+                                                        degree courses, unless otherwise specified.
+                                                        However, candidates who have qualified the HSE and VHSE of the
+                                                        Government of Kerala under ‘SAY’ scheme and Compartmental
+                                                        Examination of CBSE are also eligible for admission to first
+                                                        year
+                                                        degree programmes/courses in the same academic year.
+                                                        Candidates who have passed the Higher Secondary Examination of
+                                                        Tamil
+                                                        Nadu (Private study) will not be admitted to any course under
+                                                        this
+                                                        University. (U.ONo.GAI/ A1/5062/2002 dated 07.07.2005).
+                                                        Eligibility of each PG Programme is specified based on the
+                                                        eligible
+                                                        UG programmes and the % marks obtained in different Parts.
+                                                        Relaxation in the requirement of minimum marks upto 5% for OBC
+                                                        /OEC
+                                                        is applicable. SC/ST candidates need a pass only in their
+                                                        qualifying
+                                                        examination for admission to the Post Graduate Programmes.
+                                                        Detailed eligibility and indexing rules for various
+                                                        courses/programmes will be published in the prospectus.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Nodal Centres
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        Nodal Centres are functioning in all affiliated colleges in
+                                                        connection with the admission to function as a helping hand to
+                                                        the
+                                                        students and University. The students can do registration,
+                                                        editing,
+                                                        re arrangement of option, cancellation of higher option etc
+                                                        through
+                                                        the Nodal Centres. The students can also utilise the Nodal
+                                                        Centres
+                                                        for clearing their doubts and clarification regarding the
+                                                        Centralised Admission process (CAP).<br/>The list of Nodal
+                                                        Centres
+                                                        is published in the website.(www.cuonline.ac.in)
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:16px;">Instructions for Applying
+                                                            through
+                                                            CAP. Visit the website
+                                                            <a href="www.cuonline.ac.in">www.cuonline.ac.in</a>
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        The admission through Centralised Admission process to First
+                                                        year
+                                                        Degree/P.G/Afsal-ul-ulama preliminary/B.Ed/ M.Ed/and Programmes
+                                                        with
+                                                        Entrance Examination will be conducted in TWO phases.
+                                                        <br/>
+                                                        The registration will be conducted in Two continuous Phases.
+                                                        <br/>
+                                                        Phase 1: Fee Payment.
+                                                        <br/>
+                                                        Phase 2: Submission of Application :
+                                                        <br/>
+                                                        <strong style="font-size:12px;">
+                                                            Phase 1: Keep ready the following:
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Date of Birth: copy of S.S.L.C
+                                                            </li>
+                                                            <li>Mobile Number: mobile number of student/parents/
+                                                                guardian only to be furnished. Vital informations
+                                                                regarding
+                                                                the allotment and admissions are being communicated
+                                                                through
+                                                                SMS to the registered mobile number. Therefore, under
+                                                                any
+                                                                circumstance the mobile number of Akshaya centres,
+                                                                internet
+                                                                cafe or other agencies should not be submitted.
+                                                            </li>
+                                                            <li>E-mail: Email Id of student/parents/guardian only be
+                                                                entered. Those who do not have an Email-Id may create
+                                                                one
+                                                                and enter. Vital informations regarding the allotment
+                                                                and
+                                                                admissions will also be communicated through Email to
+                                                                the
+                                                                registered mail id
+                                                            </li>
+                                                            <li>Application Fee : As per admission notification for each
+                                                                Course/Programme.
+                                                            </li>
+                                                        </ol>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Instructions for Payment of Fee
+                                                            (through e-payment system)
+                                                        </strong>
+                                                        <br/>
+                                                        <ol>
+                                                            <li>
+                                                                Visit the website
+                                                                <a href="https://www.uoc.ac.in">https://www.uoc.ac.in
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                Click Instant Pay- Select Purpose of payment
+                                                            </li>
+                                                            <li>Furnish the details required. (Mobile number and e-mail
+                                                                id of student/parent/guardian only to be furnished)
+                                                            </li>
+                                                            <li>Select mode of payment</li>
+                                                        </ol>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">
+                                                            Mode of Remittance of fee by candidates from inside KERALA
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <ol type="a">
+                                                            <li>
+                                                                State Bank online payment. (For those who have State
+                                                                Bank
+                                                                online banking facility).
+                                                            </li>
+                                                            <li>
+                                                                Payment Gateway
+                                                            </li>
+                                                            <li>
+                                                                Nodal Centres (Functioning in All Colleges) List of
+                                                                Nodal Centres is available in www.cuonline.ac.in)
+                                                            </li>
+                                                            <li>Akshaya Centres
+                                                            </li>
+                                                            <li>Friends JanasevanaKendram
+                                                            </li>
+                                                            <li>Other firms providing Internet Facility</li>
+                                                        </ol>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Remit the fee in any of the mode
+                                                            of
+                                                            payment mentioned above.
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <ol type="a">
+                                                            <li>
+                                                                After remitting fee in any of the mode mentioned above
+                                                                the
+                                                                CAP ID and password will be received in the registered
+                                                                mobile number through SMS.
+                                                            </li>
+                                                            <li>For the programmes/courses with entrance examination,
+                                                                the
+                                                                chalan number and password will be received in the
+                                                                registered mobile number through SMS.
+                                                                After receiving the SMS online application can be
+                                                                submitted
+                                                            </li>
+                                                        </ol>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">
+                                                            Mode of online payment
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <ol>
+                                                            <li>Select the Purpose of remittance.</li>
+                                                            <li>Furnish the details in the blank fields (mobile number
+                                                                and
+                                                                e-mail ID only that of the student/parent/guardian).
+                                                            </li>
+                                                            <li>Select the mode of payment</li>
+                                                            <li>Enter the fee amount and click the button”Proceed”.</li>
+                                                            <li>You can view the details now, if the details are correct
+                                                                click “ Pay Now.”
+                                                            </li>
+                                                            <li>In the next page click “Continue for Payment”.Remit the
+                                                                fee
+                                                                online as per the instructions in the online payment
+                                                                site of
+                                                                the
+                                                                Bank selected.
+                                                            </li>
+                                                            <li>Click redirect to the Calicut University Instant Web
+                                                                Payment
+                                                                System (CUIWPS) or wait for 60 seconds to be redirected.
+                                                            </li>
+                                                            <li>Take printout of the online payment “RECEIPT”. CAP ID
+                                                                Number
+                                                                and Password will be received by SMS/e-mail, with which
+                                                                the
+                                                                candidate can login to CAP and complete the online
+                                                                application
+                                                                submission.
+                                                            </li>
+                                                        </ol>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong>The payment procedure completed.”
+                                                            <br/>
+                                                            Fee once remitted will not be refunded”
+                                                            <br/>
+                                                            PHASE 2: Keep ready the following for the submission of
+                                                            application for UG/PG/Afsal-ul-ulama preliminary/B.Ed/ M.Ed
+                                                            Keep
+                                                            ready the following
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <ol>
+                                                            <li>
+                                                                The CAP ID/Chalan number and password received by SMS/
+                                                                E-Mail.
+                                                            </li>
+                                                            <li>Copy of the Qualifying Examination Mark Sheet.
+                                                            </li>
+                                                            <li>
+                                                                Passport size photograph in ‘.jpg’ format with a size
+                                                                between 20KB and 40 KB.
+                                                            </li>
+                                                            <li>
+                                                                Prepare the list of colleges/courses according to the
+                                                                applicants priority. The fee structure for the self
+                                                                financing programmes will be different from the fee
+                                                                structure of Government/Aided programme.List of colleges
+                                                                and
+                                                                programmes/courses are available in the
+                                                                website.(www.cuonline.ac.in). The fee structure for each
+                                                                year will be published along with the admission
+                                                                prospectus.
+                                                            </li>
+                                                            <li>BPL Certificate for candidates belongs to BPL category
+                                                                among forward communities.
+                                                            </li>
+                                                        </ol>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">
+                                                            Instructions for submission of application for
+                                                            UG/PG/Afsal-ululama preliminary/B.Ed/M.Ed.
+                                                            <br/>
+                                                            Visit www.cuonline.ac.in-Select UG/PG Registration-Login
+                                                            with
+                                                            CAP ID, registration number and password.
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        The application submission is done in Four Parts.
+                                                        <br>
+                                                        </br>
+                                                        <strong style="font-size:12px;">
+                                                            Part1: Photo Upload ( Passport size photograph in ‘.jpg’
+                                                            formatwith a size between 20KB and 40 KB
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">
+                                                            Part 2: Student Profile
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <ol>
+                                                            <li>
+                                                                Basic Details
+                                                                <br/>
+                                                                Enter the details in the blank fields.
+                                                                <br/>
+                                                                b. Personal Details:
+                                                                <br/>
+                                                                1. Utmost care should be taken while entering
+                                                                reservation
+                                                                details. Opt only the eligible reservations otherwise
+                                                                admission will be denied.
+                                                                <br/>
+                                                                2. Those who apply for the seats reserved for BPL
+                                                                category
+                                                                among forward communities should submit the order No,
+                                                                date
+                                                                of order and details of issuing authority.
+                                                                <br/>
+                                                                3. Weightage: Enter the eligible bonus/weightage if any.
+                                                                The details entered can be edited. To move to the next
+                                                                part
+                                                                CLICK “SAVE /PROCEED” BUTTON.
+                                                                <br/>
+                                                            </li>
+                                                        </ol>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">
+                                                            Part 3: Qualification Details
+                                                        </strong>
+                                                        <br/>
+                                                        <ol>
+                                                            <li>
+                                                                Enter number of chances taken to pass the qualifying
+                                                                examinations. 10 marks will be reduced for each
+                                                                additional
+                                                                chances
+                                                                taken to pass the qualifying examination subject to a
+                                                                maximum of 25
+                                                                marks.
+                                                            </li>
+                                                            <li>Specify the Board/University of the qualifying
+                                                                examinations.
+                                                            </li>
+                                                            <li>Enter the stream of study of the Qualifying
+                                                                examinations,
+                                                                if
+                                                                necessary (Science, Humanities, Commerce).
+                                                            </li>
+                                                            <li>
+                                                                Verify the marks displayed automatically; otherwise
+                                                                enter
+                                                                the
+                                                                marks.
+                                                            </li>
+                                                            <li>Utmost care should be taken while entering the marks.
+                                                                The details entered can be edited. To move to the next
+                                                                part
+                                                                CLICK
+                                                                “SAVE /PROCEED” BUTTON
+                                                            </li>
+                                                        </ol>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Part 4: College Course Selection
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <b>(Utmost care should be taken while fixing the priority of the
+                                                            option. Priority and index marks are the base of the
+                                                            allotment)
+                                                        </b>
+                                                        <br/>
+                                                        <br/>
+                                                        Furnish the details of colleges and programmes/courses according
+                                                        to
+                                                        the priority. The candidates who wish to apply for the community
+                                                        quota in Aided colleges can opt the colleges and
+                                                        programmes/courses
+                                                        according to the priority.
+                                                        Candidates can view the options submitted and if necessary can
+                                                        edit
+                                                        the options. The candidates can take a verification print out to
+                                                        verify and ensure that the details submitted are correct. If the
+                                                        details entered are correct click “Final Submit”.
+                                                        After final submission the candidates can take a final “Print
+                                                        Out” (
+                                                        College copy and Student Copy). The student copy shall be
+                                                        retained
+                                                        and the college copy shall be submitted to the college where
+                                                        he/she
+                                                        takes permanent admission.
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Cancellation of higher options.
+                                                        </strong>
+                                                        Cancellation of all the higher options can only be done through
+                                                        Nodal Centres. Partial cancellation of the higher options can be
+                                                        done by the candidates themselves or can use the services of the
+                                                        Akshaya Centres and other firms providing internet facility.
+                                                        <br/>
+                                                        <br/>
+                                                        The candidates can login into CAP with their login credentials
+                                                        after
+                                                        each allotment for partial cancellation.
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Rearrangement of college and
+                                                            course
+                                                        </strong>
+                                                        After the trial allotment the candidates can rearrange priority
+                                                        of
+                                                        their options already submitted during the registration by “drag
+                                                        and
+                                                        drop” facility. No new course or college can be added at any
+                                                        stage
+                                                        of the allotment process.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Allotment
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        There will be Three allotments for all category of students and
+                                                        Two
+                                                        special allotment for SC/ST/BPL in forward caste. On receipt of
+                                                        the
+                                                        allotment to an option, all the options below the received
+                                                        allotment
+                                                        will be permanently lost. The options thus lost will not be
+                                                        reinstated at any cost.
+                                                        <br/>
+                                                        <strong style="font-size:12px;">Permanent Admissions
+                                                        </strong>
+                                                        The candidates receiving allotments for the first options and
+                                                        those
+                                                        candidates are satisfied with the allotment received in any of
+                                                        the
+                                                        allotment can take permenant admissions to the respective
+                                                        colleges.
+                                                        After Fourth allotment all candidates should take Permenant
+                                                        admissions to the colleges allotted.
+                                                        <br/>
+                                                        <br/>
+                                                        In case the higher options are not cancelled the candidate will
+                                                        be
+                                                        considered for the higher options and will be bound to
+                                                        relinquish
+                                                        the previous allotment and must take admission to the allotment
+                                                        received to their higher options.
+                                                        <br/>
+                                                        <br/>
+                                                        Temporary Admissions
+                                                        <br/>
+                                                        <br/>
+                                                        After third allotment all candidates who have received allotment
+                                                        but
+                                                        not satisfied with their current allotment and willing to be
+                                                        considered for higher option shall take Temporary Admission.
+                                                        These
+                                                        candidates will be considered for their higher options.
+                                                        <br/>
+                                                        <br/>
+                                                        The candidates taking temporary admissions need not remit any
+                                                        fee or
+                                                        submit any certificates to the college. But, the form provided
+                                                        in
+                                                        annexure 1 shall be submitted to the college.
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h2 class="main-head">Admission Cell</h2>
+                                                <div class="col-md-7 mb32 mx-auto" >
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Dr. Zainul Abid T
+                                                        </div>
+                                                        <div class="designation">Nodal Officer-UG Admission</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 mb32 mx-auto">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Abdul Basid PK
+                                                        </div>
+                                                        <div class="designation">Nodal Officer-PG Admission</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 mb32 mx-auto">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Ratheesh CK
+                                                        </div>
+                                                        <div class="designation">Assistant Nodal Officer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="admission_procedure_page" model="website.page">
+            <field name="url">/admission_procedure</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="admission_procedure"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

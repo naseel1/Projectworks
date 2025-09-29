@@ -1,0 +1,96 @@
+<odoo>
+    <data>
+        <record id="mgncre" model="ir.ui.view">
+            <field name="name">MGNCRE</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.mgncre</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.mgncre">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                                <div class="clubs">MGNCRE</div>
+                            </div>
+                            <div class="row" style="    margin-right: 0px;">
+                                <div class="col-md-9">
+                                    <h1 class="department_subhead" style="padding-left:35px;">MGNCRE</h1>
+                                    <p class="page_text " style="padding-left:35px;text-align:justify;">Mahatma Gandhi
+                                        National Council of Rural Education (MGNCRE), formerly National Council of Rural
+                                        Institutes (NCRI), under the Ministry of Human Resource Development, Government
+                                        of India, strives to promote resilient rural India through Higher Education
+                                        interventions. MGNCRE designs, develops and promotes curriculum inputs for
+                                        higher education programmes offered by Universities and Autonomous Institutions
+                                        in India. The higher educational streams of focus for MGNCRE include: Rural
+                                        Studies, Rural Development, Rural Management, Social Work and Education.
+                                        Development of higher education curriculum addressing the needs of backward
+                                        rural areas and their representative higher educational institutions, boosting
+                                        the flagship social and rural development programmes with focus on education,
+                                        skill development, employment, livelihoods and Swachh Bharat comprise the core
+                                        initiatives. MGNCRE seeks to strengthen the rural higher education curriculum
+                                        and the faculty members transacting it. Capacity building and
+                                        professionalisation of Rural Institutes, skill development, entrepreneurship,
+                                        livelihoods, community initiatives, creativity of local groups and proactive
+                                        development action constitute the core content of MGNCRE research and
+                                        interventions.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <section class="former_card">
+                                        <img src="/emea_college_theme/static/img/alumni4.jpg" alt="Person"
+                                             class="card-image" loading="lazy" style=""/>
+                                        <div class="card-content">
+                                            <div class="name">Name Of Professor</div>
+                                            <div class="designation">Designation Of Professor
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <h1 class="department_subhead" style="padding-left:35px;">Reports</h1>
+                                <section style="background-image: none;" class="section_center">
+                                    <div class="row">
+                                        <div class="col o_colored_level" style="margin-top: 30px;">
+                                            <div class="main_table_box_2">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-label="Sl No">Sl No</th>
+                                                            <th data-label="Name of the Student">Caption</th>
+                                                            <th data-label="Name of the Programme">Date</th>
+                                                            <th data-label="File">File</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-label="Sl No">1</td>
+                                                            <td data-label="Name of the Student">Online Workshop on
+                                                                Social Entrepreneurship,Swachhta and Rural Engagement
+                                                                Cell (SESREC)
+                                                            </td>
+                                                            <td data-label="Name of the Programme">14-June-2022</td>
+                                                            <td data-label="Name of the Programme">View</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="mgncre_page" model="website.page">
+            <field name="url">/mgncre</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="mgncre"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

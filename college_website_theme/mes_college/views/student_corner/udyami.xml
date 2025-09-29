@@ -1,0 +1,75 @@
+<odoo>
+    <data>
+        <record id="udyami" model="ir.ui.view">
+            <field name="name">udyami</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.udyami</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.udyami_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align:left">UDYAMI</h2>
+                                            <div class="text_content">
+                                                Udyami is a project
+                                                for promotion of
+                                                entrepreneurship
+                                                among girl students.
+                                                The project is being
+                                                managed by the Women
+                                                Development Cell of
+                                                the College. Under
+                                                this scheme,
+                                                entrepreneurship
+                                                development
+                                                programmes are
+                                                conducted for girl
+                                                students. Apart from
+                                                this, financial
+                                                assistance and
+                                                guidance for
+                                                starting
+                                                entrepreneurship is
+                                                provided. Students
+                                                are given training
+                                                for paper bag
+                                                making, soap making
+                                                etc. They have made
+                                                paper bags for
+                                                distributing the
+                                                college uniform. The
+                                                students are
+                                                currently
+                                                undertaking various
+                                                jobs within in the
+                                                campus including
+                                                poster making for
+                                                events. They are
+                                                also running a
+                                                weekly market
+                                                CAMPUSMART for
+                                                selling the
+                                                home-made food
+                                                products and
+                                                handicrafts.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="udyami_page" model="website.page">
+            <field name="url">/udyami</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="udyami"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

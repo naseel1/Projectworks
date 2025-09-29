@@ -1,0 +1,122 @@
+<odoo>
+    <data>
+        <record id="about_us" model="ir.ui.view">
+            <field name="name">About Us</field>
+            <field name="type">qweb</field>
+            <field name="key">fathima_college.about_us</field>
+            <field name="arch" type="xml">
+                <t name="About Us" t-name="fathima_college.about_us_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32 pb32 o_colored_level" style="background-image: none;">
+                                <div class="container">
+                                    <div class="about_head s_header">About Us
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+                                    <figure class="landscape">
+
+                                        <img alt="Fathima College About Us Image"
+                                             src="/fathima_college/static/img/sec1.jpg" loading="eager"
+                                             style="animation-duration: 2s; --wanim-intensity: 7;"
+                                             data-bs-original-title="" title="" aria-describedby="tooltip613732"
+                                             class="o_animate o_anim_slide_in o_anim_from_left"/>
+                                    </figure>
+                                    <div class="d-flex m-0 flex-wrap justify-content-between">
+                                        <div class="col-md-6 content about_text o_colored_level o_anim_fade_in o_animate o_anim_from_bottom"
+                                             style="--wanim-intensity: 5; animation-duration: 2s;">
+                                            <div class="s_header pb24">
+                                                College at a Glance
+                                                <div class="s_line">
+                                                    <div class="s_dot"/>
+                                                </div>
+                                            </div>
+                                            <div class="about_paragraph">Fathima Arts and Science College was
+                                                established in
+                                                the year 2013, affiliated to the University of Calicut is situated in
+                                                the
+                                                naturalistic rural area of Moothedam, Nilambur which is on the foothills
+                                                of
+                                                Western Ghats near to Mukurthy National Park in Nilgiris. The college
+                                                was
+                                                founded by the Corporate Educational Agency of the Catholic Diocese of
+                                                Bathery. The founder manager/patron of the college is His excellency
+                                                most
+                                                Rev.Dr.Joseph Mar Thomas (Bishop of Bathery).The contribution of the
+                                                first
+                                                Principal Dr.R.Raveendran Pillai,Vice Principal Fr.Martin
+                                                Vilanguparayil,
+                                                Bursar Fr.Thomas Thundiyil and the Local Manager Fr.John Manayil in
+                                                planting
+                                                and developing the college in tune with the motto enshrined in the
+                                                Eparchy
+                                                of Bathery is unparallel.
+                                            </div>
+                                            <div class="about_paragraph">The college was started with the objective of
+                                                imparting quality education to the backward communities, particularly to
+                                                those who are in the remote rural areas of malappuram district. The
+                                                Corporate Educational Agency of the Catholic Diocese of Bathery has
+                                                always
+                                                cherished value based education. The fast development of Fathima Arts
+                                                and
+                                                Science College owes much to the foresighted vision of Rev.Dr.Joseph Mar
+                                                Thomas .The official inauguration of the college was on October 4th 2013
+                                                by
+                                                His beatitude Baselios cardinal cleemis Catholicos. The college
+                                                continues
+                                                its cherished journey of higher education today in exact in standards in
+                                                the
+                                                individual, spiritual, intellectual, social aesthetics and physical
+                                                developments of students. Presently the college provide 13 undergraduate
+                                                Arts and Science courses and Two Post Graduate courses M.A English
+                                                Language
+                                                and Literature &amp;amp; M.Com Finance.
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-5 o_colored_level o_anim_fade_in o_animate o_anim_from_bottom"
+                                             style="--wanim-intensity: 7; animation-duration: 2s;">
+                                            <div class="s_header pb24">
+                                                Motto
+                                                <div class="s_line">
+                                                    <div class="s_dot"/>
+                                                </div>
+                                            </div>
+                                            <div class="about_paragraph">
+                                                The College marches forward with enhanced vigour and vitality by
+                                                upholding
+                                                the motto "Lighted to Lighten".
+
+                                            </div>
+                                            <div class="s_header pb24">
+                                                Emblem
+                                                <div class="s_line">
+                                                    <div class="s_dot"/>
+                                                </div>
+                                            </div>
+                                            <div class="about_paragraph">The emblem has been designed to highlight the
+                                                ultimate truth
+                                                with
+                                                the book and flame which is open itself up to the light of heaven. The
+                                                graduation cap and the crown signifies its excellence
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_about_page" model="website.page">
+            <field name="url">/about_us</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="about_us"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

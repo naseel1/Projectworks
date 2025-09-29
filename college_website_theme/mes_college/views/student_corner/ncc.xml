@@ -1,0 +1,199 @@
+<odoo>
+    <data>
+        <record id="ncc" model="ir.ui.view">
+            <field name="name">NCC</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.ncc</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.ncc_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-12">
+                                        <h2 class="main-head" style="text-align:left">NCC</h2>
+                                        <div class="row">
+                                            <div class="text_content col-md-8">
+                                                <h2 class="main-head" style="text-align:left;font-size:27px;">Army Wing
+                                                </h2>
+                                                <br/>
+                                                <br/>
+                                                The National Cadet Corps is an Indian military cadet corps with its
+                                                Headquarters at New Delhi, Delhi, India. It is open to school and
+                                                college students on voluntary basis. National Cadet Corps is a
+                                                Tri-Services Organization, comprising the Army, Navy and Air Force,
+                                                engaged in grooming the youth of the country into disciplined and
+                                                patriotic citizens. The National Cadet Corps in India is a voluntary
+                                                organization which recruits cadets from high schools, colleges and
+                                                universities all over India. The Cadets are given basic military
+                                                training in small arms and parades. The officers and cadets have no
+                                                liability for active military service once they complete their
+                                                course.
+                                                <br/>
+                                                <br/>
+                                                <strong>MOTO
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                Unity and Discipline (The motto was adopted on 12 Oct 1980 at
+                                                the 12th Central Advisory Committee meeting)
+                                                <br/>
+                                                <br/>
+                                                <strong>OATH
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                I do hereby solemnly promise that I will serve my mother land most
+                                                truly and loyally and that, I will abide by the rules and
+                                                regulations of the National Cadet Corps. Further under the command
+                                                and control of my commanding officer I will participate in every
+                                                camp most sincerely and wholeheartedly
+                                                <br/>
+                                                <br/>
+                                                <strong>Cardinal principles of NCC
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                <ul>
+                                                    <li>Obey with smile
+                                                    </li>
+                                                    <li>Be punctual
+                                                    </li>
+                                                    <li>Work hard without fuss
+                                                    </li>
+                                                    <li>Make no excuses and tell no lies
+                                                    </li>
+                                                </ul>
+                                                <br/>
+                                                <br/>
+                                                <strong>Aims of NCC
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                To develop qualities of character, courage, comradeship, discipline,
+                                                leadership, secular outlook, spirit of adventure and sportsmanship
+                                                and the ideals of selfless service among the youth to make them
+                                                useful citizen
+                                                <br/>
+                                                <br/>
+                                                To create a human resource of organised, trained and motivated youth
+                                                to provide leadership in all walks of life including the Armed
+                                                Forces and be always available for the service of the nation
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h2 class="main-head">Associate NCC Officer</h2>
+                                                <div class="col-md-7 mb32 mx-auto">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                            Saithalavi P
+                                                        </div>
+                                                        <div class="designation">Department of Mathematics</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text_content col-md-8">
+                                                <h2 class="main-head" style="text-align:left;font-size:27px;">Naval Wing
+                                                </h2>
+                                                <br/>
+                                                <br/>
+                                                The National Cadet Corps is an Indian military cadet corps with its
+                                                Headquarters at New Delhi, Delhi, India. It is open to school and
+                                                college students on voluntary basis. National Cadet Corps is a
+                                                Tri-Services Organization, comprising the Army, Navy and Air Force,
+                                                engaged in grooming the youth of the country into disciplined and
+                                                patriotic citizens. The National Cadet Corps in India is a voluntary
+                                                organization which recruits cadets from high schools, colleges and
+                                                universities all over India. The Cadets are given basic military
+                                                training in small arms and parades. The officers and cadets have no
+                                                liability for active military service once they complete their course.
+                                                <br/>
+                                                <br/>
+                                                <strong>MOTO
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                Unity and Discipline (The motto was adopted on 12 Oct 1980 at the 12th
+                                                Central Advisory Committee meeting)
+                                                <br/>
+                                                <br/>
+                                                <strong>OATH
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                I do hereby solemnly promise that I will serve my mother land most truly
+                                                and loyally and that, I will abide by the rules and regulations of the
+                                                National Cadet Corps. Further under the command and control of my
+                                                commanding officer I will participate in every camp most sincerely and
+                                                wholeheartedly
+                                                <br/>
+                                                <br/>
+                                                <strong>Cardinal principles of NCC
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                <ul>
+                                                    <li>Obey with smile
+                                                    </li>
+                                                    <li>Be punctual
+                                                    </li>
+                                                    <li>Work hard without fuss
+                                                    </li>
+                                                    <li>Make no excuses and tell no lies
+                                                    </li>
+                                                </ul>
+                                                <br/>
+                                                <br/>
+                                                <strong>Aims of NCC
+                                                </strong>
+                                                <br/>
+                                                <br/>
+                                                To develop qualities of character, courage, comradeship, discipline,
+                                                leadership, secular outlook, spirit of adventure and sportsmanship
+                                                and the ideals of selfless service among the youth to make them
+                                                useful citizen
+                                                <br/>
+                                                <br/>
+                                                To create a human resource of organised, trained and motivated youth
+                                                to provide leadership in all walks of life including the Armed
+                                                Forces and be always available for the service of the nation
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h2 class="main-head">Associate NCC Officer</h2>
+                                                <div class="col-md-7 mb32 mx-auto">
+                                                    <div class="faculties">
+                                                        <div class="faculty_img">
+                                                            <img src="/mes_college/static/img/faculty.jpg"
+                                                                 class="w-100 h-100"/>
+                                                        </div>
+                                                        <div class="faculty_name">
+                                                           Dr. Jaleel TK
+                                                        </div>
+                                                        <div class="designation">Department of Arabic</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="ncc_page" model="website.page">
+            <field name="url">/ncc</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="ncc"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

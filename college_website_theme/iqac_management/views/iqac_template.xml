@@ -1,0 +1,181 @@
+<odoo>
+    <template id="template_iqac_item_detail" name="IQAC">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs" data-name="Tabs"
+                         style="background-image: none;">
+                    <div class="s_tabs_main row iqac_row">
+                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section" data-original-title=""
+                             title="" aria-describedby="tooltip336631" style="background:#F4F9F4 !important;">
+                            <div class="side-bar" id="sidebar">
+
+                                <ul class="tabs-list1 nav nav-pills  flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/iqac-composition">IQAC Composition</a>
+                                    </li>
+                                    <t t-foreach="request.env['iqac.main'].sudo().search([])" t-as="navitem">
+                                        <li class="nav-item">
+                                            <a class="nav-link" t-att-href="navitem.public_url">
+                                                <t t-esc="navitem.name"/>
+                                            </a>
+                                        </li>
+                                    </t>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                            <div class="oe_structure oe_empty" data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                <section class="iqac-content">
+
+
+                                    <h2 class="iqac-title">
+                                        <t t-esc="item.name"/>
+                                    </h2>
+
+                                    <section class=" pb32">
+                                        <table class="table">
+                                            <thead>
+
+                                                <tr class="table-tr">
+                                                    <th class="table-th">Name</th>
+                                                    <th class="table-th">Document</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <t t-if="item.item_ids">
+                                                    <t t-foreach="item.item_ids" t-as="link">
+                                                        <tr class="table-tr">
+                                                            <t t-if="link">
+                                                                <td data-column="Name" class="table-td">
+                                                                    <t t-esc="link.title"/>
+                                                                </td>
+                                                            </t>
+                                                            <td data-column="Document">
+                                                                <t t-if="link.url">
+                                                                    <a t-att-href="link.url" target="_blank">View</a>
+                                                                </t>
+                                                            </td>
+                                                        </tr>
+                                                    </t>
+                                                </t>
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </section>
+
+                                    <script>
+                                        document.addEventListener("DOMContentLoaded", function () {
+                                        const currentPath = window.location.pathname;
+                                        document.querySelectorAll(".tabs-list1 .nav-link").forEach(link =&gt; {
+                                        if (link.getAttribute("href") === currentPath) {
+                                        link.classList.add("active");
+                                        }
+                                        });
+                                        });
+                                    </script>
+                                    <style>
+                                        .table {
+                                        border-collapse: collapse;
+                                        margin:50px auto;
+                                        }
+
+                                        .table-tr th{
+                                        background: #254c2ec9;
+                                        color: white;
+                                        }
+
+
+                                        th {
+                                        background: #3498db;
+                                        color: white;
+                                        font-weight: bold;
+                                        }
+
+                                        td, th {
+                                        padding: 10px;
+                                        border: 1px solid #ccc !important;
+                                        text-align: left;
+                                        font-size: 18px;
+                                        }
+
+                                        /*
+                                        Max width before this PARTICULAR table gets nasty
+                                        This query will take effect for any screen smaller than 760px
+                                        and also iPads specifically.
+                                        */
+                                        @media
+                                        only screen and (max-width: 760px),
+                                        (min-device-width: 768px) and (max-device-width: 1024px) {
+
+                                        table {
+                                        width: 100%;
+                                        }
+
+                                        /* Force table to not be like tables anymore */
+                                        table, thead, tbody, th, td, tr {
+                                        display: block;
+                                        }
+
+                                        /* Hide table headers (but not display: none;, for accessibility) */
+                                        thead tr {
+                                        position: absolute;
+                                        top: -9999px;
+                                        left: -9999px;
+                                        }
+
+                                        tr { border: 1px solid #ccc !important; }
+
+                                        td {
+                                        /* Behave like a "row" */
+                                        border: none;
+                                        border-bottom: 1px solid #eee;
+                                        position: relative;
+                                        padding-left: 50%;
+                                        }
+
+                                        td:before {
+                                        /* Now like a table header */
+                                        position: absolute;
+                                        /* Top/left values mimic padding */
+                                        top: 6px;
+                                        left: 6px;
+                                        width: 45%;
+                                        padding-right: 10px;
+                                        white-space: nowrap;
+                                        /* Label the data */
+                                        content: attr(data-column);
+
+                                        color: #000;
+                                        font-weight: bold;
+                                        }
+
+                                        }
+                                        @media only screen and (max-width: 760px), (min-device-width: 768px) and
+                                        (max-device-width: 1024px) {
+                                        td {
+                                        border: none;
+                                        border-bottom: 1px solid #eee;
+                                        position: relative;
+                                        padding-left: 50% !important;
+                                        /* text-align: right; */
+                                        font-size: 14px;
+                                        }
+                                        }
+                                        .table-tr td a {
+                                        text-decoration: none;
+                                        color: #000;
+                                        }
+                                    </style>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </t>
+    </template>
+</odoo>

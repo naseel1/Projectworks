@@ -1,0 +1,100 @@
+<odoo>
+    <data>
+        <record id="facilitation_centres" model="ir.ui.view">
+            <field name="name">facilitation_centres</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.facilitation_centres</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.facilitation_centres_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <h2 class="main-head" style="text-align:left">Facilitation Centres</h2>
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <div class="text_content">
+                                                    <strong>Differently Abled
+                                                    </strong>
+                                                    <br/>
+                                                    <br/>
+                                                    A facilitation centre for the Differently Abled is novel initiative
+                                                    by
+                                                    the Internal Quality Assurance Cell with a mission to ensure equal
+                                                    rights and facilities to the differently abled community. The centre
+                                                    undertake various activities like skill training, arranging scribes
+                                                    for
+                                                    examinations, etc.
+                                                    <br/>
+                                                    <br/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <strong style="font-size:13px; text-align:center;">Coordinator</strong>
+                                            <div class="col-md-7 mt16 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Sajna A
+                                                    </div>
+                                                    <div class="designation">Department of English</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <div class="text_content">
+                                                    <strong>Tribal Students
+                                                    </strong>
+                                                    <br/>
+                                                    <br/>
+                                                    The facilitation centre for differently abled is an initiative under
+                                                    IQAC. It was launched as per the recommendations of the NAAC peer
+                                                    team in 2019. The centre conducts orientation programmes about
+                                                    scholarships and other welfare measures. It also provide basic IT
+                                                    skills, assistance in PSC registration, etc.
+                                                    <br/>
+                                                    <br/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                             <strong style="font-size:13px;text-align:center;">Coordinator</strong>
+                                            <div class="col-md-7 mt16 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Surjith VP
+                                                    </div>
+                                                    <div class="designation">Department of Malayalam</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="facilitation_centres_page" model="website.page">
+            <field name="url">/facilitation_centres</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="facilitation_centres"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

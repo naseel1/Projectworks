@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="template_notes_semester_detail" name="Notes - Semester Detail">
+        <t t-call="website.layout">
+            <div class="container py-5">
+                <a t-att-href="'/notes/' + notes_title.replace(' ', '-')" class="btn mb-3">
+                    ← Back to Department
+                </a>
+                <h2 class="text-center mb-4">
+                    <t t-esc="notes_title"/>
+                    - Semester
+                    <t t-esc="semester_number"/>
+                </h2>
+                <div class="row">
+                    <t t-if="files">
+                        <t t-foreach="files" t-as="note">
+                            <div class="col-md-6 mb-3">
+                                <div class="shadow p-3  bg-white h-100">
+                                    <strong>
+                                        <t t-esc="note.name"/>
+                                    </strong>
+                                    <br/>
+                                    <t t-if="note.notes_pdf">
+                                        <a t-att-href="'/web/content/notes.pdf.file/' + str(note.id) + '/notes_pdf'"
+                                           target="_blank">Download PDF
+                                        </a>
+                                    </t>
+                                    <t t-elif="note.url">
+                                        <a t-att-href="note.url" target="_blank">Visit URL</a>
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                    </t>
+                    <t t-else="">
+                        <p class="text-muted">No notes available for this semester.</p>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

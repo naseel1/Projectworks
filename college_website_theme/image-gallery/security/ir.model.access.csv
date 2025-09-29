@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+,,,,,,,,
+access_image_gallery_public,Image.Gallery,model_image_galleries,,1,1,1,1
+access_image_gallery_user,Image.Gallery,model_image_galleries,group_image_gallery_admin,1,1,1,1
+
+

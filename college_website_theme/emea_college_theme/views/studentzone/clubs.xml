@@ -1,0 +1,2025 @@
+<odoo>
+    <data>
+        <record id="clubs_emea" model="ir.ui.view">
+            <field name="name">Clubs</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.clubs_emea</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="emea_college_theme.clubs_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                    <div class="clubs">CLUBS
+                                    </div>
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs1"
+                                                           data-original-title="" title="" class="nav-link active"
+                                                           aria-controls="tabs1">IT
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs2"
+                                                           data-original-title="" title="" class="nav-link">Theatre Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Histo Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs4" id="sidebar_tabs4" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Management
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs5" id="sidebar_tabs5" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Microbiome
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs6" id="sidebar_tabs6" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Literary
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs7" id="sidebar_tabs7" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Women Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs8" id="sidebar_tabs8" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Music Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs9" id="sidebar_tabs9" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Commerce
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs10" id="sidebar_tabs10" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">
+                                                            Bhoomithrasena
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs11" id="sidebar_tabs11" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Tourism Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs12" id="sidebar_tabs12" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">
+                                                            Entrepreneurship
+                                                            Development(Ed)
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs13" id="sidebar_tabs13" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Debating
+                                                            Society
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs14" id="sidebar_tabs14" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Students
+                                                            Initiative
+                                                            in Palliative
+                                                            (SIP)
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs15" id="sidebar_tabs15" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Nature Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs16" id="sidebar_tabs16" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Red Ribbon
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs17" id="sidebar_tabs17" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Staff Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs18" id="sidebar_tabs18" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Library Club
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs19" id="sidebar_tabs19" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Principal’s
+                                                            Club
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                                             id="page-content">
+                                            <div id="tabs1" class=" tab-pane fade active show" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs1">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">IT Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            All the computer Science students are the members of IT
+                                                            club. 15
+                                                            students, 5
+                                                            students from each batch, are selected as executive members.
+                                                            The
+                                                            students from other
+                                                            discipline can also register as a member.
+
+                                                            The main objective of the club is to keep aware the students
+                                                            with
+                                                            the latest skills
+                                                            in IT apart from the regular IT syllabus, and give them
+                                                            practical
+                                                            hands on
+                                                            experience and to enhance the analytical and logical
+                                                            aptitude of
+                                                            students. The club
+                                                            also aims to bring out the best in students &amp; enhance
+                                                            their
+                                                            logical and creative
+                                                            ability to groom individual's potentials and provide an
+                                                            environment
+                                                            to work
+                                                            independently. It also facilitates to make them aware of the
+                                                            various
+                                                            career
+                                                            opportunities in the IT industry and related job profiles.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip" class="readmore" id="readmore">
+                                                            IT Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#"
+                                                                   class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs2" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs2">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Theatre Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            <strong>“Drama is our passion, Life is our action.”</strong>
+                                                            The purpose of Theater club is to foster attitudes,
+                                                            understandings,
+                                                            skills and enjoyment so each student's artistic potential
+                                                            may be
+                                                            developed. In developing their potential, students will
+                                                            realize
+                                                            that
+                                                            lifelong participation in the arts is a valuable part of a
+                                                            life
+                                                            fully
+                                                            lived.
+                                                            <h3 class="sub_head">Objectives</h3>
+                                                            <ul>
+                                                                <li>To develop aesthetic awareness, appreciation &amp;
+                                                                    knowledge,
+                                                                    attitudes &amp; skills necessary for the expression
+                                                                    of
+                                                                    art
+                                                                    through
+                                                                    the form of drama.
+                                                                </li>
+                                                                <li>To develop amongst the students necessary skills in
+                                                                    communication, interpersonal relationships, teamwork
+                                                                    &amp;
+                                                                    problem
+                                                                    solving through various art of drama
+                                                                </li>
+                                                                <li>Development of awareness (sensitivity) &amp;
+                                                                    enjoyment
+                                                                    of
+                                                                    the
+                                                                    ways &amp;
+                                                                    willingness to accept responsibilities
+                                                                    Dr. Muhammed Haneefa.P; Associate Professor,
+                                                                    Department
+                                                                    of
+                                                                    Arabic is the teacher Co-ordinator.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip" class="readmore" id="readmore">
+                                                            THEATRE Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#"
+                                                                   class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs3" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs3">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Histo Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image" loading="lazy" style=""/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The HistoClub is an umbrella for several activities
+                                                            associated
+                                                            with
+                                                            the
+                                                            West Asian studies Department. Clubs are an opportunity to
+                                                            learn
+                                                            new
+                                                            things with others, to share your passions, and to become
+                                                            involved
+                                                            in
+                                                            the historical community. Beginning a club takes careful
+                                                            planning
+                                                            and
+                                                            organization in order for it to be successful. The HISTOCLUB
+                                                            main
+                                                            goal
+                                                            is to bring together students and teachers with a real
+                                                            passion
+                                                            for
+                                                            history, helping them learn from each other's ideas,
+                                                            experiences,
+                                                            and
+                                                            stories, and other communication methods.<br/>The purpose of
+                                                            the
+                                                            Histo Club is:
+                                                            <br/>
+                                                            <ul>
+                                                                <li>To encourage students of diverse backgrounds and
+                                                                    varying
+                                                                    abilities with a genuine interest in history,
+                                                                </li>
+                                                                <li>To learn and develop historical research and writing
+                                                                    skills,
+                                                                </li>
+                                                                <li>To gain knowledge of history through research, site
+                                                                    visits,
+                                                                    and
+                                                                    exposure to guest speakers,
+                                                                </li>
+                                                                <li>To encourage student participation in the local
+                                                                    History
+                                                                    Fair,
+                                                                </li>
+                                                                <br/>
+                                                                Some of the activities that the HistoClub will sponsor
+                                                                include:
+                                                                <br/>
+                                                                <li>Field trips to museums and other historical sites,
+                                                                </li>
+                                                                <li>Discovering careers in history-based fields,</li>
+                                                                <li>Learning historical research and writing techniques,
+                                                                </li>
+                                                                <li>Participating in community and school improvement
+                                                                    activities,
+                                                                </li>
+                                                                <br/>
+                                                                Participating in local, state, and national level
+                                                                History
+                                                                Fairs.
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Histo Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""
+                                                                     loading="lazy" style=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs4" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs4">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">MANAGEMENT Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image" loading="lazy" style=""/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            To be an effective resource for students aspiring to build
+                                                            successful
+                                                            careers in general management and They decide to conduct
+                                                            events
+                                                            bearing
+                                                            on every functional area of management such as Invited
+                                                            Lecturers,
+                                                            Role
+                                                            Plays, Debates, Quizzes, Cultural and Publishing, Sports
+                                                            activities
+                                                            and
+                                                            Management Competitions
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            MANAGEMENT Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""
+                                                                     loading="lazy" style=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs5" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs5">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Microbiome Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The Microbiome club is an endeavor by the students and
+                                                            faculty
+                                                            of
+                                                            the PG
+                                                            Department of Microbiology. This club is instituted to
+                                                            promote
+                                                            student
+                                                            interest and development in microbiology, and to advance
+                                                            scientific
+                                                            knowledge through personal associations and the interchange
+                                                            of
+                                                            ideas. It
+                                                            aims to provide all potential students a chance to do
+                                                            something
+                                                            apart
+                                                            from the curriculum. The club innovates to go beyond the
+                                                            curriculum
+                                                            and
+                                                            indulge in different activities. It also provide students
+                                                            with
+                                                            information and resources on employment after completion of
+                                                            the
+                                                            course,
+                                                            and to enhance learning outside the classroom.
+                                                            <br/>
+                                                            <h3 class="sub_head">Objectives</h3>
+                                                            The club aims to build young minds, explore innovative ideas
+                                                            and
+                                                            by
+                                                            mutual cooperation among members, Faculties and
+                                                            professionals,
+                                                            abreast
+                                                            with the advancements in the field of Microbiology. It also
+                                                            initiates
+                                                            many events and activities to motivate the enthusiastic to
+                                                            pave
+                                                            a
+                                                            path
+                                                            towards their own venture and become budding Scientist.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Microbiome Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs6" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs6">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Literary Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            <strong>Literary Club is an initiative of the PG Department
+                                                                of
+                                                                English
+                                                                of the
+                                                                college.
+                                                            </strong>
+                                                            <br/>
+
+                                                            The club aims at enhancing the creative abilities of the
+                                                            students
+                                                            and
+                                                            providing them with necessary inputs and facilities.
+                                                            Literary
+                                                            Club
+                                                            organizes various pro-grams such as Invited Lectures,
+                                                            Reading
+                                                            Sessions,
+                                                            Writing Workshops and Litvan-za - Annual Literary and
+                                                            Cultural
+                                                            Fest.
+                                                            The
+                                                            club has founded Ambedkar Study Circle - a platform for
+                                                            discussing
+                                                            and
+                                                            debating contemporary socio-political issues.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs7" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs7">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Women Cell</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Women’s Cell focuses on motivating the girls students to
+                                                            strive
+                                                            for
+                                                            gender equal-ity in diverse fields with a motto of grooming
+                                                            them
+                                                            to
+                                                            lead
+                                                            a dignified life in society. The forum is actively involved
+                                                            in
+                                                            organizing various welfare programme for the girl students
+                                                            who
+                                                            form
+                                                            the
+                                                            major part of the student community.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">Women Cell REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs8" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs8">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Music Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+
+                                                            The music club at EMEA college set up to encourage talent in
+                                                            music-instrumental as well as vocal. This is a student–run
+                                                            club
+                                                            which
+                                                            was formed in the year 2018.Members participate in all
+                                                            cultural
+                                                            activities of the college. All interested and talented
+                                                            students
+                                                            are
+                                                            encouraged to join as members.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs9" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs9">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Commerce Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Commerce Club
+                                                            The commerce club is one of the earliest clubs of EMEA
+                                                            College
+                                                            of
+                                                            Arts
+                                                            and Science, Kondotty, constituted in the year 2004-05, the
+                                                            main
+                                                            objectives of the club is to build up a common platform for
+                                                            the
+                                                            overall
+                                                            development of commerce students of this college. The
+                                                            organizers
+                                                            hope to
+                                                            open up the vistas of activities to nearby colleges
+                                                            also.Commerce’
+                                                            Club
+                                                            strives to make the students to go beyond the classroom
+                                                            learning
+                                                            and
+                                                            to
+                                                            think ingeniously to confidently face the ever changing
+                                                            demands
+                                                            of
+                                                            the
+                                                            commercial world and to prove themselves as the best
+                                                            business
+                                                            leaders.'
+                                                        </div>
+                                                        <h3 class="sub_head">ACTIVITIES OF THE CLUB</h3>
+                                                        <ul>
+                                                            <li>
+                                                                Activities of commerce club commence on the day of
+                                                                interview
+                                                                on
+                                                                which students are admitted to first B.Com and M.Com
+                                                                class.
+                                                                A
+                                                                ‘help
+                                                                desk’ service is provided to guide the new comers and
+                                                                their
+                                                                parents.
+                                                            </li>
+                                                            <li>On the first day of first B.Com, M.Com class each year,
+                                                                the
+                                                                students
+                                                                of the class along with their parents/guardian will have
+                                                                to
+                                                                gather
+                                                                for two hours. The session intends to cater to the needs
+                                                                of
+                                                                the
+                                                                students regarding their future prospectus. All the
+                                                                members
+                                                                of
+                                                                the
+                                                                program can clarify their doubts. All faculty members of
+                                                                the
+                                                                department take part in the session. Appropriate slide
+                                                                shows
+                                                                help to
+                                                                pin point major details.
+
+                                                            </li>
+                                                            <li>A class arouse the motivation of newcomers is proposed
+                                                                to
+                                                                conducted
+                                                                within one month for new comers.
+                                                            </li>
+                                                            <li>
+                                                                To change the mind set on the negative attitude
+                                                                prevailing
+                                                                in
+                                                                the
+                                                                state for taking up entrepreneurship as a career.
+                                                            </li>
+                                                            <li>
+                                                                A reading room for the commerce students is arranged in
+                                                                front of
+                                                                the
+                                                                department. Leading news-papers and periodicals in
+                                                                English
+                                                                and
+                                                                Malayalam along with major periodicals on commerce
+                                                                subject
+                                                                are
+                                                                kept
+                                                                in the reading room.
+                                                            </li>
+                                                            <li>The club helps for the maintenance of text book library
+                                                                of
+                                                                the
+                                                                Department of Commerce.
+                                                            </li>
+                                                            <li>All general activities of the College will have a
+                                                                ‘commerce
+                                                                touch’
+                                                                with the active participation of the members of club.
+                                                                From
+                                                                the
+                                                                year
+                                                                of its inception to date, the Onam celebrations held
+                                                                before
+                                                                the
+                                                                Onam
+                                                                vacation have been notable with the active participation
+                                                                of
+                                                                selected
+                                                                members in various competitive items.
+                                                            </li>
+                                                            <li>
+                                                                ‘ComMet’, the commerce and management meet of the
+                                                                Department
+                                                                is
+                                                                to
+                                                                be conducted with the active supervision of commerce
+                                                                club
+                                                                members.
+                                                            </li>
+
+                                                            <strong>OFFICE BEARES AND CONSTITUTION OF THE CLUB</strong>
+                                                            <li>To organize the activities of the club, the following
+                                                                arrangement is
+                                                                made:
+                                                            </li>
+                                                            <li>The president, the secretary and the treasurer to be
+                                                                elected
+                                                                from
+                                                                among the Final year B.Com students.
+                                                            </li>
+                                                            <li>Three Vice-presidents and three Joint-secretaries are to
+                                                                be
+                                                                other
+                                                                important officials.
+                                                            </li>
+                                                            <li>In addition to the above, five members each from each
+                                                                semester
+                                                                B.com
+                                                                classes to from the executive body of the club.
+                                                            </li>
+                                                            <li>The General Body to include all the B.Com students of
+                                                                the
+                                                                college.
+                                                            </li>
+                                                            <li>The Executive Committee is to meet once in very month
+                                                                and
+                                                                General
+                                                                Body twice in a year.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs10" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs10">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Bhoomithrasena Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Environmental education has become an inevitable tool in
+                                                            creating
+                                                            awareness on imperatives of environ-mental sustainability.
+                                                            Bhoomitra
+                                                            Sena Club an idea conceived by Directorate of Environment
+                                                            &amp;
+                                                            Climate
+                                                            Change un-der Department of Environment and Climate Change
+                                                            serves
+                                                            this
+                                                            purpose.Agencies like Kerala State Pollution Control Board,
+                                                            Kerala
+                                                            State
+                                                            Bio-diversity Board and Kerala Suchitwa Mission extend
+                                                            support
+                                                            to
+                                                            this
+                                                            programme. The Bhoomithra Sena club of EMEA College is aimed
+                                                            at
+                                                            encouraging college students to appreciate the environment
+                                                            and
+                                                            to
+                                                            react
+                                                            positively to environmental issues. The club organizes
+                                                            Seminars,
+                                                            Debates, Lectures and talks on environmental issues. It also
+                                                            arranges
+                                                            visits to Wildlife Park, environmentally degrading areas
+                                                            etc.
+                                                            Other
+                                                            activities include cleaning and maintaining the polluted or
+                                                            environmentally degraded sites, planting and maintaining
+                                                            trees
+                                                            in
+                                                            the
+                                                            campus.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs11" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs11">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Tourism Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Tourism in Kerala is going through at significant phase of
+                                                            growth
+                                                            and
+                                                            de-velopment. The sustained efforts of the department of
+                                                            tourism
+                                                            over a
+                                                            period of several years have played a crucial role in
+                                                            achieving
+                                                            this
+                                                            momentum and direction. The department of tourism is
+                                                            committed
+                                                            to
+                                                            preserving this trend and working towards long-term goals of
+                                                            establishing tourism as a major development factor in the
+                                                            state.
+                                                            It
+                                                            is
+                                                            with this objective that the Department of Tourism is
+                                                            envisaging
+                                                            a
+                                                            massive awareness campaign in the state. Setting up of
+                                                            tourism
+                                                            clubs
+                                                            in
+                                                            colleges and schools is aimed at creating proper awareness
+                                                            about
+                                                            tourism
+                                                            among the youth.
+                                                            <br/>
+                                                            <br/>
+
+
+                                                            With improved infrastructure and better publicity, hopes are
+                                                            pinned
+                                                            on
+                                                            receiving more tourists, both domestic as well as
+                                                            international
+                                                            in
+                                                            the
+                                                            seasons to come. Better hotels, restaurants and other
+                                                            facilities
+                                                            alone
+                                                            will not develop tourism. Along with the Department of
+                                                            Tourism
+                                                            efforts
+                                                            to facilitate adequate infrastructure for the same, it is
+                                                            equally
+                                                            important that steps be taken to create and maintain a
+                                                            collective
+                                                            mind-set among the people with a positive orientation
+                                                            towards
+                                                            tourism
+                                                            and hospitality. A traditional Indian concept of atithi devo
+                                                            bhava
+                                                            has
+                                                            to be re-established in the tourism industry. Our motto
+                                                            should
+                                                            be to
+                                                            receive a guest and send back a friend. Tourism and the
+                                                            hospitality
+                                                            industry can develop this attitude only with the cooperation
+                                                            and
+                                                            whole-hearted patronage of a friendly and hospitable host
+                                                            community.
+                                                            It
+                                                            is with this objective that the Department of Tourism is
+                                                            envisaging
+                                                            a
+                                                            massive awareness campaign in the state. Setting up of
+                                                            tourism
+                                                            clubs
+                                                            in
+                                                            colleges and schools is aimed at creating proper awareness
+                                                            about
+                                                            tourism
+                                                            among the youth.
+                                                            <br/>
+                                                            <br/>
+
+                                                            The Tourism club of EMEA College is functioning under the
+                                                            leader
+                                                            ship of
+                                                            Mr. Hussain.V, Assistant Professor, Department of Economics.
+                                                            The
+                                                            club
+                                                            consists of 50 members which were selected from different
+                                                            departments of
+                                                            the college on the basis of the interests of the students.
+                                                            Kumari
+                                                            Nihala
+                                                            Alikkal of English Department represents the student
+                                                            coordinator
+                                                            of
+                                                            the
+                                                            club.
+
+
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs12" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs12">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Entrepreneurship Development(Ed) Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The Entrepreneurial Skill Development Club (ED Club) is a
+                                                            student-run
+                                                            organization that is committed to being the catalyst that
+                                                            brings
+                                                            together the people and ideas to foster an interactive
+                                                            learning
+                                                            environment to explore the world of entrepreneurship. Our
+                                                            mission is
+                                                            to
+                                                            foster the spirit of entrepreneurship and the
+                                                            entrepreneurial
+                                                            way of
+                                                            thinking and to help students find the contacts, resources
+                                                            and
+                                                            real-world experiences necessary to launch or grow a
+                                                            successful
+                                                            enterprise.Entrepreneurship Development Club (ED) is a
+                                                            important
+                                                            club
+                                                            that, since the academic year 2008-09, has been organizing
+                                                            various
+                                                            Entrepreneurial Development and motivational programs.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs13" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs13">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Debating Society</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Debating is regarded as an educational tool for developing
+                                                            students’
+                                                            analytical and communication skills. Since debating is
+                                                            largely
+                                                            about
+                                                            developing arguments that are stronger than the arguments of
+                                                            the
+                                                            other
+                                                            side of the debating. But it’s not just the quality of the
+                                                            argument;
+                                                            it’s also the delivery, i.e. being able to present your
+                                                            argument
+                                                            in
+                                                            an
+                                                            understandable way. In that sense, debating is an excellent
+                                                            way
+                                                            of
+                                                            practicing public speaking skills. In addition, debating is
+                                                            interactive
+                                                            both because there is a possibility to ask questions during
+                                                            a
+                                                            speech
+                                                            and
+                                                            because the speeches themselves should always relate to the
+                                                            other
+                                                            speeches of the debating. Hence, developing communication
+                                                            skills
+                                                            in
+                                                            general is possible. The language of debating is English,
+                                                            which
+                                                            for
+                                                            most
+                                                            of us is not the first language, and using one’s language
+                                                            skills
+                                                            in
+                                                            such
+                                                            a dynamic way is sure to improve them. It’s also very
+                                                            important
+                                                            to
+                                                            remember the improvement one can notice in thinking skills
+                                                            after
+                                                            debating for time. Because people will often have to
+                                                            debating
+                                                            against
+                                                            their own personal opinions, debating inevitably improves
+                                                            critical
+                                                            thinking skills. One has be able to question one’s own
+                                                            opinions
+                                                            and
+                                                            see
+                                                            many different points of view to an issue. Also, because the
+                                                            preparation
+                                                            time for the debating is very short, only 15 minutes, and
+                                                            one
+                                                            might
+                                                            be
+                                                            asked unexpected questions during the debating, one also
+                                                            learns
+                                                            to
+                                                            think
+                                                            fast, and think well.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs14" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs14">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Students Initiative in Palliative (SIP)</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Students initiative in palliative (SIP) is a sub
+                                                            -organization
+                                                            of
+                                                            palliative care, aims to encourage active participation of
+                                                            the
+                                                            students
+                                                            in the sacred works of the palliative care. The key motto of
+                                                            the
+                                                            SIP
+                                                            is
+                                                            to provide able care and attention to the bed ridden
+                                                            patients
+                                                            and
+                                                            encourage them to line. Each volunteers of the SIP is a
+                                                            activity
+                                                            involving the programmes of a palliative care and provide
+                                                            enough
+                                                            confidence and energy to the bed ridden patients.
+
+                                                            SIP is introduced with the aim of familiarizing students
+                                                            with
+                                                            the
+                                                            need
+                                                            to be humane and kindhearted towards the human race, and
+                                                            those
+                                                            who
+                                                            are
+                                                            suffering and needy in different ways. The SIP unit of the
+                                                            college
+                                                            has
+                                                            been doing tremendous activities in fields of charity and
+                                                            social
+                                                            service.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs15" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs15">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Nature Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Students initiative in palliative (SIP) is a sub
+                                                            -organization
+                                                            of
+                                                            palliative care, aims to encourage active participation of
+                                                            the
+                                                            students
+                                                            in the sacred works of the palliative care. The key motto of
+                                                            the
+                                                            SIP
+                                                            is
+                                                            to provide able care and attention to the bed ridden
+                                                            patients
+                                                            and
+                                                            encourage them to line. Each volunteers of the SIP is a
+                                                            activity
+                                                            involving the programmes of a palliative care and provide
+                                                            enough
+                                                            confidence and energy to the bed ridden patients.
+
+                                                            SIP is introduced with the aim of familiarizing students
+                                                            with
+                                                            the
+                                                            need
+                                                            to be humane and kindhearted towards the human race, and
+                                                            those
+                                                            who
+                                                            are
+                                                            suffering and needy in different ways. The SIP unit of the
+                                                            college
+                                                            has
+                                                            been doing tremendous activities in fields of charity and
+                                                            social
+                                                            service.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs16" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs16">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Red Ribbon Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The RRC aims at harnessing the po­tential of the youth by
+                                                            equipping
+                                                            them
+                                                            with correct information on HIV/AIDS prevention, Care and
+                                                            Support
+                                                            and
+                                                            Treatment. It also aims in building their capacities as peer
+                                                            education
+                                                            in spreading message on positive health behaviour in an
+                                                            enabling
+                                                            environment and increasing voluntary blood donation from
+                                                            among
+                                                            youth.
+                                                            <br/>
+                                                            <br/>
+
+                                                            <h3 class="sub_head">Objectives</h3>
+
+                                                            The RRC in the educational institu­tions/other institutions
+                                                            will
+                                                            seek to
+                                                            initiate efforts to:Heighten their level of awareness about
+                                                            HIV/AIDS/STI/ sexuality and other re­lated issues (thus
+                                                            eliminate
+                                                            myths
+                                                            and misconceptions). Educate youth with correct, concise and
+                                                            adequate
+                                                            informa­tion and, To promote voluntary non-re­munerated
+                                                            blood
+                                                            donation
+                                                            among youth. To reduce new HIV infec­tion among youth by
+                                                            raising
+                                                            their
+                                                            risk perception through awareness on Sex, Sexuality and HIV
+                                                            &amp;
+                                                            AIDS.
+                                                            To
+                                                            induce among youth the spirit to help and sup­port people
+                                                            living
+                                                            with
+                                                            HIV/AIDS.To motivate youth and build their capac­ity as peer
+                                                            educators.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs17" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs17">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Staff Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            EMEA College Staff club has been set up for all of the
+                                                            teaching
+                                                            staff.
+                                                            It is constituted as a platform for all of the teaching
+                                                            staff to
+                                                            gather,
+                                                            relax, and interact with members of different departments of
+                                                            the
+                                                            college. Being a meeting place, it helps impart camaraderie
+                                                            among
+                                                            teachers. It focuses upon staff welfare activities also.
+                                                            Under
+                                                            the
+                                                            aegis
+                                                            of staff club, training for the staff to keep abreast with
+                                                            the
+                                                            new
+                                                            trends in the teaching is also conducted.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs18" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs18">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Library Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The main focus of the library club is to enrich the reading
+                                                            habit,
+                                                            get
+                                                            in touch with the books, and improve communication skill and
+                                                            general
+                                                            awareness among the students. The club also organizes a
+                                                            ‘Reading
+                                                            Week’
+                                                            where a certain author is selected and the student is
+                                                            familiarized
+                                                            with
+                                                            all the works of that writer. The library club focuses on
+                                                            special
+                                                            talk
+                                                            by experts, book talks and quiz programme.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs19" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs19">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Principal’s Club</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The Principal's Club is a unique programme established under
+                                                            the
+                                                            Students Advisory Scheme of the college in the academic year
+                                                            2018-2019.
+                                                            The programme is fully funded and monitored by the
+                                                            institution.
+                                                            <br/>
+
+                                                            <strong>Constitution of the Club</strong>
+
+                                                            The maximum intake of Advanced Learners will be restricted
+                                                            to
+                                                            50. Out of
+                                                            which, 10% seats will be reserved for SC/ST students.
+                                                            Proportionate
+                                                            representation for students from PH category is also
+                                                            considered.
+
+                                                            The members of the Club titled ‘Advanced Learners’ are
+                                                            selected
+                                                            from
+                                                            the
+                                                            newly enrolled first year students of Undergraduate
+                                                            programme
+                                                            through an
+                                                            entry level Entrance Examination. Special question papers
+                                                            are
+                                                            set
+                                                            having
+                                                            proportionate questions to check the proficiency of students
+                                                            in
+                                                            English
+                                                            language skills, GK and Current Affairs and the subject of
+                                                            their
+                                                            Plus
+                                                            Two Intermediate course. Equal weightage is given for their
+                                                            performance
+                                                            in the entrance examination and the percentage they obtained
+                                                            for
+                                                            the
+                                                            Plus Two examination. Students thus shortlisted will undergo
+                                                            an
+                                                            interview, before the final list is prepared.
+                                                            <br/>
+                                                            <strong>Entrance Test: Details</strong>
+                                                            <ul>
+                                                                <li>
+                                                                    There will be 50 objective type questions
+                                                                    <li>13 questions for checking English Language
+                                                                        Skills
+                                                                    </li>
+                                                                    <li>12 Questions from GK and Current Affairs</li>
+                                                                    <li>25 questions from the Plus Two Subject</li>
+                                                                </li>
+                                                                <li>Each question carries 2 Marks</li>
+                                                            </ul>
+                                                            <h3 class="sub_head">Principal’s Club: Benefits and
+                                                                Privileges
+                                                            </h3>
+                                                            The students selected have the following benefits and
+                                                            privileges:
+                                                            <ul>
+                                                                <li>Additional Library cards</li>
+                                                                <li>Meet the guest programmes</li>
+                                                                <li>Residential career workshops</li>
+                                                                <li>Tours to Higher educational Institutions</li>
+                                                                <li>Participation in exclusive programmes organised by
+                                                                    potential
+                                                                    institutions
+                                                                </li>
+                                                                <li>
+                                                                    Special training on public speaking, debating,
+                                                                    interview
+                                                                    skills,
+                                                                    body
+                                                                    language, presentation and seminar skills etc
+                                                                </li>
+                                                                <li>A package of distributing career magazines such as
+                                                                    Competition
+                                                                    Success
+                                                                    Review, and Competition Refresher, free of cost, is
+                                                                    also
+                                                                    under
+                                                                    consideration.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="clubs_emea_page" model="website.page">
+            <field name="url">/clubs</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="clubs_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

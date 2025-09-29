@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_academic_calendar_config_form" model="ir.ui.view">
+        <field name="name">academic.calendar.config.form</field>
+        <field name="model">academic.calendar</field>
+        <field name="arch" type="xml">
+            <form string="Academic calendar">
+                <sheet>
+                    <group>
+                        <field name="academic_year"/>
+                        <field name="pdf_file" filename="file_name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for  Career Manage -->
+    <record id="view_academic_calendar_config_tree" model="ir.ui.view">
+        <field name="name">academic.calendar.config.tree</field>
+        <field name="model">academic.calendar</field>
+        <field name="arch" type="xml">
+            <tree string="Academic calendar">
+                <field name="academic_year"/>
+                <field name="file_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for  Career Manage -->
+    <record id="action_academic_calendar" model="ir.actions.act_window">
+        <field name="name">Academic calendar</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">academic.calendar</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_academic_calendar_config_tree"/>
+    </record>
+    <menuitem id="menu_academic_calendar"
+              name="Academic Calendar"
+              parent="menu_landing_page_root"
+              action="action_academic_calendar"
+              sequence="24"
+              groups="landing_page.group_academic_calendar_admin"/>
+</odoo>

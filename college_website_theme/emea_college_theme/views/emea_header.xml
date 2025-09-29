@@ -1,0 +1,3074 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="template_header_emea" inherit_id="website.layout" name="Header EMEA Template" active="once">
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"/>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"/>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+                  integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+                  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+            <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                const tabs = document.querySelectorAll(".nav-link");
+                const tabContents = document.querySelectorAll(".tab-content");
+
+                // Define the activateTab function globally
+                window.activateTab = function(event, tabId) {
+                if (event) event.preventDefault(); // Prevent default anchor behavior if event exists
+                tabs.forEach(tab =&gt; tab.classList.remove("active"));
+                tabContents.forEach(content =&gt; content.classList.remove("active"));
+
+                const activeTab = document.querySelector(`.nav-link[href="#${tabId}"]`);
+                const activeContent = document.getElementById(tabId);
+
+                if (activeTab) activeTab.classList.add("active");
+                if (activeContent) activeContent.classList.add("active");
+
+                history.pushState(null, null, `#${tabId}`);
+                }
+
+                function loadTabFromURL() {
+                const hash = window.location.hash.substring(1);
+                if (hash) {
+                activateTab(null, hash); // No event to pass, so null is passed
+                }
+                }
+
+                window.addEventListener("popstate", loadTabFromURL);
+
+                loadTabFromURL(); // Load the correct tab based on the URL hash on page load
+                });
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const navToggler = document.getElementById('navToggler');
+                const topMenuCollapse = document.getElementById('site-navigation');
+                const Wrap = document.getElementById('wrap');
+                const foot = document.getElementById('bottom');
+
+                navToggler.addEventListener('click', function() {
+                // Toggle the 'show' class on the topMenuCollapse element
+                topMenuCollapse.classList.toggle('show');
+                Wrap.classList.toggle("lock-scroll");
+                foot.classList.toggle("lock-scroll");
+                navToggler.classList.toggle('menu-opened');
+                });
+                });
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.nav-item.dropdown .nav-link.dropdown-toggle').forEach(function(link, index)
+                {
+                link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var navbarCollapse = document.getElementById('emea_top_menu_collapse');
+                if (!navbarCollapse.classList.contains('show')) { // If the navbar is not collapsed (in mobile view)
+                if (index === 1) {
+                window.open("https://emea.embase.in/admission/", "_blank"); // Open in new tab
+                } else if (index === 2) {
+                window.location.href = "/academics";
+                } else if (index === 7) {
+                window.location.href = "/Home/IQAC/Composition/172";
+                }
+                else if (index === 5) {
+                window.location.href = "/academics-support ";
+                }
+                }
+                });
+                });
+                });
+            </script>
+            <script>
+                $(document).ready(function() {
+                // Ensure the DOM is fully loaded before attaching event listeners
+                document.querySelectorAll('.drop-emea .nav-link.dropdown-toggle').forEach(link =&gt; {
+                link.addEventListener('show.bs.dropdown', function() {
+                if (navbarCollapse.classList.contains('show')) {
+                this.closest('.nav-item').style.flex = '0 0 100%';
+                }
+                });
+
+                link.addEventListener('hide.bs.dropdown', function() {
+                if (navbarCollapse.classList.contains('show')) {
+                this.closest('.nav-item').style.flex = '0 0 50%';
+                }
+                });
+                });
+
+                // Check if the mobile navbar is collapsed or shown
+                var navbarCollapse = document.getElementById('site-navigation');
+                if (navbarCollapse.classList.contains('show')) {
+                // Adjust flex properties or apply styles as needed for mobile view
+                document.querySelectorAll('.drop-emea .nav-link.dropdown-toggle').forEach(link =&gt; {
+                link.closest('.nav-item').style.flex = '0 0 100%';
+                });
+                }
+                });
+
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const navToggler = document.getElementById('navToggler');
+                const menuOverlay = document.getElementById('menu-overlay');
+
+                // Function to check and update the display property of the menu overlay
+                function updateMenuOverlay() {
+                if (navToggler.classList.contains('menu-opened')) {
+                menuOverlay.style.display = 'block';
+                } else {
+                menuOverlay.style.display = 'none';
+                }
+                }
+
+                // MutationObserver to detect class changes on the navToggler element
+                const observer = new MutationObserver(updateMenuOverlay);
+
+                // Observe attribute changes (specifically class changes) on the navToggler element
+                observer.observe(navToggler, { attributes: true, attributeFilter: ['class'] });
+
+                // Initial check
+                updateMenuOverlay();
+                });
+
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                var searchButton = document.querySelector('.search-button');
+                var searchInput = document.querySelector('.search-input');
+
+                if (searchButton &amp;&amp; searchInput) {
+                searchButton.addEventListener('click', function() {
+                if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+                searchInput.style.display = 'block';
+                } else {
+                searchInput.style.display = 'none';
+                }
+                });
+                }
+                });
+
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                // Function to update the width of the menu item
+                function updateMenuItemWidth() {
+                var dropdownMenu = document.querySelector('#drop_down.show');
+                var menuItem = document.querySelector('.menu-item-type-post_type');
+
+                if (dropdownMenu) {
+                menuItem.style.width = '100%';
+                } else {
+                menuItem.style.width = ''; // Reset to default if the dropdown is not shown
+                }
+                }
+
+                // Call the function initially to set the correct width
+                updateMenuItemWidth();
+
+                // Add event listeners for dropdown show and hide events
+                var dropdownToggle = document.querySelector('.dropdown-toggle');
+                dropdownToggle.addEventListener('click', function() {
+                // Update the width when the dropdown is toggled
+                updateMenuItemWidth();
+                });
+                });
+
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const searchButton = document.querySelector('.mobile-button');
+                const searchInput = document.querySelector('.mobile-search');
+
+                searchButton.addEventListener('click', function() {
+                if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+                searchInput.style.display = 'block';
+                } else {
+                searchInput.style.display = 'none';
+                }
+                });
+                });
+            </script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"/>
+            <script>
+                $(document).ready(function() {
+                $('.tabs-list1 .nav-link').not('#drop_sidebar-li').on('click', function() {
+                var $clubTabs = $('#all_tabs');
+
+                // Check if #club_tabs exists
+                if ($clubTabs.length) {
+                // Scroll to the top of the container (#all_tabs)
+                $('html, body').animate({
+                scrollTop: $clubTabs.offset().top
+                }, 600);
+                }
+                // If #club_tabs doesn't exist, simply do nothing and continue without any errors.
+                });
+                });
+            </script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                // Check if the current path is '/aqar-documents'
+                if (window.location.pathname === '/aqar-documents') {
+                // Encode the URL to handle special characters
+                var redirectUrl = 'https://emeacollege.ac.in/Home/IQAC/AQAR%20Documents/2175';
+                // Redirect to the encoded URL
+                window.location.href = redirectUrl;
+                }
+                });
+
+
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                // Check if the current URL path matches the old URL for the IQAC Best Practices page
+                if (window.location.pathname === '/iqac-best-practices') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Best%20Practices/1986';
+                }
+                // Check if the current URL matches the old URL for the AQAR Documents page
+                else if (window.location.href === 'https://emeacollege.ac.in/Home/IQAC/AQAR+Documents/2175') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/AQAR%20Documents/2175';
+                }
+                // Check if the current URL matches the old URL for the Best Practices page with '+'
+                else if (window.location.href === 'https://emeacollege.ac.in/Home/IQAC/Best+Practices/1986') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Best%20Practices/1986';
+                }
+                // Check if the current URL path matches '/activities'
+                else if (window.location.pathname === '/activities') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Activities/179';
+                }
+                else if (window.location.pathname === '/gender-equity') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Gender%20Equity/2172';
+                }
+                else if (window.location.href === 'https://emeacollege.ac.in/Home/IQAC/Minutes+_+ATR/174') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Minutes%20_%20ATR/174';
+                }
+                else if (window.location.href ===
+                'https://emeacollege.ac.in/Home/IQAC/Students+Satisfaction+Survey/1985') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Students%20Satisfaction%20Survey/1985';
+                }
+                else if (window.location.pathname === '/minutes_atr') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Minutes%20_%20ATR/174';
+                }
+                else if (window.location.pathname === '/iqac_annual_report') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Annual%20Reports/1987';
+                }
+                else if (window.location.pathname === '/sss_annual_report') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Students%20Satisfaction%20Survey/1985';
+                }
+                else if (window.location.pathname === '/composition_iqac') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Composition/172';
+                }
+                else if (window.location.pathname === '/curriculum-feedback-report') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Feedback/1731';
+                }
+                else if (window.location.pathname === '/curriculum-feedback-atr') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Feedback/1732';
+                }
+                else if (window.location.pathname === '/strategic-plan') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Mandatory Disclosure/1664';
+                }
+                else if (window.location.href === 'https://emeacollege.ac.in/Home/IQAC/Mandatory+Disclosure/1664') {
+                window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Mandatory Disclosure/1664';
+                }
+                });
+            </script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                // Ensure navigation and dropdowns load first
+                const navElement = document.getElementById('site-navigation');
+
+                // Add event listeners for dropdowns
+                const dropdownToggles = navElement.querySelectorAll('.dropdown-toggle');
+
+                dropdownToggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                const parent = toggle.parentElement;
+                const dropdownMenu = parent.querySelector('.dropdown-menu');
+
+                // Toggle dropdown visibility
+                if (dropdownMenu.classList.contains('show')) {
+                dropdownMenu.classList.remove('show');
+                } else {
+                // Close other open dropdowns if needed
+                navElement.querySelectorAll('.dropdown-menu').forEach(function (openMenu) {
+                openMenu.classList.remove('show');
+                });
+                dropdownMenu.classList.add('show');
+                }
+                });
+                });
+                });
+
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                // Select all links with the class `o_image`
+                var links = document.querySelectorAll('a.o_image');
+
+                links.forEach(function(link) {
+                // Get the current href value
+                var href = link.getAttribute('href');
+
+                // Check if the href contains `download=true`
+                if (href.includes('download=true')) {
+                // Remove the `download=true` parameter
+                href = href.split('&amp;download=true')[0];
+                link.setAttribute('href', href);
+                }
+                });
+                });
+
+            </script>
+            <style>
+                .pdf_head{
+                padding:10px;
+                flex:0 0 90%;
+                }
+
+                .objectives{
+                padding:0;
+                }
+                #view_pdf{
+                flex: 0 0 auto;
+                position: relative; width: 50px; display: block;
+                border-radius: 5px;
+                margin-left: 10px;
+                font-size: 15px;
+                font-weight: 600;
+                border: 1px solid #d7d7d7;
+
+                height: 50px;
+                }
+                #view_pdf a{
+                width: 100%;height: 100%;position: absolute !IMPORTANT;right: 0;z-index:1;
+                }
+                #view_id{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                right: 0;
+                top: 0;
+                z-index: 0;
+                color:var(--primary);
+                padding: 5px 10px;
+                }
+                .virtual:hover{
+                border: 2px solid rgb(255 255 255) !important;
+                color:white !important;
+                }
+                .dates{
+                width:auto;
+                padding: 0 !important;
+                }
+                .names{
+                width:70%;
+                }
+                .achievement-card-p{
+                display:none !important;
+                }
+                #news_block {
+                padding-left: 0;
+                }
+                .achievement-card-box {
+                padding-left: 0 !important;
+                }
+                .s_blog_post_emea_department .achievement-card-box {
+                padding-left: 0 !IMPORTANT;
+                padding: 0px 21px !important;
+                box-shadow: rgba(100, 100, 111, 0.2) -1px -7px 9px 0px;
+                padding-left: 0 !important;
+                }
+                .website_blog .o_wblog_post_page_cover.o_record_has_cover .o_record_cover_image:after{
+                background: none;
+                }
+                .o_blog_post_title{
+                padding: 12px;
+                padding-top: 25px;
+                }
+                #all_date {
+                position: relative;
+                font-size: 17px;
+                font-weight: 900;
+                background: var(--primary);
+                padding: 12px 13px;
+                text-align: center;
+                line-height: normal;
+                border-radius: 0px;
+                color: var(--100) !important;
+                word-break: break-word;
+                max-width: 70px;
+                text-shadow: 0px 0px 60px #060101;
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom-left-radius: 12px;
+
+                }
+
+                #achieve_date {
+                position: relative;
+                left: 0;
+                top: 0;
+                font-size: 17px;
+                font-weight: 600;
+                background: var(--primary);
+                padding: 12px 13px;
+                text-align: center;
+                line-height: normal;
+                border-radius: 0;
+                color: var(--100) !important;
+                display: flex;
+                flex-wrap: wrap;
+                word-break: break-word;
+                width: 70px;
+                text-shadow: 0px 0px 60px #060101;
+                margin-right: 10px;
+                white-space: break-spaces;
+                }
+                .s_blog_post_emea_department .achievement-card-box{
+                padding: 0px 21px 0 0 !important;
+                box-shadow: rgba(100, 100, 111, 0.2) -1px -7px 9px 0px;
+                }
+                .s_blog_post_emea_department .achievement-card-name {
+                color: #212529;
+                font-family: Poppins;
+                font-size: 14px !Important;
+                font-style: normal;
+                font-weight: 600;
+                padding-top: 20px !Important;
+                margin: 0;
+                word-wrap: break-word !important;
+                word-break: normal !Important;
+                }
+                .s_blog_post_emea_department .achievement-card {
+                height: auto;
+                box-shadow: rgb(0 0 0 / 18%) 0px 0px 7px 0px;
+                border-radius: 10px;
+                }
+
+                @media(max-width:768px) and (min-width:600px){
+                .s_blog_post_emea_department .col-4 {
+                width:50%;
+                }
+                .former_card {
+                height: auto !important;
+                width: 300px !important;
+                max-width:300px !important;
+                }
+                }
+                .achievement-card {
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                max-width: 100%;
+                min-width: 300px;}
+                .achievement-card-image {
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                max-height: 180px;
+                margin: 0px;
+                }
+                .achievement-card-image img {
+                object-fit: cover;
+                }
+
+
+                .page_head{
+                width: fit-content;
+                padding-bottom: 5px ! IMPORTANT;
+                border-bottom: double;
+                padding-left: 0;
+                margin-left: 15px;
+                }
+                .page_text {
+                padding-left: 15px;
+                }
+                .reports_ a {
+                display: block !important;
+                width: 250px; margin: 0;
+                }
+                .table td, .table th {
+                text-align:left;
+                }
+                .main_fac .former_card{
+                margin: auto !important;
+                height: 100% !important;
+                }
+                .main_fac {
+                grid-template-columns: repeat(5, 1fr);
+                display: grid;
+                column-gap: 2.4rem;
+                row-gap: 2.4rem;
+                margin-left: 20px;
+                }
+                @media (max-width:1440px){
+                .main_fac{
+                grid-template-columns: repeat(4, 1fr);
+                }}
+                @media (max-width: 75em) {
+                .main_fac {
+                column-gap: 1rem;
+                row-gap: 1rem;
+                }
+                }
+                @media (max-width: 768px) {
+                .main_fac {
+                grid-template-columns: repeat(2, 1fr) !important;
+                margin: auto;
+                padding: 10px;
+                }
+                .main_fac .former_card {
+                height:100% !important;
+                }
+                }
+                @media (max-width: 600px) {
+                .main_fac {
+                grid-template-columns: repeat(1, 1fr) !important;}
+                }
+
+            </style>
+            <style>
+                .tab-content .page_head{
+                margin-left: 20px;
+                padding-top: 10px;
+                width: fit-content;
+                padding-bottom: 5px ! IMPORTANT;
+                border-bottom: double;}
+                .ssr_gap{
+                gap:20px;
+                }
+
+
+                .lock-scroll {
+                overflow: hidden !important;
+                display: none;
+                }
+
+
+                #top .navbar .o_mega_menu {
+                inset: auto auto auto -80px !important;}
+                #top .navbar .iqac_mega {
+                inset: auto auto auto -650px !important;
+                }
+                #facili{
+                justify-content: center;
+                }
+                .all-facilities {
+                overflow: hidden;
+                background: white;
+                margin: 8px 5px;
+                border: 1px solid #35979ca6;
+                margin: 10px 46px;
+                }
+                .facilities {
+                width: auto;
+                flex:1 1 auto;
+                padding: 8px 10px;
+                margin: 10px 20px;
+                max-width: 250px;
+                }
+                .facility-link.active {
+                background: var(--primary);
+                color: var(--white);
+                }
+                .facility-link {
+                display: block;
+                padding: 0.5rem 1rem;
+                color: var(--primary);
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 5px;
+                border: 1px solid;
+                }
+                .facility-link:hover {
+                background: var(--primary);
+                color: white;
+                }
+                @media(max-width:1400px){
+                .facilities {
+                width: auto;
+                flex: 1 1 auto;
+                padding: 8px 10px;
+                margin: 10px 20px;
+                max-width: 250px;
+                min-width: calc(250px - 5vw);
+                }
+                #facili{
+                justify-content: left;
+                }
+                }
+
+                @media screen and (max-width: 900px) {
+
+                .facilities {
+                width:50%;
+                }
+
+                }
+                @media (max-width: 600px){
+                .facilities {
+                width:100%;
+                }
+                .all-facilities {
+                padding:0 20px;
+                }
+                .s_faq_collapse.s_faq_collapse_boxed .accordion .card {
+                margin:10px;
+                }
+                }
+                .homepage .top-bar{
+                height:70%;
+                }
+                .homepage .navbar-light .navbar-nav .emea-link {
+                text-shadow: #1a1919 1px 1px 7px;
+                }
+
+                .homepage #emea_top_menu_collapse{
+                position:relative;
+                top: -45px;
+                left:150px
+                }
+                *{
+                scroll-behavior: smooth;
+                }
+                @media(max-width:1200px){
+                #facili{
+                justify-content: center;
+                }
+                .facilities {
+                min-width: 250px;
+                }
+                }
+
+                .homepage #top .navbar .academicmenu{
+                inset: 16px auto auto -200px !important;
+                }
+                .homepage #top .navbar .iqac_mega {
+                inset: auto auto auto -800px !important;
+                }
+
+                .top-bar .nav-item:hover .dropdown-menu {
+                display: none;
+                }
+                .top_drop.show {
+                display: block !important;
+                }
+                @media(max-width:1200px){
+                .homepage #top .navbar .iqac_mega {
+                inset: auto auto auto -700px !important;
+                }}
+
+                @media (max-width: 800px) {
+                .homepage #emea_top_menu_collapse {
+                position: relative;
+                top: 0;
+                left: 0;
+                }
+                .homepage .navbar-light .navbar-nav .emea-link {
+                text-shadow: none;
+                }
+                .bg_color_club {
+                height: 100% !important;
+                background: rgb(233 233 233);
+                }
+                }
+                @media (max-width: 600px) {
+                .facilities {
+                min-width: 100%;
+                }
+                .table tr {
+                margin-bottom: 15px;
+                height: 100% !important;
+                }
+                .confrance{
+                box-shadow:none;
+                }
+                .margin_30 {
+                padding:10px;
+                }
+                .page_head {
+                text-align:center;
+                padding-top:15px;
+                margin: 5px 10px ! IMPORTANT;
+                }
+                #tabs1 .page_head {
+                margin: 10px !important;
+                font-size: 1.2rem !important;
+                }
+                .former_card:first-child {
+                margin-top:0 !important;
+                }
+                .former_card:last-child {
+                margin-bottom:0 !important;
+                }
+                .table td {
+                min-height: 40px;
+                }
+                .table{
+                padding: 8px;
+                }
+                #clubs {
+                width: 100% !important;
+                padding: 10px !important;
+                }
+                .achievement-card {
+                margin: auto;
+                }
+                p{
+                letter-spacing: -0.5px;
+                }
+                .former_card {
+                margin: 30px auto !important;
+                }
+                .page_text {
+
+                hyphens: auto;
+                word-wrap: break-word !important;
+                white-space: normal;
+                word-spacing: 0.5rem;
+                word-break: normal;
+                }
+                .center_profile {
+                width: 100% ! IMPORTANT;
+                }
+                }
+                @media (max-width: 600px) {
+                .department_subhead {
+                text-align:center;
+                }
+                }
+
+                @media (max-width: 1440px) {
+                header#top {
+                height: 13vh !important;
+                }
+                }
+                @media (max-width: 600px) {
+                .center_profile{
+                display: flex;
+                justify-content: center;
+                }
+                }
+                @media (max-width: 600px) {
+                .in_charge {
+                text-align:center;
+                padding-top:10px;
+                }
+                }
+                @media (max-width: 600px) {
+                .page_text {
+                text-align:center;
+                padding:10px !important;
+                }
+                }
+                @media (max-width: 600px) {
+                .notes {
+                padding:20px !important;
+                }
+                }
+                @media (max-width: 600px) {
+                .row &gt; * {
+                padding: 0 !important;
+                }
+
+                }
+                #top .navbar .dropdown-menu {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                }
+                .tabs-list1 .ssr_card .collapse {
+                padding:2px 8px;
+                }
+                .tabs-list1 .ssr_card #child-li {
+                margin:5px 0;
+                }
+
+                .tabs-list1 .ssr_card #nested-item .nav-link{
+                margin:5px 0;
+                }
+                @media (max-width: 1200px) and (min-width: 769px) {
+                #clubs{
+                width: 25%;
+                }
+                }
+            </style>
+            <header id="top" data-anchor="true" data-name="Header">
+
+                <nav data-name="Navbar" id="all_tabs"
+                     class="navbar navbar-expand-lg navbar-light o_colored_level emea_navbar">
+                    <div class="row m-lg-0" style=" width:100%;">
+                        <div class="emea-logo" id="topbar1" style="">
+                            <a href="/" class="logo" data-bs-original-title="" title="">
+                                <img src="/emea_college_theme/static/img/emea.svg" loading="lazy" class="logo-img"
+                                     id="logo-emea" style=""/>
+                                <h2 id="logo-name" style="">
+                                    EMEA COLLEGE
+                                    <span id="logo-span" style="">KONDOTTY</span>
+                                </h2>
+                            </a>
+
+
+                            <div class="top-bar" id="top-items" style="">
+                                <form method="get" data-snippet="s_searchbar_input"
+                                      class="o_searchbar_form s_searchbar_input" action="/website/search"
+                                      data-name="Search">
+                                    <div role="search" class="input-group search-wrapper">
+                                        <input type="search" name="search"
+                                               class="search-query form-control oe_search_box None search-input"
+                                               placeholder="Search..." data-search-type="all" data-limit="25"
+                                               data-display-image="true" data-display-description="true"
+                                               data-display-extra-link="" data-display-detail="true"
+                                               data-order-by="name asc" autocomplete="off" style="display: none;"/>
+                                        <button type="button" aria-label="Search" title="Search"
+                                                class="btn oe_search_button btn-primary search-button">
+                                            <i class="oi oi-search"/>
+                                        </button>
+                                    </div>
+                                    <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+                                </form>
+
+                                <style>
+                                    .search-button {
+                                    color: #FFFFFF;
+                                    background-color: transparent !important;
+                                    border-color: transparent !important;
+                                    box-shadow:none !important;
+                                    }
+                                    /* Hide the search input by default */
+                                    .search-input {
+                                    display: none;
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0;
+                                    width: 200px;
+                                    z-index: 10;
+                                    margin-top: 5px;
+                                    }
+
+                                    /* Show the search button initially */
+                                    .search-button {
+                                    cursor: pointer;
+                                    }
+
+                                    /* Adjust the input group to only show the search icon initially */
+                                    .search-wrapper {
+                                    position: relative;
+                                    }
+                                </style>
+
+
+                                <a href="https://library.emeacollege.ac.in/" class="pl-3 float-right" id="top1"
+                                   data-bs-original-title="" title="" target="_blank">Library
+                                </a>
+                                <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=1167957"
+                                   class="pl-3 float-right" id="top1" data-bs-original-title="" title=""
+                                   target="_blank">Online Payments
+                                </a>
+                                <a href="/media" class="pl-3  float-right" id="top1">Media</a>
+                                <a href="/downloads" class="pl-3  float-right" id="top1">Downloads</a>
+                                <a href="/contactus" class="pl-3  float-right" id="top1">Contact Us</a>
+                                <a href="https://emea.embase.in/" class="pl-3 float-right" id="top1"
+                                   data-bs-original-title="" title="" target="_blank">Login
+                                </a>
+                                <a href="https://momento360.com/e/uc/ba7b4ffd456e439d8d764041654ad590?utm_campaign=embed&amp;utm_source=other&amp;size=medium"
+                                   class="pl-3 float-right virtual" data-bs-original-title="" title="" target="_blank"
+                                   style="border: 2px solid rgb(3, 153, 144);">Virtual Tour
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nav-togglering navbar-toggler" id="navToggler">
+                            <span/>
+                            <span/>
+                            <span/>
+                        </div>
+                        <div class="collapse navbar-collapse" id="emea_top_menu_collapse">
+                            <!-- Left links -->
+                            <ul class="navbar-nav m-auto ps-lg-0 drop-emea ">
+                                <!-- Navbar dropdown -->
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item dropdown"/>
+                                        <t t-set="link_class" t-valuef="nav-link dropdown-toggle emea-link"/>
+                                    </t>
+                                </t>
+                                <t t-call="portal.user_dropdown">
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <h2 class="main_name">About The College</h2>
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown"/>
+                                    <t t-set="_link_class" t-valuef="nav-link dropdown-toggle emea-link"/>
+                                </t>
+
+                            </ul>
+                            <div class="top-bar" id="top-item">
+                                <a href="https://www.linkedin.com/school/emeacollege-kondotty" target="_blank">
+                                    <span class="fa fa-linkedin" style=""/>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCQG5OoObUi3oYIMRmQAtyOw"
+                                   data-original-title="" title="" target="_blank">
+                                    <span class="fa fa-youtube-play" data-original-title="" title=""
+                                          aria-describedby="tooltip715533"/>
+                                </a>
+                                <a href="https://www.facebook.com/emeacollegekdty" target="_blank">
+                                    <span class="fa fa-facebook"/>
+                                </a>
+
+                                <a href="https://library.emeacollege.ac.in/" class="pl-3  float-right" id="top1">
+                                    Library
+                                </a>
+                                <a href="/media" class="pl-3  float-right" id="top1">Media</a>
+                                <a href="/downloads" class="pl-3  float-right" id="top1">Downloads</a>
+                                <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=1167957"
+                                   target="_blank" class="pl-3  float-right" id="top1">Online Payments
+                                </a>
+                                <a href="/contactus" class="pl-3  float-right" id="top1">Contact Us</a>
+                                <a href="https://emea.embase.in/" class="pl-3  float-right" id="top1" traget="_blank">
+                                    Login
+                                </a>
+                                <div class="virtual_tour">
+                                    <a href="https://momento360.com/e/uc/ba7b4ffd456e439d8d764041654ad590?utm_campaign=embed&amp;utm_source=other&amp;size=medium"
+                                       traget="_blank" class="pl-3  float-right virtual" id="top1"
+                                       style="border: 2px solid rgb(3, 153, 144);">Virtual Tour
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <style>
+                            @media(max-width:1440px){
+                            .bg_color_club {
+                            padding-top: 0px;
+                            height: auto;
+                            }}
+
+                            #site-navigation.theme--choco {
+                            -webkit-font-smoothing: antialiased;
+                            }
+                            #site-navigation {
+                            box-shadow: 0 0 0px rgb(116 116 116 / 14%), 0 3px 8px rgb(120 120 120 / 18%);
+                            }
+                            #site-navigation {
+                            font-size: 1.25em;
+                            top: 2.1333333333em;
+                            }
+                            #site-navigation {
+                            margin-left: -20px;
+                            margin-right: -20px;
+                            width: calc(100% + 40px);
+                            padding-left: calc(0% + 20px);
+                            padding-right: calc(0% + 20px);
+                            }
+                            #site-navigation {
+                            position: fixed;
+                            top: 3.5em;
+                            left: 0;
+                            bottom: auto;
+                            width: 100%;
+                            line-height: 1.8;
+                            font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+                            font-weight: 400;
+                            text-align: center;
+                            padding-bottom: 0;
+                            transition: box-shadow .3s ease;
+                            background-color: #fff;
+                            z-index: 110;
+                            margin: 0;
+                            }
+                            #site-navigation .menu-primary-nav-container[aria-expanded=true] {
+                            display: block;
+                            margin-left: 0;
+                            margin-right: 0;
+                            width: calc(100% + 0px);
+                            }
+                            #site-navigation .menu-primary-nav-container {
+                            -webkit-font-smoothing: subpixel-antialiased;
+                            }
+                            #site-navigation .menu-primary-nav-container ul {
+                            overflow: hidden;
+                            display: block;
+                            padding: 0;
+                            margin-bottom: 0;
+                            overflow-y: auto;
+                            position: relative;
+                            }
+                            #site-navigation .menu-primary-nav-container ul li:nth-of-type(4n+1) {
+                            border-left: none;
+                            }
+                            #site-navigation .menu-primary-nav-container ul li:nth-of-type(odd) {
+                            border-right: 0px solid #ccc;
+                            border-left: 1px solid transparent;
+                            }
+                            #site-navigation .menu-primary-nav-container ul li {
+                            width: 50%;
+                            float: left;
+                            margin-left: 0;
+                            margin: 0;
+                            border-bottom: 1px solid #ccc;
+                            outline: none;
+                            text-decoration: none;
+                            }
+                            #site-navigation ul li {
+                            display: inline-block;
+                            }
+                            #site-navigation .menu-primary-nav-container ul li a {
+                            display: block;
+                            outline-offset: -4px;
+                            padding-top: .725em !important;
+                            padding-bottom: .725em !important;
+                            font-size: 18px !important;
+                            border-bottom: none;
+                            line-height: 36px !important;
+                            outline: none;
+                            }
+                            #site-navigation ul li a {
+                            color: #000;
+                            text-decoration: none;
+                            position: relative;
+                            transition: color .3s ease-in, background-color .3s ease-in;
+                            }
+                            #site-navigation .menu-primary-nav-container ul li a:hover {
+                            background-color:#ececec;
+                            }
+                            #site-navigation ul li a:hover {
+                            color: var(--primary);
+                            }
+                            #site-navigation #gateway[aria-expanded=true] {
+                            display: block;
+                            }
+                            #site-navigation #gateway {
+                            font-size: .7111111111em;
+                            padding: 0;
+                            background-color: #f4f4f4;
+                            border-bottom: 1px solid #cccccc38;
+                            font-weight: 600;
+                            }
+                            #site-navigation #gateway .gateway-nav--label {
+                            padding-top: .625em;
+                            }
+                            .gateway-nav--label {
+                            font-weight: 600;
+                            }
+                            #site-navigation #gateway ul {
+                            font-size: calc(12px +(4*((100vw - 320px) / 255)));
+                            }
+                            #site-navigation #gateway ul {
+                            padding: 0;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            margin: 0 auto;
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            min-width: 320px;
+                            max-width: 100%;
+                            text-align: center;
+                            margin-bottom: 5px;
+                            row-gap: 5px;
+                            }
+                            #site-navigation #gateway li {
+                            margin: 0;
+                            }
+                            #site-navigation #gateway a {
+                            color: #000;
+                            padding: .625em 1em;
+                            outline-offset: -4px;
+                            font-size: 12px;
+                            font-weight: 400;
+                            }
+                            #site-navigation #gateway a:hover {
+                            color: #b1040e;
+                            background-color: #fff;
+                            }
+                            #site-navigation #gateway a:hover {
+                            color: #b1040e;
+                            background-color: #fff;
+                            }
+                            #site-navigation{
+                            display:none !important;
+                            overflow:hidden;
+                            }
+                            #site-navigation #drop_down .nav-link {
+                            font-size: 14px !important;
+                            padding: 0 10px !important;
+                            }
+                            #site-navigation #drop_down li{
+                            width:100% !important;
+                            }
+                            #site-navigation .menu:hover .dropdown-toggle.show {
+                            background-color: #ececec;
+                            }
+                            #site-navigation .menu-item .dropdown-toggle {
+                            border-right: 1px solid #ccc;
+                            }
+                            @media(max-width:900px){
+
+                            #emea_top_menu_collapse{
+                            display:none;
+                            }
+                            #site-navigation.show{
+                            display:block !important;
+                            }
+                            .notess {
+                            color: black;
+                            font-size: inherit;
+                            font-family: Poppins;
+                            text-align: justify;
+                            margin: 0px;
+                            line-height: 1.8;
+                            font-weight: 400;
+                            word-wrap: break-word;
+                            white-space: normal;
+                            font-size: 15px;
+                            letter-spacing: normal;
+                            }
+                            #top .dropdown-menu#drop_down {
+                            display:none;
+                            z-index: 100;
+                            max-height: 400px;
+                            overflow:scroll !important;
+                            position: fixed;
+                            margin-top: -30px !important;
+                            width: 100vw;
+                            top: auto !important;
+                            left: 0px !important;
+                            }
+                            #top .dropdown-menu#drop_down.show {
+                            display:block;
+                            }
+                            .notes_facility {
+                            white-space: normal;
+                            word-break: break-word;
+                            text-align: justify;
+                            word-spacing: -0.05em;
+                            font-size: 14px ! IMPORTANT;
+                            }
+                            .dropdown:hover .dropdown-menu {
+                            display: block;
+                            visibility: visible;
+                            opacity: 1;
+                            transition: opacity 0.3s ease-in-out;
+                            }
+                            }
+                            .homepage #top .navbar-light .navbar-nav .nav-link:focus {
+                            color:white;
+                            border-bottom: none !Important;
+                            }
+                            #top .navbar-light .navbar-nav .nav-link:focus {
+                            color:black;
+                            border-bottom: none !Important;
+                            }
+                            #site-navigation .dropdown{
+                            position: static;
+                            }
+                            @media (max-width: 1060px) {
+                            .top-bar {
+                            width: 74% !important;
+                            }
+                            }
+                            @media(max-width: 992px) and (min-width: 768px){
+                            #emea_top_menu_collapse {
+                            display: none;
+                            }
+                            #emea_top_menu_collapse {
+                            background-color: #ffffff !important;
+                            height: 66vh ! IMPORTANT;
+                            overflow: scroll;
+                            padding-bottom: 40px !important;
+                            min-height: 100% ! IMPORTANT;
+                            }
+                            #top .navbar-light .navbar-toggler {
+                            position: absolute;
+                            right: 15px;
+                            top: 15px;
+                            outline: none;
+                            box-shadow: none;
+                            width: auto;
+                            }
+                            .nav-togglering span {
+                            background-color: white;
+                            height: 3px;
+                            width: 100%;
+                            -webkit-box-flex: 0;
+                            -ms-flex: 0 0 100%;
+                            flex: 0 0 100%;
+                            -webkit-transition: all 0.3s ease-out 0s;
+                            -o-transition: all 0.3s ease-out 0s;
+                            transition: all 0.3s ease-out 0s;
+                            position: relative;
+                            border-radius: 3px;
+                            }
+                            .nav-togglering span {
+                            width: 100%;
+                            height: 3px;
+                            background-color: white;
+                            min-width: 25px;
+                            }
+                            .nav-togglering span {
+                            width: 100%;
+                            height: 3px;
+                            background-color: white;
+                            }
+                            .nav-togglering {
+                            position: absolute;
+                            right: 25px !important;
+                            top: 20px !important;
+                            outline: none;
+                            box-shadow: none;
+                            width: 35px !important;
+                            height: 30px !important;
+                            display: flex;
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            line-height: 1;
+                            cursor: pointer;
+                            right: 25px;
+                            flex-direction: row;
+                            padding: 0;
+                            align-items: center;
+                            }
+                            #site-navigation.show {
+                            display: block !important;
+                            } #top .dropdown-menu#drop_down {
+                            display:none;
+                            z-index: 100;
+                            max-height: 400px;
+                            overflow:scroll !important;
+                            position: fixed;
+                            margin-top: -30px !important;
+                            width: 100vw;
+                            top: auto !important;
+                            left: 0px !important;
+                            }
+                            #top .dropdown-menu#drop_down.show {
+                            display:block;
+                            }
+                            .dropdown:hover .dropdown-menu {
+                            display: block;
+                            visibility: visible;
+                            opacity: 1;
+                            transition: opacity 0.3s ease-in-out;
+                            }
+                            .homepage .emea-logo {
+                            background-color: rgb(3, 153, 144) !important;
+                            }
+                            .homepage #top .navbar-light .navbar-nav .nav-link:focus {
+                            color:white;
+                            border-bottom: none !Important;
+                            }
+                            #top .navbar-light .navbar-nav .nav-link:focus {
+                            color:black;
+                            border-bottom: none !Important;
+                            }
+                            #site-navigation .dropdown{
+                            position: static;
+                            }
+                            }
+                        </style>
+                        <div id="site-navigation" aria-label="Primary site navigation" data-ga-category="Top nav"
+                             class="theme--choco collapse navbar-collapse">
+                            <div class="menu-primary-nav-container" aria-expanded="true">
+                                <ul id="primary-menu " class="menu navbar-nav">
+                                    <li id="menu-item-2297  "
+                                        class="nav-item  dropdown  menu-item menu-item-type-post_type menu-item-object-page menu-item-2297">
+                                        <a href="#" data-bs-toggle="dropdown" role="button"
+                                           class="dropdown-toggle nav-link">About Us
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" data-bs-popper="none" id="drop_down">
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/about" class="dropdown-item nav-link">
+                                                    <span data-oe-id="27" data-oe-field="name" data-oe-type="char">About
+                                                        College
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/history" class="dropdown-item nav-link">
+                                                    <span data-oe-id="28" data-oe-field="name" data-oe-type="char">
+                                                        History
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/vision-mission"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="29" data-oe-field="name" data-oe-type="char">
+                                                        Vision, Mission and Core
+                                                        Values
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem"
+                                                   href="/web/content/781?unique=2b783efbe0defed5c6edcd46e6623f31fdd27a60"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="30" data-oe-field="name" data-oe-type="char">
+                                                        College Rules
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem"
+                                                   href="/web/content/3521?unique=3109d4627874054c62d5692ea331e51cc8cee219"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="31" data-oe-field="name" data-oe-type="char">
+                                                        Organogram
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem"
+                                                   href="/web/content/1379?unique=5bdf09d01833c651479596ba6ad06736922934ab"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">Code
+                                                        Of Conduct
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/college-emblem"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        College Emblem
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/principal" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Principal
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/former-principals"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Former Principals
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/management" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Management
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/pta" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">PTA
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/administrative-staff"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Administrative Staff
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/staff-council" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">Staff
+                                                        Council
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem"
+                                                   href="/https://emea.em2.in/web/content/4050?unique=f683caa0aee6b53150bd393d736eb61b2d12816d"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">Rti
+                                                        Declaration
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/statistics_1" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Statistics
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/sister_institutions"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Sister Institutions
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li id="menu-item-108"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                        <a href="https://emea.embase.in/admission/" target="_blank" role="menuitem"
+                                           class="dropdown-item nav-link" style="    border-right: 1px solid #ccc;">
+                                            Admission
+                                        </a>
+                                    </li>
+                                    <li id="menu-item-106"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-106">
+                                        <a href="#" data-bs-toggle="dropdown" role="button"
+                                           class="dropdown-toggle nav-link">Academics
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" data-bs-popper="none" id="drop_down">
+                                            <li role="presentation" class="">
+                                                <a role="menuitem"
+                                                   href="/web/content/1376?unique=c0c24bd14b3389ee01676322e4f1415c79431bac"
+                                                   class="dropdown-item nav-link" target="_blank">
+                                                    <span data-oe-id="27" data-oe-field="name" data-oe-type="char">
+                                                        Course On Human Values
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/programmes" class="dropdown-item nav-link">
+                                                    <span data-oe-id="28" data-oe-field="name" data-oe-type="char">
+                                                        Programmes
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/add_on_courses"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="29" data-oe-field="name" data-oe-type="char">Add
+                                                        On Courses
+
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/certificate_courses"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="30" data-oe-field="name" data-oe-type="char">
+                                                        Certificate Courses
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="https://lms.emeacollege.ac.in"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="31" data-oe-field="name" data-oe-type="char">
+                                                        Learning Management System
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/academic-calendar"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Program Academic Calender
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/malayalam" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        General Departments
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/english#home" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        English
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/pg-history#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">West
+                                                        Asian Studies And History
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/economics#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Economics
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/logistics#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">B.Voc
+                                                        Logistics Management
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/accounting-and-taxation#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">B.Voc
+                                                        Professional Accounting &amp; Taxation
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/islamic-finance#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">B.Voc
+                                                        islamic Finance
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/computer-science#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Computer Science
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/microbiology#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Microbiology
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/mathematics-and-physics#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Mathematics And Physics
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/biochemistry#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Biochemistry
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/biotechnology#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Biotechnology
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/commerce#home" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Commerce
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/business-administration#home"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Business Administration
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-108"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                        <a href="#" data-bs-toggle="dropdown" role="button"
+                                           class="dropdown-toggle nav-link">Research
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" data-bs-popper="none" id="drop_down">
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/research-committee"
+                                                   class="dropdown-item nav-link" target="_blank">
+                                                    <span data-oe-id="27" data-oe-field="name" data-oe-type="char">
+                                                        Research Committee
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/code-of-ethics"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="28" data-oe-field="name" data-oe-type="char">Code
+                                                        Of Ethics
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/research-depts"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="29" data-oe-field="name" data-oe-type="char">
+                                                        Research Depts &amp; Guides
+
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/research_scholars"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="30" data-oe-field="name" data-oe-type="char">
+                                                        Research Scholars &amp; Ph.Ds
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/research_projects"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="31" data-oe-field="name" data-oe-type="char">
+                                                        Research Project &amp; Ph.Ds
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/seminars" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Seminars/Workshops
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/publications" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Publications
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="https://ijaredonline.com/"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Journal
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-1336"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-1336">
+                                        <a href="#" data-bs-toggle="dropdown" role="button"
+                                           class="dropdown-toggle nav-link special-item">Students Zone
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" data-bs-popper="none" id="drop_down">
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/nss" class="dropdown-item nav-link"
+                                                   target="_blank">
+                                                    <span data-oe-id="27" data-oe-field="name" data-oe-type="char">NSS
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/ncc" class="dropdown-item nav-link">
+                                                    <span data-oe-id="28" data-oe-field="name" data-oe-type="char">NCC
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/clubs" class="dropdown-item nav-link">
+                                                    <span data-oe-id="29" data-oe-field="name" data-oe-type="char">Clubs
+
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/student-support"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="30" data-oe-field="name" data-oe-type="char">
+                                                        Student Support Schemes
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/capability-enhancement"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="31" data-oe-field="name" data-oe-type="char">
+                                                        Capability Enhancement and Development Schemes
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/student-discipline"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Student Descipline Schemes
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/student-union" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Student Union
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/student-union" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Scholarships
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/college_magazine"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        College Magazines
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="https://emea.embase.in/#/login"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Attandance portal
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-108"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                        <a href="/laboratories" role="menuitem" class="dropdown-item nav-link"
+                                           style="    border-right: 1px solid #ccc;">Facilities
+                                        </a>
+                                    </li>
+                                    <li id="menu-item-2296"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-2296">
+                                        <a href="#" data-bs-toggle="dropdown" role="button"
+                                           class="dropdown-toggle nav-link">MHRD
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" data-bs-popper="none" id="drop_down">
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/ugc" class="dropdown-item nav-link"
+                                                   target="_blank">
+                                                    <span data-oe-id="27" data-oe-field="name" data-oe-type="char">UGC
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/rusa" class="dropdown-item nav-link">
+                                                    <span data-oe-id="28" data-oe-field="name" data-oe-type="char">RUSA
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/mhrd-nirf" class="dropdown-item nav-link">
+                                                    <span data-oe-id="29" data-oe-field="name" data-oe-type="char">NIRF
+
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/mhrd_aishe" class="dropdown-item nav-link">
+                                                    <span data-oe-id="30" data-oe-field="name" data-oe-type="char">AISHE
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/pfms" class="dropdown-item nav-link">
+                                                    <span data-oe-id="31" data-oe-field="name" data-oe-type="char">PFMS
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/mgncre" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        MGNCRE
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-2296"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-2296">
+                                        <a href="#" data-bs-toggle="dropdown" role="button"
+                                           class="dropdown-toggle nav-link">IQAC
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" data-bs-popper="none" id="drop_down">
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/composition_iqac"
+                                                   class="dropdown-item nav-link" target="_blank">
+                                                    <span data-oe-id="27" data-oe-field="name" data-oe-type="char">
+                                                        Composition Of IQAC
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/function_objectives"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="28" data-oe-field="name" data-oe-type="char">
+                                                        Function And Objectives
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/minutes_atr" class="dropdown-item nav-link">
+                                                    <span data-oe-id="29" data-oe-field="name" data-oe-type="char">
+                                                        Minutes &amp; ATR
+
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/iqac_annual_report"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="30" data-oe-field="name" data-oe-type="char">IQAC
+                                                        Annual Reports
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/api" class="dropdown-item nav-link">
+                                                    <span data-oe-id="31" data-oe-field="name" data-oe-type="char">API
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/workshops/fdp" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Workshops/FDP
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/aaa" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">AAA
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/sss_annual_report"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">SSS
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/aqar" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">AQAR
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/ssr" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">SSR
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/aishe" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">AISHE
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/nirf" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">NIRF
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/ariia" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">ARIIA
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/iqac-best-practices"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">BEST
+                                                        PRACTICES
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/institutional_distinctiveness"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Institutuinal Distinctiveness
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/activities" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Activities
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/gender-equity" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Gender Equity
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/green" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">Green
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/energy" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Energy
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/gender" class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Gender
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/curriculum-feedback-report"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Curriculum Feedback Reports
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/curriculum-feedback-atr"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Curriculum Feedback ATR
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/naac-accreditation"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="32" data-oe-field="name" data-oe-type="char">
+                                                        Mandatory Disclosure
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-2296"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-2296">
+                                        <a href="#" data-bs-toggle="dropdown" role="button"
+                                           class="dropdown-toggle nav-link">Alumni
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" data-bs-popper="none" id="drop_down">
+
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/alumni_osaemea"
+                                                   class="dropdown-item nav-link">
+                                                    <span data-oe-id="28" data-oe-field="name" data-oe-type="char">
+                                                        OSAEMEA
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a role="menuitem" href="/osaemea" class="dropdown-item nav-link">
+                                                    <span data-oe-id="29" data-oe-field="name" data-oe-type="char">
+                                                        OSAEMEA Chapters
+
+                                                    </span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-108"
+                                        class="nav-item  dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                        <a href="/blog/news-and-events-1" role="menuitem" class="dropdown-item nav-link"
+                                           style="    border-right: 1px solid #ccc;">Events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <nav id="gateway" class="menu-gateway-nav-container" aria-label="Gateway navigation"
+                                 aria-expanded="true">
+                                <div class="gateway-nav--label">More Links:</div>
+                                <ul id="menu-gateway-nav" class="menu">
+
+                                    <li id="menu-item-8817"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8817">
+                                        <a href="https://library.emeacollege.ac.in/" target="_blank">Library
+                                        </a>
+                                    </li>
+                                    <li id="menu-item-17"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17">
+                                        <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=1167957"
+                                           target="_blank">Online Payments
+                                        </a>
+                                    </li>
+                                    <li id="menu-item-7621"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7621">
+                                        <a href="/media">Media</a>
+                                    </li>
+                                    <li id="menu-item-18"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                                        <a href="/downloads">Downloads</a>
+                                    </li>
+                                    <li id="menu-item-18"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                                        <a href="/contactus">Contact Us</a>
+                                    </li>
+                                    <li id="menu-item-18"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                                        <a href="https://emea.embase.in/" target="_blank">Login</a>
+                                    </li>
+                                    <li id="menu-item-18"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                                        <a href="https://momento360.com/e/uc/ba7b4ffd456e439d8d764041654ad590?utm_campaign=embed&amp;utm_source=other&amp;size=medium"
+                                           target="_blank">Virtual Tour
+                                        </a>
+                                    </li>
+                                    <form method="get" data-snippet="s_searchbar_input"
+                                          class="o_searchbar_form s_searchbar_input" action="/website/search"
+                                          data-name="Search">
+                                        <div role="search" class="input-group search-wrapper">
+                                            <input type="search" name="search"
+                                                   class="mobile-search search-query form-control oe_search_box None search-input"
+                                                   placeholder="Search..." data-search-type="all" data-limit="25"
+                                                   data-display-image="true" data-display-description="true"
+                                                   data-display-extra-link="" data-display-detail="true"
+                                                   data-order-by="name asc" autocomplete="off" style=""/>
+                                            <button type="button" aria-label="Search" title="Search"
+                                                    class="btn oe_search_button btn-primary search-button mobile-button"
+                                                    style="color: #000;     font-size: 12px;     padding: 0.3em 0em;    padding-left: 5px;">
+                                                <i class="oi oi-search"/>
+                                            </button>
+                                        </div>
+                                        <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+                                    </form>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="menu-overlay" aria-hidden="true" role="presentation" aria-expanded="true"/>
+            <style>
+                .mobile-search{
+                margin-right: 5px;
+                margin-bottom: 10px;
+                }
+                .drop_iqac{
+                padding: 8px;
+                }
+                #menu-overlay{
+                display:none;
+                }
+
+                @media(max-width:800px){
+                #tabs1 section {
+                padding: 10px !important;
+                }
+                .top-bar .fa {
+                font-size: 18px !important;
+                color: black;
+                }
+                .virtual_tour{
+                width:100%;
+                }
+                .virtual {
+                border: 2px solid rgb(3, 153, 144) !important;
+                width: 154px;
+                text-align: center;
+                display: block;
+                margin: auto;
+                }
+
+                #top1 {
+                font-weight:400 !important;
+                }
+                #menu-overlay {
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                opacity: 0.9;
+                z-index: 10;
+                position: fixed;
+                bottom: 0;
+                top: 150px;
+                }
+                .nav-togglering {
+                position: absolute;
+                right: 25px !important;
+                top: 20px !important;
+                outline: none;
+                box-shadow: none;
+                width: 35px !important;
+                height: 30px !important;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                line-height: 1;
+                cursor: pointer;
+                right: 25px;
+                flex-direction: row;
+                padding: 0;
+                align-items: center;
+                }
+                .nav-togglering span {
+                width: 100%;
+                height: 3px;
+                background-color: white;
+                }
+                .nav-togglering span {
+                width: 100%;
+                height: 3px;
+                background-color: white;
+                min-width: 25px;
+                }
+                .nav-togglering span {
+                background-color: white;
+                height: 3px;
+                width: 100%;
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                -webkit-transition: all 0.3s ease-out 0s;
+                -o-transition: all 0.3s ease-out 0s;
+                transition: all 0.3s ease-out 0s;
+                position: relative;
+                border-radius: 3px;
+                }
+                .menu-opened span:nth-child(1) {
+                transform: rotate(45deg) translate(10px, 8px);
+                }
+
+                .menu-opened span:nth-child(2) {
+                opacity: 0;
+                }
+
+                .menu-opened span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -4px);
+                }
+                }
+                #top-item {
+                height: auto;
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+                }
+                .former_card .designation {
+                text-align: center !important;
+                }
+                .former_card .name {
+
+                color: rgb(3, 153, 144) !important;
+
+                }
+                .table tbody td{
+                background-color:white !important;
+                }
+                .former_card{
+                transition: .5s;
+                }
+                .former_card img {
+                padding: 0px;
+                width: 100% !important;
+                display: flex;
+                margin: 0 !important;
+                height: auto;
+
+                box-shadow:none !important;
+                min-height: 250px;
+                border-radius: 10px 10px 0px 0px;
+                margin-top: 0 !important;}
+                .readmore {
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 14px;
+                padding: 8px 15px;
+                text-transform: capitalize;
+                position: relative;
+                }
+                .former_card:hover{
+                scale: 1.05;
+                box-shadow: rgb(3 153 144 / 35%) 0px 0px 20px 2px;
+                }
+
+                .s_blog_post_emea_department_conference .achievement-card-image {
+                margin:auto; max-width: 100%;
+
+                }
+                .s_blog_post_emea_department .dynamic_snippet_template .row {
+                align-items: stretch;
+                margin-bottom: 20px !important;
+                }
+                .s_blog_post_emea_department_conference.s_blog_post_big_picture .row {
+                align-items: stretch;
+                margin-bottom: 20px !important;
+                }
+                .s_blog_post_emea_department_conference .achievement-card-p p{
+                display: block;
+                max-height: 55px !important;}
+                .s_blog_post_emea_department_conference .readmore, .s_blog_post_emea_department .readmore {
+                padding: 9px 12px;
+                font-size: 12px;
+                background: whitesmoke;
+                color: var(--primary) !important;
+                right: 0;
+                margin: 0;
+                margin-left: auto;
+                }
+                .programme_link {
+                width: 300px;
+                padding: 10px 20px;
+                }
+
+                .department_carousel .carousel-inner .carousel-item{
+                min-height:350px !important;
+                max-height:350px !important;
+                }
+                #more_button{
+                font-size: 12px;
+                padding: 8px 15px;
+                }
+                #custom_button {
+                text-transform: capitalize;
+                font-size: 12px;
+                padding: 10px 18px;
+                }
+                .s_blog_posts .readmore {
+                padding: 9px 12px; font-size: 12px;
+                }
+                .s_blog_post_news_dep .dynamic_snippet_template:hover .row {
+                animation-play-state: paused;
+                }
+                .s_blog_post_news_dep .dynamic_snippet_template .row{
+                animation: moveUp 10s linear infinite;overflow: auto;}
+                @keyframes moveUp {
+                0% {
+                transform: translateY(10%);
+                }
+                100% {
+                transform: translateY(-100%);
+                }
+                }
+
+                .s_dynamic.s_blog_post_news_dep .s_blog_posts_post {
+                min-height: 100px !important;
+                }
+                .news_read {
+                margin-top: -2px;
+                display: block;
+                font-size: 14px;
+                color: var(--primary) !important;
+                font-weight: 400;
+                text-align: right;
+                }
+                .s_blog_post_news_dep .col-3 {
+                width:100%;
+                }
+                .s_blog_post_news_dep{
+                width:100%;background: transparent;
+                padding-bottom: 50px;
+                max-height:245px;
+                overflow:hidden;
+                }
+                .s_blog_post_news_dep .row{
+                display:block;
+                }
+                .s_blog_post_news_dep .col-4 {
+                width:100%;
+                }
+                .s_blog_post_news_dep .newses-p {
+                position: relative;
+                overflow: hidden;
+                white-space: break-spaces;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                display: block;
+                vertical-align: top;
+                margin: 0;
+                color: black;
+                max-height: 60px;
+                margin-bottom: 3px;
+                }
+                .s_blog_post_news_dep .newses-p p{
+                margin-bottom: 0rem;
+                max-height: 60px;
+                overflow: hidden;
+                word-break: break-all;
+                font-size:13px;
+                }
+
+                .s_dynamic.s_blog_post_news_departments .s_blog_posts_post {
+                min-height: 100px !important;
+                }
+                .news_read {
+                margin-top: -2px;
+                display: block;
+                font-size: 14px;
+                color: var(--primary) !important;
+                font-weight: 400;
+                text-align: right;
+                }
+                .s_blog_post_news_departments .col-3 {
+                margin-bottom: 20px;
+                background: whitesmoke;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                width:100%;
+                }
+                .s_blog_post_news_departments{
+                width:100%;background: transparent;
+                padding-bottom: 50px;
+
+                }
+                .s_blog_post_news_departments .row{
+                display:block;
+                }
+                .s_blog_post_news_departments .col-4 {
+                width:100%;
+                }
+                .s_blog_post_news_departments .newses-p {
+                position: relative;
+                overflow: hidden;
+                white-space: break-spaces;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                display: block;
+                vertical-align: top;
+                margin: 0;
+                color: black;
+                max-height: 60px;
+                margin-bottom: 3px;
+                }
+                .s_blog_post_news_departments .newses-p p{
+                margin-bottom: 0rem;
+                max-height: 60px;
+                overflow: hidden;
+                word-break: break-all;
+                font-size:13px;
+                }
+                @media (max-width: 425px) and (min-width: 320px) {
+                .explore {
+                margin:20px !important;
+                }
+                }
+                @media(max-width:1400px){
+                .homepage #emea_top_menu_collapse {
+                position: relative;
+                top: 0 !Important;
+                left: 0 !Important;
+                }}
+                @media(max-width:1250px){
+                .navbar-light .navbar-nav .nav-link {
+                color: black;
+                font-size: 14px !important;
+                }}
+            </style>
+            <style>
+                .newses-name {
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--primary) !important;
+                margin: 0;
+                width: 100%;
+                word-break: break-all;
+                }
+                .news_date{
+                color: var(--primary);
+                font-size: 12px;
+                float: left;
+                padding-right: 5px;
+                }
+                .s_blog_post_emea_department_conference .achievement-card-name {
+                color: #178f95 !important;}
+                .s_blog_post_emea_department_conference .achievement-card-p{
+                display:block;
+                max-height: 55px !important;
+                font-weight: 300;
+                font-size: 14px;
+                }
+                .s_blog_post_emea_department .achievement-card-name {
+                color: #212529 !important;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                padding-top: 10px;
+                width: 100%;
+                word-break: break-all;
+                }
+                .s_blog_post_emea_department .achievement-card-p{
+                display:none;
+                }
+                .sub_head {
+
+                font-size: 22px !important;
+
+                }
+                #sidebar-li{
+                background-color: #93939352 !important;
+                color: black !important;
+                box-shadow: rgb(95 92 92 / 19%) 0px 0px 5px;
+                border-radius: 5px 10px !important;
+                }
+                .nav-pills .nav-link{
+                background-color: #93939352 !important;
+                color: black !important;
+                border-radius: 5px 10px !important;
+                word-break: break-all;
+
+                }
+                .nav-pills .nav-link:hover {
+                background: rgb(3, 153, 144) !important;
+                color:white !important;
+                border-radius: 10px 5px !important;
+                }
+                #sidebar-li:hover {
+                background: rgb(3, 153, 144) !important;
+                color:white !important;
+                border-radius: 10px 5px !important;
+                }
+                .nav-pills .nav-link.active {
+                background: rgb(3, 153, 144) !important;
+                color:white !important;
+                border-radius: 10px 5px !important;
+                }
+                #top .navbar .academicmenu {
+                inset: auto auto auto -40px !important;
+                }
+                #top .navbar .academicmenu .o_grid_mode {
+                grid-template-columns: repeat(3, 1fr);
+                }
+                .page_head{
+                color:#276e72;
+                font-size:24px;
+                }
+                .former_card {
+                height: auto !important;
+                }
+
+
+                .page_text {
+                word-break: break-word;}
+                .page_text {
+
+                text-align: justify !important;
+
+                }
+                .clubs {
+                font-size:28px!important;
+                }
+                .top-bar {
+                justify-content: flex-end;
+                gap:20px;
+                padding:10px;
+                }
+                @media screen and (max-width: 768px) and (min-width: 320px){
+                .navbar-collapse {
+                backgroud: white;
+                }
+                #clubs{
+                width:80%;
+                }
+
+                }
+                .homepage #logo-span {
+                padding-left: 25px;
+                font-size: 1.5rem;
+                text-align: left;
+                }
+                .homepage #logo-name {
+
+                text-align: center;
+                }
+                @media screen and (max-width: 768px) and (min-width: 320px){
+                .drop-emea .nav-item {
+                padding-bottom: 0px;
+                }
+
+                }
+                .drop_iqac{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+                .drop_iqac #sidebar-li{
+                background:white;
+                color:black;}
+                .drop_iqac a{
+                color:black !Important;
+                }
+                #clubs {
+                margin-top: 0;
+                overflow: hidden;
+                position: sticky;
+                top: 50px;
+                height: 100%;
+                }
+                .side-bar {
+                height: 100%;
+                margin-bottom: 0px;
+                }
+                @media screen and (max-width: 1024px) and (min-width: 320px){
+                #clubs {
+                position:relative;
+                margin-top: initial;
+                overflow: initial;
+                position: static;
+                top: initial;
+                height: auto;
+                }
+
+                }
+
+                .s_dynamic .carousel-control-next {
+                right: 42%;
+                }
+                .carousel-control-next {
+                right: 0;
+                }
+
+                .modal-body{
+                line-height: 1.8;
+                }
+
+                .achievement{
+                gap:1rem;
+                }
+
+                .achievement-card-p {
+                max-height: 160px !important;
+                overflow: hidden !important;
+
+                }
+                .readmore_small {
+                color: white !important;
+                font-size: 12px;
+                font-family: Poppins;
+                font-weight: 700;
+                background: #039990;
+                padding: 9px 12px;
+                width: max-content;
+                border-radius: 2px;
+                display: flex;
+                transition: all 0.2s ease-in-out;
+                text-transform: uppercase;
+                margin-top: 10px;
+                }
+
+                .website_blog p {
+
+                opacity: 0;
+                }
+                #parent-li {
+                color: black;
+                }
+                .former_card {
+                max-width: 200px;
+                background-color: transparent;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: rgb(100 100 111 / 14%) 0px 0px 20px 2px;
+                width: 100%;
+                margin-bottom: 20px !important;
+                margin: 30px;
+                height: 100%;
+                max-height: 100%;
+                padding: 0 !important;
+                }
+                .page_head {
+                text-transform: capitalize;
+                }
+
+                .former_card img {
+                padding: 0px;
+                width: 150px;
+                display: flex;
+                margin: auto;
+                height: auto;
+                border-radius: 10px 10px 0px 0px;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                max-width: 100%;
+                max-height: 250px;
+                background: transparent;
+                }
+                .former_card .card-content {
+                padding: 5px 10px;
+                text-align: center;
+                background: transparent;
+                }
+                .former_card .name {
+                font-size: 0.9em;
+                }
+                .former_card .designation {
+                font-size: 12px;
+                color: #3d3d3d;
+                margin: auto;
+                text-align: justify;
+                letter-spacing: -0.2px;
+                }
+                .achievement{
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                }
+                .homepage header#top{
+                height:auto !important;
+
+                }
+                @media(max-width:1440px){
+                .footer_column {
+                flex: 0 0 auto;
+                max-width: 41.66666667%;
+                }
+
+                }
+                @media(max-width:1300px){
+                #top .navbar .academicmenu {
+                inset: auto auto auto -200px !important;
+                }
+                #top .navbar .iqac_mega {
+                inset: auto auto auto -750px !important;
+                }
+
+                .homepage #emea_top_menu_collapse {
+                position: relative;
+                top: -45px;
+                left: 0;
+                }
+                }
+                @media (max-width: 1100px) and (min-width: 768px){
+                .facilities-left, .facilities-right {
+                top: 40% !important;
+                }
+                #alumni_row{
+                flex-direction: column-reverse;
+                row-gap: 10px;
+                align-items:center;}
+                .footer_column {
+                flex: 1;
+                max-width: 50%;
+                }
+
+                }
+                @media (max-width: 1230px) and (min-width: 800px) {
+                .documentary {
+                display: flex;
+                margin-left: auto;
+                width: 100%;
+                justify-content: flex-start;
+                padding: 10px;
+                }
+                .res_facility1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 33%;
+                }
+                #res_facility{
+                width: 67%;
+                }
+                #rele{
+                width: max-content;
+                }
+                }
+                @media (max-width: 992px) and (min-width: 768px) {
+                .s_dynamic .carousel-control-next {
+                right: 36%;
+                }
+                .emea_navbar .row{
+
+                width: 100%;margin:0;
+                }
+                #top-items {
+                display: none;
+                }.emea-logo {
+                width: 100%;
+                padding: 0;
+                position: relative;
+                transition: all 0.4s ease-in-out;
+                height: 100% !important;
+                }#top .navbar-light .navbar-toggler {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                outline: none;
+                box-shadow: none;
+                width: auto;
+                }#top .navbar {
+                background: #0000005c !important;
+                }#top .navbar-light .navbar-toggler-icon {
+                background-image: url(/emea_college_theme/static/img/mob.svg) !important;
+                border-radius: 2px;
+                width: 2em !important;
+                height: 2em !important;
+                }
+                #logo-name {
+                width: 100%;
+                }
+                #emea_top_menu_collapse {
+                min-width: 0;
+                height: 70vh !important;
+                padding: 30px;
+                overflow: scroll;
+                }
+                } @media (max-width: 900px){
+                .publish_home .flex-shrink-0 {
+                padding: 10px !important;
+                width: 100% !important;
+                }
+                .achiev {
+                width: 100% !important;
+                }
+                .news_home {
+                width: 100% !important;
+                }
+                .s_blog_post_news_home {
+                width: 100% !important;
+                }
+                .s_blog_post_achievements_home .flex-shrink-0 {
+                width: 50% !important;
+                }
+                .s_dynamic .carousel-control-prev {
+                left: auto;
+                right: 50px !important;
+                }
+                .facilities-left {
+                margin-right: 1rem;
+                }
+                #arrows {
+                display: flex;
+                justify-content: end;
+                margin-right: 2rem;
+                }
+                .homepage #logo-span {
+                display: block !important;
+                }
+                #emea_top_menu_collapse {
+                padding:10px !important;
+                }
+                .footer_row {
+                flex-direction: column;
+                margin: auto !important;
+                align-items: center;
+                }
+                .footer_column {
+                flex: 1;
+                max-width: 100%;
+                width: 50%;
+                }
+                .homepage .logo-img {
+                object-fit: contain;
+                }height: 55px ! IMPORTANT;
+                width: 55px;}
+
+                @media (max-width: 900px) {
+                .homepage #logo-span {
+                display: none !important;
+                }
+                .dropdown-toggle::after {
+                display: inline-block;
+                margin-left: 0.255em;
+                vertical-align: 0.255em;
+                content: "";
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+                right: 20px;
+                position: absolute;
+                transform: translate(0%, 50%);
+                bottom: 50%;
+                }
+                }
+                @media (max-width: 900px) and (min-width: 600px) {
+                .banner {
+                height: 50vh !important;
+                }
+                #logo-name {
+                color: white;
+                font-size: 25px !important;
+                width:auto;}}
+
+                @media(max-width:800px){
+                .homepage .emea-logo {
+                background-color: rgb(3, 153, 144) !important;
+                }
+                .homepage .logo-img {
+                margin:0 !important;
+                }
+                .homepage #logo-name {
+                text-align: center !important;
+                font-size: calc(30px - 5px) ! IMPORTANT;
+                }
+                #emea_top_menu_collapse {
+                background-color: #ffffff !important;
+                height: 66vh ! IMPORTANT;
+                overflow: scroll;
+                padding-bottom: 40px !important;
+                min-height: 100% ! IMPORTANT;}
+                .drop-emea .nav-item {
+                box-shadow: rgb(99 99 99 / 31%) 1px 1px 2px 0px !important;
+                top: 0;
+                margin-bottom: 0px !important;
+                }
+
+                #top-item { margin-bottom: 100px;
+                background: #f4f4f4 !important;
+                border-top: 1px solid rgb(137 134 134 / 26%);
+                margin-top:0 !important;
+                }
+
+                .top-bar a{
+
+                color: #545353 !important;
+                padding: 10px;
+                font-size: 15px ! IMPORTANT;
+                min-width: 30px;
+
+                }
+                #top-item {
+                display: flex;
+                margin: auto;
+                margin-top: 30px;
+                width: 100% !important;
+                border-radius: 0;
+                background: black;
+                justify-content: space-around;
+                gap: 0px;
+                padding: 5px;
+                background: #f4f4f4 !important;
+                position: fixed;
+                top: auto;
+                bottom: 0;
+
+                }
+                #emea_top_menu_collapse .navbar-nav {
+                gap: 0px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                height: auto;
+                padding-bottom: 1px;
+                overflow: scroll;
+                }
+                .drop-emea .nav-item {
+
+                flex: 0 0 50%;
+                box-shadow:rgb(99 99 99 / 31%) 0px 0px 4px 0px;
+                text-align: center;
+                padding-top: 0;
+                padding-bottom: 0;
+                }
+
+                .navbar-light .drop-emea .emea-link {
+                line-height: 16px !important;
+                padding-top: 1.5em !important;
+                padding-bottom: 2rem !important;
+                }
+                #top .navbar-light .navbar-nav .nav-link {
+                line-height: 12px;
+                padding-top: 0.6em;
+                padding-bottom: 0.6rem;
+                }
+                .clubs {
+                font-size: 28px !important;
+                color: #276e72;
+                text-align: center;
+                width: 100%;
+                }
+                .bg_color_club {
+                height: 70px;
+                background: rgb(233 233 233);}
+                .banner {
+                height: 50vh !important;
+                }
+
+
+                .s_tabs_main{
+                flex-direction: column-reverse;
+                }
+
+                #top .navbar .dropdown-menu {
+                min-width: 100%; margin-bottom: 30px;}
+                #emea_top_menu_collapse {
+                padding:10px !important;
+                }
+
+                .s_dynamic .carousel-control-next {
+                right: 10px;
+                }
+                .s_dynamic .carousel-control-prev {
+                left: auto;
+                right: 40px;
+                }
+                .facilities-left, .facilities-right {
+                top: 0px !important;
+                margin-bottom: 10px;
+                position: relative;
+
+                }
+                .publish_home .flex-shrink-0 {
+                padding: 10px !important;
+                }
+                .highlight .flex-shrink-0 {
+                padding: 10px !important;
+                }
+                .publish_home {
+                padding-left: 15px;
+                padding-right: 0;
+                }
+                .footer_row {
+                flex-direction: row;
+                margin: 0 !important;
+                flex-wrap: wrap;
+                }
+
+                .footer_column {
+                flex: 0 0 auto;
+                max-width: 50%;
+                width: 100%;
+                margin: auto;
+                }
+
+                .card-wrapper {
+
+                height: auto !important;
+
+                }
+                #top-item {
+                margin-bottom: 0px;
+                background: #f4f4f4 !important;
+                }
+
+                }
+                @media (max-width: 600px){
+                .footer_column {
+                flex: 0 0 auto;
+                max-width: 100%;
+                width: 100%;
+                margin: auto;
+                }
+                .s_blog_post_achievements_home .flex-shrink-0 {
+                width: 100% !important;
+                margin-bottom: 10px;
+                }
+
+                #site-navigation .menu-primary-nav-container ul .nav-item .nav-link:hover {
+                background-color: #ececec;
+                color: var(--primary) ! IMPORTANT;
+                }
+                #emea_top_menu_collapse {
+                background-color: #ffffff !important;
+                height: 66vh ! IMPORTANT;
+                padding-bottom: 40px !important;
+                overflow: scroll;
+                min-height: 100% ! IMPORTANT;}
+                .banner {
+                height: 100vh !important;
+                }
+                .former_card {
+                margin: 30px auto !important;
+                }
+                .college_banner {
+                object-fit:cover;
+                }
+                #department_text {
+                word-spacing: 0.25rem;
+                word-break: inherit;
+                }
+
+
+                #emea_top_menu_collapse {
+                padding:0px !important;
+                }
+                .facilities-left {
+                top: 0 !important;
+                margin-right: 10px !important;
+                }
+
+                .res_facility {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: end !important;
+                flex-wrap: wrap;
+                }
+                .emea_navbar .row{
+
+                width: 100%;
+                }.s_tabs_main{
+                flex-direction: column-reverse;
+                }
+                .s_dynamic .carousel-control-next {
+                right: 10px;
+                }
+                .s_dynamic .carousel-control-prev {
+                left: auto;
+                right: 40px;
+                }
+                .embed-responsive_emea{
+                margin-top:0 !important;
+                } #college_head {
+                text-align: center !important;
+                font-size: 1.7rem !important;
+                }
+
+                .container{
+                padding:10px;
+                }
+                }
+                .side-bar {
+                margin-bottom: 65px;
+                }
+                @media (max-width: 375px) {
+                .dropdown-toggle::after {
+                right:15px;
+                }
+                }
+
+                @media (max-width: 320px) {
+                #logo-name {
+
+                font-size: 14px !important;}
+                .dropdown-toggle::after {
+                right:10px;
+                }
+                .special-item::after {
+                right: 3px;
+                }
+                } .o_record_cover_container .o_record_cover_image {
+                opacity: 1 !important;
+                background-color: #e1e1e1 ! IMPORTANT;
+                }
+            </style>
+        </xpath>
+    </template>
+</odoo>

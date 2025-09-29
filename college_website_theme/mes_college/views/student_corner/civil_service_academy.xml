@@ -1,0 +1,72 @@
+<odoo>
+    <data>
+        <record id="civil_service_academy" model="ir.ui.view">
+            <field name="name">civil_service_academy</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.civil_service_academy</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.civil_service_academy_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-8">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left">Civil Service Academy</h2>
+                                                <div class="text_content">
+                                                    The civils service
+                                                    academy is launched
+                                                    with a vision to
+                                                    train the talented
+                                                    students for civil
+                                                    service examination.
+                                                    College has signed
+                                                    MoU with Thakshasila
+                                                    Academy,
+                                                    Thiruvananthapuram
+                                                    to conduct civil
+                                                    service coaching
+                                                    classes. The
+                                                    programme includes
+                                                    preparatory sessions
+                                                    in the three years
+                                                    of graduation and a
+                                                    one year intense
+                                                    training after
+                                                    graduation.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h2 class="main-head">Coordinators:</h2>
+                                            <div class="col-md-7 mb32 mx-auto">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Shareef K
+                                                    </div>
+                                                    <div class="designation">Department of History</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="civil_service_academy_page" model="website.page">
+            <field name="url">/civil_service_academy</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="civil_service_academy"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

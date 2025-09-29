@@ -1,0 +1,148 @@
+<odoo>
+    <data>
+        <record id="osaemea" model="ir.ui.view">
+            <field name="name">OSAEMEA</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.osaemea</field>
+            <field name="arch" type="xml">
+                <t name="Academic Calendar" t-name="emea_college_theme.osaemea_menu">
+                    <t t-call="website.layout">
+                        <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                            <div class="clubs">OSAEMEA</div>
+                        </div>
+                        <div style="padding:20px;" class="">
+                            <div class="row" style="margin-right: 0px;">
+                                <div class="col-md-6">
+                                    <div id="wrap" class="oe_structure oe_empty" data-editor-message-default="true"
+                                         data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                        <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel"
+                                                 data-name="Carousel">
+                                            <div class="s_carousel s_carousel_default carousel slide"
+                                                 data-bs-interval="10000" id="myCarousel1710388085132"
+                                                 style="background-image: none;">
+                                                <ol class="carousel-indicators o_we_no_overlay">
+                                                    <li data-bs-slide-to="0" class="active"
+                                                        data-bs-target="#myCarousel1710388085132"/>
+                                                    <li data-bs-slide-to="1" data-bs-target="#myCarousel1710388085132"/>
+                                                    <li data-bs-slide-to="2" data-bs-target="#myCarousel1710388085132"/>
+                                                </ol>
+                                                <div class="carousel-inner">
+
+                                                    <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active"
+                                                         style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+                                                         data-name="Slide">
+                                                        <div class="container oe_unremovable">
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level"
+                                                         style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);"
+                                                         data-name="Slide">
+                                                        <div class="container oe_unremovable">
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level"
+                                                         style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);"
+                                                         data-name="Slide">
+                                                        <div class="container oe_unremovable">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev o_not_editable o_we_no_overlay"
+                                                   data-bs-slide="prev" role="img" aria-label="Previous"
+                                                   title="Previous" href="#myCarousel1710388085132">
+                                                    <span class="carousel-control-prev-icon"/>
+                                                    <span class="visually-hidden o_default_snippet_text">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next o_not_editable o_we_no_overlay"
+                                                   data-bs-slide="next" role="img" aria-label="Next" title="Next"
+                                                   href="#myCarousel1710388085132">
+                                                    <span class="carousel-control-next-icon"/>
+                                                    <span class="visually-hidden o_default_snippet_text">Next</span>
+                                                </a>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="page_text" style="text-align:justify; margin-bottom:0px;">The purpose of
+                                        the OSA of EMEA is to actively support the mission and educational objectives of
+                                        the EMEA College and to maintain a relationship withits alumni.The Old Students’
+                                        Association operates as a charitable, benevolent and phil-anthropic institution
+                                        and does not Operate for profit or pecuniary gain. The first mega OSAMEA meet
+                                        conducted in 2017 was a stunning success. Aims and Objectives The aims and
+                                        objectives of the EMEA College Old Students’ Association is to encourage alumni
+                                        to maintain links with the College and with each other, in order: to promote
+                                        more effectively the welfare and interests of the College and its alumni. To
+                                        support the College’s aims and objectives and uphold its reputation as
+                                        ambassadors of the College. To participate in activities contributing to
+                                        improvement of infrastructure &amp;amp; academic activities of the EMEA College.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row" style=" margin-right: 0px;">
+                                <div class="col-md-12">
+                                    <p class="page_text" style="text-align:justify; margin-bottom:0px;">To institute
+                                        prizes and scholarships to students for merit and financial aid to the poor and
+                                        deserving students of the EMEA College. Help identify those alumni who have made
+                                        outstanding contributions to their profession and/or society. To establish
+                                        mutually beneficial relation-ship between the College and its alumni and to bind
+                                        the alumni more closely together. To assist in developing financial and other
+                                        resources for the College and the Old Students’ Association.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;">
+                            <div class="col-md-7">
+                                <h1 class="department_subhead" style="padding-left:35px;">OSAEMEA Activities</h1>
+                                <div class="row confrance">
+                                    <div class="col-md-4" style="padding:0">
+                                        <img src="/emea_college_theme/static/img/book1.jpg" style="width:90%"
+                                             loading="lazy"/>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <h3 class="confrance_head">APPRECIATION CEREMONY FOR WINNERS</h3>
+                                        <h4 class="sub_date">8/18/2022</h4>
+                                        <p style="text-align:justify;    line-height: 1.8;">
+                                            EMEA COLLEGE OF ARTS AND SCIENCE, KONDOTTY EMEA 88-90 BATCHMATES
+                                            APPRECIATION _ CEREMONY FOR HIGHER SECONDARY, SSLC, USS LSS WINNERS
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <section class="pt32 pb32">
+                                    <h2 class="department_subhead pt32">Reports</h2>
+                                    <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+
+                                        <div class="programme_link">Alumni report 2014-19
+                                        </div>
+                                        <span class=" readmore" id="view">View
+                                            <a href="emea_college_theme/static/img/Course Outline_Eng1 A02 Ways With Words2019-2020(5).pdf"
+                                               data-mimetype="application/pdf" class="o_image seminar"
+                                               scontenteditable="false"/>
+                                            <a href="https://www.emeacollege.ac.in/Uploads/Files/ALUMNI%20REPORT%202014-19.pdf"
+                                               data-mimetype="application/pdf" class="o_image seminar"
+                                               scontenteditable="false"/>
+
+                                        </span>
+                                    </section>
+                                </section>
+
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="alumni_osaemea_page" model="website.page">
+            <field name="url">/alumni_osaemea</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="osaemea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,1624 @@
+<odoo>
+    <data>
+        <record id="principal_profile_emea" model="ir.ui.view">
+            <field name="name">Principal Profile</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.principal_profile_emea</field>
+            <field name="arch" type="xml">
+                <t name="Principal Profile" t-name="emea_college_theme.principal_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page pt32 pb32">
+                                <div class="wrapper">
+                                    <div class="sidebar-wrapper">
+                                        <div class="profile-container">
+                                            <img class="img-fluid strch-img profile"
+                                                 src="emea_college_theme/static/img/princi.jpg" alt="imgfst"/>
+                                            <h1 class="name">Dr . ABDUL MUNEER V.</h1>
+                                            <h3 class="tagline">Principal</h3>
+                                            <h3 class="tagline">Administration</h3>
+
+                                        </div><!--//profile-container-->
+
+                                        <div class="contact-container container-block pb-0">
+                                            <ul class="list-unstyled contact-list">
+                                                <li class="email">Subject Specialisation In
+                                                    <strong>Political Communication</strong>
+                                                </li>
+                                                <li class="email">
+                                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                    muneervalappil@gmail.com
+                                                </li>
+                                            </ul>
+                                        </div><!--//contact-container-->
+                                        <div class="education-container container-block pt-2">
+                                            <h2 class="container-block-title">EXPERIENCES</h2>
+                                            <div class="Education my-3">
+                                                <h5 class="degree">Assistant Professor</h5>
+                                                <h5 class="meta">EMEA College of Arts and Science, Kondotty</h5>
+                                                <h5 class="meta">Journalism</h5>
+                                                <div class="year">18 Year 29 Days</div>
+                                            </div>
+                                            <div class="Education my-3">
+                                                <h5 class="degree">Guest Lecturer</h5>
+                                                <h5 class="meta">NMSM Govt. College, Kalpetta</h5>
+                                                <h5 class="meta">Mass Communication</h5>
+                                                <div class="year">7 Month 3 Days</div>
+                                            </div>
+                                            <div class="Education my-3">
+                                                <h5 class="degree">Guest Lecturer</h5>
+                                                <h5 class="meta">EMEA College of Arts and Science, Kondotty</h5>
+                                                <h5 class="meta">Journalism</h5>
+                                                <div class="year">10 Month 3 Days</div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!--//sidebar-wrapper-->
+
+                                    <div class="main-wrapper">
+                                        <div class="col-md-12">
+                                            <section
+                                                    class="profile_card s_faq_collapse pt32 pb32 o_colored_level s_faq_collapse_boxed"
+                                                    data-snippet="s_faq_collapse" data-name="Accordion" style="">
+                                                <div class="container">
+                                                    <div id="myCollapse1700712777280" class="accordion" role="tablist">
+                                                        <div class="card" data-name="Item">
+                                                            <a href="#" role="tab" data-toggle="collapse"
+                                                               aria-expanded="true"
+                                                               class="card-header s_faq_collapse_right_icon"
+                                                               data-target="#myCollapseTab1700712777281" style="
+">
+                                                                <span style="color: rgb(31, 31, 31);font-size: 11px"></span>
+                                                                <span style="font-size: 21px;" class="text-o-color-3">
+                                                                    <strong>
+                                                                        <span class="fa fa-user-circle"
+                                                                              style="padding-right: 10px;"
+                                                                              contenteditable="false">&amp;ZeroWidthSpace;
+                                                                        </span>
+                                                                        EDUCATION
+                                                                    </strong>
+                                                                </span>
+                                                                <br/>
+                                                            </a>
+                                                            <div class="collapse show"
+                                                                 data-parent="#myCollapse1700712777280" role="tabpanel"
+                                                                 id="myCollapseTab1700712777281">
+                                                                <div class="card-body p-5">
+                                                                    <section class="section summary-section">
+                                                                        <table class="table table-bordered">
+                                                                            <thead>
+                                                                                <tr class="text-white"
+                                                                                    style="background-color:#42A8C0;">
+                                                                                    <th>Qualification</th>
+                                                                                    <th>Institution</th>
+                                                                                    <th>Year</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Ph.D</td>
+                                                                                    <td>UNIVERSITY OF CALICUT</td>
+                                                                                    <td>2015</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>CIM</td>
+                                                                                    <td>ARENA MULTIMEDIA</td>
+                                                                                    <td>2002</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>MJC</td>
+                                                                                    <td>M G UNIVERSITY</td>
+                                                                                    <td>2000</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>NET</td>
+                                                                                    <td>UGC</td>
+                                                                                    <td>1999</td>
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card" data-name="Item">
+                                                            <a href="#" role="tab" data-toggle="collapse"
+                                                               aria-expanded="false"
+                                                               class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                               data-target="#myCollapseTab1700712777282">
+                                                                <span style="color: rgb(31, 31, 31);font-size: 11px"></span>
+                                                                <span style="font-size: 21px;" class="text-o-color-3">
+                                                                    <strong>
+                                                                        <span class="fa fa-user-circle"
+                                                                              style="padding-right: 10px;"
+                                                                              contenteditable="false">&amp;ZeroWidthSpace;
+                                                                        </span>
+                                                                        PUBLICATIONS
+                                                                    </strong>
+                                                                </span>
+                                                                <br/>
+                                                            </a>
+                                                            <div class="collapse" data-parent="#myCollapse1700712777280"
+                                                                 role="tabpanel" id="myCollapseTab1700712777282">
+                                                                <div class="card-body">
+                                                                    <section class=" m-3">
+                                                                        <div class="RightPanelInner">
+                                                                            <h3 class="section-sub-title mt-4">Book
+                                                                                Sections
+                                                                            </h3>
+
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Politics and
+                                                                                        Political Communication in the
+                                                                                        Time
+                                                                                        of Corona, DC Books, 2020,
+                                                                                        (ISSN/ISBN) : ISBN:
+                                                                                        978-93-5390-676-4
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="RightPanelInner">
+                                                                            <h3 class="section-sub-title mt-4">Journal
+                                                                                Article
+                                                                            </h3>
+
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V., Does Television
+                                                                                        Matter in Political
+                                                                                        Participation?,
+                                                                                        Communication and Journalism
+                                                                                        Research, Calicut University,
+                                                                                        2018,
+                                                                                        (ISSN/ISBN) : ISSN: 2348 – 5663
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">2.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Political
+                                                                                        Communication: An
+                                                                                        Interdisciplinary
+                                                                                        Enquiry into a Multifaceted
+                                                                                        Communication discourse.,
+                                                                                        Communication and Media Studies,
+                                                                                        Thiruvananthapuram, 2018,
+                                                                                        (ISSN/ISBN) : ISSN: 2395 – 1559
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">3.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., The
+                                                                                        Demographics
+                                                                                        of Malayalam Television Debates
+                                                                                        Viewership, Communication and
+                                                                                        Journalism Research, Calicut
+                                                                                        University, 2017, (ISSN/ISBN) :
+                                                                                        SSN:
+                                                                                        2348 – 5663
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">4.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Television
+                                                                                        as
+                                                                                        Politics Tutor: Analysing the
+                                                                                        Influence of Television on
+                                                                                        Political
+                                                                                        Learning, Communication and
+                                                                                        Media
+                                                                                        Studies, Communication and Media
+                                                                                        Studies, Thiruvananthapuram,
+                                                                                        2017,
+                                                                                        (ISSN/ISBN) : ISSN: 2395 – 1559
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">5.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Reality
+                                                                                        Bytes:
+                                                                                        Anand Patwardhan''s
+                                                                                        Documentaries on
+                                                                                        Human Rights Issues,
+                                                                                        Communication
+                                                                                        and Journalism Research, Calicut
+                                                                                        University, 2017, (ISSN/ISBN) :
+                                                                                        ISSN: 2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">6.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., A Primer on
+                                                                                        Prime Time Debates of Malayalam
+                                                                                        News
+                                                                                        Channels, Communication and
+                                                                                        Journalism Research, Calicut
+                                                                                        University, 2016, (ISSN/ISBN) :
+                                                                                        ISSN: 2348 – 5663
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">7.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Poetry in
+                                                                                        Motion: Philosophy and
+                                                                                        Perspectives
+                                                                                        of AbbasKiarostami’s Films,
+                                                                                        International Journal for
+                                                                                        Advanced
+                                                                                        Research in Emerging
+                                                                                        Disciplines,
+                                                                                        India, 2016, (ISSN/ISBN) : ISSN:
+                                                                                        2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">8.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Many Souls
+                                                                                        and
+                                                                                        Many Worlds:The Kabir
+                                                                                        documentaries
+                                                                                        of Shabnam Virmani,
+                                                                                        Communication
+                                                                                        and Journalism Research, Calicut
+                                                                                        University, 2016, (ISSN/ISBN) :
+                                                                                        ISSN: 2348 – 5663
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">9.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Television
+                                                                                        Viewing Habits: Regularity,
+                                                                                        Time-spent, and Genres,
+                                                                                        nternational
+                                                                                        Journal for Advanced Research in
+                                                                                        Emerging Disciplines , India,
+                                                                                        2015,
+                                                                                        (ISSN/ISBN) : ISSN: 2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">10.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        DR.ABDUL MUNEER V., Akira
+                                                                                        Kurosawa:
+                                                                                        The Man and his Muses,
+                                                                                        International
+                                                                                        Journal for Advanced Research in
+                                                                                        Emerging Disciplines, India,
+                                                                                        2015,
+                                                                                        (ISSN/ISBN) : ISSN: 2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">11.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V., Television as a
+                                                                                        Source of Influence on Voting
+                                                                                        Behaviour, International Journal
+                                                                                        for
+                                                                                        Advanced Research in Emerging
+                                                                                        Disciplines, India, 2014,
+                                                                                        (ISSN/ISBN) : ISSN: 2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">12.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V., Politics and
+                                                                                        the
+                                                                                        Public in Times of Television:
+                                                                                        An
+                                                                                        Overview of Research on
+                                                                                        Televised
+                                                                                        Political Communication,
+                                                                                        International Journal for
+                                                                                        Advanced
+                                                                                        Research in Emerging
+                                                                                        Disciplines,
+                                                                                        India, 2014, (ISSN/ISBN) : ISSN:
+                                                                                        2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">13.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V., Televised
+                                                                                        Political
+                                                                                        Learning: Influence of
+                                                                                        Prime-Time
+                                                                                        Televised Political News and
+                                                                                        Debates
+                                                                                        on the Political Awareness of
+                                                                                        the
+                                                                                        Viewers of Malayalam TV News
+                                                                                        Channels, International Journal
+                                                                                        of
+                                                                                        Humanities and Social Science
+                                                                                        Invention, U.P, 2014,
+                                                                                        (ISSN/ISBN) :
+                                                                                        ISSN: 2319-7714
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">14.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V and Syed Amjed
+                                                                                        Ahmed,
+                                                                                        Credibility Perception of TV
+                                                                                        News
+                                                                                        and Debate Shows Before and
+                                                                                        During
+                                                                                        Election Campaign, IOSR Journal
+                                                                                        of
+                                                                                        Humanities and Social Science,
+                                                                                        U.P,
+                                                                                        2014, (ISSN/ISBN) : ISSN:
+                                                                                        2279-0845
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">15.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V., Effects of
+                                                                                        Mediated
+                                                                                        Election Campaigns: Information,
+                                                                                        Reinforcement, and Conversion,
+                                                                                        International Journal for
+                                                                                        Advanced
+                                                                                        Research in Emerging
+                                                                                        Disciplines,
+                                                                                        India, 2013, (ISSN/ISBN) : ISSN:
+                                                                                        2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">16.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V., Teaching Out of
+                                                                                        the
+                                                                                        Box: The Role of Television as
+                                                                                        Mass-Educator, International
+                                                                                        Journal
+                                                                                        for Advanced Research in
+                                                                                        Emerging
+                                                                                        Disciplines, India, 2013,
+                                                                                        (ISSN/ISBN) : ISSN: 2348-3342
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px; padding-bottom: 10px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">17.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        ABDUL MUNEER V., Political
+                                                                                        Communication Research: An
+                                                                                        Overview
+                                                                                        of the past and the present,
+                                                                                        Communication and journalism
+                                                                                        Research, University of Calicut,
+                                                                                        2012, (ISSN/ISBN) : ISSN: 2348 –
+                                                                                        5663
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card bg-white" data-name="Item">
+                                                            <a href="#" role="tab" data-toggle="collapse"
+                                                               aria-expanded="false"
+                                                               class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                               data-target="#myCollapseTab1700712777283">
+                                                                <span style="color: rgb(31, 31, 31);font-size: 11px"></span>
+                                                                <span style="font-size: 21px;" class="text-o-color-3">
+                                                                    <strong>
+                                                                        <span class="fa fa-user-circle"
+                                                                              style="padding-right: 10px;"
+                                                                              contenteditable="false">&amp;ZeroWidthSpace;
+                                                                        </span>
+                                                                        PAPER
+                                                                        PRESENTATION
+                                                                    </strong>
+                                                                </span>
+                                                                <br/>
+                                                            </a>
+                                                            <div class="collapse" data-parent="#myCollapse1700712777280"
+                                                                 role="tabpanel" id="myCollapseTab1700712777283">
+                                                                <div class="card-body">
+                                                                    <section class="paperpresentations m-3">
+                                                                        <div class="RightPanelInner">
+                                                                            <h3 class="section-sub-title mt-4">Paper
+                                                                                Presentation
+                                                                            </h3>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Revisit of Media Theories in
+                                                                                        Post
+                                                                                        Truth Era., 5th National Mass
+                                                                                        Communication Research
+                                                                                        Conference ,
+                                                                                        March 12,2019, To March 14,2019,
+                                                                                        Organized By : DJMC, University
+                                                                                        of
+                                                                                        Calicut, Sponsored By : NMCRC,
+                                                                                        University of Calicut, Venue :
+                                                                                        Department of Journalism and
+                                                                                        Mass
+                                                                                        Communication, University of
+                                                                                        Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">2.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Medium or Message?: Digital
+                                                                                        Mediation in Indian Elections,
+                                                                                        4th
+                                                                                        National Mass Communication
+                                                                                        Research
+                                                                                        Conference, March 20,2018, To
+                                                                                        March
+                                                                                        22,2018, Organized By : DJMC,
+                                                                                        University of Calicut, Sponsored
+                                                                                        By
+                                                                                        : NMCRC, University of Calicut,
+                                                                                        Venue : Department of Journalism
+                                                                                        and
+                                                                                        Mass Communication, University
+                                                                                        of
+                                                                                        Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">3.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Political Communication: An
+                                                                                        Inter-
+                                                                                        Disciplinary Enquiry into a
+                                                                                        Multi
+                                                                                        Faceted Communication Discourse,
+                                                                                        National Seminar: Trending -
+                                                                                        Disciplinary Convergence in
+                                                                                        Media
+                                                                                        Studies, February 28,2018, To
+                                                                                        February 28,2018, Organized By :
+                                                                                        Department of Communication and
+                                                                                        Journalism, Sponsored By :
+                                                                                        University of Kerala, Venue :
+                                                                                        Department of Communication and
+                                                                                        Journalism, University of
+                                                                                        Kerala,
+                                                                                        Thiruvananthapuram.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">4.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Realities on Reels: Analysis of
+                                                                                        Documentary Films Dealing with
+                                                                                        Human
+                                                                                        Rights Issues, National Seminar
+                                                                                        on
+                                                                                        Media and Human Rights , March
+                                                                                        01,2017, To March 02,2017,
+                                                                                        Organized
+                                                                                        By : DJMC, University of
+                                                                                        Calicut,
+                                                                                        Sponsored By : UGC, Venue :
+                                                                                        Department of Journalism and
+                                                                                        Mass
+                                                                                        Communication, University of
+                                                                                        Calicut, Kerala.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">5.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Global Power Equations and the
+                                                                                        Geo-Politics of West Asia.,
+                                                                                        KSHEC
+                                                                                        Sponsored State Level Seminar on
+                                                                                        Changing Global Power Equations
+                                                                                        ,
+                                                                                        December 07,2015, To December
+                                                                                        08,2015, Organized By :
+                                                                                        Darunnajath
+                                                                                        Arabic College, Karuvarakundu,
+                                                                                        Kerala., Sponsored By : KSHEC,
+                                                                                        Venue
+                                                                                        : Darunnajath Arabic College,
+                                                                                        Karuvarakundu, Kerala.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">6.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        A Primer on Prime Time Debates
+                                                                                        of
+                                                                                        Malayalam News Channels, UGC
+                                                                                        Sponsored National Seminar on
+                                                                                        Media
+                                                                                        and Society in the Digital Age,
+                                                                                        January 28,2015, To January
+                                                                                        29,2015,
+                                                                                        Organized By : MCRC, Sponsored
+                                                                                        By :
+                                                                                        UGC, Venue : Department of
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut, Kerala.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">7.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Research Trends in Political
+                                                                                        Communication., National Mass
+                                                                                        Communication Research
+                                                                                        Conference,
+                                                                                        February 06,2014, To February
+                                                                                        07,2014, Organized By :
+                                                                                        Department
+                                                                                        of Journalism and Mass
+                                                                                        Communication, Sponsored By :
+                                                                                        University of Calicut, Venue :
+                                                                                        University of Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">8.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Edutaining Millions: The Role of
+                                                                                        Television as a Mass-Educator.,
+                                                                                        National Seminar on Higher
+                                                                                        Education
+                                                                                        in India: Challenges and
+                                                                                        Prospects,
+                                                                                        , December 15,2011, To December
+                                                                                        15,2011, Organized By : Research
+                                                                                        Centre, Kannur University,
+                                                                                        Sponsored
+                                                                                        By : Kannur University, Venue :
+                                                                                        Kannur University Campus
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">9.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Tweeting Notes: Teaching Mass
+                                                                                        Media
+                                                                                        in the Era of New Media
+                                                                                        Explosion.,
+                                                                                        National Seminar and Media Fest,
+                                                                                        January 30,2010, To January
+                                                                                        30,2010,
+                                                                                        Organized By : Department of
+                                                                                        Mass
+                                                                                        Communication and Journalism,
+                                                                                        Sponsored By : Karnatak
+                                                                                        University,
+                                                                                        Dharwad, Venue : Karnatak
+                                                                                        University, Dharwad, Karnataka.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">10.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Understanding Visuals., National
+                                                                                        Workshop on Educational Visual
+                                                                                        Communication, , January
+                                                                                        14,2010, To
+                                                                                        January 14,2010, Organized By :
+                                                                                        DJMC, Sponsored By : UGC, Venue
+                                                                                        :
+                                                                                        Department of Journalism and
+                                                                                        Mass
+                                                                                        Communication, University of
+                                                                                        Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="RightPanelInner">
+
+
+                                                                        </div>
+                                                                        <div class="RightPanelInner">
+
+
+                                                                            <h3 class="section-sub-title mt-4">Seminar
+                                                                                Resource Person
+                                                                            </h3>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        What You See is Not What You
+                                                                                        Get:
+                                                                                        The Many Applications of Media
+                                                                                        Language, Language of
+                                                                                        Journalism:
+                                                                                        Use and Misuse, November
+                                                                                        26,2019, To
+                                                                                        November 28,2019, Organized By :
+                                                                                        PG
+                                                                                        Department of Mass Communication
+                                                                                        and
+                                                                                        Journalism, Sponsored By :
+                                                                                        Directorate of Collegiate
+                                                                                        Education,
+                                                                                        Venue : NMSM Govt. College,
+                                                                                        Kalpetta
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">2.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Photo Journalism: Dynamics and
+                                                                                        Dimensions, Certificate Course
+                                                                                        in
+                                                                                        Photography, November 23,2019,
+                                                                                        To
+                                                                                        November 23,2019, Organized By :
+                                                                                        Department of Lifelong Learning
+                                                                                        and
+                                                                                        Extension, Sponsored By :
+                                                                                        University
+                                                                                        of Calicut, Venue : University
+                                                                                        of
+                                                                                        Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">3.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        What Makes a Great
+                                                                                        Photographer?,
+                                                                                        Certificate Course in
+                                                                                        Photography,
+                                                                                        November 16,2019, To November
+                                                                                        16,2019, Organized By :
+                                                                                        Department
+                                                                                        of Lifelong Learning and
+                                                                                        Extension,
+                                                                                        Sponsored By : University of
+                                                                                        Calicut, Venue : University of
+                                                                                        Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">4.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Mass Media Research: An Organic
+                                                                                        Approach., Annual Thesis
+                                                                                        Conference,
+                                                                                        November 14,2019, To November
+                                                                                        14,2019, Organized By : SIAS
+                                                                                        Media
+                                                                                        School, Sponsored By : SIAS
+                                                                                        Media
+                                                                                        School, Venue : SAFI Institute
+                                                                                        of
+                                                                                        Advanced Studies, Vazhayur,
+                                                                                        Kerala.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">5.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Media Skills in a Beta Society,
+                                                                                        Induction Training Programme
+                                                                                        conducted by the Department of
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut., July
+                                                                                        02,2019, To July 04,2019,
+                                                                                        Organized
+                                                                                        By : Department of Journalism
+                                                                                        and
+                                                                                        Mass Communication, University
+                                                                                        of
+                                                                                        Calicut., Sponsored By :
+                                                                                        University
+                                                                                        of Calicut, Venue : Department
+                                                                                        of
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">6.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Ethical Dimensions of
+                                                                                        Photography,
+                                                                                        Certificate Course in
+                                                                                        Photography,
+                                                                                        March 02,2019, To March 02,2019,
+                                                                                        Organized By : Department of
+                                                                                        Lifelong Learning and Extension,
+                                                                                        Sponsored By : University of
+                                                                                        Calicut, Venue : University of
+                                                                                        Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">7.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Evolution and Growth of
+                                                                                        Photography,
+                                                                                        Certificate Course in
+                                                                                        Photography,
+                                                                                        February 23,2019, To February
+                                                                                        23,2019, Organized By :
+                                                                                        Department
+                                                                                        of Lifelong Learning and
+                                                                                        Extension,
+                                                                                        Sponsored By : University of
+                                                                                        Calicut, Venue : University of
+                                                                                        Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">8.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Political Spin Doctoring -
+                                                                                        Indian
+                                                                                        Experiences, Certificate Course
+                                                                                        in
+                                                                                        Public Relations and Corporate
+                                                                                        Communication, January 19,2019,
+                                                                                        To
+                                                                                        January 19,2019, Organized By :
+                                                                                        Department of Journalism and
+                                                                                        Mass
+                                                                                        Communication, Sponsored By :
+                                                                                        UGC,
+                                                                                        Venue : University of Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">9.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Genres of Photography,
+                                                                                        Certificate
+                                                                                        Course in Photography, January
+                                                                                        12,2019, To January 12,2019,
+                                                                                        Organized By : Department of
+                                                                                        Lifelong Learning and Extension,
+                                                                                        Sponsored By : University of
+                                                                                        Calicut, Venue : University of
+                                                                                        Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">10.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Public Relations Campaign:
+                                                                                        Creativity, Application, and
+                                                                                        Reception, Certificate Course in
+                                                                                        Public Relations and Corporate
+                                                                                        Communication, December 09,2018,
+                                                                                        To
+                                                                                        December 09,2018, Organized By :
+                                                                                        Department of Journalism and
+                                                                                        Mass
+                                                                                        Communication, Sponsored By :
+                                                                                        UGC,
+                                                                                        Venue : University of Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">11.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Mass Media Research in Post
+                                                                                        Truth
+                                                                                        Era., National Seminar on Media
+                                                                                        &amp; Democracy: Myth &amp;
+                                                                                        Reality,
+                                                                                        October 30,2018, To November
+                                                                                        01,2018, Organized By :
+                                                                                        Department
+                                                                                        of Mass Communication and
+                                                                                        Journalism, , Sponsored By :
+                                                                                        Directorate of Collegiate
+                                                                                        Education,
+                                                                                        Govt. of Kerala, Venue : NMSM
+                                                                                        Government College, Kalpetta.
+                                                                                        Wayanad.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">12.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Journalist 2.0: Heralding A New
+                                                                                        Era., Invited Lecture and
+                                                                                        Association Inauguration,
+                                                                                        October
+                                                                                        25,2018, To October 25,2018,
+                                                                                        Organized By : Department of
+                                                                                        Mass
+                                                                                        Communication, Sponsored By :
+                                                                                        Educational Association AWC,
+                                                                                        Venue :
+                                                                                        Ansar Women's College,
+                                                                                        Perumpilavu
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">13.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Media Skills in Digital Era.,
+                                                                                        Induction Training Programme ,
+                                                                                        July
+                                                                                        24,2018, To July 24,2018,
+                                                                                        Organized
+                                                                                        By : Department of Journalism
+                                                                                        and
+                                                                                        Mass Communication , Sponsored
+                                                                                        By :
+                                                                                        University of Calicut, Venue :
+                                                                                        University of Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">14.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Corporate Image Engineering,
+                                                                                        Certificate Course in Public
+                                                                                        Relations and Corporate
+                                                                                        Communication, March 03,2018, To
+                                                                                        March 03,2018, Organized By :
+                                                                                        Department of Journalism and
+                                                                                        Mass
+                                                                                        Communication, Sponsored By :
+                                                                                        UGC,
+                                                                                        Venue : University of Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">15.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Themes and Issues in Public
+                                                                                        Relations, Certificate Course in
+                                                                                        Public Relations and Corporate
+                                                                                        Communication, February 04,2018,
+                                                                                        To
+                                                                                        February 04,2018, Organized By :
+                                                                                        Department of Journalism and
+                                                                                        Mass
+                                                                                        Communication, Sponsored By :
+                                                                                        UGC,
+                                                                                        Venue : University of Calicut
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">16.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Mad on Media: Creating 360
+                                                                                        Degree
+                                                                                        Journalists., National Seminar
+                                                                                        on
+                                                                                        Media and Nationalism, November
+                                                                                        21,2017, To November 23,2017,
+                                                                                        Organized By : PG Department of
+                                                                                        Mass
+                                                                                        Communication and Journalism,
+                                                                                        Sponsored By : Directorate of
+                                                                                        Collegiate Education, Venue :
+                                                                                        NMSM
+                                                                                        Govt. College, Kalpetta
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">17.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Finding Real Values in Media
+                                                                                        Jobs,
+                                                                                        Induction Training Programme
+                                                                                        conducted by the Department of
+                                                                                        Journalism and Mass
+                                                                                        Communication, ,
+                                                                                        August 16,2017, To August
+                                                                                        16,2017,
+                                                                                        Organized By : Department of
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        Sponsored By : University of
+                                                                                        Calicut, Venue : University of
+                                                                                        Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">18.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        The Role of Social Media as a
+                                                                                        Mass
+                                                                                        Persuader., Annual Personality
+                                                                                        Development Camp, , April
+                                                                                        04,2016,
+                                                                                        To April 16,2016, Organized By :
+                                                                                        Chair for Gandhian Studies and
+                                                                                        Research , Sponsored By :
+                                                                                        University
+                                                                                        of Calicut, Venue : University
+                                                                                        of
+                                                                                        Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">19.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Redefining Cinema., Invited
+                                                                                        Lecture
+                                                                                        on Film Festival, February
+                                                                                        16,2016,
+                                                                                        To February 16,2016, Organized
+                                                                                        By :
+                                                                                        Department of Mass
+                                                                                        Communication,
+                                                                                        Sponsored By : Education
+                                                                                        Association
+                                                                                        AWC, Venue : Ansar Women's
+                                                                                        College,
+                                                                                        Perumpilavu, Thrissur, Kerala.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">20.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Changing Trends in Media
+                                                                                        Career.,
+                                                                                        Invited Lecture organised by the
+                                                                                        ,
+                                                                                        January 14,2016, To January
+                                                                                        14,2016,
+                                                                                        Organized By : Department of
+                                                                                        Journalism and Mass
+                                                                                        Communication, ,
+                                                                                        Sponsored By : University of
+                                                                                        Calicut, Venue : University of
+                                                                                        Calicut.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4">
+                                                                                <div style="text-align:justify;">
+                                                                                    <p class="m-0 float-left">21.</p>
+                                                                                    <p class="m-0 d-flex">
+                                                                                        Aesthetics of West Asian
+                                                                                        Cinema.,
+                                                                                        Invited Lecture , July 12,2011,
+                                                                                        To
+                                                                                        July 12,2011, Organized By :
+                                                                                        Communication Club, , University
+                                                                                        of
+                                                                                        Calicut., Sponsored By :
+                                                                                        University
+                                                                                        of Calicut, Venue : Department
+                                                                                        of
+                                                                                        Journalism and Mass
+                                                                                        Communication
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card bg-white" data-name="Item">
+                                                            <a href="#" role="tab" data-toggle="collapse"
+                                                               aria-expanded="false"
+                                                               class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                               data-target="#myCollapseTab1700712777284">
+                                                                <span style="color: rgb(31, 31, 31);font-size: 11px"></span>
+                                                                <span style="font-size: 21px;" class="text-o-color-3">
+                                                                    <strong>
+                                                                        <span class="fa fa-user-circle"
+                                                                              style="padding-right: 10px;"
+                                                                              contenteditable="false">&amp;ZeroWidthSpace;
+                                                                        </span>
+                                                                        OTHER
+                                                                        DETAILS
+                                                                    </strong>
+                                                                </span>
+                                                                <br/>
+                                                            </a>
+                                                            <div class="collapse" data-parent="#myCollapse1700712777280"
+                                                                 role="tabpanel" id="myCollapseTab1700712777284">
+                                                                <div class="card-body">
+                                                                    <section class=" m-3">
+                                                                        <div class="RightPanelInner">
+                                                                            <h3 class="section-sub-title mt-4"
+                                                                                style="margin:20px 0 !important;">
+                                                                                ACADEMIC
+                                                                                HONOURS / AWARDS AND POSITIONS
+                                                                            </h3>
+
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Elected Member, Academic
+                                                                                        Council,
+                                                                                        University of Calicut (Since
+                                                                                        2008).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">2.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Chairman, PG Board of Studies in
+                                                                                        Audiovisual Communication,
+                                                                                        University of Calicut (2016-19).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">3.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Chairman, PG Board of Studies in
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        Kannur University (2015-17).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">4.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Chairman, UG Board of Studies in
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut (2013-16).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">5.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Postgraduate Board of
+                                                                                        Studies in Journalism and Mass
+                                                                                        Communication, Kannur University
+                                                                                        (2013-15).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">6.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Faculty of Journalism,
+                                                                                        University of Calicut (2013-19).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">7.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Faculty of
+                                                                                        Communication,
+                                                                                        Kannur University (2015-17).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">8.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, PG Board of Studies in
+                                                                                        Audiovisual Communication,
+                                                                                        University of Calicut, Since
+                                                                                        2020
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">9.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Postgraduate Board of
+                                                                                        Studies in Journalism and Mass
+                                                                                        Communication, St’ Joseph
+                                                                                        College of
+                                                                                        Women (Autonomous),
+                                                                                        Irinjalakkuda,
+                                                                                        Thrissur (Since 2019).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">10.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Board of Studies for
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        and Video Production, Mar
+                                                                                        Ivanios
+                                                                                        Autonomous College,
+                                                                                        Thiruvananthapuram (2014-18).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">11.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Board of Studies in
+                                                                                        Media
+                                                                                        and Information Science, Farook
+                                                                                        Autonomous College, Calicut
+                                                                                        (2014-16).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">12.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, PG Board of Studies in
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut
+                                                                                        (2013-2019)
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="RightPanelInner">
+                                                                            <h3 class="section-sub-title mt-4"
+                                                                                style="margin:20px 0 !important;">
+                                                                                EDITORIAL
+                                                                                BOARD MEMBER OF JOURNALS
+                                                                            </h3>
+
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Editor, International Journal
+                                                                                        for
+                                                                                        Advanced Research in Emerging
+                                                                                        Disciplines (ISSN:2348-3342)
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="RightPanelInner">
+                                                                            <h3 class="section-sub-title mt-4"
+                                                                                style="margin:20px 0 !important;">OTHER
+                                                                                DETAILS
+                                                                            </h3>
+
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Research Guide at the Department
+                                                                                        of
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut. Area of
+                                                                                        Specialisation: Political
+                                                                                        Communication.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">2.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Chairman, PG Board of Examiners
+                                                                                        in
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut (Since
+                                                                                        2016).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">3.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Chairman, UG Board of Examiners
+                                                                                        in
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut
+                                                                                        (2007-2016).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">4.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Examination &amp; Viva
+                                                                                        Board, Dept. of JMC, University
+                                                                                        of
+                                                                                        Calicut, Mar Ivanios Autonomous
+                                                                                        College, Thiruvananthapuram,
+                                                                                        Farook
+                                                                                        Autonomous College, Calicut and
+                                                                                        St’
+                                                                                        Joseph Autonomous College,
+                                                                                        Devagiri,
+                                                                                        Kozhikode (Since 2014).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">5.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Chairman, Board of Question
+                                                                                        Paper
+                                                                                        Setters, University of Kerala
+                                                                                        (Since
+                                                                                        2018).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">6.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Chairman, Board of Question
+                                                                                        Paper
+                                                                                        Setters, Kannur University
+                                                                                        (Since
+                                                                                        2019).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">7.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Board of Question Paper
+                                                                                        Setters, University of Kerala
+                                                                                        (Since
+                                                                                        2015).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">8.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Member, Board of Question Paper
+                                                                                        Setters,Mar Ivanios Autonomous
+                                                                                        College, Thiruvananthapuram,
+                                                                                        Farook
+                                                                                        Autonomous College, Calicut and
+                                                                                        St’
+                                                                                        Joseph Autonomous College,
+                                                                                        Devagiri,
+                                                                                        Kozhikode (Since 2015).
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card bg-white" data-name="Item">
+                                                            <a href="#" role="tab" data-toggle="collapse"
+                                                               aria-expanded="false"
+                                                               class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon"
+                                                               data-target="#myCollapseTab1700712777285">
+                                                                <span style="color: rgb(31, 31, 31);font-size: 11px"></span>
+                                                                <span style="font-size: 21px;" class="text-o-color-3">
+                                                                    <strong>
+                                                                        <span class="fa fa-user-circle"
+                                                                              style="padding-right: 10px;"
+                                                                              contenteditable="false">&amp;ZeroWidthSpace;
+                                                                        </span>
+                                                                        RESEARCH
+                                                                    </strong>
+                                                                </span>
+                                                                <br/>
+                                                            </a>
+                                                            <div class="collapse" data-parent="#myCollapse1700712777280"
+                                                                 role="tabpanel" id="myCollapseTab1700712777285">
+                                                                <div class="card-body">
+                                                                    <section class=" m-3">
+                                                                        <div class="RightPanelInner">
+                                                                            <h3 class="section-sub-title mt-4"
+                                                                                style="margin:20px 0 !important;">
+                                                                                RESEARCH
+                                                                                EXPERIENCE
+                                                                            </h3>
+
+                                                                            <div class="m-3 mt-4"
+                                                                                 style="padding-left: 15px;">
+                                                                                <div style="">
+                                                                                    <p class="m-0 float-left">1.</p>
+                                                                                    <p class="PsmallBig"
+                                                                                       style="margin-top:10px;text-align:justify;padding-right: 20px;">
+                                                                                        Research Guide at the Department
+                                                                                        of
+                                                                                        Journalism and Mass
+                                                                                        Communication,
+                                                                                        University of Calicut since
+                                                                                        2019.
+                                                                                        Area of Specialisation is
+                                                                                        Political
+                                                                                        Communication.
+                                                                                    </p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="principal_profile_page" model="website.page">
+            <field name="url">/principal_profile</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="principal_profile_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

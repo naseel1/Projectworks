@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record id="academic_calender" model="ir.ui.view">
+            <field name="name">Academic Calender</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.academic_calender</field>
+            <field name="arch" type="xml">
+                <t name="Academic Calender" t-name="mss_college.academic_calender_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="academic_calender">
+                                <h3 class="academic_heading">Academic Calender</h3>
+                                <div class="academic_box_main">
+                                    <div class="academic_box">
+                                       2023-24
+                                </div>
+                                 <div class="academic_box">
+                                       2022-23
+                                </div>
+                                 <div class="academic_box">
+                                       2021-22
+                                </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_academic_calender_page" model="website.page">
+            <field name="url">/academic_calender</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="academic_calender"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

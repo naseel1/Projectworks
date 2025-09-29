@@ -1,0 +1,21 @@
+<odoo>
+    <template id="image_gallery_template" name="Image Gallery Page">
+        <t t-call="website.layout">
+            <link href="/image-gallery/static/src/css/style.css" rel="stylesheet" type="text/css"/>
+            <div class="container pt48">
+                <h1 class="page-head pb16">Gallery</h1>
+                <div class="row s_image_gallery" style="row-gap: 2rem;">
+                    <t t-foreach="images" t-as="image">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="galleries">
+                                <img t-att-src="'/web/image?model=image.galleries&amp;id=%s&amp;field=image&amp;unique=%s' % (image.id, request.env['ir.config_parameter'].sudo().get_param('website.image_cache_time', '0'))"
+                                     class="h-100 w-100 gallery-img" alt="Image"/>
+                                <h2 t-field="image.name" class="gallery-name"/>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

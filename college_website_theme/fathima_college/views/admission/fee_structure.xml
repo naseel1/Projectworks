@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+        <record id="fee_structure" model="ir.ui.view">
+            <field name="name">Fee Structure</field>
+            <field name="type">qweb</field>
+            <field name="key">fathima_college.fee_structure</field>
+            <field name="arch" type="xml">
+                <t name="About Us" t-name="fathima_college.fee_structure_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32 pb32 o_colored_level" style="background-image: none;">
+                                <div class="container">
+                                    <div class="about_head s_header">Fee Structure
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+                                    <div class=" s_header" id="sub-header">
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="about_paragraph">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="fee_structure_page" model="website.page">
+            <field name="url">/fee_structure</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="fee_structure"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

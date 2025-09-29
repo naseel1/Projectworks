@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_department_form" model="ir.ui.view">
+        <field name="name">website.department.form</field>
+        <field name="model">website.department</field>
+        <field name="arch" type="xml">
+            <form string="Department">
+                <sheet>
+                    <notebook>
+                        <page string="Profile">
+                            <group>
+                                <field name="image"/>
+                                <field name="description"/>
+                                <field name="vision"/>
+                                <field name="mission"/>
+                            </group>
+                        </page>
+<!--                        <page string="Club">-->
+<!--                            <field name="club_id">-->
+<!--                                <tree editable="bottom">-->
+<!--                                    <field name="club_id"/>-->
+<!--                                </tree>-->
+<!--                            </field>-->
+<!--                        </page>-->
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

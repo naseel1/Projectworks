@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <record id="college_prayer_mes" model="ir.ui.view">
+            <field name="name">College Prayer</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.college_prayer_mes</field>
+            <field name="arch" type="xml">
+                <t name="college_prayer" t-name="mes_college.college_prayer_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class=" pt32 pb32">
+                                    <div>
+                                        <h2 class="main-head" style="text-align:center">College Prayer</h2>
+                                        <div class="content_text" style="text-align:left">
+                                            <p style="text-align: center;">കാരുണ്യവാനായ ദൈവമേ ഞങ്ങളെ കനിവോടെയെന്നും
+                                                നയിക്കേണമേ
+                                            </p>
+                                            <p style="text-align: center;">അറിവിൻ വെളിച്ചം പകരുവാൻ ഞങ്ങൾതൻ ഹൃദയത്തിൽ
+                                                ശാന്തി പകർന്നീടണേ
+                                            </p>
+                                            <p style="text-align: center;">കാണായതിന്നൊക്കെ കരണഭൂവായ ജ്ഞാനപ്രഭുവായ
+                                                തമ്പുരാനേ
+                                            </p>
+                                            <p style="text-align: center;">ഞാനെത്രയോ ചെറുതെങ്കിലും നിൻ
+                                                കൃപാദാനത്തിനര്ഹനാം ദാസനല്ലേ
+                                            </p>
+                                            <p style="text-align: center;">സൈരന്ധ്രീവനതടഭൂവിലല്ലോ നാം മരുവും മനോഹര
+                                                വിദ്യാലയം
+                                            </p>
+                                            <p style="text-align: center;">വെളിവായും മറവായും നിലകൊള്ളും നീ അറിവിന്റെ
+                                                തീർത്ഥം ഒഴുക്കീടണേ
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_prayer_mes_page" model="website.page">
+            <field name="url">/college_prayer</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="college_prayer_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+    <record id="seq_iqac_subitem_id" model="ir.sequence">
+        <field name="name">IQAC Sub Item ID</field>
+        <field name="code">iqac.subitem.seq</field>
+        <field name="prefix">iqac_sub</field>
+        <field name="padding">1</field>
+    </record>
+</odoo>

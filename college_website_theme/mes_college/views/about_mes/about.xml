@@ -1,0 +1,188 @@
+<odoo>
+    <data>
+        <record id="about_mes" model="ir.ui.view">
+            <field name="name">About MES</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.about_mes</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.about_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title">About MES</h2>
+                                    <div class=" row pt32 pb32" >
+                                        <section class="col-md-8">
+                                            <div class="pb32">
+                                                <img src="/mes_college/static/img/banner.jpg" class="w-100 h-100"
+                                                     style="min-height:400px;object-fit: fill;filter: brightness(0.8);"/>
+                                            </div>
+                                            <div>
+                                                <div class="content_text">
+                                                    MES Kalladi College, is the proud symbol of the Muslim Educational
+                                                    Society
+                                                    to the cause of higher education in Kerala, especially to the
+                                                    educationally
+                                                    and socially backward sections. This is the first college started by
+                                                    the
+                                                    MES
+                                                    and it is also the felicitous outcome of the noble endeavor of the
+                                                    late
+                                                    Kalladi Cheriya Kunhammed Sahib and the local public. College is
+                                                    located
+                                                    in
+                                                    a vast area, in the backdrops of Western Ghats. The college started
+                                                    functioning as a junior college in 1967 and was upgraded in 1971
+                                                    with
+                                                    the
+                                                    introduction of degree courses and later the college was further
+                                                    upgraded as
+                                                    a Post Graduate college in 1978. Now the college is offering 20
+                                                    Under
+                                                    Graduate programmes, 9 Post Graduate programmes, 1 Integrated
+                                                    programme
+                                                    and
+                                                    4 Research Programmes.
+                                                    <br/>
+
+                                                    The College is equipped with good infrastructural and technological
+                                                    facilities to enhance the academic environment. All the classrooms
+                                                    are
+                                                    fully
+                                                    ICT enabled with either interactive panel or LCD projector. The
+                                                    laboratories
+                                                    are well equipped to support the academic activities. The college
+                                                    has an
+                                                    automated library which serves as a platform for knowledge enriching
+                                                    and
+                                                    sharing. It is equipped with sufficient number of books and
+                                                    journals.
+                                                    The
+                                                    research activities of the college are commendable. The faculty
+                                                    members
+                                                    and
+                                                    research scholars have publications in international peer reviewed
+                                                    journals.
+                                                    Along with the curricular and academic enrichment of the students,
+                                                    college
+                                                    focuses on the skill development of the students thereby mould them
+                                                    to
+                                                    achieve better career goals. College is offering foreign language
+                                                    training
+                                                    which helps the students in acquiring better opportunities in
+                                                    foreign
+                                                    countries. Vocational degree programmes like B.Voc Diary Science
+                                                    &amp;
+                                                    Technology, Data Science &amp; Analytics and Tourism &amp;
+                                                    Hospitality
+                                                    Management
+                                                    gave the students a platform to complete a degree programme along
+                                                    with
+                                                    enhancing skill in that specific area.
+                                                    <br/>
+                                                    The college has a keen interest in providing various services to the
+                                                    society
+                                                    along with the students’ wholistic development. College organizes
+                                                    outreach
+                                                    and extension programmes to cater its services to the community. The
+                                                    extension programmes mainly focus on the local community. Awareness
+                                                    programmes, training programmes, skill development programmes and
+                                                    cleaning
+                                                    activities are organized to the benefit of the society. The medical
+                                                    centre
+                                                    established as a social welfare project of our college and an
+                                                    affiliate
+                                                    and
+                                                    peripheral centre of MES Medical College intents to give medical
+                                                    care
+                                                    and
+                                                    assistance to the students and local community.
+                                                    <br/>
+                                                    College provides helping hand to the nearby tribal area, Attapadi. A
+                                                    health
+                                                    centre functioning in the Attappadi area provides proper medical
+                                                    assistance
+                                                    in the form of medical checkups, health awareness programmes etc.
+                                                    College
+                                                    promotes the talents of students in sports and arts by providing
+                                                    them
+                                                    with
+                                                    the facilities to enhance their abilities. The college has a playing
+                                                    ground
+                                                    with 400 mtr track and an indoor stadium to promote the sports and
+                                                    games
+                                                    related activities. Our students achieved many national and
+                                                    international
+                                                    medals in various sports activities such as Karate, Thaikonda,
+                                                    Wrestling,
+                                                    athletics, football, kick boxing, etc. The college has a legacy of
+                                                    great
+                                                    sports achievement in its history. Every year our students bring
+                                                    laurels
+                                                    to
+                                                    the college by achieving medals in sports. Our students mark their
+                                                    merit
+                                                    in
+                                                    arts by achieving prizes in University Festivals. MES Kalladi
+                                                    College
+                                                    has a
+                                                    long history of contributing to the educational and cultural
+                                                    upliftment
+                                                    of
+                                                    the community. It is continuously in pursuit of excellence by
+                                                    adapting
+                                                    with
+                                                    the new trends in higher education.
+
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/vision_mission" class="readmore" id="naac_link">Vision And
+                                                    Mission
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/vision_mission"
+                                                   class="readmore" id="naac_link" target="_blank">Core Values
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/brief_history" class="readmore" id="naac_link">Brief History
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/milestone" class="readmore" id="naac_link">Milestone
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/college_crest" class="readmore" id="naac_link">College Crest
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="about_mes_page" model="website.page">
+            <field name="url">/about_mes</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="about_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,133 @@
+<odoo>
+    <data>
+        <record id="principal" model="ir.ui.view">
+            <field name="name">Principal</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.principal</field>
+            <field name="arch" type="xml">
+                <t t-name="emea_college_theme.principal_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page pt32 pb32">
+                                <h2 class="page_head">PRINCIPAL’S MESSAGE</h2>
+                                <div class="align-center container pt32" style="max-width: 1320px;">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-3 ">
+                                            <div class="image-wrapper" id="prince_page">
+                                                <img src="/emea_college_theme/static/img/princi.jpg"
+                                                     id="prince_img"/>
+                                                <h2 class="notes_head" style="font-size: 18px;   padding-bottom: 0;">Dr.
+                                                    Abdul Muneer V
+                                                </h2>
+                                                <a href="#" class="readmore">VIEW PROFILE</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 align-left col-lg-9 padding-0">
+                                            <div class="card-wrapper prince_card">
+                                                <p class="notes">
+                                                    EMEA College of Arts and Science, Kondottti, was established as an
+                                                    embodiment of a long cherished dream of people of Ernad, a backward
+                                                    region in erstwhile Malabar District of British India. With the
+                                                    illustrious aim of bringing the educationally deprived youth of the
+                                                    region into the mainstream of education, the college came into
+                                                    existence
+                                                    in 1982 thanks to the efforts of visionary social leaders like
+                                                    Sayyid
+                                                    Mohammed Ali Shihab Thangal, Jb. P Seethi Haji Sahib, Jb. Avukader
+                                                    Kutty
+                                                    Naha Sahib, Jb. N.V Ibrahim Master, etc. The college is run by Ernad
+                                                    Muslim Education Association, a registered society formed by a group
+                                                    of
+                                                    social reformers for establishing educational institutions to uplift
+                                                    the
+                                                    socially and economically backward populace of the region.
+                                                    <br/>
+                                                    Started in 1982 as a humble institution offering pre-degree courses
+                                                    in
+                                                    commerce and humanities, the college is now a full-fledged centre of
+                                                    academic excellence providing five PG Programmes, eleven UG
+                                                    Programmes
+                                                    two BVoc Programmes and a PhD Programme in Economics. The college
+                                                    was
+                                                    accredited by NAAC with 'B++' grade in its first cycle of
+                                                    accreditation
+                                                    in 2005. Later in 2014, it was awarded with 'A' grade. And recently
+                                                    in
+                                                    2021, the college underwent the third cycle and got accredited with
+                                                    'A'
+                                                    grade (CGPA: 3.13)
+                                                    <br/>
+                                                    <br/>
+                                                    EMEA College is now renowned for its excellence in academic
+                                                    performance,
+                                                    well-qualified faculty, state-of-the-art facilities, and curricular
+                                                    and
+                                                    co-curricular activities. The beautiful campus sprawls over twenty
+                                                    acres
+                                                    of land. That the college has all facilities and provisions for
+                                                    enhancing the abilities of student community like SMST Memorial
+                                                    Central
+                                                    Library, science and computer science laboratories, Wi-Fi
+                                                    connectivity,
+                                                    research and publication facilities, audio visual theatre,
+                                                    auditorium,
+                                                    sports ground, gymnasium, hostels; NSS, SIP, NCC Units, Students
+                                                    Union,
+                                                    and the presence of other club activities make the college an ideal
+                                                    campus that every student dreams of.
+                                                    <br/>
+                                                    <br/>
+                                                    The support and guidance being extended by the philanthropic EMEA
+                                                    management to the college and students are distinctive. Old Students
+                                                    Association of EMEA (OSAEMEA), the alumni association is committed
+                                                    to
+                                                    the betterment of their alma mater and contributes immensely to its
+                                                    infrastructural and academic growth. The activities and
+                                                    contributions of
+                                                    the college PTA are unparalleled. The Shihab Thangal Memorial Merit
+                                                    Scholarship it instituted is the best example.
+                                                    <br/>
+                                                    The college has always promoted the sports and arts activities of
+                                                    the
+                                                    students. The Physical Education Department has won myriad of state
+                                                    and
+                                                    national level championships in football, weightlifting, Wushu, and
+                                                    volleyball.
+                                                    <br/>
+                                                    Being a temple of learning, the college is committed to provide
+                                                    quality
+                                                    education, and to help students chase and achieve their aspirations
+                                                    along with fostering good nature, discipline, respect and
+                                                    responsibility
+                                                    within them and thereby moulding them into useful individuals for
+                                                    their
+                                                    family and society.
+                                                    <br/>Let us do the best.<br/>Thank you.
+                                                    <br/>
+                                                    <br/>
+                                                    <span style="font-weight:bold;">Contact Info:</span>
+                                                    <br/>
+                                                    Email: principal@emeacollege.ac.in
+                                                    <br/>
+                                                    Phone : 0483 271 3530
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="principal_page" model="website.page">
+            <field name="url">/principal</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="principal"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

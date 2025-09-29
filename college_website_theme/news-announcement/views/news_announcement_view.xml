@@ -1,0 +1,51 @@
+<odoo>
+    <!-- Form View for Image Gallery -->
+    <record id="view_news_announcement_config_form" model="ir.ui.view">
+        <field name="name">news.announcement.config.form</field>
+        <field name="model">news.announcement</field>
+        <field name="arch" type="xml">
+            <form string="News Announcement">
+                <sheet>
+                    <group>
+                        <field name="title" string="Title"/>
+                        <field name="url" string="URL" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Image Gallery -->
+    <record id="view_news_announcement_config_tree" model="ir.ui.view">
+        <field name="name">news.announcement.config.tree</field>
+        <field name="model">news.announcement</field>
+        <field name="arch" type="xml">
+            <tree string="News Announcement">
+                <field name="title" string="Title"/>
+                <field name="url" string="URL" />
+                <!-- Updated to use date instead of sequence -->
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Image Gallery -->
+    <record id="action_news_announcement" model="ir.actions.act_window">
+        <field name="name">Announcement</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">news.announcement</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_news_announcement_config_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Data Found
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Items for Image Gallery -->
+    <menuitem id="menu_news_announcement_root" name=" Announcement"
+              parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_news_announcement" name="Manage Announcement" parent="menu_news_announcement_root"
+              action="action_news_announcement" sequence="20" groups="news-announcement.group_news_announcement_admin"/>
+</odoo>

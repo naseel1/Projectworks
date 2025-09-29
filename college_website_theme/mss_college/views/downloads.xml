@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <record id="downloads" model="ir.ui.view">
+            <field name="name">Downloads</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.downloads</field>
+            <field name="arch" type="xml">
+                <t name="Downloads" t-name="mss_college.downloads_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section style="display: flex;justify-content: center;">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Download</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Name">Program</td>
+                                            <td data-label="Download" style="display:flex;justify-content:center;">
+                                                <a href="/contact_me" role="button" class="admission">Click</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_downloads_page" model="website.page">
+            <field name="url">/downloads</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="downloads"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

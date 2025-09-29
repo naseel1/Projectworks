@@ -1,0 +1,11 @@
+<odoo>
+    <template id="news_paper_gallery_template" name="Image Gallery Page">
+        <t t-call="website.layout">
+            <div class="container pt48">
+                <h1 class="page-head pb16">Gallery</h1>
+                <div class="row s_image_gallery" style="row-gap: 2rem;">
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,211 @@
+<odoo>
+    <data>
+        <record id="anti_ragging_cell" model="ir.ui.view">
+            <field name="name">Anti Ragging Cell</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.anti_ragging_cell</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.anti_ragging_cell_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <section class="s_tabs pb o_colored_level tabs_back tabs_back" data-vcss="001"
+                                         data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " id="tab_rows">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+                                            <div class="clubs">Statutory Cells
+                                            </div>
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/anti_ragging_cell"
+                                                           data-original-title="" title="" class="nav-link active">
+                                                            Anti Ragging Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/anti_sexual_harassment_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Anti Sexual Harassment Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/students_grievance_redressal_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Students Grievance and Redressal Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/sc_st_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            SC/ST Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/minority_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Minority Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/obc_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            OBC Cell
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                <section id="departments_page">
+                                                    <h2 class="page_head" id="department_subhead"
+                                                        style="padding-left:0;">
+                                                        Anti Ragging Cell
+                                                    </h2>
+                                                    <div class="content_text" style="text-align:justify;padding: 0;">
+                                                        Our College maintains a healthy and congenial academic
+                                                        environment
+                                                        for the student. The institution offers protection to the new
+                                                        entrants from the menace of ragging. In this regard this
+                                                        institution
+                                                        has constituted an Anti- ragging cell. Also an anti ragging
+                                                        Squad
+                                                        has been deputed from all department to monitor students
+                                                        discipline
+                                                        both inside and outside the campus. The college level punishment
+                                                        in
+                                                        cases of ragging as per UGC directives includes one or more of
+                                                        the
+                                                        following:
+                                                        <br/>
+                                                        <br/>
+                                                        <ol>
+                                                            <li>
+                                                                Suspensions from attending classes and academic
+                                                                privileges.
+                                                            </li>
+                                                            <li>
+                                                                Withholding / withdrawing scholarship / fellowship
+                                                                and
+                                                                other benefits.
+                                                            </li>
+                                                            <li>
+                                                                Debarring from appearing any test/ examination or
+                                                                other
+                                                                evaluation process. Withholding of results.
+                                                            </li>
+                                                            <li>Debarring from representing the institution in any
+                                                                regional, national or international meet, tournament,
+                                                                youth
+                                                                festival, etc.
+                                                            </li>
+                                                            <li>Expulsion from the institution and consequent
+                                                                debarring
+                                                                from admission to any other institution for specific
+                                                                periods. The UGC has issued very strong and detailed
+                                                                regulations for curbing the menace of ragging in Higher
+                                                                Educational Institutions. As per regulations any of the
+                                                                following acts come under the purview of ragging.
+                                                            </li>
+                                                        </ol>
+                                                        <ol style="list-style-type:lower-alpha;">
+                                                            <li>
+                                                                Any conduct by any student or student whether by words
+                                                                (spoken or written) or by an act which has the effect of
+                                                                teasing, treating or handling with rudeness a fresher or
+                                                                any
+                                                                other student
+                                                            </li>
+                                                            <li>Indulging in rowdy or in disciplined activities by any
+                                                                student or students which cause or is likely to cause
+                                                                annoyance, hardship physical or psychological harm or to
+                                                                raise fear or apprehension there of in any fresher or
+                                                                any
+                                                                other student
+                                                            </li>
+                                                            <li>Asking any student to do any act which such student will
+                                                                not in the ordinary course do and which has the effect
+                                                                of
+                                                                causing or generating a sense of shame, or torment or
+                                                                embarrassment so as to adversely affect the psyche of
+                                                                such
+                                                                fresher or any other student
+                                                            </li>
+                                                            <li>Any act by a senior student that prevents, disturb the
+                                                                regular academic activity of any other student or a
+                                                                fresher;
+                                                            </li>
+                                                            <li>Exploiting the services of a fresher or any other
+                                                                student
+                                                                for completing the academic task assigned to an
+                                                                individual
+                                                                or a group of students.
+                                                            </li>
+                                                            <li>Any act of physical abuse including all variants of it;
+                                                                sexual abuse, homosexual assaults, stripping, forcing
+                                                                for
+                                                                obscene and lewd acts, gestures, causing boily harm or
+                                                                any
+                                                                other danger to health or person
+                                                            </li>
+                                                            <li>Any act or abusive spoken words, e-mails, public insults
+                                                                which would also include deriving perverted pleasure,
+                                                                vicarious or sadistic thrill from actively or passively
+                                                                participating in the discomfiture to fresher or any
+                                                                other
+                                                                student
+                                                            </li>
+                                                            <li>Any act that affects the mental health and
+                                                                self-confidance of a fresher or any other student
+                                                            </li>
+                                                            <li>Feel free to contact to register your complaints :
+                                                                Principal, Dr.C.Rajesh (8078462377,
+                                                                princial@meskc.ac.in),
+                                                                Mr. Sirajudheen P , Nodal Officer, Anti ragging cell
+                                                                (8943868551 , sirajudheen@meskc.ac.in) Toll free No. :
+                                                                1800
+                                                                180 5522, www.antiragging.in,
+                                                                <br/>
+                                                                <br/>e-mail:
+                                                                <a href="mailto:helpline@antiragging.in">
+                                                                    helpline@antiragging.in
+                                                                </a>
+                                                            </li>
+                                                        </ol>
+                                                        <section class="naac_link aqar" style="width: fit-content;">
+                                                            <a href="#"
+                                                               class="readmore" target="_blank" id="naac_link">Register
+                                                                a
+                                                                complaint
+                                                                <span class="fa fa-long-arrow-right text-o-color-3"
+                                                                      data-bs-original-title=""
+                                                                      title="" aria-describedby="tooltip544395"></span>
+                                                            </a>
+                                                        </section>
+
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="anti_ragging_cell_page" model="website.page">
+            <field name="url">/anti_ragging_cell</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="anti_ragging_cell"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

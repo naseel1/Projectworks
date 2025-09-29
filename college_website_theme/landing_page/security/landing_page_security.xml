@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_landing_page_admin" model="res.groups">
+        <field name="name">Landing Page Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_allowed_department_user" model="res.groups">
+        <field name="name">Own Department</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_allowed_department_admin" model="res.groups">
+        <field name="name">Department Full Access</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+        <field name="users" eval="[(4, 1)]"/>
+    </record>
+    <record id="group_notes_pages_admin" model="res.groups">
+        <field name="name">Notes Pages Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_academic_calendar_admin" model="res.groups">
+        <field name="name">Academic Calendar Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_clubs_manage_admin" model="res.groups">
+        <field name="name">Clubs Manage Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_cells_manage_admin" model="res.groups">
+        <field name="name">Cells Manage Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_associations_manage_admin" model="res.groups">
+        <field name="name">Associations Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_pta_manage_admin" model="res.groups">
+        <field name="name">Pta Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_facilities_manage_admin" model="res.groups">
+        <field name="name">Facilities Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>

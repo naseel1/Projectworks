@@ -1,0 +1,5 @@
+<odoo>
+    <record id="nss_single_record" model="nss.manage">
+        <field name="incharge_name">Nss Incharge</field>
+    </record>
+</odoo>

@@ -1,0 +1,42 @@
+<odoo>
+    <record id="view_exam_results_form" model="ir.ui.view">
+        <field name="name">exam.results.form</field>
+        <field name="model">exam.results</field>
+        <field name="arch" type="xml">
+            <form string="Results">
+                <sheet>
+                    <group>
+                        <field name="title"/>
+                        <field name="date"/>
+                        <field name="pdf_file" filename="file_name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_exam_results_tree" model="ir.ui.view">
+        <field name="name">exam.results.tree</field>
+        <field name="model">exam.results</field>
+        <field name="arch" type="xml">
+            <tree string="Results">
+                <field name="title"/>
+                <field name="file_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_exam_results" model="ir.actions.act_window">
+        <field name="name">Results</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">exam.results</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_exam_results_tree"/>
+    </record>
+    <menuitem id="menu_exam_results"
+              name="Results"
+              parent="menu_examinations_root"
+              action="action_exam_results"
+              sequence="12"
+              groups="examinations.group_examinations_manage_admin"/>
+
+</odoo>

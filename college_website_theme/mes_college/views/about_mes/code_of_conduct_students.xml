@@ -1,0 +1,183 @@
+<odoo>
+    <data>
+        <record id="code_of_conduct_students" model="ir.ui.view">
+            <field name="name">Code Of Conduct Students</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.code_of_conduct_students</field>
+            <field name="arch" type="xml">
+                <t name="graduate-attribute" t-name="mes_college.code_of_conduct_students_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" style="max-width: 95%;">
+                                    <h2 class="main-head" id="title">Code Of Conduct Students</h2>
+                                    <div class=" pt32 pb32" style="padding:15px;">
+                                        <section class="col-md-12" style="margin:auto;">
+                                            <div>
+                                                <div class="content_text">
+                                                    The Code of conduct of the college are formed by the management and
+                                                    the Principal accordance with Government and University rules to
+                                                    ensure a peaceful campus atmosphere.
+                                                    <ul>
+                                                        <li>
+                                                            In the light of the judgments of the Honorable High Court of
+                                                            Kerala [2003(2) KLT 582, WP(C) No. 986/2018/(W)], the
+                                                            college has prohibited all political activism within the
+                                                            college campus. Activities such as Demonstration, Campaign,
+                                                            Vandalism, Display of Poster, Banners, Flag, Strike, Gherao,
+                                                            Dharna, Hartal are prohibited.
+                                                        </li>
+                                                        <li>
+                                                            As per the judgment in RP 435/03 by the Honorable High Court
+                                                            of Kerala and the directives of the Registrar of University
+                                                            of Calicut No. L.C. SW (2) College Union Election /OP/04
+                                                            dated 02-03-05 to this effect, the Management of the College
+                                                            has the right to hold the union election in the
+                                                            Parliamentary form or any other manner it deems right for
+                                                            the maintenance of discipline in the campus.
+                                                        </li>
+                                                        <li>
+                                                            Students of M.E.S. Kalladi college, Mannarkkad shall try
+                                                            their best to uphold the honor and prestige of the
+                                                            institution by humanity, fellow feeling, and hard work. They
+                                                            should endeavor to create an atmosphere conducive to
+                                                            academic, cultural, and social progress.
+                                                        </li>
+                                                        <li>
+                                                            Students must observe strict discipline in the campus,
+                                                            behave with dignity and courtesy to the principal, faculty
+                                                            members, administrative staff, visitors, and fellow
+                                                            students.
+                                                        </li>
+                                                        <li>
+                                                            Class hours are from 9:30 am to 3:15 pm. Be in time for
+                                                            classes. Day scholars are not expected to be present on the
+                                                            campus after 4:00 pm.
+                                                        </li>
+                                                        <li>
+                                                            Once students are admitted to the college, they are bound by
+                                                            the code of conduct laid down by the college through the
+                                                            college calendar.
+                                                        </li>
+                                                        <li>
+                                                            Students should come to the campus wearing the stipulated
+                                                            uniform only. On special occasions, students are exempted
+                                                            from uniform only with the permission of the principal. But
+                                                            only formal dressing will be allowed on the campus. Casual
+                                                            dressing / specially designed / gang dress / extra color /
+                                                            special dressing will not be permitted.
+                                                        </li>
+                                                        <li>
+                                                            Staff members/Discipline Committee shall have the powers to
+                                                            deny admission to students to
+                                                            classes/office/labs/library/meetings/cultural programs in
+                                                            the case of violation of the dress code of the college.
+                                                        </li>
+                                                        <li>
+                                                            No students shall always wear identity cards issued by the
+                                                            college with a tag and show them as and when demanded by the
+                                                            Principal, teachers, and office staff/security staff.
+                                                        </li>
+                                                        <li>
+                                                            Political activism is strictly banned in the campus.
+                                                            Students are forbidden to organize or attend meetings other
+                                                            than the official ones. Students resorting to strikes are
+                                                            prohibited from entering the verandah of the building or the
+                                                            classroom.
+                                                        </li>
+                                                        <li>
+                                                            No students shall use or keep in possession alcoholic drinks
+                                                            or drugs. Using/keeping of these items will lead to
+                                                            immediate expulsion of the students from the college and
+                                                            hostels.
+                                                        </li>
+                                                        <li>
+                                                            Students are not allowed to organize or attend any meeting
+                                                            in the college or collect money for any purpose without the
+                                                            written permission of the Principal. Outsiders are not
+                                                            allowed to attend or organize any program inside the campus.
+                                                        </li>
+                                                        <li>
+                                                            The principal shall have the power to inflict the following
+                                                            punishments; fine, cancellation of attendance, withholding
+                                                            of term certificate, forfeiture of educational concession
+                                                            and scholarships, suspension, rustication from one or more
+                                                            semesters, expulsion, compulsory issue of TC etc.
+                                                        </li>
+                                                        <li>
+                                                            Irregular attendance, insubordination to teachers, habitual
+                                                            inattention to class work, obscenity in word or act are
+                                                            sufficient reasons for the permanent or temporary dismissal
+                                                            of a student.
+                                                        </li>
+                                                        <li>
+                                                            Students should keep vigilance on timely notifications and
+                                                            announcements. Failure / ignorance will not be an excuse.
+                                                        </li>
+                                                        <li>
+                                                            Banners, flags, Poster, etc. shall not allowed inside the
+                                                            campus or at the gates or compound walls without the
+                                                            permission of the Principal.
+                                                        </li>
+                                                        <li>
+                                                            Students who are charged with a criminal offense and are
+                                                            under suspension shall not be allowed to enter the campus
+                                                            without permission.
+                                                        </li>
+                                                        <li>
+                                                            Students are allowed to bring vehicles into the campus with
+                                                            the prior permission. They have to park their vehicle at the
+                                                            allotted place at their own risk. Stunting and racing of
+                                                            vehicles within and in a radius of 200 meters outside the
+                                                            campus are strictly banned. Students and staff have to
+                                                            register their vehicle number and license number with the
+                                                            security.
+                                                        </li>
+                                                        <li>
+                                                            Disfiguring of walls, damaging of fittings and fixtures,
+                                                            attracts fine or disciplinary actions. Collective fines will
+                                                            be imposed for any damage if the cause cannot be traced to
+                                                            any individual.
+                                                        </li>
+                                                        <li>
+                                                            Students are strictly prohibited from using mobile phones in
+                                                            the College Campus. If students are found using mobile
+                                                            phones on the campus, their phones would be confiscated and
+                                                            serious action taken against them.
+                                                        </li>
+                                                        <li>
+                                                            Daily absentee reports, and other important messages are
+                                                            sent as SMS alerts to the parent's mobile number.
+                                                        </li>
+                                                        <li>
+                                                            Cinematic dance, DJ, Fashion show, and birthday parties
+                                                            shall not be allowed inside the college campus.
+                                                        </li>
+                                                        <li>
+                                                            Ragging is a criminal offense and its any form should be
+                                                            seriously dealt. To register the complaint regarding the
+                                                            ragging by students should be within 24 hours and, the
+                                                            action will be taken within the next 24 hours. Help line:
+                                                            1800-180-5522. Website: helpsite@antiragging.net
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="code_of_conduct_students_page" model="website.page">
+            <field name="url">/code_of_conduct_students</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="code_of_conduct_students"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

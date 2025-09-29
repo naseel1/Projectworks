@@ -1,0 +1,84 @@
+<odoo>
+    <template id="template_programme_detail" name="Programme Detail Page">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section style="background-image: none;" class="dep-banner o_colored_level">
+                    <div class="department_block"/>
+                    <div class="department_block1"/>
+                    <div class="dep_bk"/>
+                    <img src="/cpa/static/img/vector7.svg" class="vector7" loading="lazy" style="z-index:3;"/>
+                    <img t-if="programme.department_id.image_ids"
+                         t-att-src="'/web/image?model=website.department.image&amp;id=%s&amp;field=image' % programme.department_id.image_ids[0].id"
+                         alt="Department Image"
+                         class="img img-fluid department_img"/>
+                    <div id="department-section">
+                        <div class="container-div">
+                            <div class="">
+                                <div class="dep">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4"
+                                         fill="none">
+                                        <path d="M2 2H30" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                    <div style="color: #FFF; font-family: 'Plus Jakarta Sans'; font-size: 18px; font-style: normal; font-weight: 600; line-height: normal;">
+                                        Department of
+                                    </div>
+                                </div>
+                                <t t-if="programme.department_id">
+                                    <h2 class="department_title">
+                                        <t t-esc="programme.department_id.dep_name"/>
+                                    </h2>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt60 pb100">
+                    <div class="container-div ">
+                        <t t-if="programme.programme_name">
+                            <div class="dep_head">
+                                <div class="award-remark-moment">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="49" viewBox="0 0 39 49"
+                                         fill="none">
+                                        <path d="M19.4757 1.02316L2.63015 2.92333C1.70171 3.02806 1 3.81337 1 4.7477V31.3892C1 31.6492 1.05339 31.9059 1.16592 32.1402C4.6513 39.3985 14.0732 45.3048 19.007 47.684C19.4394 47.8925 19.9369 47.9094 20.3849 47.7368C31.1157 43.603 36.6964 35.8398 38.3184 32.1071C38.411 31.8939 38.4531 31.6642 38.4531 31.4318V4.74859C38.4531 3.81388 37.7509 3.02838 36.822 2.92411L19.8863 1.02305C19.7499 1.00773 19.6121 1.00777 19.4757 1.02316Z"
+                                              fill="#CBF0FF" stroke="#5CD1FF" stroke-opacity="0.28"
+                                              stroke-width="0.924769"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M14.502 15H21.63C22.5242 15.0013 23.3814 15.3575 24.0132 15.9903C24.6451 16.6231 25 17.4808 25 18.375V27.75C25.7956 27.75 26.5587 27.4339 27.1213 26.8713C27.6839 26.3087 28 25.5456 28 24.75V15.108C28 13.603 26.875 12.297 25.336 12.168C25.1117 12.1498 24.8874 12.1331 24.663 12.118C24.4098 11.6303 24.0276 11.2215 23.558 10.9361C23.0884 10.6508 22.5494 10.4999 22 10.5H20.5C19.9505 10.4999 19.4115 10.6508 18.9419 10.9361C18.4723 11.2215 18.0901 11.6303 17.837 12.118C17.612 12.133 17.387 12.15 17.164 12.168C15.662 12.295 14.554 13.542 14.502 15ZM20.5 12C20.1021 12 19.7206 12.158 19.4393 12.4393C19.158 12.7206 19 13.1022 19 13.5H23.5C23.5 13.1022 23.3419 12.7206 23.0606 12.4393C22.7793 12.158 22.3978 12 22 12H20.5Z"
+                                              fill="#5CD1FF"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M10 18.375C10 17.339 10.84 16.5 11.875 16.5H21.625C22.661 16.5 23.5 17.34 23.5 18.375V29.625C23.5 30.66 22.66 31.5 21.625 31.5H11.875C11.3777 31.5 10.9008 31.3025 10.5492 30.9508C10.1975 30.5992 10 30.1223 10 29.625V18.375ZM13 21C13 20.8011 13.079 20.6103 13.2197 20.4697C13.3603 20.329 13.5511 20.25 13.75 20.25H13.758C13.9569 20.25 14.1477 20.329 14.2883 20.4697C14.429 20.6103 14.508 20.8011 14.508 21V21.008C14.508 21.2069 14.429 21.3977 14.2883 21.5383C14.1477 21.679 13.9569 21.758 13.758 21.758H13.75C13.5511 21.758 13.3603 21.679 13.2197 21.5383C13.079 21.3977 13 21.2069 13 21.008V21ZM15.25 21C15.25 20.8011 15.329 20.6103 15.4697 20.4697C15.6103 20.329 15.8011 20.25 16 20.25H19.75C19.9489 20.25 20.1397 20.329 20.2803 20.4697C20.421 20.6103 20.5 20.8011 20.5 21C20.5 21.1989 20.421 21.3897 20.2803 21.5303C20.1397 21.671 19.9489 21.75 19.75 21.75H16C15.8011 21.75 15.6103 21.671 15.4697 21.5303C15.329 21.3897 15.25 21.1989 15.25 21ZM13 24C13 23.8011 13.079 23.6103 13.2197 23.4697C13.3603 23.329 13.5511 23.25 13.75 23.25H13.758C13.9569 23.25 14.1477 23.329 14.2883 23.4697C14.429 23.6103 14.508 23.8011 14.508 24V24.008C14.508 24.2069 14.429 24.3977 14.2883 24.5383C14.1477 24.679 13.9569 24.758 13.758 24.758H13.75C13.5511 24.758 13.3603 24.679 13.2197 24.5383C13.079 24.3977 13 24.2069 13 24.008V24ZM15.25 24C15.25 23.8011 15.329 23.6103 15.4697 23.4697C15.6103 23.329 15.8011 23.25 16 23.25H19.75C19.9489 23.25 20.1397 23.329 20.2803 23.4697C20.421 23.6103 20.5 23.8011 20.5 24C20.5 24.1989 20.421 24.3897 20.2803 24.5303C20.1397 24.671 19.9489 24.75 19.75 24.75H16C15.8011 24.75 15.6103 24.671 15.4697 24.5303C15.329 24.3897 15.25 24.1989 15.25 24ZM13 27C13 26.8011 13.079 26.6103 13.2197 26.4697C13.3603 26.329 13.5511 26.25 13.75 26.25H13.758C13.9569 26.25 14.1477 26.329 14.2883 26.4697C14.429 26.6103 14.508 26.8011 14.508 27V27.008C14.508 27.2069 14.429 27.3977 14.2883 27.5383C14.1477 27.679 13.9569 27.758 13.758 27.758H13.75C13.5511 27.758 13.3603 27.679 13.2197 27.5383C13.079 27.3977 13 27.2069 13 27.008V27ZM15.25 27C15.25 26.8011 15.329 26.6103 15.4697 26.4697C15.6103 26.329 15.8011 26.25 16 26.25H19.75C19.9489 26.25 20.1397 26.329 20.2803 26.4697C20.421 26.6103 20.5 26.8011 20.5 27C20.5 27.1989 20.421 27.3897 20.2803 27.5303C20.1397 27.671 19.9489 27.75 19.75 27.75H16C15.8011 27.75 15.6103 27.671 15.4697 27.5303C15.329 27.3897 15.25 27.1989 15.25 27Z"
+                                              fill="#5CD1FF"/>
+                                    </svg>
+                                    <div class="remark-moment">Explore our programmes</div>
+                                </div>
+                                <div class="programme_head pt12">
+                                    <div class="award-head" style="width:auto">
+
+
+                                        <t t-esc="programme.programme_name"/>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+
+                        <div t-field="programme.programme_points" class="pt40"/>
+                        <div t-field="programme.programme_description" class="pt24"/>
+                        <t t-if="programme.syllabus_ids">
+                            <div class="row-sec">
+                                <t t-foreach="programme.syllabus_ids" t-as="syllabus">
+                                    <a t-att-href="'/web/content?model=website.department.programme.syllabus&amp;id=%s&amp;field=syllabus_pdf&amp;filename_field=syllabus_filename' % syllabus.id"
+                                       class="home-btn view-all"
+                                       target="_blank">
+                                        View Syllabus
+                                    </a>
+                                </t>
+                            </div>
+                        </t>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,244 @@
+<odoo>
+    <data>
+        <record id="evaluation_policy" model="ir.ui.view">
+            <field name="name">Evaluation Policy</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.evaluation_policy</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.evaluation_policy_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class=" pt32 pb32 col-md-9">
+                                            <div>
+                                                <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                    Evaluation Policy
+                                                </h2>
+                                                <div class="content_text" style="text-align:left;padding: 0;">
+                                                    The formative evaluation of the students is done as per University
+                                                    rules. The evaluation process is transparent and robust. There is a
+                                                    two-tier system of evaluation. External evaluation is conducted by
+                                                    the
+                                                    University at the end of each semester.
+                                                    <br/>
+                                                    <br/>
+                                                    The dates of external evaluation
+                                                    are announced very early through the university website and other
+                                                    media.
+                                                    The internal examinations are conducted as part of internal
+                                                    evaluation.
+                                                    Attendance, Performance in assignments and seminars also taken into
+                                                    account in awarding internal marks. Academic Monitoring Cell control
+                                                    the
+                                                    internal evaluation process. Grievance redressal mechanism operates
+                                                    both
+                                                    at the department and institutional level
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <section class="naac_link">
+                                                <a href="/programmes" class="readmore" id="naac_link">Programmes
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="/vision_mission"
+                                                   class="readmore" id="naac_link" target="_blank">Academic Calander
+
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="#" class="readmore" id="naac_link">Evaluation Policy
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                            </section>
+
+                                        </div>
+
+                                    </div>
+                                    <section class="pt32">
+                                        <h2 class="main-head" style="text-align:left;padding-top:20px;">Internal
+                                            Examinations
+                                        </h2>
+                                        <div class="content_text col-md-6 pb32" id="internal_examination"
+                                             style="text-align:left;padding: 0;">
+                                            The internal examinations are conducted twice for PG and once for UG in
+                                            each semester as part of internal evaluation. There is an internal
+                                            examination cell which controls the conduct of internal examinations
+                                        </div>
+                                        <div class="row pb32" style="row-gap:2rem;justify-content:center;">
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Muhsina K
+                                                    </div>
+                                                    <div class="designation">
+                                                        Coordinator
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Preethamol
+                                                    </div>
+                                                    <div class="designation">
+                                                        Joint Coordinator
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Dr. Juliya AP
+                                                    </div>
+                                                    <div class="designation">
+                                                        Joint Coordinator
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Laila Abdulla
+                                                    </div>
+                                                    <div class="designation">
+                                                        Member
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Latha M
+                                                    </div>
+                                                    <div class="designation">
+                                                        Member
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Muhammed Musthak
+                                                    </div>
+                                                    <div class="designation">
+                                                        Member
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Dr. Sanjeev
+                                                    </div>
+                                                    <div class="designation">
+                                                        Member
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="pt32">
+                                        <h2 class="main-head" style="text-align:left;padding-top:20px;">External
+                                            Examinations
+                                        </h2>
+                                        <div class="content_text col-md-6 pb32" id="external_examination"
+                                             style="text-align:left;padding: 0;">
+                                            External evaluation is conducted by the University at the end of each
+                                            semester. The dates of external evaluation are announced very early through
+                                            the university website and other media. There is an examination cell which
+                                            controls the conduct of university examinations
+                                        </div>
+                                        <div class="row pb32" style="row-gap:2rem;justify-content:center;">
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             class="w-100 h-100" style="object-position:contain;"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Ramdas M
+                                                    </div>
+                                                    <div class="designation">
+                                                        Chief Superintendent of University Examinations
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-md-2 management">
+                                                <div class="faculties">
+                                                    <div class="faculty_img">
+                                                        <img src="/mes_college/static/img/faculty.jpg"
+                                                             style="object-position:contain;"
+                                                             class="w-100 h-100"/>
+                                                    </div>
+                                                    <div class="faculty_name">
+                                                        Dr. Anu Joseph
+                                                    </div>
+                                                    <div class="designation">
+                                                        Senior Assistant Superintendent
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="evaluation_policy_page" model="website.page">
+            <field name="url">/evaluation_policy</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="evaluation_policy"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

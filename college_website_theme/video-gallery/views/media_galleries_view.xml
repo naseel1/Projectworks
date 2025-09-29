@@ -1,0 +1,58 @@
+<odoo>
+    <!-- Form View for Image Gallery -->
+    <record id="view_media_gallery_config_form" model="ir.ui.view">
+        <field name="name">media.gallery.config.form</field>
+        <field name="model">media.galleries</field>
+        <field name="arch" type="xml">
+            <form string="Video Gallery">
+                <sheet>
+                    <group>
+                        <field name="name" string="Name"/>
+                        <field name="media_type" string="Media Type"/>
+                        <field name="video" widget="video" class="oe_video"
+                               attrs="{'invisible': [('media_type', '!=', 'video')]}"/>
+                        <field name="url" string="File URL" readonly="1"/>
+                        <field name="youtube_url" string="YouTube URL"
+                               attrs="{'invisible': [('media_type', '!=', 'youtube')]}"/>
+
+                        <field name="date" required="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View for Image Gallery -->
+    <record id="view_media_gallery_config_tree" model="ir.ui.view">
+        <field name="name">media.gallery.config.tree</field>
+        <field name="model">media.galleries</field>
+        <field name="arch" type="xml">
+            <tree string="Media Gallery">
+                <field name="name" required="1" string="Media Name"/>
+                <field name="url" string="File URL" readonly="1"/>
+                <field name="date" required="1"/>
+                <!-- Updated to use date instead of sequence -->
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Image Gallery -->
+    <record id="action_media_gallery" model="ir.actions.act_window">
+        <field name="name">Video Gallery</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">media.galleries</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_media_gallery_config_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Images Found
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Items for Image Gallery -->
+    <menuitem id="menu_media_gallery_root" name="Video Gallery" parent="website.menu_website_configuration"
+              sequence="20"/>
+    <menuitem id="menu_media_galleries" name="Manage Video" parent="menu_media_gallery_root"
+              action="action_media_gallery" sequence="20" groups="video-gallery.group_media_gallery_admin"/>
+</odoo>

@@ -1,0 +1,81 @@
+<odoo>
+    <data>
+        <record id="seminars" model="ir.ui.view">
+            <field name="name">Seminars</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.seminars</field>
+            <field name="arch" type="xml">
+                <t name="job-1" t-name="emea_college_theme.seminars_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page">
+                                <h2 class="page_head">Seminars/Workshops</h2>
+                                <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                                    <div class="col-md-4 seminar_link">Webinar on “STAGES OF DOING RESEARCH” 5/11/2022
+                                    </div>
+                                    <span class="readmore" id="view">View
+                                        <a href="/web/content/415?unique=52d134ba738eb9b122e4ef70dea9f32bce738c72"
+                                           title="Stages of Doing Research -webinar report 2021-22.pdf"
+                                           data-mimetype="application/pdf"
+                                           class="o_image seminar" scontenteditable="false"/>
+                                    </span>
+                                </section>
+                                <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                                    <div class="col-md-4 seminar_link">Webinar on “Economic Impacts and Challenges of
+                                        Pandemics on India Vis-a-vis Kerala” 5/4/2022
+                                    </div>
+                                    <span class="readmore" id="view">View
+                                        <a href="/web/content/418?unique=2151348f037a46766726f9adb33efd00bc5e1600"
+                                           title="Webinar on Economic Impact - Report.pdf"
+                                           data-mimetype="application/pdf"
+                                           class="o_image seminar" scontenteditable="false"/>
+                                    </span>
+                                </section>
+                                <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                                    <div class="col-md-4 seminar_link">Seminar on Historical Research methedology
+                                        1/20/2021
+                                    </div>
+                                    <span class="readmore" id="view">View
+                                        <a href="/web/content/418?unique=2151348f037a46766726f9adb33efd00bc5e1600"
+                                           title="Seminar on Historical Research methedology"
+                                           data-mimetype="application/pdf"
+                                           class="o_image seminar" scontenteditable="false"/>
+                                    </span>
+                                </section>
+                                <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                                    <div class="col-md-4 seminar_link">One Day webinar on ‘Research Proposal writing’
+                                        4/12/2021
+                                    </div>
+                                    <span class="readmore" id="view">View
+                                        <a href="/web/content/418?unique=2151348f037a46766726f9adb33efd00bc5e1600"
+                                           title="Seminar on Historical Research methedology"
+                                           data-mimetype="application/pdf"
+                                           class="o_image seminar" scontenteditable="false"/>
+                                    </span>
+                                </section>
+                                <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                                    <div class="col-md-4 seminar_link">Webinar on Methodological Issues
+                                        8/25/2020
+                                    </div>
+                                    <span class="readmore" id="view">View
+                                        <a href="/web/content/418?unique=2151348f037a46766726f9adb33efd00bc5e1600"
+                                           title="Seminar on Historical Research methedology"
+                                           data-mimetype="application/pdf"
+                                           class="o_image seminar" scontenteditable="false"/>
+                                    </span>
+                                </section>
+
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="seminars_page" model="website.page">
+            <field name="url">/seminars</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="seminars"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

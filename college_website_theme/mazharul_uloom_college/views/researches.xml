@@ -1,0 +1,246 @@
+<odoo>
+    <data>
+        <record id="projects_mu" model="ir.ui.view">
+            <field name="name">projects </field>
+            <field name="type">qweb</field>
+            <field name="key">mazharul_uloom_college.projects_mu</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="mazharul_uloom_college.projects_mu_menu">
+                    <t t-call="website.layout">
+                       <div id="wrap" class="oe_structure oe_empty">
+            <section class="pt48 pb48 programmes o_colored_level" style="background-image: none;">
+                <div class="container">
+            <div class="title_deprtment">
+                    <h2 class="dep_title" style="width:100px;">
+                        Projects </h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1071" class="depsvg" height="2" viewBox="0 0 1071 2" fill="none" style="     width: auto; ">
+  <path d="M1 1L1070 1.00009" stroke="#3E7B4A" stroke-linecap="round"/>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+  <circle cx="6.32715" cy="6.00684" r="6.00684" fill="#FFC82C"/>
+</svg></div>
+<div id="myCollapse1700712777280" class="accordion pt48" role="tablist">
+                                        <t t-foreach="data" t-as="research_projects">
+                                            <div class="card mb24 " id="project_card" data-name="Item">
+ <style>
+     #child-li.collapsed:before,.card-header.collapsed:before {
+    content: "\f107";
+}
+
+    #child-li.collapsed:before,#child-li:before,#project_title.collapsed:before,#project_title:before {
+    position: absolute;
+    font-family: FontAwesome;
+    line-height: .8;
+    transition: .5s;
+    opacity: 1;
+    font-size: 35px;
+    right: 10px;
+    top: 22px;
+    transform: rotate(0deg);
+    color: #141f7e;
+}
+#child-li:before, #child-li:before, #project_title:before, #project_title:before {
+    position: absolute;
+    font-family: FontAwesome;
+    line-height: .8;
+    transition: .5s;
+    opacity: 1;
+    font-size: 35px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "\f107";
+    top: 22px;
+    transform: rotate(180deg);
+}
+    #project_card {   border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: rgb(0 0 0 / 3%) 0px 1px 29px 0px; !important}
+    #project_title {
+    background: white !important;
+        color: #000000;
+    border: 2px solid #141f7e !important;
+    text-align: left;
+    min-height: 70px;
+    padding-right: 50px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration:none !important;
+}
+thead, tbody, tfoot, tr, td, th {
+    border-color: #141f7e;
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px;
+}
+.section {
+    padding: 0;
+}
+.card{
+border:none;
+}
+ @media(max-width:600px){
+                            #project_card {
+    margin: 10px;}
+                            }
+</style>
+                                                <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="true" class="card-header s_faq_collapse_right_icon collapsed" id="project_title" t-att-data-bs-target="'#card' + str(research_projects['id'])">
+                                                    <t t-if="research_projects['research_title']">
+                                                        <t t-esc="research_projects['research_title']"/>
+                                                    </t>
+                                                </a>
+                                                <div class="collapse " data-parent="#myCollapse1700712777280" role="tabpanel" t-att-id="'card' + str(research_projects['id'])">
+                                                    <div class="card-body ">
+                                                        <section class="section summary-section">
+
+
+                                                            <div class="pt16 pb16">
+                                                                <table class="milestone  pt32" id="researches">
+                                                                    <tbody>
+                                                                         <t t-if="research_projects['faculty']">
+                                                                        <tr>
+
+                                                                            <th id="milestone_head" style="border-top-left-radius:10px;">
+                                                                                Faculty
+                                                                            </th>
+
+                                                                            <td style="border-top-right-radius:10px;">
+                                                                                <t t-if="research_projects['faculty']">
+
+                                                                                    <t t-esc="research_projects['faculty']['name']"/>
+                                                                                    -
+
+                                                                                    <span style="margin: 0;text-align: center;font-size: 13px;">
+                                                                                        <t t-esc="research_projects['faculty']['designation']"/>
+                                                                                    </span>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </t>
+                                                                         <t t-if="research_projects['research_guide']">
+                                                                        <tr>
+
+                                                                            <th id="milestone_head">
+                                                                                Research Guide
+                                                                            </th>
+
+                                                                            <td style="min-width:80px;">
+                                                                                <t t-if="research_projects['research_guide']">
+                                                                                    <t t-esc="research_projects['research_guide']"/>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </t>
+                                                                        <t t-if="research_projects['project_type']">
+                                                                        <tr>
+
+                                                                            <th id="milestone_head">
+                                                                                Type Of Project
+                                                                            </th>
+
+                                                                            <td>
+                                                                                <t t-if="research_projects['project_type']">
+                                                                                    <t t-esc="research_projects['project_type']"/>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </t>
+                                                                         <t t-if="research_projects['funding_agency']">
+                                                                        <tr>
+
+                                                                            <th id="milestone_head">Funding Agency</th>
+
+                                                                            <td>
+                                                                                <t t-if="research_projects['funding_agency']">
+                                                                                    <t t-esc="research_projects['funding_agency']"/>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </t>
+                                                                         <t t-if="research_projects['department']">
+                                                                        <tr>
+
+                                                                            <th id="milestone_head">Department</th>
+
+                                                                            <td>
+                                                                                <t t-if="research_projects['department']">
+                                                                                    <t t-esc="research_projects['department']"/>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                         </t>
+                                                                         <t t-if="research_projects['project_amount']">
+                                                                        <tr>
+
+                                                                            <th id="milestone_head">
+                                                                                Project Amount
+                                                                            </th>
+
+                                                                            <td>
+                                                                                <t t-if="research_projects['project_amount']">
+                                                                                    <t t-esc="research_projects['project_amount']"/>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </t>
+                                                                        <t t-if="research_projects['institution']">
+                                                                        <tr>
+
+                                                                            <th id="milestone_head">
+                                                                                Institution
+                                                                            </th>
+
+                                                                            <td>
+                                                                                <t t-if="research_projects['institution']">
+                                                                                    <t t-esc="research_projects['institution']"/>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </t>
+                                                                        <t t-if="research_projects['description']">
+                                                                        <tr>
+                                                                            <t t-if="research_projects['description']">
+                                                                            <th id="milestone_head">
+                                                                                Description
+                                                                            </th>
+                                                                            </t>
+                                                                            <td>
+                                                                                <t t-if="research_projects['description']">
+                                                                                    <t t-esc="research_projects['description']"/>
+                                                                                </t>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </t>
+
+                                                                    </tbody>
+
+                                                                </table>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+        </div>
+        </section>
+        <style>
+            .title_deprtment {
+    justify-content: space-between;
+}
+        </style>
+        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="projects_mu_page" model="website.page">
+            <field name="url">/projects</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="projects_mu"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+        <record id="code_of_conduct" model="ir.ui.view">
+            <field name="name">Code Of Conduct</field>
+            <field name="type">qweb</field>
+            <field name="key">mss_college.code_of_conduct</field>
+            <field name="arch" type="xml">
+                <t name="Code Of Conduct" t-name="mss_college.code_of_conduct_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section>
+                                <div class="code_of_conduct_main">
+                                    <h3 class="about_heading history_heading">Code Of Conduct</h3>
+                                    <hr id="heading_line"/>
+                                    <div style="padding:20px;">
+                                        <h4 class="code_heading">CODE OF CONDUCT FOR TEACHERS</h4>
+                                        <p class="code_para"><span id="code_bold">Professionalism:</span>Teachers should
+                                            treat all students, parents, colleagues, and staff with respect, dignity,
+                                            and fairness. They should recognize and value the diversity of individuals
+                                            and cultures within the school community.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="code_of_conduct_page" model="website.page">
+            <field name="url">/code_of_conduct</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="code_of_conduct"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

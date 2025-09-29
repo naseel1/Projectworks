@@ -1,0 +1,122 @@
+<odoo>
+    <template id="academic_calendar_template" name="academic_calendar Page">
+        <t t-call="website.layout">
+            document.addEventListener('DOMContentLoaded', function() {
+            // Check if the current URL matches the old URL for the IQAC Best Practices page
+            if (window.location.pathname === '/iqac-best-practices') {
+            window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Best%20Practices/1986';
+            }
+            // Check if the current URL matches the old URL for the AQAR Documents page
+            else if (window.location.href === 'https://emeacollege.ac.in/Home/IQAC/AQAR+Documents/2175') {
+            window.location.href = 'https://emeacollege.ac.in/Home/IQAC/AQAR%20Documents/2175';
+            }
+            else if (window.location.href === 'https://emeacollege.ac.in/Home/IQAC/Best+Practices/1986') {
+            window.location.href = 'https://emeacollege.ac.in/Home/IQAC/Best Practices/1986';
+            }
+            else if (window.location.href === '/academic-calendar') {
+            window.location.href = 'https://emeacollege.ac.in/Home/Academics/AcademicCalendar';
+            }
+            else if (window.location.href === '/academic-calendar') {
+            window.location.href = 'https://emeacollege.ac.in/Home/Academics/AcademicCalendar';
+            }
+
+            });
+            <div id="wrap" class="oe_structure">
+                <div class="bg_color_club" data-original-title="" title="" aria-describedby="tooltip229435">
+                    <div class="clubs">Program Academic Calender
+                    </div>
+                </div>
+                <section class=" pt-3">
+                    <div class="container">
+                        <h2 class="page_head pt-3" style="padding-bottom:20px!important;">Program Academic Calender</h2>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2023-24
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/EMEA_Academic%20Calendar-2023-24_21%20May%202024_Proof.pdf"
+                                   data-mimetype="application/pdf" target="_blank" class="o_image seminar"
+                                   scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2022-23
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/EMEA_Handbook_2022-23.pdf" data-mimetype="application/pdf"
+                                   target="_blank" class="o_image seminar" scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2021-22
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/EMEA_Students'%20Handbook_2021-22_22%20Nov%202021.pdf"
+                                   data-mimetype="application/pdf" target="_blank" class="o_image seminar"
+                                   scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2020-21
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/EMEA_Students'%20Handbook_2020-21_Final.pdf"
+                                   data-mimetype="application/pdf" target="_blank" class="o_image seminar"
+                                   scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2019-20
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/EMEA%20CALENDAR%20TOTAL%20160%20PAGES.pdf"
+                                   data-mimetype="application/pdf" target="_blank" class="o_image seminar"
+                                   scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2018-19
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/EMEA%20COLLEGE%20CALANDER%202018-19.pdf"
+                                   data-mimetype="application/pdf" target="_blank" class="o_image seminar"
+                                   scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2017-18
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/CALANDER%202017-18.pdf" data-mimetype="application/pdf"
+                                   target="_blank" class="o_image seminar" scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2016-17
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/2016-17.pdf" data-mimetype="application/pdf" target="_blank"
+                                   class="o_image seminar" scontenteditable="false"/>
+                            </span>
+                        </section>
+                        <section class="d-flex o_colored_level margin_30" style="background-image: none;">
+                            <div class="col-md-4 programme_link">Students’ Handbook &amp; Calendar 2015-16
+                            </div>
+                            <span class="readmore" id="view">View
+                                <a href="/Uploads/Files/Calander%202015-16.pdf" data-mimetype="application/pdf"
+                                   target="_blank" class="o_image seminar" scontenteditable="false"/>
+                            </span>
+                        </section>
+                    </div>
+                </section>
+                <style>
+                    @media (max-width: 600px) {
+                    .page {
+                    padding: 0px;
+                    margin: 24px;
+                    }
+                    }
+                </style>
+            </div>
+        </t>
+    </template>
+</odoo>

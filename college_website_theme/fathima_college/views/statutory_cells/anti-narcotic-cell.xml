@@ -1,0 +1,132 @@
+<odoo>
+    <data>
+        <record id="anti-narcotic-cell" model="ir.ui.view">
+            <field name="name">Anti Narcotic Cell</field>
+            <field name="type">qweb</field>
+            <field name="key">fathima_college.anti-narcotic-cell</field>
+            <field name="arch" type="xml">
+                <t name="pta-committee" t-name="fathima_college.anti-narcotic-cell">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="pt32 pb32 o_colored_level" style="background-image: none;">
+                                <div class="container">
+                                    <div class="about_head s_header">Statutory Cells
+                                        <div class="s_line">
+                                            <div class="s_dot"/>
+                                        </div>
+                                    </div>
+                                    <section class="administration pt32  pb o_colored_level tabs_back tabs_back"
+                                             data-vcss="001"
+                                             data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                                        <div class=" row " id="department_row">
+                                            <div class="col-12 col-md-3 o_colored_level " id="side_section"
+                                                 data-original-title="" title="" aria-describedby="tooltip336631">
+
+                                                <div class="side-bar " id="sidebar"
+                                                     style="top: 5px;margin-bottom: 0;">
+                                                    <ul class=" nav nav-pills  flex-column"
+                                                        style="padding-inline-start: 0;">
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/pta-committee" data-original-title="" title=""
+                                                               class="nav-link ">
+                                                                PTA Committee
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/anti-narcotic-cell" data-original-title=""
+                                                               title=""
+                                                               class="nav-link active">
+                                                                Anti Narcotic Cell
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/anti-ragging-cell" data-original-title="" title=""
+                                                               class="nav-link ">
+                                                                Anti Ragging Cell
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/grievance-cell" data-original-title="" title=""
+                                                               class="nav-link ">
+                                                                Grievance Redressal
+                                                            </a>
+                                                        </li>
+                                                        <li id="sidebar-li" class="nav-item">
+                                                            <a href="/women-cell" data-original-title=""
+                                                               title="" class="nav-link ">
+                                                                Women Cell
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-9 order-1 order-md-2 second_section  pb48 o_colored_level">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                    <section id="administration" style="">
+                                                        <div class=" s_header pt16">Anti Narcotic Cell
+                                                            <div class="s_line">
+                                                                <div class="s_dot"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="about_paragraph pt8">
+                                                            The Anti Narcotic Cell at Fathima Arts and Science College,
+                                                            Nilambur, is dedicated to combating drug abuse and promoting
+                                                            a drug-free campus. This committee conducts awareness
+                                                            programs, workshops, and seminars to educate students about
+                                                            the dangers of narcotics. By collaborating with local
+                                                            authorities and healthcare professionals, the Anti Narcotic
+                                                            Cell aims to prevent substance abuse through education,
+                                                            counseling, and support services, fostering a healthy and
+                                                            safe environment for all students.
+                                                        </div>
+                                                        <section class="pb8">
+                                                            <div class=" s_header" id="header_small"
+                                                                 style="max-width: 50%;">Anti Narcotic Cell Committee
+                                                                <div class="s_line">
+                                                                    <div class="s_dot"></div>
+                                                                </div>
+                                                            </div>
+                                                            <table class="table table-data">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th data-label="Name" scope="col">
+                                                                            Name
+                                                                        </th>
+                                                                        <th data-label="Designation" scope="col">
+                                                                            Designation
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td data-label="Name">Name of the member</td>
+                                                                        <td data-label="Designation">Designation</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                            <a href="#" class="iqac_buttons mt16"
+                                                               style="width: fit-content;">Register a Complaint
+                                                            </a>
+                                                        </section>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="anti-narcotic-cell_page" model="website.page">
+            <field name="url">/anti-narcotic-cell</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="anti-narcotic-cell"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

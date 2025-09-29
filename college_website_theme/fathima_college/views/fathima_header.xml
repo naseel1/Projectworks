@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="template_fathima" inherit_id="website.layout" name="Header Fathima">
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const navToggler = document.getElementById('navToggler');
+                const topMenuCollapse = document.getElementById('top_menu_collapse');
+
+                navToggler.addEventListener('click', function() {
+                // Toggle the 'show' class on the topMenuCollapse element
+                topMenuCollapse.classList.toggle('show');
+                navToggler.classList.toggle('menu-opened');
+                });
+                });
+            </script>
+            <div class="topbar">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="row_bar">
+                            <div class="top_text">
+                                <a href="#">Achievements</a>
+                            </div>
+                            <div class="top_text">
+                                <a href="#">Facilities</a>
+                            </div>
+                            <div class="top_text">
+                                <a href="#">Gallery</a>
+                            </div>
+                            <div class="top_text" id="top_text">
+                                <a href="#">Login</a>
+                            </div>
+                            <div class="top_contact">
+                                <a href="#">Contact Us
+                                    <img src="/fathima_college/static/img/contact.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header id="top" data-anchor="true" data-name="Header" class="">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="fathima-logo">
+                            <a href="#" class="logo">
+                                <div class="logo-img">
+                                    <img src="/fathima_college/static/img/fathima.svg" loading="lazy"
+                                         class="logo_image"/>
+                                </div>
+                                <div class="college_name">
+                                    <h2 id="logo-name">
+                                        FATHIMA
+                                        <p>Arts &amp; Science College
+                                        </p>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-togglering navbar-toggler" id="navToggler">
+                            <span/>
+                            <span/>
+                            <span/>
+                        </div>
+                        <div class="collapse navbar-collapse " id="top_menu_collapse">
+                            <ul class="navbar-nav">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item "/>
+                                        <t t-set="link_class" t-valuef=" nav-link fathima_link"/>
+                                    </t>
+                                </t>
+                                <t t-call="portal.user_dropdown">
+                                    <!--<t t-set="_user_name" t-value="true"/>-->
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown "/>
+                                    <t t-set="_link_class" t-valuef="nav-link dropdown-toggle"/>
+                                </t>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </xpath>
+    </template>
+</odoo>
+

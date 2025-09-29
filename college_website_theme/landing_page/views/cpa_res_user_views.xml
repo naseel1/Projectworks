@@ -1,0 +1,48 @@
+<odoo>
+    <!-- Form View -->
+    <record id="view_users_form_inherit_department" model="ir.ui.view">
+        <field name="name">res.users.form.department</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <group>
+                <field name="user_department_id" options="{'no_create': True}"/>
+                <field name="department_access_level"/>
+            </group>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_users_search_inherit_department" model="ir.ui.view">
+        <field name="name">res.users.search.department</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="user_department_id" string="Department"/>
+                <field name="department_access_level" string="Department Access"/>
+            </xpath>
+            <xpath expr="//search" position="inside">
+                <group expand="0" string="Group By">
+                    <filter name="group_by_department" string="Department"
+                            context="{'group_by': 'user_department_id'}"/>
+                    <filter name="group_by_access" string="Access Level"
+                            context="{'group_by': 'department_access_level'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_users_tree_inherit_department" model="ir.ui.view">
+        <field name="name">res.users.tree.department</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='login']" position="after">
+                <field name="user_department_id" string="Department" optional="show"/>
+                <field name="department_access_level" string="Access Level" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

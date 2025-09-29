@@ -1,0 +1,1480 @@
+<odoo>
+    <data>
+        <record id="student-centric-methods_mes" model="ir.ui.view">
+            <field name="name">student-centric-methods</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.student-centric-methods_mes</field>
+            <field name="arch" type="xml">
+                <t name="v" t-name="mes_college.student-centric-methods_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                  <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435"><div class="clubs">IQAC
+                                            </div></div>
+                                <section class="s_tabs pb o_colored_level tabs_back" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+                                            <div class="clubs">Self Study Report - (Cycle 4)
+                                            </div>
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/ssr_home"
+                                                           data-original-title="" title="" class="nav-link">
+                                                            Home
+                                                        </a>
+                                                    </li>
+                                                    <!-- Parent Item -->
+                                                    <div class="ssr_card">
+                                                        <a href="#" id="parent-li" data-bs-toggle="collapse"
+                                                           data-bs-target="#curricular_planning"
+                                                           class=" card-header nav-link ">
+                                                            1. Curricular Aspects
+                                                        </a>
+
+                                                        <!-- Collapsible Content for Parent Item -->
+                                                        <div id="curricular_planning" class="collapse "
+                                                             style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#curricular_planning1_1"
+                                                               class="collapsed nav-link ">
+                                                                1.1 Curricular Planning and Implementation
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="curricular_planning1_1" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/curricular_planning"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items ">
+                                                                        1.1.1 The Institution ensures effective
+                                                                        curriculum
+                                                                        planning and delivery through a well-planned and
+                                                                        documented process, including Academic calendar
+                                                                        and
+                                                                        conduct of continuous internal Assessment
+                                                                    </a>
+                                                                </li>
+
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#academic_flexibility"
+                                                               class="collapsed nav-link  ">
+                                                                1.2 Academic Flexibility
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="academic_flexibility" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/add-on-certificate-value"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items ">
+                                                                        1.2.1 Number of Add on /Certificate/Value added
+                                                                        programs offered during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/percentage-of-students-enrolled"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items ">
+                                                                        1.2.2 Percentage of students enrolled in
+                                                                        Certificate/ Add-on/Value added programs as
+                                                                        against the total number of students during the
+                                                                        last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/percentage-of-students-enrolled-dvv"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        1.2.2 DVV Clarification
+                                                                    </a>
+                                                                </li>
+
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#curriculum_enrichment"
+                                                               class="collapsed nav-link ">
+                                                                1.3 Curriculum Enrichment
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="curriculum_enrichment" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/integrates-crosscutting-issues"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        1.3.1 Institution integrates crosscutting issues
+                                                                        relevant to Professional Ethics, Gender, Human
+                                                                        Values, Environment and Sustainability into the
+                                                                        Curriculum
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/project-field-work-internships"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        1.3.2 Percentage of students undertaking project
+                                                                        work/field work/ internships (Data for the
+                                                                        latest completed academic year)
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#feedback_system"
+                                                               class="collapsed nav-link ">
+                                                                1.4 Feedback System
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="feedback_system" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/feedback_system"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        1.4.1 Institution obtains feedback on the
+                                                                        academic performance and ambience of the
+                                                                        institution from various stakeholders, such as
+                                                                        Students, Teachers, Employers, Alumni etc. and
+                                                                        action taken report on the feedback is made
+                                                                        available on institutional websitel
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/feedback_dvv"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        1.4.1 DVV Clarification
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Parent Item -->
+                                                    <div class="ssr_card">
+                                                        <a href="#" id="parent-li" data-bs-toggle="collapse"
+                                                           data-bs-target="#teaching_learning"
+                                                           class=" card-header nav-link ">
+                                                            2. Teaching- Learning and Evaluation
+                                                        </a>
+
+                                                        <!-- Collapsible Content for Parent Item -->
+                                                        <div id="teaching_learning" class="collapse show"
+                                                             style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#student_enrolment"
+                                                               class=" nav-link collapsed">
+                                                                2.1 Student Enrolment and Profile
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="student_enrolment" class="collapse"
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/enrolment_percentage"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        2.1.1 Enrolment Percentage
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/reserved-seats-filled"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items ">
+                                                                        2.1.2 Percentage of seats filled against seats
+                                                                        reserved for various categories (SC, ST, OBC,
+                                                                        Divyangjan, etc. as per applicable reservation
+                                                                        policy during the last five years (Exclusive of
+                                                                        supernumerary seats)
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#student_teacher_ratio"
+                                                               class="collapsed nav-link ">
+                                                                2.2 Student Teacher Ratio
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="student_teacher_ratio" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/student-full-time-teacher-ratio"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        2.2.1 Student Full time Teacher Ratio (Data for
+                                                                        the latest completed academic year)
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#teaching_learning_process"
+                                                               class=" nav-link ">
+                                                                2.3 Teaching- Learning Process
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="teaching_learning_process" class="collapse show"
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/student-centric-methods"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items active">
+                                                                        2.3.1 Student centric methods, such as
+                                                                        experiential learning, participative learning
+                                                                        and problem-solving methodologies are used for
+                                                                        enhancing learning experiences using ICT tools
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#teacher_profile_quality"
+                                                               class="collapsed nav-link ">
+                                                                2.4 Teacher Profile and Quality
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="teacher_profile_quality" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/full-time-teachers"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        2.4.1 Percentage of full-time teachers against
+                                                                        sanctioned posts during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/full-time-teachers-highest-degree"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        2.4.2 Percentage of full time teachers with
+                                                                        NET/SET/SLET/ Ph. D. / D.M. / M.Ch. / D.N.B
+                                                                        Superspeciality / D.Sc. / D.Litt. during the
+                                                                        last five years (consider only highest degree
+                                                                        for count)
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#evaluation_process_reforms"
+                                                               class=" nav-link collapsed">
+                                                                2.5 Evaluation Process and Reforms
+                                                            </a>
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="evaluation_process_reforms" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/mechanism_of_assessment"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        2.5.1 Mechanism of internal/ external assessment
+                                                                        is transparent and the grievance redressal
+                                                                        system is time- bound and efficient
+                                                                    </a>
+                                                                </li>
+
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#student_performance_learning_outcome"
+                                                               class=" nav-link collapsed">
+                                                                2.6 Student Performance and Learning Outcome
+                                                            </a>
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="student_performance_learning_outcome"
+                                                                 class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/programme_outco"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        2.6.1 Programme Outco (POs) and Course
+                                                                        Outco (COs) for all Program offered by the
+                                                                        institution are stated and displayed on website
+                                                                        and attainment of POs and COs are evaluated
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/pass_percentage"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        2.6.2 Pass percentage of Students during last
+                                                                        five years
+                                                                    </a>
+                                                                </li>
+
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- Parent Item -->
+                                                    <div class="ssr_card">
+                                                        <a href="#" id="parent-li" data-bs-toggle="collapse"
+                                                           data-bs-target="#research_innovation_exam"
+                                                           class=" card-header nav-link collapsed">
+                                                            3. Research, Innovations and Extension
+                                                        </a>
+
+                                                        <!-- Collapsible Content for Parent Item -->
+                                                        <div id="research_innovation_exam" class="collapse "
+                                                             style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#resource_mobilization"
+                                                               class=" nav-link collapsed">
+                                                                3.1 Resource Mobilization for Research
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="resource_mobilization" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/grants_received"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.1.1 Grants received from Government and
+                                                                        non-governmental agencies for research projects
+                                                                        / endowments in the institution during the last
+                                                                        five years (INR in Lakhs)
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#innovation_ecosystem"
+                                                               class=" nav-link collapsed">
+                                                                3.2 Innovation Ecosystem
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="innovation_ecosystem" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/ecosystem_for_innovations"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.2.1 Institution has created an ecosystem for
+                                                                        innovations and has initiatives for creation and
+                                                                        transfer of knowledge (patents filed, published,
+                                                                        incubation center facilities in the HEI to be
+                                                                        considered)
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/workshops_seminars_conferences"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.2.2 Number of workshops/ seminars/ conferences
+                                                                        including on Research Methodology, Intellectual
+                                                                        Property Rights (IPR) and entrepreneurship
+                                                                        conducted during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#research_publication_awards"
+                                                               class=" nav-link collapsed">
+                                                                3.3 Research Publication and Awards
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="research_publication_awards" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/number_of_research_papers"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.3.1 Number of research papers published per
+                                                                        teacher in the Journals notified on UGC care
+                                                                        list during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/number_of_books"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.3.2 Number of books and chapters in edited
+                                                                        volu/books published and papers published in
+                                                                        national/ international conference proceedings
+                                                                        per teacher during last five years
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#extension_activities"
+                                                               class=" nav-link collapsed">
+                                                                3.4 Extension Activities
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="extension_activities" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/extension_activities_carried"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.4.1 Extension activities are carried out in
+                                                                        the neighborhood community, sensitizing students
+                                                                        to social issues, for their holistic
+                                                                        development, and impact thereof during the last
+                                                                        five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/awards_and_recognitions"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.4.2 Awards and recognitions received for
+                                                                        extension activities from government /
+                                                                        government recognised bodies
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/number-of-extension"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.4.3 Number of extension and outreach programs
+                                                                        conducted by the institution through NSS/NCC/Red
+                                                                        cross/YRC etc. during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#ssr_collaboration"
+                                                               class=" nav-link collapsed">
+                                                                3.5 Collaboration
+                                                            </a>
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="ssr_collaboration" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/mous_collaboration"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.5.1 The number of MoUs, collaborations/
+                                                                        linkages for Faculty exchange, Student exchange,
+                                                                        Internship, Field trip, On-the- job training,
+                                                                        research and other academic activities during
+                                                                        the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/collaboration_dvv_clarification"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        3.5.1 DVV Clarification
+                                                                    </a>
+                                                                </li>
+
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Parent Item -->
+                                                    <div class="ssr_card">
+                                                        <a href="#" id="parent-li" data-bs-toggle="collapse"
+                                                           data-bs-target="#infrastructure_and_learning"
+                                                           class=" card-header nav-link collapsed">
+                                                            4. Infrastructure and Learning Resources
+                                                        </a>
+
+                                                        <!-- Collapsible Content for Parent Item -->
+                                                        <div id="infrastructure_and_learning" class="collapse "
+                                                             style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#physical_facilities"
+                                                               class=" nav-link collapsed">
+                                                                4.1 Physical Facilities
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="physical_facilities" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/adequate_infrastructure"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.1.1 Availability of adequate infrastructure
+                                                                        and physical facilities viz., classrooms,
+                                                                        laboratories, ICT facilities, cultural
+                                                                        activities, gymnasium, yoga centre etc. in the
+                                                                        institution
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/percentage_of_expenditure"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.1.2 Percentage of expenditure, excluding
+                                                                        salary for infrastructure augmentation during
+                                                                        last five years (INR in Lakhs)
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/physical_dvv_clarification"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.1.2 DVV Clarification
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#library_learning_resource"
+                                                               class=" nav-link collapsed">
+                                                                4.2 Library as a learning Resource
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="library_learning_resource" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/library_automated"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.2.1 Library is automated using Integrated
+                                                                        Library Management System (ILMS), subscription
+                                                                        to e-resources, amount spent on purchase of
+                                                                        books, journals and per day usage of library
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#it_infrastructure"
+                                                               class=" nav-link collapsed">
+                                                                4.3 IT Infrastructure
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="it_infrastructure" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/it_facilities"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.3.1 Institution frequently updates its IT
+                                                                        facilities and provides sufficient bandwidth for
+                                                                        internet connection
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/student_computer_ratio"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.3.2 Student Computer ratio (Data for the
+                                                                        latest completed academic year)
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/infrastructure_dvv_clarification"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.3.2 DVV Clarification
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#campus_infrastructure"
+                                                               class=" nav-link collapsed">
+                                                                4.4 Maintenance of Campus Infrastructure
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="campus_infrastructure" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/percentage_of_expenditure_incurred"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.4.1 Percentage of expenditure incurred on
+                                                                        maintenance of infrastructure (physical and
+                                                                        academic support facilities) excluding salary
+                                                                        component during the last five years (INR in
+                                                                        Lakhs)
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/campus_dvv_clarification"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        4.4.1 DVV Clarification
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Parent Item -->
+                                                    <div class="ssr_card">
+                                                        <a href="#" id="parent-li" data-bs-toggle="collapse"
+                                                           data-bs-target="#student_support_progression"
+                                                           class=" card-header nav-link collapsed">
+                                                            5. Student Support and Progression
+                                                        </a>
+
+                                                        <!-- Collapsible Content for Parent Item -->
+                                                        <div id="student_support_progression" class="collapse "
+                                                             style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#student_support"
+                                                               class=" nav-link collapsed">
+                                                                5.1 Student Support
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="student_support" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/scholarships_and_free_ships"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.1.1 Percentage of students benefited by
+                                                                        scholarships and freeships provided by the
+                                                                        Government and Non-Government agencies during
+                                                                        last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/capacity_building"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.1.2 Capacity building and skills enhancement
+                                                                        initiatives taken by the institution include the
+                                                                        following
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/guidance_for_competitive"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.1.3 Percentage of students benefitted by
+                                                                        guidance for competitive examinations and career
+                                                                        counseling offered by the Institution during the
+                                                                        last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/transparent_mechanism"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.1.4 The Institution has a transparent
+                                                                        mechanism for timely redressal of student
+                                                                        grievances including sexual harassment and
+                                                                        ragging cases
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/support_dvv_clarification"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.1.2 DVV Clarification
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/support_dvv_clarification2"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.1.3 DVV Clarification
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#student_progression"
+                                                               class=" nav-link collapsed">
+                                                                5.2 Student Progression
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="student_progression" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/percentage_of_placement"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.2.1 Percentage of placement of outgoing
+                                                                        students and students progressing to higher
+                                                                        education during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/state_national"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.2.2 Percentage of students qualifying in
+                                                                        state/national/ international level examinations
+                                                                        during the last five years
+                                                                    </a>
+                                                                </li>
+
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#student_participation_and_activities"
+                                                               class=" nav-link collapsed">
+                                                                5.3 Student Participation and Activities
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="student_participation_and_activities"
+                                                                 class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/outstanding_performance"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.3.1 Number of awards/medals for outstanding
+                                                                        performance in sports/ cultural activities at
+                                                                        University / state/ national / international
+                                                                        level (award for a team event should be counted
+                                                                        as one) during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/cultural_programs"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.3.2 Average number of sports and cultural
+                                                                        programs in which students of the Institution
+                                                                        participated during last five years (organised
+                                                                        by the institution/other institutions)
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#alumni_engagement"
+                                                               class=" nav-link collapsed">
+                                                                5.4 Alumni Engagement
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="alumni_engagement" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/alumni_association"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        5.4.1 There is a registered Alumni Association
+                                                                        that contributes significantly to the
+                                                                        development of the institution through financial
+                                                                        and/or other support services
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Parent Item -->
+                                                    <div class="ssr_card">
+                                                        <a href="#" id="parent-li" data-bs-toggle="collapse"
+                                                           data-bs-target="#governance"
+                                                           class=" card-header nav-link collapsed">
+                                                            6. Governance, Leadership and Management
+                                                        </a>
+
+                                                        <!-- Collapsible Content for Parent Item -->
+                                                        <div id="governance" class="collapse "
+                                                             style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#institutional_vision"
+                                                               class=" nav-link collapsed">
+                                                                6.1 Institutional Vision and Leadership
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="institutional_vision" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/governance_vision"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.1.1 The governance and leadership is in
+                                                                        accordance with vision and mission of the
+                                                                        institution and it is visible in various
+                                                                        institutional practices such as decentralization
+                                                                        and participation in the institutional
+                                                                        governance
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#strategy_development"
+                                                               class=" nav-link collapsed">
+                                                                6.2 Strategy Development and Deployment
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="strategy_development" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/institutional_bodies"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.2.1 The functioning of the institutional
+                                                                        bodies is effective and efficient as visible
+                                                                        from policies, administrative setup, appointment
+                                                                        and service rules, procedures, deployment of
+                                                                        institutional Strategic/ perspective/development
+                                                                        plan etc
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/implementation_e-governance"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.2.2 Implementation of e-governance in areas of
+                                                                        operation
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/Strategy_dvv_clarification"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.2.2 DVV Clarification
+                                                                    </a>
+                                                                </li>
+
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#faculty_empowerment_strategies"
+                                                               class=" nav-link collapsed">
+                                                                6.3 Faculty Empowerment Strategies
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="faculty_empowerment_strategies"
+                                                                 class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/welfare_measures"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.3.1 The institution has effective welfare
+                                                                        measures and Performance Appraisal System for
+                                                                        teaching and non-teaching staff
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/financial_support"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.3.2 Percentage of teachers provided with
+                                                                        financial support to attend conferences/
+                                                                        workshops and towards membership fee of
+                                                                        professional bodies during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/non_teaching_staff"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.3.3 Percentage of teaching and non-teaching
+                                                                        staff participating in Faculty development
+                                                                        Program (FDP), professional development
+                                                                        /administrative training programs during the
+                                                                        last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/financial_dvv_clarification"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items ">
+                                                                        6.3.2 DVV Clarification
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#financial_management"
+                                                               class=" nav-link collapsed">
+                                                                6.4 Financial Management and Resource Mobilization
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="financial_management" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/mobilization_optimal"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.4.1 Institution has strategies for
+                                                                        mobilization and optimal utilization of
+                                                                        resources and funds from various sources
+                                                                        (government/ nongovernment organizations) and it
+                                                                        conducts financial audits regularly (internal
+                                                                        and external)
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#internal_quality"
+                                                               class=" nav-link collapsed">
+                                                                6.5 Internal Quality Assurance System
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="internal_quality" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/internal_quality_assurance"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.5.1 Internal Quality Assurance Cell (IQAC) has
+                                                                        contributed significantly for institutionalizing
+                                                                        the quality assurance strategies and processes
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/quality_assurance"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        6.5.2 Quality assurance initiatives of the
+                                                                        institution
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Parent Item -->
+                                                    <div class="ssr_card">
+                                                        <a href="#" id="parent-li" data-bs-toggle="collapse"
+                                                           data-bs-target="#institutional_values"
+                                                           class=" card-header nav-link collapsed">
+                                                            7. Institutional Values and Best Practices
+                                                        </a>
+
+                                                        <!-- Collapsible Content for Parent Item -->
+                                                        <div id="institutional_values" class="collapse "
+                                                             style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#social_responsibilities"
+                                                               class=" nav-link collapsed">
+                                                                7.1 Institutional Values and Social Responsibilities
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="social_responsibilities" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/promotion_gender"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        7.1.1 Measures initiated by the Institution for
+                                                                        the promotion of gender equity and Institutional
+                                                                        initiatives to celebrate / organize national and
+                                                                        international commemorative days, events and
+                                                                        festivals during the last five years
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/institution_initiatives"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        7.1.2 The Institution has facilities and
+                                                                        initiatives for 1. Alternate sources of energy
+                                                                        and energy conservation Measures 2. Management
+                                                                        of the various types of waste 3. Water
+                                                                        conservation 4. Green campus initiatives 5.
+                                                                        Disabled friendly, barrier free envt
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/energy_regularly"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        7.1.3 Quality audits on environment and energy
+                                                                        regularly undertaken by the Institution. The
+                                                                        institutional environment and energy initiatives
+                                                                        are confirmed through the following
+                                                                    </a>
+                                                                </li>
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/efforts_initiatives"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        7.1.4 Describe the Institutional
+                                                                        efforts/initiatives in providing an inclusive
+                                                                        environment and Sensitization of students and
+                                                                        employees to the constitutional obligations
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <!-- Child Item -->
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#best-practices"
+                                                               class=" nav-link collapsed">
+                                                                7.2 Best Practices
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="best-practices" class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/best-practices"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        7.2.1 Describe two best practices successfully
+                                                                        implemented by the Institution
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+
+                                                            <a href="#" id="child-li" data-bs-toggle="collapse"
+                                                               data-bs-target="#distinctiveness"
+                                                               class=" nav-link collapsed">
+                                                                7.3 Institutional Distinctiveness
+                                                            </a>
+
+                                                            <!-- Collapsible Content for Child Item -->
+                                                            <div id="distinctiveness"
+                                                                 class="collapse "
+                                                                 style="background: white; margin-bottom: 0px; transition: all 0.2s ease-in-out 0s;">
+
+                                                                <!-- Nested List Item -->
+                                                                <li id="nested-item" class="nav-item">
+                                                                    <a href="/portray_performance"
+                                                                       data-original-title=""
+                                                                       title="" class="nav-link sub_items">
+                                                                        7.3.1 Portray the performance of the Institution
+                                                                        in one area distinctive to its priority and
+                                                                        thrust
+                                                                    </a>
+                                                                </li>
+                                                                <hr class="line_bottom"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                <section>
+                                                    <section>
+                                                        <h2 class="page_head" id="iqac_subhead">
+                                                            2.3.1 Student centric methods, such as experiential
+                                                            learning, participative learning and problem-solving
+                                                            methodologies are used for enhancing learning experiences
+                                                            using ICT tools
+                                                        </h2>
+                                                    </section>
+                                                    <section class="s_tabs pt48 pb48" data-vcss="001"
+                                                             data-snippet="s_tabs" data-name="Tabs"
+                                                             style="background-image: none;">
+                                                        <div class="container">
+                                                            <div class="s_tabs_main">
+                                                                <div class="s_tabs_nav mb-3">
+                                                                    <ul class="nav nav-pills" role="tablist">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link active"
+                                                                               id="nav_tabs_link_1703670203390_91"
+                                                                               data-bs-toggle="tab"
+                                                                               href="#nav_tabs_content_1703670203390_91"
+                                                                               role="tab"
+                                                                               aria-controls="nav_tabs_content_1703670203390_91"
+                                                                               aria-selected="true">ICT Infrastructure
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                               id="  nav_tabs_content_1703670203390_92"
+                                                                               data-bs-toggle="tab"
+                                                                               href="#nav_tabs_content_1703670203390_92"
+                                                                               role="tab"
+                                                                               aria-controls="nav_tabs_content_1703670203390_92"
+                                                                               aria-selected="false">ICT - Student
+                                                                                Centric Methods
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="s_tabs_content tab-content">
+                                                                    <div class="tab-pane fade active show"
+                                                                         id="nav_tabs_content_1703670203390_91"
+                                                                         role="tabpanel"
+                                                                         aria-labelledby="nav_tabs_link_1703670203390_91"
+                                                                         contenteditable="false">
+                                                                        <div class="oe_structure oe_empty"
+                                                                             contenteditable="true">
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Digital Library
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    E- Resources
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    E- Reading Room
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Online Catalogue Search
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Audio Visual Facilities
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Broadband Connectivity / Free Wifi
+                                                                                    Campus
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Informatics Centre
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Computer Lab
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade "
+                                                                         id="nav_tabs_content_1703670203390_92"
+                                                                         role="tabpanel"
+                                                                         aria-labelledby="nav_tabs_link_1703670203390_92"
+                                                                         contenteditable="false">
+                                                                        <div class="oe_structure oe_empty"
+                                                                             contenteditable="true">
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Google Workspace for Education
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Free Wifi Campus
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    E Contents by Faculty : YouTube
+                                                                                    Channels/Blogs/Webpages
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Presentations by Teachers
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    ICT Related Training Programs
+                                                                                    Attended by Faculty
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Web Based Learning - Coursera
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Online Quizzes/Debates
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Management Information System
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Institutional Social Media Pages
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    ICT Tools – Software and Programs
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Webinars and Online Workshops
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Blended Approaches
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+                                                                            <section
+                                                                                    class="d-flex o_colored_level margin_30 ssr pt32 "
+                                                                                    style="background-image: none;">
+                                                                                <div class="col-md-8 programme_link">
+                                                                                    Aaravam Online Fine Arts Fest
+                                                                                </div>
+                                                                                <a href="#" target="_blank"
+                                                                                   class="readmore" id="view">View
+                                                                                </a>
+                                                                            </section>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </section>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="student-centric-methods_page" model="website.page">
+            <field name="url">/student-centric-methods</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="student-centric-methods_mes"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

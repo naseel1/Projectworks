@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <record id="student_union" model="ir.ui.view">
+            <field name="name">student_union</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.student_union</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.student_union_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class=" pt32 pb32 col-md-8">
+                                        <div>
+                                            <h2 class="main-head" style="text-align:left">Student Union</h2>
+                                            <div class="text_content">
+                                                The college union council is constituted as per the rules laid down by
+                                                the university.
+                                                <br/>
+                                                <br/>
+                                                The conduct of college union election will be decided
+                                                according to the policies of MES Central committee and the college
+                                                council
+                                                <a href="#"
+                                                   class="readmore" target="_blank" id="naac_link">List of students
+                                                    Union Officer Bearers 2023-24
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+                                                <a href="mes_college/static/pdf/List of Elected Representatives ALL23-24.pdf"
+                                                   class="readmore" target="_blank" id="naac_link">List of Class
+                                                    representatives 2023-24
+                                                    <span class="fa fa-long-arrow-right text-o-color-3"
+                                                          data-bs-original-title=""
+                                                          title="" aria-describedby="tooltip544395"></span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="student_union_page" model="website.page">
+            <field name="url">/student_union</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="student_union"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

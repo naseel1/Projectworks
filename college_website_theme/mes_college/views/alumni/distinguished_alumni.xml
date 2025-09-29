@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+        <record id="distinguished_alumni" model="ir.ui.view">
+            <field name="name">distinguished_alumni</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.distinguished_alumni</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.distinguished_alumni_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="bg_color">
+                                <div class="container" id="container_width">
+                                    <div class="row">
+                                        <div class="col-md-12 pb16">
+                                            <h2 class="main-head" style="text-align:left; padding-top:20px;">
+                                                Distinguished Alumni
+                                            </h2>
+                                            <div class="content_text" style="text-align:justify;padding: 0;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="distinguished_alumni_page" model="website.page">
+            <field name="url">/distinguished_alumni</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="distinguished_alumni"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

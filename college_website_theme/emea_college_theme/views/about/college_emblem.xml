@@ -1,0 +1,59 @@
+<odoo>
+    <data>
+        <record id="college_emblem" model="ir.ui.view">
+            <field name="name">College Emblem</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.college_emblem</field>
+            <field name="arch" type="xml">
+                <t name="College Emblem" t-name="emea_college_theme.college_emblem_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class=" page pt32 pb32">
+                                <h2 class="page_head">COLLEGE EMBLEM</h2>
+                                <div class="align-center container pt32" style="max-width: 1320px;">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-3 my-auto padding-0">
+                                            <div class="image-wrapper">
+                                                <img src="/emea_college_theme/static/img/college_emblem.jpeg"
+                                                     class="prince-img" id="college_emblem"/>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 align-left col-lg-9 padding-0">
+                                            <div class="card-wrapper">
+                                                <p class="notes">
+                                                    The emblem symbolises knowledge, the world in abundance, the
+                                                    panoramic
+                                                    beauty of Kerala and values of life.On the top of the emblem is a
+                                                    verse
+                                                    from the Holy Qur’an which means “He taught man that which he knew
+                                                    not”
+                                                    (96:5).The ocean represents life in its totality through which each
+                                                    person journeys, until he reaches his destination under the guidance
+                                                    of
+                                                    beacon light of EMEA. The coconut tree stands for the scenic
+                                                    ambience;
+                                                    the ideal location the campus provides to educational pursuits.
+                                                    Flanking
+                                                    the emblem is the full name of the organization that runs the
+                                                    institution.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="college_emblem_page" model="website.page">
+            <field name="url">/college_emblem</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="college_emblem"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

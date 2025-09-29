@@ -1,0 +1,1911 @@
+<odoo>
+    <data>
+        <record id="student_discipline_emea" model="ir.ui.view">
+            <field name="name">Student Discipline Schemes</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.student_discipline_emea</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="emea_college_theme.student_discipline_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                    <div class="clubs">Student Discipline Schemes
+                                    </div>
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs1"
+                                                           data-original-title="" title="" class="nav-link active"
+                                                           aria-controls="tabs1">Student Discipline
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs2"
+                                                           data-original-title="" title="" class="nav-link">Anti Ragging
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Grievance
+                                                            Redressal Forum
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs4" id="sidebar_tabs4" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Anti Sexual
+                                                            Harassment Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs5" id="sidebar_tabs5" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">College
+                                                            Rules
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs6" id="sidebar_tabs6" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Ethics
+                                                            Committee
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                                             id="page-content">
+                                            <div id="tabs1" class=" tab-pane fade active show" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs1">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Student Discipline</h2>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Duties and responsibilities of discipline committee is the
+                                                            over all super vision of the discipline as lay down in the
+                                                            institution menu.
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <div class="row">
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <h2 class="page_head">Register a complaint</h2>
+                                                    <section class="s_website_form pt16 pb16" data-vcss="001"
+                                                             data-snippet="s_website_form" data-name="Form"
+                                                             style="background-image: none;">
+                                                        <div class="o_container_small">
+                                                            <form action="/website/form/" method="post"
+                                                                  enctype="multipart/form-data" class="o_mark_required"
+                                                                  data-mark="" data-pre-fill="true"
+                                                                  data-success-mode="redirect"
+                                                                  data-success-page="/contactus-thank-you"
+                                                                  data-model_name="mail.mail">
+                                                                <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+                                                                    <div class="s_website_form_field mb-3 col-12    s_website_form_dnone"
+                                                                         data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;">
+
+
+                                                                                <span class="s_website_form_label_content"/>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="hidden"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_to"
+                                                                                       value="info@yourcompany.example.com"/>
+
+
+                                                                                <div class="s_website_form_field_description small form-text text-muted">
+                                                                                    Separate email addresses with a
+                                                                                    comma.
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o58pnm4ll0py">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Name
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Name" required="1" value=""
+                                                                                       placeholder="" id="o58pnm4ll0py"
+                                                                                       data-fill-with="name"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom"
+                                                                         data-type="tel" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="olngluc3loec">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Mobile Number
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="tel"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Mobile Number" value=""
+                                                                                       placeholder="" id="olngluc3loec"
+                                                                                       data-fill-with="phone"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="email" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oczq6h3agrzl">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Email
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="email"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_from" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oczq6h3agrzl"
+                                                                                       data-fill-with="email"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oh6j3hhtuq5">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Subject
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="subject" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oh6j3hhtuq5"
+                                                                                       data-fill-with="undefined"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="text" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o2ph4z7t5bxv">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Message
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <textarea
+                                                                                        class="form-control s_website_form_input"
+                                                                                        name="Message" required="1"
+                                                                                        placeholder="" id="o2ph4z7t5bxv"
+                                                                                        rows="3"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-0 py-2 col-12 s_website_form_submit"
+                                                                         data-name="Submit Button">
+                                                                        <div style="width: 150px;"
+                                                                             class="s_website_form_label"/>
+                                                                        <a href="#" role="button"
+                                                                           class="btn btn-primary btn-lg s_website_form_send o_default_snippet_text">
+                                                                            Submit
+                                                                        </a>
+                                                                        <span id="s_website_form_result"/>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                            <div id="tabs2" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs2">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Anti Ragging</h2>
+                                                    <div class="page_text pt32">
+                                                        <h3 class="sub_head">Ragging</h3>
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Honourable Supreme Court has made it clear that ragging in
+                                                            any forms should be sternly and effectively prevented.
+                                                            Whenever a criminal offence is committed in the name of
+                                                            ragging whether within the campus of an educational
+                                                            institution or in a hostel or otherwise, the
+                                                            Principal/Warden will report the nearest Police Station and
+                                                            not wait until a complaint in this regard is received from
+                                                            the person affected. Appro-priate disciplinary action will
+                                                            also be taken against the culprits. The Government &amp;
+                                                            Supreme
+                                                            court made it clear that any lapse in this regard will be
+                                                            seriously viewed. It will be the personal responsibility of
+                                                            the officer in charge of the institution to strictly enforce
+                                                            these rules.In accordance with the supreme court directives
+                                                            on ragging (2007), the judgement of supreme court on ragging
+                                                            (2009) and the UGC regulations to curb the menace of ragging
+                                                            (2009).
+                                                            <strong>NATIONAL ANTI RAGGING HELPLINE</strong>
+                                                            <div id="helpline">Toll Free Number : <a
+                                                                    href="tel:1800-180-5522">1800-180-5522
+                                                            </a> (24 x 7)
+                                                                <br/>
+                                                                UGC Monitoring Agency (Aman Satya Kachroo Trust)
+                                                                <br/>
+                                                                Mobile : <a href="tel:098711703031">098711703031</a>,
+                                                                <a href="tel:09818400116">09818400116 (only in case of
+                                                                    emergency)
+                                                                </a>
+                                                                <br/>
+                                                                Email:
+                                                                <a href="mailto:helpline@antiragging.in">
+                                                                    helpline@antiragging.in
+                                                                </a>
+                                                                <br/>
+                                                                Website: <a href="www.ugc.ac.in">www.ugc.ac.in</a> &amp;
+                                                                <a href="www.antiragging.in">www.antiragging.in</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <div class="row">
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head">Register a complaint</h2>
+                                                    <section class="s_website_form pt16 pb16" data-vcss="001"
+                                                             data-snippet="s_website_form" data-name="Form"
+                                                             style="background-image: none;">
+                                                        <div class="o_container_small">
+                                                            <form action="/website/form/" method="post"
+                                                                  enctype="multipart/form-data" class="o_mark_required"
+                                                                  data-mark="" data-pre-fill="true"
+                                                                  data-success-mode="redirect"
+                                                                  data-success-page="/contactus-thank-you"
+                                                                  data-model_name="mail.mail">
+                                                                <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+                                                                    <div class="s_website_form_field mb-3 col-12    s_website_form_dnone"
+                                                                         data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;">
+
+
+                                                                                <span class="s_website_form_label_content"/>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="hidden"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_to"
+                                                                                       value="info@yourcompany.example.com"/>
+
+
+                                                                                <div class="s_website_form_field_description small form-text text-muted">
+                                                                                    Separate email addresses with a
+                                                                                    comma.
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o58pnm4ll0py">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Name
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Name" required="1" value=""
+                                                                                       placeholder="" id="o58pnm4ll0py"
+                                                                                       data-fill-with="name"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom"
+                                                                         data-type="tel" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="olngluc3loec">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Mobile Number
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="tel"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Mobile Number" value=""
+                                                                                       placeholder="" id="olngluc3loec"
+                                                                                       data-fill-with="phone"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="email" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oczq6h3agrzl">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Email
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="email"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_from" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oczq6h3agrzl"
+                                                                                       data-fill-with="email"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oh6j3hhtuq5">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Subject
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="subject" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oh6j3hhtuq5"
+                                                                                       data-fill-with="undefined"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="text" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o2ph4z7t5bxv">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Message
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <textarea
+                                                                                        class="form-control s_website_form_input"
+                                                                                        name="Message" required="1"
+                                                                                        placeholder="" id="o2ph4z7t5bxv"
+                                                                                        rows="3"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-0 py-2 col-12 s_website_form_submit"
+                                                                         data-name="Submit Button">
+                                                                        <div style="width: 150px;"
+                                                                             class="s_website_form_label"/>
+                                                                        <a href="#" role="button"
+                                                                           class="btn btn-primary btn-lg s_website_form_send o_default_snippet_text">
+                                                                            Submit
+                                                                        </a>
+                                                                        <span id="s_website_form_result"/>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                            <div id="tabs3" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs3">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Grievance Redressal Forum</h2>
+                                                    <div class="page_text pt32">
+                                                        <h3 class="sub_head">GRIEVANCE REDRESSAL</h3>
+
+                                                        It is the mission of E.M.E.A College to provide quality
+                                                        education without compromising on standards and values. It is
+                                                        also dedicated to fostering independent thinking amongst its
+                                                        students.
+                                                        <br/>
+
+                                                        There are several ways in which students’ grievances are
+                                                        addressed in our College. Grievance Redressal Cell looks into
+                                                        the grievances of the students. It was setup in view of
+                                                        effectively addressing the problems of the students. A complaint
+                                                        box is installed in the campus and students are free to post
+                                                        their grievance if any and students can also mail their
+                                                        grievance to mail@emeacollege.ac.in or register complaint
+                                                        through complaint register forum in website and the college
+                                                        authority will take immediate action to the complaint.
+                                                        <br/>
+
+                                                        <h3 class="sub_head">CONSTITUTION OF GRIEVANCE REDRESSAL</h3>
+
+                                                        The Students Grievance Redressal Committee is made up of the
+                                                        principal, the controller of examinations, the college
+                                                        librarian, senior staff members and the Physical Director of U.G
+                                                        and P.G Students. This committee meets every semester, receives
+                                                        and addresses all issues related to students.
+                                                        <br/>
+
+                                                        <h3 class="sub_head">OBJECTIVE OF THE CELL</h3>
+                                                        <ul>
+                                                            <li>To provide a forum for the students to voice their
+                                                                grievances
+                                                                with regard to their academic issues and non-academic
+                                                                campus
+                                                                issues.
+                                                            </li>
+                                                            <li>To solve and redress the grievances of the students.
+                                                            </li>
+                                                            <li>To ensure a congenial atmosphere by promoting cordial
+                                                                relationship among all the stakeholders.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h2 class="page_head">Grievance Redressal Committee</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <div class="row">
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <h2 class="page_head">Register a complaint</h2>
+                                                    <section class="s_website_form pt16 pb16" data-vcss="001"
+                                                             data-snippet="s_website_form" data-name="Form"
+                                                             style="background-image: none;">
+                                                        <div class="o_container_small">
+                                                            <form action="/website/form/" method="post"
+                                                                  enctype="multipart/form-data" class="o_mark_required"
+                                                                  data-mark="" data-pre-fill="true"
+                                                                  data-success-mode="redirect"
+                                                                  data-success-page="/contactus-thank-you"
+                                                                  data-model_name="mail.mail">
+                                                                <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+                                                                    <div class="s_website_form_field mb-3 col-12    s_website_form_dnone"
+                                                                         data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;">
+
+
+                                                                                <span class="s_website_form_label_content"/>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="hidden"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_to"
+                                                                                       value="info@yourcompany.example.com"/>
+
+
+                                                                                <div class="s_website_form_field_description small form-text text-muted">
+                                                                                    Separate email addresses with a
+                                                                                    comma.
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o58pnm4ll0py">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Name
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Name" required="1" value=""
+                                                                                       placeholder="" id="o58pnm4ll0py"
+                                                                                       data-fill-with="name"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom"
+                                                                         data-type="tel" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="olngluc3loec">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Mobile Number
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="tel"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Mobile Number" value=""
+                                                                                       placeholder="" id="olngluc3loec"
+                                                                                       data-fill-with="phone"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="email" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oczq6h3agrzl">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Email
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="email"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_from" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oczq6h3agrzl"
+                                                                                       data-fill-with="email"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oh6j3hhtuq5">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Subject
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="subject" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oh6j3hhtuq5"
+                                                                                       data-fill-with="undefined"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="text" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o2ph4z7t5bxv">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Message
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <textarea
+                                                                                        class="form-control s_website_form_input"
+                                                                                        name="Message" required="1"
+                                                                                        placeholder="" id="o2ph4z7t5bxv"
+                                                                                        rows="3"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-0 py-2 col-12 s_website_form_submit"
+                                                                         data-name="Submit Button">
+                                                                        <div style="width: 150px;"
+                                                                             class="s_website_form_label"/>
+                                                                        <a href="#" role="button"
+                                                                           class="btn btn-primary btn-lg s_website_form_send o_default_snippet_text">
+                                                                            Submit
+                                                                        </a>
+                                                                        <span id="s_website_form_result"/>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                            <div id="tabs4" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs4">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Anti Sexual Harassment Cell</h2>
+                                                    <div class="page_text pt32">
+                                                        As per the guidelines of UGC, NAAC and the Supreme Court an
+                                                        Anti-Sexual
+                                                        Harassment Cell has been established by EMEA College to provide
+                                                        a healthy
+                                                        and congenial atmosphere to the staff and students of the
+                                                        College. The cell
+                                                        was constituted to meet the following basic objectives:
+                                                        <ul>
+                                                            <li>To develop the guidelines and norms for a policy against
+                                                                sexual
+                                                                harassment.
+                                                            </li>
+                                                            <li>To develop principles and procedures for combating
+                                                                sexual
+                                                                harassment.
+                                                            </li>
+                                                            <li>To prepare a detailed plan of action, both short and
+                                                                long term
+                                                            </li>
+                                                        </ul>
+                                                        <strong>The functions and responsibilities of committee members
+                                                        </strong>
+                                                        <ul>
+                                                            <li>To organize awareness programmes and campaigns for the
+                                                                benefit of all members of the College on sexual
+                                                                harassment and gender based discrimination;
+                                                            </li>
+                                                            <li>To Promote measures aimed at achieving gender equality,
+                                                                removal of gender bias or discrimination, sexual
+                                                                harassment and other acts of gender based violence;
+                                                            </li>
+                                                            <li>Accomplish the directives of and guidelines issued by
+                                                                the Supreme Court to create an academic and work
+                                                                environment that is free of sexual harassment or
+                                                                gender-based discrimination;
+                                                            </li>
+                                                            <li>Receive and redress complaints received from any member
+                                                                of the College (including students, research scholars,
+                                                                staff, hostel residents and outsiders on College
+                                                                premises)alleging sexual harassment by another member(s)
+                                                                of the College;
+                                                            </li>
+                                                            <li>Conduct formal inquiry and investigate and take
+                                                                decisions upon each complaint and recommend appropriate
+                                                                punishment or action to be taken, by the appropriate
+                                                                authority, in each instance;
+                                                            </li>
+                                                            <li>Provide the services of a professional or other expert
+                                                                in the course of performing its functions;
+                                                            </li>
+                                                            <li>To ensure that all information pertaining either to
+                                                                complaints registered and the proceedings and findings
+                                                                of any inquiries and/or investigations are kept strictly
+                                                                confidential;
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h2 class="page_head">Anti-Sexual Harassment Committee</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <div class="row">
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="former_card">
+                                                            <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                                 alt="Person"
+                                                                 class="card-image" loading="lazy" style=""/>
+                                                            <div class="card-content">
+                                                                <div class="name">Name Of Professor</div>
+                                                                <div class="designation">Designation Of Professor
+                                                                    <br/>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head">Register a complaint</h2>
+                                                    <section class="s_website_form pt16 pb16" data-vcss="001"
+                                                             data-snippet="s_website_form" data-name="Form"
+                                                             style="background-image: none;">
+                                                        <div class="o_container_small">
+                                                            <form action="/website/form/" method="post"
+                                                                  enctype="multipart/form-data" class="o_mark_required"
+                                                                  data-mark="" data-pre-fill="true"
+                                                                  data-success-mode="redirect"
+                                                                  data-success-page="/contactus-thank-you"
+                                                                  data-model_name="mail.mail">
+                                                                <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+                                                                    <div class="s_website_form_field mb-3 col-12    s_website_form_dnone"
+                                                                         data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;">
+
+
+                                                                                <span class="s_website_form_label_content"/>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="hidden"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_to"
+                                                                                       value="info@yourcompany.example.com"/>
+
+
+                                                                                <div class="s_website_form_field_description small form-text text-muted">
+                                                                                    Separate email addresses with a
+                                                                                    comma.
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o58pnm4ll0py">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Name
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Name" required="1" value=""
+                                                                                       placeholder="" id="o58pnm4ll0py"
+                                                                                       data-fill-with="name"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom"
+                                                                         data-type="tel" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="olngluc3loec">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Mobile Number
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="tel"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Mobile Number" value=""
+                                                                                       placeholder="" id="olngluc3loec"
+                                                                                       data-fill-with="phone"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="email" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oczq6h3agrzl">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Email
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="email"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_from" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oczq6h3agrzl"
+                                                                                       data-fill-with="email"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oh6j3hhtuq5">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Subject
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="subject" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oh6j3hhtuq5"
+                                                                                       data-fill-with="undefined"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="text" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o2ph4z7t5bxv">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Message
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <textarea
+                                                                                        class="form-control s_website_form_input"
+                                                                                        name="Message" required="1"
+                                                                                        placeholder="" id="o2ph4z7t5bxv"
+                                                                                        rows="3"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-0 py-2 col-12 s_website_form_submit"
+                                                                         data-name="Submit Button">
+                                                                        <div style="width: 150px;"
+                                                                             class="s_website_form_label"/>
+                                                                        <a href="#" role="button"
+                                                                           class="btn btn-primary btn-lg s_website_form_send o_default_snippet_text">
+                                                                            Submit
+                                                                        </a>
+                                                                        <span id="s_website_form_result"/>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                            <div id="tabs5" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs5">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">College Rules</h2>
+                                                    <div class="page_text pt32">
+                                                        <h2 class="sub_head">Disciplinary Rules</h2>
+                                                        Students are instructed to strictly follow the disciplinary
+                                                        rules of the college.Ignorance of rules is not an excuse.
+                                                        Students are expected to read the notice board on a day to day
+                                                        basis. It is the duty of every student to abide by the rules and
+                                                        regulations of the college and conduct himself/herself with
+                                                        decency and decorum. Violation of the rules will result in
+                                                        disciplinary action against the offenders and imposition of
+                                                        punishment including dismissal.
+                                                        <h3 class="sub_head">Campus Discipline</h3>
+                                                        <ul>
+                                                            <li>Students must observe strict discipline on the campus,
+                                                                behave properly to the principal, faculty members,
+                                                                office staff, fellow students and visitors.
+                                                            </li>
+                                                            <li>No student shall use or keep in possession of alcoholic
+                                                                drinks, drugs, cigarettes or similar intoxicants on the
+                                                                campus.
+                                                            </li>
+                                                        </ul>
+                                                        <h3 class="sub_head">Identity Cards</h3>
+                                                        All students admitted to the college shall compulsorily wear
+                                                        their identity cards whenever they are present in the college
+                                                        campus. All payments, issue of certificates, mark lists etc.,
+                                                        will be made only on production of the identity card. The
+                                                        identity card shall be surrendered to the office at the time of
+                                                        claiming the refund of caution deposit or issuing of Transfer
+                                                        Certificate/Qualifying Certificate whichever is earlier.
+                                                        Identity Card is valid till the completion of the course of
+                                                        study.
+                                                        <br/>
+                                                        <h3 class="sub_head">Ragging</h3>
+                                                        Honourable Supreme court has made it clear that ragging in any
+                                                        forms should be sternly and effectively prevented. Whenever a
+                                                        criminal offence is committed in the name of ragging whether
+                                                        within the campus of an educational institution or in a hostel
+                                                        or otherwise, the Principal/Warden will report the nearest
+                                                        Police Station and not wait until a complaint in this regard is
+                                                        received from the person affected. Appropriate disciplinary
+                                                        action will also be taken against the culprits. The Government
+                                                        &amp;
+                                                        Supreme court made it clear that any lapse in this regard will
+                                                        be seriously viewed. It will be the personal responsibility of
+                                                        the officer in charge of the institution to strictly enforce
+                                                        these rules
+                                                        <br/>
+                                                        <h3 class="sub_head">Dress Code</h3>
+                                                        Students should wear decent dress on all days. Dhoti will not be
+                                                        permitted in the campus. Students entering the campus in special
+                                                        dress code for functions or ceremonies is also prohibited.
+                                                        Sleeveless, round neck T shirts and those with pictures and
+                                                        slogans are not allowed in the campus.
+                                                        <br/>
+                                                        <h3 class="sub_head">Mobile Phone</h3>
+                                                        The use of mobile phones by the students inside the campus is
+                                                        strictly restricted. Violating this rule will be met with
+                                                        disciplinary action. Mobile phones which are brought by the
+                                                        students to the campus will be confiscated and disciplinary
+                                                        action will be taken against the defaulters. The college has
+                                                        instituted a committee to strictly monitor the High Court order
+                                                        regarding the use of mobile phones on the campus. The action
+                                                        against the defaulters will be taken in the monthly meeting of
+                                                        the committee instituted by the principal.
+                                                        <br/>
+                                                        <h3 class="sub_head">Outsiders Not Permitted</h3>
+                                                        Outsiders are not permitted to meet any of the staff or students
+                                                        in the college campus without the permission of the principal.
+                                                        Students shall not bring any outsiders except the
+                                                        parents/guardians to the college for any purpose whatsoever
+                                                        without the permission of the principal.
+                                                        <h3 class="sub_head">General Rules</h3>
+                                                        <ol>
+                                                            <li>Unofficial meetings, strikes and fund collection are
+                                                                strictly prohibited.
+                                                            </li>
+                                                            <li>Political organisations are not allowed to enter the
+                                                                campus. Students are strictly prohibited from
+                                                                organising, attending or participating in any activity
+                                                                or agitation without prior permission from the
+                                                                Principal.
+                                                            </li>
+                                                            <li>The college being a centre of learning and an exclusive
+                                                                academic zone, nobody should respond to any call for any
+                                                                form of strike or agitation including slogan shouting,
+                                                                dharna or any other activity which may harm the peaceful
+                                                                atmosphere of the institution.
+                                                            </li>
+                                                            <li>They shall not post notices or display posters anywhere
+                                                                in the campus and compound walls without the permission
+                                                                of the principal.
+                                                            </li>
+                                                            <li>Strict silence shall be observed while moving about in
+                                                                the campus. During official meetings held in the
+                                                                college, strict discipline must be maintained.
+                                                            </li>
+                                                            <li>Students are strictly directed to spend their leisure
+                                                                time in the library or reading room. They shall not
+                                                                leave the class without the permission of the tutor or
+                                                                until the class is dispersed.
+                                                            </li>
+                                                            <li>Students shall not enter any class other than their
+                                                                own.
+                                                            </li>
+                                                            <li>The principal shall have power to inflict punishments
+                                                                such as fine, denial of attendance, suspension,
+                                                                compulsory issue of TC, etc., to any student according
+                                                                to his discretion.
+                                                            </li>
+                                                            <li>Students are advised to consult their respective
+                                                                tutorial advisors on matters including their personal
+                                                                problems in the campus.
+                                                            </li>
+                                                            <li>The properties and equipment of the college are to be
+                                                                handled with extreme care.
+                                                            </li>
+                                                            <li>Students shall keep the campus and the class room clean
+                                                                and tidy without writing on or disfiguring the walls,
+                                                                furniture, doors, windows etc.
+                                                            </li>
+                                                            <li>Damages caused to them will have to be adequately
+                                                                compensated, failing which disciplinary action will be
+                                                                taken with the principal’s discretion.
+                                                            </li>
+                                                            <li>The students shall not enter the departments if a
+                                                                teacher is not present. They shall seek the teacher’s
+                                                                permission to enter the department.
+                                                            </li>
+                                                            <li>Students who go over to other college or institutions
+                                                                and engage in acts of indiscipline such as demonstration
+                                                                or strikes will be punished.
+                                                            </li>
+                                                            <li>No meetings shall be held without the prior permission
+                                                                of the Principal.
+                                                            </li>
+                                                            <li>In order to monitor and supervise the functioning of the
+                                                                hostels, separate committees for hostels will be
+                                                                constituted by the College Council with five members.
+                                                                The Head of the Institution shall be the
+                                                                Chairman/Chairperson and Hostel Warden the Convenor.
+                                                            </li>
+                                                            <li>If any complaint is received from hostel inmates or from
+                                                                the public to the Head of the Institution about the
+                                                                misbehavior of students and about activities like
+                                                                keeping weapons,consuming alcohol, using drugs in
+                                                                campus/hostel rooms etc, steps will be taken as per the
+                                                                rules in force. The committee intended for hostels must
+                                                                be vigilant and effective. Room of security personnel is
+                                                                located near to the entry gate.
+                                                            </li>
+                                                            <li>CCTV Cameras are installed in selected common places
+                                                                such as entrance and exit gates of the college and
+                                                                hostels.
+                                                            </li>
+                                                            <li>Public, including former students, will be allowed to
+                                                                enter the college campus only for genuine reasons. They
+                                                                will not be allowed to enter the class rooms and hostel
+                                                                rooms in any case.
+                                                            </li>
+                                                            <li>Programmes by external agencies/professional groups/paid
+                                                                programmes such as DJ musical events shall not be
+                                                                permitted inside the campus. Any type of fund raising
+                                                                from the students shall not be permitted, as these
+                                                                practices lead to extortion and misuse of fund.
+                                                                Technical festivals should be limited to technical
+                                                                activities. There is no restriction for students’
+                                                                programmes.
+                                                            </li>
+                                                            <li>Bike race/motor car race/elephant procession or similar
+                                                                activities should not be permitted inside the
+                                                                campus/hostels.
+                                                            </li>
+                                                            <li>In the interest of security of students, police may be
+                                                                informed In advance about all festival celebrations.
+                                                            </li>
+                                                            <li>Counseling service/Social work service may be arranged
+                                                                to cope with problems of students. Individual/group
+                                                                counselling may be
+                                                            </li>
+                                                            <li>arranged. Anti-ragging awareness programmes will be
+                                                                conducted. Activities like NSS/ NCC/Yoga/Sports may be
+                                                                encouraged.
+                                                            </li>
+                                                            <li>For all students’ programme in the campus, presence of
+                                                                teachers is mandatory. The students’ programme should
+                                                                not be permitted beyond 9 p.m.
+                                                            </li>
+                                                        </ol>
+                                                        <h3 class="sub_head">Organisational Activities of the Students
+                                                        </h3>
+                                                        <ul>
+                                                            <li>As per the Judgment by the Honorable High Court of
+                                                                Kerala,the university syndicate has permitted the
+                                                                management to stall organizational activities of
+                                                                students in the campus.
+                                                            </li>
+                                                            <li>Students are forbidden to attend or organise any meeting
+                                                                in the college or to collect money for any purpose
+                                                                without thepermission of the Principal.
+                                                            </li>
+                                                            <li>All celebrations in the campus, including union
+                                                                activities, should be held only after getting prior
+                                                                permission from the Head of the Institution.
+                                                                Celebrations of any type should be communicated to the
+                                                                Head of the Institution through concerned Staff Advisor
+                                                                at least five working days prior to the event, with
+                                                                programme details, guests attending, source of funds,
+                                                                expenditure estimates etc. The Discipline Committee
+                                                                should monitor and supervise the celebration in the
+                                                                college.
+                                                            </li>
+                                                            <li>Students’ Union activities should be supervised by a
+                                                                committee chaired by the Head of the Institution with
+                                                                Staff Advisor as Convenor, and HoDs and Discipline
+                                                                Committee members.
+                                                            </li>
+                                                            <li>No type of vehicle should be used during celebrations
+                                                                inside the campus.
+                                                            </li>
+                                                            <li>Students are prohibited from indulging in
+                                                                anti-institutional, antinational, anti-social, communal
+                                                                and immoral activities.
+                                                            </li>
+                                                            <li>Students who are charged in criminal offence or those
+                                                                who are under suspension will not be allowed to enter
+                                                                the college campus without the permission of the
+                                                                principal.
+                                                            </li>
+                                                            <li>Any student who is persistently insubordinate,
+                                                                repeatedly mischievous, guilty of fraud or malpractice
+                                                                in connection with the examinations will be removed from
+                                                                the rolls.
+                                                            </li>
+                                                            <li>The students are directed to uphold moral and ethical
+                                                                values of our society while they are inside and outside
+                                                                the college campus.
+                                                            </li>
+                                                        </ul>
+                                                        <h3 class="sub_head">Organisational Activities of the Students
+                                                        </h3>
+                                                        Students are not allowed to bring vehicles inside the campus.
+                                                        But permission is granted to students on certain conditions.
+                                                        They have to avail a parking permit in advance and park the
+                                                        vehicle at the allotted place at their own risk according to the
+                                                        direction given by the security staff. Violation of the parking
+                                                        regulations will be considered as a serious act of indiscipline.
+                                                        <br/>
+                                                        <ul>
+                                                            <li>Special parking permits will be issued to the disabled.
+                                                                They can park at the designated areas specified to them.
+                                                                This permit is not transferable from person-to-person or
+                                                                from vehicle-to-vehicle.
+                                                            </li>
+                                                            <li>No vehicle shall ever park in such a manner as to block
+                                                                or obstruct another vehicle, front gate, walkway,
+                                                                doorway, or driveway, at any time for any reason.
+                                                            </li>
+                                                            <li>The operation of any motorized or non-motorized
+                                                                vehicle,including roller skates/blades and bicycles, are
+                                                                prohibited in the college buildings and verandas.
+                                                            </li>
+                                                            <li>Motorcycles and bicycles shall park only in areas
+                                                                designated as “Two Wheelers Only”. They shall not park
+                                                                in areas or spaces intended for other vehicles. No
+                                                                vehicle shall park in any area not specifically
+                                                                designated for parking.
+                                                            </li>
+                                                            <li>No vehicle shall park in any designated “No Parking”
+                                                                area.All vehicles shall be parked completely within the
+                                                                designated space. Vehicles shall not be parked
+                                                                stretching to more thanone designated space.
+                                                            </li>
+                                                        </ul>
+                                                        <h3 class="sub_head">Laboratory Rules</h3>
+                                                        <p>
+                                                            <strong>The following are the general rules to be followed
+                                                                in the Computer, Biosciences and Language labs:
+                                                            </strong>
+                                                            <br/>
+                                                            • Students should involve in the lab work in the most
+                                                            disciplined fashion. They should realize that lab hours are
+                                                            the stepping stones to an intimate understanding of the
+                                                            subject and future research.
+                                                            <br/>
+                                                            • Students should maintain silence and cleanliness inside
+                                                            the lab.
+                                                            <br/>
+                                                            • All equipments should be handled with care and utmost
+                                                            responsibility.
+                                                            <br/>
+                                                            • No equipment should be displaced from its original
+                                                            position and order.
+                                                            <br/>
+                                                            • Strict action will be taken if any article is stolen from
+                                                            the lab.
+                                                            <br/>
+                                                            • If any equipment or apparatus is broken out of
+                                                            carelessness, the student responsible will have to pay fine.
+                                                            <br/>
+                                                            • Students should sign the log book at the commencement of
+                                                            the lab hour.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs6" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs6">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Ethics Committee</h2>
+                                                    <div class="page_text pt32">
+                                                        An Ethics Committee has been constituted as per the Govt. Order
+                                                        (RT)
+                                                        No. 346/05/H.Edn. dt. 01-03-2005 to monitor implementation of
+                                                        the
+                                                        decision banning mobile phones, strikes etc...with the
+                                                        co-operation
+                                                        of the College PTA, Staff members, Students’ Union, Management
+                                                        Committee, NSS, NCC, and local authorities. The Committee
+                                                        consists
+                                                        of the following members:
+                                                    </div>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <h2 class="page_head">Register a complaint</h2>
+                                                    <section class="s_website_form pt16 pb16" data-vcss="001"
+                                                             data-snippet="s_website_form" data-name="Form"
+                                                             style="background-image: none;">
+                                                        <div class="o_container_small">
+                                                            <form action="/website/form/" method="post"
+                                                                  enctype="multipart/form-data" class="o_mark_required"
+                                                                  data-mark="" data-pre-fill="true"
+                                                                  data-success-mode="redirect"
+                                                                  data-success-page="/contactus-thank-you"
+                                                                  data-model_name="mail.mail">
+                                                                <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+                                                                    <div class="s_website_form_field mb-3 col-12    s_website_form_dnone"
+                                                                         data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;">
+
+
+                                                                                <span class="s_website_form_label_content"/>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="hidden"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_to"
+                                                                                       value="info@yourcompany.example.com"/>
+
+
+                                                                                <div class="s_website_form_field_description small form-text text-muted">
+                                                                                    Separate email addresses with a
+                                                                                    comma.
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o58pnm4ll0py">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Name
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Name" required="1" value=""
+                                                                                       placeholder="" id="o58pnm4ll0py"
+                                                                                       data-fill-with="name"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom"
+                                                                         data-type="tel" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="olngluc3loec">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Mobile Number
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="tel"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="Mobile Number" value=""
+                                                                                       placeholder="" id="olngluc3loec"
+                                                                                       data-fill-with="phone"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="email" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oczq6h3agrzl">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Email
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="email"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="email_from" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oczq6h3agrzl"
+                                                                                       data-fill-with="email"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                                         data-type="char" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="oh6j3hhtuq5">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Subject
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <input type="text"
+                                                                                       class="form-control s_website_form_input"
+                                                                                       name="subject" required="true"
+                                                                                       value="" placeholder=""
+                                                                                       id="oh6j3hhtuq5"
+                                                                                       data-fill-with="undefined"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-visibility-condition=""
+                                                                         data-visibility-between=""
+                                                                         class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                                         data-type="text" data-name="Field">
+                                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                                   style="width: 150px;"
+                                                                                   for="o2ph4z7t5bxv">
+
+
+                                                                                <span class="s_website_form_label_content">
+                                                                                    Message
+                                                                                </span>
+
+
+                                                                            </label>
+                                                                            <div class="col-sm">
+
+                                                                                <textarea
+                                                                                        class="form-control s_website_form_input"
+                                                                                        name="Message" required="1"
+                                                                                        placeholder="" id="o2ph4z7t5bxv"
+                                                                                        rows="3"/>
+
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-0 py-2 col-12 s_website_form_submit"
+                                                                         data-name="Submit Button">
+                                                                        <div style="width: 150px;"
+                                                                             class="s_website_form_label"/>
+                                                                        <a href="#" role="button"
+                                                                           class="btn btn-primary btn-lg s_website_form_send o_default_snippet_text">
+                                                                            Submit
+                                                                        </a>
+                                                                        <span id="s_website_form_result"/>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="student_discipline_emea_page" model="website.page">
+            <field name="url">/student_discipline</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="student_discipline_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

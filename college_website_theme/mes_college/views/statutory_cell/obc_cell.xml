@@ -1,0 +1,158 @@
+<odoo>
+    <data>
+        <record id="obc_cell" model="ir.ui.view">
+            <field name="name">OBC Cell</field>
+            <field name="type">qweb</field>
+            <field name="key">mes_college.obc_cell</field>
+            <field name="arch" type="xml">
+                <t name="english" t-name="mes_college.obc_cell_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <section class="s_tabs pb o_colored_level tabs_back tabs_back" data-vcss="001"
+                                         data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " id="tab_rows">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="side_section"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+                                            <div class="clubs">Statutory Cells
+                                            </div>
+                                            <div class="side-bar" id="sidebar" style="top: 5px;margin-bottom: 0;">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/anti_ragging_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Anti Ragging Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/anti_sexual_harassment_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Anti Sexual Harassment Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/students_grievance_redressal_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Students Grievance and Redressal Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/sc_st_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            SC/ST Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/minority_cell"
+                                                           data-original-title="" title="" class="nav-link ">
+                                                            Minority Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="/obc_cell"
+                                                           data-original-title="" title="" class="nav-link active">
+                                                            OBC Cell
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level">
+                                            <div class="oe_structure oe_empty"
+                                                 data-editor-sage="DRAG BUILDING BLOCKS HERE">
+                                                <section id="departments_page">
+                                                    <h2 class="page_head" style="padding-left:0px"
+                                                        id="department_subhead">
+                                                        OBC Cell
+                                                    </h2>
+                                                    <div class="content_text" style="text-align:justify;padding: 0;">
+                                                        A special Cell to look into the affairs of Other Backward Class
+                                                        (Backward and Most Backward) students and staff of the
+                                                        institution is constituted and functioning in the campus in
+                                                        accordance with the XI plan guidelines of the University Grants
+                                                        Commission.
+                                                        <br/>
+                                                        <br/>
+                                                        <strong>
+                                                            Objectives
+                                                        </strong>
+                                                        <br/>
+                                                        <br/>
+                                                        <ul>
+                                                            <li>Ensure reservation norms in the admission of students
+                                                                and in the appointments of teaching and non-teaching
+                                                                staff.
+                                                            </li>
+                                                            <li>
+                                                                Maintain social relationship among the admitted students
+                                                                in the college and resolve issues, grievances,
+                                                                representations etc.,
+                                                            </li>
+                                                            <li>
+                                                                Explore redressal mechanisms and provisions for remedial
+                                                                coaching, counseling etc.,
+                                                            </li>
+                                                            <li>
+                                                                Coordination of equal opportunity, welfare and other
+                                                                schemes including financial assistances from the
+                                                                government and UGC.
+                                                            </li>
+                                                        </ul>
+                                                        The committee meets at least once a year and submits annual
+                                                        report to the Head of the Institution on OBC students admitted
+                                                        against reservation norms, admitted in general category,
+                                                        complaints and references reported by the students, relationship
+                                                        environment, facilities for girl students, financial assistances
+                                                        received from the state and central governments etc.
+
+                                                        <div class=" col-md-3 mt32">
+                                                            <div class="faculties">
+                                                                <div class="faculty_img">
+                                                                    <img src="/mes_college/static/img/faculty.jpg"
+                                                                         class="w-100 h-100"/>
+                                                                </div>
+                                                                <div class="faculty_name">
+                                                                    Sakkeer P
+                                                                </div>
+                                                                <div class="designation">Nodal Officer
+                                                                </div>
+                                                                <span style="font-size:12px;">Department
+                                                                    of Economics
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <section class="naac_link aqar" style="width: fit-content;">
+                                                            <a href="#"
+                                                               class="readmore" target="_blank" id="naac_link">Register
+                                                                a
+                                                                complaint
+                                                                <span class="fa fa-long-arrow-right text-o-color-3"
+                                                                      data-bs-original-title=""
+                                                                      title="" aria-describedby="tooltip544395"></span>
+                                                            </a>
+                                                        </section>
+
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="obc_cell_page" model="website.page">
+            <field name="url">/obc_cell</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="obc_cell"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>

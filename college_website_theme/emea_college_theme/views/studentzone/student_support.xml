@@ -1,0 +1,1086 @@
+<odoo>
+    <data>
+        <record id="student_support_emea" model="ir.ui.view">
+            <field name="name">Student Support Scheme</field>
+            <field name="type">qweb</field>
+            <field name="key">emea_college_theme.student_support_emea</field>
+            <field name="arch" type="xml">
+                <t name="Clubs" t-name="emea_college_theme.student_support_menu">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure">
+                            <section class="page o_colored_level" style="padding: 0px; background-image: none;">
+                                <div class="bg_color_club" data-original-title="" title=""
+                                     aria-describedby="tooltip229435">
+                                    <div class="clubs">Student Support Scheme
+                                    </div>
+                                </div>
+                                <section class="s_tabs pb o_colored_level" data-vcss="001" data-snippet="s_tabs"
+                                         data-name="Tabs" style="background-image: none;">
+                                    <div class="s_tabs_main row " style="margin: 0 32px;">
+                                        <div class="col-12 col-md-3 o_colored_level s_tabs_nav" id="clubs"
+                                             data-original-title=""
+                                             title="" aria-describedby="tooltip336631">
+
+                                            <div class="side-bar" id="sidebar">
+                                                <ul class="tabs-list1 nav nav-pills  flex-column"
+                                                    style="padding-inline-start: 0;">
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs1" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs1"
+                                                           data-original-title="" title="" class="nav-link active"
+                                                           aria-controls="tabs1">About Student Support
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class=" nav-item">
+                                                        <a href="#tabs2" data-bs-toggle="tab" role="tab"
+                                                           id="sidebar_tabs2"
+                                                           data-original-title="" title="" class="nav-link">Advisory
+                                                            Scheme
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs3" id="sidebar_tabs3" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Scholar
+                                                            Support Programme (SSP)
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs4" id="sidebar_tabs4" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Additional
+                                                            Skill Acquition Programme (ASAP)
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs5" id="sidebar_tabs5" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Students Aid
+                                                            Fund
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs6" id="sidebar_tabs6" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Counselling
+                                                            Centre
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs7" id="sidebar_tabs7" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Career
+                                                            Guidance and Placement Cell
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs8" id="sidebar_tabs8" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Equal
+                                                            Opportunity Centre (EOC)
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs9" id="sidebar_tabs9" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Walk With a
+                                                            Scholar Programme (WWS)
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs10" id="sidebar_tabs10" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">
+                                                            NPTEL Local Chapter
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs11" id="sidebar_tabs11" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">Prizes and
+                                                            Awards for Academic Excellence
+                                                        </a>
+                                                    </li>
+                                                    <li id="sidebar-li" class="nav-item">
+                                                        <a href="#tabs12" id="sidebar_tabs12" data-bs-toggle="tab"
+                                                           role="tab"
+                                                           data-original-title="" title="" class="nav-link">
+                                                            Student Mentoring
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 order-1 order-md-2 pt48 pb48 o_colored_level s_tabs_content tab-content"
+                                             id="page-content">
+                                            <div id="tabs1" class=" tab-pane fade active show" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs1">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">About Student Support</h2>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Principal as Chairperson and three other members including
+                                                            ad-visors to review the implementation of various schemes
+                                                            and programmes for the betterment of the students.Student
+                                                            Support (Re)defined aims to understand how community
+                                                            colleges can feasibly deliver support both inside and
+                                                            outside the classroom to improve success for all
+                                                            students.The provision of student support services including
+                                                            personal and financial counselling, careers guidance and
+                                                            support for students with disabilities is an established
+                                                            part of the support available to students in all higher
+                                                            education institutions (HEIs),The increasing diversity of
+                                                            students entering HEIs has resulted in additional support
+                                                            being made available to support the academic and personal
+                                                            development of students, including study skills to support
+                                                            academic writing skills and subject specific support to
+                                                            address gaps in subject knowledge and understanding. This
+                                                            support contributes to the quality of the students’ learning
+                                                            experience and to their educational achievement.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs2" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs2">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Advisory Scheme</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image" loading="lazy" style=""/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+
+                                                            An Advisory Committee is formed with the Principal as
+                                                            Chairperson and three other members including ad-visors to
+                                                            review the implementation of various schemes and programmes
+                                                            for the betterment of the academic ambience. It includes
+                                                            programmes like Advanced Learners (Principal's Club). The
+                                                            com-mittee is committed to identify students who need
+                                                            special assistance in their acadamics. It also extends its
+                                                            care to other related activities undertaken by the col-lege
+                                                            as well as implementation of reser-vation policy in
+                                                            admission and recruit-ment for SC, ST, PH, OBC (non-creamy
+                                                            layer) and others, if any. The committee holds its meeting
+                                                            at least once in every month, and action taken on decisions
+                                                            is reviewed in the subsequent meetings.
+                                                            <h3 class="sub_head">The Advisor</h3>
+                                                            Main duties of the adviser in the college shall:
+                                                            <ul>
+                                                                <li>oversee/monitor various welfare schemes/ programmes
+                                                                    sponsored by the Government of India/State
+                                                                    Government, UGC or any agency/ organization as well
+                                                                    as those devised by the college/affiliating
+                                                                    university for the disadvantaged groups for their
+                                                                    effective implementation.
+                                                                </li>
+                                                                <li>be responsible for the effective func-tioning of
+                                                                    SC/ST Cell and other such Cells/Centres dealing with
+                                                                    the prob-lems of different socially disadvantaged
+                                                                    groups.
+                                                                </li>
+                                                                <li>Convene the meetings of incharge of other
+                                                                    Committees/Programmes dealing with social issues
+                                                                    such as Gender Sensi-tization Committee against
+                                                                    Sexual Ha-rassment (GSCASH), National Service
+                                                                    Schemes (NSS) etc. to review their activ-ities.
+                                                                </li>
+                                                                <li>The Advisor shall submit the prog-ress/review report
+                                                                    to the Principal. The Coordinators of SC/ST Cell,
+                                                                    Remedial Coaching and other schemes/ Women’s Study
+                                                                    Centre, Popu-lation Education Cell etc. shall be
+                                                                    closely associated with the Equal Op-portunity
+                                                                    Centre.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip" class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#"
+                                                                   class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs3" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs3">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Scholar Support Programme (SSP)</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image" loading="lazy" style=""/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The college offers special attention Programme (SSP). Weaker
+                                                            students are to the weaker students. Remedial identified by
+                                                            the respective tutors and coaching session is provided
+                                                            through- special coaching are given Saturdays and out the
+                                                            year by the Scholar Support college off time.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""
+                                                                     loading="lazy" style=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs4" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs4">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Additional Skill Acquition Programme (ASAP)
+                                                    </h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image" loading="lazy" style=""/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+
+                                                            Asap is Kerala Government initiative to help students equip
+                                                            themselves with various skills sought after in job market.
+                                                            The programme in English comprises of a foundation course
+                                                            and a skill course. EMEA College is an approved training
+                                                            partner of Additional Skill Acqusion Programme(ASAP); a
+                                                            scheme jointly implemented by the Department of General
+                                                            Education and Higher Education, Government of Kerala. The
+                                                            programme seeks to equip students currently enrolled in the
+                                                            higher secondary and Under Graduate courses in Arts &amp;
+                                                            Science colleges, with industry/business relevant skills. It
+                                                            aims at creating employment opportunities for the unemployed
+                                                            youth, enhancement of skill sets of the labour force,
+                                                            emphasizing industry linkage and enhancing employability of
+                                                            students by introducing additional skill acquisition
+                                                            programmes in their career. Students enrolled with ASAP will
+                                                            get opportunity to learn sector specific skills of their
+                                                            choice. Communicative English and Basic IT modules are
+                                                            integral component of ASAP Programmes. Currently ASAP is
+                                                            looking to recruit Communicative English and IT trainers as
+                                                            Skill Development Executives. For Details login
+                                                            <a href="www.asapkerala.gov.in"/>
+
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""
+                                                                     loading="lazy" style=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs5" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs5">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Students Aid Fund</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Student Aid Fund and Internal Scholarship aims to find out
+                                                            the top scorers in each department of EMEA college, and to
+                                                            give scholarship to the students.The college had several
+                                                            endowment scholarships for various categories of students,
+                                                            instituted by our well-wishers from time to time.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs6" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs6">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Counselling Centre</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Counselling center has hear setup at college in order to
+                                                            address the various psy-chological issues of student
+                                                            community so as to provide a heather mental and spiritual
+                                                            wellbeing. Exports are invited to the campus to mass
+                                                            counselling and indi-vidual counselling.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs7" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs7">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Career Guidance and Placement Cell</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            The centre offers career and course guidance service to the
+                                                            learners in the campus and conducts coaching classes for
+                                                            candidates appearing for various competitive examinations.
+                                                            The centre also subscribes to many journals and periodicals
+                                                            related to career guidance
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs8" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs8">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Equal Opportunity Centre (EOC)</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            As per the guidelines of UGC College has set up an Equal
+                                                            Opportunity Centre for the benefit of disadvantaged sections
+                                                            of students. This includes guidance and counseling with
+                                                            respect to academic, financial and other matters.
+                                                            <strong>Main functions of EOC are</strong>
+                                                            <ul>
+                                                                <li>To ensure equity and equal opportunity to the
+                                                                    community at large in the college and bring about
+                                                                    social inclusion.
+                                                                </li>
+
+                                                                <li>To enhance the diversity among the students,
+                                                                    teaching and non-teaching staff pop-ulation and at
+                                                                    the same time eliminate the perception of
+                                                                    discrimination.
+                                                                </li>
+
+                                                                <li>To create a socially congenial atmosphere for
+                                                                    academic interaction and for the growth of healthy
+                                                                    interpersonal relationships among the students
+                                                                    coming from var-ious social backgrounds.
+                                                                </li>
+
+                                                                <li>To make efforts to sensitize the academic community
+                                                                    regarding the problems asso-ciated with social
+                                                                    exclusion as well as aspirations of the marginalized
+                                                                    communities.
+                                                                </li>
+
+                                                                <li>To help individuals or a group of students belonging
+                                                                    to the disadvantaged section of society to contain
+                                                                    the problems related to discrimination.
+                                                                </li>
+
+                                                                <li>To look into the grievances of the weaker sectionof
+                                                                    society and suggest amicable solution to their
+                                                                    problems.
+                                                                </li>
+
+                                                                <li>To disseminate the information related to schemes
+                                                                    and programmes for the welfare of the socially
+                                                                    weaker section as well as notifications/memoranda,
+                                                                    office orders of the Government, or other related
+                                                                    agencies/organizations issued from time to time.
+                                                                </li>
+
+                                                                <li>To prepare barrier free formalities/procedures for
+                                                                    admission/ registration of stu-dents belonging to
+                                                                    the disadvantaged groups of society.
+                                                                </li>
+
+                                                                <li>To establish coordination with the Government and
+                                                                    other agencies/organizations to mobilize academic
+                                                                    and financial resources to provide assistance to
+                                                                    students of the disadvantaged groups.
+                                                                </li>
+
+                                                                <li>To organize periodic meetings to monitor the
+                                                                    progress of different schemes.
+                                                                </li>
+
+                                                                <li>To adopt measures to ensure due share of utilization
+                                                                    by SC/ST in admissions, re-cruitments (teaching and
+                                                                    non¬teaching posts) and to improve their
+                                                                    performances.
+                                                                </li>
+
+                                                                <li>To sensitize the college on the problems of SC/ST
+                                                                    and other disadvantaged groups.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs9" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs9">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Walk With a Scholar Programme (WWS)</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            Walk With a Scholar (WWS) is a dream project of Government
+                                                            of Kerala for the students. The mentoring programmes provide
+                                                            guidance and help students build a bright career. The scheme
+                                                            introduces the idea of mentoring and build capacities on the
+                                                            concept of the mentor as a ‘Guide’ and ‘Friend’. The
+                                                            programme has both inter-nal and external mentors who design
+                                                            various lessons identifying the needs of their mentees.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs10" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs10">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">NPTEL Local Chapter</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+
+                                                            EMEA College is an active local chapter(LC ID:3245) of
+                                                            National Programme on Technology Enhanced Learning
+                                                            (NPTEL).NPTEL is a project funded by the Ministry of Human
+                                                            Resource Development (MHRD), that provides e -learning
+                                                            through online Web and Video courses in Engineering,
+                                                            Sciences, Technology, Management and Humanities. This is a
+                                                            joint initiative by seven IITs and IISc Bangalore. Other
+                                                            selected premier institutions also act as Associate Partner
+                                                            Institutions.NPTEL is one of the national coordinators of
+                                                            Ministry of HRD’s prestigious Study Webs of Active –
+                                                            Learning for Young Aspiring Minds (SWAYAM) programme. All
+                                                            courses offered by NPTEL are part of SWAYAM.
+                                                            <br/>
+
+                                                            Online courses offered by NPTEL provides excellent
+                                                            opportunities for students and faculty members to enhance
+                                                            their career.UGC and AICTE already communicated to all
+                                                            Universities to consider the courses offered by SWAYAM (and
+                                                            NPTEL) for credit transfer for the students enrolled as
+                                                            regular/part-time students in any educational institution in
+                                                            India. NPTEL and AICTE signed a MOU to approve selected
+                                                            advanced courses eligible for FDP. UGC also made
+                                                            arrangements to design refresher courses for faculty on
+                                                            SWAYAM portal.
+                                                            <br/>
+
+                                                            The aim of NPTEL Awareness Workshops is to create maximum
+                                                            awareness among faculty members about NPTEL and its various
+                                                            initiatives. The workshop will include sessions on NPTEL and
+                                                            its features, NPTEL Online Certification courses and the
+                                                            concept of NPTEL Local Chapters.
+                                                            <br/>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <a href="https://swayam.gov.in/">
+                                                            <img src="emea_college_theme/static/img/Swayam.png"
+                                                                 style="float:left; height:auto; width:auto;"/>
+                                                        </a>
+                                                        <a href="https://www.swayamprabha.gov.in/">
+                                                            <img src="emea_college_theme/static/img/swayamprabha.png"
+                                                                 style="float:left; height:auto; width:auto;"/>
+                                                        </a>
+                                                        <a href="https://ugcmoocs.inflibnet.ac.in/ugccourses.php?period=jan_may_2019">
+                                                            <img src="emea_college_theme/static/img/swayam_course.png"
+                                                                 style="float:left; height:auto; width:auto;"/>
+                                                        </a>
+                                                        <a href="https://www.ugc.ac.in/video.aspx">
+                                                            <img src="emea_college_theme/static/img/UGC.png"
+                                                                 style="float:left;height:auto; width:auto;"/>
+                                                        </a>
+                                                        <a href="http://epgp.inflibnet.ac.in/">
+                                                            <img src="emea_college_theme/static/img/E-patsala.png"
+                                                                 style="float:left; height:auto; width:auto;"/>
+                                                        </a>
+                                                        <a href="http://ugcmoocs.inflibnet.ac.in/">
+                                                            <img src="emea_college_theme/static/img/UGCMOOCS.png"
+                                                                 style="float:left; height:auto; width:auto;"/>
+                                                        </a>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs11" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs11">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Prizes and Awards for Academic Excellence</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+                                                            <ul>
+                                                                <li>
+                                                                    <strong>Shihab Thangal Memorial Fellowship</strong>–
+                                                                    Instituted by
+                                                                    college PTA for the top scorers of each department
+                                                                    (TEN Departments).
+                                                                </li>
+                                                                <li>
+                                                                    <strong>
+                                                                        NV Ibrahim Master Memorial Excellency Award
+                                                                    </strong>
+                                                                    – This
+                                                                    is a prestigious Gold Medal Award of EMEA College,
+                                                                    instituted by former Principal, Prof. Suhadu in the
+                                                                    name of her father late NV Ibrahim Master (He was an
+                                                                    active member of the Management Committee and master
+                                                                    mind of EMEA Institutions), for the student on the
+                                                                    basis of the overall performance.
+
+                                                                </li>
+                                                                <li>
+                                                                    <strong>PG Commerce Topper Award</strong>
+                                                                    – This is a cash award
+                                                                    instituted by Prof. Mohamed Basheer Nalakath,
+                                                                    Perinthalmanna, former faculty of the PG Department
+                                                                    of Commerce, for the student from the college who
+                                                                    scores highest mark/grade in the University MCom
+                                                                    Examinations.
+
+                                                                </li>
+                                                                <li>
+                                                                    <strong>Nishad Memorial Best Performer
+                                                                        Award</strong>- This is a
+                                                                    cash award instituted by the BCom 2002-‘05 Batch in
+                                                                    the name of their class mate late Mr. Nishad, for
+                                                                    the students who scores highest mark/ grade from
+                                                                    this college, in the University Examination of
+                                                                    Commerce (BCom Cooperation).
+
+                                                                </li>
+                                                                <li>
+                                                                    <strong>Aseem Memorial Top Scorer Award</strong>-
+                                                                    This is a cash
+                                                                    award instituted by the BCom 2003-‘06 Batch in the
+                                                                    name of their class mate late Mr. Aseem, for the
+                                                                    student who scores highest mark/ grade from this
+                                                                    college, in the University Examination of Commerce
+                                                                    (BCom Computer Application).
+
+                                                                </li>
+                                                                <li><strong>
+                                                                    Top Scorer Award in BSc Computer Science</strong>–
+                                                                    This is
+                                                                    cash award instituted by Prof. Muhammed Palenegara,
+                                                                    former Principal and faculty of the department of
+                                                                    Computer Science,for the student who scores highest
+                                                                    mark/grade from this college, in the University
+                                                                    examination of BSc Computer Science.
+                                                                </li>
+                                                                <li><strong>Best Outgoing Student Award in West Asian
+                                                                    Studies</strong>–
+                                                                    This is a cash award instituted by Prof. Kunharu,
+                                                                    former faculty of the Department of West Asian
+                                                                    Studies, for the Best Outgoing Student of West Asian
+                                                                    Studies Department.
+                                                                </li>
+                                                                <li><strong>Best Outgoing Student Award</strong>- This
+                                                                    is a cash award
+                                                                    instituted by Dr. Moideen Kutty, Relief Hospital
+                                                                    &amp;
+                                                                    Trauma Centre, Kondotty, to the best outgoing
+                                                                    student of the college.
+                                                                </li>
+                                                                <li>
+                                                                    <strong>Advocate Faizal Memorial Award for Economics
+                                                                        Topper
+                                                                    </strong>
+                                                                    – This is a cash award instituted by the B A
+                                                                    (Economics) 1995- ’98 Batch in the name of their
+                                                                    class mate late Mr. Faizal, for the student who
+                                                                    scores highest mark/ grade from this college, in the
+                                                                    University Examination of BA Economics.
+                                                                </li>
+                                                                <li>
+                                                                    <strong>Best Student Award</strong>
+                                                                    - This is a cash award instituted
+                                                                    by OSAEMEA Jeddah Chapter, for the best student of
+                                                                    the college.
+                                                                </li>
+                                                                <li><strong>Topper Award</strong>- This is a cash award
+                                                                    instituted by
+                                                                    OSAEMEA Dubai Chapter, for the topper of the
+                                                                    college.
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs12" class=" tab-pane fade" style="" role="tabpanel"
+                                                 aria-labelledby="sidebar_tabs12">
+                                                <div class="oe_structure oe_empty"
+                                                     data-editor-message="DRAG BUILDING BLOCKS HERE">
+                                                    <h2 class="page_head">Student Mentoring</h2>
+                                                    <h3 class="in_charge">In-Charge
+                                                    </h3>
+                                                    <section class="former_card">
+                                                        <img src="/emea_college_theme/static/img/alumni4.jpg"
+                                                             alt="Person"
+                                                             class="card-image"/>
+                                                        <div class="card-content">
+                                                            <div class="name">Name Of Professor</div>
+                                                            <div class="designation">Designation Of Professor
+                                                                <br/>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="page_text pt32">
+                                                        <div class="page_text " style="text-align: left;">
+
+                                                            Mentoring is a unique method of supporting students to
+                                                            improve their learning and leadership skills, motivating
+                                                            them towards their future career development. With this in
+                                                            mind, the college has a mentorship programme wherein the
+                                                            faculty members are given training on mentor system and meet
+                                                            the students on day-to-day basis to listen to their issues
+                                                            and guide them on their overall personality development.
+                                                        </div>
+                                                    </div>
+                                                    <section class="pb32" style="text-align:center;">
+                                                        <h2 class="page_head pt32">REPORTS</h2>
+                                                        <a href="#" target="_blank" title="Download"
+                                                           data-target="tooltip"
+                                                           class="readmore" id="readmore">
+                                                            Report 2014-23
+                                                        </a>
+                                                    </section>
+                                                    <h2 class="page_head pt32">Activities</h2>
+                                                    <div class="achievement">
+                                                        <section class="achievement-card">
+                                                            <div class="achievement-card-image">
+                                                                <img src="/emea_college_theme/static/img/achivement.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                            <div class="achievement-card-box">
+                                                                <h1 class="achievement-card-name">Activity Head</h1>
+                                                                <p class="achievement-card-p">
+                                                                    The college has proudly secured top rankings in a
+                                                                    recent
+                                                                    national academic
+                                                                    assessment, highlighting its commitment to
+                                                                    excellence.
+                                                                </p>
+                                                                <a href="#" class="readmore pos_relative">
+                                                                    READ MORE
+                                                                </a>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <record id="student_support_emea_page" model="website.page">
+            <field name="url">/student_support</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="student_support_emea"/>
+            <field name="track">True</field>
+        </record>
+    </data>
+</odoo>
